@@ -40,16 +40,44 @@ def main() -> int:
         vol = json.loads(vf.read_text())
         v = vol["vol"]
         pages = []
+        catmus_vol = {}  # page -> CATMuS text per site line (same order as the site's lines)
+        n_cat = n_comb = 0
         for p in vol["pages"]:
-            regions = []
+            stem = f"{vol['docId']}_p{p['n']:04d}"
+            cat_f, comb_f = ROOT / "data/catmus" / f"{stem}.json", ROOT / "data/combined" / f"{stem}.json"
+            cat = [(l.get("text") or "").strip() for l in json.loads(cat_f.read_text())["lines"]] if cat_f.exists() else None
+            n_all = sum(len(r["lines"]) for r in p["regions"])
+            if cat is not None and len(cat) != n_all:
+                cat = None  # line lists disagree: no alignment, no CATMuS for this page
+            comb = {}
+            if comb_f.exists() and cat is not None:
+                comb = {l["i"]: l for l in json.loads(comb_f.read_text())["lines"]}
+            regions, cat_lines, i = [], [], 0
             for r in p["regions"]:
                 # only lines with text: the numbering then equals segment.py's line index + 1
-                lines = [{"t": l["text"].strip(), "b": l["box"]} for l in r["lines"] if l["text"].strip()]
+                lines = []
+                for l in r["lines"]:
+                    t = l["text"].strip()
+                    if t:
+                        row = {"t": t, "b": l["box"]}
+                        k = comb.get(i)
+                        if k and k["text"] != t:
+                            row["k"] = [k["text"], k["c"]]  # combined reading, only where it differs from CITlab
+                            n_comb += 1
+                        lines.append(row)
+                        cat_lines.append(cat[i] if cat is not None else None)
+                    i += 1
                 if lines:
                     regions.append({"l": lines})
-            pages.append({"n": p["n"], "k": p["key"], "w": p["w"], "h": p["h"], "r": regions})
+            pg = {"n": p["n"], "k": p["key"], "w": p["w"], "h": p["h"], "r": regions}
+            if cat is not None:
+                pg["cm"] = 1  # CATMuS and combined reading exist for this page
+                catmus_vol[p["n"]] = cat_lines
+                n_cat += 1
+            pages.append(pg)
         (OUT / f"vol{v}.json").write_text(json.dumps({"vol": v, "docId": vol["docId"], "pages": pages},
                                                      ensure_ascii=False, separators=(",", ":")))
+        (OUT / f"catmus{v}.json").write_text(json.dumps(catmus_vol, ensure_ascii=False, separators=(",", ":")))
         ents = json.loads((EXP / f"entries_vol{v}.json").read_text())
         compact = []
         prev = None
@@ -69,6 +97,7 @@ def main() -> int:
         n_lines = sum(len(r["l"]) for p in pages for r in p["r"])
         summary.append({
             "vol": v, "docId": vol["docId"], "title": vol["title"], "pages": len(pages), "lines": n_lines,
+            "catmus_pages": n_cat, "combined_changed_lines": n_comb,
             "thumb": max(pages[len(pages) // 4: len(pages) // 2] or pages, key=lambda p: sum(len(r["l"]) for r in p["r"]))["k"], "entries": len(compact),
             "dated": sum(1 for c in compact if c["d"].get("iso")),
             "checked": sum(1 for c in compact if c["d"].get("check") == "ok"),
@@ -115,6 +144,12 @@ def main() -> int:
     comp = ROOT / "data/readings/compare.json"
     if comp.exists():
         (OUT / "readings.json").write_text(comp.read_text())
+        # page readings (no line geometry) per opening, for the viewer's reading menu
+        pr: dict = {}
+        for h in json.loads(comp.read_text())["halves"]:
+            for m, r in h["readers"].items():
+                pr.setdefault(f"{h['vol']}:{h['page']}", {}).setdefault(m, {})[h["side"]] = r["text"]
+        (OUT / "pagereadings.json").write_text(json.dumps(pr, ensure_ascii=False, separators=(",", ":")))
     print(json.dumps(summary, ensure_ascii=False))
     return 0
 

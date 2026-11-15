@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bullarium Felix’ V.</title>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=4">
+<link rel="stylesheet" href="style.css?v=5">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.js"></script>
 </head>
 <body>
@@ -20,21 +20,24 @@
         <span id="of" class="muted"></span>
         <button id="next" data-i18n-attr="aria-label:band.next;title:band.next">›</button>
         <label data-i18n-attr="title:band.allbox.t"><input type="checkbox" id="allbox"> <span data-i18n="band.allbox"></span></label>
-        <a id="tklink" target="_blank" rel="noopener" style="margin-left:auto" data-i18n="band.inTk"></a>
       </div>
       <div class="tabs" role="tablist">
         <button id="t-text" class="on" role="tab"><span data-i18n="band.tab.text"></span> <span class="badge-auto" data-i18n="badge.short"></span></button>
         <button id="t-ent" role="tab" data-i18n="band.tab.ent"></button>
       </div>
       <div class="muted" style="font-family:system-ui,sans-serif;font-size:.78rem;padding:4px 12px;border-bottom:1px solid var(--line)" data-i18n="band.help"></div>
+      <div id="readbar" class="toolbar readbar">
+        <label><span data-i18n="band.reading"></span> <select id="reading"></select></label>
+        <span id="readnote" class="muted"></span>
+      </div>
       <div id="pane-text" class="pane" aria-live="polite"></div>
       <div id="pane-ent" class="pane" hidden></div>
     </div>
   </div>
   <div id="strip" class="filmstrip" data-i18n-attr="aria-label:band.strip"></div>
 </main>
-<script src="i18n.js?v=4"></script>
-<script src="common.js?v=4"></script>
+<script src="i18n.js?v=5"></script>
+<script src="common.js?v=5"></script>
 <script>
 header("");
 const q = new URLSearchParams(location.search);
@@ -77,7 +80,7 @@ function select(n, { zoom = true, scroll = true } = {}) { // n = 1-based line nu
   if (selOverlay) { viewer.removeOverlay(selOverlay); selOverlay = null; }
   const f = flat.find(x => x.n === n);
   sel = f ? n : null;
-  history.replaceState(null, "", `?v=${V}&p=${P}${sel ? "&l=" + sel : ""}&lang=${LANG}`);
+  history.replaceState(null, "", `?v=${V}&p=${P}${sel ? "&l=" + sel : ""}${READ !== "k" ? "&r=" + encodeURIComponent(READ) : ""}&lang=${LANG}`);
   if (!f) return;
   const span = document.querySelector(`.ln[data-n="${n}"]`);
   if (span) { span.classList.add("sel"); if (scroll) span.scrollIntoView({ block: "center", behavior: "smooth" }); }
@@ -103,22 +106,69 @@ function lineAt(pt) { // image point -> line number (box containing it, else nea
   return bestD < 120 ? best : null;
 }
 
-function render() {
-  const page = vol.pages[P - 1];
-  document.getElementById("pg").value = P;
-  document.getElementById("of").textContent = `/ ${vol.pages.length}`;
-  document.getElementById("tklink").href = `https://app.transkribus.org/collection/53095/doc/${vol.docId}/detail/${P}`;
-  history.replaceState(null, "", `?v=${V}&p=${P}&lang=${LANG}`);
-  setTitle("title.band", { v: ROMAN[V], p: P });
-  iiifSource(page.k).then(src => { if (vol.pages[P - 1] === page) viewer.open(src); })
-    .catch(() => viewer.open({ type: "image", url: TK(page.k) }));
+// ---- readings -------------------------------------------------------------------------------
+// line readings: k = combined (default), t = CITlab, c = CATMuS; page readings: any model in pagereadings.json
+let READ = q.get("r") || (() => { try { return localStorage.getItem("felix-reading"); } catch (e) { return null; } })() || "k";
+let CATM = null, PAGEREAD = {};
+
+function readersFor(page) {
+  const opts = [
+    { id: "k", label: t("r.k"), ok: true },
+    { id: "t", label: t("r.t"), ok: true },
+    { id: "c", label: t("r.c"), ok: !!page.cm },
+  ];
+  for (const m of Object.keys(PAGEREAD[`${V}:${page.n}`] || {})) opts.push({ id: "p:" + m, label: t("r.page", { model: m }), ok: true });
+  return opts;
+}
+
+function markC(text, spans) { // words taken over from CATMuS
+  let out = "", pos = 0;
+  for (const [a, b] of spans || []) {
+    out += esc(text.slice(pos, a)) + `<mark class="fromc" title="${t("r.fromc")}">${esc(text.slice(a, b))}</mark>`;
+    pos = b;
+  }
+  return out + esc(text.slice(pos));
+}
+
+async function renderText(page) {
+  const opts = readersFor(page);
+  let cur = opts.find(o => o.id === READ && o.ok) ? READ : "k";
+  const rs = document.getElementById("reading");
+  rs.innerHTML = opts.map(o => `<option value="${esc(o.id)}"${o.ok ? "" : " disabled"}${o.id === cur ? " selected" : ""}>${esc(o.label)}${o.ok ? "" : " " + t("r.missing")}</option>`).join("");
+  const note = document.getElementById("readnote");
+  const pt = document.getElementById("pane-text");
+  if (cur === "c" && !CATM) CATM = await getJSON(`data/catmus${V}.json`).catch(() => ({}));
+  if (vol.pages[P - 1] !== page) return; // the viewer moved on while CATMuS was loading
+  if (cur.startsWith("p:")) { // page reading: two halves, no line geometry
+    const pr = PAGEREAD[`${V}:${page.n}`][cur.slice(2)];
+    note.textContent = t("r.note.page");
+    flat = [];
+    pt.innerHTML = ["L", "R"].filter(sd => pr[sd]).map(sd => `<div class="region"><h3 class="half">${t(sd === "L" ? "r.left" : "r.right")}</h3>
+      <pre class="pageread">${esc(pr[sd])}</pre></div>`).join("");
+    return;
+  }
+  note.textContent = cur === "k" ? (page.cm ? t("r.note.k") : t("r.note.k.none")) : cur === "c" ? t("r.note.c") : "";
+  const catLines = cur === "c" ? (CATM[page.n] || []) : null;
   let k = 0;
   flat = [];
   const html = linesOf(page).map((r, ri) => `<div class="region${r.marg ? " marg" : ""}">${r.lines.map((l, li) => {
       const n = ++k; flat.push({ ri, li, b: l.b, n });
-      return `<span class="ln" tabindex="0" data-n="${n}" title="${t("band.lineTitle", { n })}"><span class="no">${n}</span>${esc(l.t)}</span>`; }).join("")}</div>`).join("");
-  const pt = document.getElementById("pane-text");
+      const body = cur === "c" ? esc(catLines[n - 1] ?? "") : cur === "k" && l.k ? markC(l.k[0], l.k[1]) : esc(l.t);
+      return `<span class="ln" tabindex="0" data-n="${n}" title="${t("band.lineTitle", { n })}"><span class="no">${n}</span>${body}</span>`; }).join("")}</div>`).join("");
   pt.innerHTML = html || `<p class="muted">${t("band.notext")}</p>`;
+  if (sel) { const s = sel; sel = null; select(s, { zoom: false }); }
+}
+
+function render() {
+  const page = vol.pages[P - 1];
+  document.getElementById("pg").value = P;
+  document.getElementById("of").textContent = `/ ${vol.pages.length}`;
+  history.replaceState(null, "", `?v=${V}&p=${P}${READ !== "k" ? "&r=" + encodeURIComponent(READ) : ""}&lang=${LANG}`);
+  setTitle("title.band", { v: ROMAN[V], p: P });
+  iiifSource(page.k).then(src => { if (vol.pages[P - 1] === page) viewer.open(src); })
+    .catch(() => viewer.open({ type: "image", url: TK(page.k) }));
+  renderText(page);
+  const pt = document.getElementById("pane-text");
   const byN = n => flat.find(x => x.n === n);
   pt.onmouseover = ev => { const s = ev.target.closest(".ln"); if (s) showBox(byN(+s.dataset.n).b, page); };
   pt.onmouseleave = () => showBox(null);
@@ -179,9 +229,18 @@ function go(p) { P = Math.max(1, Math.min(vol.pages.length, p)); render(); }
       if (n >= 1 && n <= flat.length) select(n);
     }
   });
+  PAGEREAD = await getJSON("data/pagereadings.json").catch(() => ({}));
+  document.getElementById("reading").onchange = ev => {
+    READ = ev.target.value;
+    try { localStorage.setItem("felix-reading", READ); } catch (e) { /* storage blocked */ }
+    const keep = sel;
+    history.replaceState(null, "", `?v=${V}&p=${P}${READ !== "k" ? "&r=" + encodeURIComponent(READ) : ""}&lang=${LANG}`);
+    renderText(vol.pages[P - 1]).then(() => { if (keep && flat.length) select(keep, { zoom: false }); });
+  };
   const tabs = [["t-text", "pane-text"], ["t-ent", "pane-ent"]];
   tabs.forEach(([tb, p]) => document.getElementById(tb).onclick = () => tabs.forEach(([t2, p2]) => {
-    document.getElementById(t2).classList.toggle("on", t2 === tb); document.getElementById(p2).hidden = p2 !== p; }));
+    document.getElementById(t2).classList.toggle("on", t2 === tb); document.getElementById(p2).hidden = p2 !== p;
+    document.getElementById("readbar").hidden = tb !== "t-text"; }));
   render();
 })().catch(e => { document.getElementById("pane-text").textContent = `${t("error")}: ${e.message}`; });
 </script>

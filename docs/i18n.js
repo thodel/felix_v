@@ -16,9 +16,10 @@ const I18N = {
     "idx.lede": `Die Register des Gegenpapstes Felix V. (1439–1449), zuvor Herzog Amadeus VIII. von Savoyen
       (<a href="https://hls-dhs-dss.ch/de/articles/012614/2006-04-10/">HLS-Artikel</a>): acht Bände mit Abschriften
       päpstlicher Urkunden, als Mikrofilmaufnahmen in Transkribus (Sammlung «Bollario de Felice»). Jede Aufnahme zeigt eine Doppelseite.`,
-    "idx.note": `<strong>Alles hier ist maschinell erzeugt und ungeprüft.</strong> Der Text ist die Erstlesung der
-      Handschriftenerkennung in Transkribus (CITlab HTR, Modell «Generic Model Charter Scripts XIII–XV»); Einteilung in
-      Einträge und Datierungen sind ein erster automatischer Versuch. Zitieren nur nach dem Bild.`,
+    "idx.note": `<strong>Alles hier ist maschinell erzeugt und ungeprüft.</strong> Der Text ist eine Erstlesung der
+      Handschriftenerkennung: CITlab HTR aus Transkribus («Generic Model Charter Scripts XIII–XV») und CATMuS Medieval
+      (kraken), standardmässig zu einer Lesung kombiniert. Einteilung in Einträge und Datierungen sind ein erster
+      automatischer Versuch. Zitieren nur nach dem Bild.`,
     "idx.overview": "Übersicht",
     "idx.th": ["Band", "Aufnahmen", "Zeilen", "Einträge", "datiert", "davon geprüft", "Zeitraum (geprüfte Daten)"],
     "idx.card": "{pages} Aufnahmen · {entries} Einträge", "idx.alt": "Band {v}, eine Doppelseite",
@@ -28,7 +29,12 @@ const I18N = {
     "idx.credits": `Bilder: Transkribus (READ-COOP), direkt von dort geladen. Daten und Code:
       <a href="https://github.com/thodel/felix_v">github.com/thodel/felix_v</a>.`,
     "title.band": "Band {v}, Aufnahme {p}",
-    "band.prev": "Vorherige Aufnahme", "band.next": "Nächste Aufnahme", "band.inTk": "in Transkribus",
+    "band.prev": "Vorherige Aufnahme", "band.next": "Nächste Aufnahme",
+    "band.reading": "Lesung", "r.k": "Kombiniert (CITlab + CATMuS)", "r.t": "CITlab (Transkribus-HTR)",
+    "r.c": "CATMuS Medieval (kraken, diplomatisch)", "r.page": "{model} (Seitenlesung, Stichprobe)", "r.missing": "– noch nicht gelesen",
+    "r.fromc": "aus CATMuS übernommen", "r.left": "linke Seite", "r.right": "rechte Seite",
+    "r.note.k": "Unterstrichen: Wörter, die CATMuS liefert.", "r.note.k.none": "Noch keine CATMuS-Lesung: angezeigt wird CITlab.",
+    "r.note.c": "Diplomatisch: Abkürzungen wie in der Handschrift.", "r.note.page": "Seitenlesung ohne Zeilenbezug: keine Verknüpfung mit dem Bild.",
     "band.allbox": "Zeilen im Bild", "band.allbox.t": "Alle erkannten Zeilen im Bild einblenden",
     "band.tab.text": "Text", "band.tab.ent": "Einträge auf dieser Aufnahme",
     "band.notext": "Auf dieser Aufnahme hat die Erkennung keinen Text gefunden.",
@@ -80,6 +86,15 @@ const I18N = {
       32 Hälften (vorbereitet auf tei, Prompt <code>felix_register_page_v1.md</code>).`,
     "m.read.gt": `<strong>Für ein echtes Urteil</strong> sollen 8 Hälften (eine je Band) in Transkribus korrigiert werden.
       Dann misst dasselbe Skript die Zeichenfehlerrate jedes Lesers gegen die Korrektur.`,
+    "m.read.catmus": `<strong>CATMuS Medieval</strong> (kraken, auf dem ATR-Gateway): liest alle 2'699 Aufnahmen auf den
+      Zeilen von Transkribus, rund 3 Sekunden pro Aufnahme. Diplomatisch: Abkürzungszeichen bleiben stehen, u für v. Weicht auf
+      der ersten Probe zu 30 % (CER) von CITlab ab, grösstenteils wegen der nicht aufgelösten Abkürzungen.`,
+    "m.read.comb": `<strong>Kombinierte Lesung</strong> (Standard im Viewer): Wort für Wort ausgerichtet; wo CITlab und CATMuS
+      übereinstimmen, gilt die aufgelöste Form von CITlab. Wo sie abweichen, ersetzt das CATMuS-Wort das CITlab-Wort nur, wenn es
+      ausgeschrieben ist (kein Abkürzungszeichen), im gesamten CITlab-Text der acht Bände mindestens fünfmal vorkommt und das
+      CITlab-Wort dort selten ist; Namen nur durch sehr häufige Wörter, verkürzte Formen nie. So ersetzt es z. B. «Basler» durch
+      «Basilee», «as audienciam» durch «ad audienciam», «courra» durch «contra». Ein Sprachmodell (qwen3.8) als Schiedsrichter
+      wurde geprüft und verworfen: es übernahm CITlab Zeile für Zeile. Ersetzte Wörter sind im Viewer unterstrichen.`,
     "m.read.example": "Beispiel nebeneinander", "m.read.view": "Bild ansehen", "m.read.half": "Seitenhälfte",
     "m.read.left": "links", "m.read.right": "rechts", "m.read.dev": "Abw.", "m.read.trunc": "abgebrochen",
     "m.h.ner": "Entitäten und Register (Test)",
@@ -136,9 +151,10 @@ const I18N = {
       (<a href="https://hls-dhs-dss.ch/fr/articles/012614/2006-04-10/">article du DHS</a>) : huit volumes de copies d’actes
       pontificaux, sous forme de microfilms numérisés dans Transkribus (collection « Bollario de Felice »). Chaque image
       montre une double page.`,
-    "idx.note": `<strong>Tout ce qui figure ici est produit par la machine et n’a pas été vérifié.</strong> Le texte est la
-      première lecture de la reconnaissance d’écriture de Transkribus (CITlab HTR, modèle « Generic Model Charter Scripts
-      XIII–XV ») ; le découpage en entrées et les datations sont un premier essai automatique. Ne citer que d’après l’image.`,
+    "idx.note": `<strong>Tout ce qui figure ici est produit par la machine et n’a pas été vérifié.</strong> Le texte est une
+      première lecture par reconnaissance d’écriture : CITlab HTR de Transkribus (« Generic Model Charter Scripts XIII–XV »)
+      et CATMuS Medieval (kraken), combinées par défaut en une seule lecture. Le découpage en entrées et les datations sont
+      un premier essai automatique. Ne citer que d’après l’image.`,
     "idx.overview": "Vue d’ensemble",
     "idx.th": ["Volume", "Images", "Lignes", "Entrées", "datées", "dont vérifiées", "Période (dates vérifiées)"],
     "idx.card": "{pages} images · {entries} entrées", "idx.alt": "Volume {v}, une double page",
@@ -148,7 +164,12 @@ const I18N = {
     "idx.credits": `Images : Transkribus (READ-COOP), chargées directement depuis ce service. Données et code :
       <a href="https://github.com/thodel/felix_v">github.com/thodel/felix_v</a>.`,
     "title.band": "Volume {v}, image {p}",
-    "band.prev": "Image précédente", "band.next": "Image suivante", "band.inTk": "dans Transkribus",
+    "band.prev": "Image précédente", "band.next": "Image suivante",
+    "band.reading": "Lecture", "r.k": "Combinée (CITlab + CATMuS)", "r.t": "CITlab (HTR de Transkribus)",
+    "r.c": "CATMuS Medieval (kraken, diplomatique)", "r.page": "{model} (lecture de page, échantillon)", "r.missing": "– pas encore lue",
+    "r.fromc": "repris de CATMuS", "r.left": "page de gauche", "r.right": "page de droite",
+    "r.note.k": "Soulignés : mots fournis par CATMuS.", "r.note.k.none": "Pas encore de lecture CATMuS : affichage de CITlab.",
+    "r.note.c": "Diplomatique : abréviations comme dans le manuscrit.", "r.note.page": "Lecture de page sans lien avec les lignes : pas de liaison avec l’image.",
     "band.allbox": "Lignes sur l’image", "band.allbox.t": "Afficher toutes les lignes reconnues sur l’image",
     "band.tab.text": "Texte", "band.tab.ent": "Entrées sur cette image",
     "band.notext": "La reconnaissance n’a trouvé aucun texte sur cette image.",
@@ -202,6 +223,16 @@ const I18N = {
     "m.read.gt": `<strong>Pour un vrai jugement</strong>, 8 demi-pages (une par volume) doivent être corrigées dans
       Transkribus. Le même script mesurera alors le taux d’erreur de caractères de chaque lecteur par rapport à la
       correction.`,
+    "m.read.catmus": `<strong>CATMuS Medieval</strong> (kraken, sur la passerelle ATR) : lit les 2 699 images sur les lignes
+      de Transkribus, environ 3 secondes par image. Diplomatique : les signes d’abréviation restent, u pour v. Sur le premier essai,
+      écart de 30 % (CER) avec CITlab, surtout à cause des abréviations non développées.`,
+    "m.read.comb": `<strong>Lecture combinée</strong> (par défaut dans la visionneuse) : alignement mot à mot ; là où CITlab et
+      CATMuS concordent, la forme développée de CITlab est retenue. Là où ils divergent, le mot de CATMuS ne remplace celui de
+      CITlab que s’il est écrit en toutes lettres (sans signe d’abréviation), s’il apparaît au moins cinq fois dans tout le texte
+      CITlab des huit volumes et si le mot de CITlab y est rare ; les noms seulement par des mots très fréquents, jamais par des
+      formes tronquées. Ainsi « Basler » devient « Basilee », « as audienciam » « ad audienciam », « courra » « contra ». Un
+      modèle de langue (qwen3.8) comme arbitre a été essayé puis écarté : il recopiait CITlab ligne par ligne. Les mots remplacés
+      sont soulignés dans la visionneuse.`,
     "m.read.example": "Exemple côte à côte", "m.read.view": "Voir l’image", "m.read.half": "Demi-page",
     "m.read.left": "gauche", "m.read.right": "droite", "m.read.dev": "écart", "m.read.trunc": "interrompue",
     "m.h.ner": "Entités et index (test)",
@@ -260,9 +291,9 @@ const I18N = {
       (<a href="https://hls-dhs-dss.ch/de/articles/012614/2006-04-10/">lexicon historicum Helvetiae</a>): octo tomi, quibus
       litterae papales exscriptae continentur, ex imaginibus microfilmatis in Transkribus (collectio «Bollario de Felice»).
       Quaeque imago binas paginas oppositas exhibet.`,
-    "idx.note": `<strong>Omnia hic a machina facta neque recognita sunt.</strong> Textus est prima lectio, quam ars scripturae
-      agnoscendae in Transkribus effecit (CITlab HTR, exemplar «Generic Model Charter Scripts XIII–XV»); divisio in litteras
-      diesque assignati primus conatus machinalis sunt. Nihil nisi ex imagine citetur.`,
+    "idx.note": `<strong>Omnia hic a machina facta neque recognita sunt.</strong> Textus est prima lectio ab arte scripturae
+      agnoscendae facta: CITlab HTR ex Transkribus («Generic Model Charter Scripts XIII–XV») et CATMuS Medieval (kraken),
+      quae per defaltam in unam lectionem coniunguntur. Divisio in litteras diesque assignati primus conatus machinalis sunt. Nihil nisi ex imagine citetur.`,
     "idx.overview": "Conspectus",
     "idx.th": ["Tomus", "Imagines", "Versus", "Litterae", "datae", "ex his probatae", "Tempus (dies probati)"],
     "idx.card": "{pages} imagines · {entries} litterae", "idx.alt": "Tomus {v}, binae paginae",
@@ -272,7 +303,12 @@ const I18N = {
     "idx.credits": `Imagines: Transkribus (READ-COOP), inde directe allatae. Data et codex:
       <a href="https://github.com/thodel/felix_v">github.com/thodel/felix_v</a>.`,
     "title.band": "Tomus {v}, imago {p}",
-    "band.prev": "Imago prior", "band.next": "Imago sequens", "band.inTk": "in Transkribus",
+    "band.prev": "Imago prior", "band.next": "Imago sequens",
+    "band.reading": "Lectio", "r.k": "Coniuncta (CITlab + CATMuS)", "r.t": "CITlab (HTR Transkribus)",
+    "r.c": "CATMuS Medieval (kraken, diplomatica)", "r.page": "{model} (lectio paginae, specimen)", "r.missing": "– nondum lecta",
+    "r.fromc": "ex CATMuS sumptum", "r.left": "pagina sinistra", "r.right": "pagina dextra",
+    "r.note.k": "Linea subducta: verba quae CATMuS praebet.", "r.note.k.none": "Nondum lectio CATMuS exstat: ostenditur CITlab.",
+    "r.note.c": "Diplomatica: compendia ut in codice.", "r.note.page": "Lectio paginae sine versibus: cum imagine non coniungitur.",
     "band.allbox": "Versus in imagine", "band.allbox.t": "Omnes versus agnitos in imagine ostendere",
     "band.tab.text": "Textus", "band.tab.ent": "Litterae in hac imagine",
     "band.notext": "In hac imagine machina nullum textum invenit.",
@@ -323,6 +359,15 @@ const I18N = {
       eisdem 32 dimidiis (in tei paratum, praeceptum <code>felix_register_page_v1.md</code>).`,
     "m.read.gt": `<strong>Ut vere iudicari possit</strong>, octo dimidiae (singulae ex singulis tomis) in Transkribus emendandae
       sunt. Tum idem programma errores litterarum cuiusque lectoris ad emendationem metietur.`,
+    "m.read.catmus": `<strong>CATMuS Medieval</strong> (kraken, in porta ATR): omnes 2699 imagines in versibus Transkribus
+      legit, circiter 3 secundis in singulas imagines. Diplomatica: signa compendiorum manent, u pro v. In primo experimento a
+      CITlab 30 % (CER) discrepat, maxime ob compendia non resoluta.`,
+    "m.read.comb": `<strong>Lectio coniuncta</strong> (in inspectore per defaltam): verba singula inter se ordinantur; ubi CITlab
+      et CATMuS consentiunt, forma resoluta CITlab valet. Ubi discrepant, verbum CATMuS verbum CITlab tantum substituit, si plene
+      scriptum est (sine signo compendii), si in toto textu CITlab octo tomorum saltem quinquies occurrit et verbum CITlab ibi
+      rarum est; nomina tantum verbis frequentissimis, formae truncatae numquam. Sic «Basler» in «Basilee», «as audienciam» in
+      «ad audienciam», «courra» in «contra» mutatur. Exemplar linguae (qwen3.8) ut arbiter probatum et reiectum est: CITlab
+      versum post versum exscripsit. Verba substituta in inspectore linea subducuntur.`,
     "m.read.example": "Exemplum iuxtapositum", "m.read.view": "Imaginem videre", "m.read.half": "Dimidia pagina",
     "m.read.left": "sinistra", "m.read.right": "dextra", "m.read.dev": "discr.", "m.read.trunc": "abrupta",
     "m.h.ner": "Nomina et index (experimentum)",
