@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.log
+data/cache/
+data/raw/
+data/export/
+data/readings/crops/
+data/llm/date_test_v2/
+.DS_Store

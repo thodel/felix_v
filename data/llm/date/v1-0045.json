@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Basilee", "day_number": 10, "reckoning": "idus", "month": 4, "year": 1441, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.6, "id": "v1-0045", "input": "Datum Basiler, decion septio relacion aprilis anno mati di millesimo quadringentesimo quadragesimo primus", "prompt": "date_v2"}

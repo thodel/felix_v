@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Band – Bullarium Felix’ V.</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=2">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.js"></script>
+</head>
+<body>
+<main class="wide">
+  <div class="viewer">
+    <div class="img"><div id="osd"></div></div>
+    <div class="side">
+      <div class="toolbar">
+        <select id="vol" aria-label="Band"></select>
+        <button id="prev" aria-label="Vorherige Aufnahme">‹</button>
+        <label>Aufnahme <input id="pg" type="number" min="1" aria-label="Aufnahme"></label>
+        <span id="of" class="muted"></span>
+        <button id="next" aria-label="Nächste Aufnahme">›</button>
+        <a id="tklink" target="_blank" rel="noopener" style="margin-left:auto">in Transkribus</a>
+      </div>
+      <div class="tabs" role="tablist">
+        <button id="t-text" class="on" role="tab">Text <span class="badge-auto">automatisch</span></button>
+        <button id="t-ent" role="tab">Einträge auf dieser Aufnahme</button>
+      </div>
+      <div id="pane-text" class="pane" aria-live="polite"></div>
+      <div id="pane-ent" class="pane" hidden></div>
+    </div>
+  </div>
+  <div id="strip" class="filmstrip" aria-label="Aufnahmen"></div>
+</main>
+<script src="common.js?v=2"></script>
+<script>
+header("");
+const q = new URLSearchParams(location.search);
+let V = +(q.get("v") || 1), P = +(q.get("p") || 1), vol, entries, viewer, overlay;
+
+function linesOf(page) { // flat list with region boundaries; region kind like segment.py
+  return page.r.map(r => {
+    const avg = r.l.reduce((a, l) => a + l.t.length, 0) / Math.max(1, r.l.length);
+    return { marg: r.l.length <= 4 && avg < 28, lines: r.l };
+  });
+}
+
+function showBox(b, page) {
+  if (overlay) { viewer.removeOverlay(overlay); overlay = null; }
+  if (!b) return;
+  const el = document.createElement("div"); el.className = "overlay-box"; overlay = el;
+  const W = page.w, pad = 10;
+  viewer.addOverlay(el, new OpenSeadragon.Rect((b[0] - pad) / W, (b[1] - pad) / W, (b[2] - b[0] + 2 * pad) / W, (b[3] - b[1] + 2 * pad) / W));
+}
+
+function render() {
+  const page = vol.pages[P - 1];
+  document.getElementById("pg").value = P;
+  document.getElementById("of").textContent = `/ ${vol.pages.length}`;
+  document.getElementById("tklink").href = `https://app.transkribus.org/collection/53095/doc/${vol.docId}/detail/${P}`;
+  history.replaceState(null, "", `?v=${V}&p=${P}`);
+  document.title = `Band ${ROMAN[V]}, Aufnahme ${P} – Bullarium Felix’ V.`;
+  iiifSource(page.k).then(src => { if (vol.pages[P - 1] === page) viewer.open(src); })
+    .catch(() => viewer.open({ type: "image", url: TK(page.k) }));
+  let k = 0;
+  const html = linesOf(page).map((r, ri) => `<div class="region${r.marg ? " marg" : ""}">${r.lines.map((l, li) => {
+      const i = k++; return `<span class="ln" data-r="${ri}" data-l="${li}"><span class="no">${i + 1}</span>${esc(l.t)}</span>`; }).join("")}</div>`).join("");
+  const pt = document.getElementById("pane-text");
+  pt.innerHTML = html || `<p class="muted">Auf dieser Aufnahme hat die Erkennung keinen Text gefunden.</p>`;
+  pt.onmouseover = ev => { const s = ev.target.closest(".ln"); if (s) showBox(page.r[s.dataset.r].l[s.dataset.l].b, page); };
+  pt.onmouseleave = () => showBox(null);
+  const here = entries.filter(e => e.s[0] <= P && e.e[0] >= P);
+  document.getElementById("pane-ent").innerHTML = here.length ? here.map(e => `
+    <div class="entry-card${e.s[0] === P ? " here" : ""}"><div><span class="d">${fmtDate(e.d) || "undatiert"}</span> ${dateFlag(e.d)}
+      <span class="muted mono" style="float:right">${e.id}</span></div>
+      <div class="muted">Aufnahme ${e.s[0]}${e.e[0] !== e.s[0] ? "–" + e.e[0] : ""} · ${e.n} Zeilen${e.d.place ? " · " + esc(e.d.place) : ""}</div>
+      <div class="c">${esc(e.inc)} …</div>${e.cl ? `<div class="c">… ${esc(e.cl)}</div>` : ""}</div>`).join("")
+    : `<p class="muted">Keine Einträge erkannt.</p>`;
+  document.querySelectorAll("#strip img").forEach(im => im.classList.toggle("on", +im.dataset.p === P));
+  const cur = document.querySelector(`#strip img[data-p="${P}"]`); if (cur) cur.scrollIntoView({ block: "nearest", inline: "center" });
+}
+
+function go(p) { P = Math.max(1, Math.min(vol.pages.length, p)); render(); }
+
+(async () => {
+  const summary = await getJSON("data/summary.json");
+  const sel = document.getElementById("vol");
+  sel.innerHTML = summary.map(v => `<option value="${v.vol}">Band ${ROMAN[v.vol]}</option>`).join("");
+  sel.value = V; sel.onchange = () => { location.search = `?v=${sel.value}&p=1`; };
+  [vol, entries] = await Promise.all([getJSON(`data/vol${V}.json`), getJSON(`data/entries${V}.json`)]);
+  viewer = OpenSeadragon({ id: "osd", prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/images/", showNavigator: true, gestureSettingsMouse: { clickToZoom: false } });
+  document.getElementById("strip").innerHTML = vol.pages.map(p => `<img loading="lazy" data-p="${p.n}" src="${IIIF_IMG(p.k, ",108")}" alt="Aufnahme ${p.n}">`).join("");
+  document.getElementById("strip").onclick = ev => { if (ev.target.dataset.p) go(+ev.target.dataset.p); };
+  document.getElementById("prev").onclick = () => go(P - 1);
+  document.getElementById("next").onclick = () => go(P + 1);
+  document.getElementById("pg").onchange = ev => go(+ev.target.value);
+  document.addEventListener("keydown", ev => { if (ev.target.tagName === "INPUT") return; if (ev.key === "ArrowLeft") go(P - 1); if (ev.key === "ArrowRight") go(P + 1); });
+  const tabs = [["t-text", "pane-text"], ["t-ent", "pane-ent"]];
+  tabs.forEach(([t, p]) => document.getElementById(t).onclick = () => tabs.forEach(([t2, p2]) => {
+    document.getElementById(t2).classList.toggle("on", t2 === t); document.getElementById(p2).hidden = p2 !== p; }));
+  render();
+})().catch(e => { document.getElementById("pane-text").textContent = "Fehler beim Laden: " + e.message; });
+</script>
+</body>
+</html>

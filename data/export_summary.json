@@ -1,0 +1,101 @@
+[
+ {
+  "vol": 1,
+  "docId": 249230,
+  "pages": 316,
+  "lines": 27312,
+  "status": [
+   "IN_PROGRESS"
+  ],
+  "tools": [
+   "CITlab HTR: Generic Model Charter Scripts XIII-XV",
+   "CITlab HTR: Generic Model Charter Scripts XIII-XV | Dictionary: trainDataLanguageModel"
+  ]
+ },
+ {
+  "vol": 2,
+  "docId": 249232,
+  "pages": 315,
+  "lines": 27173,
+  "status": [
+   "IN_PROGRESS"
+  ],
+  "tools": [
+   "CITlab HTR: Generic Model Charter Scripts XIII-XV"
+  ]
+ },
+ {
+  "vol": 3,
+  "docId": 249233,
+  "pages": 315,
+  "lines": 27449,
+  "status": [
+   "IN_PROGRESS"
+  ],
+  "tools": [
+   "CITlab HTR: Generic Model Charter Scripts XIII-XV",
+   "CITlab HTR: HIMANIS Chancery M1+ | Dictionary: Latin_wordlist_cc_50k.dict"
+  ]
+ },
+ {
+  "vol": 4,
+  "docId": 249354,
+  "pages": 338,
+  "lines": 30727,
+  "status": [
+   "IN_PROGRESS"
+  ],
+  "tools": [
+   "CITlab HTR: Generic Model Charter Scripts XIII-XV | Dictionary: trainDataLanguageModel",
+   "CITlab_Advanced_LA 2.4.2"
+  ]
+ },
+ {
+  "vol": 5,
+  "docId": 249355,
+  "pages": 340,
+  "lines": 32135,
+  "status": [
+   "IN_PROGRESS"
+  ],
+  "tools": [
+   "CITlab HTR: Generic Model Charter Scripts XIII-XV"
+  ]
+ },
+ {
+  "vol": 6,
+  "docId": 249356,
+  "pages": 340,
+  "lines": 30938,
+  "status": [
+   "IN_PROGRESS"
+  ],
+  "tools": [
+   "CITlab HTR: Generic Model Charter Scripts XIII-XV"
+  ]
+ },
+ {
+  "vol": 7,
+  "docId": 249357,
+  "pages": 349,
+  "lines": 30824,
+  "status": [
+   "IN_PROGRESS"
+  ],
+  "tools": [
+   "CITlab HTR: Generic Model Charter Scripts XIII-XV"
+  ]
+ },
+ {
+  "vol": 8,
+  "docId": 249231,
+  "pages": 386,
+  "lines": 33041,
+  "status": [
+   "IN_PROGRESS"
+  ],
+  "tools": [
+   "CITlab HTR: Generic Model Charter Scripts XIII-XV"
+  ]
+ }
+]

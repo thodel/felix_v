@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Basilee", "day_number": 3, "reckoning": "nonas", "month": 9, "year": 1440, "pontificate_year": null, "ut_supra": false, "confidence": "high"}, "raw": null, "finish": "stop", "seconds": 1.6, "id": "v1-0066", "input": "Basilee, tercio non septembris, anno a nati Domini a illesimo. quadringentesimo quadragesimo", "prompt": "date_v2"}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bullarium Felix’ V.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+<main>
+  <h1>Bullarium Felix’ V. <span class="badge-auto">automatische Erstlesung</span></h1>
+  <p class="lede">Die Register des Gegenpapstes Felix V. (1439–1449), zuvor Herzog Amadeus VIII. von Savoyen
+    (<a href="https://hls-dhs-dss.ch/de/articles/012614/2006-04-10/">HLS-Artikel</a>): acht Bände
+    mit Abschriften päpstlicher Urkunden, als Mikrofilmaufnahmen in Transkribus
+    (Sammlung «Bollario de Felice»). Jede Aufnahme zeigt eine Doppelseite.</p>
+  <p class="note"><strong>Alles hier ist maschinell erzeugt und ungeprüft.</strong> Der Text ist die Erstlesung
+    der Handschriftenerkennung in Transkribus (CITlab HTR, Modell «Generic Model Charter Scripts XIII–XV»);
+    Einteilung in Einträge und Datierungen sind ein erster automatischer Versuch. Zitieren nur nach dem Bild.</p>
+  <div id="vols" class="vols" aria-live="polite">Lade Bände …</div>
+  <h2>Übersicht</h2>
+  <div class="tablewrap"><table id="tab"><thead><tr><th>Band</th><th class="num">Aufnahmen</th><th class="num">Zeilen</th>
+    <th class="num">Einträge</th><th class="num">datiert</th><th class="num">davon geprüft</th><th>Zeitraum (geprüfte Daten)</th></tr></thead><tbody></tbody></table></div>
+  <p class="muted" style="font-size:.9rem">«geprüft» heisst: das gelesene Pontifikatsjahr passt zum gelesenen Datum (Zählung ab der Krönung am 24. Juli 1440).
+    Das ist eine Plausibilitätsprüfung, keine Kontrolle am Bild. Mehr unter <a href="methode.html">Methode &amp; Tests</a>.</p>
+  <p class="muted" style="font-size:.85rem">Bilder: Transkribus (READ-COOP), direkt von dort geladen. Daten und Code: <a href="https://github.com/thodel/felix_v">github.com/thodel/felix_v</a>.</p>
+</main>
+<script src="common.js?v=2"></script>
+<script>
+header("index.html");
+(async () => {
+  const s = await getJSON("data/summary.json");
+  const fmt = iso => iso ? fmtDate({ iso }) : "–";
+  document.getElementById("vols").innerHTML = s.map(v => `
+    <a class="vol" href="band.html?v=${v.vol}">
+      <img src="${IIIF_IMG(v.thumb, "600,")}" alt="Band ${v.vol}, eine Doppelseite" loading="lazy">
+      <div class="body"><h3>Band ${ROMAN[v.vol] || v.vol}</h3>
+        <div class="meta">${v.pages} Aufnahmen · ${v.entries} Einträge</div>
+        <div class="meta">${fmt(v.from)} – ${fmt(v.to)}</div></div></a>`).join("");
+  document.querySelector("#tab tbody").innerHTML = s.map(v => `<tr>
+    <td><a href="band.html?v=${v.vol}">Band ${ROMAN[v.vol]}</a> <span class="muted">(Doc ${v.docId})</span></td>
+    <td class="num">${v.pages}</td><td class="num">${v.lines.toLocaleString("de-CH")}</td>
+    <td class="num"><a href="eintraege.html?v=${v.vol}">${v.entries}</a></td><td class="num">${v.dated}</td><td class="num">${v.checked}</td>
+    <td>${fmt(v.from)} – ${fmt(v.to)}</td></tr>`).join("");
+})().catch(e => { document.getElementById("vols").textContent = "Fehler beim Laden: " + e.message; });
+</script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Baillee", "day_number": 5, "reckoning": "idus", "month": 1, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.5, "id": "v1-0010", "input": " Dat Baillee, quinto. Idem januarii anno a Nativitate domini millesimo quadringentesimo qua", "prompt": "date_v2"}

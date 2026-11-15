@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Methode und Tests – Bullarium Felix’ V.</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+<main>
+  <h1>Methode und Tests</h1>
+  <p class="lede">Stand: <span id="stand">15.11.2026</span>. Was hier steht, ist ein erster Durchgang. Jede Zahl ist eine Messung an
+    maschinell gelesenem Text, ohne korrigierte Vergleichsseiten.</p>
+
+  <h2>Quelle und Erstlesung</h2>
+  <p>Transkribus-Sammlung 53095 «Bollario de Felice»: acht Dokumente, 2'699 Aufnahmen von Mikrofilm, jede eine Doppelseite
+    des Registers. Der Text stammt aus der Handschriftenerkennung in Transkribus (CITlab HTR, «Generic Model Charter Scripts
+    XIII–XV»). Alle Seiten stehen auf IN_PROGRESS, keine ist korrigiert. Die Website lädt die Bilder direkt von Transkribus
+    und zeigt den Text unverändert.</p>
+
+  <h2>Lesetest: welches Modell liest besser?</h2>
+  <p>Stichprobe: 16 Doppelseiten (zwei je Band, zufällig mit festem Seed), an der Grenze der Textblöcke im PageXML in
+    32 Seitenhälften geschnitten. Jede Hälfte wird gelesen und mit der CITlab-Lesung derselben Hälfte verglichen.</p>
+  <p class="note">Es gibt noch keine korrigierten Seiten. Die «Abweichung von CITlab» sagt deshalb nicht, wer richtig liest:
+    Ein Modell, das besser liest als CITlab, weicht ebenfalls ab. Was die Zahlen sicher zeigen: Abbrüche an der Token-Grenze,
+    Wiederholungsschleifen und Längenverhältnis (ausgelassener oder erfundener Text).</p>
+  <div class="tablewrap"><table id="agg"><thead><tr><th>Leser</th><th class="num">Hälften</th><th class="num">Abweichung von CITlab (CER, Median)</th>
+    <th class="num">abgebrochen</th><th class="num">mit Schleifen</th><th class="num">Länge / CITlab (Median)</th><th class="num">s / Hälfte</th></tr></thead><tbody></tbody></table></div>
+  <ul>
+    <li><strong>qwen3.8-27b</strong> (GPUStack, ohne «thinking»): <span id="qwen-finding">wird ausgewertet.</span></li>
+    <li><strong>Gemini 3.8 Flash und Gemini 4 Argon</strong>: ab der Woche vom 23.11.2026 auf denselben 32 Hälften
+      (vorbereitet auf tei, Prompt <code>felix_register_page_v1.md</code>).</li>
+    <li><strong>Für ein echtes Urteil</strong> sollen 8 Hälften (eine je Band) in Transkribus korrigiert werden. Dann misst
+      dasselbe Skript die Zeichenfehlerrate jedes Lesers gegen die Korrektur.</li>
+  </ul>
+  <details><summary>Beispiel nebeneinander</summary>
+    <div class="toolbar" style="padding-left:0"><select id="half" aria-label="Seitenhälfte"></select> <a id="half-link" href="#">Bild ansehen</a></div>
+    <div id="side" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px"></div>
+  </details>
+
+  <h2>Entitäten und Register (Test)</h2>
+  <p>qwen3.8 hat aus <span id="ner-n">40</span> zufällig gezogenen Einträgen Personen (mit Rolle, Amt, Diözese), Orte,
+    Institutionen und Daten gezogen, dazu eine Zusammenfassung in einem Satz. Ergebnis: <a href="register.html">Register (Test)</a>.</p>
+  <div id="ner-finding"></div>
+
+  <h2>Segmentierung nach Eintrag und Datum</h2>
+  <p><strong>Einträge (v1, regelbasiert).</strong> Jede Registerabschrift endet mit einer Datumszeile («Datum Basilee …
+    pontificatus nostri anno …») und meist einem Registriervermerk (Zählzeichen und Name des Schreibers). Ein Eintrag reicht
+    vom Ende einer Datumszeile bis zum Ende der nächsten. Erkannt wird sie an «Dat(um)» oder einem Ausstellungsort, gefolgt
+    von «nativitate / millesimo». Als zweites Signal trennt auch ein Incipit («Felix episcopus …») ohne vorangehende
+    Datumszeile.</p>
+  <p><strong>Datum.</strong> qwen3.8 liest die Datumszeile nur in Felder (Ort, Ordinalzahl, Kalenden/Nonen/Iden, Monat,
+    Jahr, Pontifikatsjahr). Das Tagesdatum rechnet das Skript: römische Tageszählung, Jahresanfang nach Weihnachtsstil,
+    Pontifikatsjahre ab der Krönung am 24. Juli 1440. Passt das gelesene Pontifikatsjahr zum Datum, gilt das Datum als
+    plausibel (✓). Sonst ist es zu prüfen (⚠), meist wegen eines Lesefehlers.</p>
+  <div class="tablewrap"><table id="seg"><thead><tr><th>Band</th><th class="num">Einträge</th><th class="num">mit Datum</th>
+    <th class="num">✓ Pont.-Jahr</th><th class="num">⚠ prüfen</th><th class="num">ohne Datumszeile</th></tr></thead><tbody></tbody></table></div>
+  <p><strong>Nächste Schritte (v2).</strong> (1) Das Modell nennt pro Doppelseite die Zeilen, mit denen ein Brief beginnt
+    oder die eine Datierung enthalten; nur Abweichungen von v1 kommen auf eine Prüfliste. (2) Die Chronologie der Register
+    dient als Plausibilitätsprüfung: Ein Datum, das stark von seinen Nachbarn abweicht, wird markiert. (3) Liest Gemini oder
+    Argon deutlich besser, wird auf dieser Lesung neu segmentiert. Ausführlich: <a href="https://github.com/thodel/felix_v/blob/main/PLAN.md">PLAN.md</a>.</p>
+</main>
+<script src="common.js?v=2"></script>
+<script>
+header("methode.html");
+(async () => {
+  const s = await getJSON("data/summary.json");
+  const seg = await Promise.all(s.map(v => getJSON(`data/entries${v.vol}.json`)));
+  document.querySelector("#seg tbody").innerHTML = s.map((v, i) => {
+    const e = seg[i];
+    return `<tr><td><a href="eintraege.html?v=${v.vol}">Band ${ROMAN[v.vol]}</a></td><td class="num">${e.length}</td>
+      <td class="num">${e.filter(x => x.d.iso).length}</td><td class="num">${e.filter(x => x.d.check === "ok").length}</td>
+      <td class="num">${e.filter(x => x.d.check === "mismatch").length}</td><td class="num">${e.filter(x => !x.cl).length}</td></tr>`;
+  }).join("");
+  let rd;
+  try { rd = await getJSON("data/readings.json"); } catch (e) { return; }
+  const pct = x => x == null ? "–" : (100 * x).toFixed(0) + " %";
+  document.querySelector("#agg tbody").innerHTML = Object.entries(rd.aggregate).map(([m, a]) => `<tr><td>${esc(m)}</td>
+    <td class="num">${a.halves}</td><td class="num">${pct(a.median_cer_vs_htr)}</td><td class="num">${a.truncated}</td>
+    <td class="num">${a.with_loops}</td><td class="num">${a.median_len_ratio}</td><td class="num">${a.median_seconds}</td></tr>`).join("");
+  const sel = document.getElementById("half");
+  const withR = rd.halves.filter(h => Object.keys(h.readers).length);
+  sel.innerHTML = withR.map((h, i) => `<option value="${i}">Band ${ROMAN[h.vol]}, Aufnahme ${h.page}, ${h.side === "L" ? "links" : "rechts"}</option>`).join("");
+  const show = () => {
+    const h = withR[+sel.value];
+    document.getElementById("half-link").href = `band.html?v=${h.vol}&p=${h.page}`;
+    const col = (t, body) => `<div><h3 style="font-size:1rem;margin:.4em 0">${t}</h3><pre style="white-space:pre-wrap;font-family:'Source Serif 4',Georgia,serif;font-size:.9rem;margin:0">${esc(body)}</pre></div>`;
+    document.getElementById("side").innerHTML = col("CITlab (Transkribus)", h.htr) +
+      Object.entries(h.readers).map(([m, r]) => col(`${m} · Abw. ${pct(r.cer_vs_htr)}${r.truncated ? " · abgebrochen" : ""}`, r.text)).join("");
+  };
+  sel.onchange = show; if (withR.length) show();
+})();
+</script>
+</body>
+</html>

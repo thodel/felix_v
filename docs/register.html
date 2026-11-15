@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Register (Test) – Bullarium Felix’ V.</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+<main>
+  <h1>Register <span class="badge-auto">Test, automatisch</span></h1>
+  <p class="lede">Personen, Orte und Institutionen, die qwen3.8 (GPUStack der Universität Bern) aus einer
+    Stichprobe von Einträgen gezogen hat, ohne jede Nachkontrolle. Grundlage ist der fehlerhafte HTR-Text;
+    die «normalisierte» Form stammt vom Modell und ist oft geraten. Das Register zeigt, was die Methode
+    leistet, und ist kein Arbeitsinstrument.</p>
+  <p id="stats" class="muted"></p>
+  <div class="toolbar" style="padding-left:0">
+    <select id="kind" aria-label="Art">
+      <option value="persons">Personen</option><option value="places">Orte</option><option value="institutions">Institutionen</option>
+    </select>
+    <input id="filter" type="search" placeholder="filtern …" style="width:200px" aria-label="Filter">
+    <span id="count" class="muted"></span>
+  </div>
+  <div class="tablewrap"><table><thead><tr><th>Name (normalisiert vom Modell)</th><th>geschrieben als</th><th>Angaben</th><th>Einträge</th></tr></thead>
+    <tbody id="rows"><tr><td colspan="4">Lade …</td></tr></tbody></table></div>
+  <h2>Zusammenfassungen der getesteten Einträge</h2>
+  <div class="tablewrap"><table><thead><tr><th>Eintrag</th><th>Zusammenfassung (Modell, englisch)</th></tr></thead><tbody id="sum"></tbody></table></div>
+</main>
+<script src="common.js?v=2"></script>
+<script>
+header("register.html");
+let reg, starts = {};
+function link(id) {
+  const [v] = id.slice(1).split("-");
+  const p = starts[id];
+  return `<a class="mono" href="band.html?v=${v}&p=${p || 1}">${id}</a>`;
+}
+function draw() {
+  const kind = document.getElementById("kind").value, f = document.getElementById("filter").value.toLowerCase();
+  const rows = reg[kind].filter(x => !f || JSON.stringify(x).toLowerCase().includes(f));
+  document.getElementById("count").textContent = `${rows.length} Einträge`;
+  document.getElementById("rows").innerHTML = rows.map(x => {
+    const as = [...new Set(x.refs.map(r => r.as).filter(Boolean))].map(esc).join("; ");
+    const info = [...new Set(x.refs.flatMap(r => [r.role, r.office, r.diocese, r.type, r.place].filter(Boolean)))].map(esc).join(" · ");
+    const ids = [...new Set(x.refs.map(r => r.entry))].map(link).join(" ");
+    return `<tr><td>${esc(x.name)}</td><td style="font-family:'Source Serif 4',Georgia,serif">${as}</td><td class="muted">${info}</td><td>${ids}</td></tr>`;
+  }).join("");
+}
+(async () => {
+  try { reg = await getJSON("data/register.json"); }
+  catch (e) { document.getElementById("rows").innerHTML = `<tr><td colspan="4">Noch kein Register erzeugt.</td></tr>`; return; }
+  const vols = [...new Set(reg.tested.map(id => +id.slice(1).split("-")[0]))];
+  for (const v of vols) for (const e of await getJSON(`data/entries${v}.json`)) starts[e.id] = e.s[0];
+  document.getElementById("stats").textContent =
+    `${reg.tested.length} Einträge getestet · ${reg.persons.length} Personen · ${reg.places.length} Orte · ${reg.institutions.length} Institutionen`;
+  document.getElementById("kind").onchange = draw;
+  document.getElementById("filter").oninput = draw;
+  document.getElementById("sum").innerHTML = reg.tested.map(id => `<tr><td>${link(id)}</td><td>${esc(reg.summaries[id] || "")}</td></tr>`).join("");
+  draw();
+})();
+</script>
+</body>
+</html>

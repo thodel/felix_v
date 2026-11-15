@@ -1,0 +1,1 @@
+{"finish": "stop", "usage": {"prompt_tokens": 2978, "total_tokens": 3604, "completion_tokens": 626, "prompt_tokens_details": null}, "seconds": 13.9, "model": "qwen3.8-27b", "max_side": 2048, "prompt": "felix_page_v2.md", "text_crop": true, "frequency_penalty": 0.3}
