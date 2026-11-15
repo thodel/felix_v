@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 5, "reckoning": "kalendas", "month": 10, "year": 1445, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 9.1, "id": "v6-0323", "input": " Gebennen unde cimo Rl octobru anno aNativitate Domini Gillesio qadringentasime quadragesimo quito", "prompt": "date_v2"}

@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 10, "reckoning": "kalendas", "month": 3, "year": 1448, "pontificate_year": 1, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.2, "id": "v8-0040", "input": " Datum Lausan deptino  Marcii auno à nat tate domni millesid quadrigeteso quadragesioectaus poificitus i", "prompt": "date_v2"}

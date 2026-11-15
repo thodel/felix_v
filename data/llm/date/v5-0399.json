@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 4, "reckoning": "idus", "month": 12, "year": 1442, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.7, "id": "v5-0399", "input": " Dat Lausan quarto id decebr anno à Narm vig millesimo quadringente sino quadragesimosecunde pontificat", "prompt": "date_v2"}

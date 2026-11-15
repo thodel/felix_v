@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 2, "reckoning": "kalendas", "month": 7, "year": 1444, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.7, "id": "v6-0261", "input": " dat lansine pridic ydq julii anno à natime dii milleslo quadrigete soquadie simoqarto potificaus", "prompt": "date_v2"}

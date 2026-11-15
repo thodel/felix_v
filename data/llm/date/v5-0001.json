@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 8, "reckoning": "kalendas", "month": 10, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.8, "id": "v5-0001", "input": " dat Gebemi, octavo ll octobris anno  nativitate Domini millesio", "prompt": "date_v2"}

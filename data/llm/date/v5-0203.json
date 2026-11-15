@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": null, "reckoning": null, "month": 7, "year": 1443, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 6.8, "id": "v5-0203", "input": " lausanes prede nosn julii anno nasrate domii millesio quildrugenesio quadragesimo certio", "prompt": "date_v2"}

@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": null, "day_number": null, "reckoning": null, "month": 2, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "low"}, "raw": null, "finish": "stop", "seconds": 3.1, "id": "v7-0205", "input": " dat apud si dmum e maccc ebennen, canoto pis cebruarii, anno à Naete dug", "prompt": "date_v2"}

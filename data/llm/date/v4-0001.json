@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 10, "reckoning": "kalendas", "month": 12, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.6, "id": "v4-0001", "input": " Dat̄ Hansen Lausan ll decembris, anno a Nativitate Domini millesimo quadringentis", "prompt": "date_v2"}

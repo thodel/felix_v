@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 7, "reckoning": "idus", "month": 5, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.5, "id": "v4-0200", "input": " Datum Lausan eptimo idus maii, anno a nativitate Domini millesimo quadrigetesimo qua", "prompt": "date_v2"}

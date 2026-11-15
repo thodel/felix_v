@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 8, "reckoning": "kalendas", "month": 10, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.4, "id": "v5-0003", "input": " Dat Ge benns octavo bl octobris ano à nativitate Domini millesio quadrigentesionquam", "prompt": "date_v2"}

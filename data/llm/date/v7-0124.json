@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": null, "day_number": null, "reckoning": null, "month": 2, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "low"}, "raw": null, "finish": "stop", "seconds": 1.5, "id": "v7-0124", "input": " Dat apud Danctum dominicu tetralonr or Gehenne fil Frbruarii ano à matiaitate Domini Milleso", "prompt": "date_v2"}

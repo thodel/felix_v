@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 1, "reckoning": "idus", "month": 1, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 4.8, "id": "v6-0254", "input": " Dat Gebeun Aunito idem janvarii, anno a nativitate Domini millse", "prompt": "date_v2"}

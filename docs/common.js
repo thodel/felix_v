@@ -60,7 +60,7 @@ function langHref(l) {
 }
 
 function header(active) {
-  const items = [["index.html", "nav.vols"], ["eintraege.html", "nav.entries"], ["register.html", "nav.register"], ["methode.html", "nav.method"]];
+  const items = [["index.html", "nav.vols"], ["eintraege.html", "nav.entries"], ["regesten.html", "nav.regests"], ["register.html", "nav.register"], ["methode.html", "nav.method"]];
   const nav = items.map(([h, k]) => `<a href="${h}"${active === h ? ' aria-current="page" style="font-weight:600"' : ""}>${t(k)}</a>`).join("");
   const sw = LANGS.map(l => l === LANG
     ? `<strong aria-current="true" title="${I18N[l]["lang.name"]}">${l.toUpperCase()}</strong>`
@@ -91,6 +91,7 @@ function dateFlag(d) {
   if (!d || !d.iso) return "";
   if (d.inherited) return `<span class="muted" title="${t("flag.supra.t")}">${t("flag.supra")}</span>`;
   if (d.check === "ok") return `<span class="flag-ok" title="${t("flag.ok.t")}">${t("flag.ok")}</span>`;
+  if (d.check === "range") return `<span class="flag-bad" title="${t("flag.range.t")}">${t("flag.range")}</span>`;
   if (d.check === "mismatch") return `<span class="flag-bad" title="${t("flag.bad.t")}">${t("flag.bad")}</span>`;
   return `<span class="muted" title="${t("flag.none.t")}">${t("flag.none")}</span>`;
 }

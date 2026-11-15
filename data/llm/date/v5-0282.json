@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 6, "reckoning": "idus", "month": 10, "year": 1444, "pontificate_year": null, "ut_supra": false, "confidence": "high"}, "raw": null, "finish": "stop", "seconds": 1.6, "id": "v5-0282", "input": " Datum Gebenu sextimo ious octobris, anno à nativitate Domini millimo quadgente simo quadra gesimo quarto", "prompt": "date_v2"}

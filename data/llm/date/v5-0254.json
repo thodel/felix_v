@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 4, "reckoning": "idus", "month": 1, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.1, "id": "v5-0254", "input": " Dat Gebenn quarto id meni ano anativitate domini millesimo quadringente simo", "prompt": "date_v2"}

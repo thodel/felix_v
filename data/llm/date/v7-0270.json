@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gobens", "day_number": 10, "reckoning": "idus", "month": 7, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.2, "id": "v7-0270", "input": " Dat apud dinem dinm extra muros Gobens deptino idem Apuilis anno à nativitate din millesimoquadimgentesimo", "prompt": "date_v2"}

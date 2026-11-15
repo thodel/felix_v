@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 3, "reckoning": "idus", "month": 10, "year": 1440, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.4, "id": "v8-0076", "input": " dat lausance terrio d decrmor ano a natintate dm̄i millesio quadrigeteslo quadra", "prompt": "date_v2"}

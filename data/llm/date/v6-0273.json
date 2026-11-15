@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Sanctudoninitum", "day_number": 4, "reckoning": "idus", "month": 6, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "low"}, "raw": null, "finish": "stop", "seconds": 1.5, "id": "v6-0273", "input": "Dat apud Sanctudoninitum ex muos geleneum quarto ydus junii anno a noiutte don Millesicqudppe etoquadi", "prompt": "date_v2"}

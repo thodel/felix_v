@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausant", "day_number": null, "reckoning": "nonas", "month": 4, "year": 1443, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.8, "id": "v4-0307", "input": " datum Lausant, non aprilis, anno a nativitate domini millesimo quadringentesimo quadragesimo certio", "prompt": "date_v2"}

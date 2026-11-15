@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 8, "reckoning": "idus", "month": 1, "year": 1440, "pontificate_year": 1, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.5, "id": "v8-0330", "input": " Dat Lausan octavo jous januarii anno à na dii millio quadimqu quadragesmollono Pontificatue nostri anno", "prompt": "date_v2"}

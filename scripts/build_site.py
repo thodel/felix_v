@@ -23,6 +23,19 @@ EXP = ROOT / "data/export"
 OUT = ROOT / "docs/data"
 
 
+def clean_nulls(x):
+    """The model sometimes writes the string "null"; make it a real null and drop empty objects."""
+    if isinstance(x, str):
+        return None if x.strip().lower() in {"null", "none", "", "n/a", "unknown"} else x
+    if isinstance(x, list):
+        return [y for y in (clean_nulls(v) for v in x) if y not in (None, {}, [])]
+    if isinstance(x, dict):
+        d = {k: clean_nulls(v) for k, v in x.items()}
+        d = {k: v for k, v in d.items() if v not in (None, {}, [])}
+        return d or None
+    return x
+
+
 def entry_date(e: dict) -> dict:
     f = ROOT / "data/llm/date" / f"{e['id']}.json"
     if f.exists():
@@ -93,6 +106,25 @@ def main() -> int:
                             "m": [m["text"] for m in e["marg"]][:6]})
             all_entries[e["id"]] = compact[-1]
         (OUT / f"entries{v}.json").write_text(json.dumps(compact, ensure_ascii=False, separators=(",", ":")))
+        regs = []
+        for c, e in zip(compact, ents):
+            rf = ROOT / "data/regests" / f"{e['id']}.json"
+            if not rf.exists():
+                continue
+            r = json.loads(rf.read_text())
+            g = r.get("data")
+            if not (r.get("ok") and g):
+                continue
+            g = clean_nulls(g)
+            regs.append({"id": c["id"], "s": c["s"], "d": {k: c["d"].get(k) for k in ("iso", "check", "inherited", "place") if c["d"].get(k)},
+                         "t": g.get("act_type") or "other", "a": g.get("act"),
+                         "to": g.get("addressee"), "for": g.get("beneficiary"), "obj": g.get("object"),
+                         "val": g.get("value"), "vac": g.get("vacancy"), "ex": g.get("executors") or [],
+                         "pl": g.get("places") or [], "reg": e.get("reg"),
+                         "de": g.get("regest_de"), "fr": g.get("regest_fr"), "la": g.get("regest_la"),
+                         "conf": g.get("confidence"), "multi": bool(g.get("several_letters")),
+                         "k": r.get("combined_share", 0)})
+        (OUT / f"regests{v}.json").write_text(json.dumps(regs, ensure_ascii=False, separators=(",", ":")))
         isos = sorted(c["d"]["iso"] for c in compact if c["d"].get("iso") and c["d"].get("check") == "ok")
         n_lines = sum(len(r["l"]) for p in pages for r in p["r"])
         summary.append({

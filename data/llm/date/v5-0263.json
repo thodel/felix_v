@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 17, "reckoning": "nonas", "month": 1, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.6, "id": "v5-0263", "input": " dat Lausan decimo septimo nnii ano àliitinitate Domini millesimo quadingenresio", "prompt": "date_v2"}

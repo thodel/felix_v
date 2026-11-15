@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Boustin", "day_number": 4, "reckoning": "idus", "month": 2, "year": 1440, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.5, "id": "v5-0366", "input": " dat Boustin quarto idˀ detēbr anno à natm du millesima quadringente sun quadragesiit", "prompt": "date_v2"}

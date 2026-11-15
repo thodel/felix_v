@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 2, "reckoning": "kalendas", "month": 8, "year": 1444, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.5, "id": "v6-0237", "input": "dat Gebrinis pridres igust inmo à natimi tate Domini millesimqadringentesimoquedi agesmoquarto", "prompt": "date_v2"}

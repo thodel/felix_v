@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 16, "reckoning": "kalendas", "month": 11, "year": 1440, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.1, "id": "v6-0333", "input": " Gebennensis decmosexto bl ectobr, anno natantare dii millesumquadringentestoqua", "prompt": "date_v2"}

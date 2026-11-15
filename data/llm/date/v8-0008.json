@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 3, "reckoning": "idus", "month": 9, "year": 1440, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.6, "id": "v8-0008", "input": " Dat Lausan deptio Id septembri ano anativitate Dn̄ millesio quadrigentesimoquadra", "prompt": "date_v2"}

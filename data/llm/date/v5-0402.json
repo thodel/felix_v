@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 3, "reckoning": "day_of_month", "month": 11, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.5, "id": "v5-0402", "input": " Gebenn tercio vel novenbru, anno à nati Domini millesimoquadringete", "prompt": "date_v2"}

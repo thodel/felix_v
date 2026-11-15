@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 7, "reckoning": "idus", "month": 5, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.5, "id": "v5-0076", "input": " Dat L'an san septio idus maii ano anatitate Dm̄i Millesio quadri getesio quadrage", "prompt": "date_v2"}

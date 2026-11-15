@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausan", "day_number": null, "reckoning": null, "month": 4, "year": 1448, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.0, "id": "v8-0055", "input": " Dat Lausan p aprilis ano à na tinitate Domini millesio quadrm gentesio quadragesimo octavo potificatus", "prompt": "date_v2"}

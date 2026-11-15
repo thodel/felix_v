@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausan", "day_number": 17, "reckoning": "kalendas", "month": 5, "year": null, "pontificate_year": null, "ut_supra": true, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 3.4, "id": "v8-0109", "input": "Dat Lausan decimoseptio klio aprilis, ano à nativitate Domini etc., ut spxime", "prompt": "date_v2"}

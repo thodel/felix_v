@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 5, "reckoning": "idus", "month": 5, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.8, "id": "v8-0223", "input": "dat lausuine. quinto prdus maii anno Ano nte dide millesunquordring tesimo quodi ape", "prompt": "date_v2"}

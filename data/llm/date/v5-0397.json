@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 2, "reckoning": "idus", "month": 3, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.5, "id": "v5-0397", "input": " lausanc pridie ide man anno à Nativitate dn millesiocad ringentes", "prompt": "date_v2"}

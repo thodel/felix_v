@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausan", "day_number": 10, "reckoning": "kalendas", "month": 1, "year": 1444, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.5, "id": "v5-0312", "input": "Datu Lausan decimo hl sunii anno à mativitate dm̄i aublesimoquad nigetesimo quadragesimoquarto", "prompt": "date_v2"}

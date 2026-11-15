@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausan", "day_number": 3, "reckoning": "idus", "month": 7, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.3, "id": "v5-0275", "input": " Dat Lausan Gertio id julisi, anno à nativitate Domini millesim", "prompt": "date_v2"}

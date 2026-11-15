@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 4, "reckoning": "nonas", "month": 11, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.4, "id": "v5-0198", "input": " Dat Gebein quarto non noveroris, anno à nativitate, Domini millesco quadrdgentesimo", "prompt": "date_v2"}

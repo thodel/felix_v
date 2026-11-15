@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 6, "reckoning": "kalendas", "month": 8, "year": 1440, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.5, "id": "v6-0265", "input": " lausant sexto kl Angusti Anné A Natum te di millesimoqua dringe tesius quade ast", "prompt": "date_v2"}

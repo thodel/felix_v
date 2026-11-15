@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 3, "reckoning": "idus", "month": null, "year": 1445, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.3, "id": "v6-0336", "input": " Gebennen tertio id anno a Nativitate domin millesimaquad quadrageinnoquinto pontificatus nostri anno", "prompt": "date_v2"}

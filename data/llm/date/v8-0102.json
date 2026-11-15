@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 2, "reckoning": "kalendas", "month": 4, "year": 1440, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.9, "id": "v8-0102", "input": " dat lausanne pridie liou aprilis anno annenere du Millesio quicdinigeesu quadrage no", "prompt": "date_v2"}

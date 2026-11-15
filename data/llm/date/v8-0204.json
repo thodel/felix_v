@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": null, "reckoning": "idus", "month": 9, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.6, "id": "v8-0204", "input": " Datum ansane idus septembrum, anno ànativitate Domini mllcsivo", "prompt": "date_v2"}

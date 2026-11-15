@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 16, "reckoning": "day_of_month", "month": 4, "year": 1440, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.0, "id": "v5-0240", "input": " gebenn sexto decimo vil aplis anno à natintare din millesimo quaorgetesimo", "prompt": "date_v2"}

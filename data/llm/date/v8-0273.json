@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 14, "reckoning": "kalendas", "month": 10, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.9, "id": "v8-0273", "input": " Dat Lausione. Quartodecimo bl septenbus anno à namvitate domiui Millesio", "prompt": "date_v2"}

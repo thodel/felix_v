@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 7, "reckoning": "kalendas", "month": 3, "year": 1440, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.0, "id": "v8-0312", "input": " Dat Lausan denon eptio Rl ovebris ano a natantate dm̄i millesco quadrigeteslo quadiage", "prompt": "date_v2"}

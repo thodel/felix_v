@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 9, "reckoning": "kalendas", "month": 3, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "high"}, "raw": null, "finish": "stop", "seconds": 2.0, "id": "v7-0239", "input": " Datum apud Sancturudoniencum extra muros Gebenneni, nono bl Februarii, anno", "prompt": "date_v2"}

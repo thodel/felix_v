@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanme", "day_number": 10, "reckoning": "kalendas", "month": 10, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.7, "id": "v7-0247", "input": " Datum Lausanme decu bl octobr muno à natuntate domini millesimo", "prompt": "date_v2"}

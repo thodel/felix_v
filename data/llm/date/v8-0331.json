@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": null, "reckoning": null, "month": null, "year": 1449, "pontificate_year": 9, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.5, "id": "v8-0331", "input": " Dat Lausan no agulis, anno à N du millesimoquadiigentea quadingesmonono Poii nostre anno. nono g", "prompt": "date_v2"}

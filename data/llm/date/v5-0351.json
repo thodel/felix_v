@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 4, "reckoning": "nonas", "month": 11, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.5, "id": "v5-0351", "input": "dat Geberius quarto non novebr, anno avottuntate Dio millesimo quodringero", "prompt": "date_v2"}

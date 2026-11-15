@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 14, "reckoning": "kalendas", "month": 11, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.2, "id": "v7-0213", "input": " dat lausan quartodecio kilim octobr quo anatinitate Domini millesio quadringentesio", "prompt": "date_v2"}

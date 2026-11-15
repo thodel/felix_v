@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausan", "day_number": 2, "reckoning": "idus", "month": 12, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.0, "id": "v5-0181", "input": " Lausan, predie idus decembris ano à nativitate Domini millesimo quadm", "prompt": "date_v2"}

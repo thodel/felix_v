@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 12, "reckoning": "day_of_month", "month": 4, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.6, "id": "v5-0166", "input": " Dat Gebennes duodecio bis aprilis anno à nativitate Domini millesioquadrigerteslonquam", "prompt": "date_v2"}

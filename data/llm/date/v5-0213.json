@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Vasilee", "day_number": null, "reckoning": "idus", "month": 11, "year": 1440, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.5, "id": "v5-0213", "input": " Datum Vasilee, idus novebrum anno à mativtate domin millesimo quadringentesimo qdragisio sac", "prompt": "date_v2"}

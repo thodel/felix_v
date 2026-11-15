@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebenii", "day_number": 6, "reckoning": "day_of_month", "month": 5, "year": 1444, "pontificate_year": null, "ut_supra": false, "confidence": "high"}, "raw": null, "finish": "stop", "seconds": 2.0, "id": "v5-0246", "input": "datu Gebenii sextimo vi maii, anno anatinitate dmin millesimo quadringencesimo quadractesimo quarto", "prompt": "date_v2"}

@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Sanct dinunicum", "day_number": 6, "reckoning": "idus", "month": 7, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "low"}, "raw": null, "finish": "stop", "seconds": 1.9, "id": "v6-0279", "input": " dat apud Sanct dinunicum eptra iuros esebenneu sexto pdus septembris anno ancitat domini millesimo", "prompt": "date_v2"}

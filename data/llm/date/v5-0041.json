@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 4, "reckoning": "nonas", "month": 10, "year": 1443, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.6, "id": "v5-0041", "input": " Gebenni, quarto, non octobr, ano a nativitate Domini millessco quadrigentesio quadrageslotrio potifi", "prompt": "date_v2"}

@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Basilee", "day_number": 8, "reckoning": "idus", "month": 10, "year": 1447, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.9, "id": "v7-0135", "input": " Basilee occavo idi octooru anno à nacirtate domini millesimo uadingencesimo quadragesimo septo. Pontificatq", "prompt": "date_v2"}

@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Basilee", "day_number": 17, "reckoning": "kalendas", "month": 12, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.4, "id": "v3-0278", "input": " Datum Basilee decimosepiio Il̄ novēbr anno et nativitate domini ilesimo quadringentesimo qua", "prompt": "date_v2"}

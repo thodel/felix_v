@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": null, "day_number": null, "reckoning": null, "month": null, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "high"}, "raw": null, "finish": "stop", "seconds": 1.4, "id": "v4-0208", "input": "Datum presencium eide Guillermo ad hoc reparto ydoneo de ecclesiis predictis", "prompt": "date_v2"}

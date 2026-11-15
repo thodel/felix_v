@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": null, "day_number": 7, "reckoning": "idus", "month": 11, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.1, "id": "v6-0313", "input": " datum debunnt septimo idur, novenbr anno e Aatmitate dii millesimo quadrinentesimo qua", "prompt": "date_v2"}

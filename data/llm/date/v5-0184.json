@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 2, "reckoning": "idus", "month": 9, "year": 1444, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.7, "id": "v5-0184", "input": " dat Gebeim pdie idus deptembrs anno à nativitate Domini millesio quadrengentesqnoquadr agosimo quacto", "prompt": "date_v2"}

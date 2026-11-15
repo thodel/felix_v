@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 9, "reckoning": "kalendas", "month": 4, "year": 1446, "pontificate_year": null, "ut_supra": false, "confidence": "high"}, "raw": null, "finish": "stop", "seconds": 1.7, "id": "v3-0294", "input": " Gebennensis, nono klis aprilis anno à Natum tate domini millesimoquadringentesimo quadragesimo sexto", "prompt": "date_v2"}

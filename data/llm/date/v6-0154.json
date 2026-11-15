@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 6, "reckoning": "kalendas", "month": 12, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.9, "id": "v6-0154", "input": " Dat Gebemus sexto l aecembris anno a nativitate Domiui millesimo quadru", "prompt": "date_v2"}

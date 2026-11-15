@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 5, "reckoning": "kalendas", "month": 2, "year": 1445, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.5, "id": "v6-0290", "input": " Dat Gebenu. Detano littre febunam, anno la tuptate domii millesimo quaningentesim quaderigesimoquente", "prompt": "date_v2"}

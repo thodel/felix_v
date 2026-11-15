@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausare", "day_number": 4, "reckoning": "day_of_month", "month": 6, "year": 1444, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.4, "id": "v5-0361", "input": "dat Lausare quarto litter juni anno àNati Domini millesimmoquad igentesimo quid et agesimo quarto", "prompt": "date_v2"}

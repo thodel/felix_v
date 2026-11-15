@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": null, "day_number": 3, "reckoning": "nonas", "month": 11, "year": 1443, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.6, "id": "v5-0392", "input": " Dat vobem. non novebr anno à Natim dn millesii ciio quad ringente simo quad ragosimo derero", "prompt": "date_v2"}

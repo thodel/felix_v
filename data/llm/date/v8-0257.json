@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Basilee", "day_number": 10, "reckoning": "kalendas", "month": 1, "year": 1442, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.1, "id": "v8-0257", "input": "Dat et basilez pidecimo ll anu anno Anate e dui millesimo quadringentesimo quigesimo secandi", "prompt": "date_v2"}

@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanu", "day_number": 19, "reckoning": "day_of_month", "month": 9, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.8, "id": "v8-0229", "input": " dat Lausanu dcimosepo bb Septenibus, anno à manra domini Millescoquadung", "prompt": "date_v2"}

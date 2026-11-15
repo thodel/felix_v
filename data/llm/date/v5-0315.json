@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 1, "reckoning": "nonas", "month": 12, "year": 1444, "pontificate_year": 3, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.5, "id": "v5-0315", "input": " Dat L'ausa predre, Nonas decebre anno à Nativitate domino m. cccc xiiii poii nostri ano termo", "prompt": "date_v2"}

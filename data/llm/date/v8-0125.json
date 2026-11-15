@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausan", "day_number": 2, "reckoning": "nonas", "month": 4, "year": null, "pontificate_year": null, "ut_supra": true, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.7, "id": "v8-0125", "input": " dat Lausan predie non aprilis ano anati domin̄i millessio etc. ut pote prat in sup t ep̄us dinielden", "prompt": "date_v2"}

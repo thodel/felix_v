@@ -8,3 +8,4 @@ data/readings/crops/
 data/llm/date_test_v2/
 .DS_Store
 data/combined/
+data/regests/*.tmp

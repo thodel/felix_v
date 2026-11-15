@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": null, "reckoning": null, "month": 4, "year": 1440, "pontificate_year": null, "ut_supra": false, "confidence": "low"}, "raw": null, "finish": "stop", "seconds": 1.9, "id": "v8-0111", "input": " Dat lausan, nous R aprilis ano a nativitate Domini millesimo quadrigetesto quadrage.", "prompt": "date_v2"}

@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 16, "reckoning": "kalendas", "month": 10, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.1, "id": "v7-0246", "input": "lausanme decimosexto bl octobri anno amntantate dunui millesimoquadiiigetesimo qua", "prompt": "date_v2"}

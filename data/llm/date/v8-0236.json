@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Basilee", "day_number": 10, "reckoning": "idus", "month": 10, "year": 1440, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.6, "id": "v8-0236", "input": " Dat et Baslee dctano idus octobri anno a nontintate dmin millesimo quadringontesimo quadrage simogerto", "prompt": "date_v2"}

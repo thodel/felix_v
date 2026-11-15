@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Geben", "day_number": 5, "reckoning": "idus", "month": 3, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.4, "id": "v5-0097", "input": " Dat Geben quito idud Marcii anno à nativitate Domini millescc quadrmgentescogtadra", "prompt": "date_v2"}

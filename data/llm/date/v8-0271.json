@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 4, "reckoning": "idus", "month": 10, "year": 1444, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.4, "id": "v8-0271", "input": " lausann. Quarto prdus octoor anno ann amterte dimne millesimo quadivigtesimo quadirgquo", "prompt": "date_v2"}

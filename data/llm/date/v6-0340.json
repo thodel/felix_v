@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 5, "reckoning": "kalendas", "month": 12, "year": 1445, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.9, "id": "v6-0340", "input": " Gebennon, qunto Bald decembr anno a eatinitate dig mil lesimo quadringentesimo quadragesimoqnto panti", "prompt": "date_v2"}

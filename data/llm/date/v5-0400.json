@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 8, "reckoning": "idus", "month": 12, "year": 1443, "pontificate_year": null, "ut_supra": false, "confidence": "high"}, "raw": null, "finish": "stop", "seconds": 2.3, "id": "v5-0400", "input": " Gebenn̄ viii Id derebr ano à Nati domn Millesimaqadunge te sum quadragesimo tertio", "prompt": "date_v2"}

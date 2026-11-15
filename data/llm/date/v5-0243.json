@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Basilee", "day_number": 2, "reckoning": "nonas", "month": 11, "year": 1443, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.5, "id": "v5-0243", "input": " Basller, nois novembrum aino à naminrare Domini millesimo quad einge tesim quadragetimo tercio", "prompt": "date_v2"}

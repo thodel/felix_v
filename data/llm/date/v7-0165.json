@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": null, "day_number": null, "reckoning": null, "month": null, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "high"}, "raw": null, "finish": "stop", "seconds": 5.1, "id": "v7-0165", "input": " basilensis omnes parrochiales riclias quarum dditus et proventus ad quadraginta libras", "prompt": "date_v2"}

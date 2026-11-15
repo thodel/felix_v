@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 3, "reckoning": "kalendas", "month": 8, "year": 1443, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.6, "id": "v5-0395", "input": " Lausan tercio lier Augusti anno à Natu dimn millesime quadringentesiaqua", "prompt": "date_v2"}

@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lee", "day_number": 6, "reckoning": "kalendas", "month": 1, "year": 1446, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.2, "id": "v7-0168", "input": " datum lee sexto ll decembr dino a nativitate Doini sins quadringentesi quadragesimo sexto pontsi", "prompt": "date_v2"}

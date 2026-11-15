@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lauson", "day_number": null, "reckoning": null, "month": null, "year": null, "pontificate_year": 9, "ut_supra": false, "confidence": "low"}, "raw": null, "finish": "stop", "seconds": 1.9, "id": "v8-0322", "input": " Dat Lauson, de gusti notiitate domini millesx quadrreget undre pontificatus nostr anmo nono", "prompt": "date_v2"}

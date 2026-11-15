@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Basilie", "day_number": 11, "reckoning": "kalendas", "month": 12, "year": 1440, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.2, "id": "v8-0232", "input": "Datum. Basilie undecimo el. Noverebris, anno nativente domini millesimo quadringentesimo quadiage", "prompt": "date_v2"}

@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 8, "reckoning": "idus", "month": 3, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.6, "id": "v6-0269", "input": "dat apud Sanctu Dominitu extra muros Gebenneu octavo ydus mani anno Ancicinteie domi Millesco", "prompt": "date_v2"}

@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 12, "reckoning": "kalendas", "month": 9, "year": 1444, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.0, "id": "v5-0368", "input": " Lausan duodecimo lter augusti anno à Nativitato dmni mille simoquad ringentesim quad ragesimoquarto", "prompt": "date_v2"}

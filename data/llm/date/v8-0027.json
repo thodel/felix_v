@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 8, "reckoning": "kalendas", "month": 2, "year": 1442, "pontificate_year": 3, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.7, "id": "v8-0027", "input": " Datum LAusan octavo Bi no nēbr ano a natim dn̄i millesio ꝫc ucc ꝓxie xii jo g abbag", "prompt": "date_v2"}

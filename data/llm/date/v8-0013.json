@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 8, "reckoning": "kalendas", "month": 10, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.6, "id": "v8-0013", "input": " Dat Lausan de etmooctavo lai octobr ano à natiiitate Domini millesio quadeigeresioquadra", "prompt": "date_v2"}

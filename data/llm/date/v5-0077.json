@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebenni", "day_number": 8, "reckoning": "nonas", "month": 2, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.4, "id": "v5-0077", "input": " Datu Gebenni octa no bis febm februarum ano à nateritate Domini millesio quadringentesio qua", "prompt": "date_v2"}

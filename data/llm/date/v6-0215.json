@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gehompons", "day_number": 9, "reckoning": "day_of_month", "month": 7, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.7, "id": "v6-0215", "input": " Datum apud Srundintum extra muros Gehompons, nono vl julii, anno a nativitate Domini millese", "prompt": "date_v2"}

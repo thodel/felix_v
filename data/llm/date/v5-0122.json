@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 14, "reckoning": "kalendas", "month": 5, "year": 1440, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.7, "id": "v5-0122", "input": " Dat Gebenni. quar rodecimo rli maii anno a nativitate Domini millesio quadrrigetesio quadra", "prompt": "date_v2"}

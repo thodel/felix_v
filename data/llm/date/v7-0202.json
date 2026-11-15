@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Basilee", "day_number": 6, "reckoning": "day_of_month", "month": 9, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.1, "id": "v7-0202", "input": " dat Basilee sexto ltr septembris anno à Nativitate diui milliqadringentesimo qua", "prompt": "date_v2"}

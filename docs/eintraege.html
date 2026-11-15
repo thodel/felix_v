@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bullarium Felix’ V.</title>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=5">
+<link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
 <main>
@@ -19,8 +19,8 @@
   <div class="tablewrap"><table><thead><tr data-i18n-th="ent.th"></tr></thead>
     <tbody id="rows"><tr><td colspan="6" data-i18n="loading"></td></tr></tbody></table></div>
 </main>
-<script src="i18n.js?v=5"></script>
-<script src="common.js?v=5"></script>
+<script src="i18n.js?v=6"></script>
+<script src="common.js?v=6"></script>
 <script>
 header("eintraege.html");
 setTitle("title.entries");
@@ -28,7 +28,7 @@ const q = new URLSearchParams(location.search);
 let V = +(q.get("v") || 1), data = [];
 function draw() {
   const bad = document.getElementById("only-bad").checked;
-  const rows = data.filter(e => !bad || e.d.check === "mismatch");
+  const rows = data.filter(e => !bad || (e.d.check === "mismatch" || e.d.check === "range"));
   document.getElementById("count").textContent = t("ent.count", { n: num(rows.length), total: num(data.length) });
   document.getElementById("rows").innerHTML = rows.map(e => `<tr>
     <td class="mono">${e.id}</td>

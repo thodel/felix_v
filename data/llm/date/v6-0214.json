@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Basilee", "day_number": 6, "reckoning": "day_of_month", "month": 11, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "low"}, "raw": null, "finish": "stop", "seconds": 1.8, "id": "v6-0214", "input": " Basler Constanciens dioc sexto lttri novembr anno à Narmitate Diu millesimoqua", "prompt": "date_v2"}

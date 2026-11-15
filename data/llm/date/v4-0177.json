@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausa", "day_number": 2, "reckoning": "kalendas", "month": 4, "year": 1443, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.8, "id": "v4-0177", "input": " Dat Lausa pridre H Aprilis anno a nativitate Domini millesimo quadrige sesimo quadragesimo t'cio", "prompt": "date_v2"}

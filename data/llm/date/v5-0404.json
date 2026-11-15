@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 4, "reckoning": "idus", "month": 12, "year": 1443, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.6, "id": "v5-0404", "input": " Dat Gebenn quarte id de cembx auné à Nati den mille simoquad riugente simoquadragesametercio Poti", "prompt": "date_v2"}

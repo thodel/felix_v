@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 14, "reckoning": "kalendas", "month": 11, "year": 1440, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.9, "id": "v7-0215", "input": " dat lausan quartodecio kil otobr ano anativitate Dm̄i millesio quadrige tesio", "prompt": "date_v2"}

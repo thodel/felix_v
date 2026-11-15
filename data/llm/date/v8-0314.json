@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 12, "reckoning": "kalendas", "month": 2, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.8, "id": "v8-0314", "input": " Dat Lausan serciedecimo kl februari anno a Nan dm̄i Millesimogndringe", "prompt": "date_v2"}

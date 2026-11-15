@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 14, "reckoning": "day_of_month", "month": 5, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.7, "id": "v5-0121", "input": " Dat Gebenn quartode cimo vl maii anno à nativitate Domini milleesco quadrigenteslo quadrage", "prompt": "date_v2"}

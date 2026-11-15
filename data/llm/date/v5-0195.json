@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 10, "reckoning": "kalendas", "month": 11, "year": 1444, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.0, "id": "v5-0195", "input": " Datum Gebeini deci lob novebris ano à nativitate oin millesie quadrigrteslo quadnagesioqrro", "prompt": "date_v2"}

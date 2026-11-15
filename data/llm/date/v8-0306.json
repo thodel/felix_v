@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 14, "reckoning": "day_of_month", "month": 2, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.2, "id": "v8-0306", "input": " lausanne decimoquarto lter hebruarii anno a natiitatem domiui millesimo quadringentesimo qua", "prompt": "date_v2"}

@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 4, "reckoning": "idus", "month": 12, "year": 1442, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.7, "id": "v5-0219", "input": " dat Gebenn quarto ius decembr, dnns a nativitate domini millesimo quadverigentesquo quadragesio cedo", "prompt": "date_v2"}

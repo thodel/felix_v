@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 3, "reckoning": "kalendas", "month": 8, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.6, "id": "v7-0117", "input": " Dat apud Snctu donitum exfra muros Gebennensi dercio it Auguste ano à nativitate Domini mllesioi adri", "prompt": "date_v2"}

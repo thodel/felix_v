@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausam", "day_number": null, "reckoning": "kalendas", "month": 6, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "low"}, "raw": null, "finish": "stop", "seconds": 1.9, "id": "v4-0234", "input": "dat Lausam balli junii, anno a nativitate Domini millesimo quadrigentesimo quadra", "prompt": "date_v2"}

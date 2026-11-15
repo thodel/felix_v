@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 10, "reckoning": "kalendas", "month": 11, "year": 1448, "pontificate_year": null, "ut_supra": false, "confidence": "high"}, "raw": null, "finish": "stop", "seconds": 1.9, "id": "v8-0023", "input": " Lausan decino kal novebris a nativitate Domini millesio quadrum getesio quadragesio octavo Pontisi", "prompt": "date_v2"}

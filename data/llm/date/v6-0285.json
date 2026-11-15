@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gelenneu", "day_number": 1, "reckoning": "day_of_month", "month": 3, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "low"}, "raw": null, "finish": "stop", "seconds": 1.5, "id": "v6-0285", "input": "dat apud Sanctum Duitum extrci mros Gelenneu acimo vl aonerebris anno auatuniete domino Millescc", "prompt": "date_v2"}

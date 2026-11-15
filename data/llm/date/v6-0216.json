@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": null, "day_number": 22, "reckoning": "day_of_month", "month": 10, "year": null, "pontificate_year": null, "ut_supra": true, "confidence": "low"}, "raw": null, "finish": "stop", "seconds": 1.9, "id": "v6-0216", "input": " Dat. ut supra xxii. y. gor s Pin pelix etc dilicto flio Stephano de Comba alar de", "prompt": "date_v2"}

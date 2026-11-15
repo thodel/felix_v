@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 16, "reckoning": "day_of_month", "month": 7, "year": 1440, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.5, "id": "v6-0322", "input": " Gebennensi sextodecimo t septebƺ anno donun millesimoquadringentesimo quadragesibio", "prompt": "date_v2"}

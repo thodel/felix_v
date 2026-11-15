@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 1, "reckoning": "nonas", "month": 4, "year": 1449, "pontificate_year": null, "ut_supra": false, "confidence": "high"}, "raw": null, "finish": "stop", "seconds": 1.7, "id": "v8-0290", "input": " dat Lausodue, nonas aprilis anno à natedu Millesadigte sionquidrage nonono", "prompt": "date_v2"}

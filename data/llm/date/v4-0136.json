@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausans", "day_number": 4, "reckoning": "nonas", "month": 3, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.9, "id": "v4-0136", "input": " dat Lausans, quarto non man, anno a natiuitate domini millesimo quadrigentesimo quadrage", "prompt": "date_v2"}

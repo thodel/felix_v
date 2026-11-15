@@ -50,6 +50,7 @@ PONT = {"primo": 1, "secundo": 2, "tercio": 3, "tertio": 3, "quarto": 4, "quinto
         "octavo": 8, "nono": 9, "decimo": 10}
 CORONATION = date(1440, 7, 24)  # pontificate years run from the coronation
 ELECTION = date(1439, 11, 5)
+ABDICATION = date(1449, 4, 7)
 
 
 def norm(s: str) -> str:
@@ -145,9 +146,13 @@ def to_iso(d: dict) -> str | None:
 def check(d: dict) -> str | None:
     """Pontificate year vs. ISO date: ok, mismatch, or None when one is missing."""
     iso, p = d.get("iso"), d.get("pont")
+    if iso and len(iso) == 10 and not (ELECTION <= date.fromisoformat(iso) <= ABDICATION):
+        return "range"
     if not iso or not p or len(iso) < 10:
         return None
     day = date.fromisoformat(iso)
+    if not (ELECTION <= day <= ABDICATION):
+        return "range"  # outside the pontificate: certainly a misreading
     # year 1 runs from the election (5.11.1439, counted "a die suscepti apostolatus officii")
     # to the first anniversary of the coronation; later years from coronation to coronation
     start = ELECTION if p == 1 else CORONATION.replace(year=CORONATION.year + p - 1)

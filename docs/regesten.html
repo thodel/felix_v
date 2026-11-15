@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bullarium Felix’ V.</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=6">
+</head>
+<body>
+<main>
+  <h1><span data-i18n="rg.h1"></span> <span class="badge-auto" data-i18n="rg.badge"></span></h1>
+  <p class="lede" data-i18n="rg.lede"></p>
+  <p class="note" data-i18n="rg.note"></p>
+  <div class="toolbar" style="padding-left:0">
+    <select id="f-vol" data-i18n-attr="aria-label:vol"></select>
+    <select id="f-year" data-i18n-attr="aria-label:rg.year"></select>
+    <select id="f-type" data-i18n-attr="aria-label:rg.type"></select>
+    <input id="f-q" type="search" style="width:220px" data-i18n-attr="placeholder:rg.search;aria-label:rg.search">
+    <select id="f-sort" data-i18n-attr="aria-label:rg.sort">
+      <option value="date" data-i18n="rg.sort.date"></option>
+      <option value="reg" data-i18n="rg.sort.reg"></option>
+    </select>
+    <span id="count" class="muted"></span>
+  </div>
+  <div id="list" aria-live="polite"><p class="muted" data-i18n="loading"></p></div>
+  <p class="muted" style="font-size:.85rem" data-i18n="rg.export"></p>
+</main>
+<script src="i18n.js?v=6"></script>
+<script src="common.js?v=6"></script>
+<script>
+header("regesten.html");
+setTitle("title.regests");
+const q = new URLSearchParams(location.search);
+let all = [];
+const PAGE = 200;
+let shown = PAGE;
+
+function person(p) {
+  if (!p) return "";
+  return [p.name, p.office || p.status, p.institution, p.diocese ? `${t("rg.dioc")} ${p.diocese}` : ""].filter(Boolean).map(esc).join(", ");
+}
+
+function card(r) {
+  const txt = r[LANG] || r.de || "";
+  const meta = [
+    r.to ? `<span><b>${t("rg.to")}</b> ${person(r.to)}</span>` : "",
+    r.for ? `<span><b>${t("rg.for")}</b> ${person(r.for)}</span>` : "",
+    r.obj ? `<span><b>${t("rg.obj")}</b> ${esc(r.obj)}</span>` : "",
+    r.vac ? `<span><b>${t("rg.vac")}</b> ${esc(r.vac)}</span>` : "",
+    r.val ? `<span><b>${t("rg.val")}</b> ${esc(r.val)}</span>` : "",
+    r.ex && r.ex.length ? `<span><b>${t("rg.ex")}</b> ${r.ex.map(esc).join("; ")}</span>` : "",
+    r.reg ? `<span><b>${t("rg.reg")}</b> ${esc(r.reg)}</span>` : "",
+  ].filter(Boolean).join("");
+  const warn = [r.multi ? t("rg.multi") : "", r.conf === "low" ? t("rg.low") : ""].filter(Boolean).join(" · ");
+  return `<article class="regest">
+    <div class="rhead"><span class="d">${fmtDate(r.d) || t("undated")}</span> ${dateFlag(r.d)}
+      ${r.d.place ? `<span class="muted">${esc(r.d.place)}</span>` : ""}
+      <span class="tag">${t("act." + r.t)}</span>
+      <a class="mono" style="margin-left:auto" href="band.html?v=${r.v}&p=${r.s[0]}&l=${r.s[1] + 1}">${r.id}</a></div>
+    <p class="rtext">${esc(txt)}</p>
+    ${meta ? `<div class="rmeta">${meta}</div>` : ""}
+    ${warn ? `<div class="flag-bad" style="font-size:.85rem">⚠ ${warn}</div>` : ""}
+  </article>`;
+}
+
+function filtered() {
+  const v = document.getElementById("f-vol").value, y = document.getElementById("f-year").value,
+    ty = document.getElementById("f-type").value, qs = document.getElementById("f-q").value.toLowerCase().trim(),
+    sort = document.getElementById("f-sort").value;
+  let rows = all.filter(r => (!v || r.v == v) && (!y || (r.d.iso || "").startsWith(y)) && (!ty || r.t === ty)
+    && (!qs || JSON.stringify([r[LANG], r.to, r.for, r.obj, r.pl, r.a]).toLowerCase().includes(qs)));
+  if (sort === "date") rows = rows.slice().sort((a, b) => (a.d.iso || "9999").localeCompare(b.d.iso || "9999") || a.v - b.v || a.n - b.n);
+  return rows;
+}
+
+function draw(reset = true) {
+  if (reset) shown = PAGE;
+  const rows = filtered();
+  document.getElementById("count").textContent = t("rg.count", { n: num(rows.length), total: num(all.length) });
+  document.getElementById("list").innerHTML = rows.slice(0, shown).map(card).join("") +
+    (rows.length > shown ? `<button id="more" class="more">${t("rg.more", { n: num(Math.min(PAGE, rows.length - shown)) })}</button>` : "");
+  const m = document.getElementById("more");
+  if (m) m.onclick = () => { shown += PAGE; draw(false); };
+}
+
+(async () => {
+  const s = await getJSON("data/summary.json");
+  const per = await Promise.all(s.map(v => getJSON(`data/regests${v.vol}.json`).catch(() => [])));
+  per.forEach((list, i) => list.forEach((r, n) => all.push({ ...r, v: s[i].vol, n })));
+  const fv = document.getElementById("f-vol");
+  fv.innerHTML = `<option value="">${t("rg.allvols")}</option>` + s.map(v => `<option value="${v.vol}">${t("vol")} ${ROMAN[v.vol]}</option>`).join("");
+  const years = [...new Set(all.map(r => (r.d.iso || "").slice(0, 4)).filter(Boolean))].sort();
+  document.getElementById("f-year").innerHTML = `<option value="">${t("rg.allyears")}</option>` + years.map(y => `<option>${y}</option>`).join("");
+  const types = [...new Set(all.map(r => r.t))].sort((a, b) => t("act." + a).localeCompare(t("act." + b)));
+  document.getElementById("f-type").innerHTML = `<option value="">${t("rg.alltypes")}</option>` + types.map(x => `<option value="${x}">${t("act." + x)}</option>`).join("");
+  if (q.get("v")) fv.value = q.get("v");
+  ["f-vol", "f-year", "f-type", "f-sort"].forEach(id => document.getElementById(id).onchange = () => draw());
+  document.getElementById("f-q").oninput = () => draw();
+  draw();
+})().catch(e => { document.getElementById("list").textContent = `${t("error")}: ${e.message}`; });
+</script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lauson", "day_number": 10, "reckoning": "day_of_month", "month": 4, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.6, "id": "v4-0185", "input": " Datum Lauson decimo vl̄ aprilis anno a nativitate Domini millesimo quadrigero quadri", "prompt": "date_v2"}

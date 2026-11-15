@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Basilee", "day_number": 2, "reckoning": "nonas", "month": 1, "year": 1440, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.5, "id": "v8-0263", "input": "Dat bbasileo presdie nou aumain anno anatu tate domino millesimoquaduing tesimo quicdi agesimo", "prompt": "date_v2"}

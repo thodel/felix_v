@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lansan", "day_number": 5, "reckoning": "idus", "month": 3, "year": 1440, "pontificate_year": null, "ut_supra": true, "confidence": "low"}, "raw": null, "finish": "stop", "seconds": 3.0, "id": "v8-0041", "input": " dat Lansan depuino sous Marcii ano à paci titate dn̄ millesio ꝫcati ꝓxie mnat ut suf so er abba", "prompt": "date_v2"}

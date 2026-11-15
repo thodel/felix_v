@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 7, "reckoning": "kalendas", "month": 3, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.0, "id": "v6-0337", "input": " Dat Lausan vni septung valend februarii, anno à Catebo Sii millesimo quadempentesimoqua", "prompt": "date_v2"}

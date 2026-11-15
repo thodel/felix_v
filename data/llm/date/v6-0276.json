@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Sanctum Demincum", "day_number": 4, "reckoning": "kalendas", "month": 6, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.0, "id": "v6-0276", "input": " datu apud Sanctum Demincum extra muob Gobereu quarto kl iuun anno aneiate dm̄i millesoqua", "prompt": "date_v2"}

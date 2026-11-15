@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gehenen", "day_number": 2, "reckoning": "nonas", "month": 3, "year": 1440, "pontificate_year": null, "ut_supra": false, "confidence": "low"}, "raw": null, "finish": "stop", "seconds": 1.9, "id": "v7-0211", "input": "Datu apd s dietum ex muros Gehenen pridie non man anno a Nat dn millesio quadrige esoquadra", "prompt": "date_v2"}

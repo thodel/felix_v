@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lugouni", "day_number": null, "reckoning": null, "month": null, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "high"}, "raw": null, "finish": "stop", "seconds": 1.7, "id": "v8-0182", "input": " Datum Lugouni per manum magistri Marin Sancte Roman ecclesie", "prompt": "date_v2"}

@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 6, "reckoning": "kalendas", "month": 12, "year": 1444, "pontificate_year": 1, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.7, "id": "v6-0127", "input": " dat Gebenn no vi decemrum anno qamurate pnum null io qadringente sind quadragesimo quarto pontificat nr̄i", "prompt": "date_v2"}

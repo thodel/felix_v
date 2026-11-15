@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanc", "day_number": 14, "reckoning": "day_of_month", "month": 11, "year": 1440, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.7, "id": "v8-0210", "input": " Datum Lausanc quatuordecimo N noverebr anno et natmitate du millesimoquadi ingentesmo", "prompt": "date_v2"}

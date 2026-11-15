@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Basilee", "day_number": 10, "reckoning": "kalendas", "month": 2, "year": 1440, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.7, "id": "v7-0171", "input": " Datum basilee decimo octa no blis januari anno anativitate. num millesimo quadungentesimo quadragesimo", "prompt": "date_v2"}

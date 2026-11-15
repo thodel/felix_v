@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 10, "reckoning": "kalendas", "month": 1, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.4, "id": "v8-0284", "input": " Datum lausannes vemodecimo lil januarii anno a nnitate dmii millesimo quadingenesio", "prompt": "date_v2"}

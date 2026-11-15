@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanc", "day_number": 2, "reckoning": "nonas", "month": 3, "year": 1449, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.9, "id": "v8-0280", "input": " Dat Lausanc Seuundo Nosaster Marcii. anno à no dominum millesimquadim quadragesimo nono", "prompt": "date_v2"}

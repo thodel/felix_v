@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": null, "day_number": null, "reckoning": null, "month": 2, "year": null, "pontificate_year": 7, "ut_supra": false, "confidence": "low"}, "raw": null, "finish": "stop", "seconds": 2.2, "id": "v7-0140", "input": " dat apud danctu Dn̄ feb ruarii ano à nativitate septimo potificatu nostri anno de", "prompt": "date_v2"}

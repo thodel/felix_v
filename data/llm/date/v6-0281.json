@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennero", "day_number": 4, "reckoning": "kalendas", "month": 10, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "low"}, "raw": null, "finish": "stop", "seconds": 1.4, "id": "v6-0281", "input": " Gebennero quartoqcno bl octobis anno à Note domino Millesim quadrmgtesimo", "prompt": "date_v2"}

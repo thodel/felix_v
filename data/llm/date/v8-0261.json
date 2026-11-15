@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Basilee", "day_number": null, "reckoning": null, "month": 10, "year": 1440, "pontificate_year": null, "ut_supra": false, "confidence": "low"}, "raw": null, "finish": "stop", "seconds": 1.7, "id": "v8-0261", "input": " Basller  detembres, anno Ano nitate dini millesmms quadringente simo quicdragesimo", "prompt": "date_v2"}

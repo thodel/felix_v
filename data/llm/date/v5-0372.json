@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 12, "reckoning": "kalendas", "month": 7, "year": 1444, "pontificate_year": 4, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.6, "id": "v5-0372", "input": " Lausan xii lis julii ano à Nanl domni millesimo quadunge tesma quadragesimoquarte potifit at avoquto", "prompt": "date_v2"}

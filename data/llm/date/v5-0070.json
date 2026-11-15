@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 8, "reckoning": "idus", "month": 8, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.4, "id": "v5-0070", "input": " Dat Lausan deptimo id augusti, anno a nativitate Domini millesio quadrigente o quadra", "prompt": "date_v2"}

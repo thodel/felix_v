@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": null, "reckoning": null, "month": 1, "year": 1448, "pontificate_year": 9, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.8, "id": "v8-0048", "input": "dat Lansan son janvarii ano à natimtate Domini quadragensio octivs portificitus nostri nono ctrano.", "prompt": "date_v2"}

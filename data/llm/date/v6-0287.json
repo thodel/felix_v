@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Tanctum duertum", "day_number": 5, "reckoning": "kalendas", "month": 12, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.1, "id": "v6-0287", "input": "Dat apud Tanctum duertum extra mures rebenneu quinto bl dambris, anno avatuntu Domini", "prompt": "date_v2"}

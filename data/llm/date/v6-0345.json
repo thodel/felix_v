@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": null, "day_number": 2, "reckoning": "idus", "month": 12, "year": 1442, "pontificate_year": null, "ut_supra": false, "confidence": "high"}, "raw": null, "finish": "stop", "seconds": 1.7, "id": "v6-0345", "input": " dat pridie idus decembris anno a nātite din Miblesime quadingetesimoquadragesimosecundo pontifi", "prompt": "date_v2"}

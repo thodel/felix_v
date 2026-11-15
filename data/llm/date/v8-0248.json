@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 3, "reckoning": "nonas", "month": 3, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 3.8, "id": "v8-0248", "input": " dat Lausan certio non mani ano a Nati dm̄i mil lesloquadrigenteslo quadragesi", "prompt": "date_v2"}

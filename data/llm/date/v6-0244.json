@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausane", "day_number": 12, "reckoning": "day_of_month", "month": 8, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.5, "id": "v6-0244", "input": " Dat Lausane duo decimo aunusti anno a nativitate di Jillesimoquadrim", "prompt": "date_v2"}

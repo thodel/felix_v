@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 12, "reckoning": "kalendas", "month": 8, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.6, "id": "v8-0268", "input": " Dat lausnne duodenino bl sptel anneo à natimitere domini Milleso quadringqino", "prompt": "date_v2"}

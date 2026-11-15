@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": 4, "reckoning": "day_of_month", "month": 12, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.4, "id": "v5-0398", "input": " Dat Lausm quarto P derenbr anno e nati Domini millesimaquadringentesima qua", "prompt": "date_v2"}

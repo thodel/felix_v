@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausanne", "day_number": null, "reckoning": null, "month": null, "year": 1443, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.4, "id": "v5-0098", "input": " Dat Lausan o Mar ci ano a nativitate Domini millesco quadringente sio quadragensotercio potificatus", "prompt": "date_v2"}

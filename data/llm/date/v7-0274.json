@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Basilee", "day_number": 14, "reckoning": "kalendas", "month": 11, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.7, "id": "v7-0274", "input": " Dat Basiler Auartodecimo l octobris, anno a nativitate Domini millesimoquadriaente", "prompt": "date_v2"}

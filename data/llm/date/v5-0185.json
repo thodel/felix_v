@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebenni", "day_number": 10, "reckoning": "kalendas", "month": 10, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.6, "id": "v5-0185", "input": " Datum Gebenni qui oderimolobs octobri ano à nativitate Domini", "prompt": "date_v2"}

@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Basilee", "day_number": 6, "reckoning": "kalendas", "month": 12, "year": 1440, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.0, "id": "v7-0134", "input": "dat Basclee dextelittere decembr anno à Nateita den Millesio quadringentesano adrages", "prompt": "date_v2"}

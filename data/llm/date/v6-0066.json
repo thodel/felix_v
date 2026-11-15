@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 3, "reckoning": "idus", "month": 10, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 6.6, "id": "v6-0066", "input": " Dat apud Sanctu Dmnicu ext muoso Gebennensi, certio idm octabris anno a nativitate Domini millesimo quadm", "prompt": "date_v2"}

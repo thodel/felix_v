@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Geben", "day_number": 8, "reckoning": "idus", "month": 12, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.5, "id": "v5-0081", "input": " Dat Geben octavo i decembris ano à nativitate Domini millesio quadrige", "prompt": "date_v2"}

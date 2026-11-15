@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 10, "reckoning": "kalendas", "month": 1, "year": 1443, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 2.2, "id": "v5-0054", "input": " Dat Gebein decionano N fanuarii, anno a nativitate Domini millesio quadringe tesio quadr age socertio", "prompt": "date_v2"}

@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 2, "reckoning": "nonas", "month": 10, "year": 1444, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.5, "id": "v5-0285", "input": "datu Gebenn predie, non octobrs anno anatintate donim nulleno qadringentesimo qi quadragesimo quarto", "prompt": "date_v2"}

@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Gebennis", "day_number": 4, "reckoning": "nonas", "month": 4, "year": null, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.4, "id": "v5-0108", "input": " Gebenn, Quarto non aprilis anno a nativitate Dmn̄i millesco quadrigeteso quadrage", "prompt": "date_v2"}

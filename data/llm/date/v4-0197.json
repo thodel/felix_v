@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausans", "day_number": 5, "reckoning": "day_of_month", "month": 5, "year": 1443, "pontificate_year": null, "ut_supra": false, "confidence": "high"}, "raw": null, "finish": "stop", "seconds": 2.4, "id": "v4-0197", "input": " dat Lausans quicto maii, anno a nativitate Domini millesimo quadrigentesimo quadragesimo tercio", "prompt": "date_v2"}

@@ -1,0 +1,1 @@
+{"ok": true, "data": {"place": "Lausan", "day_number": 5, "reckoning": "idus", "month": 7, "year": 1445, "pontificate_year": null, "ut_supra": false, "confidence": "medium"}, "raw": null, "finish": "stop", "seconds": 1.8, "id": "v5-0169", "input": " Dat Lausan Cauto idus julii ano à nativitate Domini millesio quadrergentesio quadragesioquanto", "prompt": "date_v2"}
