@@ -43,7 +43,8 @@ def main() -> int:
         for p in vol["pages"]:
             regions = []
             for r in p["regions"]:
-                lines = [{"t": l["text"], "b": l["box"]} for l in r["lines"]]
+                # only lines with text: the numbering then equals segment.py's line index + 1
+                lines = [{"t": l["text"].strip(), "b": l["box"]} for l in r["lines"] if l["text"].strip()]
                 if lines:
                     regions.append({"l": lines})
             pages.append({"n": p["n"], "k": p["key"], "w": p["w"], "h": p["h"], "r": regions})

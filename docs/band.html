@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Band – Bullarium Felix’ V.</title>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="style.css?v=3">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.js"></script>
 </head>
 <body>
@@ -19,6 +19,7 @@
         <label>Aufnahme <input id="pg" type="number" min="1" aria-label="Aufnahme"></label>
         <span id="of" class="muted"></span>
         <button id="next" aria-label="Nächste Aufnahme">›</button>
+        <label title="Alle erkannten Zeilen im Bild einblenden"><input type="checkbox" id="allbox"> Zeilen im Bild</label>
         <a id="tklink" target="_blank" rel="noopener" style="margin-left:auto">in Transkribus</a>
       </div>
       <div class="tabs" role="tablist">
@@ -31,11 +32,13 @@
   </div>
   <div id="strip" class="filmstrip" aria-label="Aufnahmen"></div>
 </main>
-<script src="common.js?v=2"></script>
+<script src="common.js?v=3"></script>
 <script>
 header("");
 const q = new URLSearchParams(location.search);
-let V = +(q.get("v") || 1), P = +(q.get("p") || 1), vol, entries, viewer, overlay;
+let V = +(q.get("v") || 1), P = +(q.get("p") || 1), vol, entries, viewer, overlay, selOverlay, sel = null;
+let pendingLine = q.get("l") ? +q.get("l") : null; // deep link: 1-based line number on the opening
+let flat = []; // [{ri, li, b, n}] in reading order for the current page
 
 function linesOf(page) { // flat list with region boundaries; region kind like segment.py
   return page.r.map(r => {
@@ -44,12 +47,58 @@ function linesOf(page) { // flat list with region boundaries; region kind like s
   });
 }
 
-function showBox(b, page) {
+function rectOf(b, page, pad = 10) {
+  const W = page.w; // IIIF width equals the PageXML width, so image coordinates match
+  return new OpenSeadragon.Rect((b[0] - pad) / W, (b[1] - pad) / W, (b[2] - b[0] + 2 * pad) / W, (b[3] - b[1] + 2 * pad) / W);
+}
+
+function showBox(b, page) { // hover highlight
   if (overlay) { viewer.removeOverlay(overlay); overlay = null; }
   if (!b) return;
   const el = document.createElement("div"); el.className = "overlay-box"; overlay = el;
-  const W = page.w, pad = 10;
-  viewer.addOverlay(el, new OpenSeadragon.Rect((b[0] - pad) / W, (b[1] - pad) / W, (b[2] - b[0] + 2 * pad) / W, (b[3] - b[1] + 2 * pad) / W));
+  viewer.addOverlay(el, rectOf(b, page));
+}
+
+function drawAllBoxes(page) {
+  document.querySelectorAll(".overlay-all").forEach(el => viewer.removeOverlay(el));
+  if (!document.getElementById("allbox").checked) return;
+  for (const f of flat) {
+    if (!f.b) continue;
+    const el = document.createElement("div"); el.className = "overlay-all"; el.title = `Zeile ${f.n}`;
+    viewer.addOverlay(el, rectOf(f.b, page, 4));
+  }
+}
+
+function select(n, { zoom = true, scroll = true } = {}) { // n = 1-based line number on the opening
+  const page = vol.pages[P - 1];
+  document.querySelectorAll(".ln.sel").forEach(el => el.classList.remove("sel"));
+  if (selOverlay) { viewer.removeOverlay(selOverlay); selOverlay = null; }
+  const f = flat.find(x => x.n === n);
+  sel = f ? n : null;
+  history.replaceState(null, "", `?v=${V}&p=${P}${sel ? "&l=" + sel : ""}`);
+  if (!f) return;
+  const span = document.querySelector(`.ln[data-n="${n}"]`);
+  if (span) { span.classList.add("sel"); if (scroll) span.scrollIntoView({ block: "center", behavior: "smooth" }); }
+  if (!f.b) return;
+  const el = document.createElement("div"); el.className = "overlay-sel"; selOverlay = el;
+  viewer.addOverlay(el, rectOf(f.b, page));
+  if (zoom) { // the line with some context above and below
+    const r = rectOf(f.b, page, 0), h = r.height, w = r.width;
+    viewer.viewport.fitBoundsWithConstraints(new OpenSeadragon.Rect(r.x - w * 0.15, r.y - h * 4, w * 1.3, h * 9));
+  }
+}
+
+function lineAt(pt) { // image point -> line number (box containing it, else nearest within reach)
+  let best = null, bestD = Infinity;
+  for (const f of flat) {
+    if (!f.b) continue;
+    const [x0, y0, x1, y1] = f.b;
+    const dx = pt.x < x0 ? x0 - pt.x : pt.x > x1 ? pt.x - x1 : 0;
+    const dy = pt.y < y0 ? y0 - pt.y : pt.y > y1 ? pt.y - y1 : 0;
+    const d = dx * 3 + dy; // prefer lines in the same column
+    if (d < bestD) { bestD = d; best = f.n; }
+  }
+  return bestD < 120 ? best : null;
 }
 
 function render() {
@@ -62,19 +111,31 @@ function render() {
   iiifSource(page.k).then(src => { if (vol.pages[P - 1] === page) viewer.open(src); })
     .catch(() => viewer.open({ type: "image", url: TK(page.k) }));
   let k = 0;
+  flat = [];
   const html = linesOf(page).map((r, ri) => `<div class="region${r.marg ? " marg" : ""}">${r.lines.map((l, li) => {
-      const i = k++; return `<span class="ln" data-r="${ri}" data-l="${li}"><span class="no">${i + 1}</span>${esc(l.t)}</span>`; }).join("")}</div>`).join("");
+      const n = ++k; flat.push({ ri, li, b: l.b, n });
+      return `<span class="ln" tabindex="0" data-n="${n}" title="Zeile ${n}: im Bild zeigen"><span class="no">${n}</span>${esc(l.t)}</span>`; }).join("")}</div>`).join("");
   const pt = document.getElementById("pane-text");
   pt.innerHTML = html || `<p class="muted">Auf dieser Aufnahme hat die Erkennung keinen Text gefunden.</p>`;
-  pt.onmouseover = ev => { const s = ev.target.closest(".ln"); if (s) showBox(page.r[s.dataset.r].l[s.dataset.l].b, page); };
+  const byN = n => flat.find(x => x.n === n);
+  pt.onmouseover = ev => { const s = ev.target.closest(".ln"); if (s) showBox(byN(+s.dataset.n).b, page); };
   pt.onmouseleave = () => showBox(null);
+  pt.onclick = ev => { const s = ev.target.closest(".ln"); if (s) select(+s.dataset.n, { scroll: false }); };
+  pt.onkeydown = ev => { const s = ev.target.closest(".ln"); if (s && (ev.key === "Enter" || ev.key === " ")) { ev.preventDefault(); select(+s.dataset.n, { scroll: false }); } };
+  sel = null;
   const here = entries.filter(e => e.s[0] <= P && e.e[0] >= P);
   document.getElementById("pane-ent").innerHTML = here.length ? here.map(e => `
-    <div class="entry-card${e.s[0] === P ? " here" : ""}"><div><span class="d">${fmtDate(e.d) || "undatiert"}</span> ${dateFlag(e.d)}
+    <div class="entry-card${e.s[0] === P ? " here" : ""}" data-p="${e.s[0]}" data-l="${e.s[1] + 1}" tabindex="0" style="cursor:pointer" title="Zum Anfang des Eintrags"><div><span class="d">${fmtDate(e.d) || "undatiert"}</span> ${dateFlag(e.d)}
       <span class="muted mono" style="float:right">${e.id}</span></div>
       <div class="muted">Aufnahme ${e.s[0]}${e.e[0] !== e.s[0] ? "–" + e.e[0] : ""} · ${e.n} Zeilen${e.d.place ? " · " + esc(e.d.place) : ""}</div>
       <div class="c">${esc(e.inc)} …</div>${e.cl ? `<div class="c">… ${esc(e.cl)}</div>` : ""}</div>`).join("")
     : `<p class="muted">Keine Einträge erkannt.</p>`;
+  document.getElementById("pane-ent").onclick = ev => {
+    const c = ev.target.closest(".entry-card"); if (!c) return;
+    const p = +c.dataset.p, l = +c.dataset.l;
+    document.getElementById("t-text").click();
+    if (p === P) select(l); else { pendingLine = l; go(p); }
+  };
   document.querySelectorAll("#strip img").forEach(im => im.classList.toggle("on", +im.dataset.p === P));
   const cur = document.querySelector(`#strip img[data-p="${P}"]`); if (cur) cur.scrollIntoView({ block: "nearest", inline: "center" });
 }
@@ -88,12 +149,34 @@ function go(p) { P = Math.max(1, Math.min(vol.pages.length, p)); render(); }
   sel.value = V; sel.onchange = () => { location.search = `?v=${sel.value}&p=1`; };
   [vol, entries] = await Promise.all([getJSON(`data/vol${V}.json`), getJSON(`data/entries${V}.json`)]);
   viewer = OpenSeadragon({ id: "osd", prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/images/", showNavigator: true, gestureSettingsMouse: { clickToZoom: false } });
+  viewer.addHandler("open", () => { // open() clears overlays: redraw, then apply a deep-linked line
+    const page = vol.pages[P - 1];
+    drawAllBoxes(page);
+    if (pendingLine) { const n = pendingLine; pendingLine = null; select(n); }
+    else if (sel) select(sel, { zoom: false, scroll: false });
+  });
+  viewer.addHandler("canvas-click", ev => { // image -> text
+    if (!ev.quick) return; // a drag pans, a click selects
+    const p = viewer.viewport.viewerElementToImageCoordinates(ev.position);
+    const n = lineAt(p);
+    if (n) { select(n, { zoom: false }); document.getElementById("t-text").click(); }
+  });
+  document.getElementById("allbox").onchange = () => drawAllBoxes(vol.pages[P - 1]);
   document.getElementById("strip").innerHTML = vol.pages.map(p => `<img loading="lazy" data-p="${p.n}" src="${IIIF_IMG(p.k, ",108")}" alt="Aufnahme ${p.n}">`).join("");
   document.getElementById("strip").onclick = ev => { if (ev.target.dataset.p) go(+ev.target.dataset.p); };
   document.getElementById("prev").onclick = () => go(P - 1);
   document.getElementById("next").onclick = () => go(P + 1);
   document.getElementById("pg").onchange = ev => go(+ev.target.value);
-  document.addEventListener("keydown", ev => { if (ev.target.tagName === "INPUT") return; if (ev.key === "ArrowLeft") go(P - 1); if (ev.key === "ArrowRight") go(P + 1); });
+  document.addEventListener("keydown", ev => {
+    if (ev.target.tagName === "INPUT" || ev.target.tagName === "SELECT") return;
+    if (ev.key === "ArrowLeft") go(P - 1);
+    if (ev.key === "ArrowRight") go(P + 1);
+    if (ev.key === "ArrowDown" || ev.key === "ArrowUp") { // step through the lines
+      ev.preventDefault();
+      const n = (sel || 0) + (ev.key === "ArrowDown" ? 1 : -1);
+      if (n >= 1 && n <= flat.length) select(n);
+    }
+  });
   const tabs = [["t-text", "pane-text"], ["t-ent", "pane-ent"]];
   tabs.forEach(([t, p]) => document.getElementById(t).onclick = () => tabs.forEach(([t2, p2]) => {
     document.getElementById(t2).classList.toggle("on", t2 === t); document.getElementById(p2).hidden = p2 !== p; }));

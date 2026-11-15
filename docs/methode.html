@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Methode und Tests – Bullarium Felix’ V.</title>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 <main>
@@ -28,7 +28,11 @@
   <div class="tablewrap"><table id="agg"><thead><tr><th>Leser</th><th class="num">Hälften</th><th class="num">Abweichung von CITlab (CER, Median)</th>
     <th class="num">abgebrochen</th><th class="num">mit Schleifen</th><th class="num">Länge / CITlab (Median)</th><th class="num">s / Hälfte</th></tr></thead><tbody></tbody></table></div>
   <ul>
-    <li><strong>qwen3.8-27b</strong> (GPUStack, ohne «thinking»): <span id="qwen-finding">wird ausgewertet.</span></li>
+    <li><strong>qwen3.8-27b</strong> (GPUStack, ohne «thinking»): <span id="qwen-finding">für diese Seiten <strong>nicht brauchbar</strong>. Auf der ersten Probe (Band I, Aufnahme 11)
+      liess es die ersten zehn Zeilen aus, geriet in Wiederholungsschleifen («D. D. de S. …») und erfand auf der rechten Seite ein
+      «Felix episcopus servus servorum dei», wo der Text mitten im Satz weiterläuft. In der Stichprobe brechen die meisten Hälften
+      an der Token-Grenze ab, und die Ausgabe ist mehrfach so lang wie die CITlab-Lesung. Geprüft wurden drei Einstellungen
+      (2048 px mit und ohne Wiederholungsstrafe, 3072 px auf den Textblock zugeschnitten); keine half.</span></li>
     <li><strong>Gemini 3.8 Flash und Gemini 4 Argon</strong>: ab der Woche vom 23.11.2026 auf denselben 32 Hälften
       (vorbereitet auf tei, Prompt <code>felix_register_page_v1.md</code>).</li>
     <li><strong>Für ein echtes Urteil</strong> sollen 8 Hälften (eine je Band) in Transkribus korrigiert werden. Dann misst
@@ -42,7 +46,23 @@
   <h2>Entitäten und Register (Test)</h2>
   <p>qwen3.8 hat aus <span id="ner-n">40</span> zufällig gezogenen Einträgen Personen (mit Rolle, Amt, Diözese), Orte,
     Institutionen und Daten gezogen, dazu eine Zusammenfassung in einem Satz. Ergebnis: <a href="register.html">Register (Test)</a>.</p>
-  <div id="ner-finding"></div>
+  <div id="ner-finding">
+    <p>Was der Test zeigt (40 Einträge, automatisch geprüft, ohne Abgleich am Bild):</p>
+    <ul>
+      <li><strong>Die Menge stimmt:</strong> 185 Personen, 201 Orte, 102 Institutionen, im Mittel 15 Sekunden pro Eintrag.
+        Pfründen, Diözesen und Pfarreien kommen gut heraus (z. B. Andreas Karoleti, Kaplan in Seysiriato, Diözese Lyon).</li>
+      <li><strong>Normalisierung ist zweischneidig:</strong> «monasterii Sancti manner agavensi» wird richtig zu St-Maurice d’Agaune,
+        «abbati morii Loncedi» aber frei zu «Cluny». Bei 36 Personen, 12 Orten und 34 Institutionen steht die Form «wie geschrieben»
+        nicht wörtlich im Text; meist sind das über Zeilen zusammengezogene Namen, teils Erfindungen («Felix V»).</li>
+      <li><strong>Registriervermerke werden zu Personen:</strong> «ep̄us Brosseran», «Jo. Benenati» erscheinen als Personen der Urkunde
+        oder sogar als Diözese. 66 Personen haben die Rolle «other». Diese Schreiber gehören in ein eigenes Feld.</li>
+      <li><strong>Daten im Fliesstext</strong> rechnet das Modell oft falsch um (z. B. 1449 statt 1440). Daten deshalb nur über die
+        Datumszeile und die Rechenregeln oben.</li>
+    </ul>
+    <p><strong>Einschätzung:</strong> Als Findhilfe brauchbar, als Register erst nach drei Änderungen: Schreiber trennen,
+      Orte gegen eine Diözesanliste normalisieren, Personen mit Normdaten abgleichen (SSRQ, HLS, Human Lineage). Mit einer
+      besseren Lesung (siehe Lesetest) steigt die Qualität direkt mit.</p>
+  </div>
 
   <h2>Segmentierung nach Eintrag und Datum</h2>
   <p><strong>Einträge (v1, regelbasiert).</strong> Jede Registerabschrift endet mit einer Datumszeile («Datum Basilee …
@@ -61,7 +81,7 @@
     dient als Plausibilitätsprüfung: Ein Datum, das stark von seinen Nachbarn abweicht, wird markiert. (3) Liest Gemini oder
     Argon deutlich besser, wird auf dieser Lesung neu segmentiert. Ausführlich: <a href="https://github.com/thodel/felix_v/blob/main/PLAN.md">PLAN.md</a>.</p>
 </main>
-<script src="common.js?v=2"></script>
+<script src="common.js?v=3"></script>
 <script>
 header("methode.html");
 (async () => {

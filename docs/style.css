@@ -53,13 +53,18 @@ code, .mono { font-family: ui-monospace, Menlo, monospace; font-size: .85em; }
 .pane { overflow: auto; padding: 12px 16px 40px; flex: 1; min-height: 0; }
 .region { margin-bottom: 14px; }
 .region.marg { color: var(--muted); font-size: .92em; border-left: 2px solid var(--line); padding-left: 8px; }
-.ln { display: block; padding: 0 4px; border-radius: 3px; cursor: default; white-space: pre-wrap; }
+.ln { display: block; padding: 0 4px; border-radius: 3px; white-space: pre-wrap; }
 .ln:hover, .ln.on { background: var(--hl); }
 .ln .no { display: inline-block; width: 2.4em; color: var(--muted); font-family: ui-monospace, monospace; font-size: .72em; user-select: none; }
 .entry-card { border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; margin-bottom: 8px; font-family: system-ui, sans-serif; font-size: .86rem; background: var(--card); }
 .entry-card.here { border-color: var(--accent); }
 .entry-card .d { font-weight: 600; }
 .entry-card .c { font-family: "Source Serif 4", Georgia, serif; color: var(--muted); font-size: .95em; }
+.ln { cursor: pointer; }
+.ln.sel { background: var(--hl); box-shadow: inset 3px 0 0 var(--hl-line); }
+.ln:focus-visible { outline: 2px solid var(--hl-line); outline-offset: 1px; }
+.overlay-sel { border: 2px solid var(--hl-line); background: var(--hl); pointer-events: none; }
+.overlay-all { border: 1px solid rgba(80, 160, 255, .55); pointer-events: none; }
 .overlay-box { border: 1.5px solid var(--hl-line); background: var(--hl); pointer-events: none; }
 .filmstrip { display: flex; gap: 4px; overflow-x: auto; padding: 6px 10px; border-top: 1px solid var(--line); background: var(--card); }
 .filmstrip img { height: 54px; border: 2px solid transparent; cursor: pointer; background: #000; }
