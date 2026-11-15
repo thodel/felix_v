@@ -23,7 +23,7 @@ const I18N = {
     "act.indulgence": "Ablass", "act.absolution": "Absolution", "act.confirmation": "Bestätigung", "act.appointment": "Ernennung",
     "act.licence": "Erlaubnis / Fakultät", "act.exemption": "Exemtion", "act.commission": "Kommission / Mandat",
     "act.union": "Union / Inkorporation", "act.protection": "Schutz", "act.safe_conduct": "Geleit", "act.other": "anderes",
-    "nav.vols": "Bände", "nav.entries": "Einträge", "nav.register": "Register (Test)", "nav.method": "Methode & Tests",
+    "nav.vols": "Bände", "nav.entries": "Einträge", "nav.register": "Register", "nav.method": "Methode & Tests",
     "vol": "Band", "img": "Aufnahme", "imgs": "Aufnahmen", "lines": "Zeilen", "line": "Zeile", "entries": "Einträge",
     "badge.auto": "automatische Erstlesung", "badge.short": "automatisch",
     "flag.ok": "✓ Pont.-Jahr", "flag.ok.t": "Pontifikatsjahr passt zum Datum",
@@ -51,6 +51,7 @@ const I18N = {
     "title.band": "Band {v}, Aufnahme {p}",
     "band.prev": "Vorherige Aufnahme", "band.next": "Nächste Aufnahme",
     "band.reading": "Lesung", "r.k": "Kombiniert (CITlab + CATMuS)", "r.t": "CITlab (Transkribus-HTR)",
+    "r.k.multi": "Kombiniert ({n} Lesungen)", "r.unsure": "Leser uneinig: unsicher", "r.note.k.multi": "Mehrheitslesung; gepunktet: Leser uneinig.", "r.note.line": "Zeilenlesung eines einzelnen Modells.",
     "r.c": "CATMuS Medieval (kraken, diplomatisch)", "r.page": "{model} (Seitenlesung, Stichprobe)", "r.missing": "– noch nicht gelesen",
     "r.fromc": "aus CATMuS übernommen", "r.left": "linke Seite", "r.right": "rechte Seite",
     "r.note.k": "Unterstrichen: Wörter, die CATMuS liefert.", "r.note.k.none": "Noch keine CATMuS-Lesung: angezeigt wird CITlab.",
@@ -69,8 +70,23 @@ const I18N = {
       Weihnachtsstil) ist daraus berechnet und gegen das Pontifikatsjahr geprüft.`,
     "ent.onlyBad": "nur «prüfen»", "ent.count": "{n} von {total} Einträgen",
     "ent.th": ["Nr.", "Aufnahme", "Datum", "", "Ort", "Anfang · Datumszeile (automatisch)"],
-    "title.register": "Register (Test)",
-    "reg.h1": "Register", "reg.badge": "Test, automatisch",
+    "title.register": "Register",
+    "reg.h1": "Register", "reg.badge": "automatisch",
+    "reg.kind.dioceses": "Diözesen", "reg.onlyLinked": "nur verknüpfte", "reg.onlyMulti": "in mehreren Einträgen",
+    "reg.th2": ["Name", "Schreibungen im Text", "Angaben", "Verknüpfungen", "Einträge"],
+    "reg.grade.identical": "identisch", "reg.grade.very_likely": "sehr wahrscheinlich",
+    "reg.grade.merged": "aus fast gleichen Schreibungen mit gleicher Diözese oder gleichem Amt zusammengeführt (sehr wahrscheinlich)",
+    "reg.more": "{n} weitere: Filter verwenden",
+    "reg.stats2": "{p} Personen ({pl} verknüpft) · {o} Orte ({ol} verknüpft) · {d} Diözesen ({dl} verknüpft) · {i} Institutionen",
+    "reg.lede2": `Personen, Orte, Diözesen und Institutionen, die qwen3.8 beim Regestieren aus jedem Eintrag gezogen hat. Gleiche Namen
+      im ganzen Korpus sind zusammengeführt. Verknüpft wird mit dem Königsfelden-Register, der Personendatenbank der SSRQ, dem
+      HLS, Wikidata und Human Lineage, aber nur bei <strong>identischem</strong> oder <strong>sehr wahrscheinlichem</strong> Treffer.`,
+    "reg.note2": `<strong>Automatisch, ungeprüft.</strong> «identisch»: gleiche normalisierte Namensform, ein einziger Kandidat, Daten
+      passen. «sehr wahrscheinlich» (≈): fast gleiche Schreibung mit gleicher Diözese oder gleichem Amt, oder ein Treffer, den die
+      Normdatei selbst als eindeutig ausweist, mit passenden Lebensdaten. Alles andere bleibt unverknüpft; Lesefehler im Namen
+      verhindern also eher eine Verknüpfung, als dass sie eine falsche erzeugen.`,
+    "reg.sources": `Quellen der Verknüpfung: Königsfelden (Urkunden und Akten des Klosters Königsfelden), SSRQ (Sammlung Schweizerischer
+      Rechtsquellen), HLS (Historisches Lexikon der Schweiz), Wikidata, Human Lineage (CC BY-SA 4.0).`,
     "reg.lede": `Personen, Orte und Institutionen, die qwen3.8 (GPUStack der Universität Bern) aus einer Stichprobe von
       Einträgen gezogen hat, ohne jede Nachkontrolle. Grundlage ist der fehlerhafte HTR-Text; die «normalisierte» Form
       stammt vom Modell und ist oft geraten. Das Register zeigt, was die Methode leistet, und ist kein Arbeitsinstrument.`,
@@ -115,6 +131,22 @@ const I18N = {
       CITlab-Wort dort selten ist; Namen nur durch sehr häufige Wörter, verkürzte Formen nie. So ersetzt es z. B. «Basler» durch
       «Basilee», «as audienciam» durch «ad audienciam», «courra» durch «contra». Ein Sprachmodell (qwen3.8) als Schiedsrichter
       wurde geprüft und verworfen: es übernahm CITlab Zeile für Zeile. Ersetzte Wörter sind im Viewer unterstrichen.`,
+    "m.read.multi": `<strong>Acht Lesungen pro Zeile</strong> (ab 16.11.2026): Neben CITlab lesen auf UBELIX sieben Modelle jede Zeile
+      von Transkribus: kraken CATMuS Medieval, TRIDIS v2, CREMMA Medieval und Medieval Latin/French (aufgelöst) sowie TrOCR
+      medieval-escriptmask und zwei TrOCR-Modelle auf CATMuS (base, cursiva). Die kombinierte Lesung ist eine Mehrheitsentscheidung
+      Wort für Wort: Grundgerüst ist die Lesung, die allen anderen am nächsten steht; jedes Modell stimmt mit einem Gewicht ab, das
+      aus seiner Übereinstimmung mit den anderen im selben Band berechnet ist (ein Modell, das diese Hand schlecht liest, zählt
+      wenig). Angezeigt wird die Form eines auflösenden Modells. Wörter mit weniger als der Hälfte der Stimmen sind im Viewer
+      gepunktet unterstrichen. Bis die acht Lesungen da sind, gilt die vorsichtige Zwei-Leser-Regel unten.`,
+    "m.ner.v2": `<strong>Entitäten im ganzen Korpus</strong> (ab 16.11.2026): Personen, Orte, Diözesen und Institutionen zieht qwen3.8 im
+      selben Aufruf wie das Regest aus jedem Eintrag, mit der Schreibung im Text; Registriervermerke (Schreiber) und der Papst
+      selbst sind ausgenommen. <strong>Verknüpfung</strong> nur bei identischem oder sehr wahrscheinlichem Treffer: innerhalb des
+      Korpus bei gleicher normalisierter Namensform (bzw. fast gleicher Schreibung mit gleicher Diözese oder gleichem Amt); nach
+      aussen mit Human Lineage (Treffer, den die Normdatei selbst als eindeutig ausweist, mit passenden Lebensdaten; daraus Wikidata
+      und HLS), der SSRQ und dem Königsfelden-Register (genaue Namensform, ein einziger Kandidat, Zeit passt), für Orte mit
+      Königsfelden und Wikidata (genauer Name, Siedlung in CH/FR/IT/DE; HLS über die HLS-Nummer), für Diözesen über eine feste Liste
+      der lateinischen Adjektive. Ergebnis: <a href="register.html">Register</a>. Der Test auf 40 Einträgen unten bleibt als
+      Ausgangspunkt stehen.`,
     "m.read.example": "Beispiel nebeneinander", "m.read.view": "Bild ansehen", "m.read.half": "Seitenhälfte",
     "m.read.left": "links", "m.read.right": "rechts", "m.read.dev": "Abw.", "m.read.trunc": "abgebrochen",
     "m.h.ner": "Entitäten und Register (Test)",
@@ -179,7 +211,7 @@ const I18N = {
     "act.indulgence": "Indulgence", "act.absolution": "Absolution", "act.confirmation": "Confirmation", "act.appointment": "Nomination",
     "act.licence": "Licence / faculté", "act.exemption": "Exemption", "act.commission": "Commission / mandat",
     "act.union": "Union / incorporation", "act.protection": "Protection", "act.safe_conduct": "Sauf-conduit", "act.other": "autre",
-    "nav.vols": "Volumes", "nav.entries": "Entrées", "nav.register": "Index (test)", "nav.method": "Méthode et tests",
+    "nav.vols": "Volumes", "nav.entries": "Entrées", "nav.register": "Index", "nav.method": "Méthode et tests",
     "vol": "Volume", "img": "Image", "imgs": "images", "lines": "lignes", "line": "Ligne", "entries": "entrées",
     "badge.auto": "première lecture automatique", "badge.short": "automatique",
     "flag.ok": "✓ an. pont.", "flag.ok.t": "L’année de pontificat concorde avec la date",
@@ -208,6 +240,7 @@ const I18N = {
     "title.band": "Volume {v}, image {p}",
     "band.prev": "Image précédente", "band.next": "Image suivante",
     "band.reading": "Lecture", "r.k": "Combinée (CITlab + CATMuS)", "r.t": "CITlab (HTR de Transkribus)",
+    "r.k.multi": "Combinée ({n} lectures)", "r.unsure": "Lecteurs en désaccord : incertain", "r.note.k.multi": "Lecture majoritaire ; en pointillé : lecteurs en désaccord.", "r.note.line": "Lecture ligne par ligne d’un seul modèle.",
     "r.c": "CATMuS Medieval (kraken, diplomatique)", "r.page": "{model} (lecture de page, échantillon)", "r.missing": "– pas encore lue",
     "r.fromc": "repris de CATMuS", "r.left": "page de gauche", "r.right": "page de droite",
     "r.note.k": "Soulignés : mots fournis par CATMuS.", "r.note.k.none": "Pas encore de lecture CATMuS : affichage de CITlab.",
@@ -226,8 +259,24 @@ const I18N = {
       contrôlé par l’année de pontificat.`,
     "ent.onlyBad": "seulement « à vérifier »", "ent.count": "{n} sur {total} entrées",
     "ent.th": ["N°", "Image", "Date", "", "Lieu", "Début · clause de date (automatique)"],
-    "title.register": "Index (test)",
-    "reg.h1": "Index", "reg.badge": "test, automatique",
+    "title.register": "Index",
+    "reg.h1": "Index", "reg.badge": "automatique",
+    "reg.kind.dioceses": "Diocèses", "reg.onlyLinked": "seulement liés", "reg.onlyMulti": "dans plusieurs entrées",
+    "reg.th2": ["Nom", "Graphies du texte", "Indications", "Liens", "Entrées"],
+    "reg.grade.identical": "identique", "reg.grade.very_likely": "très probable",
+    "reg.grade.merged": "réuni à partir de graphies presque identiques avec le même diocèse ou la même fonction (très probable)",
+    "reg.more": "{n} de plus : utiliser le filtre",
+    "reg.stats2": "{p} personnes ({pl} liées) · {o} lieux ({ol} liés) · {d} diocèses ({dl} liés) · {i} institutions",
+    "reg.lede2": `Personnes, lieux, diocèses et institutions que qwen3.8 a relevés dans chaque entrée en rédigeant les régestes. Les noms
+      identiques dans tout le corpus sont réunis. Les liens renvoient au registre de Königsfelden, à la base de personnes de la SSRQ,
+      au DHS, à Wikidata et à Human Lineage, mais seulement en cas de correspondance <strong>identique</strong> ou
+      <strong>très probable</strong>.`,
+    "reg.note2": `<strong>Automatique, non vérifié.</strong> « identique » : même forme normalisée du nom, un seul candidat, dates
+      compatibles. « très probable » (≈) : graphie presque identique avec le même diocèse ou la même fonction, ou une correspondance
+      que le fichier d’autorité lui-même donne comme univoque, avec des dates compatibles. Le reste n’est pas lié ; une erreur de
+      lecture dans un nom empêche donc plutôt un lien qu’elle n’en crée un faux.`,
+    "reg.sources": `Sources des liens : Königsfelden (chartes et actes du couvent de Königsfelden), SSRQ (Collection des sources du
+      droit suisse), DHS (Dictionnaire historique de la Suisse), Wikidata, Human Lineage (CC BY-SA 4.0).`,
     "reg.lede": `Personnes, lieux et institutions que qwen3.8 (GPUStack de l’Université de Berne) a extraits d’un échantillon
       d’entrées, sans aucun contrôle. La base est le texte HTR fautif ; la forme « normalisée » vient du modèle et est
       souvent devinée. L’index montre ce que la méthode peut fournir ; ce n’est pas un instrument de travail.`,
@@ -275,6 +324,21 @@ const I18N = {
       formes tronquées. Ainsi « Basler » devient « Basilee », « as audienciam » « ad audienciam », « courra » « contra ». Un
       modèle de langue (qwen3.8) comme arbitre a été essayé puis écarté : il recopiait CITlab ligne par ligne. Les mots remplacés
       sont soulignés dans la visionneuse.`,
+    "m.read.multi": `<strong>Huit lectures par ligne</strong> (dès le 16.11.2026) : outre CITlab, sept modèles lisent sur UBELIX chaque
+      ligne de Transkribus : kraken CATMuS Medieval, TRIDIS v2, CREMMA Medieval et Medieval Latin/French (développé), ainsi que
+      TrOCR medieval-escriptmask et deux modèles TrOCR entraînés sur CATMuS (base, cursiva). La lecture combinée est un vote
+      majoritaire mot à mot : la base est la lecture la plus proche de toutes les autres ; chaque modèle vote avec un poids calculé
+      d’après son accord avec les autres dans le même volume (un modèle qui lit mal cette main pèse peu). On affiche la forme d’un
+      modèle qui développe les abréviations. Les mots qui obtiennent moins de la moitié des voix sont soulignés en pointillé. Tant
+      que les huit lectures manquent, la règle prudente à deux lecteurs ci-dessous s’applique.`,
+    "m.ner.v2": `<strong>Entités dans tout le corpus</strong> (dès le 16.11.2026) : personnes, lieux, diocèses et institutions sont relevés
+      par qwen3.8 dans le même appel que le régeste, avec la graphie du texte ; les mentions d’enregistrement (scribes) et le pape
+      lui-même sont exclus. <strong>Liens</strong> seulement en cas de correspondance identique ou très probable : dans le corpus,
+      même forme normalisée du nom (ou graphie presque identique avec le même diocèse ou la même fonction) ; vers l’extérieur, Human
+      Lineage (correspondance que le fichier d’autorité donne comme univoque, dates compatibles ; de là Wikidata et le DHS), la SSRQ
+      et le registre de Königsfelden (forme exacte du nom, un seul candidat, époque compatible) ; pour les lieux Königsfelden et
+      Wikidata (nom exact, localité en CH/FR/IT/DE ; DHS par son numéro) ; pour les diocèses une liste fixe des adjectifs latins.
+      Résultat : <a href="register.html">Index</a>. Le test sur 40 entrées ci-dessous reste comme point de départ.`,
     "m.read.example": "Exemple côte à côte", "m.read.view": "Voir l’image", "m.read.half": "Demi-page",
     "m.read.left": "gauche", "m.read.right": "droite", "m.read.dev": "écart", "m.read.trunc": "interrompue",
     "m.h.ner": "Entités et index (test)",
@@ -340,7 +404,7 @@ const I18N = {
     "act.indulgence": "Indulgentia", "act.absolution": "Absolutio", "act.confirmation": "Confirmatio", "act.appointment": "Nominatio ad officium",
     "act.licence": "Licentia / facultas", "act.exemption": "Exemptio", "act.commission": "Commissio / mandatum",
     "act.union": "Unio / incorporatio", "act.protection": "Protectio", "act.safe_conduct": "Salvus conductus", "act.other": "aliud",
-    "nav.vols": "Tomi", "nav.entries": "Litterae", "nav.register": "Index (experimentum)", "nav.method": "Ratio et experimenta",
+    "nav.vols": "Tomi", "nav.entries": "Litterae", "nav.register": "Index", "nav.method": "Ratio et experimenta",
     "vol": "Tomus", "img": "Imago", "imgs": "imagines", "lines": "versus", "line": "Versus", "entries": "litterae",
     "badge.auto": "prima lectio machinalis", "badge.short": "machinaliter",
     "flag.ok": "✓ annus pont.", "flag.ok.t": "Annus pontificatus cum die congruit",
@@ -368,6 +432,7 @@ const I18N = {
     "title.band": "Tomus {v}, imago {p}",
     "band.prev": "Imago prior", "band.next": "Imago sequens",
     "band.reading": "Lectio", "r.k": "Coniuncta (CITlab + CATMuS)", "r.t": "CITlab (HTR Transkribus)",
+    "r.k.multi": "Coniuncta ({n} lectiones)", "r.unsure": "Lectores dissentiunt: incertum", "r.note.k.multi": "Lectio plurium; punctis notata: lectores dissentiunt.", "r.note.line": "Lectio versuum unius exemplaris.",
     "r.c": "CATMuS Medieval (kraken, diplomatica)", "r.page": "{model} (lectio paginae, specimen)", "r.missing": "– nondum lecta",
     "r.fromc": "ex CATMuS sumptum", "r.left": "pagina sinistra", "r.right": "pagina dextra",
     "r.note.k": "Linea subducta: verba quae CATMuS praebet.", "r.note.k.none": "Nondum lectio CATMuS exstat: ostenditur CITlab.",
@@ -386,8 +451,23 @@ const I18N = {
       anno pontificatus confertur.`,
     "ent.onlyBad": "tantum «inspiciendum»", "ent.count": "{n} ex {total} litteris",
     "ent.th": ["Num.", "Imago", "Dies", "", "Locus", "Initium · clausula datae (machinaliter)"],
-    "title.register": "Index (experimentum)",
-    "reg.h1": "Index", "reg.badge": "experimentum, machinaliter",
+    "title.register": "Index",
+    "reg.h1": "Index", "reg.badge": "machinaliter",
+    "reg.kind.dioceses": "Dioeceses", "reg.onlyLinked": "tantum coniuncta", "reg.onlyMulti": "in pluribus litteris",
+    "reg.th2": ["Nomen", "Formae in textu", "Notae", "Nexus", "Litterae"],
+    "reg.grade.identical": "idem", "reg.grade.very_likely": "valde verisimile",
+    "reg.grade.merged": "ex formis paene eisdem cum eadem dioecesi vel eodem officio coniunctum (valde verisimile)",
+    "reg.more": "{n} plura: filtro utere",
+    "reg.stats2": "{p} personae ({pl} coniunctae) · {o} loca ({ol} coniuncta) · {d} dioeceses ({dl} coniunctae) · {i} instituta",
+    "reg.lede2": `Personae, loca, dioeceses, instituta, quae qwen3.8 in regestis conscribendis ex singulis litteris excerpsit. Nomina
+      eadem per totum corpus coniunguntur. Nexus fiunt cum indice Campi Regis (Königsfelden), cum tabula personarum SSRQ, cum HLS,
+      Wikidata, Human Lineage, sed tantum ubi res <strong>eadem</strong> vel <strong>valde verisimilis</strong> est.`,
+    "reg.note2": `<strong>Machinaliter, non recognitum.</strong> «idem»: eadem forma nominis normata, unus candidatus, tempora
+      congruunt. «valde verisimile» (≈): forma paene eadem cum eadem dioecesi vel eodem officio, vel candidatus quem ipsa tabula
+      auctoritatis univocum declarat, temporibus congruentibus. Cetera non coniunguntur; error lectionis in nomine igitur potius
+      nexum impedit quam falsum facit.`,
+    "reg.sources": `Fontes nexuum: Königsfelden (Urkunden und Akten des Klosters Königsfelden), SSRQ (Sammlung Schweizerischer
+      Rechtsquellen), HLS (Historisches Lexikon der Schweiz), Wikidata, Human Lineage (CC BY-SA 4.0).`,
     "reg.lede": `Personae, loca, instituta, quae qwen3.8 (GPUStack Universitatis Bernensis) ex selectis litteris extraxit, nulla
       recognitione adhibita. Fundamentum est textus HTR mendosus; forma «normalis» a machina proficiscitur et saepe
       coniectura est. Index ostendit quid haec ratio praestare possit, nec instrumentum ad laborandum est.`,
@@ -431,6 +511,21 @@ const I18N = {
       rarum est; nomina tantum verbis frequentissimis, formae truncatae numquam. Sic «Basler» in «Basilee», «as audienciam» in
       «ad audienciam», «courra» in «contra» mutatur. Exemplar linguae (qwen3.8) ut arbiter probatum et reiectum est: CITlab
       versum post versum exscripsit. Verba substituta in inspectore linea subducuntur.`,
+    "m.read.multi": `<strong>Octo lectiones in singulos versus</strong> (a die 16 Novembris 2026): praeter CITlab septem exemplaria in UBELIX
+      quemque versum Transkribus legunt: kraken CATMuS Medieval, TRIDIS v2, CREMMA Medieval, Medieval Latin/French (resolutum),
+      atque TrOCR medieval-escriptmask et duo exemplaria TrOCR in CATMuS exercita (base, cursiva). Lectio coniuncta est suffragium
+      plurium verbum post verbum: fundamentum est lectio ceteris proxima; quodque exemplar suffragatur pondere ex consensu cum
+      ceteris in eodem tomo computato (exemplar quod hanc manum male legit, parum valet). Ostenditur forma exemplaris compendia
+      resolventis. Verba quae minus quam dimidiam partem suffragiorum habent, punctis subducuntur. Donec octo lectiones adsint,
+      cauta regula duorum lectorum infra posita valet.`,
+    "m.ner.v2": `<strong>Nomina per totum corpus</strong> (a die 16 Novembris 2026): personas, loca, dioeceses, instituta qwen3.8 eodem
+      actu quo regestum ex unaquaque littera excerpit, cum forma textus; notae registrationis (scriptores) et ipse papa excluduntur.
+      <strong>Nexus</strong> tantum ubi res eadem vel valde verisimilis est: intra corpus eadem forma nominis normata (vel forma
+      paene eadem cum eadem dioecesi vel eodem officio); extra cum Human Lineage (candidatus quem tabula ipsa univocum declarat,
+      temporibus congruentibus; inde Wikidata et HLS), cum SSRQ et indice Campi Regis (forma nominis exacta, unus candidatus, tempus
+      congruens); loca cum Campo Regis et Wikidata (nomen exactum, locus in CH/FR/IT/DE; HLS per numerum); dioeceses per indicem
+      fixum adiectivorum Latinorum. Effectus: <a href="register.html">Index</a>. Experimentum in 40 litteris infra ut initium
+      manet.`,
     "m.read.example": "Exemplum iuxtapositum", "m.read.view": "Imaginem videre", "m.read.half": "Dimidia pagina",
     "m.read.left": "sinistra", "m.read.right": "dextra", "m.read.dev": "discr.", "m.read.trunc": "abrupta",
     "m.h.ner": "Nomina et index (experimentum)",

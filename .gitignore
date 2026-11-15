@@ -9,3 +9,7 @@ data/llm/date_test_v2/
 .DS_Store
 data/combined/
 data/regests/*.tmp
+data/lines/
+data/nel/cache/
+data/auto/
+data/regests_test/

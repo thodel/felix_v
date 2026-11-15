@@ -12,7 +12,7 @@ from __future__ import annotations
 import json
 import re
 import sys
-from collections import defaultdict
+from collections import Counter, defaultdict
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -53,19 +53,34 @@ def main() -> int:
         vol = json.loads(vf.read_text())
         v = vol["vol"]
         pages = []
-        catmus_vol = {}  # page -> CATMuS text per site line (same order as the site's lines)
-        n_cat = n_comb = 0
+        # line readers: UBELIX readers in data/lines/<reader>/ (by line id); the old gateway CATMuS
+        # run (data/catmus, by line index) only where UBELIX has no CATMuS for the page
+        reader_names = sorted(p.name for p in (ROOT / "data/lines").iterdir() if p.is_dir()) if (ROOT / "data/lines").exists() else []
+        per_reader = {n: {} for n in reader_names}
+        n_comb = 0
         for p in vol["pages"]:
             stem = f"{vol['docId']}_p{p['n']:04d}"
-            cat_f, comb_f = ROOT / "data/catmus" / f"{stem}.json", ROOT / "data/combined" / f"{stem}.json"
-            cat = [(l.get("text") or "").strip() for l in json.loads(cat_f.read_text())["lines"]] if cat_f.exists() else None
-            n_all = sum(len(r["lines"]) for r in p["regions"])
-            if cat is not None and len(cat) != n_all:
-                cat = None  # line lists disagree: no alignment, no CATMuS for this page
-            comb = {}
-            if comb_f.exists() and cat is not None:
-                comb = {l["i"]: l for l in json.loads(comb_f.read_text())["lines"]}
-            regions, cat_lines, i = [], [], 0
+            ids = [l["id"] for r in p["regions"] for l in r["lines"]]
+            got = {}
+            for n in reader_names:
+                f = ROOT / "data/lines" / n / f"{stem}.json"
+                if f.exists():
+                    got[n] = {l["id"]: (l.get("text") or "").strip() for l in json.loads(f.read_text())["lines"]}
+            if "kraken-catmus_medieval" not in got:
+                cf = ROOT / "data/catmus" / f"{stem}.json"
+                if cf.exists():
+                    cl = [(l.get("text") or "").strip() for l in json.loads(cf.read_text())["lines"]]
+                    if len(cl) == len(ids):
+                        got["kraken-catmus_medieval"] = dict(zip(ids, cl))
+                        per_reader.setdefault("kraken-catmus_medieval", {})
+            comb_f = ROOT / "data/combined" / f"{stem}.json"
+            comb, comb_multi = {}, False
+            if comb_f.exists():
+                cj = json.loads(comb_f.read_text())
+                comb_multi = str(cj.get("version", "")).startswith("combine_multi")
+                comb = {l["i"]: l for l in cj["lines"]}
+            regions, i = [], 0
+            texts = {n: [] for n in got}
             for r in p["regions"]:
                 # only lines with text: the numbering then equals segment.py's line index + 1
                 lines = []
@@ -75,22 +90,34 @@ def main() -> int:
                         row = {"t": t, "b": l["box"]}
                         k = comb.get(i)
                         if k and k["text"] != t:
-                            row["k"] = [k["text"], k["c"]]  # combined reading, only where it differs from CITlab
+                            # combined reading, only where it differs from CITlab:
+                            # [text, spans, 1] spans = uncertain words (multi-reader vote)
+                            # [text, spans]    spans = words taken from CATMuS (two-reader rule)
+                            row["k"] = [k["text"], k["low"], 1] if comb_multi else [k["text"], k.get("c", [])]
                             n_comb += 1
                         lines.append(row)
-                        cat_lines.append(cat[i] if cat is not None else None)
+                        for n in got:
+                            texts[n].append(got[n].get(l["id"], ""))
                     i += 1
                 if lines:
                     regions.append({"l": lines})
             pg = {"n": p["n"], "k": p["key"], "w": p["w"], "h": p["h"], "r": regions}
-            if cat is not None:
-                pg["cm"] = 1  # CATMuS and combined reading exist for this page
-                catmus_vol[p["n"]] = cat_lines
-                n_cat += 1
+            if got:
+                pg["rd"] = sorted(got)
+            if comb:
+                pg["cm"] = 2 if comb_multi else 1
+            for n in got:
+                per_reader[n][p["n"]] = texts[n]
             pages.append(pg)
         (OUT / f"vol{v}.json").write_text(json.dumps({"vol": v, "docId": vol["docId"], "pages": pages},
                                                      ensure_ascii=False, separators=(",", ":")))
-        (OUT / f"catmus{v}.json").write_text(json.dumps(catmus_vol, ensure_ascii=False, separators=(",", ":")))
+        for n, data in per_reader.items():
+            if data:
+                (OUT / f"read-{n}-{v}.json").write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")))
+        old = OUT / f"catmus{v}.json"
+        if old.exists():
+            old.unlink()
+        n_cat = sum(1 for pg in pages if pg.get("rd"))
         ents = json.loads((EXP / f"entries_vol{v}.json").read_text())
         compact = []
         prev = None
@@ -129,7 +156,8 @@ def main() -> int:
         n_lines = sum(len(r["l"]) for p in pages for r in p["r"])
         summary.append({
             "vol": v, "docId": vol["docId"], "title": vol["title"], "pages": len(pages), "lines": n_lines,
-            "catmus_pages": n_cat, "combined_changed_lines": n_comb,
+            "reader_pages": n_cat, "combined_changed_lines": n_comb,
+            "readers": {n: len(d) for n, d in per_reader.items() if d},
             "thumb": max(pages[len(pages) // 4: len(pages) // 2] or pages, key=lambda p: sum(len(r["l"]) for r in p["r"]))["k"], "entries": len(compact),
             "dated": sum(1 for c in compact if c["d"].get("iso")),
             "checked": sum(1 for c in compact if c["d"].get("check") == "ok"),
@@ -172,6 +200,34 @@ def main() -> int:
                **{k: sorted(({"name": n, "refs": refs} for n, refs in v.items()), key=lambda x: x["name"].lower())
                   for k, v in reg.items()}}
         (OUT / "register.json").write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")))
+
+    # linked entities (scripts/nel.py) for the register page
+    ent_f = ROOT / "data/nel/entities.json"
+    if ent_f.exists():
+        starts = {}
+        for v_ in range(1, 9):
+            ef = OUT / f"entries{v_}.json"
+            if ef.exists():
+                for e in json.loads(ef.read_text()):
+                    starts[e["id"]] = [v_] + e["s"]
+        out = []
+        for c in json.loads(ent_f.read_text()):
+            ms = c["mentions"]
+            names = Counter((m.get("name") or m.get("as_written") or "").strip() for m in ms)
+            label = c["mentions"][0].get("seat") or names.most_common(1)[0][0]
+            def top(field):
+                return [x for x, _ in Counter(m.get(field) for m in ms if m.get(field)).most_common(3)]
+            out.append({"id": c["id"], "kind": c["kind"], "label": label, "grade": c["grade"],
+                        "forms": sorted({m.get("as_written") for m in ms if m.get("as_written")})[:12],
+                        "roles": top("role"), "offices": top("office"), "dioc": top("diocese"), "types": top("type"),
+                        "links": [{k: l.get(k) for k in ("source", "id", "label", "grade", "url", "dates")} for l in c["links"]],
+                        "entries": sorted({m["entry"] for m in ms}),
+                        "at": {m["entry"]: starts.get(m["entry"]) for m in ms}})
+        out.sort(key=lambda x: (-len(x["entries"]), x["label"].lower()))
+        (OUT / "entities.json").write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")))
+        rep = ROOT / "data/nel/report.json"
+        if rep.exists():
+            (OUT / "nel_report.json").write_text(rep.read_text())
 
     comp = ROOT / "data/readings/compare.json"
     if comp.exists():

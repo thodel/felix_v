@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bullarium Felix’ V.</title>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=6">
+<link rel="stylesheet" href="style.css?v=7">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.js"></script>
 </head>
 <body>
@@ -36,8 +36,8 @@
   </div>
   <div id="strip" class="filmstrip" data-i18n-attr="aria-label:band.strip"></div>
 </main>
-<script src="i18n.js?v=6"></script>
-<script src="common.js?v=6"></script>
+<script src="i18n.js?v=7"></script>
+<script src="common.js?v=7"></script>
 <script>
 header("");
 const q = new URLSearchParams(location.search);
@@ -108,17 +108,35 @@ function lineAt(pt) { // image point -> line number (box containing it, else nea
 
 // ---- readings -------------------------------------------------------------------------------
 // line readings: k = combined (default), t = CITlab, c = CATMuS; page readings: any model in pagereadings.json
-let READ = q.get("r") || (() => { try { return localStorage.getItem("felix-reading"); } catch (e) { return null; } })() || "k";
-let CATM = null, PAGEREAD = {};
+let READ = (q.get("r") === "c" ? "l:kraken-catmus_medieval" : q.get("r")) || (() => { try { return localStorage.getItem("felix-reading"); } catch (e) { return null; } })() || "k";
+let PAGEREAD = {}, SUMMARY_READERS = [];
+
+const READER_LABEL = {
+  "kraken-catmus_medieval": "kraken · CATMuS Medieval", "kraken-tridis_v2": "kraken · TRIDIS v2",
+  "kraken-cremma_medieval": "kraken · CREMMA Medieval", "kraken-medieval_latin_french_expanded": "kraken · Latin/French expanded",
+  "trocr-medieval-escriptmask": "TrOCR · medieval escriptmask", "trocr-catmus-base": "TrOCR · CATMuS base",
+  "trocr-catmus-cursiva": "TrOCR · CATMuS cursiva",
+};
+const READFILES = {}; // reader -> {page: [text per line]}, loaded on demand
 
 function readersFor(page) {
   const opts = [
-    { id: "k", label: t("r.k"), ok: true },
+    { id: "k", label: page.cm === 2 ? t("r.k.multi", { n: (page.rd || []).length + 1 }) : t("r.k"), ok: true },
     { id: "t", label: t("r.t"), ok: true },
-    { id: "c", label: t("r.c"), ok: !!page.cm },
   ];
+  const all = Object.keys(READER_LABEL);
+  for (const n of all) opts.push({ id: "l:" + n, label: READER_LABEL[n], ok: (page.rd || []).includes(n) });
   for (const m of Object.keys(PAGEREAD[`${V}:${page.n}`] || {})) opts.push({ id: "p:" + m, label: t("r.page", { model: m }), ok: true });
-  return opts;
+  return opts.filter(o => o.ok || o.id.startsWith("l:") && SUMMARY_READERS.includes(o.id.slice(2)));
+}
+
+function markLow(text, spans) { // words the readers disagree on
+  let out = "", pos = 0;
+  for (const [a, b] of spans || []) {
+    out += esc(text.slice(pos, a)) + `<mark class="unsure" title="${t("r.unsure")}">${esc(text.slice(a, b))}</mark>`;
+    pos = b;
+  }
+  return out + esc(text.slice(pos));
 }
 
 function markC(text, spans) { // words taken over from CATMuS
@@ -137,7 +155,7 @@ async function renderText(page) {
   rs.innerHTML = opts.map(o => `<option value="${esc(o.id)}"${o.ok ? "" : " disabled"}${o.id === cur ? " selected" : ""}>${esc(o.label)}${o.ok ? "" : " " + t("r.missing")}</option>`).join("");
   const note = document.getElementById("readnote");
   const pt = document.getElementById("pane-text");
-  if (cur === "c" && !CATM) CATM = await getJSON(`data/catmus${V}.json`).catch(() => ({}));
+  if (cur.startsWith("l:") && !READFILES[cur.slice(2)]) READFILES[cur.slice(2)] = await getJSON(`data/read-${cur.slice(2)}-${V}.json`).catch(() => ({}));
   if (vol.pages[P - 1] !== page) return; // the viewer moved on while CATMuS was loading
   if (cur.startsWith("p:")) { // page reading: two halves, no line geometry
     const pr = PAGEREAD[`${V}:${page.n}`][cur.slice(2)];
@@ -147,13 +165,14 @@ async function renderText(page) {
       <pre class="pageread">${esc(pr[sd])}</pre></div>`).join("");
     return;
   }
-  note.textContent = cur === "k" ? (page.cm ? t("r.note.k") : t("r.note.k.none")) : cur === "c" ? t("r.note.c") : "";
-  const catLines = cur === "c" ? (CATM[page.n] || []) : null;
+  note.textContent = cur === "k" ? (page.cm === 2 ? t("r.note.k.multi") : page.cm ? t("r.note.k") : t("r.note.k.none"))
+    : cur.startsWith("l:") ? t("r.note.line") : "";
+  const catLines = cur.startsWith("l:") ? (READFILES[cur.slice(2)][page.n] || []) : null;
   let k = 0;
   flat = [];
   const html = linesOf(page).map((r, ri) => `<div class="region${r.marg ? " marg" : ""}">${r.lines.map((l, li) => {
       const n = ++k; flat.push({ ri, li, b: l.b, n });
-      const body = cur === "c" ? esc(catLines[n - 1] ?? "") : cur === "k" && l.k ? markC(l.k[0], l.k[1]) : esc(l.t);
+      const body = catLines ? esc(catLines[n - 1] ?? "") : cur === "k" && l.k ? (l.k[2] ? markLow(l.k[0], l.k[1]) : markC(l.k[0], l.k[1])) : esc(l.t);
       return `<span class="ln" tabindex="0" data-n="${n}" title="${t("band.lineTitle", { n })}"><span class="no">${n}</span>${body}</span>`; }).join("")}</div>`).join("");
   pt.innerHTML = html || `<p class="muted">${t("band.notext")}</p>`;
   if (sel) { const s = sel; sel = null; select(s, { zoom: false }); }
@@ -196,6 +215,7 @@ function go(p) { P = Math.max(1, Math.min(vol.pages.length, p)); render(); }
 
 (async () => {
   const summary = await getJSON("data/summary.json");
+  SUMMARY_READERS = [...new Set(summary.flatMap(v => Object.keys(v.readers || {})))];
   const volSel = document.getElementById("vol");
   volSel.innerHTML = summary.map(v => `<option value="${v.vol}">${t("vol")} ${ROMAN[v.vol]}</option>`).join("");
   volSel.value = V; volSel.onchange = () => { location.search = `?v=${volSel.value}&p=1&lang=${LANG}`; };

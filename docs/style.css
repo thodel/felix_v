@@ -92,3 +92,6 @@ pre.pageread { white-space: pre-wrap; font-family: "Source Serif 4", Georgia, se
 .regest .rmeta { display: flex; flex-direction: column; gap: 2px; font-family: system-ui, sans-serif; font-size: .82rem; color: var(--muted); }
 .regest .rmeta b { color: var(--fg); font-weight: 600; }
 button.more { margin: 14px 0; font: inherit; padding: 6px 14px; border: 1px solid var(--line); background: var(--card); color: var(--fg); border-radius: 4px; cursor: pointer; }
+mark.unsure { background: none; color: inherit; border-bottom: 2px dotted var(--warn); }
+a.lnk, span.lnk { display: inline-block; font-family: system-ui, sans-serif; font-size: .8rem; text-decoration: none; margin: 1px 0; }
+.lnk .src { background: var(--accent-soft); color: var(--accent); border-radius: 3px; padding: 0 5px; font-weight: 600; }

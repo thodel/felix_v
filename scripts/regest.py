@@ -16,6 +16,7 @@ from __future__ import annotations
 import argparse
 import concurrent.futures as cf
 import json
+import os
 import random
 import re
 import sys
@@ -28,8 +29,8 @@ from segment import linear  # noqa: E402
 ROOT = Path(__file__).resolve().parent.parent
 EXP = ROOT / "data/export"
 COMB = ROOT / "data/combined"
-OUT = ROOT / "data/regests"
-PROMPT_VERSION = "regest_v1"
+OUT = ROOT / os.environ.get("REGEST_OUT", "data/regests")
+PROMPT_VERSION = "regest_v2"
 MAX_CHARS = 14000
 
 ACT_TYPES = ["provision", "collation", "expectative", "dispensation", "indulgence", "absolution", "confirmation",
@@ -50,14 +51,16 @@ Return JSON only:
  "value": "yearly value if stated, e.g. 24 libre turonenses parvorum" or null,
  "vacancy": "how the benefice fell vacant, e.g. per obitum Petri X" or null,
  "executors": ["…"],
- "other_persons": [{{"name": ..., "role": ...}}],
- "places": ["places and dioceses named, in Latin as normalised as the text allows"],
+ "persons": [{{"as_written": "exactly as in the text", "name": "Latin nominative, e.g. Petrus de Bogio", "role": "addressee|beneficiary|petitioner|predecessor|resigner|executor|official|other", "office": "e.g. canonicus, rector, abbas" or null, "institution": "e.g. ecclesia Gebennensis" or null, "diocese": "Latin adjective" or null}}],
+ "places": [{{"as_written": "exactly as in the text", "name": "Latin form, e.g. Lausanna", "modern": "modern name if you are sure, else null", "type": "city|village|parish|diocese|region|other"}}],
+ "institutions": [{{"as_written": "exactly as in the text", "name": "e.g. monasterium sancti Mauricii Agaunensis", "type": "cathedral|church|chapel|monastery|priory|hospital|chapter|university|order|other", "place": "Latin" or null}}],
  "several_letters": false,
  "confidence": "high" | "medium" | "low",
  "regest_de": "German regest, 1-3 sentences, in the style of a printed calendar: Felix V. … (who, what, for whom, which benefice/matter, conditions). No date, it is shown separately. Names in their Latin form.",
  "regest_fr": "the same in French",
  "regest_la": "the same in Latin, in the abbreviated style of a papal register calendar (e.g. 'Guillelmo abbati mon. … providetur de …')"
 }}
+Entities: every person, place and church institution named in the letter, each once. "persons" lists ALL named persons again, INCLUDING the addressee, the beneficiary, executors, predecessors and anyone else named, with their exact spelling in the text; it is empty only if the letter names nobody. Do NOT list the pope (Felix V) and do NOT list the registration note at the end (tally numbers and the scribe's name, e.g. "xx ep̄us Brosseran", "Jo. Benenati"): those are chancery officials, not parties to the act. Dioceses named only as an adjective (e.g. "Lausanensis diocesis") go into places with type "diocese".
 Use null where the text does not say. Write the three regests from the same facts; none may contain more than the others.
 
 Entry:
@@ -110,7 +113,7 @@ def regest_one(e: dict, text: str, d: dict) -> dict:
 
 
 def call_json(prompt: str):
-    res = call(prompt, 3072)
+    res = call(prompt, 4096)
     return res.get("data"), {k: res.get(k) for k in ("ok", "finish", "seconds", "error")}
 
 
