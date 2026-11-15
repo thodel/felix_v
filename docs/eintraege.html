@@ -3,33 +3,33 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Einträge – Bullarium Felix’ V.</title>
+<title>Bullarium Felix’ V.</title>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=3">
+<link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 <main>
-  <h1>Einträge <span class="badge-auto">automatisch segmentiert</span></h1>
-  <p class="lede">Ein Eintrag reicht hier vom Ende einer Datumszeile («Datum Basilee …») bis zum Ende der nächsten.
-    Das Datum hat qwen3.8 aus der erkannten Datumszeile gelesen; das Tagesdatum (römische Zählung, Jahr nach Weihnachtsstil)
-    ist daraus berechnet und gegen das Pontifikatsjahr geprüft.</p>
+  <h1><span data-i18n="ent.h1"></span> <span class="badge-auto" data-i18n="ent.badge"></span></h1>
+  <p class="lede" data-i18n="ent.lede"></p>
   <div class="toolbar" style="padding-left:0">
-    <select id="vol" aria-label="Band"></select>
-    <label><input type="checkbox" id="only-bad"> nur «prüfen»</label>
+    <select id="vol" data-i18n-attr="aria-label:vol"></select>
+    <label><input type="checkbox" id="only-bad"> <span data-i18n="ent.onlyBad"></span></label>
     <span id="count" class="muted"></span>
   </div>
-  <div class="tablewrap"><table><thead><tr><th>Nr.</th><th>Aufnahme</th><th>Datum</th><th></th><th>Ort</th><th>Anfang · Datumszeile (automatisch)</th></tr></thead>
-    <tbody id="rows"><tr><td colspan="6">Lade …</td></tr></tbody></table></div>
+  <div class="tablewrap"><table><thead><tr data-i18n-th="ent.th"></tr></thead>
+    <tbody id="rows"><tr><td colspan="6" data-i18n="loading"></td></tr></tbody></table></div>
 </main>
-<script src="common.js?v=3"></script>
+<script src="i18n.js?v=4"></script>
+<script src="common.js?v=4"></script>
 <script>
 header("eintraege.html");
+setTitle("title.entries");
 const q = new URLSearchParams(location.search);
 let V = +(q.get("v") || 1), data = [];
 function draw() {
   const bad = document.getElementById("only-bad").checked;
   const rows = data.filter(e => !bad || e.d.check === "mismatch");
-  document.getElementById("count").textContent = `${rows.length} von ${data.length} Einträgen`;
+  document.getElementById("count").textContent = t("ent.count", { n: num(rows.length), total: num(data.length) });
   document.getElementById("rows").innerHTML = rows.map(e => `<tr>
     <td class="mono">${e.id}</td>
     <td><a href="band.html?v=${V}&p=${e.s[0]}&l=${e.s[1] + 1}">${e.s[0]}${e.e[0] !== e.s[0] ? "–" + e.e[0] : ""}</a></td>
@@ -39,12 +39,12 @@ function draw() {
 }
 (async () => {
   const s = await getJSON("data/summary.json");
-  const sel = document.getElementById("vol");
-  sel.innerHTML = s.map(v => `<option value="${v.vol}">Band ${ROMAN[v.vol]}</option>`).join("");
-  sel.value = V; sel.onchange = () => { location.search = `?v=${sel.value}`; };
+  const volSel = document.getElementById("vol");
+  volSel.innerHTML = s.map(v => `<option value="${v.vol}">${t("vol")} ${ROMAN[v.vol]}</option>`).join("");
+  volSel.value = V; volSel.onchange = () => { location.search = `?v=${volSel.value}&lang=${LANG}`; };
   document.getElementById("only-bad").onchange = draw;
   data = await getJSON(`data/entries${V}.json`); draw();
-})();
+})().catch(e => { document.getElementById("rows").innerHTML = `<tr><td colspan="6">${t("error")}: ${esc(e.message)}</td></tr>`; });
 </script>
 </body>
 </html>

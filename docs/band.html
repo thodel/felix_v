@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Band – Bullarium Felix’ V.</title>
+<title>Bullarium Felix’ V.</title>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=3">
+<link rel="stylesheet" href="style.css?v=4">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.js"></script>
 </head>
 <body>
@@ -14,25 +14,27 @@
     <div class="img"><div id="osd"></div></div>
     <div class="side">
       <div class="toolbar">
-        <select id="vol" aria-label="Band"></select>
-        <button id="prev" aria-label="Vorherige Aufnahme">‹</button>
-        <label>Aufnahme <input id="pg" type="number" min="1" aria-label="Aufnahme"></label>
+        <select id="vol" data-i18n-attr="aria-label:vol"></select>
+        <button id="prev" data-i18n-attr="aria-label:band.prev;title:band.prev">‹</button>
+        <label><span data-i18n="img"></span> <input id="pg" type="number" min="1" data-i18n-attr="aria-label:img"></label>
         <span id="of" class="muted"></span>
-        <button id="next" aria-label="Nächste Aufnahme">›</button>
-        <label title="Alle erkannten Zeilen im Bild einblenden"><input type="checkbox" id="allbox"> Zeilen im Bild</label>
-        <a id="tklink" target="_blank" rel="noopener" style="margin-left:auto">in Transkribus</a>
+        <button id="next" data-i18n-attr="aria-label:band.next;title:band.next">›</button>
+        <label data-i18n-attr="title:band.allbox.t"><input type="checkbox" id="allbox"> <span data-i18n="band.allbox"></span></label>
+        <a id="tklink" target="_blank" rel="noopener" style="margin-left:auto" data-i18n="band.inTk"></a>
       </div>
       <div class="tabs" role="tablist">
-        <button id="t-text" class="on" role="tab">Text <span class="badge-auto">automatisch</span></button>
-        <button id="t-ent" role="tab">Einträge auf dieser Aufnahme</button>
+        <button id="t-text" class="on" role="tab"><span data-i18n="band.tab.text"></span> <span class="badge-auto" data-i18n="badge.short"></span></button>
+        <button id="t-ent" role="tab" data-i18n="band.tab.ent"></button>
       </div>
+      <div class="muted" style="font-family:system-ui,sans-serif;font-size:.78rem;padding:4px 12px;border-bottom:1px solid var(--line)" data-i18n="band.help"></div>
       <div id="pane-text" class="pane" aria-live="polite"></div>
       <div id="pane-ent" class="pane" hidden></div>
     </div>
   </div>
-  <div id="strip" class="filmstrip" aria-label="Aufnahmen"></div>
+  <div id="strip" class="filmstrip" data-i18n-attr="aria-label:band.strip"></div>
 </main>
-<script src="common.js?v=3"></script>
+<script src="i18n.js?v=4"></script>
+<script src="common.js?v=4"></script>
 <script>
 header("");
 const q = new URLSearchParams(location.search);
@@ -64,7 +66,7 @@ function drawAllBoxes(page) {
   if (!document.getElementById("allbox").checked) return;
   for (const f of flat) {
     if (!f.b) continue;
-    const el = document.createElement("div"); el.className = "overlay-all"; el.title = `Zeile ${f.n}`;
+    const el = document.createElement("div"); el.className = "overlay-all"; el.title = `${t("line")} ${f.n}`;
     viewer.addOverlay(el, rectOf(f.b, page, 4));
   }
 }
@@ -75,7 +77,7 @@ function select(n, { zoom = true, scroll = true } = {}) { // n = 1-based line nu
   if (selOverlay) { viewer.removeOverlay(selOverlay); selOverlay = null; }
   const f = flat.find(x => x.n === n);
   sel = f ? n : null;
-  history.replaceState(null, "", `?v=${V}&p=${P}${sel ? "&l=" + sel : ""}`);
+  history.replaceState(null, "", `?v=${V}&p=${P}${sel ? "&l=" + sel : ""}&lang=${LANG}`);
   if (!f) return;
   const span = document.querySelector(`.ln[data-n="${n}"]`);
   if (span) { span.classList.add("sel"); if (scroll) span.scrollIntoView({ block: "center", behavior: "smooth" }); }
@@ -106,17 +108,17 @@ function render() {
   document.getElementById("pg").value = P;
   document.getElementById("of").textContent = `/ ${vol.pages.length}`;
   document.getElementById("tklink").href = `https://app.transkribus.org/collection/53095/doc/${vol.docId}/detail/${P}`;
-  history.replaceState(null, "", `?v=${V}&p=${P}`);
-  document.title = `Band ${ROMAN[V]}, Aufnahme ${P} – Bullarium Felix’ V.`;
+  history.replaceState(null, "", `?v=${V}&p=${P}&lang=${LANG}`);
+  setTitle("title.band", { v: ROMAN[V], p: P });
   iiifSource(page.k).then(src => { if (vol.pages[P - 1] === page) viewer.open(src); })
     .catch(() => viewer.open({ type: "image", url: TK(page.k) }));
   let k = 0;
   flat = [];
   const html = linesOf(page).map((r, ri) => `<div class="region${r.marg ? " marg" : ""}">${r.lines.map((l, li) => {
       const n = ++k; flat.push({ ri, li, b: l.b, n });
-      return `<span class="ln" tabindex="0" data-n="${n}" title="Zeile ${n}: im Bild zeigen"><span class="no">${n}</span>${esc(l.t)}</span>`; }).join("")}</div>`).join("");
+      return `<span class="ln" tabindex="0" data-n="${n}" title="${t("band.lineTitle", { n })}"><span class="no">${n}</span>${esc(l.t)}</span>`; }).join("")}</div>`).join("");
   const pt = document.getElementById("pane-text");
-  pt.innerHTML = html || `<p class="muted">Auf dieser Aufnahme hat die Erkennung keinen Text gefunden.</p>`;
+  pt.innerHTML = html || `<p class="muted">${t("band.notext")}</p>`;
   const byN = n => flat.find(x => x.n === n);
   pt.onmouseover = ev => { const s = ev.target.closest(".ln"); if (s) showBox(byN(+s.dataset.n).b, page); };
   pt.onmouseleave = () => showBox(null);
@@ -125,11 +127,11 @@ function render() {
   sel = null;
   const here = entries.filter(e => e.s[0] <= P && e.e[0] >= P);
   document.getElementById("pane-ent").innerHTML = here.length ? here.map(e => `
-    <div class="entry-card${e.s[0] === P ? " here" : ""}" data-p="${e.s[0]}" data-l="${e.s[1] + 1}" tabindex="0" style="cursor:pointer" title="Zum Anfang des Eintrags"><div><span class="d">${fmtDate(e.d) || "undatiert"}</span> ${dateFlag(e.d)}
+    <div class="entry-card${e.s[0] === P ? " here" : ""}" data-p="${e.s[0]}" data-l="${e.s[1] + 1}" tabindex="0" style="cursor:pointer" title="${t("band.toEntry")}"><div><span class="d">${fmtDate(e.d) || t("undated")}</span> ${dateFlag(e.d)}
       <span class="muted mono" style="float:right">${e.id}</span></div>
-      <div class="muted">Aufnahme ${e.s[0]}${e.e[0] !== e.s[0] ? "–" + e.e[0] : ""} · ${e.n} Zeilen${e.d.place ? " · " + esc(e.d.place) : ""}</div>
+      <div class="muted">${t("band.span", { from: e.s[0] + (e.e[0] !== e.s[0] ? "–" + e.e[0] : ""), n: e.n })}${e.d.place ? " · " + esc(e.d.place) : ""}</div>
       <div class="c">${esc(e.inc)} …</div>${e.cl ? `<div class="c">… ${esc(e.cl)}</div>` : ""}</div>`).join("")
-    : `<p class="muted">Keine Einträge erkannt.</p>`;
+    : `<p class="muted">${t("band.noent")}</p>`;
   document.getElementById("pane-ent").onclick = ev => {
     const c = ev.target.closest(".entry-card"); if (!c) return;
     const p = +c.dataset.p, l = +c.dataset.l;
@@ -144,9 +146,9 @@ function go(p) { P = Math.max(1, Math.min(vol.pages.length, p)); render(); }
 
 (async () => {
   const summary = await getJSON("data/summary.json");
-  const sel = document.getElementById("vol");
-  sel.innerHTML = summary.map(v => `<option value="${v.vol}">Band ${ROMAN[v.vol]}</option>`).join("");
-  sel.value = V; sel.onchange = () => { location.search = `?v=${sel.value}&p=1`; };
+  const volSel = document.getElementById("vol");
+  volSel.innerHTML = summary.map(v => `<option value="${v.vol}">${t("vol")} ${ROMAN[v.vol]}</option>`).join("");
+  volSel.value = V; volSel.onchange = () => { location.search = `?v=${volSel.value}&p=1&lang=${LANG}`; };
   [vol, entries] = await Promise.all([getJSON(`data/vol${V}.json`), getJSON(`data/entries${V}.json`)]);
   viewer = OpenSeadragon({ id: "osd", prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/images/", showNavigator: true, gestureSettingsMouse: { clickToZoom: false } });
   viewer.addHandler("open", () => { // open() clears overlays: redraw, then apply a deep-linked line
@@ -162,7 +164,7 @@ function go(p) { P = Math.max(1, Math.min(vol.pages.length, p)); render(); }
     if (n) { select(n, { zoom: false }); document.getElementById("t-text").click(); }
   });
   document.getElementById("allbox").onchange = () => drawAllBoxes(vol.pages[P - 1]);
-  document.getElementById("strip").innerHTML = vol.pages.map(p => `<img loading="lazy" data-p="${p.n}" src="${IIIF_IMG(p.k, ",108")}" alt="Aufnahme ${p.n}">`).join("");
+  document.getElementById("strip").innerHTML = vol.pages.map(p => `<img loading="lazy" data-p="${p.n}" src="${IIIF_IMG(p.k, ",108")}" alt="${t("img")} ${p.n}">`).join("");
   document.getElementById("strip").onclick = ev => { if (ev.target.dataset.p) go(+ev.target.dataset.p); };
   document.getElementById("prev").onclick = () => go(P - 1);
   document.getElementById("next").onclick = () => go(P + 1);
@@ -178,10 +180,10 @@ function go(p) { P = Math.max(1, Math.min(vol.pages.length, p)); render(); }
     }
   });
   const tabs = [["t-text", "pane-text"], ["t-ent", "pane-ent"]];
-  tabs.forEach(([t, p]) => document.getElementById(t).onclick = () => tabs.forEach(([t2, p2]) => {
-    document.getElementById(t2).classList.toggle("on", t2 === t); document.getElementById(p2).hidden = p2 !== p; }));
+  tabs.forEach(([tb, p]) => document.getElementById(tb).onclick = () => tabs.forEach(([t2, p2]) => {
+    document.getElementById(t2).classList.toggle("on", t2 === tb); document.getElementById(p2).hidden = p2 !== p; }));
   render();
-})().catch(e => { document.getElementById("pane-text").textContent = "Fehler beim Laden: " + e.message; });
+})().catch(e => { document.getElementById("pane-text").textContent = `${t("error")}: ${e.message}`; });
 </script>
 </body>
 </html>

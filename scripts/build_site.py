@@ -81,20 +81,33 @@ def main() -> int:
     if ner_dir.exists():
         reg = {"persons": defaultdict(list), "places": defaultdict(list), "institutions": defaultdict(list)}
         tested, summaries = [], {}
+        mentions = {k: 0 for k in reg}
+        not_verbatim = {k: 0 for k in reg}
+        role_other, secs = 0, []
         for f in sorted(ner_dir.glob("*.json")):
             r = json.loads(f.read_text())
             if not (r.get("ok") and r.get("data")):
                 continue
             tested.append(r["id"])
             summaries[r["id"]] = r["data"].get("summary")
+            secs.append(r.get("seconds") or 0)
+            src = (r.get("input") or "").lower()
             for kind in reg:
                 for ent in r["data"].get(kind) or []:
+                    mentions[kind] += 1
+                    written = (ent.get("name") or "").strip().lower()
+                    if written and written not in src:
+                        not_verbatim[kind] += 1
+                    if kind == "persons" and ent.get("role") == "other":
+                        role_other += 1
                     key = (ent.get("normalised") or ent.get("name") or "").strip()
                     if not key:
                         continue
                     reg[kind][key].append({"entry": r["id"], "as": ent.get("name"),
                                            **{k: ent.get(k) for k in ("role", "office", "diocese", "type", "place") if ent.get(k)}})
-        out = {"tested": tested, "summaries": summaries,
+        stats = {"tested": len(tested), "mentions": mentions, "not_verbatim": not_verbatim, "role_other": role_other,
+                 "median_seconds": round(sorted(secs)[len(secs) // 2]) if secs else None}
+        out = {"tested": tested, "summaries": summaries, "stats": stats,
                **{k: sorted(({"name": n, "refs": refs} for n, refs in v.items()), key=lambda x: x["name"].lower())
                   for k, v in reg.items()}}
         (OUT / "register.json").write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")))

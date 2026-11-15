@@ -75,3 +75,7 @@ code, .mono { font-family: ui-monospace, Menlo, monospace; font-size: .85em; }
   .viewer .side { border-left: 0; border-top: 1px solid var(--line); }
   .pane { max-height: 70vh; }
 }
+
+header.site .langs { margin-left: auto; font-family: system-ui, sans-serif; font-size: .85rem; color: var(--muted); }
+header.site .langs strong { color: var(--fg); }
+.toolbar input[type=checkbox] { width: auto; padding: 0; }
