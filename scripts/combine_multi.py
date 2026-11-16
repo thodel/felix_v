@@ -20,7 +20,7 @@ Per line:
 
 Output: data/combined/<docId>_p<NNNN>.json
   {"version", "readers": [...], "lines": [{"i", "text", "agree", "low": [[start,end],…]}]}
-  low = words whose winning share is < 0.5 (shown as uncertain in the viewer).
+  low = words whose winning share is < 0.35 (shown as uncertain in the viewer).
 """
 from __future__ import annotations
 
@@ -129,7 +129,7 @@ def combine_line(readings: dict[str, list[str]], weight: dict[str, float]) -> di
         nonlocal pos
         if out:
             pos += 1
-        if share < 0.5:
+        if share < 0.35:
             low.append([pos, pos + len(surf)])
         out.append(surf)
         pos += len(surf)

@@ -31,11 +31,12 @@ while true; do
   [ -z "$missing" ] && break
   if [ $resubmits -ge 2 ]; then log "still missing after $resubmits resubmits: $missing; going on with what is there"; break; fi
   # UBELIX maintenance 16.11.2026 06:30-17:00 CET: anything resubmitted starts after it
-  out=$(ub "cd $R && sbatch --begin=2026-11-16T17:30:00 readers.sbatch")
+  # start now, unless that falls inside a UBELIX maintenance window given in FELIX_BEGIN
+  out=$(ub "cd $R && sbatch ${FELIX_BEGIN:+--begin=$FELIX_BEGIN} readers.sbatch")
   newjob=$(echo "$out" | grep -o 'Submitted batch job [0-9]*' | grep -o '[0-9]*$')
   [ -z "$newjob" ] && fail "resubmit failed: $out"
   resubmits=$((resubmits + 1)); JOB=$newjob
-  log "missing pages for: $missing; resubmitted as job $JOB (starts after the maintenance)"
+  log "missing pages for: $missing; resubmitted as job $JOB"
 done
 
 log "copying readings from UBELIX"
