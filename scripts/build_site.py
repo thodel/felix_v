@@ -118,6 +118,7 @@ def main() -> int:
         if old.exists():
             old.unlink()
         n_cat = sum(1 for pg in pages if pg.get("rd"))
+        page_by_n = {pg["n"]: pg for pg in pages}
         ents = json.loads((EXP / f"entries_vol{v}.json").read_text())
         compact = []
         prev = None
@@ -131,6 +132,21 @@ def main() -> int:
             compact.append({"id": e["id"], "s": [e["start"]["page"], e["start"]["line"]], "e": [e["end"]["page"], e["end"]["line"]],
                             "n": e["lines"], "inc": first[:90], "cl": e["clause"], "d": d,
                             "m": [m["text"] for m in e["marg"]][:6]})
+            # preview: image key of the start page and the box around the entry's first lines there
+            sp = page_by_n.get(e["start"]["page"])
+            if sp:
+                flat = []  # (line, is_marginal) in site order; marginal regions as in the viewer
+                for r in sp["r"]:
+                    avg = sum(len(l["t"]) for l in r["l"]) / max(1, len(r["l"]))
+                    flat += [(l, len(r["l"]) <= 4 and avg < 28) for l in r["l"]]
+                first_l = e["start"]["line"]
+                last_l = e["end"]["line"] if e["end"]["page"] == e["start"]["page"] else len(flat) - 1
+                main = [l for l, marg in flat[first_l:last_l + 1] if not marg and l.get("b")]
+                boxes = [l["b"] for l in main[:8]]
+                if boxes:
+                    compact[-1]["pk"] = sp["k"]
+                    compact[-1]["bx"] = [min(b[0] for b in boxes), min(b[1] for b in boxes),
+                                         max(b[2] for b in boxes), max(b[3] for b in boxes)]
             all_entries[e["id"]] = compact[-1]
         (OUT / f"entries{v}.json").write_text(json.dumps(compact, ensure_ascii=False, separators=(",", ":")))
         regs = []

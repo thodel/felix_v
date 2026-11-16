@@ -69,6 +69,7 @@ const I18N = {
       Das Datum hat qwen3.8 aus der erkannten Datumszeile gelesen; das Tagesdatum (römische Zählung, Jahr nach
       Weihnachtsstil) ist daraus berechnet und gegen das Pontifikatsjahr geprüft.`,
     "ent.onlyBad": "nur «prüfen»", "ent.count": "{n} von {total} Einträgen",
+    "ent.open": "Klicken: Eintrag im Viewer öffnen", "ent.preview": "Anfang von {id} im Bild", "band.inentry": "Eintrag {id}: Zeilen hervorgehoben",
     "ent.th": ["Nr.", "Aufnahme", "Datum", "", "Ort", "Anfang · Datumszeile (automatisch)"],
     "title.register": "Register",
     "reg.h1": "Register", "reg.badge": "automatisch",
@@ -258,6 +259,7 @@ const I18N = {
       la date dans la clause reconnue ; le jour (comput romain, année selon le style de la Nativité) en est calculé, puis
       contrôlé par l’année de pontificat.`,
     "ent.onlyBad": "seulement « à vérifier »", "ent.count": "{n} sur {total} entrées",
+    "ent.open": "Cliquer : ouvrir l’entrée dans la visionneuse", "ent.preview": "Début de {id} sur l’image", "band.inentry": "Entrée {id} : lignes mises en évidence",
     "ent.th": ["N°", "Image", "Date", "", "Lieu", "Début · clause de date (automatique)"],
     "title.register": "Index",
     "reg.h1": "Index", "reg.badge": "automatique",
@@ -450,6 +452,7 @@ const I18N = {
       agnita qwen3.8 legit; dies mensis (more Romano computatus, anno a nativitate Domini incipiente) inde calculatur et cum
       anno pontificatus confertur.`,
     "ent.onlyBad": "tantum «inspiciendum»", "ent.count": "{n} ex {total} litteris",
+    "ent.open": "Preme: litteram in inspectore aperire", "ent.preview": "Initium {id} in imagine", "band.inentry": "Littera {id}: versus notati",
     "ent.th": ["Num.", "Imago", "Dies", "", "Locus", "Initium · clausula datae (machinaliter)"],
     "title.register": "Index",
     "reg.h1": "Index", "reg.badge": "machinaliter",

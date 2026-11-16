@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bullarium Felix’ V.</title>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=7">
+<link rel="stylesheet" href="style.css?v=8">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.js"></script>
 </head>
 <body>
@@ -36,13 +36,14 @@
   </div>
   <div id="strip" class="filmstrip" data-i18n-attr="aria-label:band.strip"></div>
 </main>
-<script src="i18n.js?v=7"></script>
-<script src="common.js?v=7"></script>
+<script src="i18n.js?v=8"></script>
+<script src="common.js?v=8"></script>
 <script>
 header("");
 const q = new URLSearchParams(location.search);
 let V = +(q.get("v") || 1), P = +(q.get("p") || 1), vol, entries, viewer, overlay, selOverlay, sel = null;
 let pendingLine = q.get("l") ? +q.get("l") : null; // deep link: 1-based line number on the opening
+let ENTRY = q.get("e"); // entry whose lines are highlighted (from the entry list)
 let flat = []; // [{ri, li, b, n}] in reading order for the current page
 
 function linesOf(page) { // flat list with region boundaries; region kind like segment.py
@@ -80,7 +81,7 @@ function select(n, { zoom = true, scroll = true } = {}) { // n = 1-based line nu
   if (selOverlay) { viewer.removeOverlay(selOverlay); selOverlay = null; }
   const f = flat.find(x => x.n === n);
   sel = f ? n : null;
-  history.replaceState(null, "", `?v=${V}&p=${P}${sel ? "&l=" + sel : ""}${READ !== "k" ? "&r=" + encodeURIComponent(READ) : ""}&lang=${LANG}`);
+  history.replaceState(null, "", `?v=${V}&p=${P}${sel ? "&l=" + sel : ""}${READ !== "k" ? "&r=" + encodeURIComponent(READ) : ""}${ENTRY ? "&e=" + ENTRY : ""}&lang=${LANG}`);
   if (!f) return;
   const span = document.querySelector(`.ln[data-n="${n}"]`);
   if (span) { span.classList.add("sel"); if (scroll) span.scrollIntoView({ block: "center", behavior: "smooth" }); }
@@ -175,14 +176,47 @@ async function renderText(page) {
       const body = catLines ? esc(catLines[n - 1] ?? "") : cur === "k" && l.k ? (l.k[2] ? markLow(l.k[0], l.k[1]) : markC(l.k[0], l.k[1])) : esc(l.t);
       return `<span class="ln" tabindex="0" data-n="${n}" title="${t("band.lineTitle", { n })}"><span class="no">${n}</span>${body}</span>`; }).join("")}</div>`).join("");
   pt.innerHTML = html || `<p class="muted">${t("band.notext")}</p>`;
+  markEntry(page);
   if (sel) { const s = sel; sel = null; select(s, { zoom: false }); }
+}
+
+function entryRange(page) { // 1-based line numbers of ENTRY on this page, or null
+  const e = ENTRY && entries.find(x => x.id === ENTRY);
+  if (!e || page.n < e.s[0] || page.n > e.e[0]) return null;
+  const n = page.r.reduce((a, r) => a + r.l.length, 0);
+  return [page.n === e.s[0] ? e.s[1] + 1 : 1, page.n === e.e[0] ? e.e[1] + 1 : n];
+}
+
+function markEntry(page) {
+  const rg = entryRange(page);
+  document.querySelectorAll(".ln.inentry").forEach(el => el.classList.remove("inentry"));
+  if (!rg) return;
+  document.querySelectorAll(".ln[data-n]").forEach(el => { const n = +el.dataset.n; if (n >= rg[0] && n <= rg[1]) el.classList.add("inentry"); });
+}
+
+function drawEntryBoxes(page) {
+  document.querySelectorAll(".overlay-entry").forEach(el => viewer.removeOverlay(el));
+  const rg = entryRange(page);
+  if (!rg) return;
+  // one box per column: lines of the entry grouped by left/right page half
+  const cols = {}, regs = linesOf(page);
+  for (const f of flat) {
+    if (!f.b || f.n < rg[0] || f.n > rg[1] || regs[f.ri].marg) continue; // marginal notes would stretch the box
+    const side = (f.b[0] + f.b[2]) / 2 < page.w / 2 ? "L" : "R";
+    const c = cols[side] || (cols[side] = [Infinity, Infinity, -Infinity, -Infinity]);
+    c[0] = Math.min(c[0], f.b[0]); c[1] = Math.min(c[1], f.b[1]); c[2] = Math.max(c[2], f.b[2]); c[3] = Math.max(c[3], f.b[3]);
+  }
+  for (const c of Object.values(cols)) {
+    const el = document.createElement("div"); el.className = "overlay-entry";
+    viewer.addOverlay(el, rectOf(c, page, 25));
+  }
 }
 
 function render() {
   const page = vol.pages[P - 1];
   document.getElementById("pg").value = P;
   document.getElementById("of").textContent = `/ ${vol.pages.length}`;
-  history.replaceState(null, "", `?v=${V}&p=${P}${READ !== "k" ? "&r=" + encodeURIComponent(READ) : ""}&lang=${LANG}`);
+  history.replaceState(null, "", `?v=${V}&p=${P}${READ !== "k" ? "&r=" + encodeURIComponent(READ) : ""}${ENTRY ? "&e=" + ENTRY : ""}&lang=${LANG}`);
   setTitle("title.band", { v: ROMAN[V], p: P });
   iiifSource(page.k).then(src => { if (vol.pages[P - 1] === page) viewer.open(src); })
     .catch(() => viewer.open({ type: "image", url: TK(page.k) }));
@@ -204,6 +238,7 @@ function render() {
   document.getElementById("pane-ent").onclick = ev => {
     const c = ev.target.closest(".entry-card"); if (!c) return;
     const p = +c.dataset.p, l = +c.dataset.l;
+    ENTRY = c.querySelector(".mono") ? c.querySelector(".mono").textContent.trim() : ENTRY;
     document.getElementById("t-text").click();
     if (p === P) select(l); else { pendingLine = l; go(p); }
   };
@@ -224,6 +259,7 @@ function go(p) { P = Math.max(1, Math.min(vol.pages.length, p)); render(); }
   viewer.addHandler("open", () => { // open() clears overlays: redraw, then apply a deep-linked line
     const page = vol.pages[P - 1];
     drawAllBoxes(page);
+    drawEntryBoxes(page);
     if (pendingLine) { const n = pendingLine; pendingLine = null; select(n); }
     else if (sel) select(sel, { zoom: false, scroll: false });
   });
@@ -254,7 +290,7 @@ function go(p) { P = Math.max(1, Math.min(vol.pages.length, p)); render(); }
     READ = ev.target.value;
     try { localStorage.setItem("felix-reading", READ); } catch (e) { /* storage blocked */ }
     const keep = sel;
-    history.replaceState(null, "", `?v=${V}&p=${P}${READ !== "k" ? "&r=" + encodeURIComponent(READ) : ""}&lang=${LANG}`);
+    history.replaceState(null, "", `?v=${V}&p=${P}${READ !== "k" ? "&r=" + encodeURIComponent(READ) : ""}${ENTRY ? "&e=" + ENTRY : ""}&lang=${LANG}`);
     renderText(vol.pages[P - 1]).then(() => { if (keep && flat.length) select(keep, { zoom: false }); });
   };
   const tabs = [["t-text", "pane-text"], ["t-ent", "pane-ent"]];
