@@ -32,6 +32,9 @@ import unicodedata
 from collections import Counter
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from incipit import fix_line  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 EXP = ROOT / "data/export"
 CAT = ROOT / "data/catmus"
@@ -159,6 +162,7 @@ def main() -> int:
                 if not h:
                     continue
                 text, spans, n = combine_line(h, c, lex)
+                text, spans, _ = fix_line(text, spans)  # restore the lost initial of «Felix episcopus»
                 st["words"] += len(text.split())
                 st["from_c"] += n
                 lines.append({"i": i, "text": text, "c": spans})

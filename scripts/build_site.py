@@ -17,6 +17,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from llm_entries import date_fields  # noqa: E402
+from incipit import fix_line  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 EXP = ROOT / "data/export"
@@ -89,6 +90,14 @@ def main() -> int:
                     if t:
                         row = {"t": t, "b": l["box"]}
                         k = comb.get(i)
+                        if not k:  # no combined reading yet: the joint reading is CITlab, with the incipit restored
+                            ft, _, fixed = fix_line(t, [])
+                            if fixed:
+                                k = {"text": ft, "c": [], "low": []}
+                        else:
+                            ft, sp, fixed = fix_line(k["text"], k.get("low") if comb_multi else k.get("c", []))
+                            if fixed:
+                                k = {**k, "text": ft, ("low" if comb_multi else "c"): sp}
                         if k and k["text"] != t:
                             # combined reading, only where it differs from CITlab:
                             # [text, spans, 1] spans = uncertain words (multi-reader vote)

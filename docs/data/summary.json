@@ -6,7 +6,7 @@
   "pages": 316,
   "lines": 27131,
   "reader_pages": 316,
-  "combined_changed_lines": 23961,
+  "combined_changed_lines": 23967,
   "readers": {
    "kraken-catmus_medieval": 316,
    "kraken-cremma_medieval": 316,
@@ -30,7 +30,7 @@
   "pages": 315,
   "lines": 26856,
   "reader_pages": 315,
-  "combined_changed_lines": 23097,
+  "combined_changed_lines": 23112,
   "readers": {
    "kraken-catmus_medieval": 315,
    "kraken-cremma_medieval": 156,
@@ -54,7 +54,7 @@
   "pages": 315,
   "lines": 27029,
   "reader_pages": 315,
-  "combined_changed_lines": 23222,
+  "combined_changed_lines": 23233,
   "readers": {
    "kraken-catmus_medieval": 315,
    "kraken-cremma_medieval": 105,
@@ -78,7 +78,7 @@
   "pages": 338,
   "lines": 18559,
   "reader_pages": 338,
-  "combined_changed_lines": 14104,
+  "combined_changed_lines": 14152,
   "readers": {
    "kraken-catmus_medieval": 252,
    "kraken-cremma_medieval": 112,
@@ -102,7 +102,7 @@
   "pages": 340,
   "lines": 31466,
   "reader_pages": 340,
-  "combined_changed_lines": 17097,
+  "combined_changed_lines": 17211,
   "readers": {
    "kraken-catmus_medieval": 227,
    "kraken-cremma_medieval": 114,
@@ -126,7 +126,7 @@
   "pages": 340,
   "lines": 30454,
   "reader_pages": 340,
-  "combined_changed_lines": 17036,
+  "combined_changed_lines": 17118,
   "readers": {
    "kraken-catmus_medieval": 227,
    "kraken-cremma_medieval": 105,
@@ -150,7 +150,7 @@
   "pages": 349,
   "lines": 29977,
   "reader_pages": 349,
-  "combined_changed_lines": 13145,
+  "combined_changed_lines": 13237,
   "readers": {
    "kraken-catmus_medieval": 232,
    "kraken-medieval_latin_french_expanded": 11,
@@ -173,7 +173,7 @@
   "pages": 386,
   "lines": 32481,
   "reader_pages": 386,
-  "combined_changed_lines": 15433,
+  "combined_changed_lines": 15495,
   "readers": {
    "kraken-catmus_medieval": 258,
    "kraken-tridis_v2": 64,

@@ -33,6 +33,9 @@ import unicodedata
 from collections import defaultdict
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from incipit import fix_line  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 EXP = ROOT / "data/export"
 LINES = ROOT / "data/lines"
@@ -154,8 +157,9 @@ def combine_line(readings: dict[str, list[str]], weight: dict[str, float]) -> di
         share = best_w / total
         shares.append(share)
         put(surf, share)
-    return {"text": " ".join(out), "agree": round(sum(shares) / len(shares), 3) if shares else 0.0, "low": low,
-            "pivot": piv}
+    text, low, fixed = fix_line(" ".join(out), low)  # restore the lost initial of «Felix episcopus»
+    return {"text": text, "agree": round(sum(shares) / len(shares), 3) if shares else 0.0, "low": low,
+            "pivot": piv, **({"incipit": True} if fixed else {})}
 
 
 def reader_weights(vol: dict, names: list[str], sample_pages: int = 40) -> dict:
