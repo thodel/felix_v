@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol8_0175_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol8_0175_R.jpg",
+    "bytes": 2704593,
+    "sha256": "dc618415bfd7c0ffbf28dd68b7fba42a617b8f8d9d5c3af84d0588b054f2734b",
+    "sha256_of": "original",
+    "working_copy": "vol8_0175_R.jpg"
+  },
+  "text": "ipse Guillelmus asserit non excedunt cum illam per lapsum\nseptennii aut expi exspiracionem seu dimissionem\nhuiusmodi vacare contigerit eciam si actu alias quouismodo\naut ex alicuius cuiuscumque persona vel per liberam ipsius Iohannis\nvel cuiuscumque alterius de illa extra Romanam curiam eciam\ncoram notario publico et testibus sponte factam resignacionem vel constitucionem\nfelicis recordacionis Iohannis pape xxii predecessoris nostri\nque incipit Execrabilis vacet eciam si tanto tempore\nvacauerit quod illius collacio iuxta Lateranensis statuta concilii\nad sedem apostolicam legitime deuoluta ipsaque vicaria disposicioni\napostolice specialiter reseruata existat et super ea inter aliquos\nlis cuius statum presentibus haberi volumus pro expresso pendeat\nindecisa dummodo tempore date presencium non sit in ea alicui\nspecialiter ius quesitum cum omnibus iuribus et pertinenciis suis\neidem Guillelmo per ipsum vicarium sacristia dicti prioratus\ncuius eciam fructus redditus et prouentus decem librarum\nsimilium secundum predictam extimacionem valorem annuum\nnon excedunt quousque ipsi Guillelmo de aliquo beneficio\nsimilis vel maioris valoris sui ordinis huiusmodi prouisum\nfuerit tenendam regendam et eciam gubernandam Ita quod liceat\nprefato Guillelmo de fructibus redditibus et prouentibus\nillius debitis supportatis oneribus sicut rectoribus ipsius\nvicarie pro tempore licuit disponere et ordinare alienacione\ntamen quorumcumque immobilium et preciosorum mobilium dicte\nvicarie prefato Guillelmo penitus interdicta auctoritate nostra\ncommendetis Inducentes per vos vel alium seu\nalios prefatum Guillelmum vel procuratorem suum eius nomine\nin corporalem possessionem vicarie iuriumque et pertinenciarum predictorum\net deffendentes inductum amoto exinde quolibet illicito\ndetentore ac facientes sibi de ipsius vicarie fructibus\nredditibus prouentibus iuribus et obuencionibus vniuersis integre\nresponderi Contradictores auctoritate nostra apostolica postposita\ncompescendo Non obstantibus omnibus supradictis et aliis que\nin prefatis litteris non obstare voluimus ceterisque contrariis\nquibuscumque Nos enim exnunc irritum decernimus\net inane si secus super hiis a quoquam quauis auctoritate\nscienter vel ignoranter contigerit attemptari Datum\nLausanne decimoseptimo kalendas Ianuarii anno a natiuitate\ndomini millesimo quadringentesimo quadragesimoseptimo pontificatus\nnostri anno octauo\nxxii I Poncy",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 16683,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2404,
+    "lines": 41,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 57.66,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0008,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:33:52+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol8_0175_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol8_0175_R.jpg",
+      "bytes": 2704593,
+      "sha256": "dc618415bfd7c0ffbf28dd68b7fba42a617b8f8d9d5c3af84d0588b054f2734b",
+      "sha256_of": "original",
+      "working_copy": "vol8_0175_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:33:52+00:00"
+  }
+}

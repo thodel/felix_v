@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol4_0266_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol4_0266_R.jpg",
+    "bytes": 2401627,
+    "sha256": "935b981e37abcbcd7dd96fd28cb8b527d29a5d7f44c13d66f87dd755d56b515f",
+    "sha256_of": "original",
+    "working_copy": "vol4_0266_R.jpg"
+  },
+  "text": "Felix episcopus etcetera Venerabili fratri Episcopo Grassensi Salutem etcetera Dignum\narbitramur et congruum ut illis se reddat sedes apostolica gratiosam\nquibus ad id propria virtutum merita laudabiliter suffragantur.\nVolentes itaque dilecti filii Petri Guillelminoti Canonici\necclesie Ebroicensis qui ut asserit generali Basiliensi Concilio\nincorporatus ac dilecti filii Ludovici tituli sancte Cecilie presbiteri\nCardinalis Arelatensis vulgariter nuncupati sancte Romane ecclesie\nVicecancellarii familiaris continuus commensalis existit apud\nnos de vite etcetera meritis multipliciter commendati horum intuitu\nfavore nostro dicta statuta Concilii prosequi gracioso discretioni\ntue per apostolica scripta mandamus quatenus si per diligentem examinationem\neundem Petrum ad hoc ydoneum esse reppereris super quo tuam\nconscientiam oneramus Ecclesiam etcetera cum cura vel sine cura\ncuius fructus redditus et proventus si cum cura Quadraginta\nsi vero sine cura fuerit Triginta librarum Turonensium parvorum secundum\ntaxationem decime valoris annui non excedant ad Videlicet prefati\nEpiscopi Ebroicensis collationem provisionem presentationem seu quamvis aliam\ndispositionem pertinentem etiam si Canonicatus et prebenda dignitas\npersonatus administratio vel officium in aliqua quam Cathedrali fuerit\ndummodo dignitas ipsa principalis non fuerit et ad eam nemo\npersonatum administrationem vel officium huiusmodi non consueverit quis\nper electionem assumi si vacat ad presens vel cum vacaverit quam\ndictus petrus per se vel procuratorem suum ad hoc legitime constitutum infra duorum\nmensium spatium postquam sibi vel eidem procuratori Vacatio illius innotue\nrit duxerit acceptandam conferendam eidem Petro post accepta\ntionem huiusmodi cum omnibus iuribus et pertinentiis suis defendas per alium vel alios\neidem Episcopo nostre seriei continentia de verbo ad verbum per expressum denunciando tue\nauctoritate nostra reservans districtius inhibendo eidem Episcopo ne de\nEcclesia huiusmodi interim extra dicte acceptationis casum nisi\npostquam ei constiterit quod petrus vel procurator predicti illud noluerint\nacceptare disponere quoquomodo presumat Et nichilominus Ecclesiam\nhuiusmodi quod reservabitur si vacat vel cum vacaverit ut prefertur\neidem petro post acceptationem predictam cum omnibus iuribus et pertinentiis",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 9037,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2312,
+    "lines": 33,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 69.09,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0009,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:53:00+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol4_0266_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol4_0266_R.jpg",
+      "bytes": 2401627,
+      "sha256": "935b981e37abcbcd7dd96fd28cb8b527d29a5d7f44c13d66f87dd755d56b515f",
+      "sha256_of": "original",
+      "working_copy": "vol4_0266_R.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:53:00+00:00"
+  }
+}

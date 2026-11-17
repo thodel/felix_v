@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol2_0054_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol2_0054_R.jpg",
+    "bytes": 2496238,
+    "sha256": "75bdc567d73272f5bbbb755b2c6645bb55745e808021c568d8309c8aefb7d17b",
+    "sha256_of": "original",
+    "working_copy": "vol2_0054_R.jpg"
+  },
+  "text": "persolvenda constituere assignare et reservare jure predicta\npropter inducentes per te vel alium seu alios eundem Petrum vel\nprocuratorem suum ejus nomine in corporale possessione jurium juriumque\net pertinenciarum predictorum et defendentes inductum amoto quolibet\nquolibet illicito detentore sibique facientes de illius fructibus redditibus\nproventibus et obventionibus universis necnon eidem Johanni de pensione\npredicta juxta constitutionem assignationem et reservationem predictas\ntenore integre responderi Contradictores etcetera compescendo\nNon obstantibus pie memorie Bonifacii pape octavi etiam predecessoribus\nnostris et aliis apostolicis constitutionibus generalibus editis etcetera seu si aliquibus\nsuper provisionibus sibi faciendis de canonicatibus et aliis beneficiis\necclesiasticis in illis partibus speciales vel generales dicti sedis\nvel legatorum ejus litteras impetrarint etiam si per eas ad inhibi\ntionem reservationem vel decretum, aut alias quomodolibet sit processum\nquibus omnibus ipsum Petrum in assecutione dictorum proventuum volumus\nanteverri sed nullum per hoc eis ad assecutionem proventuum canonicatuum\naut beneficiorum aliorum prejudicium generari Aut si venerabili fratri nostro\nArchiepiscopo Tarentasiensi per ipsum episcopum vel quasvis\nalias conjunctim vel divisim a prefata sit sede indultum quod\nad receptionem vel provisionem alicujus minime teneantur et ad id\ncompelli aut quod interdici suspendi non possint quodque de hujusmodi vel\naliis beneficiis ecclesiasticis ad eorum collationem provisionem presentationem\nseu quamvis aliam dispositionem conjunctim vel separatim spectantibus\nspectantibus nulli valeat provideri per litteras apostolicas ejus\nmentionem et quolibet alia dicte sedis indulgentiam generali vel\nrevestiri expressam per quam presentibus non expressis vel totaliter etcetera et de qua\nejusque mentione specialis. Ceterum quod dictus Petrus ut asserit penam\nperpetuam vicariam in dicta ecclesia sine cura cujus fructus\nredditus et proventus Quinque librarum Turonensium secundum\nsedis taxationem predictarum taxationem secundum taxationem nostre obtinet\nVolumus autem quod quamprimum ipse detentus ecclesiam fuerit\nvigore presentium pacifice assecutus ipsam vicariam quam\nextunc vacare decernimus omni juris ad id sibi sponte obtulit\ndimittere teneatur. Et insuper si ad hoc expressus fuerit\npertinentes ut prefertur extunc perinde irritum decernimus\net congerit attemptari ut sedes dare priorum ejus petito\nad hoc respectu ydoneo de dicta ecclesia cum interpositione decreti\nprovideat traditissimum Datum Basilee pridie Nonas Aprilis\nAnno a Nativitate Domini millesimoquadringentesimoquadra\ngesimoprimo Pontificatus nostri Anno primo .xbi. T.\nEpiscopus Dunkeldensis",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 12261,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2724,
+    "lines": 41,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 65.46,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0007,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:46:45+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol2_0054_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol2_0054_R.jpg",
+      "bytes": 2496238,
+      "sha256": "75bdc567d73272f5bbbb755b2c6645bb55745e808021c568d8309c8aefb7d17b",
+      "sha256_of": "original",
+      "working_copy": "vol2_0054_R.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:46:45+00:00"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol4_0111_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol4_0111_L.jpg",
+    "bytes": 1848900,
+    "sha256": "821895d85de735e2529c18ab31bcdd23d1d383e7b03e530565e6d60b04b622b9",
+    "sha256_of": "original",
+    "working_copy": "vol4_0111_L.jpg"
+  },
+  "text": "chialem ecclesiam sancti Johannis de Cheiroz Augustensis diocesis ac perpetuam capellaniam\nad altare sancte marie de consolacione situm in ecclesia Augustensi necnon capellaniam sanctorum\nGervasii et prothasii extra eandem ecclesiam Augustensem quorum omnium fructus redditus\net proventus decem et octo librarum turonensium parvorum secundum predictam extimationem valorem annuum non\nexcedunt nosceris obtinere Nulli ergo etc. paginam nostre collacionis provisionis\net constitucionis infringere. Siquis autem etc. incursurum. Datum lausanne Septimo Idus\nMaii Anno a nativitate domini Millesimoquadringentesimoquadragesimotercio pon\ntificatus nostri anno Tercio. xxiiij Io de abbatia\nFelix Episcopus etc. dilectis filiis priori Zovingen et vicedomino Rutensi\necclesiarum ac officiali Tarentasiensi Salutem etc. vite ac morum etc. merita super\nquibus dilectus filius Nicolaus de Stipulis canonicus ecclesie Tarentasiensis\napud nos fidedigno commendatur testimonio nos inducunt ut sibi etc. liberales. dudum\nsiquidem clemens papa iiij etc. ut supra noscitur obtinere Quocirca discrecioni vestre per\napostolica scripta mandamus quatinus vos vel duo aut vnus vestrum per vos vel alium\nseu alios eundem Nicolaum vel procuratorem suum eius nomine in corporalem possessionem cano\nnicatus et prebende Iuriumque et pertinenciarum predictorum inducatis auctoritate nostra et de\nfendatis inductum amoto exinde quolibet detentore ac facientes ipsum Nico\nlaum in dicta ecclesia Tarentasiensi in canonicum recipi et in fratrem stallo sibi in\nchoro et loco in capitulo ipsius ecclesie cum dicti Iuris plenitudine assignatis sibique\nde ipsorum canonicatus et prebende fructibus redditibus proventibus Iuribus et obventionibus vniversis\nintegre responderi Non obstantibus omnibus supradictis Seu si archiepiscopo\net capitulo prefatis vel quibusvis aliis communiter vel divisim a predicta sit sede in\ndultum quod interdici suspendi vel excommunicari non possint per litteras apostolicas non\nfacientes etc. mencionem Contradictores auctoritate nostra etc. compescendo. Datum lausanne\nSeptimo Idus Maii Anno a nativitate domini Millesimoquadringentesimoqua\ndragesimotercio pontificatus nostri anno Tercio. xvj Io de abbatia\nFelix Episcopus etc. dilecto filio Iohanni alias Iohanodo de maglanis canonico\necclesie lausanensis Salutem etc. Vite ac morum honestas etc. merita super quibus apud nos\nfidedigno etc. liberales. dudum siquidem felicis recordacionis clemens papa quartus\npredecessor noster omnes canonicatus et prebendas ceteraque beneficia ecclesiastica cum cura et\nsine cura apud sedem apostolicam inantea vacatura collacioni et disposicioni sue ac ipsius\ndicte sedis reservans decrevit extunc irritum et inane si secus super hiis a quo\nquam quavis auctoritate scienter vel ignoranter contingeret attemptari Cum itaque post\nmodum canonicatus et prebenda ecclesie lausanensis quos dilectus filius petrus de Gro\nlea Subdiaconus noster in ipsa ecclesia nuper obtinebat per liberam resignacionem\ndicti petri per dilectum filium Guillermum maioris clericum Carnotensis diocesis\nprocuratorem suum ad hoc ab eo specialiter constitutum in manibus nostris sponte et libere factam\nac per nos admissam vacaverint et vacent ad presens nullusque de illis preter\nnos hac vice disponere potuerit sive possit reservacione et decreto obsiste\ntibus supradictis. Nos volentes tibi premissorum meritorum tuorum intuitu graciam fa\ncere specialem canonicatum et prebendam predictos quorum fructus redditus et proventus",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 19901,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3484,
+    "lines": 41,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 84.0,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0009,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:14:44+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol4_0111_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol4_0111_L.jpg",
+      "bytes": 1848900,
+      "sha256": "821895d85de735e2529c18ab31bcdd23d1d383e7b03e530565e6d60b04b622b9",
+      "sha256_of": "original",
+      "working_copy": "vol4_0111_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:14:44+00:00"
+  }
+}

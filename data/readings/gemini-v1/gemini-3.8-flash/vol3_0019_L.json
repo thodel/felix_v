@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol3_0019_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol3_0019_L.jpg",
+    "bytes": 2470611,
+    "sha256": "e5c82b5a2d3673e060f112a6f3935967dce156c783a41f01a3ed16e8489afb7b",
+    "sha256_of": "original",
+    "working_copy": "vol3_0019_L.jpg"
+  },
+  "text": "Felix episcopus etcetera Dilecto filio Abbati monasterii sancti Solutoris extra Jo. Benenati\nmuros Taurinenses Salutem etcetera Dignum arbitramur et congruum etcetera Eneas\nSuffragantium Exhibita siquidem nobis nuper pro parte dilecti filii\nJohannis de Rombiez Rectoris Capelle sancti Johannis leprosorum extra\nmuros Candati Cameracensis diocesis petitio continebat quod nuper Canonicatus\net prebenda ecclesie Taurinensis quos quondam Symon de Brugella ipsius\necclesie Canonicus dum viveret obtinebat per obitum ipsius Symonis\nqui extra Romanam Curiam diem clausit extremum vacantibus Dilecti\nfilii Capitulum dicte ecclesie cum ad Capitulum illius Canonicatuum et prebendarum\ncollatio et provisio ac alia dispositio de antiqua et approbata hactenusque\npacifice observata consuetudine pertineant dictos Canonicatum et prebendam\nsic vacantes prefato Johanni auctoritate ordinaria contulerunt et providerunt\nde eisdem Dictusque Johannes ipsos Canonicatum et prebendam collationis\net provisionis huiusmodi vigore assecutus illos extunc tenuit et possedit prout\nprout tenet et possidet de presenti Cum autem sicut eadem petitio subiungebat\nsubiungebat Ipse Johannes dubitet collationem et provisionem huiusmodi et\ninde secuta ex certis causis viribus non subsistere et sicut accepimus\ndicti Canonicatus et prebenda adhuc ut prefertur vacare noscantur\nNos volentes prefatum Johannem apud nos de vite ac morum honestate\naliisque multipliciter comendatum horum intuitu favore prosequi gracioso\nDiscretioni tue per hec apostolica scripta mandamus quatenus si per diligentem\nexaminationem eundem Johannem ad hoc ydoneum esse reppereris super\nquo tuam conscientiam oneramus Canonicatum et prebendam predictos\nquorum fructus redditus et proventus viginti florenorum auri de Camera\nsecundum communem extimationem valorem annuum ut ipse Johannes asserit non excedunt\nsive ut premittitur sive alio quovismodo aut ex alterius cuiuscumque\npersona sive per liberam dicti Symonis aut alterius cuiuscumque etiam\ncoram Notario publico et testibus extra Romanam Curiam sponte factam\nresignationem vacent et si tanto tempore vacaverint quod eorum collatio\niuxta Lateranensis statuta Concilii ad Sedem apostolicam legitime devoluta\nipsique Canonicatus et prebenda dispositioni quomodolibet reservati existant\net super eis aliquos lis cuius statum presentibus haberi volumus pro expresso\npendeat indecisa dummodo tempore date presentium non sit in eis alicui specialiter\nius quesitum cum plenitudine iuris Canonici ac omnibus iuribus et\npertinentiis suis prefato Johanni auctoritate nostra conferas et assignes\nInducens per te vel alium seu alios eundem Johannem vel procuratorem\nsuum eius nomine in corporalem possessionem Canonicatus et prebende\niuriumque et pertinenciarum predictorum et defendens inductum amoto\nquolibet detentore ac faciens ipsum Johannem vel dictum procuratorem pro eo\nad eandem prebendam in Canonicum recipi et in fratrem stallo\nsibi in choro et loco in Capitulo ipsius ecclesie cum dicti iuris plenitudine\nassignatis sibique de ipsorum Canonicatus et prebende fructibus redditibus\net responderi Contradictores etcetera compescendo Non obstantibus felicis\nrecordationis Bonifacii pape octavi predecessoris nostri et aliis Constitutionibus\napostolicis nec non statutis et consuetudinibus ipsius ecclesie iuramento confirmatione\napostolica roboratis quibuscumque Aut si aliqui apostolica vel alia quavis auctoritate\nin eadem ecclesia in Canonicos sint recepti vel ut recipiantur insistant\nSeu si super provisionibus sibi faciendis de Canonicatibus et prebendis\nipsius ecclesie speciales aut aliis beneficiis ecclesiasticis in illis partibus generales",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 11007,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3647,
+    "lines": 49,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 73.45,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0005,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:48:39+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol3_0019_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol3_0019_L.jpg",
+      "bytes": 2470611,
+      "sha256": "e5c82b5a2d3673e060f112a6f3935967dce156c783a41f01a3ed16e8489afb7b",
+      "sha256_of": "original",
+      "working_copy": "vol3_0019_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:48:39+00:00"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol6_0083_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol6_0083_R.jpg",
+    "bytes": 2513152,
+    "sha256": "1afbf8e2de234f5450a522308879ebf1479d6bb505a70e5f6af97419a6143cc0",
+    "sha256_of": "original",
+    "working_copy": "vol6_0083_R.jpg"
+  },
+  "text": "Iuramentum ipsorum fuerint specialem discretionem vestram per apostolica scripta mandamus\nquatenus vos vel duo aut unus vestrum per teipsum de Yssoria petitur cumque fructibus\nredditibus et proventibus decem et octo librarum turonensium parvorum secundum communem extimationem valorem\nsecundum communem extimationem id Petrus assequi non concedi ad illud possessionem ipsius\nvitam conquirat eidem si iam antea alias quomodocunque cum speciali vel generali\ncuiusque persona per exhibendum alicuius de illa vero Romana curia etiam\ncoram nobis publico et testibus fuerit faciendus Resolverit ut ipsi canonico et fletibus\nreverenter. Solvendique petenti pensionem una cum meritis expensabilibus\nvitam eidem si tempore ipsius vacationis per cuius collecto supplicationem statuta\ngenerali ad sedem apostolicam legitime devenerit. Predictas ecclesias de Yssoria\ndispositi apostolice quomodolibet reservata extiterit et sive curam ius aliquod\nlicet canonicus fuerit petentibus litteras volumus per expressos redditus iuris cupientes\ndictorum canonicorum fuerit petitus non sit inter eosdem predictus ius quesitum\nad omnesque fructus et proventus suos eidem primo anno integre servavit et\nassignavit cumque personatibus per vos vel alius similibus curatis parochiis\nvel quocumque sint eius nove monialis possessione ecclesie de Yssoria\nprovideatis et permittatis per rectorem et custodesque inductis amoto\nquocumque quolibet illorum de cetero ac facientibus eisdem canonicis de ipsa ecclesia\nde Yssoria fructibus redditibus proventibus iuribus obventionibus universis\nintegre responderi contradictores auctoritate nostra per censuram ecclesiasticam compescendo\npie memorie Bonifacii pape octavi predecessoris nostri ac aliis apostolicis\nconstitutionibus generalibus quibuscumque aut si aliquibus sive promissionibus sub quibuscumque\nde huiusmodi prelatis vel aliis beneficiis ecclesiasticis in illis partibus forsan\ngenerales dirreptionis vel legationis cuiuslibet impetratum extiterit si\nfuerit ad inhibitionem reservationem et decretum vel alias quomodolibet\nsint processum quibus omnibus prefatis petenti in dicto ecclesie de Yssoria\namotionem volumus anteferri Sed nullius photi eius si ad assecutionem\nbeneficiorum aliorum fuerintque generet! Causa tamen! Sed neque episcopo\nAugustensi vel quibusvis aliis eidem vel diversum ad extra singulariter provideri\nquod interdictioni et suspensioni alicuius minime tenerentur et ad id expresse\ndici quod provideri suspendi vel interdici non possint graviter de huiusmodi vel\naliud beneficium ecclesiasticum ad voce collationem provisionem presentationem\nseu quamvis aliam dispositionem eorundem vel regularium pariterque mille\nvaleret provideri per litteras apostolicas non facientes de huiusmodi mentione et qualibet\nalia voluntate expressa per quas quibusque reservationis effectus huiusmodi impediri valeat\ndifferri et de qua cuiusque toto tenore habenda esset mentio specialis Proviso\nquod nos decidis eidem primo de beneficio ecclesiastico ordinarent vel simi-\nlia vacare possit aut eventuro ad collationem provisionem presentationem\nseu quamvis aliam dispositionem dilectorum filiorum capituli ecclesie sancti\nPauli Lugdunensis iuxta statuta generalis consilii Basiliensis\nalias nostre litteras mandavimus provideri postea Nobilis eidem\neidem Petro in certum de Yssoria nec de beneficio curato quod\nulteriusque huiusmodi expectare noscitur si illa et illud vacationi\nhabere contingat assignatu eorum si alia presentata ecclesia fuerit\npersonatus per annum retenti habere vel habere valoris possessiones\ncuiusque ac aliis apostolicis constitutionibus quatenusve nequaquam obstantibus\nauctoritate apostolica tenore presentium dispensamus de speciali dono gratia dispensamus\nex nunc quod ecclesia de Yssoria et aliud beneficium huiusmodi debent",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 16973,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3785,
+    "lines": 48,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 77.88,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0005,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:57:17+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol6_0083_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol6_0083_R.jpg",
+      "bytes": 2513152,
+      "sha256": "1afbf8e2de234f5450a522308879ebf1479d6bb505a70e5f6af97419a6143cc0",
+      "sha256_of": "original",
+      "working_copy": "vol6_0083_R.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:57:17+00:00"
+  }
+}

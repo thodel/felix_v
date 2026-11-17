@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol1_0306_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol1_0306_L.jpg",
+    "bytes": 2611523,
+    "sha256": "56b4d78116efe3e94d4363bdc1f8f3e3a23e59ef7686e2a5a09dbd6b4445aa9e",
+    "sha256_of": "original",
+    "working_copy": "vol1_0306_L.jpg"
+  },
+  "text": "Dudum famulatum promeretur honestas ut vobis vobis\nquantum cum deo possumus favorabiliter annuamus\nNuper siquidem pro parte vestra iniquitatis filio Gabriele\ntunc Eugenio papa quarto exposito / quod olim vos tum\nin loco Zudenhusen Basilien diocesis sub cura et re-\ngimine fratrum ordinis predicatorum extra dictis apostolice\npermissione degentes / et tandem ad Monasterium in\nClingental azmozybasiler ordinis sancti Augustini\nConstancien diocesis translate / ductore fratrum negligencia\nin spiritualibus et temporalibus non sine scandalo sub-\nlatis detrimento propter que ne gravioribus\npremeremini incommodis / exemptioni que ratione cure\net regiminis predictorum vobis continebat quantum in\nvobis fuerat renunciantes ac a cura et regimine\nhuiusmodi declinantes / venerabili fratri nostro .. Episcopo\nConstancien qui vobis in spiritualibus et temporalibus\nhuiusmodi etiam contra Inferentes vobis molestias\nvel iacturas salubriter succurrere valeret Illiusque\nIurisdictioni potestati et Dominio vos sponte sub-\nmiseratis / sub cuius ordinario protectoris auxilio\nextra domum prescriptam in domino susceptis incrementis\nlaudabiliter quiescam eratis / prefatus Gabriel tunc\nEugenius qui administrator petitus tunc adhuc\nfuerat de premissis certam notitiam non habens\nDilecto filio !. decano ecclesie Constancien eius proprio\nnomine non expresso per suas litteras dedit in mandatis\nquatenus si esset ita aliudque canonicum non obsisteret\nsuper quo eius oneravit conscientiam / declinationem et\nsubmissionem predictas et omnia inde secuta auctoritate sua\napprobaret et confirmaret / vosque sub dicti ordinarii\ncura regimine obedientia et devotione deinceps vivere\ndeberet eadem auctorite decerneret ac non permitteret vos\noccasione premissorum ab aliquo indebite molestari\nContradictores per censuram ecclesiasticam / appellatione\npostposita compescendo / prout in dictis litteris plenius\ncontinetur / Cum autem prout exhibita nobis pro parte\nvestra petitio continebat / licet dilectus filius Henricus\nde Luwenghein decretorum doctor pro tunc Officialis\nBasiliensis cui dilectus filius Johannes Curi Decanus\necclesie Constanciensis in ea parte commiserat vices suas\ndemum vos ad se duxerit devocandas ad executionem\nprefatarum litterarum Iuxta illarum formam et tenorem / huiusmodi\ncommissionis vigore procedens / declinationem et submis-\nsionem prefatas et inde secuta auctoritate predicta approbaverit",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 8545,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2399,
+    "lines": 44,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 53.55,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0008,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:45:52+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol1_0306_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol1_0306_L.jpg",
+      "bytes": 2611523,
+      "sha256": "56b4d78116efe3e94d4363bdc1f8f3e3a23e59ef7686e2a5a09dbd6b4445aa9e",
+      "sha256_of": "original",
+      "working_copy": "vol1_0306_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:45:52+00:00"
+  }
+}

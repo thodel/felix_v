@@ -107,20 +107,29 @@ const I18N = {
       Charter Scripts XIII–XV»). Alle Seiten stehen auf IN_PROGRESS, keine ist korrigiert. Die Website lädt die Bilder direkt
       von Transkribus und zeigt den Text unverändert.`,
     "m.h.read": "Lesetest: welches Modell liest besser?",
-    "m.read": `Stichprobe: 16 Doppelseiten (zwei je Band, zufällig mit festem Seed), an der Grenze der Textblöcke im PageXML
-      in 32 Seitenhälften geschnitten. Jede Hälfte wird gelesen und mit der CITlab-Lesung derselben Hälfte verglichen.`,
+    "m.read": `Stichprobe: 50 Doppelseiten aus allen acht Bänden (zufällig mit festem Seed; qwen3.8 las die ersten 16), an der Grenze der
+      Textblöcke im PageXML in 100 Seitenhälften geschnitten. Jede Hälfte wird gelesen und mit der CITlab-Lesung derselben Hälfte verglichen.`,
     "m.read.note": `Es gibt noch keine korrigierten Seiten. Die «Abweichung von CITlab» sagt deshalb nicht, wer richtig liest:
       Ein Modell, das besser liest als CITlab, weicht ebenfalls ab. Was die Zahlen sicher zeigen: Abbrüche an der
       Token-Grenze, Wiederholungsschleifen und Längenverhältnis (ausgelassener oder erfundener Text).`,
-    "m.read.th": ["Leser", "Hälften", "Abweichung von CITlab (CER, Median)", "abgebrochen", "mit Schleifen", "Länge / CITlab (Median)", "s / Hälfte"],
+    "m.read.th": ["Leser", "Hälften", "Abweichung von CITlab (CER, Median)", "leer", "abgebrochen", "mit Schleifen", "Länge / CITlab (Median)", "s / Hälfte"],
     "m.read.qwen": `<strong>qwen3.8-27b</strong> (GPUStack, ohne «thinking»): für diese Seiten <strong>nicht brauchbar</strong>.
       Auf der ersten Probe (Band I, Aufnahme 11) liess es die ersten zehn Zeilen aus, geriet in Wiederholungsschleifen
       («D. D. de S. …») und erfand auf der rechten Seite ein «Felix episcopus servus servorum dei», wo der Text mitten im
       Satz weiterläuft. In der Stichprobe brechen die meisten Hälften an der Token-Grenze ab, und die Ausgabe ist mehrfach
       so lang wie die CITlab-Lesung. Geprüft wurden drei Einstellungen (2048 px mit und ohne Wiederholungsstrafe, 3072 px
       auf den Textblock zugeschnitten); keine half.`,
-    "m.read.gemini": `<strong>Gemini 3.8 Flash und Gemini 4 Argon</strong>: ab der Woche vom 23.11.2026 auf denselben
-      32 Hälften (vorbereitet auf tei, Prompt <code>felix_register_page_v1.md</code>).`,
+    "m.read.gemini": `<strong>Gemini 3.8 Flash und Gemini 4 Argon</strong> (17.11.2026, 100 Hälften aus 50 Aufnahmen aller
+      acht Bände, Prompt <code>felix_register_page_v1.md</code>, geringe Denktiefe): beide lesen die ganze Hälfte, ohne
+      Abbruch und ohne Schleifen, und lösen Abkürzungen auf wie CITlab. <strong>Argon</strong> kam nie leer zurück und liegt
+      am nächsten bei CITlab (15 %), rund 17 Sekunden pro Hälfte. <strong>Flash</strong> ist schneller (11 s), gab aber 9 von
+      100 beschriebenen Hälften leer zurück. Flash und Argon stimmen untereinander enger überein (10 %) als jedes von ihnen
+      mit CITlab. Beispiel: den Registraturvermerk, den CITlab als «ep̄us Brosseran» liest, liest Gemini als «A. Episcopus
+      Grossetanus» (Bischof von Grosseto). Die Gemini-Lesungen dieser 50 Aufnahmen stehen im Betrachter unter «Text» zur
+      Wahl.`,
+    "m.read.matrix": `Wie weit die Leser untereinander auseinanderliegen (CER der Zeilenlesung, Median über die Hälften,
+      die beide gelesen haben; Zeile gegen Spalte gemessen). Eine Gold-Lesung fehlt: Nähe heisst Übereinstimmung, nicht Richtigkeit.`,
+    "m.read.vote": "Mehrheitslesung",
     "m.read.gt": `<strong>Für ein echtes Urteil</strong> sollen 8 Hälften (eine je Band) in Transkribus korrigiert werden.
       Dann misst dasselbe Skript die Zeichenfehlerrate jedes Lesers gegen die Korrektur.`,
     "m.read.catmus": `<strong>CATMuS Medieval</strong> (kraken, auf dem ATR-Gateway): liest alle 2'699 Aufnahmen auf den
@@ -298,21 +307,29 @@ const I18N = {
       Charter Scripts XIII–XV »). Toutes les pages sont au statut IN_PROGRESS, aucune n’est corrigée. Le site charge les
       images directement depuis Transkribus et affiche le texte tel quel.`,
     "m.h.read": "Test de lecture : quel modèle lit le mieux ?",
-    "m.read": `Échantillon : 16 doubles pages (deux par volume, tirées au hasard avec une graine fixe), coupées en 32 demi-pages
+    "m.read": `Échantillon : 50 doubles pages des huit volumes (tirées au hasard avec une graine fixe ; qwen3.8 a lu les 16 premières), coupées en 100 demi-pages
       à la limite des blocs de texte du PageXML. Chaque demi-page est lue puis comparée à la lecture CITlab de la même
       demi-page.`,
     "m.read.note": `Il n’existe pas encore de pages corrigées. L’« écart avec CITlab » ne dit donc pas qui lit juste : un
       modèle qui lit mieux que CITlab s’en écarte aussi. Ce que les chiffres montrent sûrement : les arrêts à la limite de
       jetons, les boucles de répétition et le rapport de longueur (texte omis ou inventé).`,
-    "m.read.th": ["Lecteur", "Demi-pages", "Écart avec CITlab (CER, médiane)", "interrompues", "avec boucles", "Longueur / CITlab (médiane)", "s / demi-page"],
+    "m.read.th": ["Lecteur", "Demi-pages", "Écart avec CITlab (CER, médiane)", "vides", "interrompues", "avec boucles", "Longueur / CITlab (médiane)", "s / demi-page"],
     "m.read.qwen": `<strong>qwen3.8-27b</strong> (GPUStack, sans « thinking ») : <strong>inutilisable</strong> pour ces pages.
       Sur le premier essai (volume I, image 11), il a omis les dix premières lignes, est tombé dans des boucles de répétition
       (« D. D. de S. … ») et a inventé sur la page de droite un « Felix episcopus servus servorum dei » là où le texte
       continue au milieu d’une phrase. Dans l’échantillon, la plupart des demi-pages s’arrêtent à la limite de jetons, et la
       sortie est plusieurs fois plus longue que la lecture CITlab. Trois réglages ont été essayés (2048 px avec et sans
       pénalité de répétition, 3072 px recadré sur le bloc de texte) ; aucun n’a aidé.`,
-    "m.read.gemini": `<strong>Gemini 3.8 Flash et Gemini 4 Argon</strong> : à partir de la semaine du 23.11.2026, sur les
-      mêmes 32 demi-pages (préparé sur tei, prompt <code>felix_register_page_v1.md</code>).`,
+    "m.read.gemini": `<strong>Gemini 3.8 Flash et Gemini 4 Argon</strong> (17.11.2026, 100 demi-pages tirées de 50 images des
+      huit volumes, prompt <code>felix_register_page_v1.md</code>, réflexion faible) : les deux lisent la demi-page entière,
+      sans arrêt ni boucle, et développent les abréviations comme CITlab. <strong>Argon</strong> n’a jamais rendu de page vide
+      et est le plus proche de CITlab (15 %), environ 17 secondes par demi-page. <strong>Flash</strong> est plus rapide (11 s),
+      mais a rendu vides 9 demi-pages écrites sur 100. Flash et Argon s’accordent davantage entre eux (10 %) qu’avec CITlab.
+      Exemple : la mention d’enregistrement que CITlab lit « ep̄us Brosseran », Gemini la lit « A. Episcopus Grossetanus »
+      (évêque de Grosseto). Les lectures Gemini de ces 50 images sont proposées dans la visionneuse sous « Texte ».`,
+    "m.read.matrix": `Écart entre les lecteurs (CER, médiane sur les demi-pages lues par les deux ; la ligne mesurée contre la
+      colonne). Il manque une lecture de référence : proximité veut dire accord, non exactitude.`,
+    "m.read.vote": "lecture majoritaire",
     "m.read.gt": `<strong>Pour un vrai jugement</strong>, 8 demi-pages (une par volume) doivent être corrigées dans
       Transkribus. Le même script mesurera alors le taux d’erreur de caractères de chaque lecteur par rapport à la
       correction.`,
@@ -490,19 +507,27 @@ const I18N = {
       Model Charter Scripts XIII–XV»). Omnes paginae in statu IN_PROGRESS sunt, nulla emendata. Situs imagines directe ex
       Transkribus affert textumque immutatum ostendit.`,
     "m.h.read": "Experimentum legendi: quod exemplar melius legit?",
-    "m.read": `Specimen: 16 paginae binae (binae ex quoque tomo, fortuito sed semine fixo electae), ad terminos textus in
-      PageXML in 32 dimidias paginas sectae. Quaeque dimidia legitur et cum lectione CITlab eiusdem dimidiae confertur.`,
+    "m.read": `Specimen: 50 paginae binae ex omnibus octo tomis (fortuito sed semine fixo electae; qwen3.8 primas 16 legit), ad terminos
+      textus in PageXML in 100 dimidias paginas sectae. Quaeque dimidia legitur et cum lectione CITlab eiusdem dimidiae confertur.`,
     "m.read.note": `Nondum paginae emendatae exstant. «Discrepantia a CITlab» igitur non indicat quis recte legat: exemplar quod
       melius quam CITlab legit, et ipsum discrepat. Quod numeri certo ostendunt: abruptiones ad terminum signorum (tokens),
       iterationes, rationem longitudinis (textum omissum vel fictum).`,
-    "m.read.th": ["Lector", "Dimidiae", "Discrepantia a CITlab (CER, mediana)", "abruptae", "cum iterationibus", "Longitudo / CITlab (mediana)", "sec. / dimidia"],
+    "m.read.th": ["Lector", "Dimidiae", "Discrepantia a CITlab (CER, mediana)", "vacuae", "abruptae", "cum iterationibus", "Longitudo / CITlab (mediana)", "sec. / dimidia"],
     "m.read.qwen": `<strong>qwen3.8-27b</strong> (GPUStack, sine «thinking»): ad has paginas <strong>inutile</strong>. In primo
       experimento (tomus I, imago 11) decem primos versus omisit, in iterationes incidit («D. D. de S. …») et in pagina dextra
       «Felix episcopus servus servorum dei» finxit, ubi textus media sententia pergit. In specimine plurimae dimidiae ad
       terminum signorum abrumpuntur, et quod redditur multo longius est quam lectio CITlab. Tres modi probati sunt (2048 px
       cum poena iterationis et sine ea, 3072 px ad textum resecti); nullus profuit.`,
-    "m.read.gemini": `<strong>Gemini 3.8 Flash et Gemini 4 Argon</strong>: ab hebdomade quae die 23 Novembris 2026 incipit, in
-      eisdem 32 dimidiis (in tei paratum, praeceptum <code>felix_register_page_v1.md</code>).`,
+    "m.read.gemini": `<strong>Gemini 3.8 Flash et Gemini 4 Argon</strong> (die 17 Novembris 2026, centum dimidiae ex quinquaginta
+      imaginibus omnium octo tomorum, praeceptum <code>felix_register_page_v1.md</code>, cogitatio parva): ambo totam dimidiam
+      legunt, sine abruptione et sine iterationibus, et compendia solvunt ut CITlab. <strong>Argon</strong> numquam vacuum
+      reddidit et ad CITlab proxime accedit (15 %), circiter 17 secundis per dimidiam. <strong>Flash</strong> celerior est
+      (11 s), sed novem ex centum dimidiis scriptis vacuas reddidit. Flash et Argon inter se magis consentiunt (10 %) quam
+      uterque cum CITlab. Exemplum: notam registri, quam CITlab «ep̄us Brosseran» legit, Gemini «A. Episcopus Grossetanus»
+      (episcopus Grossetanus) legit. Lectiones Gemini harum quinquaginta imaginum in inspectore sub «Textus» eligi possunt.`,
+    "m.read.matrix": `Quantum lectores inter se discrepent (CER, mediana dimidiarum quas ambo legerunt; versus contra columnam
+      mensus). Lectio certa deest: propinquitas consensum significat, non veritatem.`,
+    "m.read.vote": "lectio communis",
     "m.read.gt": `<strong>Ut vere iudicari possit</strong>, octo dimidiae (singulae ex singulis tomis) in Transkribus emendandae
       sunt. Tum idem programma errores litterarum cuiusque lectoris ad emendationem metietur.`,
     "m.read.catmus": `<strong>CATMuS Medieval</strong> (kraken, in porta ATR): omnes 2699 imagines in versibus Transkribus

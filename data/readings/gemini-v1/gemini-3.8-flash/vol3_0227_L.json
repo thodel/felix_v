@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol3_0227_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol3_0227_L.jpg",
+    "bytes": 2010446,
+    "sha256": "fc4018b2a5ea234609280023d7bf113a6528a83dd631d32b7b5b30c2d34750cd",
+    "sha256_of": "original",
+    "working_copy": "vol3_0227_L.jpg"
+  },
+  "text": "consuevit quod tu vel procurator tuus illud solucione\nacceptare quomodolibet disponere quoquomodo presumant\nac decernentes extunc irritum et inane si secus super hiis\na quoquam quavis auctoritate scienter vel ignoranter contigerit\nattemptari Non obstantibus statutis et consuetudinibus dicte\necclesie juramento confirmatione apostolica vel quavis firmitate\nalia roboratis contrariis quibuscumque Aut si venerabili fra-\ntri nostro Episcopo Basiliensi ac prefatis preposito thesauzario\ncanonicis capitulo et personis vel quibusvis aliis coniter\nvel divisim a sede apostolica sit indultum quod ad receptionem\nvel provisionem alicujus minime teneantur et ad id compelli\nnon possint quodque de hujusmodi vel aliis canonicatu et prebenda\nad eorum collationem etc pertinentibus nulli valeat provideri\nquod litteris apostolicis non facientibus etc mentionem et qualibet\nalia dicte sedis indulgentia generali vel speciali cujuscumque\ntenoris existat per quam presentibus non expressam vel totaliter\nnon insertam effectus hujusmodi gratie impedire valeat\nquomodolibet vel differri et de qua cujusque toto tenore etc\nspecialis etc Seu si per te non stetit ad prestandum de obser-\nvandis statutis et consuetudinibus ipsius ecclesie solitum jura-\nmentum in absentia tua per procuratorem promovendum et tu ad ec-\nclesiam ipsam accesseris corporale illud prestiteris Aut quod ut\nasseris preposituram sancti Theobaldi extra muros opidi\nque ibi dignitas principalis existit et ad quam quis per\nelectionem assumi consuevit cuique cura imminet animarum\nNecnon canonicatum et prebendam missarum ac unam in\nmajore et aliam in sancte Andree Coloniensi perpetuas\ncappellanias sine cura obtines ac dudum tibi de una\nsimili cappellania in sancti Johannis Osnaburgensis ecclesiis\nac de parochiali ecclesia in Eschwiler Coloniensis diocesis\nsuper qua extra curiam litigas et quas non possides\nquarumque et obtentorum predictorum fructus redditus et\nproventus viginti marchas similium valore denariorum\nnon excedunt tunc certis modis vacantibus successive\ndicte synodi et ordinaria provideri mandator optentu\nquiquidem in canonicum ipsius opidi sed inhibitione\nne alicui alteri quid tibi de prebenda primo vacatura\nconferretur dicte synodi auctoritatibus creatus fuisti\nVolumus autem quod quamprimum vigore presentium ipsius curia\nbeneficium hujusmodi fueris pacifice assecutus preposituram",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 10344,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2362,
+    "lines": 40,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 58.08,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0008,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:50:20+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol3_0227_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol3_0227_L.jpg",
+      "bytes": 2010446,
+      "sha256": "fc4018b2a5ea234609280023d7bf113a6528a83dd631d32b7b5b30c2d34750cd",
+      "sha256_of": "original",
+      "working_copy": "vol3_0227_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:50:20+00:00"
+  }
+}

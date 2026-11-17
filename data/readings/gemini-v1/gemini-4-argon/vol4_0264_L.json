@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol4_0264_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol4_0264_L.jpg",
+    "bytes": 1678383,
+    "sha256": "0eb621f5d1699fc83e330571932c72b2a40009bc4ed69a61d962aad513709a32",
+    "sha256_of": "original",
+    "working_copy": "vol4_0264_L.jpg"
+  },
+  "text": "per alios vel alius ad collacionem iuxta statuta huiusmodi non\ntransgrediendo donacioni apostolice reservamus districtius\ninhibentes eidem preposito ne de beneficio huiusmodi\ninterim ante acceptacionem eandem nisi postquam ei\nconstiterit quod tu vel procurator predictus illud nolueritis\nacceptare disponere quoquomodo presumat ac decernentes\nextunc irritum et inane si secus super hiis a quoquam quavis auctoritate scienter vel ignoranter contigerit attemptari Non obstantibus\nstatutis et consuetudinibus ecclesie et ordinis predictorum eciam\niuramento confirmacione apostolica vel alia quacumque firmitate\nalia roboratis eciam si quibusvis illis super dicto preposito vel\nquibusvis aliis communiter vel divisim a sede sit apostolica indultum\nquod ad recepcionem vel provisionem alicuius minime teneantur et ad id compelli non possint\nquodque de huiusmodi vel aliis beneficiis ecclesiasticis ad eorum collacionem\nprovisionem seu quamvis aliam disposicionem coniunctim vel divisim spectantibus nulli valeat provideri per litteras apostolicas non facientes plenam et expressam ac de verbo ad verbum de indulto huiusmodi mencionem et qualibet\nalia dicte sedis indulgencia generali vel speciali cuiuscumque tenoris existat per quam presentibus non expressam vel totaliter non insertam effectus\nhuiusmodi gracie impediri valeat quomodolibet vel differri et de qua cuiusque toto tenore habenda sit in nostris litteris mencio specialis\naut quod ut asseris canonicatum et canonicalem porcionem\nac thesaurariam in rectore nuncupatam ecclesie Belleycensis\nque inibi simplex officium licet racione annexorum huiusmodi\nsibi cura immineat animarum quorum sexaginta nostris\nobtines nosque dudum beneficium ecclesiasticum cum cura vel\nsine cura per canonicos dicti ordinis gubernari\nconsuetum eciam si canonicatus dignitas personatus\nadministracio vel officium foret dummodo ad illud non consuevisset\nper electionem assumi ad collacionem prepositi prioris seu\nprocuracionem aliam disposicionem dilectorum filiorum prepositi et\nconventus monasterii sanctorum Nicolai et Bernardi\nmontis Iovis dicti ordinis Sedunensis diocesis per prepositum\nsoliti gubernari tam racione dicti monasterii quam membrorum\net beneficiorum eidem monasterio annexorum communiter vel divisim pertinens\niuxta statuta predicta conferendum tibi in commendam\nper alias litteras nostras reservando tibi ut reservatum beneficium\nhuiusmodi si illud vigore litterarum earundem assequereris una cum\ncanonicatu et canonicali porcione et thesauraria\net annexis predictis in commendam quoadviveres retinere\nlibere et licite valeres et scripsisse tibi de prepositura",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 17266,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2614,
+    "lines": 36,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 71.64,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0008,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:17:09+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol4_0264_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol4_0264_L.jpg",
+      "bytes": 1678383,
+      "sha256": "0eb621f5d1699fc83e330571932c72b2a40009bc4ed69a61d962aad513709a32",
+      "sha256_of": "original",
+      "working_copy": "vol4_0264_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:17:09+00:00"
+  }
+}

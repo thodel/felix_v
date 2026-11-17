@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol5_0096_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol5_0096_R.jpg",
+    "bytes": 2681601,
+    "sha256": "ea6bbc76290d72fb9ad4a0622a3affb8ab1c410662647556a933886120bab19d",
+    "sha256_of": "original",
+    "working_copy": "vol5_0096_R.jpg"
+  },
+  "text": "ex eo quod nos te ut nobiscum universalis ecclesie perfortes onera in sancte Romane ecclesie\npresbiterum Cardinalem assumpserimus cuiusvis possit obiectionis nota quomodolibet\nimpugnari quynimo firma semper et illibata post eam assumpcionem eandem\npersistant gratam et ratam habentes illam necnon litteras predictas auctoritate apostolica tenore\npresentium confirmamus et presentis scripti patrocinio communimus ipsamque facultatem\nalias iuxta predictarum litterarum continentiam atque formam omnimodam auctoritate prefata denuo\ntibi concedimus Non obstantibus premissis et illis que dicta Synodus in suis litteris\npredictis voluit non obstare Nulli ergo etc. paginam nostre ratificacionis confirma\ncionis communicionis et concessionis infringere etc. attemptare Si quis autem etc. incur-\nsurum Datum Lausanne pridie kalendas Iulii anno a nativitate domini millesimo quadringente\nsimo quadragesimo quinto pontificatus nostri anno Quarto. Gratis pro persona domini cardinalis. Io. de gribbo\nFelix episcopus etc. dilecto filio Reynaudo Ioly perpetuo capellano ad altare\nsancti andree situm in ecclesia Lausannensi salutem etc. Apostolice sedis circumspecta\nbenignitas desideria iusta petentium congruo favore prosequitur et votis\neorum que a racionis tramite non discordant libenter se propiciam exhibet\net benignam. Cum itaque hodie tu perpetuam ex vicaria ad sancte crucis et\ndilectus filius Girardus de Rupe perpetuam capellaniam ad sancti andree al-\ntaria sita in ecclesia Lausannensi necnon capellam sancti mauri extra dictam\necclesiam quas tunc temporis obtinebatis desiderantes illas ut asserebatis\nex certis racionabilibus causis invicem permutare in manibus nostris ex causa permuta\ncionis huiusmodi sponte et libere resignaveritis Nosque resignaciones illarum\nex causa predicta duxerimus admittendas nos votis tuis in hac parte favorabi\nliter annuentes capellaniam necnon capellam predictas que sine cura sunt et quarum\nfructus redditus et proventus vigintiseptem librarum Turonensium parvorum secundum communem ex-\ntimacionem valoerem annuum ut asseris non excedunt per resignacionem dicti Girardi vacantes\ncum omnibus iuribus et pertinenciis suis apostolica tibi auctoritate conferimus et de illis\netiam providemus decernentes prout est irritum et inane etc. attemptari forsan\nhactenus vel imposterum contigerit attemptari. Non obstantibus statutis et con\nsuetudinibus dicte ecclesie eciam iuramento confirmacione apostolica vel quacumque firmitate\nalia roboratis contrariis quibuscumque. Aut si aliqui super provisionibus\nsibi faciendis de huiusmodi speciales vel aliis beneficiis ecclesiasticis in illis partibus\ngenerales dicte sedis vel legatorum eius litteras impetrarint eciam si per eas\nad inhibicionem etc. sit processum quibus omnibus te in assecucione capellanie et\ncapelle predictarum volumus anteferri sed nullum per hoc eis quo ad assecucionem\nbeneficiorum aliorum preiudicium generari. Seu si venerabili fratri nostro Episcopo et dilectis\nfiliis preposito et capitulo Lausannensi vel quibusvis aliis communiter vel divisim\na predicta sit sede indultum quod ad recepcionem etc. minime teneantur et ad id\ncompelli non possit quodque de huiusmodi vel aliis beneficiis ecclesiasticis ad eorum collacionem etc.\nnulli valeat provideri per litteras apostolicas non facientes etc. mencionem et qua-\nlibet alia dicte sedis indulgencia etc. existat per quam etc. effectus earundem\nimpediri etc. vel differri et de qua cuiusque etc. specialis. Aut si presens non\nfueris ad prestandum de observandis statutis et consuetudinibus predictis solitum\niuramentum dummodo etc. illud prestes. Seu quod ut eciam asseris capellam sancti\nIohannis Baptiste in castro de Rupe Gebennensis diocesis que eciam sine cura\nest et cuius fructus redditus et proventus decem librarum Turonensium similium secundum",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 21203,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3803,
+    "lines": 45,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 83.53,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0005,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:21:01+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol5_0096_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol5_0096_R.jpg",
+      "bytes": 2681601,
+      "sha256": "ea6bbc76290d72fb9ad4a0622a3affb8ab1c410662647556a933886120bab19d",
+      "sha256_of": "original",
+      "working_copy": "vol5_0096_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:21:01+00:00"
+  }
+}

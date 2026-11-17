@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol1_0083_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol1_0083_L.jpg",
+    "bytes": 2781586,
+    "sha256": "4167c9f5421aebcf430c57fa9c6682cbfc056e5e915303e065fe9389f81a5e42",
+    "sha256_of": "original",
+    "working_copy": "vol1_0083_L.jpg"
+  },
+  "text": "ordinis sancti Augustini Cescutus promittibus et de quibus etiam\nperpendi sexaginta et triginta ducati vel circa dimarinij\nex certis causis rationabilibus et pro ipsius monasterij me-\nlioratione in eiusdem utilitatem cesserit Dilectus filius Conradus\ndicti monasterij permutatorij titulo sive in excambium dare\net assignare opponat si sedis apostolice auctoritas super hoc provi-\nnerit eisdem. Quare pro parte dicti Ducis fuit nobis\nhumiliter supplicatum ut sibi cum prefatus Conradus permuta-\ntione assignationem de valle et alijs suis pro Castro Tellini\neorundem juribus et pertinentiis supradictis in excambium huiusmodi\nut premitti faciendi licentiam et facultatem concedere ac alias\nin premissis oportune consulere de benignitate apostolica digna-\nremur Nos itaque de premissis certam notitiam non habentes quidem\nac utilitatibus et profectibus huiusmodi monasterij patrio affectu\nconsuli cupientes huiusmodi quoque supplicationibus inclinati\ndiscretioni vestre per apostolica scripta committimus et mandamus\nquatinus vos vel alter vestrum vocatis venerabili Guillielmo Episcopo\nDarentasij commendatario dicti monasterij et illis quorum\ninterest necnon alijs qui fuerint evocandi de premissis\nomnibus et singulis eorumque circumstantijs universis auctoritate\nnostra vos informetis et inquiratis diligentissime veritatem\net ea que per informationem huiusmodi tam de bonorum\npermutandorum huiusmodi valore et quod permutatio huiusmodi si fieret\nin evidentem ipsius monasterij cedat utilitatem quam alijs\nin premissis attendendis reppereritis nobis per vestras patentes\nlitteras vestris aut alterius vestrum sigillis vel sigillo munitas\naut alias bene referre studeatis ad effectum ut ex permu-\ntatione huiusmodi si subsequatur profectibus et utilitatibus monas-\nterij prefati salubriter consulatur. Non intendentes quod per bullam\nexprimetur nomen utriusque etc. Datum Basilee tertiodecimo\nkalendas Augusti Anno a nativitate Domini Millesimoquadringen-\ntesimoquadragesimo suscepti a nobis apostolatus officij Anno primo.\nGratis de mandato. A. Episcopus Grossetanus.\nFelix episcopus etc. Dilecto filio Johanni de Coratello alias officialis\nmagistrorum Burgensium penne Bellicensis diocesis monetario nostro\nSalutis etc. Exigit tuarum mire ac probitatis cognita sinceritas Martinus",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 10196,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2282,
+    "lines": 36,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 62.42,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0009,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:45:19+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol1_0083_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol1_0083_L.jpg",
+      "bytes": 2781586,
+      "sha256": "4167c9f5421aebcf430c57fa9c6682cbfc056e5e915303e065fe9389f81a5e42",
+      "sha256_of": "original",
+      "working_copy": "vol1_0083_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:45:19+00:00"
+  }
+}

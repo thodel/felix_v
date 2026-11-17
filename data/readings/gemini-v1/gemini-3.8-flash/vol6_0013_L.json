@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol6_0013_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol6_0013_L.jpg",
+    "bytes": 2239431,
+    "sha256": "e62d98693e75b59aaadeb51a081a07de825e0cbfec021d5ffd2138a608be6fe1",
+    "sha256_of": "original",
+    "working_copy": "vol6_0013_L.jpg"
+  },
+  "text": "occasione huiusmodi homagii contra quosdam Johannem Guidonis Petrum\nBothonis et Petrum Ysabellis laicos dicti homagii patratores seu con-\nscios et propterea carceribus detentos inquisitionales vel alias ini-\ntialus et formatus processus essentque ipsi judices et commissarii uni-\ncuique justiciam ministrare parati Tu nichilominus pretextu cuiusdam per\nnos super hoc ut dicitur tibi facte commissionis ad predictos decanos\nseu alios fortassis eorundem decanorum confortium justicia per certas tuas\ncerti tenoris litteras prefatos judices et commissarios moneri et secundum\neciam fecisti ut infra certum expressum terminum eosdem detentos relaxarent\net dimitterent atque pristini libertati restituerent actis eciam huiusmodi ad nos\nnullos actus citra tamen conclusionem dicens processisse Dictis et prioratus\npredictorum jurisdictionis lesione et turbatione illorumque prejudicio non mo-\ndico et gravamine Quare pro parte dicti prioris nobis fuit humiliter suppli-\ncatum ut cum ipsum sit criminalis et contra laicos mittatur existat ad ipsius\net dicti prioratus jurisdictionis regularis examen remittere actis eorum\nindempnitati in premissis opportune providere de benignitate apostolica dignaremur\nNos itaque qui sicut injustum concedere non debemus sic quoscumque seditiose mer-\nquod justum est denegare possimus ipsius cause statui presensibus pro expressis\nhabentes huiusmodi quoque supplicationibus inclinati discretioni tue per apostolica\nscripta mandamus si causa ipsa criminalis et contra laicos existat ut\nprefertur illa cuius cognicione et decisione tibi et quibusvis aliis per\nnos et sedem apostolicam super hoc forsan deputatis auditoribus seu co-\nmissariis apostolica auctoritate penitus interdicitur ad predictorum commissariorum\nseu judicum examen remittere non postponas Non obstantibus omnibus\npremissis ceterisque contrariis quibuscumque Datum apud Sanctumdoninum extra\nmuros Gebennenses Quinto nonas martii anno a nativitate domini millesimo\nquadringentesimo quadragesimoquinto pontificatus nostri anno\nsexto . . . gratis pro deo Abbas\nFelix episcopus servus servorum dei venerabili fratri Bartholomeo episcopo Cornetano salutem etcetera Sincere\ndevocionis affectus quem ad nos et Romanam geris ecclesiam promeretur ut\nin his que favoris sint et gracie ac per que tuis statui consulitur et indemp-\nnitati nos tibi reperias favorabiles et benignos Dudum siquidem volentes\ntibi ut statui tuo juxta episcopalis dignitatis decenciam sustinere valeres\nde alicuius subventionis auxilio providere graciose secundum generalis Basi-\nliensis statuti concilii facte speciale motu proprio non ad tuam vel alterius pro\nte nobis super hoc oblate peticionis instanciam sed de nostra mera liberalitate\nuni duo tria aut plura beneficia ecclesiastica secularia vel regularia\ncum cura vel sine cura eciam si prioratus conventuales aut dignitates persona-\ntus administraciones vel officia existerent dummodo ad illa non consuevissent\nqui per electionem assumi cuius seu quorum fructus redditus et proventus\nCetingentorum florenorum auri de camera secundum communem extimationem valorem non excede-\nrent ad dilectorum filiorum Sancti Petri Viveriensis et Sancti Benigni Divinio-\nnensis ac Sancti Justi de Secusia Papiensis Pporregiensis et Taurinensis diocesis\nmonasteriorum ordinis Sancti Benedicti abbatias et quantumvis collationem pro-\nvisionem presentationem seu quamvis aliam dispositionem pertinet vel divisim perti-\nnerent seu pertinerent si vacarent seu vacabunt tunc aut eciam simul vel successive\nvacaverit quod vel que tu per te vel per te nunc infra octo menses post-\neaquam postquam tibi vacacio illius vel illorum innotuerit duceris acceptanda\nvel acceptanda tibi decernenda conferenda aut conferenda post acceptacionem",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 13190,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3731,
+    "lines": 49,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 75.16,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0005,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:55:57+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol6_0013_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol6_0013_L.jpg",
+      "bytes": 2239431,
+      "sha256": "e62d98693e75b59aaadeb51a081a07de825e0cbfec021d5ffd2138a608be6fe1",
+      "sha256_of": "original",
+      "working_copy": "vol6_0013_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:55:57+00:00"
+  }
+}

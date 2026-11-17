@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol3_0073_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol3_0073_R.jpg",
+    "bytes": 2258326,
+    "sha256": "1b4d9ea34c0ff681944ee8397406e0d656cdecbc12584d356686349d655ddf94",
+    "sha256_of": "original",
+    "working_copy": "vol3_0073_R.jpg"
+  },
+  "text": "In quodam decreto quod Incipit plerique. Similis partium\nstatuit et ordinavit quod Romanus pontifex pro tempore\nexistens de cetero vacatura beneficia modo huiusmodi\nvel honesto duntaxat de uno ad collationem in quo decem\net de duobus beneficiis ubi quinquaginta et ultra\nforent beneficia disponit, Et subsequenter eadem synodus\nin quadam alia subsequenti ordinatione declaravit\nquod Idem Romanus pontifex huiusmodi dispositionem decem\netiam per viam resignationis vel alio modo honesto\nprout sibi videretur libere regere posset. Huiusmodi\nquod nos decretum et ordinationem huiusmodi declarantes\nac volentes, tibi qui etiam licentiatus fueris peni-\ntentiarius nostre precesque rexistis / premissorum meritorum\ntuorum intuitu gratiam facere specialem, beneficium ecclesia-\nsticum cum cura vel sine cura / etiam si canonicatus\net prebenda ac dignitas personatus prerogativa ad sui\nstrationem vel officium fuerit dummodo dignitas personatus\nadministratio vel officium cum prebenda huiusmodi pro\nuno beneficio ecclesiastico computentur. Dumtaxat dignitas\nprincipalis non fuerit / nec ad eam / ac personatum\nadministrationem vel officium huiusmodi personarum quis-\nquis electionem assumi consuevit, si cum cura vigintiquinque\nsi vero sine cura fuerit decem et octo marchas\nargenti puri secundum redditus et proventus sedem\ntaxationem decime valoris annui non excedenti ad\ncollationem provisionem pretentionem seu quamvis aliam\ndispositionem venerabilium fratrum in Christo Basiliensis petentibus\nin quinquaginta collationis ultra decem beneficia fore\nnoscuntur, et pro alio de simili beneficio nondum\nspecting / si quod vacat ad presens vel cum fuerit\nvacaverit / quod tu per te vel procuratorem tuum\nad hoc legitime constitutum Infra unius mensis\nspatium, postquam tibi vel eidem procuratori\nvacatio illius innotuerit duxeris acceptandum,\nconferendum tibi post acceptationem huiusmodi cum\nomnibus juribus et pertinentiis suis / donationem apostolicam\nreservamus, Districtius Inhibentes eisdem episcopo etc.\nde beneficio huiusmodi pendente / etiam ante acceptationem\neandem / nisi postquam sibi constiterit quod tu\nvel procurator predicti illud volueritis acceptare\ndisponere quoquomodo presumat ac decernentes ex\nnunc irritum et inane si secus hec attemptari",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 9519,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2253,
+    "lines": 42,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 52.67,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0009,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:49:10+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol3_0073_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol3_0073_R.jpg",
+      "bytes": 2258326,
+      "sha256": "1b4d9ea34c0ff681944ee8397406e0d656cdecbc12584d356686349d655ddf94",
+      "sha256_of": "original",
+      "working_copy": "vol3_0073_R.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:49:10+00:00"
+  }
+}

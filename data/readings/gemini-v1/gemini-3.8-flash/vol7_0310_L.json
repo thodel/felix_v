@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol7_0310_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol7_0310_L.jpg",
+    "bytes": 2499258,
+    "sha256": "1026fc49ecdee90b82bcc038adb49fd28445d8aac41eca01b57e8972d58809c8",
+    "sha256_of": "original",
+    "working_copy": "vol7_0310_L.jpg"
+  },
+  "text": "continentium. Gravissime vero sicut exhibita nobis nuper pro\nparte tua petitio continebat posteriorum litterarum mandato\npredictarum tenore premissorumque pretextu ipsorum vigore ecclesiam\npredictam tibi canonice collatam assecutus fuisses illamque\nobtineres pacifice et quiete. Cumque postmodum ipsa tua resignatio\nquoad beneficium directivum huiusmodi expirasse censeretur.\nNos volentes te premissorum intuitu favore prosequi gratioso\ntuisque in hac parte supplicationibus inclinati\ntibi et premeditatis litteris tuis resignationis huiusmodi\net decretis et aliis iuribus et singulis in eis contentis\naliis necnon processibus habitis per easdem ab eorum data quoad\nbeneficium directivum huiusmodi et omnia inde secuta vigere in\neum pristinum statum in quo antequam predictam ecclesiam\nassequutus fuisses existebas restituimus et reponimus\net decernimus et apostolica tibi auctoritate concedimus quod posteriores\nlittere et processus quoad beneficium duntaxat assequendum\nvaleant plenamque robur firmitatis obtineant ac executores\net subexecutores per eas deputati de beneficio huiusmodi eisdem modo\nduntaxat post huiusmodi formam et tenorem tam illarum quam premissarum\ninibi tibi providere valeant perinde ac si ecclesiam antedictam\nminime assecutus fuisses seu illam obtineres ut prefertur\nVolumus autem ipsis te et perinde rationis post et presentium\nvigore litterarum beneficii duntaxat circa suum preinsertum assecutio\necclesiam predictam quam optines vacare decernimus omnino\nprout etiam id sponte obtulisti dimittere teneatur Non obstantibus\npremissis necnon constitutionibus apostolice videlicet contrariis quibuscumque\nNulli ergo omnino hominum liceat hanc paginam nostre restitutionis\nrepositionis constitutionis concessionis voluntatis et constitutionis\ninfringere vel ei ausu temerario contraire Si quis autem hoc\nattemptare presumpserit indignationem omnipotentis dei et beatorum\npetri et pauli apostolorum eius se noverit incursurum Datum apud\nSanctumdesiderium octava decima kalendas decembris quarto kalendas aprilis\nAnno a Nativitate domini millesimoquadringentesimoquadragesimo\nsexto Pontificatus nostri Anno Septimo. xx. Dupplex Ten payr\n\nFelix episcopus servus servorum dei Venerabili fratri Thome episcopo Dunkeldensi apostolice sedis\nper regnum Scotie legato Cum postea legato de latere misso salutem etc.\nSalutem etc. Ad ea ferventibus votis intendimus ac reposcit\nsollicitudinis studium ad divini nominis gloriam et exaltationem\nveri catholice fidei utilitatem quoque fidelium animarum",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 10478,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2510,
+    "lines": 39,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 63.36,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0008,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:00:52+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol7_0310_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol7_0310_L.jpg",
+      "bytes": 2499258,
+      "sha256": "1026fc49ecdee90b82bcc038adb49fd28445d8aac41eca01b57e8972d58809c8",
+      "sha256_of": "original",
+      "working_copy": "vol7_0310_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:00:52+00:00"
+  }
+}

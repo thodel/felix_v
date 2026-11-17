@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol5_0181_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol5_0181_R.jpg",
+    "bytes": 2817618,
+    "sha256": "87e7010942ea0e8016b2b09edea70fdd4d08920f9eccbf1e18251c5eee259788",
+    "sha256_of": "original",
+    "working_copy": "vol5_0181_R.jpg"
+  },
+  "text": "procedatur si pars iniuriam conquaeritur et tunc procedatur via ordinaria et non\nper inquisitionem. Item quod pro periurio et super furamento faciendo\nbannum ipsum non possit nec pena exigi nec inquisitio temporaliter for-\nmari sed remaneat nobis aut vicariis nostris in spiritualibus. Item quod ali-\nquis carnifex carperius aut carperia nec aliquis alius non possit nec\ndebeat infra muros dicte civitatis Gebennensis fundere sepum sub pe-\nna sexaginta solidorum Gebennensium nobis applicandorum et quinque solidorum\nGebennensium fabrice et bastimentis portus civitatis applicandorum. Item quod si\naliquis cuiuscumque status vel condicionis existat infra banna vel extra\naliquid aliud vel laicus cuiuscumque fuerit Burgensium vel habitatorum\npredicte civitatis Gebennensis seu eciam alius extraneus quocumque infra\nbanna morti tradiderit civitate intrare non possit nec debeat penitus\nnisi prius per nos reconciliatus fuerit et anime remissum et eo casu primo\nsatisfaciat amicis mortui et civitati antequam civitatem intret. Item\nquod nullus emat vracenos extra portas civitatis Gebennensis sub pe-\nna decem solidorum et vracenorum amissione nobis applicandos. Item\nquod pro legiis collectis factis ordinariis faciendis et ordinandis\nper cives et pro bannis et rebus aliis ad civitatem pertinentibus possint\nhabere cives nuncios coactores per ipsos eligendos de voluntate nostra ad coher-\ncendum debitores prout dictis civibus videbitur expedire. Item\nquod sindici et procuratores civitatis predicte qui nunc sunt et pro tempore fuerint\nhabeant omnimodam potestatem ponendi statuendi et ordinandi custodes et\nmessillarios ad custodiendum vineas prata nemora et alia bona\net fructus quoscumque sint civium et habitatorum Gebennensium ubicumque qui\ncustodes habeant potestatem pignorandi quosque predictorum fructuum\nraptores et puppinis suam pignora pro emenda dampni facienda deti-\nnere ut moris est. Item volumus et ordinamus voluimusque et or-\ndinavimus habito consilio capituli et civium meorum predictorum quod sit unum\nferrum ad arma ecclesie nostre Gebennensis cum quo signentur mensure bla-\ndorum et salis in suo fundo et summitate seu orlo mensurarum et idem\nfiat in ulnis pannorum et telarum et mensuris vini et quicumque repe-\nrietur habere falsam mensuram signatam ulna vel pondus solvet et solvere\nteneatur pro banno decem solidos Gebennenses fabrice et bastimentis\nportus convertendos et siquis mensuraverit bladum vinum sal seu\nalia venalia sine mensuris signatis aut pannum ulnaverit bannum sexa-\nginta solidorum pro qualibet vice nobis applicandum solvere teneatur\nbladum vero sal pannus tela ad misericordiam nostram civitatis et\ncivium confiscentur. Item quod nullus in carrereriis publicis fimet 71.\nseu fime presumat habitacione portarum coria ungere usum fleubo-\ntomie nec aliud vile offend facere seu aliqualiter exercere sub pena\ndecem solidorum Gebennensium fabrice et bastimentis antedictis applicandorum.",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 10869,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2930,
+    "lines": 41,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 70.49,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0007,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:55:28+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol5_0181_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol5_0181_R.jpg",
+      "bytes": 2817618,
+      "sha256": "87e7010942ea0e8016b2b09edea70fdd4d08920f9eccbf1e18251c5eee259788",
+      "sha256_of": "original",
+      "working_copy": "vol5_0181_R.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:55:28+00:00"
+  }
+}

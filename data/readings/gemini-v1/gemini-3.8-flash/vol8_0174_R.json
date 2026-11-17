@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol8_0174_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol8_0174_R.jpg",
+    "bytes": 2453024,
+    "sha256": "6bbd9653908ed6fecbe8105646b06b03aae229023f6794cb7046cf14747c14ca",
+    "sha256_of": "original",
+    "working_copy": "vol8_0174_R.jpg"
+  },
+  "text": "Felix episcopus etc dilectis filiis Petro Graffey et denerardiis\ndecanis beate marie anneciacensis gebennensis\ndyocesis ac hymberto de chrysseyo canonico gebennensi\nsalutem etc. Grata familiaritatis et devotionis\nobsequia que dilectus filius didacus alias Jacobus\nde chaneto preceptor domus candioli canonicorum\ndyocesis nobis et sedi apostolice hactenus impendit\net adhuc diutius solertius studere impendere non desistet\nmorum religionis zelus vite ac morum honestas\naliaque laudabilia probitatis merita quibus\nprefatus Jacobus et dilecti filii antonij maioris\nordinis sancti Johannis therosolimitani personas tam fami\nliari et quotidiana experientia quam aliorum etiam\nfidedignorum testimonio fultorum propriis nos\ninducunt ut illa eis favorabiliter concedamus\nper que suis comoditatibus quibuscunque sublatis que\nstudere melius possit salubri et salubri pondere\nponderi duximus prout in peticione etc non obstan\ntibus supradictis ac hiis que in predicto loco ipsius\njohannis non obstante volumus ceterisque contrariis\nquibuscumque. Devocioni discretioni vestre per apostolica scripta\nmandamus quatenus vos vel duo aut unus vestrum per\nvos vel alium seu alios prefatos Jacobum et antonium\nmaioris vel procuratores suos eorum nominibus in corporalem\npossessionem invicem secundum que et omnium predictorum\ninduciatis quiete inde et defendatis inductos amoto\npenitus quolibet illicito detentore ac facientes eosdem\nJacobum et antonium maioris ad possessionem ipsius\ninvicem admitti eisque et eorum cuilibet pro rata sua\nde illius fructibus redditibus proventibus Juribus et\nobventionibus universis integre responderi non obstan\ntibus supradictis seu si magistro et conventui predicto\nvel quibusvis aliis communiter vel divisim a predicta\nsede indultum existat quod interdici suspendi vel\nexcommunicari non possint per litteras apostolicas non facientes\nplenam et expressam ac de verbo ad verbum de indulto hujusmodi\nmentionem contradictores per censuram ecclesiasticam\nappellatione postposita compescendo. Datum Lausane",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 8432,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2019,
+    "lines": 38,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 52.16,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.001,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:02:00+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol8_0174_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol8_0174_R.jpg",
+      "bytes": 2453024,
+      "sha256": "6bbd9653908ed6fecbe8105646b06b03aae229023f6794cb7046cf14747c14ca",
+      "sha256_of": "original",
+      "working_copy": "vol8_0174_R.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:02:00+00:00"
+  }
+}

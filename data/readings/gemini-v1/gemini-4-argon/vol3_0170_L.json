@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol3_0170_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol3_0170_L.jpg",
+    "bytes": 2146510,
+    "sha256": "d7eba1d393530872ae6d03e028d26cf40e520d74afc271be67041ed986a16e14",
+    "sha256_of": "original",
+    "working_copy": "vol3_0170_L.jpg"
+  },
+  "text": "domibus relinquimus ius proprietas et do\nminium atque plena disposicio inmediate spec\ntant et ad quorum pertinet officium illis\nvigilancius occurrere que animarum possent\nobesse saluti Cupientes in premissis debitum\nfinem imponere atque salubriter providere\nomnes et singulas controversias et questio\nnes premissorum occasione motas et in\ntentas ac coram dicto Cardinali episcopo\naut alibi ubicunque indecisas pendentes\nillarum status et tenores presentibus pro\nexpressis habentes ad nos motu proprio\nex certa sciencia et de plenitudine\npotestatis hac serie advocantes ac pe\nnitus extinguentes prefato militi aut\npro tempore existenti domino Castri huiusmodi\nQuinque modios vini super aliqua\ncerta et determinata vinearum eiusdem\nCastri prefate domui magis propinqua\net accomoda porcione Aut eciam super\naliis et in aliis rebus et redditibus habendo\nrespectum ad bonitatem vini quod prope dictum\nCastrum colligitur ac ad alias circunstancias\nque ad condignam comutacionem requiruntur\net condecunt iuxta arbitrium dilectorum filiorum\nAmedei monachi Cantoris ecclesie Gebennensis\nFrancisci de Lamo prioris prioratus Nundini\nordinis sancti Augustini Nicodi Festi et Fran\ncisci de Verßonay Civium Gebennensium aut ma\nioris partis eorundem valorem dictorum\nQuinque modiorum assignandi et comutandi nec\nnon dilecto filio Impedemes aut qui pro tempore\nfuerit dicte domus Nundini iuxta sedis apostolice\nindulta constituto procuratori assignacionem\nmodiorum vini huiusmodi aut illorum comutacionem\nut prefertur faciendi vice et in nomine\nRomane ecclesie atque nostra petendi recipiendi\net possidendi fructusque et redditus inde\nprovenientes colligendi percipiendi et admn\nstrandi atque conventui et fratribus prefate\ndomus salva dicta regula iuxta inten\ncionem legancium antedictorum providendi necnon\ndictum militem vel qui pro tempore fuerit",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 12701,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 1834,
+    "lines": 43,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 41.67,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0011,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:11:58+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol3_0170_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol3_0170_L.jpg",
+      "bytes": 2146510,
+      "sha256": "d7eba1d393530872ae6d03e028d26cf40e520d74afc271be67041ed986a16e14",
+      "sha256_of": "original",
+      "working_copy": "vol3_0170_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:11:58+00:00"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol2_0237_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol2_0237_R.jpg",
+    "bytes": 2604133,
+    "sha256": "91d10f2171533725cedd488c0ef5460a721894384a287d16c6843979725f341b",
+    "sha256_of": "original",
+    "working_copy": "vol2_0237_R.jpg"
+  },
+  "text": "locorum quorumlibet ac in illis perpetuo presidentium et degentium\npersonarum statum paterne considerationis indagine solerter\nintendit et ne ipsorum temporalium exilitas spirituales\noportunitates obnubilet cultusque divinis in locis\nipsis minuatur de remedio salutari providet prout\npersonarum temporum et locorum qualitate pensata id\nconspicit in domino utiliter expedire Sane pro parte\ndilectorum filiorum Abbatis et Conventus monasterii sancti\nPoncii extra muros Nicien ordinis sancti Benedicti nobis\nnuper exhibita petitio continebat quod licet olim dictum\nmonasterium pro Abbatis et Monachorum copiose mul\ntitudinis sustentacione aliorumque illius onerum\nsupportatione opulenter fundatum et dotatum extitisset\nac in temporalibus et spiritualibus plurimum refloreret Guer\nrarum tamen et pestium sterilitatumque temporum\nac aliis calamitatibus et sinistris casibus qui\ntractu temporis partes illas afflixerunt causantibus\nad tantam suorum fructuum reddituum et proventuum\ndecrescentiam et diminutionem deductum est\nquod Abbas et Conventus predicti qui adhuc vigesie\nnumero continue ibi vota sua domino reddunt\ndivinis laudibus et obsequiis insistentes ex huiusmodi\nfructibus et redditibus decenter vivere et alia eidem\nmonasterio incumbentia onera commode supportare\nnon possunt ex quo de ipsius monasterii ruina successu\ntemporis verisimiliter timendum est nisi de alicuius sub\nventionis auxilio eidem monasterio succurratur Et sicut\neadem petitio subiungebat si prioratus sancti Heu\nstachii de Dragminano dicti ordinis Foroiulien diocesis\nqui a dicto monasterio dependet ac per illius mona\nchos de quorum numero dilectus filius Franciscus\nraymundi qui dictum prioratum obtinet existit gubernari\nconsuevit quemque Gabriel olim Eugenius papa\niiii postquam generalis Synodus Basilien ipsum ex\ndemeritis et excessibus quibus notorie et incorrigi\nbiliter universalem scandalizabat ecclesiam exigentibus\na papatu et romano pontificio privaverat ac privatum\nesse declaraverat fabrice ecclesie Foroiulien licet\nnulliter et de facto uniri mandavit eidem monasterio\nperpetuo uniretur ipsi Abbas et conventus decentius\nvivere et predicta possent onera facilius supportare\nQuare pro parte Abbatis et conventus predictorum\nasserentium dictum Franciscum priorem unioni\nhuiusmodi consentire velle nobis fuit humiliter supplicatum\nquatenus pretensam unionem eiusdem prioratus dicte",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 14915,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2371,
+    "lines": 45,
+    "longest_char_run": 4,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 51.71,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0017,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:08:24+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol2_0237_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol2_0237_R.jpg",
+      "bytes": 2604133,
+      "sha256": "91d10f2171533725cedd488c0ef5460a721894384a287d16c6843979725f341b",
+      "sha256_of": "original",
+      "working_copy": "vol2_0237_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:08:24+00:00"
+  }
+}

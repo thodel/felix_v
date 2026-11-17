@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol7_0310_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol7_0310_L.jpg",
+    "bytes": 2499258,
+    "sha256": "1026fc49ecdee90b82bcc038adb49fd28445d8aac41eca01b57e8972d58809c8",
+    "sha256_of": "original",
+    "working_copy": "vol7_0310_L.jpg"
+  },
+  "text": "continetur / Succesiue uero sicut exhibita nobis nuper pro\nparte tua petitio continebat posteriorum litterarum mandati\npredictarum necnon processuum earundem habitorum uigore ecclesiam\npredictam tibi canonice collatam assecutus fuisti illamque\nobtines pacifice de presenti / Cum autem priores littere reservationis\nquoad beneficium curatum huiusmodi expirasse censeantur\nNos uolentes te premissorum meritorum tuorum intuitu fauore\nprosequi gratioso tuis in hac parte supplicationibus inclinati\nte et priores dictas litteras cum reservationis Inhibitionis\net decreti ac aliis omnibus et singulis in eis contentis\nclausulis necnon processus habitos per easdem ab earum data quo ad\nbeneficium sine cura huiusmodi dumtaxat inantea uacaturum In\neum pristinum statum in quo antequam predictam ecclesiam\nassecutus fuisses existebas Restituimus et Reponimus\nac uolumus et apostolica tibi auctoritate concedimus quod priores\nlittere ac processus quoad beneficium uacaturum assequendum\nualeant plenamque Roboris firmitatem obtineant ac executores\net subexecutores per eos deputati de beneficio huiusmodi iuxta pre-\ndictarum priorum litterarum formam et tenorem tam illarum quam presentium\nuigore tibi prouidere ualeant perinde ac si ecclesiam antedictam\nminime assecutus fuisses seu illam obtineres ut prefertur\nVolumus autem quod quamprimum earundem priorum et presentium\nuigore litterarum beneficium sine cura fueris pacifice assecutus\necclesiam predictam quam extunc uacare decernimus omnino\nprout eciam id sponte obtulisti dimictere teneatis Non obstantibus\npremissis necnon constitutionibus apostolicis ceterisque contrariis quibuscumque\nNulli ergo omnino hominum liceat hanc paginam nostre Restitutionis et\nRestitutionis Repositionis concessionis uoluntatis et constitutionis\ninfringere uel ei ausu temerario contraire Si quis autem hoc\nattemptare presumpserit Indignationem omnipotentis dei et beatorum\npetri et pauli apostolorum eius se nouerit Incursurum Datum apud\nSanctumvictorem extra muros Gebennenses quarto kalendas aprilis\nAnno a Natiuitate domini Millesimoquadringentesimoquadragesimo\nsexto Pontificatus nostri Anno Sexto / · · xx · de perusio C et pro Curia\nFelix episcopus etc Venerabili fratri Thome Episcopo Dunkeldensi apostolice sedis\nper Regnum Scocie legato cum potestate legati de latere misso\nSalutem etc Ad ea feruentibus uotis intendimus ac copiose\nsolicitudinis studium ad diuini nominis gloriam et exalta-\ntionem katholice fidei vtilitatem quoque fidelium animarum",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 21199,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2485,
+    "lines": 39,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 62.74,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0008,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:31:37+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol7_0310_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol7_0310_L.jpg",
+      "bytes": 2499258,
+      "sha256": "1026fc49ecdee90b82bcc038adb49fd28445d8aac41eca01b57e8972d58809c8",
+      "sha256_of": "original",
+      "working_copy": "vol7_0310_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:31:37+00:00"
+  }
+}

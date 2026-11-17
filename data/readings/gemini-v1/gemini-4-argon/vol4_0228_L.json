@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol4_0228_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol4_0228_L.jpg",
+    "bytes": 1990631,
+    "sha256": "cf1605f5c8434f21dc80ffc449cc986e367e8025c9ca347af13271f515b09011",
+    "sha256_of": "original",
+    "working_copy": "vol4_0228_L.jpg"
+  },
+  "text": "Vite ac morum honestas aliaque laudabilia probitatis et virtutum\nmerita super quibus dilectus filius Guigo de Cularo clericus Gebennensis\ndiocesis apud nos fidedigno commendatur testimonio nos inducunt\nut sibi reddamur ad graciam liberales Cum itaque sicut accepimus\nperpetua capellania ad altare beate Marie virginis in parrochiali ecclesia\nsancti Iohannis de Porta Gracionopolitane diocesis sita quam quondam Guichardus\nMichaelis illius rector dum viveret obtinebat per obitum ipsius Guichardi\nqui extra Romanam curiam diem clausit extremum vacaverit et vacet\nad presens Nos volentes eidem Guigoni qui ut asserit de nobili genere\nex utroque parente procreatus existit premissorum meritorum suorum\nintuitu graciam facere specialem discrecioni vestre per apostolica scripta\nmandamus quatenus vos vel duo aut vnus vestrum capellaniam predictam\ncuius fructus redditus et proventus duodecim librarum turonensium\nparvorum secundum communem extimacionem valorem annuum ut ipse\nGuigo asserit non excedunt siue ut premittitur seu alias quouis\nmodo aut ex alterius cuiuscumque persona seu per liberam resignacionem\nalicuius de illa in dicta curia vel extra eam eciam coram notario\npublico et testibus sponte factam vacet eciam si tanto tempore\nvacaverit quod illius collacio iuxta Lateranensis statuta concilii ad sedem\napostolicam legitime deuoluta ipsaque capellania disposicioni apostolice\nquomodolibet reseruata existat et super ea inter aliquos lis\ncuius statum presentibus haberi volumus pro expresso pendeat\nindecisa dummodo tempore date presencium non sit alicui specialiter\nius quesitum cum omnibus iuribus et pertinenciis suis prefato\nGuigoni conferre et assignare curetis Inducentes per vos\nvel alium seu alios eundem Guigonem vel procuratorem suum eius\nnomine in corporalem possessionem capellanie iuriumque et\npertinenciarum predictorum et defendentes inductum amoto\nexinde quolibet illicito detentore ac facientes sibi de\nipsius capellanie fructibus redditibus prouentibus iuribus et\nobuencionibus vniuersis integre responderi contradictores auctoritate\nnostra etc. compescendo Non obstantibus pie memorie Bonifatii\npape VIII ac aliis constitucionibus apostolicis contrariis quibuscumque\nAut si aliqui super prouisionibus sibi faciendis de huiusmodi vel aliis\nbeneficiis ecclesiasticis in illis partibus speciales vel generales dicte sedis\nvel legatorum eius litteras impetrarunt eciam si per eas ad inhibicionem\nreseruacionem et decretum vel alias quomodolibet sit processum\nquibus omnibus prefatum Guigonem in dicte capellanie assecucionem\nvolumus anteferri sed nullum per hoc eis quo ad assecucionem\nbeneficiorum aliorum preiudicium generari Seu si venerabili fratri nostro\nepiscopo Gracionopolitano vel quibusuis aliis communiter vel diuisim a dicta\nsit sede indultum quod ad recepcionem vel prouisionem alicuius minime\nteneantur et ad id compelli aut quod interdici suspendi vel excommunicari\nnon possint quodque de huiusmodi vel aliis beneficiis ecclesiasticis ad\neorum collacionem prouisionem presentacionem seu quamuis aliam\ndisposicionem coniunctim vel separatim spectantibus nulli valeat",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 16584,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3103,
+    "lines": 46,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 66.48,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.001,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:16:31+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol4_0228_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol4_0228_L.jpg",
+      "bytes": 1990631,
+      "sha256": "cf1605f5c8434f21dc80ffc449cc986e367e8025c9ca347af13271f515b09011",
+      "sha256_of": "original",
+      "working_copy": "vol4_0228_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:16:31+00:00"
+  }
+}

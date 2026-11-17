@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol2_0286_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol2_0286_L.jpg",
+    "bytes": 2591781,
+    "sha256": "9364a9e468986a0feb5c491fba4ca93aa9df9175b94c37ea3e1d158970dbfc88",
+    "sha256_of": "original",
+    "working_copy": "vol2_0286_L.jpg"
+  },
+  "text": "Felix episcopus etcetera Dilecto filio Officiali Bellicen. Bald. Roman\npontificis fultus presipio considerat et auctoritate\nnaturam scrutatur humana variis plerumque figuratur\net oportunitati pervenit fallitus quibus alias ingrata\nquandoque concedit que postmodum ad meliorem notam\nprotendi sperantur ad statum debitum reduci Revocari\ncassari et annullari facit prout Rerum temporum et personarum\nqualitatibus pensatis Id in domino conspicit salubriter\nexpedire Dudum siquidem pro parte dilectorum filiorum\nAbbatis et Conventus monasterii Chassaynii Cistercien.\nordinis Lugdunen diocesis nobis exposito quod prefatum\nmonasterium quoddam loco campestri et confinibus Regni\nFrancie consistens in suis structuris Redditibus et\nproventibus propter hostiles incursus et calamitates\ninnumeras que prefatum Regnum et illi adiacentes\npartes diutius afflixerat adeo diminutum et desolatum\nexisteret / quod ipsi abbas et Conventus ex huiusmodi fructibus\net Redditibus congrue sustentari et Incumbentia\neis onera supportare non valerent et subiuncto\nquod si prioratus de Villeta Cluniacen ordinis dicte\ndiocesis eidem monasterio uniretur / ex hoc\nipsi abbas et Conventus melius necessitatibus suis provideri\net onera huiusmodi facilius supportare possent fieretque\nid in divini cultus in eodem monasterio augmentum\nEt pro parte eorumdem abbatis et conventus nobis\nsupplicato Ut prioratum predictum eidem monasterio\nunire et incorporare mandare dignaremur Nos\ntunc qui de expositis huiusmodi certam notitiam\nnon habebamus Dilecto filio abbati monasterii Cestriaci\nGebenen. diocesis proprio nomine non expresso per\nalias litteras nostras dedimus in mandatis quatinus vocatis\nqui forent evocandi de premissis expositis eorumque circumstantiis\nuniversis auctore nostra se diligenter informaret / et\nsi per Informationem exposita huiusmodi fore vera Reperiret\npetito prius dilecti filii prioris prioratus\nNantuaci Cluniacen ordinis et Lugdunen diocesis\npredictorum a quo prioratus de Villeta predictus\ndependet ad id accederet assensus prefato monasterio",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 8507,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2038,
+    "lines": 38,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 52.66,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.001,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:47:59+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol2_0286_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol2_0286_L.jpg",
+      "bytes": 2591781,
+      "sha256": "9364a9e468986a0feb5c491fba4ca93aa9df9175b94c37ea3e1d158970dbfc88",
+      "sha256_of": "original",
+      "working_copy": "vol2_0286_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:47:59+00:00"
+  }
+}

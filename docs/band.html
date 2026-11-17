@@ -118,6 +118,7 @@ const READER_LABEL = {
   "trocr-medieval-escriptmask": "TrOCR · medieval escriptmask", "trocr-catmus-base": "TrOCR · CATMuS base",
   "trocr-catmus-cursiva": "TrOCR · CATMuS cursiva",
 };
+const PAGE_LABEL = { "gemini-4-argon": "Gemini 4 Argon", "gemini-3.8-flash": "Gemini 3.8 Flash", "qwen3.8-27b": "qwen3.8-27b" };
 const READFILES = {}; // reader -> {page: [text per line]}, loaded on demand
 
 function readersFor(page) {
@@ -127,7 +128,7 @@ function readersFor(page) {
   ];
   const all = Object.keys(READER_LABEL);
   for (const n of all) opts.push({ id: "l:" + n, label: READER_LABEL[n], ok: (page.rd || []).includes(n) });
-  for (const m of Object.keys(PAGEREAD[`${V}:${page.n}`] || {})) opts.push({ id: "p:" + m, label: t("r.page", { model: m }), ok: true });
+  for (const m of Object.keys(PAGEREAD[`${V}:${page.n}`] || {})) opts.push({ id: "p:" + m, label: t("r.page", { model: PAGE_LABEL[m] || m }), ok: true });
   return opts.filter(o => o.ok || o.id.startsWith("l:") && SUMMARY_READERS.includes(o.id.slice(2)));
 }
 

@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol4_0165_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol4_0165_L.jpg",
+    "bytes": 1800571,
+    "sha256": "137461b4cd4b865be83cb1d207f06598ca5c9604e4568b1df76deecd1becf49f",
+    "sha256_of": "original",
+    "working_copy": "vol4_0165_L.jpg"
+  },
+  "text": "Quocirca discrecioni vestre per apostolica scripta mandamus quatinus\nvos vel duo aut vnus vestrum per vos vel alium seu alios premissa\nomnia et singula auctoritate nostra vbi et quando vobis expedire\nvidebitur solenniter publicantes eosdem Balduinum et successores\nsi et postquam vobis illos vel eorum aliquem constiterit excommunicacionis\nsentenciam incurrisse et super hoc per partem dictorum Iohannis et Andree requisitj\nseu alter vestrum fuerit requisitus tamdiu in ecclesijs dominicis et alijs\nfestiuis diebus dum inibi maior preter populi multitudo conuenit\nad diuina audiendum et alijs locis de quibus requisiti fueritis\nexcommunicatos publice nuncietis et ab alijs nunciari faciatis ac\nomnibus arcius euitari donec eidem Iohanni vel procuratori predicto de\npensione tunc debita satisfaciant vel cum eorum altero amica\nbiliter concordatum fuerit ipsique excommunicati ab huiusmodi excommunicacionis\nsentencia absolucionis beneficium meruerint obtinere non obstantibus\nomnibus supradictis aut si Balduino et successoribus prefatis\nvel quibusuis alijs communiter vel diuisim a sede apostolica sit indultum\nquod interdici suspendi vel excommunicari aut ad pensionis alicuius\nsolucionem compelli seu suis beneficijs ecclesiasticis priuari non\npossint per litteras apostolicas non facientes plenam et expressam\nac de verbo ad verbum de indulto huiusmodi mencionem Contradictores etcetera per censuram etcetera compescendo\nDatum Lausanne decimo septimo kalendas Iunij Anno a natiuitate\ndomini millesimo quadringentesimo quadragesimo tercio\npontificatus nostri Anno tercio. Xii Iohannes de albeto\nFelix episcopus etcetera dilectis filijs decano anniuerisarij burgi gebennensis\ndiocesis et Catherino de canalibus canonico Lausannensis ecclesie ac\nOfficiali Lausannensi Salutem etcetera Vite ac morum honestas aliaque lau\ndabilia probitatis et virtutum merita super quibus dilectus filius\nGirardus albi presbiter Lausannensis diocesis apud nos fide digno\ncommendatur testimonio nos inducunt vt sibi reddamur ad graciam\nliberales Cum itaque sicut accepimus perpetua capellania ad altare\nsancti petri situm in parrochiali ecclesia loci de Yuerduno dicte diocesis quam\nquondam Iohannes tacleti dum viueret obtinebat per obitum ipsius\nIohannis qui extra Romanam curiam diem clausit extremum vacauit\net vacet ad presens Nos volentes dicto Girardo premissorum\nmeritorum suorum intuitu graciam facere specialem discrecioni vestre\nper apostolica scripta mandamus quatinus vos vel duo aut vnus vestrum\ncapellaniam predictam que sine cura et de iure patronatus laicorum\nvt ab aliquibus asseritur existit cuiusque fructus redditus et prouentus\ndecem et octo librarum turonensium paruoium secundum communem extimacionem\nvalorem annuum vt ipse Girardus asserit non excedunt siue\nvt premittitur siue alias quouismodo aut per liberam resignacionem\nalicuius de illa extra Romanam curiam etiam coram notario publico\net testibus sponte factam vacet eciam si tanto tempore vacauit\nquod eius collacio iuxta Lateranensis statuta concilij ad sedem apostolicam\nlegittime deuoluta ipsaque capellania disposicioni apostolice generaliter",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 18622,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3109,
+    "lines": 45,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 68.11,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0006,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:15:57+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol4_0165_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol4_0165_L.jpg",
+      "bytes": 1800571,
+      "sha256": "137461b4cd4b865be83cb1d207f06598ca5c9604e4568b1df76deecd1becf49f",
+      "sha256_of": "original",
+      "working_copy": "vol4_0165_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:15:57+00:00"
+  }
+}

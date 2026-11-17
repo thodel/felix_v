@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol7_0213_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol7_0213_R.jpg",
+    "bytes": 2543163,
+    "sha256": "faaef2b2137e4956056c0462119997ff159a913a0fe64f8e45d8334c6de713e4",
+    "sha256_of": "original",
+    "working_copy": "vol7_0213_R.jpg"
+  },
+  "text": "si aliqui super provisionibus sibi faciendis de huiusmodi vel aliis\nbeneficiis ecclesiasticis in illis partibus speciales vel generales dicte sedis\nvel legatorum eius litteras impetraverint eciam si per eas ad\ninhibicionem reservacionem et decretum vel alias quomodolibet\nsit processum quibus omnibus prefatum Aymonem in dicte\necclesie Bressie assecucione volumus anteferri sed nullum per\nhoc eis quo ad assecucionem beneficiorum aliorum preiudicium generari\nseu si venerabili fratri nostro episcopo Lausanensi vel quibusvis\naliis communiter vel divisim a dicta sit sede indultum quod ad re\ncepcionem vel provisionem alicuius minime teneantur et ad id com\npelli aut quod interdici suspendi vel excommunicari non possint\nquodque de huiusmodi vel aliis beneficiis ad eorum collacionem provisionem\npresentacionem seu quamvis aliam disposicionem coniunctim vel separatim\nspectantibus nulli valeat provideri per litteras apostolicas non fa\ncientes plenam et expressam ac de verbo ad verbum de indulto huiusmodi et qualibet alia dicte\nsedis indulgencia generali vel speciali cuiuscumque tenoris existat per\nquam presentibus non expressam vel totaliter non insertam effectus\nearundem et de qua cuiusque toto tenore habenda sit in nostris litteris\nNos enim si dictus Aymo ad hoc repertus fuerit ydoneus ut\nprefertur exnunc prout exnunc decernimus irritum et inane si secus\nsuper hiis a quoquam quavis auctoritate scienter vel ignoranter\ncontigerit attemptari ac si die date presencium eidem Aymoni\nad hoc reperto ydoneo de dicta ecclesia cum interposicione decreti\nprovideri mandavissemus Datum apud sanctum Mauricium Agaunensem\nGebennensis diocesis Quinto Idus Februarii Anno a Nativitate domini\nMillesimoquadringentesimoquadragesimoseptimo pontificatus\nnostri Anno Septimo .xxxii. v. sol. S. Poncii\nFelix episcopus etc. Dilecto filio Johanni Durey Canonico\necclesie Augustensis familiari nostro Salutem etc. Grata fa\nmiliaritatis et devocionis obsequia que nobis et apostolice sedi\nhactenus impendisti et adhuc sollicitis studiis impendere\nnon desistis necnon vite ac morum honestas aliaque laudabilia\nprobitatis et virtutum merita quibus personam tuam tam fami\nliari experiencia quam eciam fidedignorum testimoniis iuvari perci\npimus nos inducunt ut ea tibi favorabiliter concedamus\nque tuis commoditatibus fore conspicimus oportuna. Tuis\nitaque supplicacionibus inclinati tibi qui eciam continuus commensalis\nnoster existis ut obsequiis nostris insistendo seu in alio beneficio\necclesiastico quod obtines ac in futurum obtinebis residendo\nfructus redditus et proventus Canonicatus et prebende\necclesie Augustensis perpetui sine cura officii in eadem",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 31384,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2645,
+    "lines": 41,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 63.54,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0011,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:31:16+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol7_0213_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol7_0213_R.jpg",
+      "bytes": 2543163,
+      "sha256": "faaef2b2137e4956056c0462119997ff159a913a0fe64f8e45d8334c6de713e4",
+      "sha256_of": "original",
+      "working_copy": "vol7_0213_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:31:16+00:00"
+  }
+}

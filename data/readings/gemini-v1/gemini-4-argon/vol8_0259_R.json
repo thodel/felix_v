@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol8_0259_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol8_0259_R.jpg",
+    "bytes": 3233712,
+    "sha256": "9dba3beab311d54ca71d94e1363028435857e4d58e7df402dce7fd59e502b97a",
+    "sha256_of": "original",
+    "working_copy": "vol8_0259_R.jpg"
+  },
+  "text": "personis de canonicatibus et prebendis eiusdem ecclesie\nvel aliis beneficiis ecclesiasticis ad eorum collationem\nprovisionem huiusmodi nulli valeat provideri per litteras\napostolicas non facientes plenam et expressam etc. mentionem\net qualibet alia dicte sedis indulgentia generali\netc. existit per quam presentibus non expressam etc.\neffectus huiusmodi gratie impediri valeat quolibet vel\ndifferri et de qua cuiusque toto etc. nuntio specialiter\nseu si dictus laurentius presens non fuerit\nad prestandum de observandis statutis et consuetudinibus\npredicte solitum iuramentum dummodo\nin absentia sua per procuratorem ydoneum et\ncum ad ecclesiam ipsam accesserit corporaliter illud\nprestet Etenim cum non sit verisimile quod quis\nsua beneficia multis forsan cum laboribus acquisita\nde quibus vite subsidia percipit simpliciter resignet\nintente provideatis ne in resignatione huiusmodi si\nfiat ex parte Iohannispetri et laurentii predictorum\naliqua pravitas interveniat seu etiam corruptela\nNos enim exnunc irritum decernimus etc. attemptari\nDatum lausanne Tercio Idus februarii Anno a na\ntivitate domini millesimo quadringentesimo quadra\ngesimo octavo Pontificatus nostri Anno octavo\nxxii\nS de spina Dinkelspuhel\nFelix etc. dilecto filio laurentio Wyeleri civi mon\ntisregalis Salutem etc. Benigno sunt illa tibi\nconcedenda favore per que sicut pie desiderare\nvideris conscientie pacem et salutem anime deo\npropicio consequi merearis Hinc est quod nos\ntuis devotis in hac parte supplicationibus inclinati\ntibi ut aliquem ydoneum et discretum presbiterum se\ncularem vel regularem in tuum possis eligere\nconfessorem qui quotiens tibi fuerit oportunum\nconfessione tua diligenter audita pro commissis",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 13681,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 1694,
+    "lines": 35,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 47.43,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0012,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:35:07+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol8_0259_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol8_0259_R.jpg",
+      "bytes": 3233712,
+      "sha256": "9dba3beab311d54ca71d94e1363028435857e4d58e7df402dce7fd59e502b97a",
+      "sha256_of": "original",
+      "working_copy": "vol8_0259_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:35:07+00:00"
+  }
+}

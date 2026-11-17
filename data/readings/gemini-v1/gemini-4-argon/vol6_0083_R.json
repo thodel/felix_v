@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol6_0083_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol6_0083_R.jpg",
+    "bytes": 2513152,
+    "sha256": "1afbf8e2de234f5450a522308879ebf1479d6bb505a70e5f6af97419a6143cc0",
+    "sha256_of": "original",
+    "working_copy": "vol6_0083_R.jpg"
+  },
+  "text": "intuitu gratiam facere specialem discrecioni vestre per apostolica scripta mandamus\nquatenus vos vel duo aut vnus vestrum ecclesiam de Yssonia predictam cuius fructus\nredditus et prouentus decem et octo librarum turonensium paruorum secundum taxacionem decime\nvalorem annuum vt idem Petrus asserit non excedunt cum illam per assecucionem huiusmodi\nvacare contigerit eciam si iam actu alias quouismodo aut ex alicuius\ncuiuscumque persona seu per liberam alicuius de illa extra Romanam curiam eciam\ncoram notario publico et testibus sponte factam resignacionem aut constitucionem felicis\nrecordacionis Johannis pape xxii predecessoris nostri que incipit Execrabilis\nvacet eciam si tanto tempore vacauerit quod eius collacio iuxta Lateranensis statuta\nconcilii ad sedem apostolicam legitime deuoluta ipsaque ecclesia de Yssonia\ndisposicioni apostolice quomodolibet reseruata existat et super ea inter aliquos\nlis cuius statum presentibus haberi volumus pro expresso pendeat dummodo tempore\ndate presencium non sit in ea alicui specialiter ius quesitum\ncum omnibus iuribus et pertinenciis suis eidem Petro auctoritate nostra conferre et\nassignare curetis inducentes per vos vel alium seu alios eundem Petrum\nvel procuratorem suum eius nomine in corporalem possessionem ecclesie de Yssonia\niuriumque et pertinenciarum predictorum et defendentes inductum amoto\nexinde quolibet illicito detentore ac facientes eidem Petro de ipsius ecclesie\nde Yssonia fructibus redditibus prouentibus iuribus et obuenconibus vniuersis\nintegre responderi contradictores auctoritate nostra etc. compescendo Non obstantibus\npie memorie Bonifacii pape octaui eciam predecessoris nostri ac aliis apostolicis\nconstitucionibus contrariis quibuscumque Aut si aliqui super prouisionibus sibi faciendis\nde huiusmodi parrochialibus vel aliis beneficiis ecclesiasticis in illis partibus speciales vel\ngenerales dicte sedis vel legatorum eius litteras impetrauerint eciam si\nper eas ad inhibicionem reseruacionem et decretum vel alias quomodolibet\nsit processum quibus omnibus prefatum Petrum in dicte ecclesie de Yssonia\nassecucione volumus anteferri sed nullum per hoc eis quoad assecucionem\nbeneficiorum aliorum preiudicium generari Seu si venerabili fratri nostro episcopo\nAugustensi vel quibusuis aliis communiter vel diuisim a dicta sit sede indultum\nquod ad recepcionem vel prouisionem alicuius minime teneantur et ad id compelli\naut quod interdici suspendi vel excommunicari non possint quoque de huiusmodi vel\naliis beneficiis ecclesiasticis ad eorum collacionem prouisionem presentacionem\nseu quamuis aliam disposicionem coniunctim vel separatim pertinentibus nulli\nvaleat prouideri per litteras apostolicas non facientes plenam et expressam ac de verbo ad verbum de indulto huiusmodi mencionem et qualibet\nalia dicte sedis indulgencia generali vel speciali cuiuscumque tenoris existat per quam presentibus non expressam vel totaliter non insertam effectus huiusmodi gracie impediri valeat quomodolibet vel\ndifferri et de qua cuiusque toto tenore habenda sit in nostris litteris mencio specialis Aut\nquod nos dudum eidem Petro de beneficio ecclesiastico cum cura vel sine\ncura vacante tunc vel vacaturo ad collacionem prouisionem presentacionem\nseu quamuis aliam disposicionem dilectorum filiorum capituli ecclesie sancti\nPauli Lugdunensis iuxta statuta generalis concilii Basiliensis per\nalias nostras litteras mandauimus prouideri Nos enim cum\neodem Petro vt ecclesiam de Yssonia necnon beneficium curatum quod\nvigore litterarum huiusmodi exspectare noscitur si illam et illud earundem\nlitterarum vigore assequatur eciam si alia parrochialis ecclesia fuerit\ninsimul per annum retinere libere et licite valeat generalis\nconcilii ac aliis apostolicis constitucionibus contrariis nequaquam obstantibus\nauctoritate apostolica tenore presencium de specialis dono gracie dispensamus\nproviso quod ecclesia de Yssonia et aliud beneficium huiusmodi debitis",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 21466,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3923,
+    "lines": 48,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 80.75,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0005,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:26:19+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol6_0083_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol6_0083_R.jpg",
+      "bytes": 2513152,
+      "sha256": "1afbf8e2de234f5450a522308879ebf1479d6bb505a70e5f6af97419a6143cc0",
+      "sha256_of": "original",
+      "working_copy": "vol6_0083_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:26:19+00:00"
+  }
+}

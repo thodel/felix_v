@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol3_0209_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol3_0209_R.jpg",
+    "bytes": 2153262,
+    "sha256": "3b038281100156345ac58145e3f6ffc3ca2d388257725eb5fc58de4119c0a1ac",
+    "sha256_of": "original",
+    "working_copy": "vol3_0209_R.jpg"
+  },
+  "text": "abolendo et de cetero fieri prohibendo inter alia statuit et\nordinavit quod Romanus pontifex pro tempore existens de\nvacantibus beneficiis modo premisso et concurrentium videlicet\nde uno ad collationem in qua decem et de duobus in qua\nquinquaginta et ultra forent beneficia disponere et deinde\nsimiliter ordinavit quod ipse Romanus pontifex huiusmodi dispositione\ndecrevit ultra per viam reservationis habere non posset. Hinc\nest quod nos volentes tibi qui sacri nostri palatii apostolici\nauditor et referendarius nostro ac ut accepimus de militari\ngenere procreatus existis premissorum meritorum et obsequiorum\ntuorum intuitu gratiam facere specialem motu proprio non ad\ntuam vel alterius alterius pro te nobis super hoc oblate\npetitionis instantiam sed de nostra mera liberalitate canonicatum\necclesie Basiliensis in qua una ut accepimus decem prebendarum\ncanonicatuum numerus et ultra fore dinoscitur sit\nin qua pro alius in canonicatu juribus recipiendis nedum\nscrupsimus sed plenitudine juris canonici apostolica nobis auctoritate\nconferimus et de illo una primamque prebendam vero eiusdem\necclesie si qua vacat ad presens vel cum vacaverit quam tu\nper te vel procuratorem tuum ad hoc legitime constitutum\ninfra unius mensis spatium postquam tibi vel eidem procuratori\nvacatio illius innotuerit duxeris acceptandam conferendam\ntibi post acceptationem huiusmodi ad omnibus juribus et pertinentiis\nsuis juxta dictarum et ordinationis huiusmodi formam donamus\napostolice reservationi districtius inhibentes Venerabili fratri nostro\nEpiscopo Basiliensi et dilectis filiis Capitulo Basiliensi\nac illi vel illis ad quem vel quos in eadem\necclesia canonicorum receptio canonicatuum prebendarumque\ncollatio provisio collatio seu quevis alia dispositio communiter vel\ndivisim pertinet ne de prebenda huiusmodi juribus juriumque\neiusdem ante acceptationem eandem nisi postquam eis constiterit\nquod tu vel procurator predicti illam nolitistis acceptare disponere\nquoquomodo presumat seu decernentes extunc irritum et\nattemptari Non obstantibus de certo canonicorum numero ac aliis quibuscumque\naliis eiusdem ecclesie statutis et consuetudinibus juramento confirmatione\napostolica seu quavis firmitate alia roboratis\nAut si episcopo et capitulo prefatis seu quibusvis aliis generaliter vel\ndivisim a sede apostolica sit indultum quod ad receptionem\nvel provisionem alicuius minime teneantur et ad id compelli non\npossint quodque de canonicatibus et prebendis dicte ecclesie vel quibusvis\naliis beneficiis ecclesiasticis ad eorum collationem etcetera plenam et liberam etcetera non facientibus\nplenam et mentionem et qualibet alia dicte sedis indulgentia etcetera\neffectus huiusmodi gratie impediri non valeat seu differri. Constitutis presentibus",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 11219,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2739,
+    "lines": 43,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 62.72,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0007,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:50:09+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol3_0209_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol3_0209_R.jpg",
+      "bytes": 2153262,
+      "sha256": "3b038281100156345ac58145e3f6ffc3ca2d388257725eb5fc58de4119c0a1ac",
+      "sha256_of": "original",
+      "working_copy": "vol3_0209_R.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:50:09+00:00"
+  }
+}

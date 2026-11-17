@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol1_0306_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol1_0306_R.jpg",
+    "bytes": 2786934,
+    "sha256": "794ebedec2015787c74c7736d6581ef293cf0796d994b6dece0ebaaba5d31537",
+    "sha256_of": "original",
+    "working_copy": "vol1_0306_R.jpg"
+  },
+  "text": "et confirmaverit vosque sub ipsius ordinarii cura regimine\nobedientia et directione deinceps vivere debere eadem\nauctoritate decreverit a nonnullis tamen decanum predictum\ncuius ut premittitur onerata conscientia in premissis vices\nsuas alteri presertim ex dicta prefata committere non\npotuisse et per consequens de viribus habiti processus\nhuiusmodi hesitetur Nos ne propterea vos que interim\nut asseritis sub regimine cura et directione dicti\nordinarii continuo permansistis et permanetis ad presens\nimposterum forsitan molestari contingat providere\nvolentes vestris in hac parte supplicationibus inclinati\nprocessum huiusmodi et quecunque inde secuta valere roburque\nfirmitatis obtinere in iudicio et extra ubicunque\nprocessus ipse exhibitus fuerit in omnibus et per omnia\nac si per ipsum decanum debitis solennitatibus observatis\nlegitime habitus extitisset vosque sub regimine et\ndirectione ordinarii huiusmodi sub quibus hucusque\nremansistis ut prefertur etiam deinceps vivere et\nremanere posse et debere auctoritate apostolica decernimus per\npresentes premissis ceterisque contrariis non obstantibus\nquibuscunque Nulli ergo etc. nostre constitutionis infringere etc.\nSi quis autem etc. Datum Basilee sexto kalendas octobris\nanno a nativitate domini millesimo quadringentesimo\nquadragesimo pontificatus nostri anno primo XIII A Episcopus Grossetanus\nFelix episcopus etc. Venerabili fratri episcopo Maurianensi\nFelix episcopus etc. Dilecto filio Iohanni Luchini clerico Taurinensis\ndiocesis Salutem etc. Vite ac morum honestas aliaque laudabilia\nprobitatis et virtutum merita super quibus apud nos fidedigno\ncommendaris testimonio nos inducunt ut te specialibus\nfavoribus et gratiis prosequamur Nuper siquidem per alias\nnostras litteras videlicet sub data diei sexto kalendas septembris\npontificatus nostri anno primo tibi de canonicatu et prebenda\necclesie Lausanensis tunc per obitum quondam Ludovici Parisii\nipsius ecclesie canonici apud sedem apostolicam et in Romana curia\ndefuncti vacantibus et antea dispositioni apostolice sedis reser-\nvatis mandavimus provideri certo super hoc executori deputato\nprout in ipsis litteris plenius continetur Cum autem sicut exhibita\nnobis postmodum pro parte tua petitio continebat dicta\nprebenda ex eius fundatione et institutione primevis seu\nalias iuxta statuta et consuetudines dicte ecclesie ut dicitur per\nalium quam presbiterum obtineri non possit quodque tu defectu etatis\nquam pateris in illius decimooctavo anno constitutus\ntibi repugnante ad sacerdotium promoveri nondum valueris neque",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 17381,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2542,
+    "lines": 43,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 58.14,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0012,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:06:13+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol1_0306_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol1_0306_R.jpg",
+      "bytes": 2786934,
+      "sha256": "794ebedec2015787c74c7736d6581ef293cf0796d994b6dece0ebaaba5d31537",
+      "sha256_of": "original",
+      "working_copy": "vol1_0306_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:06:13+00:00"
+  }
+}

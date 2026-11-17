@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol5_0181_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol5_0181_L.jpg",
+    "bytes": 2477185,
+    "sha256": "0eda51287d30dca3aea83020b61a59cf2e471876444d31565181ba8323df6a84",
+    "sha256_of": "original",
+    "working_copy": "vol5_0181_L.jpg"
+  },
+  "text": "aliqua bestia vel alia denariata ante solum predictum dictis eciam cives et Bur-\ngenses Gebennenses partem rei ipsius emere habere possint habita racione pro et pro\nrata si forenses eam providerint non Item quod aliquis non possit emere id est mercari\naliquas denariatas extra portam civitatis sub pena decem solidorum fabrice\net bastidie predictis applicandorum et denariata per cives ipsius emi pos-\nsint et pauperibus erogari Item si mercatores alicuius vel aliarum dena-\nriarum quecumque sint seu sint carnifices vel alii quicumque emant causa ven-\ndendi cives et Burgenses predicti soluto nouo id pro publice venditorii\nde re vendita eodem precio possint ad usus et provisiones ipsorum habere tanto\neorum emptore et venditore plassato tamen prius videlicet de pena et labore\nItem quod alicui domino non liceat nec possit inhibere notariis sed juratis quin\ninstrumentum vel literam recipiat et faciat ad instantiam cuiuscumque videlicet\nnotariis et juratis habitantibus Gebennenses qui notarii et jurati possint\nlicite dare recipere et levare instrumenta et hec sibi fieri et recipias\net requirentibus inhibicione trium vel offitialium maiestatis non obstante Item\nquod nullus devestiatur per nos vel alium quemcumque possessione sua quoquomodo\nabsque cause cognicione sed defendantur terra quamdiu voluerint stare juri per\nusus et consuetudines predicte civitatis salvo jure dominorum a quibus\nres in feudum emphiteosim vel abergium tenetur seu teneri possunt in futurum\nItem quod mulieres vidue possint matrimonium contrahere quando voluerint\nabsque pena Item quod quicumque clericus vel laicus qui invenerit in dampno\nsuo aliquod animal illud capere auferre per se possit et detinere loco pignoris\nimprumptum quod eciam vendere possit prius domino ipsius revelato infra septem\ndies nisi dampnum sibi fuerit emendatum ad taxacionem proborum virorum dicte\ncivitatis vocato domino mulier si haberi possit alias sibi voce preconis per\ncivitatem notificetur Item quod si aliqua persona vel animal det alicui dampnum\nin vinea orto campo prato nemore vel alibi et ille cui dampnum datur seu dabitur\nvel alias nomine suo seu nuncius communis aliquid invenerit ipsum pignorare\npossit ipsum et animal retinere pro dampno dato et super hoc inventori super inte-\ngracione suo juramento credere dampnum autem per probos homines ut prefertur\ntaxetur Item super iniuriis et offensis illatis alicui persone de quibus\nclama seu denunciatio facta fuerit domino per cives Burgenses juratos\nvel habitatores civitatis extorqueri si fieri possit nec recuperetur\nclama seu bannum si debeatur vel pro banno seu clama pignoretur\ndonec de iniuriis et offensis cognitum fuerit juridice et parti iniuriate\nsatisfactum Item si clama facta fuerit de debito donec de debito fuerit\ncognitum et satisfactum non recuperetur clama Item quod inquisiciones\nnon fiant contra delinquentes cives sive Burgenses in civitate Gebennensi\net infra banna nisi ad denunciacionem partis nisi tamen de casibus criminalibus\nsuperius exceptis Item quod pro aliquibus querelis iniuriosis inquiri\nnon possit nec debeat nec bannum exigi sed totaliter summarie et de plano",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 11442,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3124,
+    "lines": 41,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 75.22,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0006,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:55:17+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol5_0181_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol5_0181_L.jpg",
+      "bytes": 2477185,
+      "sha256": "0eda51287d30dca3aea83020b61a59cf2e471876444d31565181ba8323df6a84",
+      "sha256_of": "original",
+      "working_copy": "vol5_0181_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:55:17+00:00"
+  }
+}

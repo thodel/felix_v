@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol3_0073_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol3_0073_L.jpg",
+    "bytes": 2069467,
+    "sha256": "4f214f0794fa5718361e724eb97c57e02c761ea96388619c832dbb54c6c83d93",
+    "sha256_of": "original",
+    "working_copy": "vol3_0073_L.jpg"
+  },
+  "text": "etiam predecessorum nostrorum / ac aliis apostolicis constitu-\ntionibus contrariis quibuscumque / Aut si aliqui\nsuper admissionibus sibi faciendis / de hospitalibus\nhuiusmodi alias gratias speciales vel generales / sedis predicte\nvel legatorum eius forte impetrarint / etiam\nsi per eas ad inhibitionem et processum / quibus\nomnibus presentibus remotionem in predictis\nhospitalis assumpcione volumus anteferri\nsed nullum per hoc eis quo ad assumpcionem\nhospitalium aliorum preiudicium generari / Quoque\nvenerabili fratri nostro episcopo Treverensi pro tempore\nexistenti / vel quibusvis aliis communiter vel\ndivisim / a dicta sit sede indultum / quod ad\nreceptionem vel admissionem alicuius minime\nteneantur / et ad id compelli aut non\npossint / quodque de hospitalis huiusmodi ad eorum\ncollationem vel quamvis aliam dispositionem\npertinentem vel spectantem preteritisque nulli va-\nleat commissio fieri / per litteras apostolicas non fa-\ncientes plenam etc. mentionem / et qualibet\nalia dicte sedis indulgentia generali vel\nspeciali / cuiuscumque tenoris existat / per quam\npresentibus non expressam vel totaliter non insertam\neffectus earum impediri valeat quolibet vel\ndifferri / et de qua cuiusque toto tenore de ver-\nbo specialis. Nos enim exnunc presentium decernimus\net irritum si secus etc. attemptari. Datum Basilee\nDecimoseptimo kalendas Novembris / Anno a Nativitate\ndomini Millesimoquadringentesimoquadragesimo\nsecundo / Pontificatus nostri Anno Tertio. cxiiij.\nN. de Valle Gratia pro deo\nde Foro per\nJo. Duchesles\nFelix episcopus etc. Dilecto filio Lamperto de Estich Rectori\nparrochialis ecclesie in Wamech Coloniensis diocesis / magistro\nin artibus / Saltem etc. Litterarum scientia vite etc. morum / super\nquibus apud nos fidedigno commendaris testimonio\nnos inducunt ut tibi reddamur ad gratiam liberales /\nDudum siquidem sacra generalis synodus Basiliensis\ninter alias gratias expectativas et nominationes ad\nvacatura beneficia per sedis Romani pontificis tunc\ncommissas abolendo / et vias de cetero fieri prohibendo",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 9263,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2031,
+    "lines": 42,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 47.38,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0015,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:49:00+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol3_0073_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol3_0073_L.jpg",
+      "bytes": 2069467,
+      "sha256": "4f214f0794fa5718361e724eb97c57e02c761ea96388619c832dbb54c6c83d93",
+      "sha256_of": "original",
+      "working_copy": "vol3_0073_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:49:00+00:00"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol7_0213_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol7_0213_L.jpg",
+    "bytes": 3054169,
+    "sha256": "1dca2bb2d4ae3594a6313175567923d3095db6e1a75b84a5a78fd2797b500604",
+    "sha256_of": "original",
+    "working_copy": "vol7_0213_L.jpg"
+  },
+  "text": "quod virtute dictorum) et inantea se per seipsum super premissis\na premissis quacumque auctoritate predicta vel ignorantia etc. attemptari\nDatum apud Sanctum Desiderium Ebroicensis diocesis kalendis octobris\nsexto kalendas februarii Anno a Nativitate domini millesimo\nquadringentesimoquadragesimoquarto pontificatus\nnostri Anno Sextimo .xviij. kalendas .x. de silva\nFelix episcopus servus servorum dei Dilecto filio Stephano Berengarii Canonico\nLausanensi Saluto et Apostolicam Dignum arbitramur et congruum ut illos se\nreddat sedes apostolica gratiosos quibus ad id propria virtutum merita\nlaudabiliter suffragantur. Cum itaque sicut accepimus parochialis ecclesia\nsancti Cirici de Bellon Lausanensis diocesis quam quondam\nHugo Bandellionis dumtaxat Rector dum viveret obtinebat per\nobitum ipsius Hugonis qui extra Romanam Curiam diem clausit ex-\ntremum vacaverit et vacet ad presens Nos volentes dilectum filium\nAymonem Coytier qui ut asserit presbiter est et apud nos de vite\nac morum honestate aliisque probitatis et virtutum meritis multiplici\ncommendatur fide dignorum favore prosequi gratioso. Discretioni tue\nper apostolica scripta mandamus quatenus si per diligentem examina-\ntionem eundem Aymonem ad hoc repereris ydoneum super quo\ntua conscientiam oneramus eidemque prefate ecclesie cuius redditus\net proventus viginti librarum Turonensium parvorum secundum communem exti-\nmationem valorem non excedunt ut ipse Aymo asserit nichilominus de ipso filio ut premittitur per\nalium quocumque aut ex alterius cuiuscumque persona seu per libe-\nram resignationem vel cessionem alicuius de illa in seu extra Romanam\nCuriam etiam coram Notariis publicis et testibus sponte factam\ntestificantibus aut scripturis felicibus recordationibus Johannis\npape xxij predecessoris nostri que incipit Execrabilis si eidem ecclesie vacet\nipse vacaverit vel alias certo modo post canonicam constitutionem Concilii\nad omnes personas legiptimum decubitum per alias ecclesias disposi-\ntioni quomodolibet reservata existat et super eadem ecclesia inter\naliquos lis cuius statum presentibus haberi volumus pro expresso pen-\ndeat indecisa Dummodo tempore date presentium non sit in ea alicui\nspecialiter ius quesitum eam cum omnibus juribus et pertinentiis\nsuis eidem Aymoni auctoritate nostra conferas et assignes. In-\nducens per te vel alium seu alios prefatum Aymonem vel\nprocuratorem suum eius nomine in corporalem possessionem ecclesie\njuriumque et pertinentiarum predictarum et defendens inductum amoto\nquolibet detentore faciens sibi de ipsius ecclesie\nfructibus redditibus et proventibus et obventibus universis integre\nhindeni Contradictores auctoritate nostra etc. compescendo. Non\nobstantibus pie memorie Bonifacii pape viij vel precessoris nostri\nprohibentibus et aliis apostolicis constitutionibus quibuscumque Sicut",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 13547,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2809,
+    "lines": 42,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 65.9,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0007,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:00:27+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol7_0213_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol7_0213_L.jpg",
+      "bytes": 3054169,
+      "sha256": "1dca2bb2d4ae3594a6313175567923d3095db6e1a75b84a5a78fd2797b500604",
+      "sha256_of": "original",
+      "working_copy": "vol7_0213_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:00:27+00:00"
+  }
+}

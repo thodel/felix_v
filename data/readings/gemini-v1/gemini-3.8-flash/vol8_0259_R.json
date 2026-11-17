@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol8_0259_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol8_0259_R.jpg",
+    "bytes": 3233712,
+    "sha256": "9dba3beab311d54ca71d94e1363028435857e4d58e7df402dce7fd59e502b97a",
+    "sha256_of": "original",
+    "working_copy": "vol8_0259_R.jpg"
+  },
+  "text": "ipsius de canonicatibus et prebendis eiusdem ecclesie\nvel aliis beneficiis ecclesiasticis ad eorum collationem\nprovisionem seu ullam valeat provideri per litteras\ndictorum non fecerit plenam et expressam mentionem\net qualibet alia dicte sedis indulgentia generali\nvel speciali per quam prefatus non expressa presentibus\neffectus huius gratie impediri valeat quolibet vel\ndifferri et de qua cuiusque toto tenore mentio specialis\nNon per dictum Laurentium quod non possit\nad prestandum de observandis statutis et consue-\ntudinibus predicte Johannis decanatus interim decanatu\nin absentia sua per procuratorem ydoneum et\ncum ad ecclesiam ipsam accesserit corporaliter illud\nprestet Eterum cum non sit verisimile quod quis\nsua beneficia multo senis cum laboribus acquisita\nnec quibus vix subsidia pauper simpliciter resignet\nvolente provideatur hic in resignatione huius per\nsua ex parte deliberationem et litteras predictorum\nlitterarum privatas intelligeretur per eorum temporale\nNos enim refutatis meritorum decernimus etc. attentari\nDatum Lausannee tertio kalendas februarii Anno a na-\ntivitate domini millesimo quadringentesimoquadra-\ngesimoctavo pontificatus nostri Anno octavo. xxviiij.\nJacobus Dunkelspuhel\nFelix episcopus etc. Dilecto filio Laurentio Wigloni civitatis Noviomi Ro. de Vencenti\npresbitero Salutem etc. Benigno favilla tibi Dannandus\nconcedendo favore per que sicut pie desiderare\nvideris conscientie statum et salutem anime deo\npropitio recipere meriaris Hinc est quod nos\ntuis devotionis huiusmodi et supplicantibus inclinati\ntibi ut aliquem ydoneum et discretum presbi-\nterum secularem vel regularem in tuum possis eligere\nconfessorem qui quotiens tibi fuerit oportunum\nconfessione tua diligenter audita pro commissis",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 8656,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 1739,
+    "lines": 34,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 50.18,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0017,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:03:21+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol8_0259_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol8_0259_R.jpg",
+      "bytes": 3233712,
+      "sha256": "9dba3beab311d54ca71d94e1363028435857e4d58e7df402dce7fd59e502b97a",
+      "sha256_of": "original",
+      "working_copy": "vol8_0259_R.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:03:21+00:00"
+  }
+}

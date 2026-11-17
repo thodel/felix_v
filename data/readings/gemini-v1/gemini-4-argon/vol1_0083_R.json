@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol1_0083_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol1_0083_R.jpg",
+    "bytes": 2710107,
+    "sha256": "1cb320832e8090265826f871081aaf0cf5ebb49c2b40bfccf56cf3dbcde6f98e",
+    "sha256_of": "original",
+    "working_copy": "vol1_0083_R.jpg"
+  },
+  "text": "ut tibi illa libenter committamus per que te fauoribus apostolicis\nprosequimur sedi quoque apostolice fructuosus existas Hinc est quod\nnos tam dilecti filii nostri nobilis viri philippi de Sabaudia\nGebennensis Comitis cuius ut ipse asserit familiaris existis\nquam meritorum tuorum intuitu ipsius philippi in hac parte\ntuisque supplicationibus inclinati te monetarium nostrum consti-\ntuimus et facimus per presentes atque aliorum nostrorum monetariorum\nnumero et consorcio fauorabiliter aggregamus cum omnibus honoribus\noneribus emolumentis priuilegiis exemptionibus et indultis\nquibus alii pro tempore quomodolibet pociuntur et gaudent\nVolumus autem quod antequam huiusmodi officium exerceas in manibus\ndilecti filii Johannis de Grolea Notarii et Vicecamerarii nostri\naut eius locumtenentis de huiusmodi officio fideliter exercendo solitum\nprestes corporaliter iuramentum Nulli ergo omnino hominum etcetera\nnostre constitutionis et admissionis infringere etcetera contrarie Si quis\nautem etcetera decursus Nec mireris quod bulla etcetera consueuerunt\nDatum Basilee octauo Idus Julii Anno a natiuitate domini\nMillesimoquadringentesimo quadragesimo suscepti a nobis apostolatus\nofficii Anno primo .xx. A. Episcopus Grossetanus\nFelix electus etcetera Venerabili fratri Episcopo lausannensi\nSalutem etcetera Ne contractuum memoria deperiret Inuen-\ntum est Tabellionatus officium quo contractus legittimi\nad cautelam presentium et memoriam futurorum nota-\nrentur Vnde interdum sedes apostolica predictum officium\npersonis que ad illud reperiuntur ydonee concedere\nconsueuit ut illud prudenter et fideliter vtilibus\nexequantur et ad eas cum necesse fuerit in hiis que\nad officium ipsum pertinent fiducialiter recurratur\nHinc est quod nos dilecti filii petri Sapientis\nde Aduenthica clerici tue diocesis supplicationibus\ninclinati fraternitati tue de qua fiduciam gerimus\nin domino specialem concedendi auctoritate apostolica predictum\nofficium eidem petro dummodo non sit coniugatus\nnec in sacris ordinibus constitutus si ipsum ad\nillud post diligentem examinationem ydo-\nneum esse reppereris iuramento ab eo prius\niuxta formam presentibus annotatam recepto plenam",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 13941,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2158,
+    "lines": 37,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 57.35,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0009,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:05:13+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol1_0083_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol1_0083_R.jpg",
+      "bytes": 2710107,
+      "sha256": "1cb320832e8090265826f871081aaf0cf5ebb49c2b40bfccf56cf3dbcde6f98e",
+      "sha256_of": "original",
+      "working_copy": "vol1_0083_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:05:13+00:00"
+  }
+}

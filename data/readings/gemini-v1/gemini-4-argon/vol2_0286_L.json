@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol2_0286_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol2_0286_L.jpg",
+    "bytes": 2591781,
+    "sha256": "9364a9e468986a0feb5c491fba4ca93aa9df9175b94c37ea3e1d158970dbfc88",
+    "sha256_of": "original",
+    "working_copy": "vol2_0286_L.jpg"
+  },
+  "text": "Felix episcopus etc. Dilecto filio officiali Bellicen. Salutem etc. Romanus\npontifex iusticie precipuus conservator et auctor cum\nnaturam paciatur humanam variis plerumque figmentis\net importunitate petencium fallitur quibus alias interdum\nquandoque concedit que postmodum cum in aliorum noxam\nprotendi comperitur ad statum debitum reduci revocari\ncassari et anullari facit prout rerum temporum et personarum\nqualitatibus pensatis id in domino conspicit salubriter\nexpedire Dudum siquidem pro parte dilectorum filiorum\nabbatis et conventus monasterii Chassagnie Cisterciensis\nordinis Lugdunensis diocesis nobis exposito quod prefatum\nmonasterium quod in loco campestri et confinibus regni\nFrancie consistens in suis structuris redditibus et\nproventibus propter hostiles incursus et calamitates\ninnumeras que prefatum regnum et illi adiacentes\npartes diutius afflixerat adeo diminutum et destitutum\nexisteret quod ipsi abbas et conventus ex huiusmodi fructibus\net redditibus congrue sustentari et incumbentia\neis onera supportare non valerent et subiuncto\nquod si prioratus de Villeta Cluniacensis ordinis dicte\ndiocesis eidem monasterio uniretur ex hoc\nipsi abbas et conventus melius necessitatibus suis providere\net onera huiusmodi facilius supportare possent cederetque\nid in divini cultus in eodem monasterio augmentum\nEt pro parte eorundem abbatis et conventus nobis\nsupplicato ut prioratum predictum eidem monasterio\nunire et incorporari mandare dignaremur Nos\ntunc qui de expositis huiusmodi certam noticiam\nnon habentes dilecto filio abbati monasterii Chisinaci\nGebennensis diocesis proprio nomine non expresso per\nalias litteras nostras dedimus in mandatis quatenus vocatis\nqui forent evocandi de expositis eorumque circumstanciis\nuniversis auctoritate nostra se diligenter informaret et\nsi per informationem exposita huiusmodi fore vera reperiret\nprioratum predictum dummodo dilecti filii prioris prioratus\nNantuaci Cluniacensis ordinis et Lugdunensis diocesis\npredictorum a quo prioratus de Villeta predictus\ndependet ad id accederet assensus prefato monasterio",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 14532,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2071,
+    "lines": 38,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 53.53,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.001,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:09:06+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol2_0286_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol2_0286_L.jpg",
+      "bytes": 2591781,
+      "sha256": "9364a9e468986a0feb5c491fba4ca93aa9df9175b94c37ea3e1d158970dbfc88",
+      "sha256_of": "original",
+      "working_copy": "vol2_0286_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:09:06+00:00"
+  }
+}

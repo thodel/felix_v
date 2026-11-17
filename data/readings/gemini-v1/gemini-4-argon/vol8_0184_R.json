@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol8_0184_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol8_0184_R.jpg",
+    "bytes": 2721482,
+    "sha256": "dacbf1b783492495aedebf1f2b0a9b4138d19ebdccc94a6223033ff43c3ead46",
+    "sha256_of": "original",
+    "working_copy": "vol8_0184_R.jpg"
+  },
+  "text": "si dictus Guillermus repertus fuerit ydoneus ut prefertur\nirritum perinde et inane decernimus et inane si secus super\nhiis a quoquam etc. attemptari ac si die date presencium\ncanonicatum contulissemus et prebendam dicte ecclesie\nVercellensis si qua vacabat tunc vel cum vacaret eidem\nGuillermo ad hoc reperto ydoneo conferendam donacioni\nnostre duxissemus specialiter reservandam Datum\nLausanne decimoseptimo kalendas julii anno a nativitate domini\nmillesimo quadringentesimo quadragesimo octavo\npontificatus nostri anno octavo xxxv O abbas\nFelix episcopus etc. Dilecto filio Ludovico tituli sancte Cecilie\npresbitero cardinali Arelatensi vulgariter nuncupato sancte Romane\necclesie vicecancellario salutem etc. Apostolice sedis circumspecta\nbenignitas ad ea libenter intendit per que beneficiis ecclesiasticis\net presertim curam animarum habentibus pro divini favoris et\nobsequiis necnon rectoribus quos ab illorum regimine inpotencia\nretrahit corporalis ne rerum temporalium premantur inopia\nutiliter et salubriter valeat provideri illisque se propiciam\nexhibet et eciam liberalem quibus ad id propria virtutum\nmerita laudabiliter suffragantur Cum itaque sicut\naccepimus dilectus filius Guillermus Piuoni rector parrochialis\necclesie Mascori Tarantasiensis diocesis adeo senio confractus\net viribus sui corporis debilitatus existat quod eidem ecclesie\ncomode preesse necnon ipsius parrochianorum animarum curam\ngerere salubriter nequeat per se ipsum et propterea illam\nquam obtinet certisque aliis racionabilibus causis sponte\nac libere resignare proponat Nos votis ipsius\nGuillermi in hac parte favorabiliter annuentes ac\nvolentes tam dilecto filio Petro Piuonis presbitero dicte\ndiocesis apud nos de vite ac morum honestate aliisque\nprobitatis et virtutum meritis multipliciter commendato\nhorum intuitu specialem graciam facere quam dicto Guillermo\nqui ut similiter asserit presbiter est ne propter resignacionem\nhuiusmodi nimium paciatur incomodum et in obprobrium\npresbiteralis ordinis mendicare cogatur de alicuius subvencionis\nauxilio providere circumspectioni tue per apostolica scripta\ncommittimus et mandamus quatenus ab eodem Guillermo vel procuratore\nad hoc specialiter constituto servienti resignacionem huiusmodi\nsi eam ut prefertur facere voluerit auctoritate nostra hac vice\ndumtaxat recipias et admittas eaque recepta et admissa\necclesiam predictam cuius fructus redditus et proventus triginta\nlibrarum Turonensium parvorum secundum communem extimacionem valorem\nannuum ut asseritur non excedunt sive per huiusmodi",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 33712,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2532,
+    "lines": 43,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 57.91,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0012,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:34:40+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol8_0184_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol8_0184_R.jpg",
+      "bytes": 2721482,
+      "sha256": "dacbf1b783492495aedebf1f2b0a9b4138d19ebdccc94a6223033ff43c3ead46",
+      "sha256_of": "original",
+      "working_copy": "vol8_0184_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:34:40+00:00"
+  }
+}

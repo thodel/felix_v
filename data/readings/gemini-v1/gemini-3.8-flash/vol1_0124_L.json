@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol1_0124_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol1_0124_L.jpg",
+    "bytes": 2579395,
+    "sha256": "2df9acd383502bd76da21cf1792e2f36d6253b60a7e722c065e42e7a8819e60c",
+    "sha256_of": "original",
+    "working_copy": "vol1_0124_L.jpg"
+  },
+  "text": "",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 7722,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "empty",
+    "chars": 0,
+    "lines": 0,
+    "longest_char_run": 0,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 0.0,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:45:36+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol1_0124_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol1_0124_L.jpg",
+      "bytes": 2579395,
+      "sha256": "2df9acd383502bd76da21cf1792e2f36d6253b60a7e722c065e42e7a8819e60c",
+      "sha256_of": "original",
+      "working_copy": "vol1_0124_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:45:36+00:00"
+  }
+}

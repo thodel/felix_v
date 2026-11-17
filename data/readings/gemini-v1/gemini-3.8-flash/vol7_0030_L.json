@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol7_0030_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol7_0030_L.jpg",
+    "bytes": 2721943,
+    "sha256": "d309f9a9707599f2600fa1b06394cc74424bf4f87fed7a9df4aad4ff1076fec8",
+    "sha256_of": "original",
+    "working_copy": "vol7_0030_L.jpg"
+  },
+  "text": "recepta et admissa ecclesiam ipsam cuius fructus redditus et proventus octo librarum\nTuronensium parvorum secundum communem extimationem valorem annuum ut idem Jacobus asserit non excedunt\nvel illa per huiusmodi vacationem contigerit etiamsi sit ut premittitur seu per similem cuiuscumque licet Romana curia erat\ncoram notario publico et testibus factam resignationem aut constitutionem felicis\nrecordationis Johannis pape vicesimiprimi predecessoris nostri que incipit Execrabilis\naut alias quovis modo vel ex alterius cuiuscumque persona vacet etiamsi tanto tempore\nvacaverit quod eius collatio iuxta Lateranensis statuta concilii ad sedem apostolicam\nlegittime devoluta ipsaque ecclesia dispositioni apostolice quomodolibet reservata ex-\nistat et super ea inter aliquos lis cuius statum presentibus haberi volumus pro expresso\npendeat indecisa dummodo tempore date presentium non sit in ea alicui specialiter ius que-\nsitum cum omnibus iuribus et pertinentiis suis eidem Jacobo auctoritate nostra conferas\net assignes inducentes per te vel alium seu alios predictum Jacobum vel procuratorem\nsuum eius nomine in corporalem possessionem ecclesie juriumque et pertinentiarum predictorum\net defendentes inductum amoto exinde quolibet illicito detentore ac facientes\neidem Jacobo de ipsius ecclesie fructibus redditibus proventibus responderi. Contradicto-\nres auctoritate nostra etc. compescendo Non obstantibus pie memorie Bonifacii pape\noctavi etiam predecessoris nostri ac aliis constitutionibus apostolicis contrariis quibuscumque\nAut si aliqui super provisionibus sibi faciendis de huiusmodi vel aliis beneficiis\necclesiasticis in illis partibus speciales vel generales dicte sedis vel legatorum\neius litteras impetrarint etiamsi per eas ad inhibitionem etc. sit processum\nquibus omnibus prefatum Jacobum in dicta ecclesia assequenda volumus anteferri sed\nnullum per hoc eis quo ad assecutionem beneficiorum aliorum preiudicium generari. Seu\nsi pro tempore existenti episcopo Gebennensi vel quibusvis aliis communiter vel divisim\nab eadem sit sede indultum quod ad receptionem vel etc. teneantur et ad id compelli\naut quod etc. non possint quodque de huiusmodi vel aliis beneficiis ecclesiasticis ad eorum\ncollationem provisi etc. spectantibus nulli valeat provideri preterquam etc. mentione\net qualibet alia dicte sedis indulgentia etc. expressa per quam etc. effectus huiusmodi\ngratie etc. vel differri et de qua cuiusque etc. specialis. Ceterum cum non sit veri-\nsimile quod quis sua beneficia multos forsitan labores acquisita ex quibus vite\nsubsidium proprie sumpto resignet attente provideas ne in resignatione si huiusmodi\nsi fiat pro parte petri et Jacobi predictorum aliqua pravitas intervenerit seu etiam\ncontractus. Nos enim ex nunc irritum decernimus et inane si secus etc. attemptari\nDatum Lausane septimo kalendas octobris anno a nativitate domini millesimoquadringente-\nsimoquadringentesimoseptimo pontificatus nostri anno octavo. :xx. ii. Fulconis Folani\n\nFelix episcopus etc. Venerabili fratri episcopo Taurinensi et dilectis filiis Taurinensis et Jo. Benenan\nsancti laurentii de pynerolio Taurinensis diocesis ecclesiarum prepositis Salutem. danouda\nVite ac morum honestas aliaque etc. merita super quibus dilectus filius fran-\nciscus de Berletiis clericus Taurinensis diocesis apud nos fidedigno com-\nmendantur testimonio nos etc. liberales. Acepimus siquidem quod perpetua ca-\npellania ad altare beate marie siti in parochiali ecclesia sancti mauritii\nde pynerolio dicte diocesis per obitum quondam ludovici de Truchetis qui\nextra Romanam curiam diem clausit extremum vacare dilectus filius",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 13770,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3614,
+    "lines": 42,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 85.05,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0006,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:59:01+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol7_0030_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol7_0030_L.jpg",
+      "bytes": 2721943,
+      "sha256": "d309f9a9707599f2600fa1b06394cc74424bf4f87fed7a9df4aad4ff1076fec8",
+      "sha256_of": "original",
+      "working_copy": "vol7_0030_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:59:01+00:00"
+  }
+}

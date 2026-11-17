@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol6_0177_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol6_0177_R.jpg",
+    "bytes": 2530992,
+    "sha256": "deb019ff2ecbe1f5e15ebce2d82100f7a5ecf3c2cbb35511f616b8eb743f37df",
+    "sha256_of": "original",
+    "working_copy": "vol6_0177_R.jpg"
+  },
+  "text": "pro modo culpe penitencia salutari ac aliis que de Jure\nfuerint iniungenda / Non permittens Guillelmum ac fide\niussores predictos pretextu obligationum confessionum submissionum\nrenunciationum ac Juramentorum per Creditores huiusmodi\nvel quoscumque alios dicto durante termino coram quocumque\nJudice contra tenorem presentium quolibet vexari seu eciam\nmolestari / Contradictores per censuram ecclesiasticam appellatione\npostposita compescendo / Non obstantibus premissis / Aut\nsi Creditoribus prefatis vel quibusvis aliis communiter vel\ndivisim ab apostolica sit sede Indultum quod Interdici suspendi\nvel excommunicari non possint per litteras apostolicas non fa\ncientes plenam et expressam ac de verbo ad verbum\nde Indulto huiusmodi mentionem / Volumus autem quod idem\nGuillelmus nisi Interim satisfecerit aut concordaverit ut\nprefertur lapso termino in sententias huiusmodi relabatur eo ipso\nDatum apud Sanctumvictorem extra muros Gebennenses Duodecimo\nKalendas Septembris Anno a nativitate domini Millesimoquadrin\ngentesimoquadragesimoquinto / Pontificatus nostri Anno\nSexto xlvj Jo Rabber\nFelix etc Venerabili fratri Episcopo vercellensi Salutem etc Ad\nea libenter intendimus per que ecclesiis aliisque locis\net personis ecclesiasticis quibuslibet salubriter provideri valeat\nillaque quantum cum deo possumus favoribus prosequimur\noportunis / Sane venerabilis fratris nostri Johannis Episcopi ypo\nregiensis nobis nuper exhibita petitio continebat / Quod\nolim bone memorie Albertus tunc Episcopus yporegiensis\nCapellam sancti Antonij de Vigtintinno yporegiensis diocesis\nque membrum mense episcopalis yporegiensis existebat ex\ncertis respectibus ipsum moventibus Monasterio sancti Ursi\nordinis sancti Augustini Augustensis diocesis contulit / Itaquod in\nipsa Capella quotiens illam vacare contingeret ad presentationem\nPrioris dicti Monasterij Capellanus sive Rector per\nEpiscopum yporegiensem pro tempore existentem institui\ndeberet / qui singulis Ebdomadis Tres missas in dicta\nCapella celebrare et Tres aut Quatuor lectos pro\npauperum receptione et hospitalitate manutenere / necnon\ncanonice administrationis sue singulis annis Episcopo vel eius",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 16152,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2151,
+    "lines": 37,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 57.16,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0009,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:26:49+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol6_0177_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol6_0177_R.jpg",
+      "bytes": 2530992,
+      "sha256": "deb019ff2ecbe1f5e15ebce2d82100f7a5ecf3c2cbb35511f616b8eb743f37df",
+      "sha256_of": "original",
+      "working_copy": "vol6_0177_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:26:49+00:00"
+  }
+}

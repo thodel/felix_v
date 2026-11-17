@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol6_0220_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol6_0220_R.jpg",
+    "bytes": 2700286,
+    "sha256": "719881f08adb12ff39c2227f9726a5b2f214213ce74c1ed180339979529e6777",
+    "sha256_of": "original",
+    "working_copy": "vol6_0220_R.jpg"
+  },
+  "text": "Felix Episcopus etc Dilectis filiis Abbati et conventui Mo\nnasterii Athanacensis ordinis sancti Benedicti Lugdunensis\nSalutem etc Ad ea per que ecclesiarum et monasteriorum omni\num aliorumque religiosorum locorum ac personarum in eisdem deo\nfamulancium utilitatibus consulitur libenter intendimus\net eis que propterea processisse comperimus ut eo firmius\nsubsistant quo frequentiori fuerint auctoritate stabi\nlita cum a nobis petitur apostolici muniminis adicimus\nfirmitatem Dudum siquidem felicis recordationis Clemens papa\nseptimus predecessor noster Prioratum Bellevallis ordinis\nsancti Benedicti Gebennensis diocesis a monasterio vestro\ndependentem vacantem et sue dispositioni reservatum\ncum omnibus juribus et pertinentiis suis officio pit\ntanciarie dicti monasterii ex certis racionabilibus\ntunc expressis causis per suas litteras incorporavit\nannexuit et univit prout in ipsis litteris quas in can\ncellaria nostra inspici et diligenter examinari ac de\nverbo ad verbum presentibus inseri fecimus plenius co\nntinetur quarum vigore sicut exhibita nobis nuper pro\nparte vestra peticio continebat corporalem possessionem\nPrioratus juriumque et pertinenciarum eorundem fuistis pa\ncificam assecuti ipsumque prioratum extunc possedistis\nprout etiam possidetis de presenti fructus redditus pro\nventus jura et emolumenta ex illo proveniencia integre\npercipiendo et in dicti Officii usus applicando et conver\ntendo ac alia faciendo iuxta earundem litterarum tenorem\nqui sequitur in hec verba Clemens Episcopus servus\nservorum dei Ad perpetuam rei memoriam Apostolice sedis\nbenignitas circumspecta personarum et temporum qualitate\npensata personis ecclesiasticis et presertim sub habitu regu\nlari domino famulantibus in earum oportunitatibus\nlibenter se reddit in exhibicione gracie liberalem Dudum\nsiquidem omnes prioratus dignitates personatus et officia\nceteraque beneficia ecclesiastica cum cura et sine cura\ntunc apud sedem apostolicam vacancia et inantea\nvacatura collacioni et disposicioni nostre duximus\nreservanda decernentes extunc irritum et inane si\nsecus super hiis a quoquam quavis auctoritate scienter vel\nignoranter contingeret attemptari Cum itaque postmodum",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 9390,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2171,
+    "lines": 39,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 54.69,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0009,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:27:15+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol6_0220_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol6_0220_R.jpg",
+      "bytes": 2700286,
+      "sha256": "719881f08adb12ff39c2227f9726a5b2f214213ce74c1ed180339979529e6777",
+      "sha256_of": "original",
+      "working_copy": "vol6_0220_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:27:15+00:00"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol8_0174_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol8_0174_R.jpg",
+    "bytes": 2453024,
+    "sha256": "6bbd9653908ed6fecbe8105646b06b03aae229023f6794cb7046cf14747c14ca",
+    "sha256_of": "original",
+    "working_copy": "vol8_0174_R.jpg"
+  },
+  "text": "Felix episcopus etc. dilectis filiis preposito Cressiaci et\ndecano Beate marie annecxiaciungii Gebennensis\ndiocesis ac humberto de Chissiaco canonico gebennensi\nsalutem etc. Grata familiaritatis et devotionis\nobsequia que dilectus filius Amedeus alias Iacobus\nde Chamos preceptor domus Candioli taurinensis\ndiocesis nobis et sedi apostolice hactenus impendit\net adhuc dietim solicitis studiis impendere non desistit\nnecnon Religionis zelus vite ac morum honestas\naliaque laudabilia probitatis et virtutum merita quibus\nprefati Iacobi et dilecti filii antonii moreti\nordinis sancti Iohannis Iherosolimitani personas tam fami-\nliari et quotidiana experiencia quam alias eciam\nfidedignorum testimonio Iuvare percepimus nos\nInducunt ut illa eis favorabiliter concedamus\nper que suis commoditatibus quibuslibet sublatis que\nobsistere modicras posset utilia et salubria providia\nprovenire / dudum etc. prout in gratiosa Non obstantibus\nomnibus supradictis ac hiis que in predictis litteris ipsius\nIohannis non obstare volumus ceterisque contrariis\nquibuscumque / Quocirca discrecioni vestre per apostolica scripta\nmandamus quatenus vos vel duo aut vnus vestrum per\nvos vel alium seu alios prefatos Iacobum et antonium\nmoreti vel procuratores suos eorum nominibus in corporalem\npossessionem membri Iuriumque et pertinenciarum predictorum\nInducatis auctoritate nostra et defendatis Inductos amoto\nexinde quolibet illicito detentore ac facientes eosdem\nIacobum et antonium moreti ad possessionem ipsius\nmembri admitti eisque et eorum cuilibet pro rata sua\nde illius fructibus redditibus proventibus Iuribus et\nobvencionibus vniversis integre responderi non obstantibus\nomnibus supradictis seu si magistro et Conventui predictis\nvel quibusvis aliis communiter vel divisim a predicta\nsede indultum existat quod interdici suspendi vel\nexcommunicari non possint per litteras apostolicas non facientes\nplenam et expressam ac de verbo ad verbum de Indulto huiusmodi\nmencionem Contradictores per censuram ecclesiasticam\nappellacione postposita Compescendo / datum lausanne",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 15387,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2056,
+    "lines": 38,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 53.13,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.001,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:33:22+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol8_0174_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol8_0174_R.jpg",
+      "bytes": 2453024,
+      "sha256": "6bbd9653908ed6fecbe8105646b06b03aae229023f6794cb7046cf14747c14ca",
+      "sha256_of": "original",
+      "working_copy": "vol8_0174_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:33:22+00:00"
+  }
+}

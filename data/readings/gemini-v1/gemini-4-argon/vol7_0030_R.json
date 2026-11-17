@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol7_0030_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol7_0030_R.jpg",
+    "bytes": 3104048,
+    "sha256": "e84e52a5a1d58b71505c84cdb5d0383283964b5ccec256da0893738c65d63b1e",
+    "sha256_of": "original",
+    "working_copy": "vol7_0030_R.jpg"
+  },
+  "text": "noster lancelotus tituli sancti laurencii in damaso sancte Romane ecclesie\npresbiter Cardinalis perpetuus administrator monasterii beate marie dicti loci de\npynerolio cum ad abbatem seu administratorem pro tempore existentem dicti mo\nnasterii eiusdem capellanie collacio provisio et omnimoda alia dispo\nsicio de antiqua et approbata hactenus pacifice observata consuetudine\npertinere diceretur dicto francisco pretextu consuetudinis huiusmodi contulit\net providit eciam de eadem ipseque franciscus collacionis et provisionis\nsibi factarum huiusmodi vigore possessionem ipsius capellanie extitit assecutus\nCum autem sicut eciam accepimus ab aliquibus asseratur collacionem provisionem\net inde secuta huiusmodi ex certis causis racionabilibus non subsistere ipsamque\ncapellaniam adhuc vacare nos volentes dicto francisco premissorum\nmeritorum suorum intuitu graciam facere specialem motu proprio non ad ipsius\nfrancisci vel alterius pro eo nobis super hoc oblate peticionis instan\nciam sed de nostra mera liberalitate discrecioni vestre per apostolica scripta man\ndamus quatenus vos vel duo aut vnus vestrum capellaniam predictam cuius\nfructus redditus et proventus duodecim librarum Turonensium parvorum secundum communem\nextimacionem valorem annuum ut similiter accepimus non excedunt eciam si de iure patro\nnatus laycorum existat sive ut premittitur sive alias quovis modo vacet\ndummodo tempore date presencium non sit in ea alicui specialiter ius quesitum cum omnibus\niuribus et pertinenciis suis eidem francisco auctoritate nostra conferre et assig\nnare curetis Inducentes per vos vel alium seu alios eundem franciscum\nvel procuratorem suum eius nomine in corporalem possessionem capellanie Iuriumque\net pertinenciarum predictorum et defendentes inductum amoto exinde quolibet\nillicito detentore ac facientes eundem franciscum vel dictum procuratorem pro eo\nad capellaniam huiusmodi ut est moris admitti sibique de illius fructibus redditibus\nproventibus etc. responderi Contradictores auctoritate nostra etc. compescendo Non\nobstantibus constitucionibus apostolicis ceterisque contrariis quibuscunque aut\nsi aliqui super provisionibus sibi faciendis de huiusmodi speciales vel aliis bene\nficiis ecclesiasticis in illis partibus generales apostolice sedis vel legatorum eius litteras\nimpetrarint eciam si per eas ad inhibicionem etc. sit processum quibus omnibus\nprefatum franciscum in dicte capellanie assecucione volumus anteferri sed nullum\nper hoc eis quo ad assecucionem beneficiorum aliorum preiudicium generari Seu\nsi pro tempore existenti Episcopo Taurinensi vel quibusvis aliis communiter vel di\nvisim ab eadem sit sede indultum quod ad recepcionem vel etc. minime teneantur\net ad id compelli aut quod etc. non possint quoque de huiusmodi vel aliis beneficiis ecclesiasticis\nad eorum collacionem provisionem etc. nulli valeat provideri per litteras apostolicas non facientes\nmencionem et qualibet alia dicte sedis indulgencia etc. existat per quam effectus\nhuiusmodi gracie etc. vel differri et de qua cuiusque etc. specialis Nos enim exnunc\nirritum decernimus et inane etc. attemptari Datum apud Sanctum victorem extra muros\nGebennenses Quartodecimo kalendas Septembris anno a nativitate domini Millesimo\nquadringentesimo quadragesimoseptimo pontificatus nostri anno octavo\nv pro G et p viny",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 19392,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3304,
+    "lines": 42,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 77.69,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0006,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:29:12+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol7_0030_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol7_0030_R.jpg",
+      "bytes": 3104048,
+      "sha256": "e84e52a5a1d58b71505c84cdb5d0383283964b5ccec256da0893738c65d63b1e",
+      "sha256_of": "original",
+      "working_copy": "vol7_0030_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:29:12+00:00"
+  }
+}

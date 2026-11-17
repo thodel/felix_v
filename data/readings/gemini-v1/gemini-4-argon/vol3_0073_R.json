@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol3_0073_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol3_0073_R.jpg",
+    "bytes": 2258326,
+    "sha256": "1b4d9ea34c0ff681944ee8397406e0d656cdecbc12584d356686349d655ddf94",
+    "sha256_of": "original",
+    "working_copy": "vol3_0073_R.jpg"
+  },
+  "text": "In quodam decreto quod Incepit placuit diuine pietati\nstatuit et ordinauit quod Romanus pontifex pro tempore\nexistens de certis vacantibus beneficiis modo congruenti\net honesto videlicet de vno ad collacionem in qua decem\net de duobus beneficiis vbi Quinquaginta et vltra\nforent beneficia disponere Et subsequenter eadem sinodus\nin quadam alia subsecuta ordinacione declarauit\nquod Idem Romanus pontifex huiusmodi disposicionis decreto\neciam per viam Resruacionis vel alio modo honesto\nprout sibi videretur libere vti posset Hinc est\nquod nos decretum et ordinacionem huiusmodi Amplectantes\nac volentes tibi qui eciam litterarum sacre peni-\ntenciarie nostre scriptor existis premissorum meritorum\ntuorum Intuitu graciam facere specialem beneficium ecclesia-\nsticum cum cura uel sine cura eciam si canonicatus\net prebenda ac dignitas personatus perpetua admini-\nstracio uel officium fuerit dummodo dignitas personatus\nadministracio uel officium cum prebenda huiusmodi pro\nvno beneficio ecclesiastico computentur Ipsaque dignitas\nprincipalis non fuerit nec ad eam ac personatum\nadministracionem vel officium huiusmodi consueuerit quis\nper eleccionem assumi cuiusque si cum cura vigintiquinque\nsi vero sine cura fuerit decem et octo Marcharum\nargenti puri fructus Redditus et prouentus secundum\ntaxacionem decime va. an. non excedant ad\ncollacionem prouisionem presentacionem seu quamuis aliam\ndisposicionem venerabilis fratris nostri episcopi Basiliensis pertinens\nIn quaquidem collacione vltra decem beneficia fore\nnoscuntur et pro alio de simili beneficio nondum\nscripsimus si quod vacat ad presens vel cum primum\nvacauerit quod tu per te uel procuratorem tuum\nad hoc legitime constitutum Infra vnius mensis\nspacium postquam tibi uel eidem procuratori\nvacacio Illius Innotuerit duxeris acceptandum\nconferendum tibi post acceptacionem huiusmodi cum\nomnibus Iuribus et pertinenciis suis donacioni apostolice\nReseruamus districtius Inhibentes Eidem episcopo ne\nde beneficio huiusmodi Interim eciam ante acceptacionem\neandem nisi postquam sibi constiterit quod tu\nuel procurator predictus Illud nolueritis acceptare\ndisponere quoquomodo presumat ac decernentes ex\nnunc Irritum et Inane si secus super hiis attemptari.",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 13014,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2213,
+    "lines": 42,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 51.71,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0009,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:11:16+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol3_0073_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol3_0073_R.jpg",
+      "bytes": 2258326,
+      "sha256": "1b4d9ea34c0ff681944ee8397406e0d656cdecbc12584d356686349d655ddf94",
+      "sha256_of": "original",
+      "working_copy": "vol3_0073_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:11:16+00:00"
+  }
+}

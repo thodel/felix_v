@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol2_0052_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol2_0052_L.jpg",
+    "bytes": 2280632,
+    "sha256": "80cffaa908bdc89c8e72599a59a454dcc6fbf642ec414af3ef7644c7b9996b86",
+    "sha256_of": "original",
+    "working_copy": "vol2_0052_L.jpg"
+  },
+  "text": "paruorum secundum communem estimationem valorem annuum ut similiter asseris non\nexcedunt et super quibus eciam hodie prefato Iohanni ne\nex resignacione huiusmodi nimium dispendium paciatur ducentorum\nauri de camera necnon dilecto filio Galioto Provane\nrectori parrochialis ecclesie sancti Georgii de Cherio Taurinensis\ndiocesis quadraginta paruorum monete parcium Sabaudie\nflorenorum pensiones annuas reseruare intendimus siue\nalias quouismodo aut ex alterius cuiuscumque persona seu per\nconstitucionem felicis recordacionis Iohannis pape xxii eciam predecessoris\nnostri que incipit Execrabilis aut per liberam resignacionem\nalicuius alterius de illa in Romana curia uel extra eam\neciam coram notario publico et testibus sponte factam vacet eciam\nsi tanto tempore vacauerit quod eius collacio iuxta Lateranensis\nstatuta concilii ad sedem apostolicam legitime deuoluta ipsaque\nprepositura disposicioni apostolice quomodolibet reseruata existat\net super ea inter aliquos lis cuius statum presentibus haberi volumus\npro sufficienter expresso pendeat indecisa dummodo eius\ndisposicio ad nos hac vice pertineat cum omnibus iuribus\net pertinenciis suis auctoritate apostolica tibi conferimus et de illa\ntibi prouidemus decernentes prout est irritum et inane\nsi secus scienter uel ignoranter attemptatum forsan est\nhactenus uel inposterum contigerit attemptari Non\nobstantibus pie memorie Bonifacii pape viii predicte et\naliis apostolicis constitucionibus et ordinacionibus necnon statutis et consuetudinibus\nac stabilimentis Monasterii et ordinis predictorum iuramento\nconfirmacione apostolica uel quauis firmitate alia roboratis contrariis\nquibuscumque Aut si pro aliis in dicto Monasterio scripta forsan\napostolica sint directa Seu si super prouisionibus sibi faciendis\nde preposituris siue prezeptoriis huiusmodi speciales uel aliis\nbeneficiis ecclesiasticis in illis partibus generales dicte sedis uel\nlegatorum eius litteras impetrarint eciam si per eas ad\ninhibicionem reseruacionem et decretum uel alias quomodolibet\nsit processum quibus omnibus te in assecucione dicte prepositure\nvolumus anteferri sed nullum per hoc eis quo ad assecucionem\nprepositurarum seu prezeptoriarum aut beneficiorum aliorum",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 16467,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2202,
+    "lines": 35,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 61.94,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0014,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:06:29+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol2_0052_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol2_0052_L.jpg",
+      "bytes": 2280632,
+      "sha256": "80cffaa908bdc89c8e72599a59a454dcc6fbf642ec414af3ef7644c7b9996b86",
+      "sha256_of": "original",
+      "working_copy": "vol2_0052_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:06:29+00:00"
+  }
+}

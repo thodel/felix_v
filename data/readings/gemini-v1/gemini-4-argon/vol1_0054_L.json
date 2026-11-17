@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol1_0054_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol1_0054_L.jpg",
+    "bytes": 2962061,
+    "sha256": "b373c5427fab768526e262b1227269e012ea4c7df6cf70843d6a1571f1f5120c",
+    "sha256_of": "original",
+    "working_copy": "vol1_0054_L.jpg"
+  },
+  "text": "et obventionibus universis integre responderi. Contradictores auctoritate nostra etcetera\ncompescendo. Non obstantibus pie memorie Bonifacii pape viii etiam predecessoris\nnostri ac aliis apostolicis constitutionibus contrariis quibuscunque Aut si aliqui super\nprovisionibus sibi faciendis de huiusmodi vel aliis beneficiis ecclesiasticis in illis partibus\nspeciales vel generales dicte sedis vel legatorum eius litteras impetrarint\netiam si per eas ad inhibitionem reservationem et decretum vel alias quomodolibet\nsit processum quibus omnibus prefatum Guillermum in dicte ecclesie assecutione\nvolumus anteferri sed nullum per hoc eis quo ad assecutionem beneficiorum\naliorum preiudicium generetur. Seu si venerabili fratri episcopo Bellicensi vel quibusvis\naliis communiter vel divisim a dicta sit sede indultum quod ad receptionem vel\nprovisionem alicuius minime teneantur et ad id compelli aut quod interdici suspendi\nvel excommunicari non possint quodque de huiusmodi vel aliis beneficiis ecclesiasticis\nad eorum collationem provisionem presentationem seu quamvis aliam dispositionem\nconiunctim vel separatim spectantibus nulli valeat provideri per litteras\napostolicas non facientes plenam et expressam ac de verbo ad verbum de indulto\nhuiusmodi mentionem et qualibet alia dicte sedis indulgentia generali vel\nspeciali cuiuscunque tenoris existat per quam presentibus non expressam vel to-\ntaliter non insertam effectus huiusmodi gratie impediri valeat quomodolibet\nvel differri et de qua cuiusque toto tenore habenda sit in nostris litteris men-\ntio specialis. Nos enim exnunc irritum decernimus et inane si secus super\nhiis a quoquam quavis auctoritate scienter vel ignoranter contigerit attemptari\nDatum Basilee sexto kalendas octobris anno a nativitate domini millesimo qua-\ndringentesimo quadragesimo pontificatus nostri anno primo.\nxx Hugoluy's\nFelix Episcopus etcetera Venerabili fratri Ogerio Episcopo Maurianensi Salutem\netcetera Sacrosancte quam dei filius Jhesus Christus instituit ecclesie regimini\npresidentes pia fidelium vota ex quibus divini cultus augmentum\nsalusque proveniat speratur animarum pia affectione prosequimur\nut optatum speratur effectum nostri parte ministerii libenter impartimur.\nSane pro parte dilecti filii Mermeti de Signeto de Favergiis\nGebennensis diocesis et dilecte in Christo filie Catherine de Foresta eius\nuxoris nobis nuper exhibita petitio continebat quod ipsi zelo\ndevotionis succensi pro suorum suarumque salute animarum de bonis\neis desuper creditis quoddam altare ad honorem et sub vocabulo\ngloriosissime virginis Marie et beate Catherine in ecclesia sancti\nPetri dicti loci de Favergiis Gebennensis diocesis fundari erigi et\nconstrui necnon ad illud quandam Capellaniam perpetuam pro\nuno Capellano altissimo ibidem perpetuo domino famulaturo et\nmissas singulis Ebdomadis celebraturo ac libris Calice et\nornamentis ac aliis ad hec necessariis sine tamen alicuius\npreiudicio seu etiam ordinarii licentia et auctoritate intervenientibus\nde novo dotare desiderant sed eorum desiderium huiusmodi obstantibus",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 15705,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3056,
+    "lines": 42,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 71.79,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.001,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:04:03+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol1_0054_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol1_0054_L.jpg",
+      "bytes": 2962061,
+      "sha256": "b373c5427fab768526e262b1227269e012ea4c7df6cf70843d6a1571f1f5120c",
+      "sha256_of": "original",
+      "working_copy": "vol1_0054_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:04:03+00:00"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol3_0019_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol3_0019_R.jpg",
+    "bytes": 3051799,
+    "sha256": "e3966bf783d64df828c5c5e2e5789918db757c84439b6863cd2e9244326f62bd",
+    "sha256_of": "original",
+    "working_copy": "vol3_0019_R.jpg"
+  },
+  "text": "dicte sedis vel legatorum eius litteras impetraverint eciam si per eas ad\ninhibicionem et cetera sit processum quibus omnibus prefatum Johannem\nin assecucione dictorum canonicatus et prebende volumus anteferri\nsed nullum per hoc quo ad assecutionem canonicatuum et prebendarum\naut beneficiorum aliorum preiudicium generari Aut si venerabili fratri\nnostro episcopo Taurinensi et dictis Capitulo vel quibusvis aliis communiter vel\ndivisim sit a dicta sede indultum quod ad receptionem et cetera teneantur et ad id compelli\naut quod interdici et cetera non possint quodque de canonicatibus et prebendis\nipsius ecclesie aut aliis beneficiis ecclesiasticis ad eorum collacionem et cetera inibi\nvaleat provideri per litteras apostolicas que de indulto et cetera mencione et qualibet alia dicte\nsedis et cetera existat per qua gentibus et cetera effectus eius impediri\nvaleat quomodolibet vel differri et de qua cuiusque et cetera specialis Seu\nsi dictus Johannes presens non fuit ad prestandum de et cetera iuramentum\ndummodo in absencia sua per procuratorem ydoneum et cum ad ecclesiam\naccesserit corporaliter illud prestet Aut quod idem Johannes ut\netiam asserit Capellam predictam cuius fructus et cetera triginta flo\nrenorum auri filiorum secundum extimationem predictam lxx anno nostro expressis noscitur\nobtinere Nos enim si dictus Johannes repertus fuerit ydoneus\nut prefertur extunc perinde irritum decernimus et inane si secus et cetera\nattemptari ac si die presencium data eidem Johanni ad hoc reperto\nydoneo de dictis canonicatu et prebenda cum interpositione decreti\nprovideri mandavissemus Datum Basilee Sexto Idus novembris\nAnno a Nativitate domini Millesimoquadringentesimoquadragesimoprimo\nPontificatus nostri Anno primo. XIIII ff. do. f.\n\nFelix episcopus etcetera Venerabili fratri nostro Stephano episcopo Massiliensi in Romana\nCuria residenti Salutem etcetera Vite ac morum honestas et cetera super quibus\ndilectus filius Andreas perolary clericus Lugdunensis diocesis apud\nnos fidedigno comendatur testimonio nos inducunt ut sibi reddamur\nad graciam liberales Cum itaque sicut accepimus dilectus filius petrus\nparoleiri Rector parrochialis ecclesie sancti Juliani loci de Reyno\ndicte diocesis ecclesiam ipsam quam obtinet ex certis rationabilibus causis\nsponte et libere resignare proponat Nos votis ipsius petri in hac\nparte favorabiliter annuentes ac volentes dicto Andree qui ut asserit\nin vicesimotercio dumtaxat sue etatis Anno constitutus existit premissorum\nmeritorum suorum intuitu graciam facere specialem fraternitati tue per apostolica\nscripta committimus et mandamus quatenus si est ita ab eodem petro vel procu\nratore suo ad hoc ab eo specialiter constituto resignationem huiusmodi si eam in tuis\nmanibus facere voluerit nostre prefertur auctoritate per te hac vice recipias\net admittas eaque per te recepta et admissa ecclesiam ipsam cuius fructus\nredditus et proventus Quadraginta librarum Turonensium parvorum secundum\ncommunem extimationem valorem non annuum ut idem Andreas pro excedunt asserit cum\nper huiusmodi vacare contigerit eandem si natu per fidelem alterius cuiuscumque\net ubicumque eciam coram Notario publico et testibus suam resignationem\nvel alias quovismodo aut ex alterius cuiuscumque persona sive per constitucionem\nExecrabilis aut alterius alterius\nbeneficiis quamvis autem collati assecutione vacet et tanto tempore vaca",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 12172,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3370,
+    "lines": 46,
+    "longest_char_run": 4,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 72.26,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0012,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:48:51+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol3_0019_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol3_0019_R.jpg",
+      "bytes": 3051799,
+      "sha256": "e3966bf783d64df828c5c5e2e5789918db757c84439b6863cd2e9244326f62bd",
+      "sha256_of": "original",
+      "working_copy": "vol3_0019_R.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:48:51+00:00"
+  }
+}

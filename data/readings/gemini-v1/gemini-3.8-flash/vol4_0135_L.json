@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol4_0135_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol4_0135_L.jpg",
+    "bytes": 2160528,
+    "sha256": "78c3d8c5f7dfe9e7485f59720666dbc5b2c4dd41cc8cdb48a72e87cbf51ba462",
+    "sha256_of": "original",
+    "working_copy": "vol4_0135_L.jpg"
+  },
+  "text": "apostolica indulgeri quod interim etcetera non possit per litteras apostolicas non facientes etcetera\nmentionem. Super alias vero huiusmodi propositis dantes per te eidem minori\net curatori ad perquirendas quietantias et liberationes huiusmodi sustinendasque\ndilationibus causis eisdem omnibus et singulis suas dependentibus incidentibus\nemergentibus et connexis iudices finarijs debito bando facies quod decre-\nveris per censuram ecclesiasticam firmiter observari Testes autem qui fuerint\nnominati si se gratis odio vel timore subtraxerint censura simili appellatione\ncessante compellas veritati testimonium perhibere. Datum Lausane octavo kalendas au-\ngusti Anno a nativitate domini millesimoquadringentesimo quadragesimotertio\npontificatus nostri anno quarto: . pp. do. G. abba.\n\nFelix episcopus etcetera Dilectis filiis Habundantie et Sancti mauritij Agaunensis\nGebennensis et Sedunensis diocesium monasteriorum abbatibus ac officiali Lausannensi\nSalutem per Religionis zelus vite ac morum honestas aliaque etcetera merita super\nquibus dilectus filius Franciscus de Cresfo monachus expresse capellanus quem penes\nad alterius sancti mauritij seu in ecclesia prioratus sancti agathini de linghura\nordinis sancti Benedicti Lausannensis diocesis apud nos fide digno commendantur testimonio\nnos inducunt ut sibi reddamur ad gratiam liberales. Cum itaque sicut accepimus\nprioratus sancti pauli dicti ordinis Gebennensis diocesis quem quondam Iohannes de Cresfo\nillius prior dum viveret obtinebat per obitum eiusdem Iohannis qui extra Romanam\ncuriam diem clausit extremum vacavisset et vacet ad presens Nos volentes eidem\nFrancisco qui sicut asserit de nobili genere ex utroque parente procreatus existit\nsuorum meritorum favore monitis gratiam facere specialem predecessorum viri per\napostolica scripta mandamus quatinus vos vel duo aut unus vestrum per vos vel alium seu alios prioratum\nsancti pauli predictum qui conventualis non est et a dicto prioratu sancti agathini dependet\net per illius monachos de quorum numero dictus Franciscus est ut similiter asserit\neiusdem ordinis expresse professus ac in presbiteratus ordine constitutus consuevit\ngubernari consuevit ad quem quis per electionem non assumitur cuiusque cura\nper presbiterum vicarium secularem exerceri solem iminet nulli et cuius fructus\nredditus et proventus octuaginta librarum Turonensium parvorum secundum communem extimationem valorem\ncumque Franciscus eciam asserit non excedunt sive ut premittitur seu alias quovis\nmodo aut ex alterius cuiuscumque persona seu per liberam resignationem alicuius\nde illo in dicta curia vel extra ea eciam coram notario publico et testibus sponte facta\nvacet eciam si tanto tempore vacaverit quod illius collatio iuxta Lateranensis statuta\nconcilij ad sedem apostolicam legitime devoluta ipsaque prioratus sancti pauli disposi-\ntioni apostolice specialiter vel generaliter reservatus existiterit et super\neo liti aut statum partium habitum volentes pro expresso pendere indecisa Dum-\nmodo tempore date presencium non sit in eo alicui specialiter ius quesitum cum omnibus\niuribus et pertinentiis suis eidem Francisco conferre et assignare curetis\nInducentes per vos vel alios seu alium eundem Franciscum vel procuratorem suum eius\nnomine in corporalem possessionem prioratus sancti pauli predicti et pertinentiarum\npredictorum et defendentes inductum amoto exinde quolibet illicito detentore ac\nfacientes eidem Francisco vel dicto procuratori pro eo ad huiusmodi prioratum sancti\npauli ut est moris admitti sibique de illius fructibus redditibus proventibus iuribus\net obventionibus universis integre responderi Contradictores auctoritate nostra\ncompescendo Non obstantibus felicis recordationis Bonifacij pape octavi predeces-\nsoris nostri et aliis constitutionibus apostolicis contrariis quibuscumque Aut si aliqui\nsuper provisionibus sibi faciendis de huiusmodi prioratibus speciales vel aliis bene-\nficiis ecclesiasticis in illis partibus generales dicte sedis vel legatorum eius litteras\nimpetrarint eciam si per eas ad inhibitionem etcetera fuerit processum quibus",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 16625,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 4071,
+    "lines": 49,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 82.08,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0005,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:51:11+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol4_0135_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol4_0135_L.jpg",
+      "bytes": 2160528,
+      "sha256": "78c3d8c5f7dfe9e7485f59720666dbc5b2c4dd41cc8cdb48a72e87cbf51ba462",
+      "sha256_of": "original",
+      "working_copy": "vol4_0135_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:51:11+00:00"
+  }
+}

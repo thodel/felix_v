@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol2_0054_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol2_0054_L.jpg",
+    "bytes": 2988300,
+    "sha256": "a47da791b0c8242457f76477b3a3c206a748a27855a8a77a987b4d42de347907",
+    "sha256_of": "original",
+    "working_copy": "vol2_0054_L.jpg"
+  },
+  "text": "comendari Cum itaque sicut accepimus dilectus filius\nJohannes de meaparte Rector parrochialis ecclesie sancti Martini Belleville\nTharentasiensis diocesis parrochialem ecclesiam predictam cuius cure ac regimi\npropter cotidiana dicto fratri nostro Johanni Tharentasiensi vniuersali vero archiepiscopo\nTheoporiensi apud presens sacrum Basiliense concilium commode residenti\nprestanda obsequia debite preesse non potest sponte et\nlibere resignare proponat Nos votis ipsius Johannis in hac\nparte fauorabiliter annuere et tam sibi ne ex resignacione\nhuiusmodi nimium dispendium paciatur prouidere quam dilectum\nfilium Petrum de Nanto perpetuum vicarium in dicta ecclesia\napud nos de vite ac morum honestate aliisque probitatis et\nvirtutum meritis multipliciter comendatum horum intuitu\nfauore prosequi gracioso volentes discrecioni tue per\napostolica scripta mandamus quatenus si est ita ab eodem\nJohanne vel procuratore suo ad hoc ab eo specialiter constituto resignacionem\nhuiusmodi si eam in tuis manibus sponte facere voluerit ut\nprefertur auctoritate nostra hac vice dumtaxat recipias et\nadmittas eaque per te recepta et admissa si per diligentem\nexaminacionem eundem Petrum ad hoc ydoneum esse reppereris\nsuper quo tuam conscienciam oneramus ecclesiam predictam\ncuius fructus redditus et prouentus Triginta librarum Turonensium\nparuorum secundum communem extimacionem valorem annuum ut ipse Petrus asserit\nnon excedunt siue per huiusmodi resignacionem tunc siue alias quouismodo\naut per constitucionem felicis recordacionis Johannis pape xxij prede\ncessoris nostri super que incipit Execrabilis vacet eciam\nsi tanto tempore vacauerit quod eius collacio iuxta Lateranensis statuta\nConcilij ad sedem apostolicam legitime deuoluta ipsaque ecclesia\ndisposicioni apostolice generaliter vel specialiter reseruata existat\net super ea inter aliquos lis cuius statum presentibus haberi\nvolumus pro expresso pendeat indecisa dummodo tempore date\npresencium non sit in ea alicui specialiter ius quesitum cum\nomnibus Juribus et pertinencijs suis Petro conferre et assignare\nnecnon super fructibus redditibus et prouentibus eiusdem ecclesie pensionem\nannuam Quindecim florenorum monete in partibus Sabaudie\ncurrentis aut aliam congruam tuo arbitrio moderandam\nJohanni prefatis quoaduixerit vel procuratori suo legitimo ad hoc\nab eo speciale mandatum habenti per ipsum Petrum et suos\nsuccessores ipsius ecclesie Rectores pro tempore existentes in\nterminis et locis per eos eligendis ac sub censuris et\npenis per te statuendis Annis singulis efficaciter",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 15296,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2538,
+    "lines": 40,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 62.48,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0008,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:07:01+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol2_0054_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol2_0054_L.jpg",
+      "bytes": 2988300,
+      "sha256": "a47da791b0c8242457f76477b3a3c206a748a27855a8a77a987b4d42de347907",
+      "sha256_of": "original",
+      "working_copy": "vol2_0054_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:07:01+00:00"
+  }
+}

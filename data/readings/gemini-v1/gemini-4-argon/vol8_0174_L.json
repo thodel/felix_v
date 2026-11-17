@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol8_0174_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol8_0174_L.jpg",
+    "bytes": 2286322,
+    "sha256": "59c03a1951b0cec095032bd4062d99d8ce19153c165d19d8b3780a78d2725c85",
+    "sha256_of": "original",
+    "working_copy": "vol8_0174_L.jpg"
+  },
+  "text": "huiusmodi cum maiori tui ad quietem insistere ac pensionis\ncentum florenorum Sabaudie quam dilectus filius Johannes\nde Solerio dicti ordinis et vigintiquinque florenorum de Camera\nsimilium quos dilecti filii magister et Conventus domus\nhospitalis sancti Johannis de Rodo antedicti ordinis certo iure\nsuper fructibus preceptorie Candioli dicti ordinis\n Caturensis diocesis quam tu Jacobus obtines annuatim\npercipiunt onera facilius subire valeas ac tibi etiam\nAnthonio Mariti qui ut similiter accepimus propter\ndifferentiam in ecclesia dei prothdolor vigentem et\ndevocionem ac fidem quam erga nos et eandem\nsedem gessisti et adhuc gerere comprobaris ab hospitali\npredicto cum bona licencia eorundem magistri et Conventus\nrecessisti nullamque preceptoriam beneficium officium seu\nlocum dicti ordinis obtines premissorum intuitu favore\nprosequi gracioso vobisque de tranquillo et pacifico\nalimonie subvencionis auxilio providere volentes domum de\nArpey dicte Lugdunensis diocesis que membrum eiusdem pre\nceptorie Cussie existit cuius fructus redditus et proventus\noctuaginta librarum Turonensium parvorum secundum communem esti\nmacionem valorem annuum ut similiter accepimus non\nexcedunt absque aliqua illius a suo corpore et capite\nseparacione seu dismembracione cum omnibus iuribus et\npertinenciis suis vobis utique pro rata sua loco pensionum\npredictarum per vos tenendam regendam et gubernandam\nauctoritate apostolica tenore presencium motu proprio non ad vestram\nvel alterius alicuius pro vobis nobis super hoc oblate\npeticionis instanciam Sed de nostra mera liberalitate\ncommittimus et eciam assignamus non obstantibus omnibus\nsupradictis ac hiis que in predictis litteris non obstare\nvoluimus ceterisque contrariis quibuscunque Nulli ergo\nomnino hominum liceat hanc paginam nostre commissionis\net assignationis infringere vel ei ausu temerario\ncontraire Si quis autem hoc attemptare pre\nsumpserit Indignacionem omnipotentis dei et beatorum\npetri et pauli apostolorum eius se Noverit Incursurum\nDatum Lausanne decimo kalendas Junii anno a Nativitate\ndomini Millesimoquadringentesimoquadragesimooctavo\npontificatus nostri anno octavo xl v per G de puteo",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 11199,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2155,
+    "lines": 39,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 54.26,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0009,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:33:07+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol8_0174_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol8_0174_L.jpg",
+      "bytes": 2286322,
+      "sha256": "59c03a1951b0cec095032bd4062d99d8ce19153c165d19d8b3780a78d2725c85",
+      "sha256_of": "original",
+      "working_copy": "vol8_0174_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:33:07+00:00"
+  }
+}

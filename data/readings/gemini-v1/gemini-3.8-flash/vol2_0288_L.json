@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol2_0288_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol2_0288_L.jpg",
+    "bytes": 2533773,
+    "sha256": "e355d6a6e044c7cd3fcb09350b96105f1c4ab4f7abcd2b2dc873079fa34b1227",
+    "sha256_of": "original",
+    "working_copy": "vol2_0288_L.jpg"
+  },
+  "text": "patronorum sedium eorum optinentium etc. de qua Claudio\nasseritis non excedunt etiam si alias quovismodo aut\nex alterius cuiuscumque persona seu per liberam alicuius\ntaliter de illa extra Romanam curiam etiam coram\nnotario publico et testibus sponte factam resigna-\ntionem vacet et tanto tempore vacaverit quod eius\ncollatio iuxta Lateranensis statuta concilii ad sedem\napostolicam legitime devoluta et predicta premissorum\ncappellania dispositioni apostolice quoque reservata\nexistat et super ea inter aliquos lis vel controversia\ndummodo tempore date presentium non sit in ea\nalicui aliter specialiter ius quesitum et ad id eorumdem\npatronorum illius consensus intervenerit cum omnibus\niuribus et pertinentiis suis eidem Claudio auctori-\ntate nostra conferas et assignes Inducens per te vel\nalium seu alios eundem Claudium vel procuratorem suum eius\nnomine in corporalem possessionem predicte cappellanie\niuriumque et pertinentiarum predictorum et defendens\ninductum amoto vel detentore ac faciens eundem\nClaudium ad predictam cappellaniam huiusmodi ut\nmoris est admitti sibique de illius fructibus reddi-\ntibus proventibus vel responderi Contradictores\nauctoritate nostra appellatione postposita compescendo:\nNon obstantibus felicis recordationis Bonifacii\npape octavi predecessoris nostri et aliis consti-\ntutionibus apostolicis contrariis quibuscumque:\nAut si aliqui super provisionibus sibi faciendis\nde huiusmodi vel aliis beneficiis ecclesiasticis in illis\npartibus speciales vel generales apostolice sedis vel legatorum\nimpetrarint etc. etiam si per eas ad inhibi-\ntionem vel processum quibus omnibus prefato Claudio\nin premissorum cappellanie assecutione volumus\nanteferri sed nullum per hoc ius quo ad assecutionem\nbeneficiorum aliorum eorumdem generari: Seu\nsi venerabili fratri nostro episcopo Gebennensi vel quibusvis\naliis communiter vel divisim ab eadem sit sede in-\ndultum quod ad receptionem vel provisionem ali-\ncuius minime teneantur et ad id compelli aut\nquod interdici vel non possint quodque de huiusmodi\nvel aliis beneficiis ecclesiasticis ad eorum collationem vel\nprovisionem seu pro litteras apostolicas non facientibus vel\nmentionem et qualibet alia dicte sedis vel existat\nper quam presentibus non expressam vel tota-\nliter non insertam effectus huiusmodi impediri",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 8770,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2292,
+    "lines": 44,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 51.11,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0009,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:48:16+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol2_0288_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol2_0288_L.jpg",
+      "bytes": 2533773,
+      "sha256": "e355d6a6e044c7cd3fcb09350b96105f1c4ab4f7abcd2b2dc873079fa34b1227",
+      "sha256_of": "original",
+      "working_copy": "vol2_0288_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:48:16+00:00"
+  }
+}

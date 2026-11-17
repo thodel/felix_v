@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol5_0169_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol5_0169_R.jpg",
+    "bytes": 2570169,
+    "sha256": "c67bc0baa4cff2ae9d7ed012f614e0d5561dafdfb281a42cfad7dfe9316de049",
+    "sha256_of": "original",
+    "working_copy": "vol5_0169_R.jpg"
+  },
+  "text": "Iustitiariam compellerent ad celebracionem officiorum eciam altarium ad\nque ex fundacione et dotacione ecclesie et capelle huiusmodi iuxta\nnostre tenorem asterte[..] teneantur in non modicum dictorum clericorum scandalum\net gravamen. Quare pro parte eorundem clericorum afferencium rectores ecclesie\net ipsam existentem ad celebracionem officiorum in capella predicta ex fundacione\net dotacione huiusmodi aut alias minime teneri nobis fuit humiliter supplicatum\nquod sibi et statui suo in premissis oportune providere de benignitate\napostolica dignaremur. Nos igitur attendentes quod nullus hominum ad\ndivinorum officiorum celebracionem ad que de iure non obligatur\nastringi debet huiusmodi quoque supradictis incolarum diffinicionibus\nfactis super premissis quod ipsi et alii eorum vicarii dicturi pre-\nfati aliique qui fuerint pro tempore de sumptibus eorundem et singulis diebus dominicis\nconsuetis officiis per vos auctoritate nostra delegemus iudicatum, etc.\nper informacionem huiusmodi rectores ecclesie qui pro tempore fuerint ex fundacione\net dotacione aut alias ad celebracionem officiorum in capella huiusmodi\nnon teneri reppereritis dictos clericos ad ulteriora missarum\net aliorum divinorum officiorum onera preter ad que ex fundacione\net dotacione huiusmodi aut alias de iure astringuntur minime teneri\nnec ad illa per ultimos prefatos aut quoscunque alios compelli posse\nprout eciam debere decernatis et declaretis auctoritate memorata per\nde iure fuerit faciendo non permittendo eosdem clericos per quoscunque\neciam quamvis auctoritate preditos sive premissis molestari proutcunque\ninqvietari contradictores per censuram ecclesiasticam etc. refrenando\nNon obstantibus supradictis nostrisque statutis quibuscunque. Sive si\npresbyteris prefatis seu quibusvis aliis ab apostolica sede sit indultum\nquod interdici suspendi vel excommunicari non possint per litteras apostolicas non\nfacientes etc. mencionem. Datum Lausane decimo septimo kalendas\niunii anno a nativitate domini millesimo quadringentesimo\nquadragesimo quarto pontificatus nostri anno quarto. xx Jo. de abbate\n\nFelix episcopus etc. dilecto filio officiali Gebennensi salutem etc. Cura beneficiorum Jo. luyrierii\nquorumlibet presertim curam animarum gerencium nos ad vota fructuosa personarum etc.\nin illis divinis laudibus deditarum statum personarum salubriter esse decrevimus\nsuperius vigiles et peritos ad hoc solerter invigiles intendimus prout expediens\net que beneficiis presertim curatis collegiatarum ecclesiarum sepius speratur provenire\nFastidioso cancellario Gebennensis signavit nuper nobis dilectus filius Johannes filius\nquondam Stephani de Varenis clericus Gebennensis diocesis quod olim in ecclesia de Cusin Gebennensis diocesis\nobtinebat de senon magistro et prioris dicti prioratus ecclesie sancti Urbani eciam\ninaprima eciam prior et conventus dicti prioratus super domorum oblacionibus et\ngrossis fructibus ipsius ecclesie seu rectorie que tunc temporis per ipsum differe-\nbantur adeo vicarios et capellanos ipsius ecclesie rectores presbiteris et capellis\necclesie sed vicarius perpetuus divina officia celebrare et ecclesie sacramenta\nmichi ministrare nec non ecclesia iura parochialia illig decenterque omnia\nsupportare posset pro tempore fuerit per litteras nostras in modum laicis iniuncta quare\nsi ita esset extunc ipsi rectores seu seu vicarius non amplius stare seu per-\ncipere possint minime tenere posset. Quod si fieri posset ecclesie laici predicti de\nGebennensi diocesi quatuor octo percipientur in clericis diei capelle heredibusque heredibus\ntemporeque revertantur ad bonum monasterii dicti prioratus dictam ecclesiam bene manere\nnolens providere licet eidem priori et conventui convenit causa ipsius rectoris petat\nmisericorditer predictos grossos fructus dicte ecclesie laici maxime persolvencium",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 16984,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3808,
+    "lines": 49,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 76.71,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0005,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:55:06+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol5_0169_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol5_0169_R.jpg",
+      "bytes": 2570169,
+      "sha256": "c67bc0baa4cff2ae9d7ed012f614e0d5561dafdfb281a42cfad7dfe9316de049",
+      "sha256_of": "original",
+      "working_copy": "vol5_0169_R.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:55:06+00:00"
+  }
+}

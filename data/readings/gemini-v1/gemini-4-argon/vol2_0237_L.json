@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol2_0237_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol2_0237_L.jpg",
+    "bytes": 3222853,
+    "sha256": "eaa05ee0cd69e7015de2eee029b2f9fc004a07fecdd37f891e57c6fff62b200d",
+    "sha256_of": "original",
+    "working_copy": "vol2_0237_L.jpg"
+  },
+  "text": "et defendens inductum amoto exinde quolibet illicito\ndetentore ac faciens eidem Johanni de ipsius ecclessie\nfructibus redditibus proventibus iuribus et obventionibus\nuniversis integre responderi Contradictores auctoritate nostra etcetera\ncompescendo Non obstantibus pie memorie Bonifacii\npape octavi eciam predecessoris nostri ac aliis apostolicis con\nstitutionibus necnon dicti ordinis eciam iuramento confir\nmatione apostolica vel quavis alia firmitate roboratis\nstatutis et consuetudinibus stabilimentis usibus et na\nturiis indulgentiis quoque apostolice illi concessis in con\ntrarium quibuscumque Aut si aliqui super provisionibus\nsibi faciendis de huiusmodi speciales vel aliis beneficiis\necclesiasticis in illis partibus generales dicte sedis vel lega\ntorum eius litteras impetrarint eciam si per eas\nad inhibitionem reservationem et decretum vel alias\nquomodolibet sit processum quibus omnibus prefatum Johannem\nin dicte ecclesie assecutione volumus anteferri sed nullum\nper hoc eis quoad assecutionem beneficiorum aliorum\npreiudicium generari Seu si pro tempore existenti episcopo Gebennen\net quibusvis aliis communiter vel divisim ab eadem sit sede\nindultum quod ad receptionem vel provisionem alicuius\nminime teneantur et ad id compelli aut quod interdici\nsuspendi vel excommunicari non possint Quodque de huiusmodi\nvel aliis beneficiis ecclesiasticis ad eorum collationem\nprovisionem presentationem seu quamvis aliam disposi\ntionem coniunctim vel separatim spectantibus nulli\nvaleat provideri per litteras apostolicas non facientes\nplenam et expressam ac de verbo ad verbum de indul\nto huiusmodi mentionem Et qualibet alia dicte sedis indul\ngentia generali vel speciali cuiuscumque tenoris existat\nper quam presentibus non expressam vel totaliter non insertam\neffectus huiusmodi impediri valeat quomodolibet vel differri\net de qua cuiusque toto tenore habenda sit in nostris\nlitteris mentio specialis Nos enim exnunc irritum etcetera\nattemptari Datum Basilee Quarto Nonas De\ncembris Anno a Nativitate domini Millesimo\nQuadringentesimo quadragesimo primo\nPontificatus nostri Anno Secundo XX ff de F B forster Jo Ysenenaiz\nFelix episcopus etcetera venerabili fratri Episcopo Vercellen Salutem etcetera\nRomani Pontificis providencia circunspecta circa\necclesiarum et monasteriorum aliorumque religiosorum",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 21048,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2312,
+    "lines": 41,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 55.41,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0009,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:08:09+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol2_0237_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol2_0237_L.jpg",
+      "bytes": 3222853,
+      "sha256": "eaa05ee0cd69e7015de2eee029b2f9fc004a07fecdd37f891e57c6fff62b200d",
+      "sha256_of": "original",
+      "working_copy": "vol2_0237_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:08:09+00:00"
+  }
+}

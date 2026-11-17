@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol6_0083_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol6_0083_L.jpg",
+    "bytes": 2352896,
+    "sha256": "d10374922cae72338bdf06dc3d3790334c94b22da3049f49da64a7c1d313c62f",
+    "sha256_of": "original",
+    "working_copy": "vol6_0083_L.jpg"
+  },
+  "text": "dimissis integre responderi Contradictores auctoritate nostra etc compescendo\nNon obstantibus constitutionibus apostolicis necnon dicte ecclesie eciam iuramento confirmacione\napostolica vel alia quavis firmitate roboratis statutis et consuetudinibus contrariis\nquibuscumque aut si aliqui apostolica vel alia quavis auctoritate in dicta ecclesia in\ncanonicos sint recepti vel ut recipiantur insistant seu si super provisionibus sibi\nfaciendis de canonicatibus et prebendis ac dignitatibus huiusmodi speciales vel aliis\nbeneficiis ecclesiasticis in illis partibus generales dicte sedis vel legatorum eius\nlitteras impetrarint eciam si per eas ad inhibicionem reservacionem et decretum\nvel alias quomodolibet sit processum quibus omnibus prefatam personam in assecucione\nprepositure canonicatus et prebende huiusmodi volumus anteferri sed nullum per hoc\neis quoad assecucionem canonicatuum et prebendarum ac dignitatum aut beneficiorum\naliorum preiudicium generari Seu si venerabili fratri nostro episcopo Maurianensi et dilectis\nfiliis capitulo dicte ecclesie vel quibusvis aliis communiter vel divisim ab eadem\nsit sede indultum quod ad recepcionem vel provisionem alicuius minime teneantur\net ad id compelli aut quod interdici suspendi vel excommunicari non possit quodque\nde huiusmodi vel aliis beneficiis ecclesiasticis ad eorum collacionem provisionem\npresentacionem seu quamvis aliam disposicionem coniunctim vel separatim spectantibus\nnulli valeat provideri per litteras apostolicas non facientes etc mencionem\net qualibet alia dicte sedis indulgencia per quam presentibus etc effectus\nearum impediri et de qua cuiusque etc sit in nostris litteris mencio\nspecialis Seu si prefata persona presens non fuerit ad prestandum de observandis\nstatutis et consuetudinibus predicte ecclesie solitum iuramentum dummodo in\nabsencia sua per procuratorem ydoneum et cum ad ecclesiam ipsam accesserit\ncorporaliter illud prestet Arente quoque provideas ne in resignacione huiusmodi\nsi fiat ex parte resignantis et persone huiusmodi symoniaca pravitas\nseu eciam corruptela interveniat Nos enim exnunc irritum\ndecernimus et inane si secus etc contigerit attemptari Datum Gebennis septimo\nidus Januarii anno a nativitate domini millesimo quadringentesimo\nquadragesimo quinto pontificatus nostri anno quinto xxxv Jo de Abbatis\nFelix episcopus etc Dilectis filiis Abbati Monasterii Ambroniaci Lugdunensis\ndiocesis et preposito ecclesie Lausannensis ac officiali Aniciensi Salutem etc Grata\nfamiliaritatis obsequia que dilectus filius Petrus Cocheti presbiter Lugdunensis\ndiocesis familiaris noster nobis et apostolice sedi hactenus impendit et adhuc\nsollicitis studiis impendere non desistit necnon vite ac morum honestas\naliaque laudabilia probitatis et virtutum merita quibus personam suam tam\nfamiliari experiencia quam eciam fidedignorum testimoniis iuvari percepimus\nnos inducunt ut sibi reddamur ad graciam liberales Cum siquidem dilecto\nfilio Johanni Rosseti tunc parrochialem ecclesiam de Hyspina Augustensis diocesis\nsine cura obtinenti de parrochiali ecclesia de Mellens Lausannensis diocesis tunc\ncerto modo vacanci per alias nostras litteras mandavimus provideri concessimusque\nac voluimus quod ipse quamprimum possessionem ipsius ecclesie de Mellens foret\ndictarum litterarum vigore pacifice assecutus dictam ecclesiam de Hyspina\nomnino dimittere teneretur prout in dictis litteris plenius continetur\nCum itaque dicta ecclesia de Hyspina per assecucionem dicte ecclesie\nde Mellens per dictum Johannem faciendam vacare speretur in brevi\nNos volentes dicto Petro premissorum obsequiorum et meritorum suorum",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 68746,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3602,
+    "lines": 46,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 77.33,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0008,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:25:57+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol6_0083_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol6_0083_L.jpg",
+      "bytes": 2352896,
+      "sha256": "d10374922cae72338bdf06dc3d3790334c94b22da3049f49da64a7c1d313c62f",
+      "sha256_of": "original",
+      "working_copy": "vol6_0083_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:25:57+00:00"
+  }
+}

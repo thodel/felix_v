@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol1_0054_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol1_0054_R.jpg",
+    "bytes": 2573300,
+    "sha256": "3000bd288a3186ae4206fc4dbaabe49b39473e03f1c1232c7b852d37e7552da3",
+    "sha256_of": "original",
+    "working_copy": "vol1_0054_R.jpg"
+  },
+  "text": "impedientibus que dilecti filii decanus et capitulum ecclesie\nbeate Marie de Anissiaco Gebennensis diocesis qui dictam ecclesiam\nsancti Petri ad se spectare seu in ea ius habere asserunt\nac eosdem coniuges propter hoc litium anfractibus involvere\nnititur adimplere non possunt Quare pro parte eorundem coniugum\nnobis fuit humiliter supplicatum ut eis premissa faciendi licentiam\nconcedere necnon quoadvixerint et ipsis vitafunctis eorum\nprincipali heredi et dehinc propinquiori sui generis Ius\npatronatus dicte capellanie ac presentandi personas ydoneas ad\nillam ordinario loci hac prima vice et quotiens illam decetero\nvacare contigerit inperpetuum reservare ac alias in premissis\noportune providere dignaremur Nos itaque qui cultum\ndivinum vigere et augeri intensis desideriis affectamus\nvolentes eosdem inperpetuum reservare ac alias in premissis\nconiuges in eorum laudabili proposito confovere huiusmodi supplicationibus\ninclinati fraternitati tue per apostolica scripta mandamus\nquatenus prefatis coniugibus assignatis tamen prius per eos pro\ncapellano libris calice ornamentis et aliis neccessariis huiusmodi\ndote sufficienti premissa faciendi auctoritate nostra licenciam largiaris\nprefatis decano canonicis et capitulo cum premissa sine eorum\npreiudicio fiant super huiusmodi impedimentis perpetuum silencium\nimponendo Et nichilominus post fundationem et dotationem\npredictas Ius patronatus et presentandi personas predictas\nad eandem capellaniam hac vice et quotiens illam deinceps\nvacare contigerit coniugibus et heredi ac propinquioribus\nprefatis eadem auctoritate inperpetuum reservare procures Iure\ntamen parrochialis ecclesie dicti loci et quolibet alieno in omnibus\nsemper salvo Datum Basilee sexto kalendas septembris anno\na nativitate domini millesimoquadringentesimoquadragesimo\npontificatus nostri anno primo xx A Episcopus Grossetanus\nFelix episcopus etc Dilectis filiis Petro de Trilhia archidiacono\nLodovensi Petro de Saugio Gebennensis et Anthonio Dopreez can-\ntori Lausannensis ecclesiarum canonicis salutem etc Iustis supplicum votis\nlibenter annuimus eaque favoribus prosequimur oportunis Exhibita\nsiquidem nobis nuper pro parte Cristofori de Ansena de Medio-\nlano laici mercatoris et incole civitatis Gebennensis peticio conti-\nnebat quod licet dudum idem Cristoforus cum Francisca de Lacapella\nmuliere eiusdem civitatis Gebennensis matrimonium per verba legitima\nde presenti contraxerit fueritque dictum matrimonium inter eos carnali copula\nconsummatum tamen dicta Francisca sue salutis immemor ad instanciam\ndicti Cristofori et quorundam civium civitatis predicte Gebennensis eum",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 14765,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2608,
+    "lines": 41,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 62.63,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0008,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:04:17+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol1_0054_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol1_0054_R.jpg",
+      "bytes": 2573300,
+      "sha256": "3000bd288a3186ae4206fc4dbaabe49b39473e03f1c1232c7b852d37e7552da3",
+      "sha256_of": "original",
+      "working_copy": "vol1_0054_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:04:17+00:00"
+  }
+}

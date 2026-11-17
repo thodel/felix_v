@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol6_0177_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol6_0177_L.jpg",
+    "bytes": 2830534,
+    "sha256": "ea59691a016d6d564f1786958680b029e0ba8218f128e2d44729447c98173ae6",
+    "sha256_of": "original",
+    "working_copy": "vol6_0177_L.jpg"
+  },
+  "text": "Felix etc. dilecto filio Raymundo Electo Cisterciensi\nSalutem etc. Humilibus et honestis supplicum votis libenter annuimus\neaque quantum cum deo possumus favoribus prosequimur oportunis\nExhibita siquidem nobis nuper pro parte dilecti filii Guilliermi\nde Thono civis Gebennensis peticio continebat quod licet\nolim ipse bonis et facultatibus temporalibus habundaret\nde quibus singulis suis creditoribus absque sui status\ngravi dispendio et suorum immobilium bonorum alienacione sa-\ntisfactionem impendere potuisset tamen propter gravia ex-\npensarum onera per eundem Guilliermum ut asserit in Sal-\ninaia Tharentasiensi et illius occasione supportata ad tantam\nsuorum bonorum devenit exinanicionem quod creditoribus\nsuis cum quibus diversa debita eciam per eum datis\nfideiussoribus ac nonnullis intervenientibus obligacionibus\nconfessionibus summissionibus ac renunciacionibus iuramenti et\npenis vallatis dicitur contraxisse absque dictorum bonorum\nimmobilium alienacione satisfacere minime potuit prout\nnec potest de presenti Cum autem sicut eadem peticio\nsubiungebat idem Guilliermus timeat se propter satisfactionis\nhuiusmodi retardacionem sentencias excommunicacionis incurrisse ac si ad satisfac-\ncionem eorundem eadem bona sua immobilia non sine gravi\nsui status ac honoris detrimento vendere compellatur pro\nparte ipsius Guilliermi afferentis quod fortuna sibi arridente\npinguiori vel saltem infra certum competentem sibi prefigendum\nterminum dictis suis creditoribus satisfacere est paratus\nnobis fuit humiliter supplicatum quatenus ipsum a sentenciis\nsi quas forsan occasione non solucionis huiusmodi incurrerit\nabsolvi mandare ac alias sibi et statui suo in premissis\noportune providere de benignitate apostolica dignaremur\nNos itaque huiusmodi supplicacionibus inclinati discrecioni tue\nper apostolica scripta mandamus quatenus vocatis dictis\ncreditoribus et aliis qui fuerint evocandi premissis neccessi-\ntatis veritate fulcitis prefatum Guilliermum si id humiliter petierit\nRecepta prius ab eo caucione ydonea quod infra biennium\na data presencium computandum creditoribus de debitis huiusmodi\nsatisfaciet plenarie aut cum eis amicabiliter concordiam\ninabit a sentenciis eciam si quas occasione non solucionis\nhuiusmodi forsan incurrit simpliciter vel ad cautelam hac\nvice dumtaxat in forma ecclesie consueta Iniunctis inde sibi",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 13946,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2337,
+    "lines": 39,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 58.95,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0009,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:26:33+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol6_0177_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol6_0177_L.jpg",
+      "bytes": 2830534,
+      "sha256": "ea59691a016d6d564f1786958680b029e0ba8218f128e2d44729447c98173ae6",
+      "sha256_of": "original",
+      "working_copy": "vol6_0177_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:26:33+00:00"
+  }
+}

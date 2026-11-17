@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol2_0241_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol2_0241_R.jpg",
+    "bytes": 2848864,
+    "sha256": "a95d593487041bf5bdf890e322e98c99f5b0032cfbb27cde88f3fe8e17e918ea",
+    "sha256_of": "original",
+    "working_copy": "vol2_0241_R.jpg"
+  },
+  "text": "teneantur et ad id compelli / aut quod interdici\nsuspendi vel excommunicari non possint / Et de quibus-\ncumque literis apostolicis non facientibus\ndignitatibus ipsius ecclesie vel aliis beneficium ecclesie\npastoris ad quorum collationem provisionem seu\npresentationem seu quamvis aliam dispositionem\nhuiusmodi vel seperatim spectantibus / nulli vel\nerat provisum / Et de quibuscumque apostolicis non facientibus\nplenam et expressam / ac de verbo ad verbum de\nindulto huiusmodi mentionem / et qualibet alia\ndicte sedis indulgentia generali vel speciali cuius-\ncumque tenoris existat / per quam quibuscumque non ex-\npressam vel totaliter non insertam / effectus earum\nimpediri valeat quomodolibet vel differri / et de qua\ncuiusque toto tenore habenda sit in nostris literis\nmentio specialis / aut si predictus Guillielmus presens non\nfuerit ad prestandum de observandis statutis et consuetudi-\nnibus dicte ecclesie beate Marie solitum iuramentum dummodo\nin absentia sua per procuratorem legitimum id iuret / et cum ad eccle-\nsiam ipsam accesserit corporaliter illud prestet prout per\nipsa repperiatur debitis preterea non fraudetur obsequiis\net interim onera in eadem statutis incumbentia / ut\nillius onera debite supportentur / complereatur / Nos enim\nex nunc irritum decernimus et inane si secus super hiis a quoquam quavis auctoritate scienter vel ignoranter contigerit attemptari. Datum Basilee\ndecimonono kalendas Ianuarii Anno a Nativitate domini\nMillesimo Quadringentesimo quadragesimo\nprimo / pontificatus nostri Anno Secundo. xxiiij ff de f :-\nFelix episcopus etcetera Dilecto filio Petro de Ginieto cano-\nnico Gebennensi salutem etcetera Iustis et honestis supplicum\nvotis libenter annuimus eaque favoribus prosequimur\noportunis. Exhibita siquidem nobis nuper pro parte dilecti\nfilii nobilis viri Iohannis Marmandi domini de Estiez\nGebennensis diocesis petitio continebat / quod cum olim ipse\ndilectos filios Iohandum de Bellicuo et Iacobum de\nbonomettario domicellos dicte diocesis qui sibi quasdam\npecuniarum summas et res alias tunc expressas ex causis\nrerum tunc expressis dare et solvere ac de aliis rationem\net computum facere tunc tenebantur / petisset sibi dare\net solvere / nec non rationem et computum huiusmodi secum\nfacere / necnon rationem et computum huiusmodi secum\nfacere iudicialiter conegissent / super hoc petendo ipsos\ncondempnari et compelli ad reddendum et faciendum\ncomputum ac solvendum pecuniarum summas / necnon dandum\nsibi res alias huiusmodi / coram dilecto filio Stephano\nIudicis officiali Gebennensi ad quem cognitio causarum",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 10393,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2563,
+    "lines": 45,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 55.98,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0012,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:47:50+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol2_0241_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol2_0241_R.jpg",
+      "bytes": 2848864,
+      "sha256": "a95d593487041bf5bdf890e322e98c99f5b0032cfbb27cde88f3fe8e17e918ea",
+      "sha256_of": "original",
+      "working_copy": "vol2_0241_R.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:47:50+00:00"
+  }
+}

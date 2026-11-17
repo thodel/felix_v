@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol6_0028_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol6_0028_L.jpg",
+    "bytes": 2392719,
+    "sha256": "1eb99a9a97c7cb6d18fb57533e00cb20f76943eee54e503e07f3d60268ffa6f5",
+    "sha256_of": "original",
+    "working_copy": "vol6_0028_L.jpg"
+  },
+  "text": "Felix episcopus etc. Universis christifidelibus presentes litteras inspecturis salutem etc. Quo-\nniam ut ait apostolus omnes stabimus ante tribunal iudicis recepturi prout in\ncorpore gessimus sive bonum sive malum fuerit oportet nos diem messionis extre-\nme misericordie operibus prevenire ac eternorum intuitu seminare in\nterris quod reddente domino cum multiplicato fructu recolligere valeamus\nin celis firmam spem fiduciamque tenentes quoniam qui parce seminat parce\net metet et qui seminat in benedictionibus de benedictionibus et metet\nvitam eternam. Sane sicut nobis exhibita pro parte dilectorum filiorum Petri\nde Ravino Petri Berteti de Tulliuco Willermi Petit de Tononio\nac Johannis de Fontanis de Sciez Gebennensis diocesis petitio contine-\nbat licet olim unus pons lapideus supra aquam sive ripariam de Dranßio\ndicte diocesis in qua hactenus plurimi utriusque sexus christifideles submer-\nsi fuerunt et periclitati transeuntesque ibidem dietim et continuo periculis\nsubiacent periculo ad obviandum scandalis que ob defectum pontis imminere\npoterant inchoatus fuisset tamen vel propter obitum eorum qui illum inceperant\naut supervenientem predicti et circumvicinorum locorum inopiam seu facultatum\ndefectum pons ipse perfectionis finem nondum attingere potuit nec illum perfici\nposse speratur nisi christifidelium mediantibus caritativis subsidiis Quare\npro parte Petri de Ravino et Petri Berteti necnon Willermi et Johannis\npredictorum asserentium se diligentiam exactam ut pons ipse perficiatur interponere\net unam capellam in capite illius pro aliquibus missis singulis ebdomadis\npro remedio animarum inibi defunctorum celebrandis construi facere et fundari\nprocurare velle nobis fuit humiliter supplicatum ut alicuius provisionis remedium\ncirca premissa adhibere dignaremur. Nos igitur qui salutem cunctorum libenter\nexquirimus et obviamus scandalis cupientes ut pons ipse pro communi rei\npublice utilitate debite perficiatur huiusmodi quoque supplicationibus inclinati\nuniversitatem vestram monemus et hortamur attente vobis in remissionem\npeccatorum iniungentes quatenus de bonis vobis a deo collatis pro perfectione pontis\net constructione atque dotatione capelle predictorum pias elemosinas et grata\ncaritatis subsidia erogetis ut per subventionem vestram pons perfici et ca-\npella huiusmodi construi et dotari valeat vosque per hec et alia bona opera\nque inspirante domino feceritis ad eterne possitis felicitatis gaudia pervenire.\nNos enim de omnipotentis dei misericordia et beatorum Petri et Pauli apostolorum eius auctoritate con-\nfisi omnibus vere penitentibus et confessis qui ad opus perfectionis pontis et con-\nstructionis capelle de bonis huiusmodi manus porrexerint adiutrices Septem\nannos et totidem Quadragenas de iniunctis eis penitentiis misericorditer re-\nlaxamus Et insuper si et postquam pons predictus perfectus fuerit eisdem Petro de Ravino\net Petro Berteti ac Willermo et Johanni assignata prius per eos pro ca-\npellano libris calice ornamentis ecclesiasticis ac aliis necessariis pro missa seu missis\ntunc ordinatis celebrandis dote sufficienti capellam predictam construi faciendi\nlicentiam auctoritate apostolica elargimur iure tamen parochialis ecclesie et quolibet\nalieno in omnibus semper salvo pecunias que ex indulgentiis huiusmodi domino concedente\nprovenient ad opus predictum applicari volentes et non aliter aut alibi sub ex-\ncommunicationis pena quam contrafacientes incurrant eo ipso exponi prohibentes\npresentibus quoad indulgentias supradictas post decennium minime valituris\nDatum apud Sanctum Dominicum extra muros Gebennenses sextodecimo kalendas Au-\ngusti anno a nativitate domini millesimo quadringentesimo quadragesimoquinto\npontificatus nostri anno quinto.\nxiiij Jo. de Aciis. Abbas.",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 15701,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3745,
+    "lines": 49,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 75.45,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0008,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:24:26+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol6_0028_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol6_0028_L.jpg",
+      "bytes": 2392719,
+      "sha256": "1eb99a9a97c7cb6d18fb57533e00cb20f76943eee54e503e07f3d60268ffa6f5",
+      "sha256_of": "original",
+      "working_copy": "vol6_0028_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:24:26+00:00"
+  }
+}

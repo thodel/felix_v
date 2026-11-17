@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol7_0213_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol7_0213_L.jpg",
+    "bytes": 3054169,
+    "sha256": "1dca2bb2d4ae3594a6313175567923d3095db6e1a75b84a5a78fd2797b500604",
+    "sha256_of": "original",
+    "working_copy": "vol7_0213_L.jpg"
+  },
+  "text": "eiusdem irritum decernimus et inane si secus super hiis\na quoquam quavis auctoritate scienter vel ignoranter contigerit attemptari\nDatum apud sanctum Mauricium Agaunensem Sedunensis diocesis\nsexto kalendas februarii anno a nativitate domini millesimo\nquadringentesimoquadragesimoseptimo pontificatus\nnostri anno septimo xpv Jo de Abbatis\nFelix episcopus etc Dilecto filio Stephano Garnerii canonico\nLausanensi Salutem etc Dignum arbitramur et congruum ut illis se\nreddat sedes apostolica gratiosam quibus ad id propria virtutum merita\nlaudabiliter suffragantur Cum itaque sicut accepimus parrochialis ecclesia\nsancti Ciriaci de Wllens Lausanensis diocesis quam quondam\nHugo Baudillion illius rector dum viveret obtinebat per\nobitum ipsius Hugonis qui extra Romanam curiam diem clausit ex-\ntremum vacaverit et vacet ad presens Nos volentes dilectum filium\nSymonem Toseur qui ut asserit presbiter est apud nos de vite\nac morum honestate aliisque probitatis et virtutum meritis multipliciter\ncommendatum horum intuitu favore prosequi gratioso Discretioni tue\nper apostolica scripta mandamus quatenus si per diligentem examinationem\neundem Symonem ad hoc repereris ydoneum super quo\ntuam conscientiam oneramus ecclesiam predictam cuius fructus redditus\net proventus viginti librarum Turonensium parvorum secundum communem ex-\ntimationem valorem annuum ut ipse Symon asserit non excedunt sive ut premittitur sive\nalias quovismodo aut ex alterius cuiuscumque persona seu per liberam\ndicti Hugonis vel cuiusvis alterius de illa extra eandem\ncuriam etiam coram notario publico et testibus sponte factam\nresignationem aut constitutionem felicis recordationis Johannis\npape xxii predecessoris nostri que incipit Execrabilis vel si tanto vacet\ntempore vacaverit quod eius collatio iuxta Lateranensis statuta concilii\nad eandem sedem legitime devoluta ipsaque ecclesia dispositioni\napostolice quomodolibet reservata existat et super ea inter\naliquos lis cuius statum presentibus haberi volumus pro expresso pen-\ndeat indecisa dummodo tempore date presentium non sit in ea alicui\nspecialiter ius quesitum cum omnibus iuribus et pertinentiis\nsuis eidem Symoni auctoritate nostra conferas et assignes In-\nducens per te vel alium seu alios prefatum Symonem vel\nprocuratorem suum eius nomine in corporalem possessionem ecclesie\niuriumque et pertinentiarum predictorum et defendens inductum amoto\nexinde quolibet illicito detentore ac faciens sibi de ipsius ecclesie\nfructibus redditibus proventibus iuribus et obventionibus universis integre\nresponderi Contradictores auctoritate nostra etc compescendo Non\nobstantibus pie memorie Bonifacii pape viii etiam predecessoris nostri\net quibusvis aliis constitutionibus apostolicis contrariis quibuscumque Aut",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 18563,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2736,
+    "lines": 42,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 64.17,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0011,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:30:44+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol7_0213_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol7_0213_L.jpg",
+      "bytes": 3054169,
+      "sha256": "1dca2bb2d4ae3594a6313175567923d3095db6e1a75b84a5a78fd2797b500604",
+      "sha256_of": "original",
+      "working_copy": "vol7_0213_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:30:44+00:00"
+  }
+}

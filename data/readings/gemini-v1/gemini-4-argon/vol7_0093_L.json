@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol7_0093_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol7_0093_L.jpg",
+    "bytes": 2567959,
+    "sha256": "ff7a3ec8351ac0c69d7c42dc2bba6f012effb65ecb20466f90e6a8fbb54b42f6",
+    "sha256_of": "original",
+    "working_copy": "vol7_0093_L.jpg"
+  },
+  "text": "incidenciam dependenciam et connexis ulterius audiatis et si per confessionem\naut ex actis cause huiusmodi prefatum Hugonetum predicta florenorum summa\nrecepisse vobis constiterit nisi idem Hugonetus illam se iusto titulo re-\ncepisse docuerit vos tam prout per nos seu auctoritate nostra vobis super hoc\nfactarum commissionum quam presencium vigore eam eandem appellacione remota\nusuris cessantibus unica vestra sentencia cui partes predicte stare et acquiescere\ndebeant et teneantur et a qua neutri parcium liceat appellare licite\ndebito fine decidatis et terminetis facientes quod decreveritis per cen-\nsuram ecclesiasticam seu eciam detencionem personarum atque bonorum quorumcunque necnon\nalia ad hoc oportuna remedia firmiter observari Non obstantibus\npremissis necnon constitucionibus apostolicis contrariis quibuscunque Aut si ali-\nquibus communiter vel divisim a sede predicta sit indultum quod interdici\nsuspendi vel excommunicari non possint per litteras apostolicas non facientes de\nindulto huiusmodi mencionem Datum Basilee duodecimo kalendas januarii anno a nativitate\ndomini millesimo quadringentesimo quadragesimo sexto pontificatus nostri anno\nseptimo xlv Jo de Abba\nFelix episcopus etc dilecto filio Raymundo Taloni electo Sistaricensi cancellariam\napostolicam de mandato nostro regenti Salutem etc Apostolice sedis circumspecta benignitas\nad ea libenter intendit per que beneficiis ecclesiasticis presertim curam habentibus animarum\nne debitis fraudentur obsequiis necnon antea illa obtinentibus quos ab illarum\nexercicio racionabilis causa retrahit ne rerum temporalium premantur inopia utiliter\net salubriter valeat provideri illisque graciosam se exhibet ac eciam liberalem\nquos ad id grata devocionis obsequia et vite ac morum honestas aliaque lau-\ndabilia probitatis et virtutum merita laudabiliter recommendant Cum itaque sicut\naccepimus dilectus filius magister Johannes Leodegarii rector parrochialis ecclesie de La-\nvornayo Gebennensis diocesis litterarum apostolicarum scriptor et familiaris noster parrochialem\necclesiam predictam quam obtinet ex certis causis suum animum moventibus sponte\net libere resignare proponat Nos votis ipsius Johannis in hac parte favora-\nbiliter annuentes ac volentes tam dilecto filio Johanni Monachi canonico Sedu-\nnensi baccalario in decretis apud nos de litterarum sciencia vite ac morum ho-\nnestate aliisque probitatis et virtutum meritis multipliciter commendato intuitu\nhorum meritorum specialem graciam facere quam dicto Johanni Leodegarii qui ut eciam\nasseritur olim in Romana curia procurator causarum fuit ne propter resignacionem\nhuiusmodi nimium paciatur incommodum de alicuius subvencionis auxilio providere\ndiscrecioni tue per apostolica scripta committimus et mandamus quatenus ab eodem\nJohanne Leodegarii vel procuratore suo ad hoc specialiter constituto resigna-\ncionem huiusmodi si eam in tuis manibus sponte et libere ut prefertur facere voluerit\nauctoritate nostra hac vice dumtaxat recipias et admittas eaque per te recepta et\nadmissa parrochialem ecclesiam predictam cuius fructus redditus et proventus octuaginta\nlibrarum turonensium parvorum secundum communem extimacionem valorem annuum ut asseritur non excedunt\nsive ut premittitur tunc seu alias quovismodo aut ex alterius cuiuscunque\npersona seu per similem eiusdem Johannis Leodegarii vel cuiuscunque alterius eciam\nex causa translacionis permutacionis de illa extra Romanam curiam eciam coram notario publico\net testibus sponte factam aut constitucionem felicis recordacionis Johannis pape xxii predecessoris\nnostri que incipit Execrabilis vacet et tanto tempore vacaverit quod illius collacio\niuxta Lateranensis statuta concilii ad eandem sedem legitime devoluta ipsaque par-\nrochialis ecclesia disposicioni apostolice quolibet reservata existat et super ea inter",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 15026,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3803,
+    "lines": 47,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 79.94,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0005,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:29:27+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol7_0093_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol7_0093_L.jpg",
+      "bytes": 2567959,
+      "sha256": "ff7a3ec8351ac0c69d7c42dc2bba6f012effb65ecb20466f90e6a8fbb54b42f6",
+      "sha256_of": "original",
+      "working_copy": "vol7_0093_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:29:27+00:00"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol4_0165_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol4_0165_R.jpg",
+    "bytes": 2221074,
+    "sha256": "d278317f05250066a596b465f560278a2e9a14b9b3bc6c091bf2f7f47fce7202",
+    "sha256_of": "original",
+    "working_copy": "vol4_0165_R.jpg"
+  },
+  "text": "reservata et de Jure patronatus laicorum ut prefertur existat et\nsuper ea inter aliquos lis cuius statum presentibus haberi volumus pro\nexpresso pendeat indecisa dummodo tempore dati presencium non sit in ea\nalicui specialiter Jus quesitum cum omnibus Juribus et pertinenciis suis\neidem Gerardo auctoritate nostra conferre et assignare curetis Inducentes\nper vos vel alium seu alios eundem Gerardum vel procuratorem suum eius\nnomine in corporalem possessionem capellanie Juruumque et pertinenciarum\npredictorum et deffendentes inductum amoto exinde quolibet illicito\ndetentore ac facientes ipsum Gerardum vel dictum procuratorem pro eo ad\ncapellaniam huiusmodi ut est moris admitti sibique de illius fructibus\nredditibus proventibus Juribus et obventionibus universis integre\nresponderi Contradictores auctoritate nostra apostolica appellatione postposita compescendo\nNon obstantibus felicis recordationis Bonifacii pape octavi prede\ncessoris nostri ac aliis apostolicis constitutionibus contrariis necnon quibuscumque\nAut si aliqui super provisionibus sibi faciendis de huiusmodi speciales vel\naliis beneficiis ecclesiasticis in illis partibus generales dicte sedis vel\nlegatorum eius litteras impetraverint eciam si per eas ad Inhibitionem\nreservationem et decretum vel alias quomodolibet sit processum quibus omnibus\nprefatum Gerardum in dicte capellanie assecutione volumus anteferri\nsed nullum per hoc eis quoad assecutionem beneficiorum aliorum preiudicium\ngenerari Seu si venerabili fratri nostro episcopo lausanensi vel quibusvis\naliis communiter vel divisim a dicta sit sede Indultum quod ad receptionem\nvel provisionem alicuius minime teneantur et ad id compelli aut\nquod interdici suspendi vel excommunicari non possint quodque de huiusmodi vel\naliis beneficiis ecclesiasticis ad eorum collationem provisionem presentationem\nseu quamvis aliam dispositionem coniunctim vel separatim pertinentibus\nnulli valeat provideri per litteras apostolicas non facientes plenam et\nexpressam ac de verbo ad verbum de Indulto huiusmodi mentionem\net qualibet alia dicte sedis Indulgencia generali vel speciali cuiuscumque\ntenoris existat per quam presentibus non expressam vel totaliter non\ninsertam effectus huiusmodi gratie Impediri valeat quomodolibet vel\ndifferri et de qua cuiusque toto tenore habenda sit in nostris litteris\nmencio specialis Nos enim exnunc irritum decernimus et Inane\nsi secus super hiis a quoquam quavis auctoritate scienter vel Ignoranter\ncontigerit attemptari Datum lausanne quintodecimo kalendas Junii Anno\na nativitate domini millesimo quadringentesimo quadragesimo\ntercio pontificatus nostri anno tercio . . gratis pro deo G abbas\nG Fabri\nIohannes de lamarche\nFelix episcopus etc Venerabili fratri episcopo Ayiensi et dilectis filiis\nAbbati Monasterii habundancie Gebennensis diocesis ac officiali\nlausannensi Salutem etc Religionis zelus vite ac morum honestas aliaque\nlaudabilia probitatis et virtutum merita super quibus apud nos dilectus\nfilius petrus de Croteirier canonicus Monasterii habundancie ordinis\nsancti augustini gebennensis diocesis fidedigno commendatur testimonio",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 17160,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3106,
+    "lines": 45,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 68.04,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0006,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:16:15+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol4_0165_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol4_0165_R.jpg",
+      "bytes": 2221074,
+      "sha256": "d278317f05250066a596b465f560278a2e9a14b9b3bc6c091bf2f7f47fce7202",
+      "sha256_of": "original",
+      "working_copy": "vol4_0165_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:16:15+00:00"
+  }
+}

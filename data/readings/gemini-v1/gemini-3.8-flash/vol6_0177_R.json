@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol6_0177_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol6_0177_R.jpg",
+    "bytes": 2530992,
+    "sha256": "deb019ff2ecbe1f5e15ebce2d82100f7a5ecf3c2cbb35511f616b8eb743f37df",
+    "sha256_of": "original",
+    "working_copy": "vol6_0177_R.jpg"
+  },
+  "text": "pro modo culpe penitentia salutari ac aliis que de jure\nfuerint injungenda. Non permittens eundem ac fide-\njussores predictos pretextu obligationum confessionum promissionum\nrenuntiationum ac juramentorum per Eudocensem hujusmodi\nvel quoscumque alios dicto Decano decanatu retroactis temporibus\niudicti gravaminum predictorum quolibet vexari seu etiam\nmolestari. Contradictores per censuram ecclesiasticam appellatione\npostposita compescendo. Non obstantibus premissis. Aut\nsi Eudocensibus prefatis vel quibusvis aliis communiter vel\ndivisim ab apostolica sit sede indultum quod interdici suspendi\nvel excommunicari non possint per litteras apostolicas non fa-\ncientes plenam et expressam ac de verbo ad verbum\nde indulto hujusmodi mentionem. Volumus autem quod idem\nGuillelmus nisi juxta vires satisfecerit aut providerit ut\nofferatur lasso debito in decanatu hujusmodi relebetur eo ipso\nDatum apud Thononum extra muros Gebennenses Duodecimo\nkalendas Septembris Anno a nativitate Domini millesimoquadrin-\ngentesimoquadragesimoquinto. pontificatus nostri Anno\nSexto. xxviij. Jo. de Rebello\nFelix etc. Venerabili fratri Episcopo Oicensellensi Salutem etc. Ad\nea libenter intendimus per que ecclesiis aliisque locis\net personis ecclesiasticis quibuslibet salubriter provideatur\nillasque gratiosis deo propitiis favoribus prosequimur\noportunis. Hinc est quod felicis recordationis Johannes Episcopus Ypori-\nririensis nobis nuper exhibita petitio continebat. Quod\nolim bone memorie Albertus tunc Episcopus Ypoririensis\ncapellaniam sancti Antonii de Vygontiano Ypoririensis diocesis\nque inibi inisse predicta Ypoririensis existebat certis\nrecte respectibus ipsum moventibus Monasterio sancti Ursi\nordinis sancti Augustini Augustensis diocesis univit. Ita quod in\nipsa capella quotiens illa vacaret pertineret ad presentationem\nPrioris dicti monasterii Capellanus seu Rector per\nEpiscopum Ypoririensem pro tempore existentem institui\ndeberet. qui singulis ebdomadis tres missas in dicta\ncapella celebraret et tres aut quatuor lectos pro\npauperum receptione et hospitalitate manuteneret. ulterius\nrationem administrationis sue singulis annis Episcopo vel eius",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 9565,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2152,
+    "lines": 37,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 57.19,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0009,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:57:37+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol6_0177_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol6_0177_R.jpg",
+      "bytes": 2530992,
+      "sha256": "deb019ff2ecbe1f5e15ebce2d82100f7a5ecf3c2cbb35511f616b8eb743f37df",
+      "sha256_of": "original",
+      "working_copy": "vol6_0177_R.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:57:37+00:00"
+  }
+}

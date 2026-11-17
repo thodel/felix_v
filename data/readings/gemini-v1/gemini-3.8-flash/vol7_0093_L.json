@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol7_0093_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol7_0093_L.jpg",
+    "bytes": 2567959,
+    "sha256": "ff7a3ec8351ac0c69d7c42dc2bba6f012effb65ecb20466f90e6a8fbb54b42f6",
+    "sha256_of": "original",
+    "working_copy": "vol7_0093_L.jpg"
+  },
+  "text": "incedenti dependenti et conexis ulterius audiatis et si per confessionem\naut ex actis cause huiusmodi prefatum hugonem predicta florenorum summa\nrecepisse vobis constiterit nisi idem hugo illam se iusto titulo re-\ncepisse docuerit vos tam post per nos seu auctoritate nostra quam dudum super hoc\nfactas remissiones ipsoque pendente visore eciam vande appellante remota\nvelut offensorem suum vero suo cui prius perdere stare et acquievi\ndebuit et teneat et a qua neutri partium licuit appellare licite\ndebito fine decidatis et terminetis facientes quod decreveritis per cen-\nsuram ecclesiasticam seu eciam detraccione personarum atque bonorum quorumcumque mercenarii\nalia ad hoc oportuna remedia firmiter observari Testes obstantibus\npremissis necnon constitutionibus apostolicis contrariis quibuscumque Aut si ali-\nquibus eorundem vel duobus a sede predicta sit indultum quod interdici\nsuspendi vel excommunicari non possint per litteras apostolicas non facientes etc.\nmentionem Datum Basilee duodecimo kalendas Januarii anno a nativitate\ndomini millesimoquadringentesimo quadragesimo sexto pontificatus nostri anno\nseptimo: .XX. Jo de tebbas\n\nFelix episcopus etc Dilecto filio Raymundo Taloni Electo Sistariensi cancellariam\napostolicam de mandato nostro regenti Salutem etc Apostolice sedis circumspecta benignitas\nad ea libenter intendit per que personis ecclesie presertim circa honores atque\nne debitis fraudentur obsequiis merito novit illa obtinereque quos ad illas\nexercendas rationabilis et convalescens ne vita temporalia perituris inopias utiliter\net salubriter valeat Frudens illisque gratiosam se exhibet ac eciam liberalem\nquod ad id grata devotionis obsequia et vite ac morum honestas aliaque lau-\ndabilia probitatis et virtutum merita laudabiliter recomendant Cum itaque sicut\naccepimus Dilectus filius magister Johannes loudogairii Rector parrochialis ecclesie de la\nnormanye Ebroicensis diocesis hinc apostolicus Scriptor et familiaris noster predictam\necclesiam predictam quam obtinet ex certis causis seu suis moventibus sponte\net libere resignare proponat Nos vero ipsum Johannem in hac parte favora-\nbiliter annuens ac volentes te dilecto filio Johanni morhi canonico eccle-\nsie Baturacenis in decretis apud nos de hinc solita vite ac morum ho-\nnestate aliisque probitatis et virtutum meritis multipliciter comendant harum\nhoc meritorum speciale gratiam facere que dicto Johanne loudogarii qui ut eciam\nasserit eciam in Romana curia procurator existit fuit nec propter resignationem\nhuiusmodi novum paratur incomodum de alicuius subiectionis impetu provide\ndiscretionem tue per apostolica scripta comittimus et mandamus quatenus si eodem\nJohanne loudogairii vel procuratore suo ad hoc specialiter constituto resigna-\ntione huiusmodi seu in tuis manibus sponte et libere ut prefertur facte voluerit\nauctoritate hac vice dumtaxat recipias et admittas huiusmodique recepta et\nadmissa parrochiale ecclesiam predictam cuius fructus redditus et proventus sexaginta\nlibrarum turonensium parvorum secundum eam estimationem ut asseritur non excedunt\nsive ut premittitur seu actu alio quovismodo aut ex alterius cuiuscumque\npersona seu per similem cessionem Johannis loudogairii vel cuiuscumque alterius eciam\nex ea contingente privationem de illa extra Romanam curia eciam coram notario publico\net testibus sponte factam aut constitutionem felicis recordationis Johannis pape XXII que incipit\nexecrabilis vacat et tanto tempore vacaverit quod eius collatio\niuxta lateranensis statuta concilii ad eandem sedem legitime devoluta ipsa que per\nofficiales eorundem dispositioni apostolice quolibet reservata existat et super ea inter",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 15131,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3641,
+    "lines": 47,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 76.47,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0005,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:59:31+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol7_0093_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol7_0093_L.jpg",
+      "bytes": 2567959,
+      "sha256": "ff7a3ec8351ac0c69d7c42dc2bba6f012effb65ecb20466f90e6a8fbb54b42f6",
+      "sha256_of": "original",
+      "working_copy": "vol7_0093_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:59:31+00:00"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol2_0052_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol2_0052_R.jpg",
+    "bytes": 3016106,
+    "sha256": "ef4a57a02ec0bf6028d061ea1c738e98ea5bbb7ee2374fabe867274456c141f0",
+    "sha256_of": "original",
+    "working_copy": "vol2_0052_R.jpg"
+  },
+  "text": "generari Aut si dilectis filiis Abbati et Conventui\ndicti Monasterii vel quibusvis aliis communiter vel divisim ab eadem\nsit sede indultum quod ad receptionem vel provisionem alicuius\nminime teneantur et ad id compelli non possint quodque de\nPreposituribus seu prepositure dicti ordinis vel aliis beneficiis\necclesiasticis ad eorum collationem provisionem presentationem seu quamvis\naliam dispositionem coniunctim vel separatim spectantibus nulli\nvaleat provideri per litteras apostolicas non facientes plenam et\nexpressam ac de verbo ad verbum de indulto huiusmodi mentionem et qualibet alia dicte sedis\nindulgentia generali vel speciali cuiuscumque tenoris existat\nper quam presentibus non expressam vel totaliter non insertam effectus huiusmodi gratie impediri valeat quomodolibet vel differri et de qua\ncuiusque toto tenore habenda sit in nostris litteris mentio specialis Seu quod ut etiam\nasseris hospitale beate Marie de plano pineroli Taurinensis\ndiocesis quod a prepositura sancti Jacobi Curiensuvituli dicti\nordinis Astensis diocesis dependet cuiusque fructus redditus\net proventus Sexaginta librarum florenorum parvorum secundum communem\nextimationem valorem annuum ut similiter asseris non excedunt ex\nconcessione sedis apostolice in commendam nosceris obtinere\nVolumus autem quod quamprimum dicti Preposituratus\nfueris possessionem vigore presentium pacifice assecutus\nhuiusmodi commenda de dicto hospitali tibi facta prout ad\nid etiam sponte voluisti expiret eo ipso tuque illud omnino\ndimittere tenearis Nulli ergo etc. nostre\ncollationis provisionis decreti et voluntatis infringere\netc. Si quis autem etc. contingit attemptari Datum\nBasilee duodecimo kalendas Aprilis Anno a Nativitate domini Millesimo\nquadringentesimoquadragesimoprimo Pontificatus\nnostri anno primo\nxx A. episcopus Grossetanus\nFelix etc. Venerabili fratri Episcopo Montisregalis\net dilectis filiis Taurinensis ac beate Marie de Cherio\nTaurinensis diocesis ecclesiarum Prepositis Salutem Religionis\nzelus litterarum scientia etc. Quocirca discretioni\nvestre per apostolica scripta mandamus quatenus vos vel duo\naut unus vestrum per vos vel alium seu alios eundem Johannem de\nRomagnano vel procuratorem suum eius nomine in corporalem",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 17029,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2217,
+    "lines": 36,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 60.61,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0009,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:06:46+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol2_0052_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol2_0052_R.jpg",
+      "bytes": 3016106,
+      "sha256": "ef4a57a02ec0bf6028d061ea1c738e98ea5bbb7ee2374fabe867274456c141f0",
+      "sha256_of": "original",
+      "working_copy": "vol2_0052_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:06:46+00:00"
+  }
+}

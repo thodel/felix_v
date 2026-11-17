@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol3_0209_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol3_0209_R.jpg",
+    "bytes": 2153262,
+    "sha256": "3b038281100156345ac58145e3f6ffc3ca2d388257725eb5fc58de4119c0a1ac",
+    "sha256_of": "original",
+    "working_copy": "vol3_0209_R.jpg"
+  },
+  "text": "abolendo et decetero fieri prohibendo Inter alia statuit et\nordinauit / quod Romanus pontifex pro tempore existens de\nvacaturis beneficiis modo honesto et conuenienti videlicet\nde vno ad collacionem In qua decem / et de duobus In qua\nquinquaginta et vltra forent beneficia disponere / et eciam\nsimiliter ordinauit quod ipse Romanus pontifex huiusmodi disposicioni\ndecretis vna per viam reseruacionis vti posset . Hinc\nest quod nos volentes tibi qui eciam causarum palacii apostolici\nauditor / et Referendarius noster ac ut accepimus de militari\ngenere procreatus existis premissorum meritorum et obsequiorum\ntuorum Intuitu graciam facere specialem / motu proprio non ad\ntuam vel alicuius alterius pro te nobis super hoc oblate\npeticionis instanciam / sed de nostra mera liberalitate canonicatum\necclesie Basiliensis in qua eciam ut accepimus decem prebendarum\ncanonicalium numerus et vltra fore dinoscitur / et\nIn qua pro aliis in canonicos ibidem recipiendis nondum\nscripsimus cum plenitudine Iuris canonici apostolica tibi auctoritate\nconferimus et de illo eciam prouidemus / prebendam vero eiusdem\necclesie si qua vacat ad presens vel cum vacauerit quam tu\nper te vel procuratorem tuum ad hoc legitime constitutum\nInfra vnius mensis spacium postquam tibi uel eidem procuratori\nvacacio Illius Innotuerit duxeris acceptandam conferendam\ntibi post acceptacionem huiusmodi cum omnibus Iuribus et pertinenciis\nsuis Iuxta decreti et ordinacionis huiusmodi formam donacioni\napostolice reseruamus Districtius inhibentes venerabili fratri nostro\nEpiscopo Basiliensi / et dilectis filiis Capitulo Basiliensi\nac Illi uel Illis ad quem uel ad quos in eadem\necclesia canonicorum recepcio necnon prebendarum\ncollacio prouisio presentacio seu quauis alia disposicio communiter vel\ndiuisim pertinet ne de prebenda huiusmodi ibidem Interim\neciam ante acceptacionem eandem nisi postquam eis constiterit\nquod tu uel procurator predictus illam nolueritis acceptare disponere\nquoquomodo presumant / Ac decernentes exnunc irritum et etc.\nattemptari Non obstantibus de certo canonicorum numero ac quibusuis\naliis eiusdem ecclesie statutis et consuetudinibus contrariis iuramento\nconfirmacione apostolica seu quauis firmitate alia roboratis\nAut si episcopo et capitulo prefatis seu quibusuis aliis communiter vel\ndiuisim a sede apostolica sit Indultum quod ad recepcionem\nvel prouisionem alicuius minime teneantur et ad Id compelli etc. non\npossint / quodque de canonicatibus et prebendis dicte ecclesie vel quibusuis\naliis beneficiis ecclesiasticis ad eorum collacionem etc. per litteras apostolicas non facientes\nplenam etc. mencionem et qualibet alia dicte sedis Indulgencia etc.\neffectus huiusmodi gracie Impediri etc. mencio specialis / Seu si presens",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 82028,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2735,
+    "lines": 43,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 62.63,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0007,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:13:47+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol3_0209_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol3_0209_R.jpg",
+      "bytes": 2153262,
+      "sha256": "3b038281100156345ac58145e3f6ffc3ca2d388257725eb5fc58de4119c0a1ac",
+      "sha256_of": "original",
+      "working_copy": "vol3_0209_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:13:47+00:00"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol2_0054_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol2_0054_L.jpg",
+    "bytes": 2988300,
+    "sha256": "a47da791b0c8242457f76477b3a3c206a748a27855a8a77a987b4d42de347907",
+    "sha256_of": "original",
+    "working_copy": "vol2_0054_L.jpg"
+  },
+  "text": "cernantur Cum itaque sicut accepimus dilectus filius\nJohannes de macaparto Rector parrochialis ecclesie sancti Martini Bellavallis\nTharentasiensis diocesis parrochialem ecclesiam predictam cui cura animarum iminet\npropter cotidiana dilecti filii nostri Johannis Caritatis (?) universitatum viri (?) presbyteri (?)\nTheogoniis apud sanctum sacrum Basiliense concilium eiusdem ecclesie residentis\nprestanda obsequia debite preeesse non potest sponte et\nlibere resignare proponat Nos volentes ipsi Johanni in hac\nparte favorabiliter annuere et ita sibi ne pretextu\nhuiusmodi nimium dispendium patiatur providere quia dilectum\nfilium Petrum de Manso perpetuum vicarium in dicta ecclesia\napud nos de vite ac morum honestate aliisque probitatis et\nvirtutum meritis multipliciter commendatum huiusmodi intuitu\nfavore prosequi gratioso Volentes discretioni tue per\napostolica scripta mandamus quatenus si est ita ab eodem\nJohanne vel procuratore suo ad hoc ab eo specialiter constituto resigna-\ntionem sepedicte ecclesie in tuis manibus sponte sponte voluerit ut\nprefertur auctoritate nostra hac vice dumtaxat recipias et\nadmittas eaque per te recepta et admissa si per diligentem\nexaminationem eundem Petrum ad hoc ydoneum esse reppereris\nsuper quo tua conscientiam oneramus ecclesiam predictam\ncuius fructus redditus et proventus triginta librarum Turonensium\nparvorum secundum communem estimationem valorem annuum ut ipse Petrus asserit\nnon excedunt sive per huiusmodi resignationem nunc sive alias quovismodo\naut per cessionem felicis recordationis Johannis pape vicesimiprimi post\ncessioni nostre seu que incipit Execrabilis statuti etiam\nstudio tempore vacavisset quodque licet certo iure dandi (?) statuta\nconcilii ad sedem apostolicam legationis clausura ipsaque ecclesia\ndispositioni apostolice generaliter vel specialiter reservata existat\net super ea inter aliquos lis cuius statum presentibus haberi\nvolumus pro expresse pendere indecisa dummodo tempore date\npresentium non sit in ea alicui specialiter ius quesitum cum\nomnibus juribus et pertinentiis suis Petro conferre et assignare\nnecnon super fructibus redditibus et proventibus eiusdem ecclesie pensionem\nannuam Quindecim florenorum monete in partibus Sabaudie\ncurrentis aut aliam congruam tuo arbitrio moderandam\nJohanni prefato quoadvixerit vel procuratori suo legitimo ad hoc\nab eo speciale mandatum habenti per ipsum Petrum et suos\nsuccessores ipsius ecclesie Rectores pro tempore existentes in\nsynodus et locis per eos eligendis ac sub censuris et\npenis per te statuendis annis singulis efficaciter",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 11759,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2562,
+    "lines": 40,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 63.08,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0012,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:46:33+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol2_0054_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol2_0054_L.jpg",
+      "bytes": 2988300,
+      "sha256": "a47da791b0c8242457f76477b3a3c206a748a27855a8a77a987b4d42de347907",
+      "sha256_of": "original",
+      "working_copy": "vol2_0054_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:46:33+00:00"
+  }
+}

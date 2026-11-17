@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol4_0266_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol4_0266_L.jpg",
+    "bytes": 1873472,
+    "sha256": "bca5262731d2194de3e97eff3211999db689c65ca55c8a6cf73814675142accf",
+    "sha256_of": "original",
+    "working_copy": "vol4_0266_L.jpg"
+  },
+  "text": "Guillelmo nulla quamvis in eis personas absque vel\nhominum iurisdictione correctione punitione mulctet vel\ndampnaliter cum ratione delicti vel contractus inter\nhee de qua agitur ubicumque delictum commissum aut\ncontractus initus fuerit aut res ipsa consistat\ncontra exemptionem iuxta huiusmodi particularemque\nexercere possit vel presumat suspentionis ac\ndecretorum excommunicationum sententias suspensionum et processus\niuris etcetera exemptionem et liberationem easdem attemptata\nfuerint etcetera forsitan contingat infirmare irritos et inanes\nnulliusque roboris vel momenti commissis et singulas\nnostris vero certo Guillelmo contulerit solum et alicui\npredictos quatenus et predictorum illarum statuta presentibus\npro expressis habentes easdem purum fore ad nos\nadmittatis discretioni tue per apostolica scripta mandamus quatenus\npresentibus concurrentibus cum tenore iurisdictionis nostre suspensionem illas ultraque\nnostris personis alias inde Guillelmum ac alios supradictos\nsuspendantur canonicis processibus et faciatis eidem nostre auctoritate\net fine debito dummodo fecerint quod decreverit premissorum\neos secundum dispositionem iudicibus iurisdictionemque eidem Guillelmo\nnec contra exemptionem et liberationem per te huiusmodi\nquosque sub excommunicationis et alias executionis sententiarum censuras\net penas recipi presumat Non obstantibus constitutionibus et privilegiis\naut aliis privilegiis ac litteris apostolicis eidem Guillelmo\nconcessis etia si de illis his presentibus de verbo ad verbum\nspecialis mentio fieri deberet ceterisque contrariis quibuscumque\nquibusvisque dent se prefato Guillelmo vel quibusvis aliis dare vel\nduxerint ad eas se fieri debere quod intendere seu impressionis\nlitteris apostolicis expressa mentioque Datum Gebennis duodecimo kalendas decembris\nAnno a Nativitate Domini millesimoquadringentesimoquadra-\ngesimotertio pontificatus nostri anno quarto . . . de Sancto abbate",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 9300,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 1917,
+    "lines": 31,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 60.87,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.001,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:52:51+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol4_0266_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol4_0266_L.jpg",
+      "bytes": 1873472,
+      "sha256": "bca5262731d2194de3e97eff3211999db689c65ca55c8a6cf73814675142accf",
+      "sha256_of": "original",
+      "working_copy": "vol4_0266_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:52:51+00:00"
+  }
+}

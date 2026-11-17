@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol1_0049_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol1_0049_R.jpg",
+    "bytes": 2459388,
+    "sha256": "bc56eb727e03d1c3932ee2a609cc83d0c58feb5cc77e16383ffefc610194a088",
+    "sha256_of": "original",
+    "working_copy": "vol1_0049_R.jpg"
+  },
+  "text": "Canonicatus et prebenda dicte ecclesie beate Marielevi quorum\nfructus redditus et proventus vicarii fectus redditus et proventus\nparochialis ecclesie huiusmodi Centum librarum Turonensium secundum\ntaxacionem predictam communem extimacionem valorem annuum non excedunt noscitur\nobtinere Nos enim si dictus Nicodus ad hoc\nrepertus fuerit ydoneus ut prefertur exnunc\nperinde irritum decernimus et inane si secus attemptatum ac si die\ndate presencium eidem Nicodo ad hoc reperto ydoneo de\ndicta parochiali ecclesia cum interposicione decreti provideri manda\nvissemus Datum Basilee vi Idus Marcii Anno a\nNativitate domini Millesimoquadringentesimoquadra\ngesimoprimo Pontificatus nostri Anno primo\nxx A episcopus Grossetanus\nJo de dijck\nJo Boverii\nFelix episcopus etc Dilecto filio Petro porteri Canonico Gebennensi\nSalutem Vite ac morum honestas aliaque laudabilia\nprobitatis et virtutum merita super quibus dilectus filius\nPetrus pilliget perpetuus cappellanus in capella\ndicte Maiori ecclesie Gebennensi contigua apud nos\nfidedigno commendatur testimonio nos inducunt\nut ipsum specialibus favoribus et graciis prosequentes necessi\ntatibus suis favorabiliter consulamus Exhibita siquidem\nnobis nuper pro parte dicti petri peticio continebat quod\nolim ipse parochialem ecclesiam de Veyriaco Gebennensis\ndiocesis in ius et dilectus filius Nicodus pilliget perpe\ntuam Capellaniam ad altare sancti Georgii situm in eadem\nmaiore ecclesia quas tunc obtinebant illas ut dicebant\nex certis racionabilibus causis Invicem permutare in\ndilectorum filiorum capituli eiusdem Maioris ecclesie manibus\nex causa permutacionis huiusmodi extra Romanam curiam sponte\nresignarunt ac parrochialis ecclesie per habentem ad\nhoc a dilecto filio francisco tituli sancti Marcelli presbitero\nCardinali et Episcopo Gebennensi specialem ut dicebant\npotestatem vigore potestatis huiusmodi et nec non\ncapellanie predictarum resignacionibus predictis per eosdem\nCapitulum ad quos ipsius capellanie resignacionis eciam ex causa\npermutacionis recepcio et admissio necnon collacio\net provisio de antiqua et approbata ac actenus",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 23757,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2088,
+    "lines": 39,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 52.56,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.001,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:34:57+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol1_0049_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol1_0049_R.jpg",
+      "bytes": 2459388,
+      "sha256": "bc56eb727e03d1c3932ee2a609cc83d0c58feb5cc77e16383ffefc610194a088",
+      "sha256_of": "original",
+      "working_copy": "vol1_0049_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:34:57+00:00"
+  }
+}

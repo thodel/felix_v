@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol8_0175_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol8_0175_L.jpg",
+    "bytes": 2701608,
+    "sha256": "0009be9651d7451f7076cc952443b23fa75a5504d1a2f2585c4a8576e952ffc7",
+    "sha256_of": "original",
+    "working_copy": "vol8_0175_L.jpg"
+  },
+  "text": "decimotertio junii anno nativitatis dominice millesimoquadrin\ngentesimoquadragesimoseptimo pontificatus\nnostri anno octavo:  xiij de cort poncet\n\nFelix episcopus servus servorum dei dilectis filiis Jacobo Ranguisi et Petro de Fabri\ncibus canonicis ecclesie gebennensis ac officiali gebennensi Salutem\nDati etc. Religionis zelus vite ac morum honestas aliaque\nlaudabilia probitatis et virtutum merita super quibus\ndilectus filius Guillielmus de Sanctopaulo canonicus\nprioratus sancti laurentii Gratianopolitani ordinis\nsancti benedicti apud nos fidedigno commendantur testimonio\nnos inducunt ut ad ea favorabiliter intendamus\nque suis commoditatibus valeant salubriter provideri. Hodie\nsiquidem per nos accepto quod quondam Johannes de petra\nficta in humanis agens prioratum de veliezo lo\nbocinet gebennensis diocesis quem tunc obtinebat ex\ncausis tunc expressis resignare proponeret Nos tunc\ndictum prioratum cum illum vacare contingeret eidem\nGuillielmo usque ad septennium vel saltem quousque de\nbeneficio ecclesiastico dicti ordinis sibi provisum existeret pro eius\nsustentatione habenda et una secum gubernandum sub certo\nmodo et forma tunc expressis per quasdam commendari manda\nvimus ac voluimus inter cetera quod ipse Guillielmus lapso\nseptennio huiusmodi prioratum predictum omnino dimittere\nteneretur prout et deinde quia de huiusmodi litterarum huiusmodi vigore\nex certis causis tunc etiam expressis dubitabat licet valide\nessent alias litteras nostras convalescentes valere voluimus in\nomnibus et per omnia ac si iste huiusmodi non extitissent\nprout in singulis litteris earundem desuper confectis\nlatius continetur Cum autem sicut exhibita nobis nuper\npro parte dicti Guillielmi petitio continebat sit dubium infra\nseptennium huiusmodi infra quod adhuc constitutus\nexistit de beneficio sui ordinis sibi assequenter provideri\nNos cupientes eidem Guillielmo de uberioribus subventionis\nauxiliis provideri sibique gratiam facere ampliorem discretioni\nvestre per apostolica scripta mandamus quatinus vos vel duo\naut unus vestrum eundem prioratum cuius fructus\nredditus et proventus sexaginta librarum turonensium\nparve monete secundum extimationem valoris annui ut",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 9327,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2172,
+    "lines": 38,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 56.16,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0009,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:02:10+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol8_0175_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol8_0175_L.jpg",
+      "bytes": 2701608,
+      "sha256": "0009be9651d7451f7076cc952443b23fa75a5504d1a2f2585c4a8576e952ffc7",
+      "sha256_of": "original",
+      "working_copy": "vol8_0175_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:02:10+00:00"
+  }
+}

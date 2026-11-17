@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol2_0055_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol2_0055_L.jpg",
+    "bytes": 2995926,
+    "sha256": "10131503caea26f0966f87da0647a9ce0912b23f18251a39c68f0b7aa40affba",
+    "sha256_of": "original",
+    "working_copy": "vol2_0055_L.jpg"
+  },
+  "text": "Felix episcopus etcetera Dilecto filio Johanni fax ordinis sancti Augustini\nCanonicorum Regularium professori Salutem etcetera Religionis\nzelus vite ac morum honestas et cetera super quibus apud nos fidedigno\ncomendaris testimonio nos inducunt ut te specialibus favoribus et\ngratiis apostolicis prosequamur Exhibita siquidem nobis nuper pro\nparte tua peticio continebat quod licet tu ad supportanda monasterii\nin ytenwila ordinis beati Augustini diocesis Argentinensis onera et regularem inibi\nperagendam observanciam per prepositum illius ad certum tempus\net sub certis modis et conditionibus susceptus fuisses / tuque in eodem\nmonasterio domino intente famulari desiderasses / tamen causantibus\nmalicia temporis ac monasterio ipso fructuum et reddituum suorum\nattenuato et illis destituto tu in eodem monasterio retineri non possis\nnec aliunde habeas unde vitam tuam possis sustentare / Quare pro\nparte tua nobis fuit humiliter supplicatum / quatenus tecum ut aliquod\nbeneficium cum cura vel sine cura regulare seculari canonice conferretur\nvel eligereris ad illud retinere / illudque pro alio simili vel dissimili per-\nmutare posses dispensare dignaremur / Nos itaque tuis in hac parte\nsupplicationibus inclinati tibi ut quodcumque beneficium regulare tui or-\ndinis si tibi alias canonice conferatur vel assumaris ad illud recipere et\nretinere / illudque simpliciter vel ex causa permutationis quotiens tibi\nplacuerit dimittere et loco dimissi unum aliud simile vel dissile\nbeneficium ecclesiasticum regulare simile recipere et quoadvixeris retinere libere et\nlicite valeas / Constitutionibus apostolicis necnon statutis et consuetudinibus\nloci in quo dictum beneficium forsan fuerit et ordinis predictorum /\netiam juramento confirmatione etcetera roboratis / ceterisque contrariis quibuscumque\nobstantibus auctoritate apostolica tenore presentium concedimus facultatem\nNulli ergo etcetera nostre concessionis infringere vel ei etcetera contraire / Si\nquis autem etcetera incursurum / Datum Basilee Sexto Idus Martii Anno\na Nativitate domini Millesimoquadringentesimoquadragesimoprimo /\npontificatus nostri Anno primo . Gratis pro deo . N . Episcopus Grossetanus .\n\nFelix episcopus servus servorum dei Dilecto filio Archidiacono ecclesie Tornacensis\nSalutem etcetera Romani pontificis providencia circumspecta\ncirca ecclesiarum et monasteriorum ac horumque personarum quarumcumque\nsub certa illius pro tempore degentium personarum statum\nprospere dirigendum , diligenterque prospicit\net intendit et eis allambit oportuniter rerum utilitatem\necclesiarum incumbit et remedio provideat oportunis prout\nrerum et locorum qualitate pensata id conspicit in\ndomino salubriter expedire Sane petitio prefati dilectorum\nfiliorum prepositi et conventus Monasterii sancti\nCyriaci de Schonansia ordinis Cisterciensis Spirensis\ndiocesis per prepositum soliti gubernari nobis nuper",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 10523,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2868,
+    "lines": 42,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 67.29,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0007,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:46:56+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol2_0055_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol2_0055_L.jpg",
+      "bytes": 2995926,
+      "sha256": "10131503caea26f0966f87da0647a9ce0912b23f18251a39c68f0b7aa40affba",
+      "sha256_of": "original",
+      "working_copy": "vol2_0055_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:46:56+00:00"
+  }
+}

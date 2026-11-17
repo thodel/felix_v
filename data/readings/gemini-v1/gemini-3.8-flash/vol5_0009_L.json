@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol5_0009_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol5_0009_L.jpg",
+    "bytes": 2832626,
+    "sha256": "6550672fabbec3893f0e9671a23f3ff1cc8da97db13fd455e3780c6d4a5dadbb",
+    "sha256_of": "original",
+    "working_copy": "vol5_0009_L.jpg"
+  },
+  "text": "Felix episcopus etcetera universis christifidelibus presentes litteras inspecturis salutem etcetera Quoniam G. Fabri\nut ait apostolus omnes stabimus ante tribunal christi recepturi prout in corpore gessimus +\nsive bonum fuerit sive malum oportet nos diem messionis eterne misericordie\net pietatis operibus prevenire ac eternorum intuitu seminare in terris quod\nreddente domino cum multiplicato fructu recolligere valeamus in celis firmam spem\nfiduciamque obtinentes quoniam qui parce seminat parce et metet et qui seminat\nin benedictionibus de benedictionibus et metet vitam eternam. Cum itaque sicut accepimus\ndilecti filii Burgimagistri Scabini cives et oppidani oppidi Avilen Tervestensis\ndiocesis cupientes terrena in celestia et transitoria in eterna felici commercio com-\nmutare quandam capellam apud domum leprosorum extra portas dicti oppidi con-\nstructam sub vocabulo Salvatoris nostri Ihesu Christi eiusque gloriosissime genitricis\nVirginis Marie ac sancti Anthonii cum altari inibi pro missis et aliis divinis\nofficiis celebrandis construere erigere et fundare sive ipsam erigi et fundari\nfacere illamque pro uno presbitero huiusmodi missas et divina perpetuis futuris temporibus\ncelebraturo dotare sive redditus et bona ad hoc assignare proponant\nNos igitur cupientes ut capella predicta citius et honorificentius construi erigi\net fundari possit et ad quod eciam christifidelium pia suffragia ut fiat citius acceptentur\nplurimum fore noscuntur oportuna et ut ad id fideles ipsi eo forcius animentur\nquo exinde in celestibus habundantius thesauros immarcessibiles consequi se spe-\nraverint de omnipotentis dei misericordia ac beatorum Petri et Pauli apostolorum eius\nauctoritate confisi omnibus vere penitentibus et confessis qui pro prefate capelle con-\nstructione erectione et fundatione necnon leprosis et infirmis in ipsam\ndomo degentibus et receptis pro tempore sustentacione et restauracione manum\nadiutrices porrexerint et alia pietatis opera inibi impenderint quociens id\nfecerint Quinquaginta dies indulgencie et nichilominus illis qui eciam prefatam\ncapellam taliter constructam et erectam in Nativitatis Circumcisionis Epiphanie\nresurrectionis ascensionis et corporis domini nostri Ihesu Christi ac pentecostes necnon\nAnnunciacionis Nativitatis Purificationis Assumpcionis Visitationis et Conceptionis\nbeate Marie virginis ac Nativitatis beati Johannis Baptiste predictorum apostolorum petri et pauli\net sancti Anthonii patroni et dedicationis capelle ac martirumque celebritati-\nbus festis necnon per ipsorum Nativitatis Epiphanie resurrectionis ascensionis\net corporis domini nostri Ihesu Christi ac Nativitatis et Assumptionis beate Marie et Nativi-\ntatis beati Johannis ac beatorum Petri et Pauli predictorum festivitatum octavas et post\ndies dicti festi pentecostes immediate sequentes dictam capellam devote visitaverint et\nad illius fabricam et structuras similiter manus adiutrices porrexerint\nquolibet die festivitatum et celebritatum huiusmodi Quinque annos et totidem Quadringe-\nnas Octavas vero et sex dierum predictorum quibus dictam capellam visitaverint\net ad illius fabricam et structuras manus porrexerint adiutrices ut prefertur\nsinguli Quinquaginta dies de iniunctis eis penitenciis misericorditer in domino re-\nlaxamus presentibus post decennium minime valituris. Datum Gebennis Octavo Idus\nOctobris anno a nativitate domini millesimoquadringentesimoquadragesimosecundo pontificatus\nnostri anno Quarto. xx xx de abbate\nFelix episcopus etcetera Dilecto filio Aychardo abbati monasterii Sancti Mauricii Agaunensis Martinetus in plica\nSedunensis diocesis in Poniaco curam residenti Salutem etcetera Geminis in desideriis nostris\ninesse ut hospitalia et alia pia loca sub bono et fideli regimine augeantur illa qua-\nlibet personas libenter committi volumus per quas possessiones et bona ipsorum mane-\nneant illaque hospitalia atque loca salubriter valeant gubernari Cum itaque sicut\naccepimus dilectus filius Perronetus Suathey Rector hospitalis pauperum oppidi\nAygorgie Lausannensis diocesis adeo variis infirmitatibus confossus et sui corporis",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 14931,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 4084,
+    "lines": 49,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 82.37,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0005,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:53:50+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol5_0009_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol5_0009_L.jpg",
+      "bytes": 2832626,
+      "sha256": "6550672fabbec3893f0e9671a23f3ff1cc8da97db13fd455e3780c6d4a5dadbb",
+      "sha256_of": "original",
+      "working_copy": "vol5_0009_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:53:50+00:00"
+  }
+}

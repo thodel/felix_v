@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol5_0169_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol5_0169_L.jpg",
+    "bytes": 2315796,
+    "sha256": "2a92f549a6d09e5cfd059e14edadb1037850f9caf3520fbbc85112cde505a8c5",
+    "sha256_of": "original",
+    "working_copy": "vol5_0169_L.jpg"
+  },
+  "text": "partibus vocatus vel non vocatus ac eis presentibus vel absentibus\nde jure tantum vel de concordia tantum aut de jure et per\nconcordiam juxta credere et renuntiando de alio faciendi\nprout eisdem arbitris bene videretur et cujusquidem arbitrij affumpto\nin eos omni et propter premissa verificati et cum previa deliberatione\nexaminatis singulis juribus nullis per suum arbitriale judicium\npenes et audientibus prefatis partibus et eorum procuratoribus\net declaravimus nullum prefato capitulo ut ecclesie sue in bonis\net hereditate predictis competitisse seu competere debere preteritis\nthesauro veluti heredem licet quod facta ab impetitione\nprepositi et capituli predictorum atque ambas partes ab expensis\nabsolvendo ac eisdem preposito et capitulo super bonis et\nhereditate predictis perpetuum silentium imponendo equidemquidem\nsententiam ac omnia et singula preterea per prefatos et capitulum ex\nuna et thezaurario prefato ex altera partibus illico ratificari in\neodemque et approbari bone memorie episcopus tunc epis-\ncopus Gebennensis episcopali auctoritate approbationem laudo confirmatione\net decreto in omnibus premissis interpositis prout in publico\npublicis desuper confectis litteris et per plures personas deindeque\nper dicti thezaurarij nobis fuit humiliter supplicatum quatenus\nsententie clarificationi eorundem approbationi laudo confirmationi\net decreto predictis ac inde secutis sillote subscriptionibus firmiori\nfilii ecclesie confirmationis adicere de benignitate apostolica dignaremur\nNos igitur qui conspirantes et petitioni merito notiori alioze\nsuperius narratore presertim visa in mea cancellaria diligenter\ninspecta et examinatis formis hujusmodi supplicationibus inclinati\nsententiam predictam ac omnia inde secuta necnon ratifica-\ntionem eorundemque approbationem laudum confirmationem et\ndecretum predicta prout rite processerant et expresse expressa\net corroborata fuerint approbamus et confirmamus ac presentis\nscripti patrocinio communimus / Nulli ergo nostre pagine nostre appro-\nbationis confirmationis et communitionis infringere vel ei ausu\ntemerario contraire / Datum Anicij regalis mansioni diocesis Lemovicensis\nquarto Nonas Junij Anno a nativitate domini millesimo\nquadringentesimo quadragesimo quarto pontificatus\nnostri anno quinto .xxx. de Zabbarinis\n\nFelix episcopus etcetera dilectis filijs Jacobo nuquerij canonico ecclesie Gebennensis\nac officiali Gebennensi Salutem etcetera Justis et honestis supplicum votis\nlibenter duximus racionabilem ut deo possimus favoribus prosequimur\noptentis exhibita siquidem nobis nuper pro Bartholomei montbelleti rectoris\nparochialis ecclesie opidi de albona Gebennensis diocesis peticio continebat quod licet\nquondam nonnulli sui predecessores dicte ecclesie pro tempore fuerunt rectores\nzelo devocionis accensi aut alia quavis occasione inducti fuerunt\nforsan tempore retro prefidentibus maliciam messias reparari ac alia\ndivina officia in capella seu sepedicti in dicto opido constructa certis\ndiebus celebrare polliceo consuevissent nichilominus dilecti filij\npresbyteri dicte ecclesie cuncti conniventi contra que ex eo quod\necclesie per perceptores hujusmodi debita recupare intendebant linorem et",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 14258,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3180,
+    "lines": 48,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 65.25,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0009,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:54:48+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol5_0169_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol5_0169_L.jpg",
+      "bytes": 2315796,
+      "sha256": "2a92f549a6d09e5cfd059e14edadb1037850f9caf3520fbbc85112cde505a8c5",
+      "sha256_of": "original",
+      "working_copy": "vol5_0169_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:54:48+00:00"
+  }
+}

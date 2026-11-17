@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol5_0096_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol5_0096_L.jpg",
+    "bytes": 2548383,
+    "sha256": "4e9b8d7ffdae49a2b9d99be3f04b30cf6a74ff0e0f72bafb193cac64813dac1b",
+    "sha256_of": "original",
+    "working_copy": "vol5_0096_L.jpg"
+  },
+  "text": "perusie ad dictum sancti citiati in dicta ecclesia seu alterius quas tunc temporis\nobtinebat desiderantes illas ut asserebat ex certis rationabilibus causis etc.\nresignationis eorumdem. Quocirca discretioni vestre per apostolica scripta man-\ndamus quatinus vos vel duo aut unus vestrum per vos vel alium seu alios\nprefatum Bernardum vel procuratorem suum eius nomine in corporalem possessionem vica-\nrie iuriumque et pertinentiarum predictarum inducatis auctoritate nostra et desideratis\ninductis amoto exinde quolibet detentore facientes ipsum Bernardum vel dictum\nprocuratorem pro eo ad vicariam huiusmodi ut est moris admitti sibique de illius fruc-\ntibus redditibus proventibus iuribus et obedientiis integre responderi Non obstantibus\nomnibus supradictis. Seu si episcopo preposito et capitulo prefatis vel quibusvis aliis\ncommuniter vel divisim a predicta sit sede indultum quod interdici etc. non possint\nper litteras apostolicas non facientes etc. mentionem Contradictores auctoritate nostra\ncompescendo. Datum Lausane quinto kalendas julii anno etc. tertio. XIIII Do de abbate\nFelix Episcopus dilecto filio Ludovico tituli sancte Susanne sancte Romane ecclesie\npresbitero Cardinali de Vaucitone vulgariter nuncupato Salutem etc. Personam\ntuam nobis et apostolice sedi devotam tuis preclaris exigentibus meritis benignis\naffectionibus prosequentes illa tibi votis libenter admittimus per que tibi su-\npreme voluntatis liber solus conceditur et testandi facultas tuis post-\nhabitionibus tunc circa extremum testamentarium valeas disponere prout te ac\nproventibus terre tibi concessa promptis impleamus favoribus. Dudum siquidem\ngeneralis Synodus Basiliensis attendens quod tu qui tunc episcopus Lausannensis\neras et quod ad Johannem Romeorum imperatorem illustrem et recolende memorie\nmagistrum Joseph patriarcha Constantinopolitanum ac quosdam alios orientales\nchristi nominis incredulos ad unitatem cum eadem nomulla sede orthodoxam mediante\ncatholice ecclesie unione contrahendam cum certis aliis suis ambassiatoribus\nmittendus deputatus eras grandes labores ac persone et rerum discrimina\nin prosequendis universalis ecclesie negotiis subire habueras et propterea\neadem Synodus tibi labores huiusmodi gratiarum munere compensare volens\ntibi post finem certi tenoris litteras ut de bonis mobilibus a te per ecclesiam\nLausanensem seu alii beneficiorum ecclesiasticorum assecutus que alterius vel alterorum\nipsius ecclesie ac bonorum huiusmodi inspectione seu alicui speciali ecclesie divino\ncultui vel usui non fuerint deputata cuiuscumque quantitatis seu valoris ex-\nsisterent eciam si illa vel aliqua ex eis ex proventibus ecclesie seu ecclesiarum vel\nbeneficiis huiusmodi tibi commissis a vel tunc persone aut liberorum talium ratione\nseu aliis quibuscumque modis vel ex causis per te licite pervenissent et perveni-\nrent in futuris fieri tantum de predictis bonis ere alieno et hiis que pro\nreparandis domibus seu edifitiis ecclesiarum et beneficiorum huiusmodi culpa seu neg-\nligentia tua destructis vel deterioratis oportuna foret deductis pro de-\ncentibus et honestis expensis funeris tui et remuneratione illorum qui tibi\nviventi servivissent sive essent consanguinei sive alij iuxta servitutis me-\nritum erogare et disponere necnon in pios usus et licitas converteres\npossis et valeres licentiam concessit et etiam potestatem prout in eisdem litteris\nplenius continetur Nos attendentes quod nihil sit quod magis hominibus debeatur\nquam ut supreme voluntatis liber sit stilus et libere quod tunc non videtur ambigendum\ntuis quoque in hac parte supplicationibus inclinati facultatem huiusmodi tibi scriptam",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 14517,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3622,
+    "lines": 45,
+    "longest_char_run": 4,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 79.51,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0011,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:54:19+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol5_0096_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol5_0096_L.jpg",
+      "bytes": 2548383,
+      "sha256": "4e9b8d7ffdae49a2b9d99be3f04b30cf6a74ff0e0f72bafb193cac64813dac1b",
+      "sha256_of": "original",
+      "working_copy": "vol5_0096_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:54:19+00:00"
+  }
+}

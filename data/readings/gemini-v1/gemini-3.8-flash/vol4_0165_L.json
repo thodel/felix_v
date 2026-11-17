@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol4_0165_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol4_0165_L.jpg",
+    "bytes": 1800571,
+    "sha256": "137461b4cd4b865be83cb1d207f06598ca5c9604e4568b1df76deecd1becf49f",
+    "sha256_of": "original",
+    "working_copy": "vol4_0165_L.jpg"
+  },
+  "text": "seu nomine dispersionum videlicet per capitula scripturam mandantes quatinus\nvos vel duo aut unus vestrum per vos vel alium seu alios premissa\nomnia et singula auctoritate nostra ubi et quando vobis expedire\nvidebitur solemniter publicantes eosaem Saldinum et successores\nsuos et postquam vobis illud ut eorum alterum constiterit executores\nsuam iniungatis et super hoc per ipsos dictus Johannes fuerit requisitus\nseu alter vestrum suos regiminis tamen in ecclesia divina ac alias\nseptimanis diebus diei nobis minor per ipsam ambicionem quatinus\nad divina audienda ac alias locis et quibus negotia fuerint\nexequentes publice indicetis et ab aliis indicari faciatis ac\nomnibus actibus curiarum donec eidem Johanni vel penes presbiteros de-\npositione curie debita satisfactio vel cum eorum altero amica-\nbiliter concordatum fuerit ipsaque executio huiusmodi executionis\nsuis absolvendo cessiois moverentur obvenire non obstantibus\nomnibus supradictis aut si Saldino et successoribus prefatis\nvel quibusvis aliis communiter vel divisim a sede apostolica sit indultum\nquod interdici suspendi vel excommunicari aut ad personarum aliarum\nsolutionem gravelli seu suis beneficiis collationis sententia non\npossint per litteras apostolicas non facientes plenam et expressam\neos mentionem contradictores per censuram ecclesiasticam compescendo\nDatum Lausane decimo septimo kalendas junii anno a nativitate\ndomini millesimo quadringentesimo quadragesimo tercio\npontificatus nostri anno quarto . xii Jo de Albiaco\n\nFelix episcopus etcetera dilectis filiis decano annuntiationis beate Marie Gebennensis  Johannes\ndiocesis et Georgio de Cernaliis canonico Lausannensis ecclesie ac  Dancardus\nofficiali Lausannensi salutem etcetera Vite ac morum honestas aliaque lau-\ndabilia probitatis et virtutum merita super quibus dilectus filius\nGerardus Alberti presbyter Lausannensis diocesis apud nos fide digno\ncommendatur testimonio nos inducunt ut sibi reddamur ad gratiam\nliberales Cum itaque sicut accepimus perpetua capellania ad altare\nsancti Petri situm in parochiali ecclesia loci de Ymardino dicte diocesis quam\nquondam Johannes Trucheri dum viveret obtinebat per obitum ipsius\nJohannis qui extra Romanam curiam diem clausit extremum vacavit\net vacat ad presens Nos volentes dicto Gerardo premissorum\nmeritorum suorum intuitu gratiam facere specialem discretioni vestre\nper apostolica scripta mandamus quatinus vos vel duo aut unus vestrum\ncapellaniam predictam que sine cura est et de iure patronatus laicorum\nut ab aliquibus asseritur existit cuiusque fructus redditus et proventus\ndecem et octo librarum turonensium parvorum secundum communem extimationem\nvalorem annuum ut ipse Gerardus asserit non excedunt sive\nut premittitur sive alias quovismodo aut per liberam resignationem\nalicuius de illa extra Romanam curiam etiam coram notario publico\net testibus sponte factam vacet etiamsi seculari sponte vacaverit\nipso iure collatio iuxta lateranensis statuta concilii ad sedem apostolicam\nlegitime devoluta ipsa que si capellania disposicioni apostolice generaliter",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 12643,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3055,
+    "lines": 45,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 66.89,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0007,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:51:38+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol4_0165_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol4_0165_L.jpg",
+      "bytes": 1800571,
+      "sha256": "137461b4cd4b865be83cb1d207f06598ca5c9604e4568b1df76deecd1becf49f",
+      "sha256_of": "original",
+      "working_copy": "vol4_0165_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:51:38+00:00"
+  }
+}

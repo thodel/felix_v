@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol1_0074_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol1_0074_R.jpg",
+    "bytes": 2689224,
+    "sha256": "771de311bc72fa593a84f1aef28bab7787be616c728afbe2715af0f5eca13fd4",
+    "sha256_of": "original",
+    "working_copy": "vol1_0074_R.jpg"
+  },
+  "text": "plena dominus tecum benedicta tu in mulieribus et benedictus fructus\nventris tui. legerint duos annos. qui vero illas audierint tres\net totidem quadringenis de iniunctis eis penitenciis misericorditer\nrelaxamus Datum Basilee octavo idus decembris Anno a nativitate\ndomini millesimo quadringentesimo quadragesimo pontificatus\nnostri anno primo. Gratis de mandato. A. episcopus Grassetanus\n\nFelix episcopus etcetera dilecto filio petro fabri clerico Gebennensi Salutem etcetera\nVite ac morum honestas etcetera super quibus apud nos fidedigno commendaris\ntestimonio nos inducit ut te specialibus favoribus et graciis prosequamur\nVolentes igitur te qui ut asseris in vicesimoprimo tue etatis anno constitutus\nexistis et te ad studium ubi id viget generale et vult insistendo insistis\nresponsorum premissorum meritorum tuorum intuitu favoris prosequi graciosi\ntecum ut postquam huiusmodi vicesimum primum annum compleveris aliquam prochialem\necclesiam si tibi canonice conferatur aut alias ad eam rite assumaris recipere\nac retinere illamque simpliciter vel alias ex causa permutacionis dimittere\net loco ipsius aliud seu alia simile vel dissimile scilicet seu dissimilia beneficium seu\nbeneficia ecclesiastica vel ecclesiam eciam si aliquam eorum cura immineat animarum\nsimiliter recipere et retinere libere et licite valeas defectu huiusmodi et\ngeneralis concilii necnon aliis constitucionibus et ordinacionibus apostolicis\nceterisque contrariis nequaquam obstantibus auctoritate apostolica tenore presencium de\nspeciali gracia dispensamus. Proviso quod ecclesia aut beneficium curatum huiusmodi debitis\npropterea non fraudetur obsequiis et animarum cura in ea vel eo nullatenus\nnegligatur. Nulli ergo etcetera nostre dispensacionis et constitucionis etcetera contrarium.\nSi quis autem etcetera maiestatis Datum Basilee Decimo Kalendas februarii Anno\na nativitate domini millesimoquadringentesimoquadragesimo primo pontifi-\ncatus nostri anno primo. xviij. B. Episcopus Dunkeldensis\n\nFelix episcopus etcetera dilecto filio francisco herling ordinis fratrum minorum\nprofessori. Salutem etcetera humilibus supplicum votis libenter annuimus eaque fa-\nvoribus prosequimur oportunis Sive itaque sicut exhibita nobis nuper\npro parte tua peticio continebat tu qui ordine fratrum minorum expresse\nprofessus existis in eodem ordine ex certis rationabilibus causis tua sana\nconsciencia et tui quiete animi nequiens remanere deinceps cupiasque\nad ordinem sancti benedicti ad quem singulare geris devocionis affectum\nte transferre ac inibi altissimo perpetuo famulari propterea tua nobis fuit\nhumiliter supplicatum ut tibi de dicto ordine minorum ad Noulacen argentinensis\ndiocesis in quo contubernulos habes receptores vel aliud eiusdem ordinis\nsancti benedicti in quo scites expertos receptores monasterium transeundi li-\ncenciam concedere de benignitate apostolica dignaremur. Nos igitur huiusmodi suppli-\ncacionibus inclinati tibi ut de dicto ordine minorum superioris tui ad id petita\nlicet non obtenta licencia ad Noulacen predictum vel aliud eiusdem ordinis",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 10990,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3048,
+    "lines": 40,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 75.17,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0007,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:45:09+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol1_0074_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol1_0074_R.jpg",
+      "bytes": 2689224,
+      "sha256": "771de311bc72fa593a84f1aef28bab7787be616c728afbe2715af0f5eca13fd4",
+      "sha256_of": "original",
+      "working_copy": "vol1_0074_R.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:45:09+00:00"
+  }
+}

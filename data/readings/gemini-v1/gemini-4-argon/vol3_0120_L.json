@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol3_0120_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol3_0120_L.jpg",
+    "bytes": 2200017,
+    "sha256": "8ca555d4e88e2789f37bd4348c532ced61b26ac5d15dd25736fcd26c8d2dcc78",
+    "sha256_of": "original",
+    "working_copy": "vol3_0120_L.jpg"
+  },
+  "text": "Felix etc dilecto filio magistro anthonio piochoti ca\npellano nostro et causarum palacij apostolici auditori Salutem etc\nLitterarum scientia vite ac morum honestas aliaque laudabilia\nprobitatis et virtutum merita super quibus dilectus\nfilius johannes begneti canonicus ecclesie sancti justi\nlugdunensis bacalarius in decretis apud nos fidedigno\ncommendatur testimonio nos inducunt ut sibi reddamur\nad graciam liberales Exhibita siquidem nobis pro\nparte dicti johannis peticio continebat quod orta dudum\ninter eum et dilectum filium humbertum de chissiaco\nSuccentorem ecclesie lausanensis decretorum doctorem\nsuper decanatu rurali alingiorum gebennensis diocesis\nde quo tunc per obitum quondam johannis guidonis\nvltimi ipsius decanatus decani extra romanam curiam\ndefuncti vacante johannes sibi auctoritate apostolica graciose\nprouisum seque illud prouisionis huiusmodi vigore assecutum\nfuisse canonice dictusque humbertus se gracie et prouisioni\nhuiusmodi opposuisse et opponere ac fecisse et facere\nquominus ipse johannes decanatum predictum posset\npacifice possidere humbertus vero predicti eundem\ndecanatum ad se de jure spectare asserebant prout\ndictus johannes ad huc asserit materia questionis\nNos causam huiusmodi non obstante quod ad sedem apostolicam legittime\ndeuoluta seu apud eam de sui natura aut jure \ntractanda vel finienda non esset dilectis\nfiliis guillermo hugonis archidiacono ecclesie metensis\nad dicti humberti primo et deinde bertrando tituli sanctorum\nquatuorcoronatorum presbitero cardinali ad johannis predictorum\ninstanciam et subsequenter de vtriusque partis consensu\ntibi audiendam commisimus et fine debito terminandam\nCum autem sicut eadem peticio subiungebat prefatus\nhumbertus lite et causa huiusmodi coram dicto cardinali sic in\ndecise pendente illi necnon omni juri sibi in dicto\ndecanatu vel ad eum quomodolibet competenti coram quibusdam\nnotario publico et testibus in dicta curia sponte\net libere cesserit Nos statum cause huiusmodi pre\nsentibus pro sufficienter expresso habentes et ne\nnouus eidem johanni in causa huiusmodi aduersarius\nsurrogetur prouidere sibique premissorum meritorum\nsuorum intuitu specialem graciam facere volentes discrecioni\ntue per apostolica scripta mandamus quatenus si de cessione",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 16052,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2246,
+    "lines": 41,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 53.78,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0009,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:11:32+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol3_0120_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol3_0120_L.jpg",
+      "bytes": 2200017,
+      "sha256": "8ca555d4e88e2789f37bd4348c532ced61b26ac5d15dd25736fcd26c8d2dcc78",
+      "sha256_of": "original",
+      "working_copy": "vol3_0120_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:11:32+00:00"
+  }
+}

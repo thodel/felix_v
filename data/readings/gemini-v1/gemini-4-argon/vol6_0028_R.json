@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol6_0028_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol6_0028_R.jpg",
+    "bytes": 2454747,
+    "sha256": "bdb33fb1b3785f80149394014424e0dedfebb2ce5c39e1e8fcfa53fe36753c8c",
+    "sha256_of": "original",
+    "working_copy": "vol6_0028_R.jpg"
+  },
+  "text": "Felix episcopus etc Dilecto filio preposito ecclesie beate Caterine prope Aquambellam\nMaurianensis diocesis Salutem etc Dignum arbitramur et congruum ut illis se\nreddat sedes apostolica graciosam quibus etc suffragantur Cum itaque sicut\naccepimus parrochialis ecclesia Chamosii Maurianensis diocesis quam quondam Iohannes\nde Esserto illius dum vixit Rector obtinebat per obitum ipsius Iohannis\nqui extra Romanam curiam diem clausit extremum vacaverit et vacet ad\npresens Nos volentes dilectum filium Claudium Belli Rectorem parrochialis\necclesie de Burgeto Montisacuti dicte diocesis qui ut eciam asserit presbiter est\napud nos de vite ac morum honestate aliisque probitatis et virtutum meritis\nmultipliciter commendatum horum intuitu favore prosequi gracioso discrecioni\ntue per apostolica scripta mandamus quatinus si per diligentem examinacionem\nipsum Claudium ad hoc ydoneum esse reppereris super quo tuam conscienciam\noneramus ecclesiam Chamosii predictam cuius fructus redditus et proventus\nQuindecim librarum Turonensium parvorum secundum communem extimacionem valorem annuum ut ipse Claudius\nasserit non excedunt sive ut premittitur seu alias quovismodo aut ex alte-\nrius cuiuscumque persona vel per liberam alicuius de illa extra dictam curiam\neciam coram notario publico et testibus sponte factam resignacionem aut constitucionem\nfelicis Recordacionis Iohannis pape xxii predecessoris nostri que incipit Execrabilis\nvacet eciam si tanto tempore vacaverit quod illius collacio iuxta Lateranensis\nstatuta Concilii ad sedem apostolicam legitime devoluta ipsaque ecclesia Chamo-\nsii disposicioni apostolice quomodolibet reservata existat et super ea inter aliquos lis cuius\nstatum etc pro expresso pendeat indecisa dummodo etc non sit ita alicui specialiter\nius quesitum cum omnibus iuribus et pertinenciis suis eidem Claudio conferre\net assignare procures Inducens per te vel alium seu alios prefatum Claudium\nvel procuratorem suum eius nomine in corporalem possessionem ecclesie Chamosii iuriumque et\npertinenciarum predictorum et defendens inductum amoto exinde quolibet illicito\ndetentore ac faciens sibique de ipsius ecclesie Chamosii fructibus redditibus\nproventibus iuribus et obventionibus universis integre responderi Contradictores auctoritate nostra etc\ncompescendo Non obstantibus pie memorie Bonifacii pape viii eciam predecessoris\nnostri et aliis apostolicis constitucionibus contrariis quibuscumque Aut si aliqui super\nprovisionibus sibi faciendis de huiusmodi vel aliis beneficiis ecclesiasticis in illis partibus\nspeciales vel generales dicte sedis vel legatorum eius litteras impetrarint eciam si per eas\nad inhibicionem etc sit processum quibus omnibus prefatum Claudium in dicte ecclesie\nChamosii assecucione volumus anteferri sed nullum per hoc eis quo ad assecu-\ncionem beneficiorum aliorum preiudicium generari Seu si venerabili fratri nostro Episcopo\nMaurianensi vel quibusvis aliis communiter vel divisim a dicta sit sede in-\ndultum quod ad recepcionem vel etc minime teneantur et ad id compelli aut quod etc\nnon possit quoque de huiusmodi vel aliis beneficiis ecclesiasticis ad eorum collacionem provisionem etc\nspectantibus nulli valeat provideri per litteras apostolicas non facientes etc mencionem\net qualibet alia dicte sedis indulgencia etc existat per quam etc effectus earum\nimpediri etc vel differri et de qua cuiusque toto etc specialis Aut quod ipse Clau-\ndius ut similiter asserit ecclesiam de Burgeto predictam cuius eciam fructus\nredditus et proventus decem librarum similium secundum extimacionem memoratam valorem annuum\nnon excedunt noscitur obtinere Volumus autem quod ipse Claudius ecclesiam de\nBurgeto predictam quamprimum ipsius ecclesie Chamosii possessionem fuerit paci-\nfice assecutus quamque extunc vacare decernimus omnino prout ad id se\nsponte obtulit dimittere teneatur Et insuper si dictus Claudius ad hoc",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 22319,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3865,
+    "lines": 47,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 81.26,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0008,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:24:49+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol6_0028_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol6_0028_R.jpg",
+      "bytes": 2454747,
+      "sha256": "bdb33fb1b3785f80149394014424e0dedfebb2ce5c39e1e8fcfa53fe36753c8c",
+      "sha256_of": "original",
+      "working_copy": "vol6_0028_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:24:49+00:00"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol1_0083_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol1_0083_R.jpg",
+    "bytes": 2710107,
+    "sha256": "1cb320832e8090265826f871081aaf0cf5ebb49c2b40bfccf56cf3dbcde6f98e",
+    "sha256_of": "original",
+    "working_copy": "vol1_0083_R.jpg"
+  },
+  "text": "ut tibi illa libere committamus per que te favoribus apostolicis\nprosequamur sedi quoque apostolice fructuosus existas hinc est quod\nnos tam dilecti filii nostri nobilis viri Philippi de Sabaudia\nGebennensis comitis cuius ut ipse asserit familiaris existis\nquam meritorum tuorum intuitu ipsius Philippi in hac parte\nnobis supplicationibus inclinati te monetarium nostrum consti-\ntuimus et facimus per presentes atque aliorum nostrorum monetariorum\nnumero et consorcio favorabiliter aggregamus cum omnibus honoribus\noneribus emolumentis privilegiis exemptionibus et indultis\nquibus alii pro tempore quomodolibet potiuntur et gaudent\nVolumus autem quod antequam huiusmodi officium exerceas in manibus\ndilecti filii Johannis de Grolata notarii et secretarii nostri\naut eius locumtenentis de huiusmodi officio fideliter exercendo solitum\nprestare corporaliter iuramentum Nulli ergo omnino homini etc.\nnostre constitutionis et admissionis etc. infringere etc. contrarie etc. Si quis\nautem etc. Datum Basilee octavo idus julii Anno a nativitate domini\nmillesimoquadringentesimo quadragesimo suscepti a nobis apostolatus\nofficii Anno primo .xx. A. Episcopus Geoffetanus\n\nFelix episcopus etc. Venerabili fratri Episcopo Lausannensi\nsalutem etc. Ne contractuum memoria deperiret provi-\nsum est Tabellionatus officium quo querelarum legiptimis\nad cautelam presentium et memoriam futurorum nota-\nrentur unde providentia apostolica sedem officium\npersonis que ad illud reperiuntur habiles / committere\nconsuevit / ut illud prudenter et fideliter nobiliter\nexerceant / et ad ea cum mero fine exigens que\nad officium ipsum pertinent fiducialiter incurrant\nhinc est quod nos dilecti filii Petri Baptiste\nde Aventica clerici tue diocesis supplicationibus\ninclinati / scientiam tue de qua fiduciam gerimus\nin domino specialem / concedimus auctoritate apostolica prefatum\nofficium eidem Petro dummodo non sit coniugatus\nnec in sacris ordinibus constitutus si ipsum ad\nillud post diligentem examinationem ido-\nneum esse repereris / iuramento ab eo prius\niuxta formam presentibus annotatam recepto / solvenda",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 8673,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2088,
+    "lines": 36,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 57.0,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.001,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:45:28+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol1_0083_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol1_0083_R.jpg",
+      "bytes": 2710107,
+      "sha256": "1cb320832e8090265826f871081aaf0cf5ebb49c2b40bfccf56cf3dbcde6f98e",
+      "sha256_of": "original",
+      "working_copy": "vol1_0083_R.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:45:28+00:00"
+  }
+}

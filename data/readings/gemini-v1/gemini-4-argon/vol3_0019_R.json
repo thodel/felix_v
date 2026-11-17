@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol3_0019_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol3_0019_R.jpg",
+    "bytes": 3051799,
+    "sha256": "e3966bf783d64df828c5c5e2e5789918db757c84439b6863cd2e9244326f62bd",
+    "sha256_of": "original",
+    "working_copy": "vol3_0019_R.jpg"
+  },
+  "text": "dicte sedis uel legatorum eius litteras impetrarunt eciam si per eas ad\ninhibicionem etcetera sit processum / quibus omnibus prefatum Johannem\nin assecucione dictorum Canonicatus et prebende uolumus anteferri /\nsed nullum per hoc quo ad assecucionem Canonicatuum et prebendarum\naut beneficiorum aliorum preiudicium generetur / Aut si Venerabili fratri\nnostro Episcopo Taurinensi et dicto Capitulo uel quibusuis aliis communiter uel\ndiuisim etcetera indultum / quod ad recepcionem etcetera teneantur et ad id compelli /\naut quod interdici etcetera non possint / quodque de Canonicatibus et prebendis\nipsius ecclesie aut aliis beneficiis ecclesiasticis ad eorum collacionem etcetera nulli\nualeat prouideri per litteras apostolicas etcetera mencionem / et qualibet alia dicte\nsedis etcetera existat / per quam presentibus etcetera effectus earum impediri\nualeat quomodolibet uel differri / et de qua cuiusque etcetera specialis / Seu\nsi dictus Johannes presens non fuerit ad prestandum etcetera iuramentum /\ndummodo in absencia sua per procuratorem ydoneum et cum ad ecclesiam\naccesserit corporaliter illud prestet / Aut quod Idem Johannes ut\neciam asserit Capellam predictam cuius fructus etcetera Triginta flo\nrenorum auri similium secundum exitimacionem predictam uti annuum non excedunt noscitur\nobtinere / Nos enim si dictus Johannes repertus fuerit ydoneus\nut prefertur exnunc perinde irritum decernimus et inane si secus etcetera\nattemptari / ac si die presencium date / eidem Johanni ad hoc reperto\nydoneo de dictis Canonicatu et prebenda cum interposicione decreti\nprouideri mandauissemus / Datum Basilee Sexto Idus nouembris\nAnno a Natiuitate domini Millesimoquadringentesimoquadragesimoprimo\nPontificatus nostri Anno primo xii ff de. f.\nFelix Episcopus etcetera Venerabili fratri nostro Stephano Episcopo Massiliensi in Romana\nCuria residenti Salutem etcetera Vite ac morum honestas etcetera super quibus\ndilectus filius Andreas Peroleri clericus Lugdunensis diocesis apud\nnos fidedigno commendatur testimonio nos inducit ut sibi reddamur\nad graciam liberales Cum itaque sicut accepimus dilectus filius Petrus\nPerolerii Rector parrochialis ecclesie sancti Juliani loci de Beyno\ndicte diocesis ecclesiam ipsam quam obtinet ex certis rationabilibus causis\nsponte et libere resignare proponat Nos uotis ipsius Petri in hac\nparte fauorabiliter annuentes / ac uolentes dicto Andree qui ut asserit\nin Vicesimotercio dumtaxat sue etatis Anno constitutus existit premissorum\nmeritorum suorum intuitu graciam facere specialem fraternitati tue per apostolica\nscripta committimus et mandamus / quatenus si est ita ab eodem Petro uel procuratore\nsuo ad hoc ab eo specialiter constituto resignacionem huiusmodi si eam in tuis\nmanibus facere uoluerit ut prefertur auctoritate nostra hac uice recipias\net admittas / eaque per te recepta et admissa / ecclesiam ipsam cuius fructus\nredditus et prouentus Quadraginta librarum Turonensium paruorum secundum\ncommunem extimacionem ualorem annuum ut Idem Andreas non excedunt asserit / cum\nper huiusmodi uacare contigerit / eciam si actu per similem alterius cuiuscumque\net ubicumque eciam coram Notario publico et testibus factam resignacionem\nuel alias quouismodo aut ex alterius cuiuscumque persona / seu per constitucionem\npredecessoris nostri felicis recordacionis Johannis pape xxii que incipit Execrabilis / aut alicuius alterius\nbeneficii quauis auctoritate collati assecucione uacet / et tanto tempore uaca",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 18224,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3451,
+    "lines": 46,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 74.04,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0006,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:10:49+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol3_0019_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol3_0019_R.jpg",
+      "bytes": 3051799,
+      "sha256": "e3966bf783d64df828c5c5e2e5789918db757c84439b6863cd2e9244326f62bd",
+      "sha256_of": "original",
+      "working_copy": "vol3_0019_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:10:49+00:00"
+  }
+}

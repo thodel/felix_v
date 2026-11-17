@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol8_0175_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol8_0175_R.jpg",
+    "bytes": 2704593,
+    "sha256": "dc618415bfd7c0ffbf28dd68b7fba42a617b8f8d9d5c3af84d0588b054f2734b",
+    "sha256_of": "original",
+    "working_copy": "vol8_0175_R.jpg"
+  },
+  "text": "ipse Guillermo assit in eandem vel illam per lapsum\nseptem mensium aut per appositorium retinendo sive dimittendo\nhuiusmodi vicariam contingat eundem si actu alias quomodocumque\naut per alicuius cuiuscumque persona vel per liberam ipsius presbyteri\nCarel cuiuscumque alterius de illa tunc vicaria curati vicarii\nextra Romanam curiam etiam coram testibus sponte facta resignacio vel cessio\nfelicis recordacionis Eugenii pape quarti predecessoris nostri\nque incipit Execrabilis vacet / eciam si tanto tempore\nvacaverit quod illius collatio iuxta Lateranensis statuta concilii\nad sedem apostolicam legitime devoluta ipsaque vicaria disposicioni\napostolice generaliter reservata existat et super ea inter aliquos\nlitis currat / statum presentibus haberi volumus pro expresse prendant\ninductis / dummodo tempore date presencium non sit in ea alicui\nspecialiter ius quesitum. Eciam omnibus iuribus et pertinenciis suis\neidem Guillermo per ipsum moris parochia seu procuratores\nsuos recipiaciendi fructus redditus et proventus dicte libere\nsimilii servientis predictam extimationem valorem annuum\nnon excedunt / quamvis ipse Guillermo de aliquo beneficio\nsimilii vel maioris valoris secundum ordinis huiusmodi professi\nfuerit tenenda responderi et vicaria gubernanda. Ita quod liceat\nprefato Guillermo de fructibus redditibus et proventibus\nillius debite supportatis oneribus sicut rectoribus ipsius\necclesie pro tempore liceret disponere et ordinare / alienacione\ntamen quorumcumque immobilium et preciosorum mobilium dicte\necclesie prefato Guillermo penitus interdicta auctoritate nostra\ndemandari faciatis iudicantes per vos vel alium seu\nalios prefatum Guillermum vel procuratorem suum eius nomine\nin corporalem possessionem rei premissarumque ac pertinenciarum predictarum\net defendentibus iuventur / amoto exinde quolibet illicito\ndetentore ac facientes sibi de ipsius vicaria fructibus\nredditibus proventibus iuribus et obvencionibus universis integre\nresponderi contradictores auctoritate nostra apostolica postposita\ncompescendo non obstantibus omnibus supradictis et aliis que\nin prefatis litteris non obstant volumus ceterisque contrariis\nquibuscumque Nos enim ex nunc irritum decernimus\net inane si secus super hiis a quoquam quavis auctoritate\nscienter vel ignoranter contigerit attemptari Datum\nLausane decimo septimo kalendas Januarii anno a Nativitate\ndomini millesimo quadringentesimo quadragesimo septimo pontificatus\nnostri anno octavo: xxiiij Pe. de Bonis",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 10599,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2468,
+    "lines": 40,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 60.73,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0012,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:02:20+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol8_0175_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol8_0175_R.jpg",
+      "bytes": 2704593,
+      "sha256": "dc618415bfd7c0ffbf28dd68b7fba42a617b8f8d9d5c3af84d0588b054f2734b",
+      "sha256_of": "original",
+      "working_copy": "vol8_0175_R.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:02:20+00:00"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol2_0286_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol2_0286_R.jpg",
+    "bytes": 2496829,
+    "sha256": "ea1ce0d012d6f7398f1868de2ce9267095c82448d8ab7643efcdca9ed4a6b631",
+    "sha256_of": "original",
+    "working_copy": "vol2_0286_R.jpg"
+  },
+  "text": "Inperpetuum uniret annecteret et incorporaret prout\nin dictis litteris plenius continetur, Cum autem sicut\nexhibita nobis pro parte dilectorum filiorum Guichardi de\nMaresia prioris et conventus dicti prioratus\nNantuaci petitio continebat huiusmodi unio annexio et incorporatio\npredicte si fierent quondam de Villera sed eciam per\nhuiusmodi monachos ipse prioratus de Villera gubernari\nconsuevit Nantuaci prioratibus predictis valde prejudi/\nciales atque dampnose existerent pro parte prioris\net conventus Nantuaci predictorum nobis fuit humiliter\nsupplicatum ut unionem annexionem et incorporationem\npredictas revocare cassare annullare de alioque in premissis\noportuno provideri de benignitate apostolica dignaremur. Nos\nitaque qui de ultimis expositis huiusmodi certam noticiam\nnon habemus huiusmodi supplicationibus inclinati per discretioni tue\ncum dicti prior et conventus Nantuaci ut asserunt\npropter obedienciarum diversitatem judicium in dicta\ndiocesi Lugdunensi habere quomodo non valeant\nEt civitas Bellicensis a loco dicti prioratus de Villera\nper unam dietam legalem non distet per apostolica scripta\nmandamus quatenus vocatis dictis abbate et conventu\net aliis qui fuerint evocandi de expositis per\npriorem et conventum prioratus Nantuaci predictos\naudiens teque de ipsis diligenter informes et si per informationem\nhuiusmodi illa fore vera repereris dictamque unionem huiusmodi\ndebitum sortita non fuerit effectum litteras mandatumque\npredictas ac omnia inde secuta eadem auctoritate cesses\nlicet dimissis nulliusque existere roboris vel momenti\nde se nullatenus emersisse decernas et declares\nNon obstantibus premissis motu felicis recordationis Bonifatii\npape octavi predecessoris nostri et aliis apostolicis constitutionibus\ncontrariis quibuscumque. Datum Basilee tercio kalendas\nmartii Anno a Nativitate domini millesimoquadrin/\ngentesimoquadragesimosecundo pontificatus\nnostri Anno secundo. xx La custo.\nJo. Thomenati\nb. cessa\nFelix episcopus etc. Dilectis filiis de Habundantia et Sancte\nMarie d'Aulon Agathen. Gebennensis et Sedunensis diocesium mo/\nnasteriorum abbatibus ac Officiali Maurianensi. Salutem etc.",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 8720,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2131,
+    "lines": 40,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 52.3,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0009,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:48:08+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol2_0286_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol2_0286_R.jpg",
+      "bytes": 2496829,
+      "sha256": "ea1ce0d012d6f7398f1868de2ce9267095c82448d8ab7643efcdca9ed4a6b631",
+      "sha256_of": "original",
+      "working_copy": "vol2_0286_R.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:48:08+00:00"
+  }
+}

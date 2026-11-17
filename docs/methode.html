@@ -18,7 +18,9 @@
   <h2 data-i18n="m.h.read"></h2>
   <p data-i18n="m.read"></p>
   <p class="note" data-i18n="m.read.note"></p>
-  <div class="tablewrap"><table id="agg"><thead><tr data-i18n-th="m.read.th" data-num="1,2,3,4,5,6"></tr></thead><tbody></tbody></table></div>
+  <div class="tablewrap"><table id="agg"><thead><tr data-i18n-th="m.read.th" data-num="1,2,3,4,5,6,7"></tr></thead><tbody></tbody></table></div>
+  <p data-i18n="m.read.matrix"></p>
+  <div class="tablewrap"><table id="matrix"><thead></thead><tbody></tbody></table></div>
   <ul>
     <li data-i18n="m.read.qwen"></li>
     <li data-i18n="m.read.gemini"></li>
@@ -75,9 +77,19 @@ document.getElementById("lede").innerHTML = t("m.lede", { date: fmtDate({ iso: S
   let rd;
   try { rd = await getJSON("data/readings.json"); } catch (e) { return; }
   const pct = x => x == null ? "–" : (100 * x).toFixed(0) + " %";
-  document.querySelector("#agg tbody").innerHTML = Object.entries(rd.aggregate).map(([m, a]) => `<tr><td>${esc(m)}</td>
-    <td class="num">${a.halves}</td><td class="num">${pct(a.median_cer_vs_htr)}</td><td class="num">${a.truncated}</td>
-    <td class="num">${a.with_loops}</td><td class="num">${a.median_len_ratio}</td><td class="num">${a.median_seconds}</td></tr>`).join("");
+  const LBL = { "gemini-4-argon": "Gemini 4 Argon", "gemini-3.8-flash": "Gemini 3.8 Flash", "vote": t("m.read.vote") };
+  const lbl = m => LBL[m] || m;
+  document.querySelector("#agg tbody").innerHTML = Object.entries(rd.aggregate).map(([m, a]) => `<tr><td>${esc(lbl(m))}</td>
+    <td class="num">${a.halves}</td><td class="num">${pct(a.median_cer_vs_htr)}</td><td class="num">${a.empty ?? "–"}</td><td class="num">${a.truncated}</td>
+    <td class="num">${a.with_loops}</td><td class="num">${a.median_len_ratio}</td><td class="num">${a.median_seconds ?? "–"}</td></tr>`).join("");
+  if (rd.matrix) {
+    const names = rd.readers;
+    document.querySelector("#matrix thead").innerHTML = `<tr><th></th>${names.map(n => `<th class="num">${esc(lbl(n))}</th>`).join("")}</tr>`;
+    document.querySelector("#matrix tbody").innerHTML = names.map(a => `<tr><th>${esc(lbl(a))}</th>${names.map(b => {
+      const c = (rd.matrix[a] || {})[b];
+      return `<td class="num">${a === b ? "—" : c ? pct(c.median) : "–"}</td>`;
+    }).join("")}</tr>`).join("");
+  }
   const half = document.getElementById("half");
   const withR = rd.halves.filter(h => Object.keys(h.readers).length);
   half.innerHTML = withR.map((h, i) => `<option value="${i}">${t("vol")} ${ROMAN[h.vol]}, ${t("img")} ${h.page}, ${t(h.side === "L" ? "m.read.left" : "m.read.right")}</option>`).join("");
@@ -86,7 +98,7 @@ document.getElementById("lede").innerHTML = t("m.lede", { date: fmtDate({ iso: S
     document.getElementById("half-link").href = `band.html?v=${h.vol}&p=${h.page}`;
     const col = (title, body) => `<div><h3 style="font-size:1rem;margin:.4em 0">${title}</h3><pre style="white-space:pre-wrap;font-family:'Source Serif 4',Georgia,serif;font-size:.9rem;margin:0">${esc(body)}</pre></div>`;
     document.getElementById("side").innerHTML = col("CITlab (Transkribus)", h.htr) +
-      Object.entries(h.readers).map(([m, r]) => col(`${esc(m)} · ${t("m.read.dev")} ${pct(r.cer_vs_htr)}${r.truncated ? " · " + t("m.read.trunc") : ""}`, r.text)).join("");
+      Object.entries(h.readers).map(([m, r]) => col(`${esc(lbl(m))} · ${t("m.read.dev")} ${pct(r.cer_vs_htr)}${r.truncated ? " · " + t("m.read.trunc") : ""}`, r.text)).join("");
   };
   half.onchange = show; if (withR.length) show();
 })();

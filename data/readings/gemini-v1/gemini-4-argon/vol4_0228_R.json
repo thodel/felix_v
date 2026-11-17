@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol4_0228_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol4_0228_R.jpg",
+    "bytes": 2332612,
+    "sha256": "6fd956643619a93e190326395b7b1aae8363729eaca5a3cd4251708aa8b6fbfc",
+    "sha256_of": "original",
+    "working_copy": "vol4_0228_R.jpg"
+  },
+  "text": "provideri per litteras apostolicas non facientes plenam et expressam ac de verbo ad verbum de\nalia dicte sedis indulgentia cuiuscumque tenoris existat per quam presentibus non\nexpressam vel totaliter non insertam effectus huiusmodi gratie impediri valeat quomodolibet\nvel differri et de qua cuiusque toto tenore habenda sit in nostris litteris\nmentio specialis Nos enim exnunc irritum decernimus et inane\nsi secus super hiis a quoquam quavis auctoritate scienter vel ignoranter\ncontigerit attemptari Datum Losanne Gebennensis diocesis\nquartodecimo kalendas octobris Anno a nativitate domini millesimo\nquadringentesimo quadragesimo tertio pontificatus nostri\nanno quarto\nxlii Jo de abbatis\nFelix episcopus etc dilectis filiis decano ecclesie sancti burgi sedunensis diocesis et\nCantori ac antonio piocheti canonico Gebennensis ecclesiarum salutem etc Sincere\ndevocionis affectus quo dilectus filius magister Georgius de canalibus\ncanonicus ecclesie lausannensis capellanus noster in utroque iure doctor nobis et apostolice\nsedi hactenus impendit et adhuc solicitis studiis impendere non desistit\nnecnon nobilitas generis litterarum scientia vite ac morum honestas aliaque lauda\nbilia probitatis et virtutum merita quibus personam suam tam longa\nexperientia quam etiam fidedignorum testimoniis iuvari percepimus nos inducunt\nut sibi reddamur ad gratiam liberales Cum itaque sicut accepimus parochialis\necclesia acularie in bornis gebennensis diocesis quam quondam iosephus de myroia\nipsius parochialis ecclesie rector dum viveret obtinebat qui in civitate gebennensi\nin qua nos cum nostra curia Romana residebamus et residemus diem clausit\nextremum vacaverit et vacet ad presens Nos volentes dicto Georgio qui\netiam referendarius noster et locumtenens camere apostolice et in curia antipedii de hallis\ncamera litterarum nostrarum presidens preteritorum existit suorumque obsequiorum et meritorum\nsuorum intuitu gratiam facere specialem non enim ad ipsius Georgii vel\nalterius pro eo nobis super hoc oblate petitionis instantiam sed de nostra\nmera liberalitate discretioni vestre per apostolica scripta mandamus quatenus vos vel\nduo aut unus vestrum per vos vel alium seu alios ecclesiam predictam sive ut premittitur sive alias\nquovismodo aut ex alterius cuiuscumque persona seu per liberam alicuius de illa extra romanam curiam etiam coram\nnotario publico et testibus sponte factam resignationem vel constitutionem felicis recordationis\nclementis pape xxii predecessoris nostri que incipit execrabilis vacet\netiam si tanto tempore vacaverit quod eius collatio iuxta lateranensis statuta concilii\nad dictam sedem legitime devoluta ipsaque parochialis ecclesia dispositioni apostolice generaliter\nvel specialiter reservata existat et super ea inter aliquos lis cuius statum presentibus\nhaberi volumus pro expresso pendeat indecisa dummodo tempore date presentium\nnon sit in ea alicui specialiter ius quesitum cum omnibus iuribus et pertinentiis\nsuis eidem Georgio auctoritate nostra conferre et assignare curetis Inducentes\nper vos vel alium seu alios eundem Georgium vel procuratorem suum eius nomine\nin corporalem possessionem parochialis ecclesie iuriumque et pertinentiarum predictorum\net defendentes inductum amoto exinde quolibet illicito detentore\nac facientes eidem Georgio de ipsius parochialis ecclesie fructibus redditibus pro\nventibus iuribus et obventionibus universis integre responderi Contra\ndictores auctoritate nostra etc compescendo Non obstantibus pie memorie\nBonifacii pape viii etiam predecessoris nostri ac aliis apostolicis constitutionibus\ncontrariis quibuscumque aut si aliqui super provisionibus sibi faciendis de\nhuiusmodi parochialibus vel aliis beneficiis ecclesiasticis in illis partibus generales\ndicte sedis vel legatorum eius litteras impetraverint etiam si per eas ad inhibi\ntionem reservationem et decretum vel alias quomodolibet sit processum",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 20417,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3876,
+    "lines": 50,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 76.54,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0008,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:16:52+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol4_0228_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol4_0228_R.jpg",
+      "bytes": 2332612,
+      "sha256": "6fd956643619a93e190326395b7b1aae8363729eaca5a3cd4251708aa8b6fbfc",
+      "sha256_of": "original",
+      "working_copy": "vol4_0228_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:16:52+00:00"
+  }
+}

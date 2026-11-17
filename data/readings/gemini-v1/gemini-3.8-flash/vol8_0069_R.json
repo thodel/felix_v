@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol8_0069_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol8_0069_R.jpg",
+    "bytes": 2878722,
+    "sha256": "2777785f3655abc0484e807b07999d4a7a5baba3b8baebaeafb5497ea7085f04",
+    "sha256_of": "original",
+    "working_copy": "vol8_0069_R.jpg"
+  },
+  "text": "secutus illas extitit obtinuisti prout obtines de presenti Et sicut\neadem peticio subiungebat fructus redditus et proventus dicte capelle\nqui decem librarum Turonensium parvorum secundum communem extimationem valorem non exce-\ndunt tam exiles existunt quod ex illis studio tuo cui adhuc ut asse-\nris insistis commode continuare non potes nec genitor tuus\nqui duodecim liberos habere dinoscitur tibi pro eodem studio con-\ntinuando subsidium prestare valet nos igitur volentes te qui ut asse-\nris in decimoctavo tue etatis anno vel circa dumtaxat constitutus\nac de nobili genere ex utroque parente procreatus existis pre-\nmissorum meritorum tuorum intuitu favore prosequi gratie amplioris\ntibi ut unum aliud beneficium ecclesiasticum seculare vel regulare cum\ncura vel sine cura cuiuscumque annui valoris fructus redditus et\nproventus illius existant si tibi alias canonice conferatur recipere illudque\nper te regendum tenendum et gubernandum quoad vixeris una cum dicta\ncapella in commendam retinere ita quod deductis debitis et consuetis one-\nribus de residuis beneficii tibi conferendi huiusmodi fructibus redditibus\net proventibus sicut illi qui beneficium conferendum huiusmodi pro tempore\nin titulum obtinuerint potuerint seu eciam debuerint disponere et ordi-\nnare libere et licite valeas alienatione tamen immobilium et\npreciosorum mobilium beneficii conferendi tibi penitus interdicta defectu\netatis quo in illius anno ut prefertur constitutus pateris generalis\nconcilii ac apostolica constitutionibus necnon monasterii ecclesie seu loci\nin quo seu qua beneficium conferendum huiusmodi forsan fuerit seu a quo\nvel qua dependere contigerit eciam iuramento confirmatione apostolica\nvel quacumque firmitate alia roboratis statutis et consuetudinibus\nceterisque contrariis nequaquam obstantibus auctoritate apostolica tenore presentium\nde uberiore dono gratie indulgemus. Proviso quod beneficium confe-\nrendum propter commendam huiusmodi debitis non fraudetur obsequiis\net animarum cura si illi forsan immineat nullatenus negligatur sed inibi\nlaudabiliter deserviatur in divinis illiusque omnia et singula debite sup-\nportentur onera consueta. Nulli ergo omnino hominum liceat hanc pagi-\nnam nostre concessionis et voluntatis infringere etcetera contrarium. Si quis\nautem etcetera incursurum Dat' Lausane septimo kalendas septembris anno a\nnativitate domini millesimo quadringentesimo quadragesimo octavo\npontificatus nostri anno nono: pby do oz abbas\nFelix episcopus etcetera Dilectis filiis viceriis ecclesie Remensis et Vercellensis Jo Berneri\nac Taurinensis officialibus Salutem etcetera Nobilitas generis vite ac morum etcetera Dancardus\nmerita super quibus dilectus filius Humbertus de Glezens perpetuus\ncapellanus ad altare sancti Dionisii situm in ecclesia Lausannensi apud\nnos fidedigno commendatur testimonio nos etcetera liberales. Dudum siquidem",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 10191,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2860,
+    "lines": 40,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 70.53,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0007,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:01:18+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol8_0069_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol8_0069_R.jpg",
+      "bytes": 2878722,
+      "sha256": "2777785f3655abc0484e807b07999d4a7a5baba3b8baebaeafb5497ea7085f04",
+      "sha256_of": "original",
+      "working_copy": "vol8_0069_R.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:01:18+00:00"
+  }
+}

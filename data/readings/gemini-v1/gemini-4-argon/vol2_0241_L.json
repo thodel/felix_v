@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol2_0241_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol2_0241_L.jpg",
+    "bytes": 2482286,
+    "sha256": "6b6770daa5ee206db833a7118e0e15c8865c44551da9f35d89328636973c0b64",
+    "sha256_of": "original",
+    "working_copy": "vol2_0241_L.jpg"
+  },
+  "text": "lateranensis statuta concilii ad sedem apostolicam legitime de\nvoluta existat dummodo tempore date presencium non sit in ea\nalicui specialiter Ius quesitum cum omnibus Iuribus et pertinenciis\nsuis eidem Guilhermo per eum quoad vixerit tenendam\nregendam et eciam gubernandam auctoritate nostra commen\ndare procures Ita quod ipse Guilhermus de fructibus\nredditibus et proventibus ad dictam preposituram\nspectantibus debitis illius et consuetis supportatis\noneribus ordinare et disponere illosque in suos et dicte\nprepositure usus et utilitates convertere ac alias de illis\ndisponere et ordinare libere et licite valeat prout veri\nipsius ecclesie prepositi qui fuerunt pro tempore de illis\ndisponere et ordinare potuerunt seu eciam debuerunt\nalienacione tamen bonorum immobilium et preciosorum mobilium\ndicte prepositure eidem Guilhermo penitus interdicta\nInducens per te vel alium seu alios eundem Guilhermum\nvel procuratorem suum eius nomine in corporalem possessionem\nprepositure Iuriumque et pertinenciarum predictorum et\ndefendens inductum amoto exinde quolibet illicito detentore\nac faciens dictum Guilhermum vel dictum procuratorem\npro eo ad huiusmodi preposituram ut est moris admitti\nsibi que de illius fructibus redditibus proventibus Iuribus\net obvencionibus universis integre responderi Contradictores\netc. compescendo Non obstantibus pie memorie Bonifacii\npape VIII predecessoris nostri et aliis apostolicis constitucionibus necnon\nstatutis et consuetudinibus dicte ecclesie beate Marie Iura\nmento confirmacione apostolica vel quavis firmitate alia\nroboratis contrariis quibuscunque Aut si aliqui super\nprovisionibus sibi faciendis de dignitatibus ipsius ecclesie\nbeate Marie speciales vel aliis beneficiis ecclesiasticis in\nillis partibus generales dicte sedis vel legatorum eius\nlitteras impetraverint eciam si per eas ad inhibicionem\nreservacionem et decretum vel alias quomodolibet sit processum\nquibus omnibus prefatum Guilhermum in assecucione dicte\nprepositure volumus anteferri sed nullum per hoc\neis quo ad assecucionem dignitatum aut beneficiorum\naliorum preiudicium generari Seu si Episcopo Vercellensi\npro tempore existenti et dilectis filiis Capitulo dicte ecclesie\nvel quibusvis aliis communiter vel divisim a prefata sit sede\nindultum quod ad recepcionem vel provisionem alicuius minime",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 13508,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2311,
+    "lines": 40,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 56.8,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0013,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:08:38+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol2_0241_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol2_0241_L.jpg",
+      "bytes": 2482286,
+      "sha256": "6b6770daa5ee206db833a7118e0e15c8865c44551da9f35d89328636973c0b64",
+      "sha256_of": "original",
+      "working_copy": "vol2_0241_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:08:38+00:00"
+  }
+}

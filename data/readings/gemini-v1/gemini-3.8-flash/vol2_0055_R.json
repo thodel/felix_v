@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol2_0055_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol2_0055_R.jpg",
+    "bytes": 2438503,
+    "sha256": "b7fa5f98995d7c5518dbe71e29c02419a3aa764e1198285a94f6ee0a2c5ebfbf",
+    "sha256_of": "original",
+    "working_copy": "vol2_0055_R.jpg"
+  },
+  "text": "exhibita continebat quod licet olim dictum monasterium\nredditibus pro sustentacione fratrum competentibus\nhabundasset tamen successu temporis guerrarum\nque hactenus inibi viguerunt aliarumque locorum\nfinitimorum eventuum causantibus redditibus huiusmodi adeo\ndiminuti fuerant quod ex illis prepositus et fratres predicti decenter\nnequaquam possent nisi etiam ipsius manibus sub-\nveniret huiusmodi prout eciam penitus subveniebat\nnon longe ab eodem monasterio antiquitus fuit\nquedam ecclesia campestris sub nomine Sancti Martini\nde Reobomaz sive Finium sita denique premissis\nnuncupata olim per canonicos ordinis Sancti Au-\ngustini regi consuevit constructa et fundata que\ntempore procedente adeo destructa et inhabitabilis\neffecta propter nemoribus circumdata est quod eciam\ninibi quamplura rapinis spolia furta et homicidia\nperpetrata fuerint et si dicta ecclesia que a monasterio\nSancte Marie de Vezolano dicti ordinis olim\ndependere dicebatur eidem monasterio Sancti Marcii\nuniretur incorporaretur et annecteretur illiusque posses-\nsiones aptarentur colerentur et excolerentur prout\ninantecessores eius unde possent facilius proferri multaque\ncassarentur inconvenientia et effusoresque utriusque loci\ncondicio melior fieret parte dictorum prepositi\net conventus nobis fuit humiliter supplicatum ut\necclesiam ipsam eidem prefato monasterio Sancti Marcii\nperpetuo unire annectere et incorporare ac alias in\npremissis oportune providere de benignitate\napostolica dignaremur Nos itaque qui cultum\ndivinum nostris potissime temporibus libenter adaugeri\nintensis desideriis affectamus de premissis tamen\ncertam noticiam non habentes huiusmodi suppli-\ncationibus inclinati discretioni tue per apostolica\nscripta committimus et mandamus quatenus vocatis\nqui fuerint evocandi de premissis omnibus et singulis\neorumque circumstanciis universis auctoritate nostra te dili-\ngenter informes et si per informacionem huiusmodi ita\nesse inveneris super quo tuam conscientiam oneramus\necclesiam cum toto omni omnibus juribus et\npertinentiis suis monasterio Sancti Marcii huiusmodi\ncuius duodecim florenorum de camera\nfructus redditus et proventus secundum communem extimationem\nvalere clamat ut asseritur non excedunt auctoritate predicta\nperpetuo unias incorpores et annectas ita quod\ncedente vel decedente moderno dicte ecclesie rectore\nliceat eisdem preposito et conventui possessionem\ndicte ecclesie propria auctoritate per se vel alium seu",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 10157,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2430,
+    "lines": 47,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 50.72,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0008,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:47:06+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol2_0055_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol2_0055_R.jpg",
+      "bytes": 2438503,
+      "sha256": "b7fa5f98995d7c5518dbe71e29c02419a3aa764e1198285a94f6ee0a2c5ebfbf",
+      "sha256_of": "original",
+      "working_copy": "vol2_0055_R.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:47:06+00:00"
+  }
+}

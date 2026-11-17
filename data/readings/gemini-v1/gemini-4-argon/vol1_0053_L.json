@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol1_0053_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol1_0053_L.jpg",
+    "bytes": 3185644,
+    "sha256": "33836292ab89a6df95ef73ab70ea993161f224a369bbb5bef1b761aeb69ec4f0",
+    "sha256_of": "original",
+    "working_copy": "vol1_0053_L.jpg"
+  },
+  "text": "Felix episcopus etc. Universis christifidelibus presentes litteras inspecturis Salutem etc.\npietatis operibus quibus necessitati publice consulitur et\ncommunis utilitas procuratur manum porrigere adiutricem\npium apud eam et meritorium reputantes nonnunquam christifideles\nad impendendum operibus ipsis auxilium nostris litteris exhortamur\net ut ad id eo feruencius animentur quo magis ex hoc suarum\nsalutem consequi sperauerint animarum pro hiis temporalibus suffragiis\nspiritualia eis munera remissiones videlicet et indulgencias\nelargimur Cum itaque sicut accepimus pons super Riuulum\nextra portas opidi Versoye gebennensis diocesis decurrente quem\nolim dilecti filii habitatores et incole eiusdem opidi de bonis propriis\npro singulis tam pedestribus quam equestribus necnon mercatoribus\nsuas ad illas partes presertim ciuitatem gebennensem mercancias deferentibus\net eciam aliis pro suis negociis prosequendis gressum transitumque\nsuum per illum dirigentibus construxerunt propter ipsius Riuuli\nimpetuosos progressus adeo destructus sit quod per eundem pontem\nnulli pateat ad presens transitus nec ad ipsius pontis Rei\npublice accomodi et necessarii restauracionem et reparacionem\neorundem incolarum et habitatorum suppetant facultates\nNos cupientes ut pons ipse congrue reparetur Vniuersitatem\nvestram Rogamus monemus et hortamur attente in remissionem\nvobis peccaminum iniungentes quatinus de bonis a deo vobis\ncollatis pro reparacione pontis eiusdem grata caritatis\nsubsidia erogetis ut per subuencionem vestram huiusmodi pons\nipse congrue reparetur vosque per hec et alia bona opera\nque inspirante domino feceritis possitis ad eterna felicitatis\ngaudia peruenire Nos enim de omnipotentis dei misericordia\net beatorum petri et pauli apostolorum eius auctoritate confisi omnibus\nvere penitentibus et confessis qui ad reparacionem\nhuiusmodi manus porrexerint adiutrices Tres annos\net totidem quadragenas de iniunctis eis penitenciis\nrelaxamus misericorditer presentibus post quinque annos minime\nvalituris Datum Basilee decimo Kalendas aprilis anno\na natiuitate domini Millesimo quadringentesimo\nquadragesimoprimo pontificatus nostri anno\nprimo. Gratis de mandato domini nostri pape A. Episcopus Grossetanus",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 15648,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2211,
+    "lines": 36,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 60.44,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0009,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:35:13+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol1_0053_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol1_0053_L.jpg",
+      "bytes": 3185644,
+      "sha256": "33836292ab89a6df95ef73ab70ea993161f224a369bbb5bef1b761aeb69ec4f0",
+      "sha256_of": "original",
+      "working_copy": "vol1_0053_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:35:13+00:00"
+  }
+}

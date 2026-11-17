@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol5_0008_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol5_0008_L.jpg",
+    "bytes": 2645973,
+    "sha256": "ac32b1fa756c59194c708d85053dcf8b0c519af4586bccee5a78525c06e2b333",
+    "sha256_of": "original",
+    "working_copy": "vol5_0008_L.jpg"
+  },
+  "text": "Felix episcopus etcetera dilecto filio Andree fullens priori prioratus sancti benigni Bellicensis G. fabri\ndiocesis Salutem apostolica sedis circumspecta benignitas desideria iusta petentium dignis\nfavore prosequitur et votis eorum que a rationis tramite non discordant se propitiam\nexhibet et benignam Cum itaque tu prioratus predicti ordinis sancti Benedicti Gratianopo-\nlitani et dilectus filius hugo de luperiaco sancti benigni eiusdem ordinis Bellicensis diocesis\nprioratuum quos tunc temporis obtinebatis desiderantes illos ex certis rationabilibus\nrationabilibus causis invicem permutare illos in manibus nostris sponte et libere\nresignaveritis nosque resignationes huiusmodi ex dicta permutationis duxerimus\nadmittendas ac votis tuis in hac parte favorabiliter annuentes teque a quibusvis\nsuspensionis et excommunicationis sententiis in te a iure vel ab homine quolibet promulgatis\nabsolventes tecum vero super irregularitate si qua huiusmodi sententiis ligatus\nmissas aut alia divina officia celebrando seu te illis immiscendo non tamen in contemptum\nclavium immiscuisti misericorditer dispensantes omnemque inhabilitatis et\ninfamie maculam sive notam premissorum occasione contractam ad hoc dumtaxat ut prioratu\ntunc sive sua provisione et effectu abolentes prioratum sancti Benigni predictum qui dig-\nnitas nec conventualis existit et a monasterio Arenarum dicti ordinis Lugdunensis\ndiocesis dependet ac per monachos eiusdem ordinis regi consuevit et ad quem quis per\nelectionem non sumitur cuiusque cura per perpetuum vicarium regi solita imminet animarum\ncuius fructus redditus et proventus ducentum librarum Turonensium parvorum secundum communem extimationem\ndiu ut asseris non excedunt per huiusmodi resignationem vacans ad omnibu iuribus et perti-\nnentiis suis apostolica tibi auctoritate conferimus et de illo conprovidemus decernentes et cetera Primo\npossessione dicti prioratus sancti benigni fueris pacifice assecutus de monasterio sancti\nmichaelis de Stella dicti ordinis Taurinensis diocesis cuius monachus et ordine ipso\nexpresse professus existis ad prefatum monasterium Arenarum transeundi et in eo\nrecipiendi in monachum et in fratrem suarumque inibi cursuum tractandus ac intituleris de\net tamen si secus super hiis a quoquam quavis auctoritate scienter ignoranter acceptatum\nforsan est vel posthec contigerit acceptari Non obstantibus quibuscumque constitutionibus\napostolicis statutis et consuetudinibus monasteriorum et prioratus sancti benigni predictorum\niuramento confirmacione apostolica vel quavis firmitate alia roboratis. Aut\nsi aliqui super provisionibus sibi faciendis de huiusmodi prioratibus speciales vel aliis beneficiis\necclesiasticis in illis partibus generales dicte sedis vel legatorum eius litteras impetrarint\netiam si per eas ad inhibitionem et cetera sit processum quibus omnibus te idem prioratui sancti\nBenigni afficiendo volumus anteferri sed nullum per hoc eis quo ad assecutionem\nprioratuum aut beneficiorum aliorum preiudicium generari Seu si venerabili fratri nostro episcopo Bellicensi\net dilectis filiis abbati et conventui monasterii Arenarum huiusmodi vel quibusvis aliis\ncommuniter vel divisim a dicta sit sede indultum quod ad receptionem vel provisionem tenerentur\net ad id compelli non possint quodque de huiusmodi prioratibus vel aliis beneficiis ecclesiasticis ad eorum\ncollationem provisio provideri per litteras apostolicas non facientes mentionem et quodlibet\nalia dicte sedis indulgentiarum existat per quodque effectus huiusmodi gratie impediri\nferri et de qua cuiquamque speciali. Aut quod certam annuam pensione centum\nflorenorum monete Sabaudie super fructibus redditibus et proventibus prioratus de Tho-\nnomo dicti ordinis Gebennensis diocesis auctoritate apostolica tibi sub certis modo et forma\nconstitutam percipis annuatim Nullo tamen intentionis existit quod ipso prefato prioratu\nsancti Benigni per nos tibi ut prefertur collato ex collatione mea huiusmodi nullum\nius tibi quolibet acquiratur nisi tu et dictus hugo tempore resignationum huius-\nmodi haberetis in prioratibus memoratis prius mihan resignatis. Nulli ergo\npagine nostre absolutionis abolitionis dispensationis collationis provisionis et\nconstitutionis infringere etcetera contrarie. Siquis autem etcetera nisi fecerit Datum Gebennis\nquarto Nonas octobris Anno a nativitate domini millesimoquadringentesimo pontificatus\nnostri Anno Quinto. .xx. do. de abbate",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 16426,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 4405,
+    "lines": 50,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 87.12,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0005,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:53:17+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol5_0008_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol5_0008_L.jpg",
+      "bytes": 2645973,
+      "sha256": "ac32b1fa756c59194c708d85053dcf8b0c519af4586bccee5a78525c06e2b333",
+      "sha256_of": "original",
+      "working_copy": "vol5_0008_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:53:17+00:00"
+  }
+}

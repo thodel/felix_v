@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol3_0120_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol3_0120_L.jpg",
+    "bytes": 2200017,
+    "sha256": "8ca555d4e88e2789f37bd4348c532ced61b26ac5d15dd25736fcd26c8d2dcc78",
+    "sha256_of": "original",
+    "working_copy": "vol3_0120_L.jpg"
+  },
+  "text": "Felix episcopus dilecto filio magistro anthonio procherii capellano nostro et causarum palacii apostolici auditori Salutem et cetera.\nLitterarum sciencia vite ac morum honestas alieque laudabiles\nprobitatis et virtutum merita super quibus dilectus\nfilius Johannes berquerii canonicus ecclesie sancti Justi\nLugdunensis bacalarius in decretis apud nos fidedigno\ncommendatur testimonio nos inducunt ut sibi reddamur\nad graciam liberales Exhibita siquidem nobis pro\nparte dicti Johannis peticio continebat quod orta dudum\ninter eum et dilectum filium Humbertum de Crisciaco\nsuccentorem ecclesie Lugdunensis decretorum doctorem\nsuper decanatu rurali Alingioris Gebennensis diocesis\nde quo tunc per obitum quondam Johannis Guidonis\nultimi ipsius decanatus decani extra Romanam curiam\ndefuncti vacante Johannes sibi auctoritate apostolica gratiose\nconcessum post illius provisionem huiusmodi decanatus possessionem\nfuisse canonice adeptus habuerat per quam eciam cessioni\nhuiusmodi opposuisset et opponeret ac fuisset et fuerat\nquominus ipse Johannes decanatum predictum posset\npacifice possidere Humberto vero predicto eundem\ndecanatum ad se de jure spectare asserente prout\ndictus Johannes ad hec apposuit materia questionis\nNos cum huiusmodi non obstans quod ad sedem apostolicam legitime\ndevoluta seu apud eam de sui natura aut juris\nnacione tractanda vel finienda non esset dilectis\nfiliis Guillermo Hugonis archidiacono ecclesie Agathensis\nad dictum Humbertum primo et deinde Bernardo tituli sancte\nquatuor coronatorum presbitero cardinali ad Johannis predictorum\ninstanciam et subsequenter de utriusque parte expresso\ntibi audiendam commisimus et fine debito terminandam\nEciam antequam hec eadem peticio subjungerat prefatus\nHumbertus lite et causa huiusmodi coram dicto cardinale prout in\ndiesse pendente omni motu omni juri sibi in dicto\ndecanatu vel ad eum quomodolibet competenti coram confesso\nnotario publico et testibus in dicta curia sponte\net libere cessisset Nos statum cause huiusmodi pro\npresentibus pro sufficienter expresso habentes et motu\nnomine eidem Johanni in causa huiusmodi adinvicem\nsubrogari provideri sibique promissioque nichilominus\nfieri intrusioni predicti eciam facultatem haberet disposicionis\ntibi per apostolica scripta mandamus quatinus si de cessione",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 9348,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2284,
+    "lines": 40,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 56.12,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0009,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:49:20+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol3_0120_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol3_0120_L.jpg",
+      "bytes": 2200017,
+      "sha256": "8ca555d4e88e2789f37bd4348c532ced61b26ac5d15dd25736fcd26c8d2dcc78",
+      "sha256_of": "original",
+      "working_copy": "vol3_0120_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:49:20+00:00"
+  }
+}

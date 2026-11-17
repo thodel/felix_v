@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol3_0120_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol3_0120_R.jpg",
+    "bytes": 2448093,
+    "sha256": "835f8a858115fbbde118ba773ca5293acebff66c6e942d41b87f3cd878907ada",
+    "sha256_of": "original",
+    "working_copy": "vol3_0120_R.jpg"
+  },
+  "text": "tute legitimi constituat illam auctoritate nostra admittat\nillaque per te admissa eidemque Johanni decanatu in dicto\ndecanatu juribusque suis sub in omni jure et ad omne\njus huiusmodi quod dicto Humberto episcopo cessione huiusmodi\nin eodem decanatu vel ad illum quolibet competiit\naut competere potuit dicta auctoritate nostra surroget\ndecretumque juris sibi conferat et provideat etiam de illo\nmotu proprio Johanni ad huiusmodi jure ac eius directasque\nlite et causa procuratione et defensione in eo statu\nin quo dicto Humberto episcopo die cessionis erat\net si illa tunc fuisset possit et debet admitti ad\nmittat et admissus fuerat ut est moris Et nichil\nlominus decanatu predictum qui sine cura est\net cuiuscunque fuerit redditus et proventus peragenda\nlibrare thuronensium quorum redituum communium septimanarum\nvalorem annuum ut ipse Johannes asserit non excedat\nsive per huiusmodi cessionem sive ad hoc per obitum dicti\nJohannis ut premittitur seu alias quovis modo aut\nper alicuius huiuscemodi persona seu per liberam resigna\ntionem alicuius electi de illo extra prescripta curia\netiam coram notario publico et testibus sponte factam\nvacat etiam si de dicto episcopo curaverit quod eius collatio\njuxta lateranensis statuta concilii ad sedem apostolicam\nlegitime devoluta ipsaque decanatus dispositioni\napostolice generaliter reservata existat et super eo inter aliquos\nalios lis cuius statum presentibus habere volumus\npro expresso pendeat indecisa dicto episcopo deca\nnatum vel si in eo alicui provisum sit episcopatum\ncum omnibus juribus et pertinentiis suis prefato Johanni\nauctoritate nostra predicta conferat et assignet inducens\nper te vel alium seu alios eundem Johannem vel procura\ntorem suum nomine suo in corporalem possessionem decanatus\njuriumque et pertinentiarium predictorum et defendat\ninductum amoto exinde quolibet detentore\nac faciens ipsi Johanni vel dicto procuratori pro\neo ad eundem decanatum ut est moris admitti\nsibique de illius fructibus redditibus proventibus juribus\net obventionibus universis integre responderi Contradi\nctores auctoritate nostra appellatione postposita compescendo\nNon obstantibus pie memorie Bonifacii pape octavi\npredecessoris nostri et aliis apostolicis constitutionibus\ncontrariis quibuscunque Aut si aliqui sint presentes\nsibi faciende de huiusmodi vel aliis beneficio seu",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 9795,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2333,
+    "lines": 43,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 53.28,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0009,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:49:30+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol3_0120_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol3_0120_R.jpg",
+      "bytes": 2448093,
+      "sha256": "835f8a858115fbbde118ba773ca5293acebff66c6e942d41b87f3cd878907ada",
+      "sha256_of": "original",
+      "working_copy": "vol3_0120_R.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:49:30+00:00"
+  }
+}

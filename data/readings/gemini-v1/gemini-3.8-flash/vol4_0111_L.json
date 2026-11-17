@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol4_0111_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol4_0111_L.jpg",
+    "bytes": 1848900,
+    "sha256": "821895d85de735e2529c18ab31bcdd23d1d383e7b03e530565e6d60b04b622b9",
+    "sha256_of": "original",
+    "working_copy": "vol4_0111_L.jpg"
+  },
+  "text": "churiale ecclesiam sancti Johannis de Chenoz Augustensis diocesis ac perpetuam capellaniam\nad altare sancte Marie de consolatione situm in ecclesia Augustensi necnon capellaniam sanctorum\nGervasii et Prothasii extra eandem ecclesiam Augustensem quorum omnium fructus redditus\net proventus decemocto librarum turonensium similium secundum communem extimationem valorem annuum non\nexcedunt nosceris obtinere Nulli ergo etc. nostre collationis provisionis\net constitutionis infringere. Siquis autem etc. manifeestum Datum Lausane septimo idus\nmaii Anno a nativitate domini millesimoquadringentesimoquadragesimotertio pon-\ntificatus nostri anno Tertio: .xiiij. Jo. de abbate\n\nFelix episcopus etc. dilectis filiis privatori Sancti Urientii et bradomino Rimben. Dimondi\necclesiarum ac officiali Tarentasiensi Salutem etc. Vite ac morum merita super\nquibus dilectus filius Nicolaus de Stripulis canonicus ecclesie Tarentasiensis\napud nos fidedigno commendatur testimonio nos inducunt ut sibi etc. liberales. Dudum\nsiquidem Clemens papa .vij. etc. usque nostre obtinere Quocirca discretioni vestre per\napostolica scripta mandamus quatenus vos vel duo aut unus vestrum per vos vel alium\nseu alios eundem Nicolaum vel procuratorem suum eius nomine in corporalem possessionem cano-\nnicatus et prebende juriumque et pertinenciarum predictorum inducatis auctoritate nostra et de-\nfendatis inductum amoto exinde quolibet detentore ac facientes ipsum Nico-\nlaum in dicta ecclesia Tarentasiensi in canonicum recipi et in fratrem stallo sibi in\nchoro et loco in capitulo ipsius ecclesie cum dicti juris plenitudine assignatis sibique\nde ipsorum canonicatus et prebende fructibus redditibus proventibus juri-bus et obventionibus universis\nintegre responderi Non obstantibus omnibus supradictis Seu si archiepiscopo\net capitulo prefatis vel quibusvis aliis communiter vel divisim a predicta sit sede in-\ndultum quod interdici suspendi vel excommunicari non possint per litteras apostolicas non\nfacientes etc. mentionem Contradictores auctoritate nostra etc. compescendo. Datum Lausane\nSeptimo idus maii Anno a nativitate domini millesimoquadringentesimoqua-\ndragesimotertio pontificatus nostri anno Tertio: .xiiij. Jo. de abbate\n\nFelix episcopus etc. dilecto filio Johanni alias Johaniado de Maylans canonico Jo. benenati\necclesie Lausannensis Salutem etc. Vite ac morum honestas etc. merita super quibus apud nos\nfidedigno etc. liberales. Dudum siquidem felicis recordationis Clemens papa septimus\npredecessor noster omnes canonicatus et prebendas cathedralium ecclesiarum cum cura et\nsine cura apud sedem apostolicam inantea vacaturos collationi et dispositioni sue atque\ndicti sedis reservans decrevit extunc irritum et inane si secus super his a quo-\nvis quavis auctoritate scienter vel ignoranter contingeret attemptari Cum itaque post-\nmodum canonicatus et prebenda ecclesie Lausannensis quos dilectus filius Petrus de Gro-\nlea subdiaconus noster in ipsa ecclesia nuper obtinebat per liberam resignationem\ndicti petri per dilectum filium Guillermum maioris clericum Carnotensem diocesis\nprocuratorem suum ad hoc ab eo specialiter constitutum in manibus nostris sponte et libere factam\net per nos admissam vacaverint et vacent ad presens nullusque de illis preter\nnos hac vice disponere potuerit sive possit reservatione et decreto obstan-\ntibus supradictis. Nos volentes tibi premissorum meritorum tuorum intuitu gratiam fa-\ncere specialem canonicatum et prebendam predictos quorum fructus redditus et proventus",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 12744,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3498,
+    "lines": 41,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 84.29,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0009,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:50:42+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol4_0111_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol4_0111_L.jpg",
+      "bytes": 1848900,
+      "sha256": "821895d85de735e2529c18ab31bcdd23d1d383e7b03e530565e6d60b04b622b9",
+      "sha256_of": "original",
+      "working_copy": "vol4_0111_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:50:42+00:00"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol6_0083_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol6_0083_L.jpg",
+    "bytes": 2352896,
+    "sha256": "d10374922cae72338bdf06dc3d3790334c94b22da3049f49da64a7c1d313c62f",
+    "sha256_of": "original",
+    "working_copy": "vol6_0083_L.jpg"
+  },
+  "text": "dimissis integre responderi contradictores auctoritate nostra etc. per censuram ecclesiasticam etc.\nNon obstantibus quibuscumque apostolicis constitutionibus editis ceteraque ecclesie eiusdem juribus consuetudinibusque\napostolicis vel alia quavis firmitate roboratis statutis et consuetudinibus contrariis quibuscumque\nquibuscumque aliis seu si alicui apostolica vel alia quavis auctoritate in dicta ecclesia in\ncanonicum fuerit receptus vel ut recipiatur institerit seu si super provisionibus sibi\nfaciendis de canonicatibus et prebendis et dignitatibus huiusmodi parochialibus vel aliis\nbeneficiis ecclesiasticis illius partibus generales dicte sedis vel legatorum eius\nlitteras impetraverit etiam si per eas ad inhibitionem reservationem et decretum\nvel alias quomodolibet processum sit quibus omnibus prefatum Petrum in assecutione\nprefecture huiusmodi et prebende huiusmodi volumus anteferri sed ad illas vel personas\neius quo ad assecutionem canonicatus et prebende ac dignitatis aut beneficiorum\naliorum faciendam nullum volumus derogari sed ipso Petro assecutionem et electionem\nalius canonicus non extendat quibuscumque aliis canonicatibus vel divisim ab eadem\nseu sede indultum quod ad receptionem vel provisionem alicuius minime teneantur\net ad id compelli non possint per litteras apostolicas non facientes plenam et expressam\nde huiusmodi vel aliis beneficiis ecclesiasticis ad eorum collationem provisionem\npresentationem seu quamvis aliam dispositionem coniunctim vel separatim pertinentibus\nnullatenus valeant provideri per has apostolicas non fieri expressam vel cuiuscumque\net quolibet alia dicte sedis indulgentia speciali vel generali quecumque pure vel expressa\ncautela vel cuiuslibet effectus et de qua cuiusque toto tenore de verbo in verbum in nostris litteris\nspecialiter seu si petita persona presens non fuerit ad prestandum de observandis\nstatutis et consuetudinibus prefatis solitum juramentum dummodo in\nabsentia sua per procuratorem ydoneum et ad ecclesiam ipsam accesserit\nreceptum illud prestet de iure processus quoscumque iudicatis me in reservatis huiusmodi\nsi fiet ex tempore reservationis et presentium huiusmodi sententiarum penitus\npenitentia ferociensis preiudicium volumus Nos enim exnunc irritum\ndecrevimus et inane si secus etc. per quoscumque etc. attemptari Datum Gebennis septimo\nidus januarii anno a nativitate domini millesimo quadringentesimo\nquadragesimo quinto pontificatus nostri anno quinto gratis pro deo Jo de alberiis\nFelix episcopus etc. dilectis filiis abbati monasterii abromure Lugdunensis Johannes canonicus\ndiocesis et preposito ecclesie Lausannensis ac officiali Gebennensi Salutem etc. Grata thesauro etc.\nfamiliaritatis obsequia que dilectus filius Petrus graneti presbyter Lugdunensis\ndiocesis familiaris noster nobis et apostolice sedi hactenus impendit et ad hoc\npolitiori studio impendere non desistit merita vite ac more honestas\naliaque laudabilia probitatis et virtutum merita quibus personam suam\nfamiliari experientia fidedignorumque testimonio novimus personam\nnostram inducunt ut sibi intendamus ad gratiam liberalem Nuper siquidem dilecto\nfilio nostro Joseph nostro protonotario ecclesiam de Yssoria Augustensis diocesis tunc\nper obitum obtinente de prebenda ecclesia de axellemis Lausannensis diocesis tunc\ncerto modo vacatura collationem maius litteras mandavimus provideri prout\nac volumus quod prefatus postposita predicta ecclesia de axellemis fuerit\ndictare vacare vigore predictarum assecutus dictam ecclesiam de Yssoria\nomnino dimittere teneretur prout monitis litteris plenius continetur\nCum itaque dicta ecclesia de Yssoria per assecutionem dicte ecclesie\nde axellemis per dictum Joseph faciendam vacatura speretur in brevi\nNos volentes dicto Petro premissorum obsequiorum et meritorum suorum",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 16246,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3780,
+    "lines": 46,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 81.2,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0005,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:57:00+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol6_0083_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol6_0083_L.jpg",
+      "bytes": 2352896,
+      "sha256": "d10374922cae72338bdf06dc3d3790334c94b22da3049f49da64a7c1d313c62f",
+      "sha256_of": "original",
+      "working_copy": "vol6_0083_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:57:00+00:00"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol1_0074_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol1_0074_R.jpg",
+    "bytes": 2689224,
+    "sha256": "771de311bc72fa593a84f1aef28bab7787be616c728afbe2715af0f5eca13fd4",
+    "sha256_of": "original",
+    "working_copy": "vol1_0074_R.jpg"
+  },
+  "text": "plena dominus tecum benedicta tu in mulieribus et benedictus fructus\nventris tui legerit duos annos qui vero illas audierit unum\net totidem quadragenas de iniunctis eis penitentiis misericorditer\nrelaxamus Datum Basilee octavo idus decembris anno a nativitate\ndomini millesimo quadringentesimo quadragesimo pontificatus\nnostri anno primo Gratis de mandato A episcopus Grossetanus\nFelix episcopus etc dilecto filio Petro Fabri clerico Gebennensi salutem etc\nVite ac morum honestas etc super quibus apud nos fidedigno commendaris\ntestimonio nos inducunt ut te specialibus favoribus et gratiis prosequamur\nVolentes igitur te qui ut asseris in vicesimoprimo tue etatis anno constitutus\nexistis et te ad studium ubi id viget generale ei rite insistendo transfer\nre proponis premissorum meritorum tuorum intuitu favore prosequi gratioso\ntecum ut postquam huiusmodi vicesimum primum annum compleveris aliquam parochialem\necclesiam si tibi canonice conferatur aut alias ad eam rite assumaris recipere\nac retinere illamque simpliciter vel alias ex causa permutationis dimittere\net loco ipsius aliud seu alia simile vel dissimile similia seu dissimilia beneficium seu\nbeneficia ecclesiasticum vel ecclesiastica etiam si alicui eorum cura immineat animarum\nsimiliter recipere et retinere libere et licite valeas defectu huiusmodi et\ngeneralis concilii necnon aliis constitutionibus et ordinationibus apostolicis\nceterisque contrariis nequaquam obstantibus auctoritate apostolica tenore presentium de\nspeciali gratia dispensamus proviso quod ecclesia aut beneficium curatum huiusmodi debitis\npropterea non fraudetur obsequiis et animarum cura in ea vel eo nullatenus\nnegligatur Nulli ergo etc nostre dispensationis et constitutionis etc contraire\nSi quis autem etc incursurum Datum Basilee tertio idus februarii anno\na nativitate domini millesimoquadringentesimoquadragesimoprimo pontifi\ncatus nostri anno primo xvi T episcopus Dunkeldensis\nFelix episcopus etc dilecto filio Francisco Kerling ordinis fratrum minorum\nprofessori salutem etc Humilibus supplicum votis libenter annuimus eaque fa\nvoribus prosequimur oportunis Cum itaque sicut exhibita nobis nuper\npro parte tua petitio continebat tu qui ordinem fratrum minorum expresse\nprofessus existis in eodem ordine ex certis rationabilibus causis cum sana\nconscientia et tui quiete animi nequiens remanere deinceps cupiasque\nad ordinem sancti Benedicti ad quem singularem geris devotionis affectum\nte transferre ac inibi altissimo perpetuo famulari pro parte tua nobis fuit\nhumiliter supplicatum ut tibi de dicto ordine minorum ad Novilarense Argentinensis\ndiocesis in quo actubenevolos habes receptores vel aliud eiusdem ordinis\nsancti Benedicti in quo similes reperieris receptores monasterium transeundi li\ncentiam concedere de benignitate apostolica dignaremur Nos igitur huiusmodi suppli\ncationibus inclinati tibi ut de dicto ordine minorum superioris tui ad id petita\nlicet non obtenta licentia ad Novilarense predictum vel aliud eiusdem ordinis",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 14909,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2992,
+    "lines": 40,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 73.83,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0007,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:04:46+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol1_0074_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol1_0074_R.jpg",
+      "bytes": 2689224,
+      "sha256": "771de311bc72fa593a84f1aef28bab7787be616c728afbe2715af0f5eca13fd4",
+      "sha256_of": "original",
+      "working_copy": "vol1_0074_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:04:46+00:00"
+  }
+}

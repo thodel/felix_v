@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol1_0124_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol1_0124_R.jpg",
+    "bytes": 2350552,
+    "sha256": "845c41f1ea94896d0e28fe9488824cb502161bdbc63c6e8c2db01b93eb5d03b5",
+    "sha256_of": "original",
+    "working_copy": "vol1_0124_R.jpg"
+  },
+  "text": "presumptores molestatores et iniuratores huiusmodi necnon\ncontradictores quoslibet et rebelles cuiuscumque dignitatis\nstatus gradus ordinis vel condicionis extiterint quacunque et\nquantacunque prefulgeant nobilitate apostolica per censuram ecclesiasticam\nprefatam appellatione postposita compescendo Invocato ad hoc\nsi opus fuerit auxilio brachii secularis non obstantibus tam\nfelicis recordationis Bonifatii pape octavi predecessoris\nnostri quibus cavetur ne aliquis extra suam civitatem vel diocesim\nnisi in certis exceptis casibus et in illis ultra unam dietam\na fine sue diocesis ad iudicium evocetur Seu ne Iudices\net Conservatores a sede deputati predicta extra sua\ncivitatem et diocesim in quibus deputati fuerint contra quoscunque\nprocedere aut alii vel aliis vices suas committere aut\naliquos ultra unam dietam a fine diocesis eorum trahere presumant\ndummodo aliquis extra sua civitatem et diocesim auctoritate presentium\nnon trahatur Seu quod de aliis quam de manifestis iniuriis\net violentiis ac aliis que iudicialem requirunt indaginem\npenitus in eos se scilicet coniecerint et in eis sententias proferant\nConservatores nullatenus se intromittant quam aliis\nquibuscunque Constitutionibus a predecessoribus nostris Romanis\nPontificibus tam de Iudicibus delegatis et conservatoribus\nquam personis ultra certum numerum ad iudicium non trahendis\naut aliis editis que nostre possent in hac parte iurisdictioni\naut potestati eiusque libero exercitio quomodolibet obviare\nSeu si aliquibus communiter vel divisim a predicta sit sede\napostolica indultum quod interdici suspendi vel excommunicari\nseu extra vel ultra certa loca ad iudicium evocari non\npossint per litteras apostolicas non facientes plenam et expressam\nac de verbo ad verbum de indulto huiusmodi et eorum personis\nlocis ordinibus et nominibus propriis mentionem et de\nquibuslibet aliis dicte sedis indulgentiis generalibus vel specialibus",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 7408,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 1906,
+    "lines": 31,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 60.52,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.001,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:45:44+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol1_0124_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol1_0124_R.jpg",
+      "bytes": 2350552,
+      "sha256": "845c41f1ea94896d0e28fe9488824cb502161bdbc63c6e8c2db01b93eb5d03b5",
+      "sha256_of": "original",
+      "working_copy": "vol1_0124_R.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:45:44+00:00"
+  }
+}

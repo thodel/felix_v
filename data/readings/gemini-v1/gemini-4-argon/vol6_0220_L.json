@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol6_0220_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol6_0220_L.jpg",
+    "bytes": 2609870,
+    "sha256": "6237577de026cd4bdc6f2f50d416654c8a68c4739dd4fa8f12b40add1009e602",
+    "sha256_of": "original",
+    "working_copy": "vol6_0220_L.jpg"
+  },
+  "text": "extra muros Gebennenses Terciodecimo kalendas Julii Anno\na nativitate domini Millesimoquadringentesimoquadragesimo\nquinto pontificatus nostri Anno Quinto\nxx Jo R abbas\nFelix etcetera Dilectis filiis Abbati Monasterii Ambronaci\nLugdunensis diocesis et Decano Anniciensis ac Humberto\nde Chissiaco Canonico Gebennensis ecclesiarum Salutem\netcetera Vite ac morum honestas etcetera super quibus apud\nnos dilectus filius Glaudius Grandis presbiter Lugdunensis\ndiocesis fidedigno commendatur testimonio nos\nliberaliter Inducunt ut illa sibi favorabiliter etcetera exhibeamus\nCum Itaque hodie Jdem Glaudius sanctorum Martini\net Stephani usque contrariis quibuscumque Quocirca\ndiscretioni vestre per apostolica scripta mandamus quatinus\nvos vel duo aut vnus vestrum per vos vel alium seu\nalios faciatis auctoritate predicta pensionem eandem prefato\nGlaudio vel pro ipso procuratori memorato\niuxta huiusmodi reservationis constitutionis et assignationis continentiam\natque formam efficaciter persolvi et de ea responderi\nEt nichilominus quemlibet ex Amedeo et Successoribus\nprefatis qui huiusmodi Sententiam excommunicationis vobis Incurrisse constiterit\nquotiens super hoc pro parte dicti Glaudii fueritis\nRequisiti tamdiu dominicis festivisque diebus in ecclesiis\ndum maior Jbi populi multitudo convenerit excommunicatum\npublice nuncietis faciatisque ab aliis nunciari\net ab omnibus arcius evitari donec Glaudio vel\nprocuratori predictis de huiusmodi pensione seu porcione tunc\nsibi debita fuerit Integre satisfactum Jpseque excommunicatus\nab eadem Sententia meruerit beneficium absolutionis obtinere\nNon obstantibus omnibus supradictis Seu si Amedeo vel\nalicui ex Successoribus antedictis a sede sit apostolica\nJndultum quod ad solucionem seu prestacionem alicuius\npensionis minime teneantur et ad id compelli aut quod\nJnterdici etcetera non possint per litteras apostolicas non facientes\netcetera mencionem Contradictores per censuram ecclesiasticam\nappellatione postposita compescendo Datum apud Sanctumvictorem\nextra muros Gebennenses Terciodecimo kalendas Julii Anno a\nnativitate domini Millesimoquadringentesimoquadragesimo\nquinto pontificatus nostri Anno Quinto\nxxii Jo R abbas",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 16168,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2176,
+    "lines": 40,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.025,
+    "mean_line_chars": 53.42,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0009,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:27:05+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol6_0220_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol6_0220_L.jpg",
+      "bytes": 2609870,
+      "sha256": "6237577de026cd4bdc6f2f50d416654c8a68c4739dd4fa8f12b40add1009e602",
+      "sha256_of": "original",
+      "working_copy": "vol6_0220_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:27:05+00:00"
+  }
+}

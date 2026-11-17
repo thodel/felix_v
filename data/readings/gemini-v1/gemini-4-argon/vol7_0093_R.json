@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol7_0093_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol7_0093_R.jpg",
+    "bytes": 2716097,
+    "sha256": "17729cfc5af24b1acb61b53c7baba42dddd85914f0f22b47df7547f928c4d911",
+    "sha256_of": "original",
+    "working_copy": "vol7_0093_R.jpg"
+  },
+  "text": "aliquas lis cuius statum presentibus haberi volumus pro expresso pendeat indecisa dum\nmodo tempore date presentium non sit in ea alicui specialiter ius quesitum cum omnibus iuribus\net pertinenciis suis Iohanni Monachi eadem auctoritate conferas necnon Iohanni Leode\ngarii prefatis pensionem annuam super fructibus redditibus et proventibus ipsius ecclesie\nparrochialis tercie partis veri valoris eorundem per predictum Iohannem Monachi eiusque\nin ipsa parrochiali ecclesia successores eidem Iohanni Leodegarii quoadvixerit vel\nprocuratori suo ad hoc speciale mandatum habenti annis singulis in loco et terminis\nnecnon sub excommunicationis et eciam privacionis ac aliis sentenciis censuris et penis\necclesiasticis de quibus inter se concordaverint per te ad id statuendis et efficaciter\ndecernendis persolvendam simili auctoritate reserves constituas et assignes Inducens\nper te vel alium seu alios eundem Iohannem Monachi vel procuratorem suum eius nomine\nin corporalem possessionem parrochialis ecclesie iuriumque et pertinenciarum predictorum et defen\ndens inductum amoto exinde quolibet illicito detentore ac faciens Iohannem Mo\nnachi de ipsius ecclesie fructibus redditibus proventibus iuribus et obventionibus universis necnon\nIohanni Leodegarii prefatis de pensione iuxta reservacionis constitucionis\net assignacionis huiusmodi si illas feceris tenorem integre responderi Con\ntradictores auctoritate nostra etc. compescendo Non obstantibus pie memorie Bonifacii\npape viii eciam predecessoris nostri et aliis apostolicis constitucionibus contrariis quibuscunque\nAut si aliqui super provisionibus sibi faciendis de huiusmodi vel aliis beneficiis ecclesiasticis\nin illis partibus speciales vel generales dicte sedis vel legatorum eius litteras impe\ntrarint eciam si per eas ad inhibicionem etc. sit processum quibus omnibus prefatum Io\nhannem Monachi in dicte parrochialis ecclesie assecucione volumus anteferri sed nullum\nper hoc eis quoad assecucionem beneficiorum aliorum preiudicium generari Seu si\nvenerabili fratri nostro episcopo Gebennensi pro tempore existenti vel quibusvis aliis\ncommuniter vel divisim a dicta sede sit indultum quod ad recepcionem vel provisionem minime\nteneantur et ad id compelli aut quod etc. non possit quodque de huiusmodi vel aliis beneficiis\necclesiasticis ad eorum collacionem etc. spectantibus nulli valeat provideri per litteras apostolicas\nnon facientes etc. mencionem et qualibet alia dicte sedis indulgencia etc. existat per\nquam etc. effectus earum impediri etc. vel differri et de qua cuiusque toto tenore spe\ncialis Aut quod Iohannes Monachi canonicatum et prebendam Sedunenses et capella\nniam perpetuam sine cura ad altare sancte Catherine situm in ecclesia Gebennensi\nquorum fructus redditus et proventus sexdecim librarum Turonensium similium secundum\nestimationem antedictam va. an. non excedunt et Iohannes Leodegarii prefati\nut eciam asseritur canonicatum et prebendam Gebennensium ecclesiarum noscuntur\nobtinere Attente quoque provideas ne in huiusmodi resignacione si fiat ex parte\nIohannis Leodegarii et Iohannis Monachi predictorum vel alias quomodolibet aliqua pravi\ntas interveniat seu eciam corruptela Nos enim exnunc irritum decernimus\net inane etc. attemptari Datum apud Sanctumdominicum extra muros Gebennenses\nNono kalendas februarii anno a nativitate domini millesimo quadringentesimo quadrage\nsimoseptimo pontificatus nostri anno septimo\nP per Io R Abbas\nFelix episcopus etc. venerabili fratri episcopo Augustensi et dilectis filiis decano beate Marielete\nAnassianburgi Gebennensis diocesis ac Anthonio Pochoti canonico Gebennensi\necclesiarum salutem etc. Grata familiaritatis obsequia que dilectus filius Thomas\nSoudan decanus Alingii Gebennensis diocesis familiaris noster nobis et apostolice\nsedi hactenus impendit et adhuc sollicitis studiis impendere non desistit necnon\nvite ac morum honestas aliaque etc. merita quibus persona sua tam familiari\nexperiencia quam eciam fidedignorum testimoniis iuvari percepimus nos inducunt\nut etc. liberales Exhibita siquidem nobis nuper pro parte dicti Thome\npeticio continebat quod dudum capella beate Marie de Villario supra Boea",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 22562,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 4140,
+    "lines": 50,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 81.82,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0007,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:29:50+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol7_0093_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol7_0093_R.jpg",
+      "bytes": 2716097,
+      "sha256": "17729cfc5af24b1acb61b53c7baba42dddd85914f0f22b47df7547f928c4d911",
+      "sha256_of": "original",
+      "working_copy": "vol7_0093_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:29:50+00:00"
+  }
+}

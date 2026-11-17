@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol7_0111_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol7_0111_L.jpg",
+    "bytes": 2835366,
+    "sha256": "d7826c64aa21da072513a5853c3d2d118248c25c767662b830d4f7a71aa566f3",
+    "sha256_of": "original",
+    "working_copy": "vol7_0111_L.jpg"
+  },
+  "text": "pro parte eorundem Petri et Gonterii nobis fuit humiliter supplicatum quatinus ipsos\nab excommunicationis ac aliis sententiis et censuris absolvi iuramentaque relaxari\nac contractus illicitos huiusmodi cassari et anullari mandare ac alias ipsis et\nstatui eorum in premissis oportune providere de benignitate apostolica dignare-\nmur Nos itaque de premissis certam noticiam non habentes huiusmodi quoque supplica-\ntionibus inclinati discretioni tue per apostolica scripta committimus et mandamus\nquatinus vocatis dictis creditoribus ac aliis qui fuerint evocandi de premissis\nomnibus et singulis ac eorum circumstantiis universis te auctoritate nostra diligenter\ninformes et si per informationem huiusmodi illa vel que ad id sufficiant reppereris\nveritate fulciri Petro et Gonterio ac fideiussoribus prefatis si id humiliter\npetierint ab excommunicationis aliisque sententiis et censuris ecclesiasticis huiusmodi in forma\necclesie consueta iniunctis inde ipsis pro modo culpe penitentia salutari ac aliis que\nde iure fuerint iniungenda per te auctoritate prefata primitus absolutis contractus\nillicitos quos in premissis intervenisse reppereris casses et annulles ac de bo-\nnis et hereditatibus Petri et Gonterii predictorum usque ad valorem debitorum\nhuiusmodi arbitrio proborum virorum ad id per te deputandorum ad hoc in manibus tuis\niuramentum prestantium taxandorum vendi eisdemque creditoribus pecuniarum summis\noccasione contractuum illicitorum huiusmodi ac usurarie pravitatis a prefatis\nPetro et Gonterio eorumque fideiussoribus per ipsos creditores quolibet\nextortis primitus deductis de principali summa debitorum huiusmodi plenariam satis\nfactionem impendi ac alia facias que in premissis et circa ea necessaria\nfuerint quolibet vel oportuna prout de iure fuerit faciendum non permit-\ntens Petrum et Gonterium ac fideiussores a creditoribus huiusmodi occasione\nillicitorum contractuum ac aliorum premissorum vexari molestari seu etiam inquietari\nContradictores per censuram ecclesiasticam etcetera compescendo Non obstantibus si credito-\nribus prefatis vel quibusvis aliis communiter vel divisim ab apostolica sit sede indultum\nquod interdici etcetera non possint per litteras apostolicas non facientes etcetera mentionem Datum apud\nSanctummauricium Agaunensem Sedunensis diocesis quinto idus februarii anno a\nnativitate domini millesimo quadringentesimo quadragesimoseptimo pontificatus\nnostri anno septimo .v. G de Poncy\nFelix episcopus etcetera dilecto filio Petro abbati monasterii Ambroniaci Lugdunensis\ndiocesis cancellariam apostolicam de mandato nostro regenti salutem etcetera Vite ac morum ho-\nnestas aliaque etcetera merita super quibus dilectus filius Johannes de Prato presbiter Ge-\nbennensis diocesis apud nos fidedigno commendatur testimonio nos etcetera liberales Cum\nitaque sicut accepimus dilectus filius Franciscus de Prato rector Cluysonne\net Meyriaci parrochialium ecclesiarum invicem canonice unitarum Gratianopolitane\ndiocesis ex eo quod cecus infrainfirmitate quibus opprimitur viribus sui corporis\ndestitutus eisdem ecclesiis comode preesse ac illarum parrochianorum animarum curam\ngerere nequit congrue per seipsum ac ex aliis rationabilibus causis animum\nsuum ad hoc moventibus ecclesias ipsas quas obtinet sponte et\nlibere resignare proponat Nos votis ipsius Francisci in hac parte favora-\nbiliter annuentes ac prefato Johanni qui ut asserit nullum beneficium ecclesiasticum\nobtinet premissorum meritorum suorum intuitu specialem gratiam facere volentes\ndiscretioni tue per apostolica scripta committimus et mandamus quatinus si est",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 22589,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3570,
+    "lines": 44,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 80.16,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0006,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:30:12+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol7_0111_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol7_0111_L.jpg",
+      "bytes": 2835366,
+      "sha256": "d7826c64aa21da072513a5853c3d2d118248c25c767662b830d4f7a71aa566f3",
+      "sha256_of": "original",
+      "working_copy": "vol7_0111_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:30:12+00:00"
+  }
+}

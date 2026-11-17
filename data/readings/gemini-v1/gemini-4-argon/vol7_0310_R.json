@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol7_0310_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol7_0310_R.jpg",
+    "bytes": 2427799,
+    "sha256": "6bb13592e9aee4b0eea8aea2db582e3d75d2861c9a03df341d9484efb1a62d6c",
+    "sha256_of": "original",
+    "working_copy": "vol7_0310_R.jpg"
+  },
+  "text": "libenter impartimur ut precisis scandalis et desidiis\ndissidiorum vepribus et litigiorum anfractibus penitus subductis\ninter ecclesiarum prelatos ad curam gregis dominici deputatos\npacis tranquillitas vigeat et caritatis unitas perseveret\nAccepimus siquidem non sine cordis displicentia quod dudum\ninter dilectos filios Jacobum Ogilby ad ecclesiam sancti Andree\ntunc quomodo pastoris solacio destitutam auctoritate nostra sacro\neciam generali Basilien Concilio approbante promotum et\nJacobum kenedy ad illam se fore electum pretendentem\npacis emulo et satore zizanie procurante gravis discordia\nextitit suscitata Nos autem pii patris more laudabili\nmoleste ferentes incomoda filiorum ac cupientes ecclesie\net personarum predictarum statui et indemnitatibus\nper apostolice sedis providenciam salubriter providere questionem\nhuiusmodi ad Nos harum serie advocantes fraternitati\ntue de qua in hiis et aliis specialem in domino obtinemus\nfiduciam obtinemus Congrua et honesta pacis et con\ncordie media amplectendi et prosequendi necnon partes\nipsas per assignacionem congrue pensionis alii parte ex\nipsis contendentibus super fructibus predicte sancti andree\nvel Dunkelden aut Glasguen ecclesiarum assignacionem\naut alios modos honestos de quibus tibi videbitur ad pacem\net concordiam auctoritate nostra Reducendi et propterea quotiens opus\nfuerit cessiones et Resignaciones dignitatum eciam Si\nepiscopales fuerint necnon beneficiorum ecclesiasticorum cuiuscumque\nqualitatis et in quibuscumque eciam Metropolitanis\nvel aliis cathedralibus seu collegiatis ecclesiis fuerint\net ad ea consueverint qui per electionem assumi eisdem cura\nimmineat animarum per Jacobum et Jacobum predictos et quoscumque\nalios de illis aut iuris in eisdem dignitatibus et beneficiis\nSeu ad ea quomodolibet competentis in manibus tuis\nad effectum proficiende concordie huiusmodi sponte faciendas\neadem auctoritate Recipiendi et admittendi ipsasque dignitates et\nbeneficia dummodo in premissis aliqua Symoniaca pravitas\nseu alia pactio illicita non interveniat Jacobo vel Jacobo\npredictis seu aliis personis ydoneis quibus mediantibus",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 12795,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2105,
+    "lines": 36,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 57.5,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.001,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:31:50+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol7_0310_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol7_0310_R.jpg",
+      "bytes": 2427799,
+      "sha256": "6bb13592e9aee4b0eea8aea2db582e3d75d2861c9a03df341d9484efb1a62d6c",
+      "sha256_of": "original",
+      "working_copy": "vol7_0310_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:31:50+00:00"
+  }
+}

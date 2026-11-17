@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol3_0209_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol3_0209_L.jpg",
+    "bytes": 2288143,
+    "sha256": "e9cc11b23123b724dec7a825cc7d53d0925e3fa08238812a10e1ab8891127661",
+    "sha256_of": "original",
+    "working_copy": "vol3_0209_L.jpg"
+  },
+  "text": "innovari non possint per litteras apostolicas non facientes plenam\nplenam et expressam ac de verbo ad verbum\nde indulto huiusmodi mentionem et facientes eciam expresse locorum\nordinibus et nominibus propriis mentionem et\nqualibet alia dicte sedis indulgencia generali vel\nspeciali cuiuscumque tenoris existat per quam presentibus\nnon expressam vel totaliter non insertam eciam in-\niustitiam experiri in hac parte valeat\nquolibet impediri et de qua cuiusque toto tenore\nhabenda de verbo ad verbum sit in nostris\nlitteris mencio specialis. Ceterum volumus et auctoritate\napostolica predicta decernimus quod quilibet vestrum pro-\nsequi valeat actionibus eciam per alium inchoatis\nquicunque ipsum inchoans nullo fuerit impedimento\ncanonico prepeditus quodque a data presentium sit\nvobis et cuilibet vestrum in premissis omnibus et\neorum singulis expressis et non expressis perpetuata\npotestas et iurisdictio attributa ut eo vigore\neaque firmitate possitis in premissis omnibus expressis\nnon expressis predictis et futurorum et pro pre-\ndictis executioni et divisim procedere ac si\npredicta omnia et singula eorum vobis expressa\nfuissent ac iurisdictio unius et cuiuslibet vestrum in\npredictis omnibus et singulis per citationem\nvel modum alium perpetuata legitime extitisset\nac aliis contrariis non obstantibus quibuscumque\nNon enim intendimus per id vos contemptare\nDatum Basilee octavo kalendas augusti anno\na nativitate domini millesimoquadringentesimo\nquadragesimosecundo pontificatus nostri anno\ntertio. Gratis pro deo Thomas episcopus Dunkeldensis\n\nFelix episcopus etcetera. Dilecto filio magistro Johanni de barchensem 23 foester\ncanonico traiectensi decretorum doctori capellano nostro speciali etcetera.\nGrata devotionis obsequia que nobis et apostolice sedi hactenus\nimpendisti et adhuc sollicitis studiis impendere non desistis\nnecnon nobilitas generis viteque sinceritas vite ac morum honestas\naliaque laudabilia probitatis et virtutum merita quibus personam\ntuam veredignorum testimonio fidedigno percepimus commendatam\net tibi reddunt ad gratiam liberalem. Dudum siquidem sacra\ngeneralis synodus basiliensis per suum decretum quod incipit\nplacuit divine pietati gratias expectativas et reservationes\nad beneficia collativa per summos pontifices ceterosque gressas",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 8955,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2273,
+    "lines": 42,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 53.12,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0009,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:49:58+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol3_0209_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol3_0209_L.jpg",
+      "bytes": 2288143,
+      "sha256": "e9cc11b23123b724dec7a825cc7d53d0925e3fa08238812a10e1ab8891127661",
+      "sha256_of": "original",
+      "working_copy": "vol3_0209_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:49:58+00:00"
+  }
+}

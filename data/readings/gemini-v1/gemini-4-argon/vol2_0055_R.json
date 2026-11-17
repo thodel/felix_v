@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol2_0055_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol2_0055_R.jpg",
+    "bytes": 2438503,
+    "sha256": "b7fa5f98995d7c5518dbe71e29c02419a3aa764e1198285a94f6ee0a2c5ebfbf",
+    "sha256_of": "original",
+    "working_copy": "vol2_0055_R.jpg"
+  },
+  "text": "exhibita continebat quod licet olim dictum monasterium\nredditibus pro sustentacione fratrum competentibus\nabundasset tamen successu temporis guerrarum\nque hactenus inibi viguerunt aliorumque locorum\nfinitorum causantibus eventibus redditus huiusmodi adeo\ndiminuti sunt quod ex illis prepositus et fratres predicti vivere\nnequaquam possunt nisi eciam propriis manibus labo\nrarent Cank utique sicut eadem peticio subiungebat\nnon longe ab eodem monasterio antiquitus fuit\nquedam ecclesia campestris sub nomine sancti Martini\nde Pechomartino Taurinensis diocesis que prioratus\nnuncupata olim per canonicos ordinis sancti Au\ngustini regi consuevit constructa et fundata que\ntempore procedente adeo destructa et inhabilis\neffecta atque nemoribus circumdata est quod eciam\ninibi quamplura rapine spolia furta et homicidia\nperpetrata fuerunt et si dicta ecclesia que a monasterio\nsancte Marie de Vezolano dicti ordinis olim\ndependere dicebatur eidem monasterio sancti Marci\nuniretur incorporaretur et annecteretur illiusque posses\nsiones aptarentur debite et excolerentur longe\nmaiores ex inde possent fructus provenire multaque\ncessarent inconveniencia et efficeretur utriusque loci\ncondicio melior Quare pro parte dictorum prepositi\net conuentus nobis fuit humiliter supplicatum ut\necclesiam predictam prefato monasterio sancti Marci\nperpetuo unire annectere et incorporare ac alias in\npremissis oportune prouidere de benignitate\napostolica dignaremur Nos itaque qui cultum\ndiuinum nostris potissime temporibus ubique adaugeri\nintensis desideriis affectamus de premissis tamen\ncertam certam noticiam non habentes huiusmodi suppli\ncacionibus inclinati discrecioni tue per apostolica\nscripta committimus et mandamus quatenus vocatis\nqui fuerint euocandi de premissis omnibus et singulis\nearumque circumstanciis uniuersis auctoritate nostra te dili\ngenter informes et si per informacionem huiusmodi ita\nesse inueneris super quo tuam conscienciam oneramus\necclesiam cum ceteris cum omnibus iuribus et\npertinenciis suis monasterio sancti Marci huiusmodi\ncuius ducentorum florenorum auri de camera\nfructus redditus et prouentus secundum communem extimacionem\nvalorem annuum ut asseritur non excedunt auctoritate predicta\nperpetuo unias incorpores et annectes ita quod\ncedente vel decedente moderno dicte ecclesie rectore\nliceat eisdem preposito et conuentui possessionem\ndicte ecclesie propria auctoritate per se vel alium seu",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 13877,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2414,
+    "lines": 47,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 50.38,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0008,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:07:48+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol2_0055_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol2_0055_R.jpg",
+      "bytes": 2438503,
+      "sha256": "b7fa5f98995d7c5518dbe71e29c02419a3aa764e1198285a94f6ee0a2c5ebfbf",
+      "sha256_of": "original",
+      "working_copy": "vol2_0055_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:07:48+00:00"
+  }
+}

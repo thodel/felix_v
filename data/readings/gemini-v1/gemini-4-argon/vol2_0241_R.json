@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol2_0241_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol2_0241_R.jpg",
+    "bytes": 2848864,
+    "sha256": "a95d593487041bf5bdf890e322e98c99f5b0032cfbb27cde88f3fe8e17e918ea",
+    "sha256_of": "original",
+    "working_copy": "vol2_0241_R.jpg"
+  },
+  "text": "teneantur et ad id compelli aut quod interdici\nsuspendi vel excommunicari non possint et etiam de\ndignitatibus ipsius ecclesie vel aliis beneficiis ecclesiasticis\nspecialiter vel generaliter ad eorum collationem provisionem\npresentationem seu quamvis aliam dispositionem\nconiunctim vel divisim spectantibus nulli va\nleat provideri per litteras apostolicas non facientes\nplenam et expressam ac de verbo ad verbum de\nindulto huiusmodi mentionem et qualibet alia\ndicte sedis indulgentia generali vel speciali cuius\ncunque tenoris existat per quam presentibus non ex\npressam vel totaliter non insertam effectus earum\nimpediri valeat quomodolibet vel differri et de qua\ncuiusque toto tenore habenda sit in nostris litteris\nmentio specialis aut si dictus Guillermus presens non\nfuerit ad prestandum de observandis statutis et consuetudi\nnibus dicte ecclesie beate Marie solitum iuramentum dummodo\nin absentia sua per procuratorem ydoneum et cum ad ecclesiam\nipsam primum accesserit corporaliter illud prestet proviso quod\nipsa prepositura debitis propterea non fraudetur obsequiis\net animarum cura in ea nullatenus negligatur ac\nillius onera debite supportentur consueta Nos enim\nexnunc irritum etc si attemptari Datum Basilee\ndecimonono kalendas ianuarii anno a nativitate domini\nmillesimo quadringentesimo quadragesimo\nsecundo pontificatus nostri anno secundo xiiii flor de f\nFelix episcopus etc dilecto filio Petro de Querceto cano\nnico Gebennensi salutem etc Iustis et honestis supplicum\nvotis libenter annuimus eaque favoribus prosequimur\noportunis Exhibita siquidem nobis nuper pro parte dilecti\nfilii nobilis viri Iohannis Alamandi domini de Esserz\nGebennensis diocesis petitio continebat quod cum olim ipse\ndilectos filios Iohannem de Pelicis et Iacobum de\nBonovillario domicellos dicte diocesis qui sibi quasdam\npecuniarum summas et res alias tunc expressas ex causis\netiam tunc expressis dare et solvere ac de illis rationem\net computum facere legitime tenebantur illisque sibi dare\net solvere necnon rationem et computum huiusmodi secum\nfacere indebite denegaverint super hiis petendo ipsos\ncondempnari et compelli ad reddendum et faciendum\ncomputum ac solvendum pecuniarum summas necnon dandum\nsibi res alias huiusmodi coram dilecto filio Iohanne\nMacri officiali Gebennensi ad quem cognitio causarum",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 14241,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2305,
+    "lines": 43,
+    "longest_char_run": 4,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 52.63,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0017,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:08:52+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol2_0241_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol2_0241_R.jpg",
+      "bytes": 2848864,
+      "sha256": "a95d593487041bf5bdf890e322e98c99f5b0032cfbb27cde88f3fe8e17e918ea",
+      "sha256_of": "original",
+      "working_copy": "vol2_0241_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:08:52+00:00"
+  }
+}

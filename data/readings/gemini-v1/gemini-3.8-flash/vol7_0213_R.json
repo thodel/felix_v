@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol7_0213_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol7_0213_R.jpg",
+    "bytes": 2543163,
+    "sha256": "faaef2b2137e4956056c0462119997ff159a913a0fe64f8e45d8334c6de713e4",
+    "sha256_of": "original",
+    "working_copy": "vol7_0213_R.jpg"
+  },
+  "text": "se aliqui super provisionibus sibi faciendis de huiusmodi vel aliis\nbeneficiis ecclesiasticis in illis partibus generales vel speciales dicte sedis\nvel legatorum eius litteras impetrassent etiamsi per eas ad\ninhibitionem reservationem et decretum vel alias quomodolibet\nsit processum quibus omnibus prefatum Aygmonem in dicta\necclesia prepositum assequendo volumus anteferri sed nullum per\nhoc eis quo ad assecutionem beneficiorum aliorum preiudicium generari\nnon obstantibus constitutionibus felicis recordationis Bonifatii pape octavi predecessoris nostri et quibusvis\naliis generalibus vel specialibus a dicta sede vel provinciale indultum quod ad fe-\nrectionem vel provisionem alicuius minime teneantur et ad id com-\npelli aut quod interdici suspendi vel excommunicari non possint\nquodque de huiusmodi vel aliis beneficiis eorum collationi provisioni\npresentationi seu quavis alia dispositione communiter vel separatim spectantibus\npresentibus nulli valeat provideri per litteras apostolicas non fa-\ncientes plenam et expressam ac de verbo ad verbum et qualibet alia dicte\nsedis indulgentia generali vel speciali cuiuscumque tenoris existat cuiuscumque\nfuerit gradibus non expressa vel totaliter non inserta et effectum\neiusque et de qua cuiusque toto tenore habenda sit de verbo ad verbum specialis\nNos etiam si dictus Aygmo ad hoc idoneus fuerit ydoneus ut\nasseritur extiterit prout invenerit decernimus et volumus si prius\nsuper hiis a quovis fuerint auctoritate predicta vel ignorantia\nquomodolibet attemptatum ac si dicti decani personam eidem Aygmoni\nad hoc adepto ydoneo de cetero eundem ad indifferenter debent\ngaudere conditionibusque decani ipsius sedis de canonicatu et prebenda\nGebennensis sexto kalendas februarii Anno a Nativitate domini\nmillesimoquadringentesimoquadragesimoseptimo pontificatus\nnostri Anno Septimo. xxviij. v. febr. Thomas Pontanus\n\nFelix episcopus servus servorum dei Dilecto filio Johanni Duriez canonico\necclesie Augustensis familiari nostro salutem etcetera Vite ac morum ho-\nnestas aliaque laudabilia merita probitatis et virtutum quibus nobis et apostolice sedi\nhactenus impendisti et adhuc sollicitis studiis impendere\nnon desistis meritis coram ac morum gravitas aliaque laudabi-\nlia probitatis et virtutum merita quibus personam tuam tam fami-\nliari observantia et erga fidelitatis devotionis personis invitus pro-\nsequeris nos inducunt ut ea tibi favorabiliter perdamus\nque tuis comoditatibus fore speramus opportuna. Tuis\nitaque supplicationibus inclinati tibi qui etiam gratiam generalis\nnostre expectationis ut asseritur/nunc usufruendo seu in aliis beneficiis\necclesiasticis que obtines ac in futurum obtinendis reservando.\nfructus redditus et proventus canonicatus et prebende\necclesie Augustensis per spectantis prout circa officium in eadem",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 14041,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2793,
+    "lines": 41,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 67.12,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0007,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:00:41+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol7_0213_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol7_0213_R.jpg",
+      "bytes": 2543163,
+      "sha256": "faaef2b2137e4956056c0462119997ff159a913a0fe64f8e45d8334c6de713e4",
+      "sha256_of": "original",
+      "working_copy": "vol7_0213_R.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:00:41+00:00"
+  }
+}

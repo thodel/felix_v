@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol6_0220_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol6_0220_L.jpg",
+    "bytes": 2609870,
+    "sha256": "6237577de026cd4bdc6f2f50d416654c8a68c4739dd4fa8f12b40add1009e602",
+    "sha256_of": "original",
+    "working_copy": "vol6_0220_L.jpg"
+  },
+  "text": "extra muros Gebennenses Tertiodecimo kalendas julii Anno\na nativitate domini millesimoquadringentesimoquadragesimo\nquinto / pontificatus nostri Anno Quinto xx Jo de Zabbis\nFelix episcopus Dilectis filiis Abbati Monasterii Sancti E. Fabry\nMartini Lugdunensis diocesis et Decano dyensis ac Hemberto\nde Chiffreio Canonico Gebennensis ecclesie Salutem\netcetera / vite ac morum honestas etcetera pro quibus apud\nnos dilectus filius Claudius Belendir presbiter Lugdunensis\ndiocesis fidedigno comendatur testimonio nos etcetera ut circa defensionem\nlibenter inducit ut illa sibi favorabiliter etcetera opportuna mandatis etcetera prout\nCum itaque hodie Idem Claudius saniori assensu etcetera per pensione\net Stephani etcetera gratiis quibuscumque / Quocirca\ndiscretioni vestre per apostolica scripta mandamus quatenus\nvos vel duo aut unus vestrum per vos vel alium seu\nalios faciatis auctoritate predicta pensionem eidem prefato\nClaudio vel pro ipso procuratori memorato\niuxta huiusmodi resignationis constitutionis et assignationis conti-\nnentia atque formam effectualiter persolvi et de ea responderi\n/ Et nichilominus quolibet ex Amedeo et Successoribus\ncessante postquam huiusmodi Cessans requisitus vobis constiterit con-\nstituti quominus super hoc pro parte dicti Claudii fuerit\nrequisiti . tandem duobus sextinis diebus in excelse\ndomini maioris Julii populo constiterit quieverit / excommuni-\ncationis publice nuntietis faciatisque ab aliis nuntiari\net ab omnibus artius evitari . Donec Claudio vel\nprocuratori predicto de huiusmodi pensione seu portione tunc\nsibi debita fuerit integre satisfactum . Ceteraque provideatis ut\nab eadem Simili memoratum beneficium absolverint obtentu\nNon obstantibus omnibus supradictis / Seu si Amedeo vel\naliter ex Successoribus antedictis a sede predicta apostolica\nindultum quod ad solutionem seu prestationem alicuius\npensionis minime teneantur et ad id compelli aut quod\ninterdici etcetera non possint per litteras apostolicas non facientes\netcetera mentionem / Contradictores per censuram ecclesiasticam\nappellatione postposita compescendo / Datum apud Ripallarium\nextra muros Gebennenses Tertiodecimo kalendas julii Anno a\nnativitate domini millesimoquadringentesimoquadragesimo-\nquinto / pontificatus nostri Anno Quinto xxiiij Jo de Zabbis",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 9980,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2281,
+    "lines": 38,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 59.05,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0013,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:57:47+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol6_0220_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol6_0220_L.jpg",
+      "bytes": 2609870,
+      "sha256": "6237577de026cd4bdc6f2f50d416654c8a68c4739dd4fa8f12b40add1009e602",
+      "sha256_of": "original",
+      "working_copy": "vol6_0220_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:57:47+00:00"
+  }
+}

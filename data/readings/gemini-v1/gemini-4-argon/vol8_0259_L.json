@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol8_0259_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol8_0259_L.jpg",
+    "bytes": 2277993,
+    "sha256": "02cd3b2a0b60df6b1c0228530c62d4452086c749e1657c56c85cc5778dc1e398",
+    "sha256_of": "original",
+    "working_copy": "vol8_0259_L.jpg"
+  },
+  "text": "vel procuratorem suum eius nomine in corporalem pos\nsessionem canonicatus et prebende iuriumque et per\ntinenciarum predictorum et defendens inductum amoto\nexinde quolibet illicito detentore ac faciens ipsum Lau\nrencium vel dictum procuratorem pro eo ad pre\nbendam huiusmodi in canonicum recipi et in fratrem stallo\nsibi in choro et loco in capitulo ipsius ecclesie cum\ndicti iuris plenitudine assignatis sibique de ipsorum\ncanonicatus et prebende fructibus redditibus\nproventibus iuribus et obvencionibus uni\nversis integre responderi contradictores auctoritate nostra\ncompescendo Non obstantibus felicis recordacionis\nBonifacii pape octavi predecessoris nostri ac aliis\napostolicis constitucionibus necnon dicte ecclesie eciam\niuramento confirmacione apostolica vel alia quavis\nauctoritate firmitate roboratis statutis et consuetudi\nnibus contrariis quibuscumque Aut si aliqui\napostolica vel alia quavis auctoritate in dicta ecclesia\nin canonicos sint recepti vel ut recipiantur\ninsistant Seu si super provisionibus sibi fa\nciendis de canonicatibus et prebendis dicte\necclesie speciales vel aliis beneficiis ecclesiasticis\nin illis partibus generales predicte sedis vel\nlegatorum eius litteras impetrarint eciam si\nper eas ad inhibicionem etcetera sit processum\nquibus omnibus prefatum Laurencium in dictorum\ncanonicatus et prebende assecucione volumus\nanteferri sed nullum per hoc eis quo ad asse\ncucionem canonicatuum et prebendarum huiusmodi\nseu beneficiorum aliorum preiudicium generari\nSeu si venerabili fratri nostro episcopo et dilectis\nfiliis capitulo Montisregalis vel quibusvis aliis\ncommuniter vel divisim ab eadem sit sede indultum\nquod ad recepcionem vel provisionem alicuius\nminime teneantur et ad id compelli etcetera non possint",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 13038,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 1745,
+    "lines": 35,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 48.89,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0011,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:34:53+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol8_0259_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol8_0259_L.jpg",
+      "bytes": 2277993,
+      "sha256": "02cd3b2a0b60df6b1c0228530c62d4452086c749e1657c56c85cc5778dc1e398",
+      "sha256_of": "original",
+      "working_copy": "vol8_0259_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:34:53+00:00"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol1_0053_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol1_0053_R.jpg",
+    "bytes": 2691325,
+    "sha256": "9bca94aaa9584b0c7c058a013652d6c5e858e615572b1481f1c2774aaf825595",
+    "sha256_of": "original",
+    "working_copy": "vol1_0053_R.jpg"
+  },
+  "text": "Felix episcopus etc. Dilectis filiis vicedomino ecclesie Remensis et Bellicensi\nac Gebennensi officialibus Salutem etc. Vite ac morum honestas aliaque lau\ndabilia probitatis et virtutum merita super quibus dilectus filius\nGuillermus de Biauna rector parrochialis ecclesie Euogiarum Bellicensis\ndiocesis apud nos fidedigno commendatur testimonio nos inducunt ut sibi\nreddamur ad gratiam liberales Exhibita siquidem nobis nuper pro parte\ndicti Guillermi peticio continebat quod dicta parrochiali ecclesia tunc per liberam\nresignacionem dilecti filii Petri Glagerii presbiteri de illa quam tunc obtinebat\nfactam in manibus Gabrielis Condulmario tunc Eugenii pape quarti nun\ncupati licet post eius ab administracione papatus per sacrosanctam synodum\nBasiliensem iuste factam suspensionem vacante dicta synodus resignacionem\nadmitti et de ecclesia huiusmodi dicto Guillermo provideri mandavit ipsaque\necclesia mandati huiusmodi collata eidem Guillermo et de ea provisum necnon\ndicto Petro pensio quadraginta librarum Turonensium parvorum annis\nsingulis super fructibus redditibus et proventibus dicte ecclesie reser\nvata dictusque Guillermus collacionis et provisionis sibi factarum\nhuiusmodi vigore eandem ecclesiam pacifice assecutus extitit Cum autem sicut\neadem peticio subiungebat dictus Guillermus dubitet collacionem et pro\nvisionem predictas ex certis causis iuribus non subsistere Nos volentes\nprefato Guillermo premissorum meritorum suorum intuitu gratiam facere specialem\ndiscrecioni vestre per apostolica scripta mandamus quatenus vos vel duo aut\nunus vestrum ecclesiam predictam cuius fructus redditus et proventus quinqua\nginta librarum Turonensium parvorum secundum communem extimacionem valorem annuum\nut ipse Guillermus asserit non excedunt sive ut premittitur sive alias quo\nvismodo aut ex alterius cuiuscumque persona seu per constitucionem felicis\nrecordacionis Johannis pape xxii predecessoris nostri que incipit Execra\nbilis vacet eciam si tanto tempore vacaverit quod eius collacio iuxta Late\nranensis statuta concilii ad sedem apostolicam legitime devoluta ipsaque ecclesia\ndisposicioni apostolice quomodolibet reservata existat et super ea inter\naliquos lis cuius statum presentibus haberi volumus pro expresso pendeat\nindecisa dummodo tempore date presencium non sit in ea alicui specialiter\nius quesitum cum omnibus iuribus et pertinenciis suis eidem Guillermo\nauctoritate nostra conferre et assignare curetis Inducentes per vos vel alium\nseu alios eundem Guillermum vel procuratorem suum eius nomine in corporalem\npossessionem ecclesie iuriumque et pertinenciarum predictorum et defendentes\ninductum amoto exinde quolibet illicito detentore ac facientes eidem\nGuillermo de ipsius ecclesie fructibus redditibus proventibus iuribus",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 25421,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2752,
+    "lines": 37,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 73.41,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0007,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:03:47+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol1_0053_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol1_0053_R.jpg",
+      "bytes": 2691325,
+      "sha256": "9bca94aaa9584b0c7c058a013652d6c5e858e615572b1481f1c2774aaf825595",
+      "sha256_of": "original",
+      "working_copy": "vol1_0053_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:03:47+00:00"
+  }
+}

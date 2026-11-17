@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol5_0169_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol5_0169_R.jpg",
+    "bytes": 2570169,
+    "sha256": "c67bc0baa4cff2ae9d7ed012f614e0d5561dafdfb281a42cfad7dfe9316de049",
+    "sha256_of": "original",
+    "working_copy": "vol5_0169_R.jpg"
+  },
+  "text": "inimiciciam conceperunt ad celebracionem officiorum eciam alia bone ad\nque ex fundacione et dotacione ecclesie et capelle huiusmodi minime\nnoscitur teneri astringere conantur in non modicum dicti oliuerii preiudicium\net grauamen / Quare pro parte ipsius oliuerii asserentis rectorem ecclesie\npro tempore existentem ad celebracionem officiorum in capella ex fundacione\net dotacione huiusmodi aut alias minime teneri nobis fuit humiliter supplicatum\nquatinus sibi et statui suo in premissis oportune prouidere de benignitate\napostolica dignaremur Nos igitur attendentes quod nullus inuitus ad\ndiuinorum officiorum celebracionem ad que de iure non obligatur\nastringi debet huiusmodi quoque supplicacionibus inclinati discrecioni vestre\nper apostolica scripta mandamus quatinus vos uel alter vestrum vocatis dictis parrochi-\nanis aliisque qui fuerint euocandi de premissis omnibus et singulis ac eorum\ncirconstanciis vniuersis vos auctoritate nostra diligenter informetis et si\nper informacionem huiusmodi rectorem ecclesie qui pro tempore fuerit ex fundacione\net dotacione aut alias ad celebracionem officiorum in capella huiusmodi\nnon teneri reppereritis dictum oliuerium ad vlteriora missarum\net aliorum diuinorum officiorum onera preterquam ad que ex fundacione\net dotacione huiusmodi aut alias de iure astringitur minime teneri\nnec ad illa per parrochianos prefatos aut quoscunque alios compelli posse\nseu eciam debere denuncietis et declaretis auctoritate prelibata prout\nde iure fuerit faciendum / non permittentes eundem oliuerium per quoscunque\neciam quauis auctoritate prefulgentes super premissis molestari seu de cetero\ninquietari Contradictores per censuram ecclesiasticam etcetera compescendo\nNon obstantibus supradictis necnon priuilegiis quibuscunque Aut si\nparrochianis prefatis seu quibusuis aliis ab apostolica sit sede indultum\nquod interdici suspendi uel excommunicari non possit per litteras apostolicas non\nfacientes etcetera mencionem Datum lausanne decimoseptimo kalendas\nJunii Anno a natiuitate domini millesimo quadringentesimo\nquadragesimo quarto pontificatus nostri anno quarto xx Jo de abbate\nFelix episcopus etcetera dilecto filio officiali gebennensi Salutem etcetera cura beneficiorum Jo . luuiniaci\nquorumlibet presertim curam animarum habencium necnon valitudinariarum personarum\nin illis diuinis laudibus deditarum status per nos salubriter est dirigendum\nsupreme digitis potencie ad hoc sollicitudinis plenitudine nostris exigentibus\nper que beneficiis salubris prouisio aliisque ecclesiasticis personis ipsis debiti respondeant\nsustentacio conueniens pariterque susceptibili Siquidem nuper oblata pro parte dilecti filii\nnicolai de ponte rectoris parrochialis ecclesie sancti victoris extra muros gebennenses peticio\ncontinebat quod fructus redditus et prouentus dicte parrochialis ecclesie sancti victoris ex eo\nmaxime quia prior et conuentus dicti prioratus prope decimas oblaciones et\ngrossos fructus eiusdem ecclesie sancti victoris ex antiqui tempore hactenus percipere consue-\nuerunt adeo tenues et exiles existunt quod rector sepedictam eiusdem\necclesie sancti victoris pro tempore qui diuina officia celebrare et ecclesiastica sacramenta\ninibi ministrare necnon episcopalia iura soluere ac alia sibi incumbencia onera\nsupportare tenetur ex ipsis fructibus qui valorem duodecim librarum turonensium paruorum\nsecundum communem extimacionem ut ipse rector asserit non excedunt statum suum tenere\ndecet honeste minime tenere potest / quodque sicut prefatus nicolaus asserit infra\ngebennensem diocesim vix octo parrochianos ut dicitur duntaxat habens in qua et licet\ncampestralis rectoratus sub vna monarchia dicti prioratus dicta ecclesia beate marie\nregi consueuit licet eciam prior et conuentus prioratus eiusdem sancti victoris ordinis\ncluniacensis predictos grossos fructus dicte ecclesie beate marie percipere consueuerunt",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 20149,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3865,
+    "lines": 49,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 77.9,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0005,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:21:38+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol5_0169_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol5_0169_R.jpg",
+      "bytes": 2570169,
+      "sha256": "c67bc0baa4cff2ae9d7ed012f614e0d5561dafdfb281a42cfad7dfe9316de049",
+      "sha256_of": "original",
+      "working_copy": "vol5_0169_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:21:38+00:00"
+  }
+}

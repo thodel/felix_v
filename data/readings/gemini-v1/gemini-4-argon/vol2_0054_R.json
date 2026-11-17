@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol2_0054_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol2_0054_R.jpg",
+    "bytes": 2496238,
+    "sha256": "75bdc567d73272f5bbbb755b2c6645bb55745e808021c568d8309c8aefb7d17b",
+    "sha256_of": "original",
+    "working_copy": "vol2_0054_R.jpg"
+  },
+  "text": "persoluenda constituere assignare et reseruare auctoritate predicta\nprocures Inducens per te uel alium seu alios eundem Petrum uel\nprocuratorem suum eius nomine in corporalem possessionem ecclesie iuriumque\net pertinenciarum predictorum et defendens inductum amoto exinde\nquolibet illicito detentore faciensque faciens ipsi Petro de fructibus redditibus\nprouentibus et obuencionibus uniuersis necnon eidem Johanni de pensione\npredicta iuxta constitucionis assignacionis et reseruacionis predictarum\ntenorem integre responderi Contradictores etcetera compescendo\nNon obstantibus pie memorie Bonifacii pape VIII eciam predecessoris\nnostri et aliis apostolicis constitucionibus contrariis quibuscunque Seu si aliqui\nsuper prouisionibus sibi faciendis de huiusmodi uel aliis beneficiis\necclesiasticis in illis partibus speciales uel generales dicte sedis\nuel legatorum eius litteras impetrarint eciam si per eas ad inhibi\ncionem reseruacionem uel decretum aut alias quomodolibet sit processum\nquibus omnibus prefatum Petrum in assecucione dicte parrochialis ecclesie uolumus\nanteferri sed nullum per hoc eis quo ad assecucionem parrochialium ecclesiarum\naut beneficiorum aliorum preiudicium generari Aut si venerabili fratri\nArchiepiscopo Tharentasiensi pro tempore existenti uel quibusuis\naliis communiter uel diuisim a prefata sit sede indultum quod\nad recepcionem uel prouisionem alicuius minime teneantur et ad id\ncompelli aut quod interdici etcetera non possint quodque de huiusmodi uel\naliis beneficiis ecclesiasticis ad eorum collacionem prouisionem presentacionem\nseu quamuis aliam disposicionem coniunctim uel separatim\nspectantibus nulli valeat prouideri per litteras apostolicas etcetera\nmencionem et qualibet alia dicte sedis indulgencia generali etcetera\ntenores existat per quam presentibus etcetera effectus earum etcetera et de qua\netcetera mencio specialis Seu quod dictus Petrus ut asserit\nperpetuam vicariam in dicta ecclesia sine cura cuius fructus\nredditus et prouentus Quinque librarum Turonensium paruorum\nsecundum communem predictam va. an. non excedunt noscitur obtinere\nVolumus autem quod quamprimum ipse dictam ecclesiam fuerit\nvigore presencium pacifice assecutus prefatam vicariam quam\nextunc vacare decernimus omnino prout ad id se sponte obtulit\ndimittere teneatur Et insuper si ad hoc repertus fuerit\nydoneus ut prefertur exnunc proinde irritum decernimus\net inane si secus super hiis a quoquam quauis auctoritate scienter uel ignoranter\ncontigerit attemptari ac si die date presencium eidem Petro\nad hoc reperto ydoneo de dicta ecclesia cum interposicione decreti\nprouideri mandauissemus Datum Basilee pridie Nonas Aprilis\nAnno a Natiuitate domini Millesimoquadringentesimoquadra\ngesimoprimo Pontificatus nostri Anno primo xli T\nEpiscopus Dunkeldensis 2",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 17135,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2782,
+    "lines": 42,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 65.26,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0011,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:07:19+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol2_0054_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol2_0054_R.jpg",
+      "bytes": 2496238,
+      "sha256": "75bdc567d73272f5bbbb755b2c6645bb55745e808021c568d8309c8aefb7d17b",
+      "sha256_of": "original",
+      "working_copy": "vol2_0054_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:07:19+00:00"
+  }
+}

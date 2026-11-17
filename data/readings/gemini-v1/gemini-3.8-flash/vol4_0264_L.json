@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol4_0264_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol4_0264_L.jpg",
+    "bytes": 1678383,
+    "sha256": "0eb621f5d1699fc83e330571932c72b2a40009bc4ed69a61d962aad513709a32",
+    "sha256_of": "original",
+    "working_copy": "vol4_0264_L.jpg"
+  },
+  "text": "per alium vel alios collationi nostre pertineat huiusmodi eorum\nsuccessoribus duntaxat apostolicis reservationibus dumtaxat exceptis\ninhibentes eidem preposito ne de beneficiis huiusmodi\ninterim ante receptionem eorundem nisi postquam de\nipsis etcetera petiverint et primo petenti illud voluerit etcetera\nacceptare diffinitive pronunciando preferantur et decernentes\nexnunc irritum etcetera contigerit attemptari Non obstantibus\nstatutis et consuetudinibus ecclesie et ordinis predictorum eciam\njuramento confirmatione apostolica seu quavis alia firmitate\nillis roboratis Quodque quibuscunque aliis si dictis preposito vel\nprepositis aliqui vere est dimissis fuerit per sedem apostolicam indultum\nquod ad receptionem etcetera teneantur et ad receptionem etcetera non possint\nipsique de huiusmodi vel aliis personis ecclesie vel diocesis collationis\net provisionis etcetera provideat solum ipsius etcetera et revocandum et quibus\naliis dicte sedis indulgentia etcetera quascunque per quas etcetera sed fiat\nhuiusmodi gratia etcetera differentia et de juribus etcetera merito specialem\ndiligenti et canonice et communiter canonicatum et canonicalem portionem\nac thesaurariam in ecclesia canonicorum dicte Bellicensis\nque inibi simplex officium licet ratione temporis beneficia\nfuerit curata dumtaxat non tamen quarum una cognito magistratus\nobtinere noscitur deinde ipsarum collationem ordinaria vel\npenes omnem cum canonicatu dicte ordinis gubernandi\nconservetur dicta se canonicatibus pertinet degentium personis\nadmitti fore vel officium foret demente ad illud non consuevisset\npenes per electionem officium ad collationem personam petere. Quam\nfaciente etiam dispositionem deliberavit fieri prepositi et\nconventus monasterii Sancti Nicolai et Bernardi\nitineris dicti ecclesie Bellicensis clero per prepositum\nsoliti gubernare te retinere dicto archipresbytero per militie\net ipsius dicti monasterii canonicis inter premissa\nmagis canonica polletis consuetudine tibi in vincenda\nquod alterius terre juri reservando vel ut reservati beneficium\nhuiusmodi si illud vacet tenax vigore afficietur debere\ncanonicatum et canonicalem portionem et thesaurariam\net annexam predictas in vincenda quandam certam retributionem\nlibere et licite valeres et perpetue sede de presentia",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 10817,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2269,
+    "lines": 36,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 62.06,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0009,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:52:32+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol4_0264_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol4_0264_L.jpg",
+      "bytes": 1678383,
+      "sha256": "0eb621f5d1699fc83e330571932c72b2a40009bc4ed69a61d962aad513709a32",
+      "sha256_of": "original",
+      "working_copy": "vol4_0264_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:52:32+00:00"
+  }
+}

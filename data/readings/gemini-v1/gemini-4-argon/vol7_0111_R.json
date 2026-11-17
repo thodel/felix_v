@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol7_0111_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol7_0111_R.jpg",
+    "bytes": 2702531,
+    "sha256": "88302edd6c0bec7601fb75813dd30ae21b8dc47f8400fe46554cdbf750dc3c45",
+    "sha256_of": "original",
+    "working_copy": "vol7_0111_R.jpg"
+  },
+  "text": "iter ab eodem Francisco vel procuratore suo ad hoc ab eo specialiter constituto re\nsignationem huiusmodi si eam in tuis manibus facere voluerit ut prefertur auctoritate nostra\nhac vice dumtaxat recipias et admittas eaque per te recepta et admissa\necclesias predictas quarum fructus redditus et proventus Duodecim librarum Turonensium\nparvorum secundum communem extimationem valorem annuum ut idem Johannes similiter asserit non excedunt\ncum illas per huiusmodi vacare contigerit etiamsi de actu post similem dicti Fran\ncisci vel alterius alicuius de illis extra Romanam curiam etiam coram notario\npublico et testibus factam resignationem seu constitutionem felicis recor\ndationis Johannis pape xxii predecessoris nostri que incipit Execrabilis\nvel alio quovis modo preterquam per dicti Francisci obitum vacent et tanto tem\npore vacaverint quod illarum collatio iuxta Lateranensis statuta concilii ad sedem\napostolicam legitime devoluta ipseque ecclesie dispositioni apostolice quolibet reser\nvate existant et super eis inter aliquos lis cuius statum presentibus haberi vo\nlumus pro expresso pendeat indecisa dummodo tempore date presentium non\nsit in eis alicui specialiter ius quesitum cum omnibus iuribus et pertinentiis suis\neidem Johanni auctoritate eadem conferas et assignes Inducens per te vel alium\nseu alios eundem Johannem vel procuratorem suum eius nomine in corporalem posses\nsionem ecclesiarum iuriumque et pertinentiarum predictorum et defendens inductum\namoto exinde quolibet illicito detentore ac faciendo eidem Johanni de ipsarum\necclesiarum fructibus redditibus proventibus iuribus et obventionibus universis integre responderi\nContradictores auctoritate nostra etcetera compescendo Non obstantibus pie memorie Bo\nnifacii pape viii etiam predecessoris nostri ac aliis apostolicis constitutionibus contra\nriis quibuscumque Aut si aliqui super provisionibus sibi faciendis de huiusmodi\nspeciales vel aliis beneficiis ecclesiasticis in illis partibus generales dicte sedis\nvel legatorum eius litteras impetrarint etiamsi per eas ad inhibitionem etcetera sit\nprocessum quibus omnibus eundem Johannem in assecutione dictarum ecclesiarum volumus\nanteferri sed nullum per hoc eis quo ad assecutionem beneficiorum aliorum preiudi\ncium generari Seu si venerabili fratri nostro Episcopo Gracionopolitano vel quibusvis\naliis communiter vel divisim ab eadem sede indultum existat quod ad recep\ntionem etcetera minime teneantur et ad id compelli aut quod etcetera non possint quodque de\nhuiusmodi vel aliis beneficiis ecclesiasticis ad eorum collationem etcetera spectantibus nulli\nvaleat provideri per litteras apostolicas non facientes etcetera mentionem et qualibet alia\ndicte sedis indulgentia etcetera existat per quam etcetera effectus earum impediri etcetera\nvel differri et de qua cuiusque etcetera specialis Ceterum cum non sit verisimile\nquod quis sua beneficia multis forsan laboribus acquisita de quibus vite sub\nsidium percipit absque magna causa sponte resignet attente provideas\nne in resignatione huiusmodi si fiat ex parte Francisci et Johannis pre\ndictorum aliqua pravitas interveniat seu etiam corruptela Nos enim exnunc\nirritum decernimus etcetera attemptari Datum apud Sanctum dominum extra muros\nGebennenses Quartodecimo kalendas Marcii Anno a nativitate domini Millesimo qua\ndringentesimo quadragesimo septimo Pontificatus nostri anno Septimo\nxxxii pro M Pontii",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 13226,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3389,
+    "lines": 42,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 79.71,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0009,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:30:26+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol7_0111_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol7_0111_R.jpg",
+      "bytes": 2702531,
+      "sha256": "88302edd6c0bec7601fb75813dd30ae21b8dc47f8400fe46554cdbf750dc3c45",
+      "sha256_of": "original",
+      "working_copy": "vol7_0111_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:30:26+00:00"
+  }
+}

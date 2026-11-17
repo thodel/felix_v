@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol6_0013_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol6_0013_R.jpg",
+    "bytes": 2388347,
+    "sha256": "1b3d215604e207b6d8754627ff877965bce6c1421b865a7aa82d35858c109377",
+    "sha256_of": "original",
+    "working_copy": "vol6_0013_R.jpg"
+  },
+  "text": "huiusmodi cum omnibus juribus et pertinentiis suis ac aliis sub certis modo et forma per\nalias nostras litteras cum decreto irritante reservavimus certis tibi super hoc execu-\ntoribus deputatis prout in ipsis litteris quarum vigore aliqua beneficia ut accepimus\nacceptasti ac de eis tibi provideri fecisti plenius continetur. Cupientes igitur\nut dicte littere suum quatenus fieri poterit effectum sortiri possint litteras ipsas et processus\nhabitos per easdem ad collationem provisionem presentationem seu quamvis aliam\ndispositionem dilectorum filiorum abbatis et conventus monasterii sancti Theofredi in val-\nlania dicti ordinis Aniciensis diocesis auctoritate apostolica extendentes volumus et eadem\ntibi auctoritate concedimus quod tu beneficium seu beneficia ad dictorum abbatis et conventus\nmonasterii sancti Theofredi spectantia et pertinentia intra predictam et illarum\nprocessuum huiusmodi quem petendi litterarum vigore alias iuxta eorundem priorum litterarum et\nprocessuum forma et tenore acceptare valeas ipsique executores ac per\neos deputati subexecutores de illo vel illis tibi providere possint et debeant\nin omnibus et per omnia perinde ac si per easdem priores litteras beneficium seu benefi-\ncia ad collationem provisionem presentationem seu quamvis aliam dispositionem abbatis et\nconventus monasterii sancti Theofredi predictorum pertinentes vel pertinentia cum impositione\ndecreti duxissemus specialiter reservandum seu reservanda fore minime quod va-\nlor fructuum acceptatorum et acceptandorum beneficiorum summam predictam non excedat\nNon obstantibus constitutionibus apostolicis necnon monasterii sancti Theofredi et ordinis\npredictorum etiam juramento confirmatione apostolica vel quavis alia firmitate robora-\ntis ac omnibus illis que in prioribus prefatis litteris non obstare voluimus ceterisque contrariis\nquibuscumque. Nulli ergo etc. pagine nostre extensionis voluntatis et concessionis\ninfringere etc. contrarie. Siquis autem etc. Datum apud Sanctum dominicum\nextra muros Gebennen. Tertio kalendas martii anno a nativitate domini millesimo qua-\ndringentesimo quadragesimo quinto pontificatus nostri anno sexto. Gratuit. pro deo\nPlacuit officiali Jo. de Abbacia\n\nFelix episcopus etc. Dilecto filio abbati monasterii Chaburii Taurinensis diocesis Salutem etc. Jo. Berardi\nJustis supplicum votis illis presertim que ecclesiarum et monasteriorum quorumlibet ac circa\npresidatus et degerens personarum statum et debitam intendunt conservationem necnon\ndivini cultus continuationem et augmentum respiciunt libenter annuimus eaque\nfavoribus prosequimur opportunis. Dudum siquidem monasterium monialium beate\nmarie de Carmagnola ordinis sancti Benedicti Astensis diocesis quod tunc per abbatissam\nregebatur in monasterium virorum eiusdem ordinis motu proprio non ad alicuius\nsuper hoc nobis oblate petitionis instantiam sed de mera nostra liberalitate et\nex certis rationabilibus causis commutantes de persona dilecti filii Aymoneti\nde Primano tunc professi professore Vigani dicti ordinis Taurinensis dioce-\nsis de monasterio de Benha feriymon sancti Romani ecclesie Cardinalis con-\nsilio et assensu per alias nostras litteras providimus ipsumque illi prefecimus in abba-\ntem curam regimen et administrationem illius in spiritualibus et temporalibus ple-\nnarie committendo ac volumus inter cetera quod ipse Aymonetus et pro tempore\nexistens abbas eiusdem monasterii dilectis in christo filiabus abbatisse et mo-\nnialibus que tempore commutationis nostre huiusmodi supersustentabant victui et vestitui in\neodem monasterio quoad vixerint necessaria ministrare teneretur prout in eisdem\nlitteris plenius continetur. Verum sicut exhibita nobis nuper pro parte dicti\nAymoneti abbatis petitio continebat monasterium ipsum propter dilapidationes\nultime et aliarum abbatissarum que ibidem prefuerunt ac quibus alique integre curtem\nmeleya et bona ad mensam abbatialem pertinentia capellam sancti Georgii\nde Villari prope Carmagnolam prioratum de Postummerino rurale petunt\nnuncupatum sancti Laurentii de Cabillariominori necnon beate marie de Cabal-",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 14725,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 4066,
+    "lines": 49,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 81.98,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0005,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:56:11+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol6_0013_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol6_0013_R.jpg",
+      "bytes": 2388347,
+      "sha256": "1b3d215604e207b6d8754627ff877965bce6c1421b865a7aa82d35858c109377",
+      "sha256_of": "original",
+      "working_copy": "vol6_0013_R.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:56:11+00:00"
+  }
+}

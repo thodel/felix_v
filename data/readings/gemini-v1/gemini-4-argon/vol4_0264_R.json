@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol4_0264_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol4_0264_R.jpg",
+    "bytes": 2172608,
+    "sha256": "1b5cb82053c7564717fe08f30ad9bb40de8e005e7a85d32d9a1ae6c8d919c2a8",
+    "sha256_of": "original",
+    "working_copy": "vol4_0264_R.jpg"
+  },
+  "text": "ecclesie sancti Gratiani Vercellensis dicti ordinis que conventualis\nnon est et ad que consuevit per electionem assumi\ncuiusque cura eciam imminet anmimarum ac cuius duntaxat librarum\nsimilium fructus redditus et proventus si communi extimacione annua\nnon excedunt sive ex eo modo vacet sive vacaturum\nprovideat concessimus Nos enim tibi ut preposituram et unum\nex reservatis beneficiis huiusmodi postquam interim assequaris\nrecipere et in commendam per biennium thesaurariam et\ncanonicatum predictam prebendamque in commendam retinere\nac debitis supportatis oneribus de residuis fructibus\ncommendatorum beneficiorum immobilium et preciosorum mobilium\nbonorum tibi penitus interdicta generalis concilii ac\naliis apostolicis necnon ecclesiarum Vercellensis et sancti Gratiani\nac monasteriorum et ordinis predictorum eciam iuramento\nconfirmacione apostolica vel alia quavis firmitate roboratis\nstatutis et consuetudinibus ceterisque contrariis nequaquam obstantibus\nsimili auctoritate de uberioris dono gracie tenore presencium\nindulgemus proviso quod propter commendam huiusmodi divinus\ncultus et solitus personarum numerus in commendatis\nbeneficiis predictis nullatenus minuatur nec illa\nalias in spiritualibus vel temporalibus detrimenta paciantur\nsed illorum onera debita supportentur congrue Volumus\nautem quod quamprimum aliquod ex reservatis beneficiis per\nfuerit vigore litterarum nostrarum assecutus alie littere\nquoad aliud reservatum beneficium huiusmodi sint casse et\nirrite nulliusque roboris vel momenti Nulli ergo etc\nnostre reservacionis inhibicionis constitucionis concessionis et\net voluntatis infringere etc Si quis autem etc incursurum\nDatum Gebennis kalendas octobris anno a nativitate domini\nmillesimoquadringentesimoquadragesimotercio\npontificatus nostri anno quarto X Jo Or Abbas\nSimili modo Venerabili fratri Episcopo Augustensi et dilectis filiis\nAbbati Monasterii sancti Mauricii Agaunensis Sedunensis diocesis\net Georgio de Canalibus Canonico ecclesie Lausannensis Salutem etc",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 13080,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2002,
+    "lines": 34,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 57.91,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.001,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:17:22+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol4_0264_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol4_0264_R.jpg",
+      "bytes": 2172608,
+      "sha256": "1b5cb82053c7564717fe08f30ad9bb40de8e005e7a85d32d9a1ae6c8d919c2a8",
+      "sha256_of": "original",
+      "working_copy": "vol4_0264_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:17:22+00:00"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol6_0253_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol6_0253_R.jpg",
+    "bytes": 2832396,
+    "sha256": "0622acf31977d2484648426eb9fc04aaa8a6bf772cdccfcfb8bd321fadf7ec3c",
+    "sha256_of": "original",
+    "working_copy": "vol6_0253_R.jpg"
+  },
+  "text": "sed nullus per hoc eis quo ad assecucionem beneficiorum\naliorum preiudicium generari Seu si venerabili fratri\nnostro episcopo Gebennensi lausannensi vel quibusvis aliis\nconiunctim vel divisim a dicta sit sede indultum\nquod ad recepcionem vel provisionem alicuius minime\nteneantur et ad id compelli aut quod interdici sus\npendi vel excommunicari non possint quodque de huiusmodi vel\naliis beneficiis ecclesiasticis ad eorum collacionem pro\nvisionem presentacionem ac spectantibus nulli valeat provideri\nper litteras apostolicas non facientes plenam et expressam ac\nde verbo ad verbum de indulto huiusmodi mencionem\net qualibet alia dicte sedis indulgencia ac epistula\nper quam presentibus non expressam ac effectus\nhuiusmodi gracie impediri valeat quomodolibet vel differri\net de qua cuiusque toto tenore habenda sit specialis\nAut quod ipse Johannes doceri ut similiter asserit dudum\nde capellania ad altare sancte Catherine situm in\necclesia Gebennensi cuius fructus redditus et proventus\ndecem librarum similium secundum exstimacionem predictam\nvalorem annuum non excedunt tunc certo modo vacante\nsuper qua litigat fuit auctoritate nostra per quondam\nprovideri mandavimus quoque beneficium ecclesiasticum cum\ncura vel sine cura ad dilectorum filiorum quatuor cano\nnicorum capelle beati Nicolay site in domo episcopali lau\nsannensi collacionem provisionem presentacionem seu quamvis\naliam disposicionem coniunctim vel divisim pertinens\nper quasdam alias litteras iuxta ritum generalis\nBasiliensis sinodi concilii noscitur exspectare Nos\nenim exnunc irritum decernimus et inane ac attemptatum\nDatum apud sanctum Victorem extra muros Gebennenses\nQuartodecimo kalendas Marcii Anno a nativitate domini\nMillesimoquadringentesimoquadragesimoquinto pon\ntificatus nostri anno Quinto Gorchiszheim xiij xj\nv Idus Octobris poncz\nFelix episcopus etc Dilecto filio officiali Auriensi Salutem etc\nDignum arbitramur et congruum ut illis se reddat\nsedes apostolica graciosam quibus ad id propria virtutum",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 15050,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 1988,
+    "lines": 37,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 52.76,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.001,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:27:47+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol6_0253_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol6_0253_R.jpg",
+      "bytes": 2832396,
+      "sha256": "0622acf31977d2484648426eb9fc04aaa8a6bf772cdccfcfb8bd321fadf7ec3c",
+      "sha256_of": "original",
+      "working_copy": "vol6_0253_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:27:47+00:00"
+  }
+}

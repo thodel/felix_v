@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol4_0135_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol4_0135_R.jpg",
+    "bytes": 2064263,
+    "sha256": "9d757dbf8271c778602476cba4d7e9447a8690dbc7ed5d4496ab7536866250c7",
+    "sha256_of": "original",
+    "working_copy": "vol4_0135_R.jpg"
+  },
+  "text": "omnibus prefatum franciscum in dicti prioratus sancti pauli assecucione volumus\nanteferri sed nullum per hoc eis quo ad assecucionem prioratuum aut beneficiorum\naliorum preiudicium generari Seu si venerabili fratri nostro Episcopo Gebennensi vel qui\nbusvis aliis communiter vel divisim a dicta sit sede indultum quod ad recepcionem vel\nprovisionem etc minime teneantur et ad id compelli aut quod interdici etc non possit quodque de\nprioratibus vel aliis beneficiis ecclesiasticis huiusmodi ad eorum collacionem provisionem etc spectantibus\nnulli valeat provideri per litteras apostolicas non facientes mencionem et qualibet\nalia dicte sedis indulgencia etc existat per quam etc effectus huiusmodi gracie etc\nvel differri et de qua cuiusque etc specialis Aut quod prefatus franciscus ut similiter\nasserit capellania ad altare sancti Antonii in ecclesia dicti prioratus sancti mar\ntini sitam cuius fructus redditus et proventus quatuor librarum similium secundum extimacionem\npredictam va an non excedunt noscitur obtinere Volumus autem quod ipse franciscus\nquamprimum dicti prioratus sancti pauli possessionem fuerit pacificam assecutus capella\nniam prefatam quam extunc vacare decernimus omnino dimittere teneatur Et insuper\nexnunc irritum decernimus et inane etc attemptari Datum lausanne decimonono kalendas\nSeptembris Anno a nativitate domini millesimo quadringentesimo quadragesimo\ntercio pontificatus nostri anno Quarto xl Io de abbaes\nFelix episcopus etc dilectis filiis Savilliani et sancti Constantii Taurinensis diocesis\nmonasteriorum abbatibus ac preposito ecclesie Taurinensis Salutem etc honestis supplicum\nvotis illis presertim per que scandalis obviari possit libenter annuimus eaque\nfavoribus prosequimur oportunis Dudum siquidem dilecto filio Iohanni de\nBroczio monacho olim abba abbati monasterii sancti dalmacii or\ndinis sancti Benedicti Montisregalis diocesis nostras litteras concessimus teno\nrem qui sequitur continentes Felix episcopus servus servorum dei venerabilibus fratribus\nTaurinensi et vercellensi episcopis et dilecto filio abbati monasterii beati petri de\nde Saviliano Taurinensis diocesis Salutem et apostolicam benedictionem Apostolice sedis circum\nspecta benignitas recurrentibus ad eam cum humilitate filiis post excessum\nlibenter propicia se exhibet et benignam ad ea quoque libenter intendit\nper que singulis presertim sacre religioni deditis ne detrimenta sustineant\nsalubriter provideatur eorum quoque prout qualitas temporum exigit necessi\ntatibus consulatur Dudum siquidem sacrosancta generalis synodus Basiliensis\nGabrielem de condulmario tunc Eugenium papam quartum manifeste contumacem\net in aperta rebellione persistentem ac notorie incorrigibilem et ecclesiam\ndei scandalizantem ab omni administracione papatus in spiritualibus et temporalibus suspen\ndit et suspendisse omnemque ipsius papatus administracionem in hiis omnibus\nque in spiritualibus et temporalibus ad solum papam et sedem apostolicam de iure pertine\nnoscuntur eadem synodus ad seipsam devolutam esse decrevit et declaravit\nnecnon quibusvis ecclesiasticis personis quacumque dignitate eciam si cardinalatus pa\ntriarchali aut pontificali prefulgerent sub penis quas ipso facto incurrerent\nexcommunicacionis et suspensionis ab omnibus dignitatibus beneficiis et officiis quocum\nque nomine nuncuparentur eciam si forent metropolitani aut cathedrales ecclesie\nque in titulum sive commendam obtinerent ut suspensione huiusmodi durante dicto Ga\nbrieli olim Eugenio nullatenus obedirent sed ad dictam synodum in omnibus re\ncurreret pro quibus ad Romanum pontificem recurri est solitum cum districtione precepit\net mandavit Postmodum vero sicut exhibita nobis pro parte Iohannis de\nBroczio abbatis monasterii sancti dalmacii ordinis sancti Benedicti Mon\ntisregalis diocesis peticio continebat prefatus abbas ex certis tunc expressis\nac aliis racionabilibus causis animum suum moventibus regimini et administracioni",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 17093,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3918,
+    "lines": 48,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 80.65,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0005,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:15:39+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol4_0135_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol4_0135_R.jpg",
+      "bytes": 2064263,
+      "sha256": "9d757dbf8271c778602476cba4d7e9447a8690dbc7ed5d4496ab7536866250c7",
+      "sha256_of": "original",
+      "working_copy": "vol4_0135_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:15:39+00:00"
+  }
+}

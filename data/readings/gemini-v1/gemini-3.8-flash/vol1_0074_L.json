@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol1_0074_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol1_0074_L.jpg",
+    "bytes": 2643930,
+    "sha256": "dbee23ba45f7a720d56b5cab63ae17f5c1405470486663a0324328b7b4e1018d",
+    "sha256_of": "original",
+    "working_copy": "vol1_0074_L.jpg"
+  },
+  "text": "valorem annuum non excedunt noscitur obtinere . Volumus autem quod ipse Petrus\nquamprimum possessionem dicte ecclesie parochialis fuerit vigore presentium\npacifice assecutus eamdem ecclesiam de Derver si illam meriti extiterit\nquasque ex tunc vacare decernimus dimittere alioquin liti et cause\nhuiusmodi ac omni iuri sibi in illa vel ad eam quomodolibet competenti cedere\nomnino teneatur Et insuper exnunc irritum decernimus et inane si secus attemp-\ntari Datum Basilee Tertio Idus Februarii Anno a nativitate domini\nmillesimoquadringentesimoquadragesimoprimo pontificatus nostri\nAnno primo . xxvi . El . Episcopus Grossetanus\nFelix Episcopus etcetera Universis christifidelibus presentes litteras inspecturis\nSalutem etcetera Ad regimen universalis ecclesie superna dispositione vo-\ncati ad ea sollicite considerationis ferre nos convenit intuitum\nper que fidelium inflamatur devotio animarum paratur salus ipsaque\necclesie nostre pehdolor variis calamitatibus afflicte tutiori pa-\nriter et maiori resultet Cupientes igitur illos qui dominum nostrum\nIhesum christum genitricem gloriosam atque reginam perpetuam ipsius-\nque domini nostri vicarium in terris singulari devotione veneran-\ntes sinceris et indefinentibus orationibus apud misericordiarum\npatrem insistunt ut sub summi pontificis regimine desiderabilis\nUnionis integritas pax in regibus et principibus concordia in\npopulis denique morum disciplina perseveret donis spiritualibus\nrefici gratiarum quibus transcurso huius incolatus curriculo pre-\nmia vite conplectantur eterne de omnipotentis dei misericor-\ndia et beatorum petri et pauli apostolorum eius ac universalis ecclesie auctoritate\nconfisi omnibus vere penitentibus et confessis sacerdotibus qui\nin singulis missis Et famulum tuum .N. papam nostrum quem pastorem\necclesie tue preesse voluisti unacum grege sibi commisso ab omni\nadversitate custodi per dominum nostrum Ihesum christum filium tuum\nIterum Omnipotens sempiterne deus qui gloriose virginis\nmatris corpus et animam ut dignum dilecti filii tui habitaculum\neffici mereretur cooperante spiritu sancto preparasti Da ut in cuius comme-\nmoratione letamur eius pia intercessione de instantibus malis\net a morte subitanea atque perpetua liberemur per eumdem christum\ndominum nostrum qui in unitate vivis et regnas deus per omnia secula\nseculorum . Collectas et antiphona Alma redemptoris mater que\npervia celi porta manens et stella maris succurre cadenti\nsurgere qui curat populo tu que genuisti natura mirante tuum\nsanctum genitorem virgo prius ac posterius Gabrielis ab ore\nsumens illud ave peccatorum miserere Versiculus . Ave maria gratia",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 10224,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2615,
+    "lines": 39,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 66.08,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0008,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:44:58+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol1_0074_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol1_0074_L.jpg",
+      "bytes": 2643930,
+      "sha256": "dbee23ba45f7a720d56b5cab63ae17f5c1405470486663a0324328b7b4e1018d",
+      "sha256_of": "original",
+      "working_copy": "vol1_0074_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:44:58+00:00"
+  }
+}

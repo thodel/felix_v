@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol7_0005_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol7_0005_L.jpg",
+    "bytes": 2787888,
+    "sha256": "8396f25da22837829d5702c1106eadc81bec15b21983818455693599e2ca01be",
+    "sha256_of": "original",
+    "working_copy": "vol7_0005_L.jpg"
+  },
+  "text": "per hoc eis quoad assecucionem canonicatuum et prebendarum aut beneficiorum aliorum preiu\ndicium generetur Seu si capitulo prefatis vel quibusvis aliis communiter vel divisim a sede apostolica\nindultum existat quod ad recepcionem etcetera minime teneantur et ad id compelli aut quod inter\ndici etcetera non possint quodque de huiusmodi canonicatibus et prebendis ad eorum collacionem spectan\ntibus nulli valeat provideri per litteras apostolicas non facientes etcetera mencionem et qualibet alia\ndicte sedis indulgencia etcetera existat per quam etcetera effectus earum etcetera vel differri et de\nqua cuiusque etcetera specialis Aut si ipse Guillermus presens non fuerit ad prestandum de obser\nvandis statutis et consuetudinibus supradictis solitum iuramentum dummodo in absencia\nsua per procuratorem ydoneum et cum ad ecclesiam ipsam Vercellensem accesserit corporaliter illud\nprestet Seu quod idem Guillermus ut similiter asserit parrochialem ecclesiam de Piriaco cuius\nfructus redditus et proventus duodecim librarum Turonensium parvorum secundum communem extimacionem va. an.\nnon excedunt noscitur obtinere pensionem quoque annuam Trigintaduorum sextariorum\ngrani cuius valor duodecim similes libras non excedit super fructibus ecclesie de\nOlzonengo dicte diocesis auctoritate apostolica sibi reservatam constitutam et assignatam\npercipit annuatim Nos enim si idem Guillermus ad hoc ydoneus fuerit repertus ut prefertur\nex nunc proinde irritum decernimus et inane etcetera acceptavit ac si die date presencium\nprebendam si que vacabat tunc vel cum vacaret quam dictus Guillermus acceptaret\nut prefertur conferendam eidem donacioni apostolice cum interposicione decreti duxisse\nmus specialiter reservandam Datum Gebennis Nono kalendas novembris anno a nativitate\ndomini millesimo quadringentesimo quadragesimo quarto pontificatus nostri anno Quinto.\nLXVIII Io. Abbas\nFelix episcopus etcetera Dilecto filio Iohanni Bonovini canonico ecclesie Maurianensis\nin Romana curia residenti Salutem etcetera Religionis zelus litterarum scientia vite ac morum\nhonestas aliaque etcetera merita super quibus dilectus filius Iohannes de Aureliaco\nprior prioratus de Morbosco ordinis Cluniacensis Lugdunensis diocesis decretorum\ndoctor apud nos fidedigno commendatur testimonio nos inducunt etcetera liberalem\nDudum siquidem generalis Synodus Basiliensis Gabrielem olim Eugenium\npapam quartum vocatum a papatu et romano pontificio suis culpis\net demeritis exigentibus fuisse et esse privatum declarando ipsumque ab eis amo\nvendo privando et abiciendo omnibus et singulis christifidelibus cuiuscumque digni\ntatis status vel condicionis existerent sub fautorie scismatis et heresis necnon\nprivacionis omnium dignitatum beneficiorum officiorum et honorum ecclesiasticorum et mun\ndanorum ac aliis iuris penis quas contrafacientes incurrere voluit ipso facto distric\ncius inhibuit ne deinceps eidem Gabrieli tanquam summo pontifici obedirent pa\nrerent vel intenderent aut eum quovismodo sustinerent seu consilium auxilium\nvel favorem sibi preberent prout in suo solemni super hoc edito decreto plenius\ncontinetur Postmodum vero sicut exhibita nobis nuper pro parte dicti Iohannis\npeticio continebat quidam Guillermus de Sancto Ieronimo camerarius prioratus\nNantuaci ordinis et diocesis predictorum in reprobum sensum datus ac proprie salutis in\nmemor nedum eidem Gabrieli tanquam summo pontifici publice obedivit ipsumque\nut talem recognovit sed eciam multis aliis quod eidem Gabrieli et suis successoribus\nobedire iurasse dicitur penas predictas in sue perdicionem anime dampnabiliter\nincurrendo Nos itaque attendentes quod secundum premissa dictus Guillermus officio\ncamerarie dicti prioratus Nantuaci quod obtinebat eo ipso fuit et est privatus\nipsumque officium per huiusmodi privacionem vacare noscitur ac eidem Iohanni premissorum\nmeritorum suorum intuitu ut statum suum decencius tenere valeat de alicuius subven\ncionis auxilio providere sibique specialem graciam facere volentes discrecioni tue\nper apostolica scripta mandamus quatinus vocatis dicto Guillermo ac aliis qui\nfuerint evocandi si premissa repereris veritate fulciri eundem Guillermum\ndicto officio fuisse et esse privatum auctoritate nostra declares ac ab illo amoveas re\naliter et cum effectu prout de iure et secundum dicti decreti tenorem fuerit faciendum",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 22040,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 4312,
+    "lines": 51,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 83.57,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0007,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:28:09+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol7_0005_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol7_0005_L.jpg",
+      "bytes": 2787888,
+      "sha256": "8396f25da22837829d5702c1106eadc81bec15b21983818455693599e2ca01be",
+      "sha256_of": "original",
+      "working_copy": "vol7_0005_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:28:09+00:00"
+  }
+}

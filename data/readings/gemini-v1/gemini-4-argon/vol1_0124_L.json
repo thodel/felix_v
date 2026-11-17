@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol1_0124_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol1_0124_L.jpg",
+    "bytes": 2579395,
+    "sha256": "2df9acd383502bd76da21cf1792e2f36d6253b60a7e722c065e42e7a8819e60c",
+    "sha256_of": "original",
+    "working_copy": "vol1_0124_L.jpg"
+  },
+  "text": "spiritualibus et temporalibus ac aliis rebus ad Abbatem Conventum\net monasteria prioratus preposituras membra beneficia et\npresidentes huiusmodi spectantibus multiplices molestias et iniurias\ninferunt et iacturas Quare dicti Abbas et Conventus\nnobis humiliter supplicarunt ut cum eisdem valde reddatur\ndifficile pro singulis querelis ad sedem apostolicam habere recursum\nprovidere super hoc ipsis paterna diligentia curaremus Nos\nigitur adversus occupatores detentores presumptores molesta-\ntores et iniuriatores huiusmodi illo volentes eisdem Abbati et\nConventui ac presidentibus remedio subvenire per quod ipsorum\ncompescatur temeritas et aliis aditus committendi similia\nprecludatur discretioni vestre per apostolica scripta mandamus quatenus vos\nvel duo aut vnus vestrum per vos vel alium seu alios eciam si sint\nextra loca in quibus deputati estis Conservatores et Iudices\nprefatis Abbati et Conventui et presidentibus efficacis defen-\nsionis presidio assistentes non permittatis eosdem super\nhiis et quibuslibet aliis bonis et iuribus ad Abbatem\nConventum monasteria prioratus preposituras membra\nbeneficia et presidentes huiusmodi spectantibus ab eisdem vel\nquibusvis aliis indebite molestari vel ab eisdem gravamina\nseu dampna vel iniurias irrogari facturi dictis Abbati Con-\nventui et presidentibus cum ab eis vel procuratoribus suis aut\neorum aliquo fueritis requisiti de predictis et aliis personis\nquibuslibet super restitutione huiusmodi Castrorum villarum terrarum\net aliorum locorum iuridictionum iurium et bonorum mobilium\net immobilium reddituum quoque et proventuum et aliorum quo-\nrumcumque bonorum necnon de quibuslibet molestiis iniuriis\natque dampnis presentibus et futuris in illis videlicet que\niudicialem requirunt indaginem summarie simpliciter et de plano\nsine strepitu et figura iudicii in aliis vero prout qualitas\neorum exegerit iusticie complementum occupatores seu detentores",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 11266,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 1907,
+    "lines": 31,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 60.55,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.001,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:05:25+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol1_0124_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol1_0124_L.jpg",
+      "bytes": 2579395,
+      "sha256": "2df9acd383502bd76da21cf1792e2f36d6253b60a7e722c065e42e7a8819e60c",
+      "sha256_of": "original",
+      "working_copy": "vol1_0124_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:05:25+00:00"
+  }
+}

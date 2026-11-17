@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol6_0253_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol6_0253_L.jpg",
+    "bytes": 2107293,
+    "sha256": "3dd9f33efa13226547bc0f0ae8f7fecaecd912b7d7090c24f2f67af77b3a1689",
+    "sha256_of": "original",
+    "working_copy": "vol6_0253_L.jpg"
+  },
+  "text": "intuitu graciam facere specialem Discrecioni vestre\nper apostolica scripta mandamus quatinus vos vel duo\naut vnus vestrum capellaniam predictam que sine cura\nest et cuius fructus redditus et prouentus quindecim\nlibrarum Turonensium paruorum secundum communem extimacionem\nvalorem annuum ut ipse Johannes dorcij similiter asserit\nnon excedunt cum illam ut premittitur vacare con\ntinget eciam si actu alias quouis modo vel per liberam\nresignacionem Johannis extra romanam curiam de illa coram\nnotario publico et testibus sponte factam aut ex\nalterius cuiuscunque persona preterquam per dicti Jo\nhannis de montruaut obitum vacet eciam si tanto tempore\nvacauerit quod illius collacio iuxta lateranensis statuta\nconcilij ad sedem apostolicam legitime deuoluta ipsaque capel\nlania disposicioni apostolice quomodolibet reseruata existat\net super ea inter aliquos lis cuius statum presentibus ha\nberi volumus pro expresso pendeat indecisa dummodo\ntempore date presencium non sit in ea alicui specialiter Jus\nquaesitum cum omnibus Juribus et pertinencijs suis eidem\nJohanni dorcij conferre et assignare curetis Inducentes\nipsum Johannem dorcij vel procuratorem suum eius nomine\nin corporalem possessionem capellanie Juriumque et per\ntinenciarum predictorum et defendentes inductum amoto\nexinde quolibet illicito detentore ac facientes eundem\nJohannem dorcij ad huiusmodi capellaniam ut est moris\nadmitti sibique de illius fructibus redditibus prouentibus\nJuribus et obuencionibus vniuersis integre responderi\nContradictores auctoritate nostra appellacione etcetera compescendo\nNon obstantibus felicis recordacionis Bonifacij pape\noctaui predecessoris nostri ac alijs apostolicis constitu\ncionibus contrarijs quibuscunque aut si aliqui super\nprouisionibus sibi faciendis de huiusmodi speciales vel\nalijs beneficijs ecclesiasticis in illis partibus generales\ndicte sedis vel legatorum eius litteras impetrarint\neciam si per eas ad inhibicionem etcetera sit processum\nquibus omnibus prefatum Johannem dorcij in dicte\ncapellanie assecucione volumus anteferri",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 17518,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2045,
+    "lines": 37,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 54.3,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.001,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:27:32+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol6_0253_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol6_0253_L.jpg",
+      "bytes": 2107293,
+      "sha256": "3dd9f33efa13226547bc0f0ae8f7fecaecd912b7d7090c24f2f67af77b3a1689",
+      "sha256_of": "original",
+      "working_copy": "vol6_0253_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:27:32+00:00"
+  }
+}

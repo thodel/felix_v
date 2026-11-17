@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol3_0170_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol3_0170_L.jpg",
+    "bytes": 2146510,
+    "sha256": "d7eba1d393530872ae6d03e028d26cf40e520d74afc271be67041ed986a16e14",
+    "sha256_of": "original",
+    "working_copy": "vol3_0170_L.jpg"
+  },
+  "text": "domibus relinquens ius proprietatis et do-\nminii atque plena dispositio immediate spec-\ntent et ad provinciam pertinet offerri illis\nvigilantioribus curis que viderint possent\nobesse saluti. Cupientes in premissis debitum\nfinem imponi atque salubriter provideri.\nOmnes et singulas controversias et lites\ninter premissas occasione motas etc. in-\nstitutas coram dicto cardinali episcopo\naut alibi ubicumque inspectas pendentesque\nillarumque statum et tenores presentibus pro\nexpressis habentes ad nos causae huius-\nmodi causa scienter et de plenitudine\npotestatis haud serie advocantes ac pe-\nnitus extinguentes prefato capellano dante\npro tempore existenti dicti castri huius-\nque cuiuscumque modii vini super aliqua\nresecta et predicta vinearum eiusdem\ncastri prefati domini magis propinqua\net accomodior porcione. Aut alias super\naliis et in aliis rebus et redditibus habendo\nrespectum ad bonitatem vini quod ipse dictum\ncastrum colligeretur et ad alias recondictas\nque ad condignam commutationem requirentur,\net teneantur iuxta arbitrium dilectorum filiorum\nAmedei monachi Cantorie ville Gebennensis,\nFrancisci de Rando prioris prioratus Niuellani\nordinis sancte Augustini, Nicolai Festi et Fran-\ncisci de Versonay civium Gebennensium aut ma-\nioris partis eorundem valorum dictorum\nhuiusmodi modiorum assignandi et commutandi, nec-\nnon dilecto filio Inquidienensi aut qui pro tempore\nfuerit dicti domus Niuellani, iuxta sedis apostolice\nindulta constituto pro tempori assignacionem\nmodiorum vini huiusmodi aut illorum commutationem\nut prefertur faciendam vice et in nomine\nRomani ville atque nova pertinenicia recipiendi\net possidendi, fructusque et redditus inde\nprovenientes resiciendi percipiendi et adim-\nplendi atque conventui et fratribus prefate\ndicti domus, salva dicta regula iuxta iu-\ntacionem ligatam antedictis pendendi, necnon\ndictum capellanum vel qui pro tempore fuerit",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 8741,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 1886,
+    "lines": 43,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 42.88,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0011,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:49:38+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol3_0170_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol3_0170_L.jpg",
+      "bytes": 2146510,
+      "sha256": "d7eba1d393530872ae6d03e028d26cf40e520d74afc271be67041ed986a16e14",
+      "sha256_of": "original",
+      "working_copy": "vol3_0170_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:49:38+00:00"
+  }
+}

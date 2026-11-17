@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol3_0209_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol3_0209_L.jpg",
+    "bytes": 2288143,
+    "sha256": "e9cc11b23123b724dec7a825cc7d53d0925e3fa08238812a10e1ab8891127661",
+    "sha256_of": "original",
+    "working_copy": "vol3_0209_L.jpg"
+  },
+  "text": "morari non possint per literas apostolicas non facientes\nplenam et expressam ac de verbo ad verbum\nde Indulto huiusmodi ac eorum personis locis\nordinibus et nominibus propriis mencionem et\nqualibet alia dicte sedis Indulgencia generali vel\nspeciali cuiuscumque tenoris existat per quam presentibus\nnon expressam vel totaliter non insertam dicte Ju-\nrisdictionis explicacio in hac parte valeat\nquolibet impediri et de qua cuiusque toto tenore\nhabenda de verbo ad verbum sit in nostris\nliteris mencio specialis. Ceterum Volumus et auctoritate\napostolica predicta decernimus quod quilibet vestrum pro-\nsequi valeat articulum eciam per alium inchoatum\nquamvis idem inchoans nullo fuerit impedimento\ncanonico prepeditus quodque a data presencium sit\nvobis et cuilibet vestrum in premissis omnibus et\neorum singulis ceptis et non ceptis perpetuata\npotestas et Jurisdictio attributa ut eo vigore\neaque firmitate possitis in premissis omnibus ceptis\nnon ceptis presentibus et futuris et pro pre-\ndictis coniunctim et divisim procedere ac si\npredicta omnia et singula coram vobis cepta\nfuissent et Jurisdictio vestra et cuiuslibet vestrum in\npredictis omnibus et singulis per citacionem\nvel modum alium perpetuata legitime extitisset\nconstitucionibus apostolicis contrariis non obstantibus quibuscumque\nNos enim irritum decernimus et inane si secus\nDatum Basilee Octavo kalendas Augusti Anno\na Nativitate domini Millesimoquadringentesimo\nquadragesimosecundo Pontificatus nostri Anno\nTercio. Gratis per totum T Episcopus Dunkeldensis etc.\nFelix episcopus etc. Dilecto filio magistro Johanni de Bachenstein\ncanonico Basiliensi decretorum doctori capellano nostro Salutem etc.\nGrata deuocionis obsequia que nobis et apostolice sedi hactenus\nimpendisti et adhuc solicitis studiis impendere non desistis\nnecnon nobilitas generis literarum sciencia vite ac morum honestas\naliaque laudabilia probitatis et virtutum merita quibus personam\ntuam eciam fidedignorum testimoniis iuuari percepimus nos inducunt\nvt tibi reddamur ad graciam liberales. Dudum siquidem sacra\ngeneralis synodus Basiliensis per suum decretum quod incipit\nPlacuit diuine pietati gracias expectatiuas et nominaciones\nad vacatura beneficia per Romanos pontifices ceterum concessas",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 13903,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2232,
+    "lines": 42,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 52.17,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0009,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:12:25+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol3_0209_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol3_0209_L.jpg",
+      "bytes": 2288143,
+      "sha256": "e9cc11b23123b724dec7a825cc7d53d0925e3fa08238812a10e1ab8891127661",
+      "sha256_of": "original",
+      "working_copy": "vol3_0209_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:12:25+00:00"
+  }
+}

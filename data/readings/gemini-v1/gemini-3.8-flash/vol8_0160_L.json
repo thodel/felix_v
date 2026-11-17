@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol8_0160_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol8_0160_L.jpg",
+    "bytes": 2666626,
+    "sha256": "cf4c82b17a3b87cb9c9eec5bff01c3c715022a1473dce49c20596f3a06b32a62",
+    "sha256_of": "original",
+    "working_copy": "vol8_0160_L.jpg"
+  },
+  "text": "iuramentum, dummodo in absentia sua per quemcumque\ndidicerit et cum ad ecclesiam ipsam accesserit requiratur\nillud prestet, sive ex eadem fabrica ut prefertur prefatum\nrectoriam bene rexerit solutis interim fustis ecclesiarum et\naliorumque inde debite solvi consuetorum rectoriam et cetera.\nantiquorum recipiendo percipiendo retinendo, Nos enim cum eidem\nsolius ut ipse canonicatum et prebendam ac preposituram\nhuiusmodi per tibi vigore presentium conferimus integra ac\nillas tenendi dandi providendi ecclesia quandocumque fuerint\nlibere et licite valeat, Premissis necnon generalis et provincialis\nconcilii de capite temporibusque ipsius resignationis\nobsistentibus constitutionibus apostolicis Henrici predicti de speciali gratia\ndispensamus, proviso quod prepositura ac prioratus\nsupradicti debite officii eorum fraudetur obsequiis\net animarum cura in eisdem provisa curati nullatenus\nnegligatur. Et insuper exigendi tenendi deducendi\nactiones per nos attemptatum. Datum Lausane sexto\nidus octobris, Anno a nativitate domini millesimo quadringentesimo\nquadragesimo octavo, Pontificatus nostri Anno Nono.\n.xvi. Ja. Picenus potius\n\nFelix episcopus servus servorum dei universis christifidelibus presentes litteras inspecturis salutem et apostolicam benedictionem. Quoniam\nut ait apostolus omnes stabimus ante tribunal christi recepturi quod per corpus gessimus\nsive bonum fuerit sive malum oportet nos diem messionis extreme tunc\noperibus prevenire ac semini meriti feminare in terris quod reddente domino cum\nmultiplicato fructu recolligere valeamus talis spei indubia fide fidentesque teneres\nquia qui parce seminat parce et metet et qui seminat in benedictionibus de bene-\ndictionibus et metet vitam eternam Nuper siquidem dilectus filius Johannes Christo-\nfori laicus nobis lamentabiliter exponere curavit quod olim ipse necnon\nChristoforus pater genitor ac Petrus et Nicolaus eius fratres germani\nseu laici de civitate Neapolitani oriundi circa littus maris insule Sardinie\ncorallos querendo navigarent quidam perfidi Sarraceni christiani nominis inimici nave\nin qua Johannes ac genitor et fratres sui prefati tunc erant nocturno tempore\nin quo filii tenebrarum filii lucis ut plurimum insidiari solent furtive et\ncrudeliter invadentes eosdem Johannem genitorem et fratres violenter ceperunt\nipsisque duris vinculis mancipatis ad partes in quibus Johannis machometi\neiusque impietatis colitur ceptivos adduxerunt ac tandem in loco qui vulga-\nriter Thunys nuncupatur cuidam apostate sive abnegato christiano ibidem\ncomoranti tanquam pecora vendiderunt sub cuius tyrannica servitute intollera-\nbiles labores dirasque erumnas et verbera ac alia multiplicia afflictionum\ngenera iam decemseptem annis perpessi sunt deinde vero prefatus Johannes disponente",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 11404,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2756,
+    "lines": 40,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 67.9,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0007,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:01:30+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol8_0160_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol8_0160_L.jpg",
+      "bytes": 2666626,
+      "sha256": "cf4c82b17a3b87cb9c9eec5bff01c3c715022a1473dce49c20596f3a06b32a62",
+      "sha256_of": "original",
+      "working_copy": "vol8_0160_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:01:30+00:00"
+  }
+}

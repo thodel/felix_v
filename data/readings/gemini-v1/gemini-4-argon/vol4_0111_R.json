@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol4_0111_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol4_0111_R.jpg",
+    "bytes": 1905184,
+    "sha256": "c96f010f435febeda7633f2e8fc46c9b8c094754d8b4647b8305951de68cddca",
+    "sha256_of": "original",
+    "working_copy": "vol4_0111_R.jpg"
+  },
+  "text": "Triginta librarum Turonensium parvorum secundum communem extimacionem valorem annuum ut asseris non exce\ndunt sive per huiusmodi sive per alterius cuiuscumque in Romana curia vel extra\neam eciam coram notario publico et testibus factam resignacionem vel alias quovismodo\naut ex alterius cuiuscumque persona vacet eciam si tanto tempore vacaverint quod eorum col\nlacio iuxta Lateranensis statuta concilii ad sedem apostolicam legitime devoluta ipsique\ncanonicatus et prebenda disposicioni apostolice alias specialiter vel generaliter reservati\nexistant et super eis inter aliquos lis cuius statum presentibus haberi volumus\npro expresso pendeat indecisa dummodo eorum disposicio ad nos hac vice perti\nneat cum omnibus iuribus et pertinenciis suis apostolica tibi auctoritate conferimus\net de illis eciam providemus decernentes prout est irritum et inane si secus super\nattemptatum forsan est hactenus vel inposterum contigerit attemptari Non obstan\ntibus pie memorie Bonifacii pape viii eciam predecessoris nostri ac aliis apostolicis\nconstitucionibus necnon dicte ecclesie eciam iuramento confirmacione apostolica vel alia quavis\nfirmitate roboratis statutis et consuetudinibus contrariis quibuscumque Aut si aliqui\napostolica vel alia quavis auctoritate in dicta ecclesia in canonicos sint recepti vel\nut recipiantur insistant Seu si super provisionibus sibi faciendis de canonicati\nbus et prebendis ipsius ecclesie speciales vel aliis beneficiis ecclesiasticis in illis partibus\ngenerales dicte sedis vel legatorum eius litteras impetrarint eciam si per eas ad in\nhibicionem etc. sit processum quibus omnibus te in dictorum canonicatus et prebende\nassecucione volumus anteferri sed nullum per hoc eis quo ad assecucionem cano\nnicatuum et prebendarum seu beneficiorum aliorum preiudicium generari Aut si venerabili fratri\nnostro Episcopo et dilectis filiis capitulo Lausannensi vel quibusvis aliis communiter vel di\nvisim ab eadem sit sede indultum quod ad recepcionem etc. minime teneantur et ad id com\npelli non possint quodque de canonicatibus et prebendis dicte ecclesie vel aliis beneficiis\necclesiasticis ad eorum collacionem etc. spectantibus nulli valeat provideri per litteras apostolicas\nnon facientes etc. mencionem et qualibet alia dicte sedis indulgencia etc. existat\nper quam etc. effectus huiusmodi gracie etc. vel differri et de qua cuiusque etc. specialis\nSeu si presens non fueris ad prestandum de observandis statutis et consuetudinibus predictis so\nlitum iuramentum dummodo per te illud prestes Aut quod ut eciam asseris parrochialem ecclesiam\nde Grangiis Lausannensis diocesis cuius fructus redditus et proventus Quadraginta librarum\nTuronensium similium secundum predictam extimacionem valorem annuum non excedunt nosceris obtinere\nNulli ergo etc. paginam nostre collacionis provisionis et constitucionis infringere etc. con\ntrarium Si quis autem etc. incursurum Datum Lausanne sextodecimo kalendas maii anno a\nnativitate domini millesimoquadringentesimoquadragesimotercio pontificatus\nnostri anno tercio C Io Kabbori\nFelix episcopus etc. dilectis filiis Vicedomino ecclesie Remensis et Lausannensi ac Geben Io benenati\nnensi officialibus Salutem etc. Vite ac morum etc. merita super quibus dilectus filius Io\nhannes alias Iohanodus de Maglans canonicus ecclesie Lausannensis apud nos\nfidedigno commendatur etc. ut sibi reddamur ad graciam liberales. Dudum siquidem\nfelicis recordacionis Clemens papa iiii predecessor noster etc. ut supra in precedenti bulla\nnoscitur obtinere Quocirca discrecioni vestre per apostolica scripta mandamus quatenus",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 16809,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3568,
+    "lines": 41,
+    "longest_char_run": 4,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 86.05,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0011,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:15:01+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol4_0111_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol4_0111_R.jpg",
+      "bytes": 1905184,
+      "sha256": "c96f010f435febeda7633f2e8fc46c9b8c094754d8b4647b8305951de68cddca",
+      "sha256_of": "original",
+      "working_copy": "vol4_0111_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:15:01+00:00"
+  }
+}

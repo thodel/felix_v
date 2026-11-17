@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol5_0008_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol5_0008_R.jpg",
+    "bytes": 2683374,
+    "sha256": "30ac6cfbbed31e9791c04a8fab9dc449ae54e35c76d94ac31f15020e34c5e206",
+    "sha256_of": "original",
+    "working_copy": "vol5_0008_R.jpg"
+  },
+  "text": "Felyx episcopus etcetera dilectis filiis francisco tituli sancti marcelli presbitero Cardinali\nCancellariam apostolicam de mandato nostro regenti et Cantori ecclesie Lausanensis ac\nOfficiali Gebennensi Salutem etcetera Apostolice sedis circumspecta clemencia et benigna Cum\nitaque hodie dilecti filii Andreas de Gillens montisfalconis et hugo de luy\nriaco sancti Benigni ordinis sancti Benedicti Bisuntine Gracionopolitane\net Bellicensis diocesum prioratus quos tunc temporis obtinebant per procuratores resignarint\nQuocirca discrecioni vestre per apostolica scripta mandamus quatinus vos vel\nduo aut vnus vestrum per vos vel alium seu alios eundem Andream vel procuratorem\nsuum eius nomine in corporalem possessionem prioratus sancti Benigni iuriumque\net pertinenciarum predictorum inducatis auctoritate nostra et defendatis inductum amoto\nexinde quolibet illicito detentore ac facientes dictum Andream vel procuratorem suum\npro eo ad huiusmodi prioratum sancti Benigni ut est moris admitti ipsumque Andream\npostquam vigore presencium ipsius prioratus sancti Benigni possessionem fuerit pacificam\nassecutus de monasterio sancti michaelis de Stella ad monasterium Athanaciense\nhuiusmodi eadem auctoritate iuxta predictarum nostrarum litterarum tenorem transferatis et inibi reci\npi faciatis in monachum et in fratrem ac sincera in domino caritate tractari sibique\nde ipsius prioratus sancti Benigni fructibus redditibus proventibus iuribus et obventionibus vniuer-\nsis responderi Contradictores auctoritate nostra etcetera compescendo Seu si episcopo abbati\net conuentui prefatis vel quibusuis aliis communiter vel diuisim a sede predicta indultum\nexistat quod interdici etcetera non possit per litteras apostolicas non facientes etcetera mencionem Datum\nGebennis Quarto nonas octobris Anno a natiuitate domini millesimo quadrin-\ngentesimoquadragesimotercio pontificatus nostri anno Quarto xxxii Jo de Abbatia\nFelyx episcopus etcetera dilecto filio magistro Antonio piocheti canonico ecclesie Ge-\nbennensis Capellano nostro sacri palacii causarum apostolici auditori decretorum doctori\nSalutem etcetera humilibus supplicum votis libenter annuimus eaque fauoribus prosequimur\noportunis Exhibita siquidem nobis pro parte dilecti filii nobilis viri ludo-\nuici ducis Sabaudie peticio continebat quod licet ipse dudum hereditatem et bona\nquondam Margarite Bertheti de coley Gebennensis diocesis ad ipsum causis deuolutam\nspectantia dilecto filio hannequino de nemore habitatori Gebennensi ven-\ndidisset et tradidisset tamen dilectus filius Jacobus Bertheti de coley super\nhereditate et bonis huiusmodi coram dilecto filio Johanne marie officiali Geben-\nnensi non ex delegacione apostolica traxit in causam et licet dictus hannequinus\nforum officialis allegando causam huiusmodi fore prophanam et illius iudicium ad iudicem secu-\nlarem pertinere petensque illam ad consilium dicti ducis remitti declinasset\nipse tamen officialis per quandam suam interlocutoriam se iudicem in huiusmodi causa\ncompetentem fore pronuncians illam remittere contra iusticiam denegauit dictus vero\nhannequinus senciens ex hoc et aliis sibi illatis et comminatis grauaminibus\nindebite se grauari ad sedem apostolicam appellauit Nos causam appellacionis huiusmodi\ntibi audiendam commisimus et fine debito terminandam in qua ad nonnullos actus\ncitra tamen conclusionem inter partes ipsas diceris processisse Quare pro\nparte dicti ducis asserentis causam huiusmodi mere prophanam fore et ad dicti con-\nsilii iudicium duntaxat pertinere nobis fuit humiliter supplicatum ut illam ad\nhuiusmodi consilium remittere dignaremur Nos itaque huiusmodi supplicacionibus inclinati\ndiscrecioni tue per apostolica scripta mandamus quatinus vocatis dicto officiali\net aliis qui fuerint euocandi si est ita causam ipsam ad consilii predicti seu alterius\nJudicis sui ordinarii examen remittere non postponas prout de iure fuerit\nfaciendum premissis et aliis contrariis non obstantibus quibuscunque Datum lausanne Septimo\nIdus augusti Anno a natiuitate domini millesimoquadringentesimoquadragesimotercio\npontificatus nostri anno Quarto B viij Jo de Abbatia",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 21198,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 4107,
+    "lines": 49,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 82.84,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0007,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:18:31+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol5_0008_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol5_0008_R.jpg",
+      "bytes": 2683374,
+      "sha256": "30ac6cfbbed31e9791c04a8fab9dc449ae54e35c76d94ac31f15020e34c5e206",
+      "sha256_of": "original",
+      "working_copy": "vol5_0008_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:18:31+00:00"
+  }
+}

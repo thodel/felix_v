@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol8_0184_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol8_0184_L.jpg",
+    "bytes": 2297962,
+    "sha256": "20867721ee9cb82a3655ced4482c476e59930ca013925204f1e3c1386a55f189",
+    "sha256_of": "original",
+    "working_copy": "vol8_0184_L.jpg"
+  },
+  "text": "coniunctim vel divisim perconcntibus litteris nostris duxerimus conce\ndendas Nos enim tam illas quam presentes effectum sortiri\nvolumus quacumque constitutione apostolica contraria non obstante\nAut quod dictus Guillermus ut eciam asserit parrochialem\necclesiam sancti Martini predictam cuius fructus redditus\net proventus duodecim obtinet nosque sibi dudum pensionem\nannuam triginta duorum Sextariorum grani que eciam duodecim\nlibrarum Turonensium parvorum secundum communem extimacionem\nvalorem annuum non excedunt per eum super fructibus\nredditibus proventibus parrochialis ecclesie de olzenengo\ndicte diocesis annis singulis percipiendam sub certis modo\net forma reservari constitui et assignari concessimus\nNos enim cum dicto Guillermo ut unacum dicta parrochiali\necclesia sancti Martini quodcumque aliud beneficium ecclesiasticum\nincompatibile eciam si dignitas personatus administracio\nvel officium eciam si illi cura imineat animarum et in\ncathedrali vel collegiata ecclesia aut alia parrochialis\necclesia fuerit recipere et per Quinquennium retinere\nilludque necnon ecclesiam sancti Martini predictam interim\nquociens sibi placuerit simpliciter vel ex causa permu\ntacionis dimittere et loco dimissi vel dimissorum aliud\nvel alia simile vel dissimile aut similia vel dissimilia\nbeneficium seu beneficia ecclesiasticum vel ecclesiastica eciam\nrecipere et dicto durante Quinquennio similiter retinere\nlibere et licite valeat generalis concilii ac aliis supradictis\nnecnon ecclesie in qua aliud incompatibile beneficium\nhuiusmodi forsan fuerit eciam iuramento confirmacione apostolica\nvel alia quavis firmitate roboratis statutis et consue\ntudinibus ceterisque contrariis nequaquam obstantibus\nauctoritate apostolica tenore presentium dispensamus proviso\nquod ecclesia sancti Martini et aliud incompatibile huiusmodi\ndebitis propterea non fraudentur obsequiis et animarum\ncura in ecclesia sancti Martini et si qua alteri incompatibili\nhuiusmodi imineat nullatenus negligatur sed debite\nsupportentur illorum onera consueta Volumus autem\nquod quamprimum idem Guillermus aliud incompatibile\nbeneficium huiusmodi fuerit pacifice assecutus pensio\npredicta expiret ipso facto Quodque infra quinquennium\naliud ex incompatibilibus predictis pro alio compa\ntibili beneficio dimittere Alioquin illud ex eis quod\nmaluerit quodque eodem lapso quinquennio vacare\ndecernimus omnino dimittere teneatur Et insuper",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 14865,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2401,
+    "lines": 42,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 56.19,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0008,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:34:06+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol8_0184_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol8_0184_L.jpg",
+      "bytes": 2297962,
+      "sha256": "20867721ee9cb82a3655ced4482c476e59930ca013925204f1e3c1386a55f189",
+      "sha256_of": "original",
+      "working_copy": "vol8_0184_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:34:06+00:00"
+  }
+}

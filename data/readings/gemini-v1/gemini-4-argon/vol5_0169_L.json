@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol5_0169_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol5_0169_L.jpg",
+    "bytes": 2315796,
+    "sha256": "2a92f549a6d09e5cfd059e14edadb1037850f9caf3520fbbc85112cde505a8c5",
+    "sha256_of": "original",
+    "working_copy": "vol5_0169_L.jpg"
+  },
+  "text": "partibus vocatis vel non vocatis ac eis presentibus vel absentibus\nde jure tantum vel per concordiam tantum aut de jure et per\nconcordiam mixtim decidendi et terminandi ac alias faciendi\nprout eisdem arbitris bonum videretur Quiquidem arbitri assumpto\nin se onere compromissi huiusmodi visisque et cum matura deliberacione\nexaminatis singulis parcium juribus per suum arbitrale judicium\npresentibus et audientibus prefatis partibus decreverunt pronunciarunt\net declararunt nullum prefatis capitulo vel ecclesie jus in bonis\net hereditate predictis competiisse seu competere debere prefatum\nThomenum veluti heredem dicti quondam facij ab impeticione\nprepositi et capituli predictorum eisque ambas partes ab expensis\nabsolvendo ac eisdem preposito et capitulo super bonis et\nhereditate supradictis perpetuum silencium imponendo Quamquidem\nsentenciam ac omnia in ea contenta prepositus et capitulum ex\nuna et Thomenus prefati ex alia partibus illico ratificarunt\nemologarunt et approbarunt bone memorie Anthonii tunc episcopi\nTaurinensis episcopali auctoritate approbacione laudo confirmacione\net decreto in omnibus premissis intervenientibus prout in instrumentis\npublicis desuper confectis dicitur plenius contineri Quare pro\nparte dicti Thomeni nobis fuit humiliter supplicatum quatenus\nsentencie ratificacioni emologacioni approbacioni laudo confirmacioni\net decreto predictis ac inde secutis pro illorum subsistencia firmiori\nrobur apostolice confirmacionis adijcere de benignitate apostolica dignaremur\nNos igitur qui compromissi et sentencie necnon aliorum\nsupranarratorum instrumenta in nostra cancellaria diligenter\ninspici et examinari fecimus huiusmodi supplicacionibus inclinati\nsentenciam predictam ac omnia in ea contenta necnon ratifica\ncionem emologacionem approbacionem laudum confirmacionem et\ndecretum predicta prout rite processerunt et per partes recepta\net emologata fuerunt approbamus et confirmamus ac presentis\nscripti patrocinio communimus Nulli ergo etc paginam nostre appro\nbacionis confirmacionis et communicionis infringere vel ei ausu\ntemerario contraire Siquis autem etc incursurum Datum Lausanne\nquarto Nonas Junij Anno a nativitate domini millesimo\nquadringentesimo quadragesimo quarto Pontificatus\nnostri anno quarto XXX Jo de abbate\nFelix episcopus etc dilectis filijs Jacobo Mugnerij canonico ecclesie Gebennensis\nac officiali Gebennensi Salutem etc Justis et humilibus supplicum votis\nlibenter annuimus eaque quantum cum deo possumus favoribus prosequimur\noportunis Exhibita siquidem nobis nuper pro parte dilecti filij Bartholomeij Monachiulper rectoris\nparrochialis ecclesie opidi de Albona Gebennensis diocesis peticio continebat quod licet\nquondam nonnulli sui predecessores dicte ecclesie qui pro tempore fuerunt rectores\nzelo deuocionis accensi aut alia quauis occasione inductj futuris\nforsan temporibus non considerantes matutina missas vesperas ac alia\ndiuina officia in capella sancti Stephani in dicto opido constructa certis\ndiebus celebrare sollempniter consueuissent nichilominus dilecti filij\nparrochiani dicte ecclesie omnes oblaciones contra ius ex eo quod sua\necclesia per parrochianos huiusmodi debita recipere intendebat honorem et",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 16742,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3186,
+    "lines": 48,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 65.4,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0009,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:21:18+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol5_0169_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol5_0169_L.jpg",
+      "bytes": 2315796,
+      "sha256": "2a92f549a6d09e5cfd059e14edadb1037850f9caf3520fbbc85112cde505a8c5",
+      "sha256_of": "original",
+      "working_copy": "vol5_0169_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:21:18+00:00"
+  }
+}

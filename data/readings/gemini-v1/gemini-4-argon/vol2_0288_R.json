@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol2_0288_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol2_0288_R.jpg",
+    "bytes": 2755844,
+    "sha256": "fec88f7fbc6f8d6b5fbcfd1309be79f072a9a5eb519ee0a1bc4eebfc05a0b33c",
+    "sha256_of": "original",
+    "working_copy": "vol2_0288_R.jpg"
+  },
+  "text": "valeat quolibet vel differri et de qua in specialibus\nNos enim irritum irritum decernimus et inane\nsi secus super hiis a quoquam quavis auctoritate\ncontigerit attemptari Datum Basilee Tercio decimo kalendas Aprilis\nAnno a Nativitate domini Millesimo quadringentesimo\nquadragesimo secundo pontificatus nostri Anno secundo\nxiiii Iacobus Episcopus dunkeldensis\nFelix episcopus etc Dilectis filiis Abbati Monasterii Abundancie Ge\nbennensis diocesis et precentori ecclesie Bituricensis ac officiali Gebennensi\nSalutem etc Vite ac morum honestas etc super quibus dilectus filius Iohannes\nBoverati Rector parrochialis ecclesie sancti Ypoliti Gebennensis diocesis apud nos\nfidedigno commendatur testimonio nos inducunt ut sibi reddamur ad\ngratiam liberales Exhibita siquidem nobis nuper pro parte dicti Iohannis\npeticio continebat quod olim postquam ipse alteram ex duabus capellaniis in\necclesia de Exponzier dicte diocesis per bone memorie Guillermum quondam Episcopum\nGebennensem fundatis in quarum fundacione ordinaria auctoritate confirmata\ncaveri dicitur quod nullus alteram ex eisdem capellaniis pro tempore obtinens\nquodcumque aliud beneficium cum huiusmodi capellania obtinere possit tunc\ncerto modo vacantem dicta sibi auctoritate collatam foret assecutus\nDilectus filius Franciscus tituli sancti Marcelli presbiter Romane ecclesie Cardinalis\npresbiter tunc et nunc Episcopus Gebennensis tenuitate fructuum et reddituum\ndicte Capellanie provide considerans prefato Iohanni ut dicta fundacione\nnon obstante quodcumque aliud beneficium ecclesiasticum eciam si illi cura immi\nneret animarum si sibi alias canonice conferretur recipere et quoadviveret retinere\nvaleret eadem auctoritate concessit prout in ipsius Cardinalis litteris plenius\ncontinetur Cuiusquidem concessionis pretextu dictus Iohannes postmodum\nde Thuz primo et deinde illa dimissa predictam sancti Ypoliti quam\nadhuc obtinet parrochiales ecclesias successive alias canonice sibi collatas\nextitit assecutus Cum autem sicut eadem petitio subiungebat\nprefatus Iohannes dubitet concessionem Episcopi sibi factam huiusmodi ex certis\ncausis viribus non subsistere dictamque Capellaniam adhuc vacare\nNos volentes dicto Iohanni premissorum meritorum suorum intuitu gratiam\nfacere specialem Discretioni vestre per apostolica scripta mandamus quatinus\nvos vel duo aut unus vestrum Capellaniam predictam que sine cura\nest cuius fructus redditus et proventus Decem librarum turonensium parvorum secundum communem extimacionem valorem\nannuum ut dictus Iohannes asserit non excedunt sive ex eo quod de ea sibi\nprovisum extitit sive alio quovis modo vacet eciam si tanto tempore\nvacaverit quod eius collatio iuxta Lateranensis etc devoluta ipsaque capellania\ndispositioni apostolice quolibet reservata existat et super ea inter\naliquos lis cuius status etc indecisa dummodo tempore dati presentium non\nsit in ea alicui specialiter ius quesitum cum omnibus iuribus et pertinenciis",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 17010,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2930,
+    "lines": 41,
+    "longest_char_run": 4,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 70.49,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0014,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:10:14+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol2_0288_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol2_0288_R.jpg",
+      "bytes": 2755844,
+      "sha256": "fec88f7fbc6f8d6b5fbcfd1309be79f072a9a5eb519ee0a1bc4eebfc05a0b33c",
+      "sha256_of": "original",
+      "working_copy": "vol2_0288_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:10:14+00:00"
+  }
+}

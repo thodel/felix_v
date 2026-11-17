@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol1_0083_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol1_0083_L.jpg",
+    "bytes": 2781586,
+    "sha256": "4167c9f5421aebcf430c57fa9c6682cbfc056e5e915303e065fe9389f81a5e42",
+    "sha256_of": "original",
+    "working_copy": "vol1_0083_L.jpg"
+  },
+  "text": "ordinis sancti Augustini lafatio pertinenciis et de quibus eciam\npercipiuntur septem et triginta ducati vel circa annuatim\nex certis causis racionabilibus et pro ipsius monasterii me\nlioracione in eiusque utilitatem evidentem dilectis filiis conventui\ndicti monasterii permutacionis titulo sive in excambium dare\net assignare proponat si sedis apostolice auctoritas super hoc perve\nnerit eisdem Quare pro parte dicti ducis fuit nobis\nhumiliter supplicatum ut sibi cum prefatis conventu permutacionem\nsive assignacionem de valle et aliis suis pro castro villis\neorumque iuribus et pertinentiis supradictis in excambium huiusmodi\nut premittitur faciendi licenciam et facultatem concedere ac alias\nin premissis oportune consulere de benignitate apostolica digna\nremur Nos itaque de premissis certam noticiam non habentes\nac utilitatibus et profectibus huiusmodi monasterii paterno affectu\nconsulere cupientes huiusmodi quoque supplicacionibus inclinati\ndiscrecioni vestre per apostolica scripta committimus et mandamus\nquatinus vos vel alter vestrum vocatis venerabili Guillermo episcopo\nVercellensi commendatario dicti monasterii et illis quorum\ninterest necnon aliis qui fuerint evocandi de premissis\nomnibus et singulis eorumque circumstanciis universis auctoritate\nnostra vos informetis et inquiratis diligencius veritatem\net ea que per informacionem huiusmodi tam de bonorum\npermutandorum huiusmodi valore et quod permutacio huiusmodi si fiat\nin evidentem ipsius monasterii cedat utilitatem quam aliis\nin premissis attendendis reppereritis nobis per vestras patentes\nlitteras vestris aut alterius vestrum sigillis vel sigillo munitas\naut alias loco referre studeatis ad effectum ut ex permu\ntacione huiusmodi si subsequatur profectibus et utilitatibus monas\nterii prefati salubrius consulatur Non miremini quod bulla\nexprimens nomen nostrum etc. Datum Basilee Quartodecimo\nkalendas Augusti Anno a nativitate domini Millesimoquadringentesimo\nquadragesimo suscepti a nobis apostolatus officii anno primo.\nGratis de mandato. A. Episcopus Grossetanus.\nFelix etc. Dilecto filio Johanni de Corarello alias Officialis\nmercatori Burgensi Yenne Bellicensis diocesis monetario nostro\nSalutem etc. Exigit devocionis vite ac probitatis cognita sinceritas",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 12891,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2244,
+    "lines": 36,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 61.36,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0009,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:04:59+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol1_0083_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol1_0083_L.jpg",
+      "bytes": 2781586,
+      "sha256": "4167c9f5421aebcf430c57fa9c6682cbfc056e5e915303e065fe9389f81a5e42",
+      "sha256_of": "original",
+      "working_copy": "vol1_0083_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:04:59+00:00"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol3_0227_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol3_0227_L.jpg",
+    "bytes": 2010446,
+    "sha256": "fc4018b2a5ea234609280023d7bf113a6528a83dd631d32b7b5b30c2d34750cd",
+    "sha256_of": "original",
+    "working_copy": "vol3_0227_L.jpg"
+  },
+  "text": "constiterit quod tu vel procurator tuus illud volueritis\nacceptare quoquomodo disponere quoquomodo presumant\nac decernentes exnunc irritum et inane si secus super hiis\na quoquam quavis auctoritate scienter vel ignoranter contigerit\nattemptari Non obstantibus statutis et consuetudinibus dicte\necclesie iuramento confirmatione apostolica vel quavis firmitate\nalia roboratis contrariis quibuscumque Aut si venerabili fratri\nnostro episcopo Vlasilien ac prefatis preposito thesaurario\ncanonicis capitulo et personis vel quibusvis aliis communiter\nvel divisim a sede apostolica sit indultum quod ad receptionem\nvel provisionem alicuius minime teneantur et ad id compelli\nnon possint quodque de huiusmodi vel aliis beneficiis ecclesiasticis\nad eorum collationem etcetera spectantibus nulli valeat provideri\nper litteras apostolicas non facientes etcetera mentionem et qualibet\nalia dicte sedis indulgentia generali vel speciali cuiuscumque\ntenoris existat per quam presentibus non expressam vel totaliter\nnon insertam effectus huiusmodi gratie impediri valeat\nquomodolibet vel differri et de qua cuiusque toto tenore etcetera\nspecialis Seu si presens non fueris ad prestandum de obser-\nvandis statutis et consuetudinibus prefate ecclesie solitum iura-\nmentum dummodo in absentia tua per procuratorem ydoneum et cum ad ec-\nclesiam ipsam accesseris corporaliter illud prestes Aut quod ut\nasseris preposituram sancti Theobaldi extra muros Meten\nque inibi dignitas principalis existit et ad quam quis per\nelectionem assumi consuevit cuiusque cura imminet animarum\nNecnon canonicatum et prebendam eiusdem ac unam in\nmaiori et aliam in sancti Andree Colonien perpetuas\ncappellanias sine cura obtines ac dudum tibi de una\nsimili cappellania in sancti Johannis Osnaburgen ecclesiis\nac de parrochiali ecclesia in Eschuuiler Colonien diocesis\nsuper qua extra curiam litigas et quam non possides\nquarumque et obtentorum predictorum fructus redditus et\nproventus viginti marcharum similium valorem annuum\nnon excedunt tunc certis modis vacantibus successive\ndicte synodi et ordinaria provideri mandatum extitit\nquodque etiam in canonicum ecclesie Meten cum inhibitione\nne alicui alteri quam tibi de prebenda primo vacatura\nconferretur dicte synodi auctoritatibus creatus fuisti\nVolumus autem quod quamprimum vigore presentium cum cura\nbeneficium huiusmodi fueris pacifice assecutus preposituram",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 17226,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2377,
+    "lines": 40,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 58.45,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0008,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:14:05+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol3_0227_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol3_0227_L.jpg",
+      "bytes": 2010446,
+      "sha256": "fc4018b2a5ea234609280023d7bf113a6528a83dd631d32b7b5b30c2d34750cd",
+      "sha256_of": "original",
+      "working_copy": "vol3_0227_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:14:05+00:00"
+  }
+}

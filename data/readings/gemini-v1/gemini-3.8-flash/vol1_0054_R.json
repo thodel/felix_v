@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol1_0054_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol1_0054_R.jpg",
+    "bytes": 2573300,
+    "sha256": "3000bd288a3186ae4206fc4dbaabe49b39473e03f1c1232c7b852d37e7552da3",
+    "sha256_of": "original",
+    "working_copy": "vol1_0054_R.jpg"
+  },
+  "text": "impedimentis que dilecti filii Decanus et Capitulum ecclesie\nbeate marie de Annecyaco Gebennensis diocesis qui dictam ecclesiam\nsancti petri ad se spectare seu in ea jus habere asserunt\nac eosdem conjuges propter hoc litium anfractibus involvi\nintuitu adimplere non possint Quare pro parte eorundem conjugum\nnobis fuit humiliter supplicatum ut eis premissa faciendi licenciam\nconcedere / merito quoadvixerint / et ipsis vita functis eorum\nprincipali heredi / et de hinc propinquiori sui generis Jus\npatronatus dicte Capellanie / ac presentandi personas ydoneas ad\nillam ordinario loci hac prima vice et quociens illa de cetero\nvacare contigerit inperpetuum reservare / ac alias in premissis\noportune providere dignaremur / Nos itaque qui cultum\ndivinum augere et augeri intensis desideriis affectamus\nvolentesque eosdem inperpetuum reservare ac alias in premissis\nconjuges in eorum laudabili proposito confovere huiusmodi supplicationibus\ninclinati Fraternitati tue per apostolica scripta mandamus\nquatinus prefatis conjugibus assignatis tamen primitus per eos pro\nCapellano libris calice ornamentis / et aliis necessariis huiusmodi\ndote sufficienti premissa faciendi auctoritate nostra licenciam largiaris\nprefatis Decano Canonicis et Capitulo circa premissa sine eorum\npreiudicio fiant super huiusmodi impedimentis perpetuum silencium\nimponendo Et nichilominus post fundationem et dotationem\npredictas Jus patronatus et presentandi personas predictas\nad eandem Capellaniam hac vice / et quocies illa deinceps\nvacare contigerit Conjugibus et heredi ac propinquioribus\nprefatis eadem auctoritate imperpetuum reservare procures / Jure\ntamen parrochialis ecclesie dicti loci et quolibet alieno omnibus\nsemper salvo Datum Basilee Septimo kalendas Septembris Anno\na Nativitate Domini Millesimoquadringentesimoquadragesimo\npontificatus nostri Anno primo .xx. A. Episcopus Croffetanus\nFelix episcopus etc Dilectis filiis petro de Trillia Archidiacono\nlodovensi petro de Sangro Gebennensi et Antonio dopreez cano-\nnicis lausanensi ecclesiarum Canonici Salutem etc Justis supplicum votis\nlibenter annuimus eaque favoribus prosequimur oportunis Exhibita\nsiquidem nobis nuper pro parte Cristofori de ansena de medio-\nlano linarii mercatoris et incole civitatis Gebennensis petitio conti-\nnebat quod licet dudum idem Cristoforus cum francisca de lacapella\nmuliere eiusdem civitatis Gebennensis matrimonio per verba legitima\nde presenti contraxerit fueritque dictum matrimonium inter eos carnali copula\nconsumatum tamen dicta francisca sue salutis immemor ad instantiam\ndicti Cristofori et quorundam Civium Civitatis predicte Gebennensis cum",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 8566,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2629,
+    "lines": 41,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 63.15,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0008,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:44:48+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol1_0054_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol1_0054_R.jpg",
+      "bytes": 2573300,
+      "sha256": "3000bd288a3186ae4206fc4dbaabe49b39473e03f1c1232c7b852d37e7552da3",
+      "sha256_of": "original",
+      "working_copy": "vol1_0054_R.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:44:48+00:00"
+  }
+}

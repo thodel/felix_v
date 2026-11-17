@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol8_0069_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol8_0069_L.jpg",
+    "bytes": 2501507,
+    "sha256": "5ca3f4fbe0a0d979b944eef6da870ac7594fb4ef85be289f9d2e9657d8b47bae",
+    "sha256_of": "original",
+    "working_copy": "vol8_0069_L.jpg"
+  },
+  "text": "precamur ac volentes vendicionem translacionem approbacionem ac\nratificacionem predictas necnon omnia et singula in dictis instrumentis\ncontenta et ex inde secuta pro illorum observacione pariter et subsis-\ntencia firmiori ne de illorum viribus ambiguitatis oriatur scru-\npulus nostre auctoritatis ope solidari ac litis statum si qua forsan super\ndictis bonis pendeat indecisa presentibus pro expresso habentes illa\ncum omnibus suis capitulis punctis et articulis in eisdem instrumentis\ncontentis prout rite processerunt auctoritate apostolica et ex certa nostra\nsciencia confirmamus ratificamus et approbamus ac presentis scripti\npatrocinio communimus omnesque et singulos defectus si qui forsan\nin premissis intervenerint supplemus auctoritate et sciencia antedictis\ndecernentes omnia et singula premissa perpetua vim et robur\nin omnibus obtinere ac a partibus ipsis inviolabiliter observari de-\nbere Nulli ergo omnino hominum liceat hanc paginam nostre confirmacio-\nnis ratificacionis approbacionis communicacionis supplecionis et con-\nstitucionis infringere vel ei ausu temerario contraire. Si quis\nautem etc. incursurum Datum Lausanne octavo kalendas februarii anno a\nnativitate domini millesimoquadringentesimoquadragesimo nono\npontificatus nostri anno nono. l. d. pro domino poncii\nFelix episcopus etc. dilecto filio Antonio de Oppetis canonico monasterii\nsancti Antonii ordinis sancti Augustini Viennensis diocesis salutem etc.\nReligionis zelus vite ac morum honestas aliaque etc. merita super quibus\napud nos fidedigno commendaris testimonio nos inducunt ut illa tibi\nfavorabiliter concedamus que tuis commoditatibus fore conspicimus\noportuna. Dudum siquidem tibi tunc ordinem sancti Augustini professo\nac tunc canonico in universitate studii Taurinensis studenti ut quod-\ncunque seculare vel alterius ordinis regulare beneficium seu officium\necclesiasticum cum cura vel sine cura eciam si prioratus conventualis\nexisteret dummodo ad illud non consuevisset quis per electionem assumi\nsi tibi alias canonice conferretur recipere et quousque tibi de aliquo\nbeneficio ecclesiastico per canonicos tui ordinis regi solito pro tue\nvite sustentacione provisum foret in commendam retinere libere\net licite valeres per alias nostras litteras sub certis modo et forma\ntunc expressis indulsimus prout in eisdem litteris plenius continetur\nEt deinde sicut exhibita nobis nuper pro parte tua peticio contine-\nbat tu capellam sancti Eusanii sitam in opido Vigonii Taurinensis\ndiocesis que de iure patronatus laicorum existit tunc certo modo\nvacantem tibique collatam indulti et litterarum huiusmodi vigore extitisti as-",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 14678,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2614,
+    "lines": 38,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 67.82,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0008,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:32:04+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol8_0069_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol8_0069_L.jpg",
+      "bytes": 2501507,
+      "sha256": "5ca3f4fbe0a0d979b944eef6da870ac7594fb4ef85be289f9d2e9657d8b47bae",
+      "sha256_of": "original",
+      "working_copy": "vol8_0069_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:32:04+00:00"
+  }
+}

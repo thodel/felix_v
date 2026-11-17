@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol7_0005_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol7_0005_R.jpg",
+    "bytes": 2622260,
+    "sha256": "e9ba1b1efa0124217038122aab44c10284610ba36e45cbbc726841998005d77e",
+    "sha256_of": "original",
+    "working_copy": "vol7_0005_R.jpg"
+  },
+  "text": "Et nichilominus si privacionem et amocionem predictas per te fieri contigerit\nofficium predictum cum prioratu de Cropibus ordinis et diocesis predictorum canonice\nannexum et sine cura est cuiusque fructus redditus et proventus Quadraginta\nlibrarum Turonensium parvorum secundum communem extimacionem valorem annuum ut ipse Johannes asserit\nnon excedunt sive per privacionem huiusmodi sive per liberam ipsius Guillermi extra\nRomanam curiam eciam coram notario publico et testibus sponte factam resignacionem\nvacet eciam si tanto tempore vacaverit quod eius collacio iuxta Lateranensis statuta\nconcilii ad sedem apostolicam legittime devoluta ipsumque officium disposicioni apostolice\nquomodolibet reservatum existat et super eo inter aliquos lis cuius statum presentibus\nhaberi volumus pro expresso pendeat indecisa dummodo tempore date presencium non sit\nin eo alicui alteri in eo quesitum specialiter ius quesitum cum omnibus iuribus et pertinen-\nciis suis eidem Johanni per eciam quoadvixerit tenendum regendum et eciam\ngubernandum eadem auctoritate commendare procures Ita quod idem Johannes de\nfructibus redditibus proventibus iuribus et obventionibus universis ipsius officii sicut veri came-\nrarii dicti prioratus nantuaci qui fuerunt pro tempore potuerunt seu eciam\ndebuerunt disponere et ordinare libere et licite valeat alienacione tamen\nimmobilium et preciosorum mobilium dicti officii eidem Johanni penitus interdicta\nInducens per te vel alium seu alios eundem Johannem vel procuratorem suum eius\nnomine in corporalem possessionem officii iuriumque et pertinenciarum predictorum et\ndefendens inductum amotis exinde dicto Guillermo et alio quolibet illi-\ncito detentore ac faciens ipsum Johannem vel dictum procuratorem pro eo ad officium\nhuiusmodi ut est moris admitti sibique de illius fructibus redditibus proventibus iuribus\net obventionibus universis integre responderi Contradictores auctoritate nostra etc. compescendo\nNon obstantibus felicis recordacionis Bonifacii pape viii predecessoris nostri ac\naliis constitucionibus apostolicis necnon prioratuum et ordinis predictorum eciam iuramento\nconfirmacione apostolica vel alia quavis firmitate roboratis statutis et consuetu-\ndinibus contrariis quibuscunque Aut si pro aliquibus in dicto prioratu nantuaci\napostolica sint forsan scripta directa seu si aliqui super provisionibus sibi\nfaciendis de officiis huiusmodi speciales vel aliis beneficiis ecclesiasticis in illis partibus\ngenerales dicte sedis vel legatorum eius litteras impetraverint eciam si per eas ad\ninhibicionem etc. sit processum quibus omnibus prefatum Johannem in dicti officii assecucione\nvolumus anteferri sed nullum per hoc eis quo ad assecucionem officiorum seu\nbeneficiorum aliorum preiudicium generari Aut si venerabili fratri nostro Archiepiscopo lug-\ndunensi vel quibusvis aliis communiter vel divisim ab eadem sit sede indultum\nquod ad recepcionem etc. minime teneantur et ad id compelli aut quod interdicto suspendi vel excommunicari non possint quodque\nde officiis huiusmodi vel aliis beneficiis ecclesiasticis ad eorum collacionem etc. spectantibus\nnulli valeat provideri per litteras apostolicas non facientes etc. mencionem et qualibet\nalia dicte sedis indulgencia etc. existat per quam etc. effectus huiusmodi gracie impediri etc.\nvel differri et de qua cuiusque etc. specialis Nos enim eidem Johanni ut officium\nipsum si illud sibi per te commendari fuerit ut prefertur recipere et una cum dicto prioratu\nde chabosio quem idem Johannes obtinet quique eciam cum cura est cuius fructus\nredditus et proventus centum et viginti librarum Turonensium parvorum secundum predictam\nextimacionem valorem annuum ut ipse Johannes eciam asserit non excedunt in commendam quoadvixerit\nretinere libere et licite valeat dispensamus premissis ac aliis contrariis quibuscunque\nnon obstantibus quibuscunque. proviso quod officium propter commendam huiusmodi debitis\nnon fraudetur obsequiis sed debite supportentur omnia illius onera consueta\nDatum apud Sanctumdominicum extra muros Gebennenses duodecimo kalendas Septembris\nanno a nativitate domini Millesimoquadringentesimoquadragesimoquinto\npontificatus nostri anno Sexto.\nPer Io. Grod. abbatem\nG. Fabri\nG. Marandus\nFelix episcopus etc. Universis christifidelibus presentes litteras inspecturis Salutem etc. Quoniam ut\nait apostolus omnes stabimus ante tribunal christi recepturi prout in corpore gessi-",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 22161,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 4387,
+    "lines": 54,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 80.26,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0007,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:28:31+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol7_0005_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol7_0005_R.jpg",
+      "bytes": 2622260,
+      "sha256": "e9ba1b1efa0124217038122aab44c10284610ba36e45cbbc726841998005d77e",
+      "sha256_of": "original",
+      "working_copy": "vol7_0005_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:28:31+00:00"
+  }
+}

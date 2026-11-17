@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol4_0266_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol4_0266_R.jpg",
+    "bytes": 2401627,
+    "sha256": "935b981e37abcbcd7dd96fd28cb8b527d29a5d7f44c13d66f87dd755d56b515f",
+    "sha256_of": "original",
+    "working_copy": "vol4_0266_R.jpg"
+  },
+  "text": "Felix Episcopus etc. Venerabili fratri Episcopo Massilien. Salutem etc. Dignum\narbitramur et congruum ut illis se reddat sedes apostolica gratiosam\nquibus ad id propria virtutum merita laudabiliter suffragantur.\nVolentes itaque dilectum filium Petrum Guilleminon canonicum\necclesie Tricen. qui ut asserit generali Basilien. Concilio\nincorporatus ac dilecti filii Ludovici tituli sancte Cecilie presbiteri\ncardinalis Arelaten. vulgariter nuncupati sancte Romane ecclesie\nVicecancellarii familiaris continuus commensalis existit apud\nnos de vite et morum honestate aliisque probitatis et virtutum\nmeritis multipliciter commendatum horum intuitu\nfavore iuxta dicta statuta Concilii prosequi gracioso fraternitati\ntue per apostolica scripta mandamus quatinus si per diligentem examinationem\neundem Petrum ad hoc ydoneum esse reppereris super quo tuam\nconscientiam oneramus beneficium ecclesiasticum cum cura vel sine cura\ncuius fructus redditus et proventus si cum cura Quadraginta\nsi vero sine cura fuerit Triginta librarum Turonen. parvorum secundum\ntaxacionem decime valorem annuum non excedant ad venerabilis fratris nostri\nEpiscopi Tricen. collacionem provisionem presentacionem seu quamvis aliam\ndisposicionem pertinens eciam si canonicatus et prebenda dignitas\npersonatus administracio vel officium in alia quam cathedrali fuerit\necclesia dummodo dignitas ipsa principalis non fuerit et ad eam necnon\npersonatum administracionem vel officium huiusmodi non consueverit quis\nper electionem assumi si vacat ad presens vel cum vacaverit quod\ndictus Petrus per se vel procuratorem suum ad hoc legitime constitutum infra unius\nmensis spacium postquam sibi vel eidem procuratori vacacio illius innotue\nrit duxerit acceptandum conferendum eidem Petro post acceptacionem\nhuiusmodi cum omnibus iuribus et pertinenciis suis dummodo pro alio vel aliis\neidem Episcopo iuxta statuta predicta non scripsimus donacioni tue\nauctoritate nostra reserves districtius inhibendo eidem Episcopo ne de\nbeneficio huiusmodi interim eciam ante acceptacionem eandem nisi\npostquam ei constiterit quod Petrus vel procurator predicti illud noluerint\nacceptare disponere quoquomodo presumat Et nichilominus beneficium\nhuiusmodi quod reservabis si vacat vel cum vacaverit ut prefertur\neidem Petro post acceptacionem predictam cum omnibus iuribus et pertinenciis",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 12769,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2331,
+    "lines": 34,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 67.59,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0009,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:17:50+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol4_0266_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol4_0266_R.jpg",
+      "bytes": 2401627,
+      "sha256": "935b981e37abcbcd7dd96fd28cb8b527d29a5d7f44c13d66f87dd755d56b515f",
+      "sha256_of": "original",
+      "working_copy": "vol4_0266_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:17:50+00:00"
+  }
+}

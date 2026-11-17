@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol5_0008_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol5_0008_R.jpg",
+    "bytes": 2683374,
+    "sha256": "30ac6cfbbed31e9791c04a8fab9dc449ae54e35c76d94ac31f15020e34c5e206",
+    "sha256_of": "original",
+    "working_copy": "vol5_0008_R.jpg"
+  },
+  "text": "Felix episcopus etc dilectis filiis Francisco tituli sancti marcelli presbitero Cardinali Chesulon\nCancellario officiali Gebennensi Salutem etc apostolice sedis circumspecta etc et benigna Cum\nitaque hodie dilecti filii Andreas de fillens agentis scafletj et hugo de luy-\nrier sancti Benigni divionensis sancti Benedicti Cisterciensis Gratianopolitanensis\net Bellicensis diocesis foranei quos rursus tempore obtemperancie saltem resurgente\nQuocirca discrecioni vestre per apostolica scripta mandamus quatenus vos vel\nduo aut unus vestrum per vos vel alium seu alios eundem Andream vel procura-\ntorem suum suo nomine in corporalem possessionem prioratus sancti Benigni predictorum\net pertinenciarum suarum inducatis auctoritate nostra et defendatis inductum amoto\nexinde quolibet allieno detentore ac faciatis dictum Andream vel procuratorem suum\npro eo ad huiusmodi prioratum sancti Benigni ut est moris admitti eique Andreas\nipsius vigore prioratus ipsius prioratus sancti Benigni possessione frui pacifica\nasserentis de monasterio sancti michaelis de clusa per nostras litteras reservati\nhuiusmodi eadem auctoritate mittem prioris mande earum tenore inseratis et eisdem veri-\nper Florentia in omnibus et in fructibus ac finitiva in illis civitate tractavit florenorum\nde ipsis prioratus sancte Benigni fructibus respondeant . Juri et obedienciam\nque respondent . Contradictores dicte nostre etc Ceterum de cunctis episcopo abbati\net canonicis ipsorum vel quibusvis aliis eorundem nichil duntaxat a sede predicta iudicem\nexistat quod medietatem in posse per has apostolicas litteras fecerit nec non Dat'\nGebennis Quarto nonas octobris Anno a nativitate domini Millesimoquadrin-\ngentesimoquadragesimo quarto pontificatus nostri Anno Quarto . xxvij Jo de Abbas\n\nFelix episcopus etc Dilecto filio magistro Antonio prochien decano ecclesie Sancti Jo Benencasa\nbenigni capellano nostro sacri palatii causarum apostolicarum auditori ac decretorum doctori Danonibus\nSalutem etc Humilibus supplicum votis libenter annuimus eaque favoribus prosequimur\nopportunis Exhibita siquidem nobis pro parte dilecti filii nobilis viri Ludo-\nvici ducis Sabaudie peticio continebat quod licet ipse dudum defenderet et toto\nquodam aymoneto Berthodi de Coloy Gebennensis diocesis ad ipsius fuisse devotum\nspectante dilecto filio hannequino de nomires habitatori Gebennensi ven-\ndidisset et tradidisset tamen dilectus filius Jacobus Bertheti de Coloy super\nhereditate et bonis huiusmodi eorumdem filio Johane marre officiali Geben-\nnensi non ex delegacione apostolica traxit in causam et licet dictus hannequinus\nforo officialis allegando causam huiusmodi fore prophanam et illius iudicium ad iudicem secu-\nlarem pertinere petensque illud ad consilium dicti ducis remittere debuisset\nipse tamen officialis per quoddam suum inter locutorium se iudicem in huiusmodi causa\ncompetentem fore pronuntians illam remittere contra iusticiam denegavit Dictus vero\nhannequinus senciens ex hoc et aliis sibi illatis et comminatis gravamina\nindebite se gravari ad sedem apostolicam appellavit nos eciam appellacionibus huius-\ntibi audienda commisimus et sine debito coram nobis tum quia ad nonnullos actus\ncitra tamen conclusionem inter partes ipsas dicatur processisse Sicut pro\nparte dicti ducis asserentis causam huiusmodi mere prophanam fore et ad diem con-\nsilii iudicium duntaxat pertinere nobis fuit humiliter supplicatum ut illud ad\nhuiusmodi consilium remittere dignaremur Nos magistratui supplicacionibus inclinati\ndiscrecioni tue per apostolica scripta mandamus quatenus vocatis dicto officiali\net aliis qui fuerint evocandi si est ita causam ipsam ad consilium predictum seu alterius\niudicis sui ordinarii examini remitte non postponas prout de iure fuerit\nfaciendo premissis et aliis contrariis non obstantibus quibuscumque Dat' Lausane Septimo\nIdus augusti Anno a nativitate domini millesimoquadringentesimoquadragesimo quarto\npontificatus nostri anno Quarto . viij Jo de Abbas",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 17446,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3954,
+    "lines": 48,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 81.38,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0005,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:53:35+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol5_0008_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol5_0008_R.jpg",
+      "bytes": 2683374,
+      "sha256": "30ac6cfbbed31e9791c04a8fab9dc449ae54e35c76d94ac31f15020e34c5e206",
+      "sha256_of": "original",
+      "working_copy": "vol5_0008_R.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:53:35+00:00"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol3_0073_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol3_0073_L.jpg",
+    "bytes": 2069467,
+    "sha256": "4f214f0794fa5718361e724eb97c57e02c761ea96388619c832dbb54c6c83d93",
+    "sha256_of": "original",
+    "working_copy": "vol3_0073_L.jpg"
+  },
+  "text": "etiam predecessoris nostri ac aliis apostolicis constitu-\ntionibus contrariis quibuscumque Aut si aliqui\nsuper commissionibus sibi faciendis de hospitalibus\nin illis partibus speciales vel generales dicte sedis\nvel legatorum eius litteras impetraverint etiam\nsi per eas ad inhibitionem reservationem et decretum vel alias\nquomodolibet sit processum quibus\nomnibus prefatum Anthonium in prelibati\nhospitalis assecutione volumus anteferri\nsed nullum per hoc eis quo ad assecutionem\nhospitalium aliorum preiudicium generari Seu si\nVenerabili fratri nostro Episcopo Vercellensi pro tempore\nexistenti vel quibusvis aliis communiter vel\ndivisim a dicta sit sede indultum quod ad\nreceptionem vel commissionem alicuius minime\nteneantur et ad id compelli non\npossint quodque de hospitalibus huiusmodi ad eorum\ncommissionem vel quamvis aliam dispositionem\nconiunctim vel separatim spectantibus nulli va-\nleat commissio fieri per litteras apostolicas non fa-\ncientes plenam et expressam ac de verbo ad verbum de indulto huiusmodi mentionem et qualibet\nalia dicte sedis Indulgentia generali vel\nspeciali cuiuscumque tenoris existat per quam\npresentibus non expressam vel totaliter non insertam\neffectus earum impediri valeat quomodolibet vel\ndifferri et de qua cuiusque toto tenore habenda sit in nostris\nlitteris mentio specialis Nos enim exnunc irritum decernimus\net inane si secus super hiis a quoquam quavis auctoritate scienter vel ignoranter contigerit attemptari Datum Basilee\nDecimoseptimo kalendas Novembris Anno a Nativitate\ndomini Millesimoquadringentesimoquadragesimo-\nsecundo Pontificatus nostri Anno Tercio xxi\nS de scto Johanne\nFelix episcopus etc Dilecto filio Lamperto de Euskirchen Rectori\nparrochialis ecclesie in Wamel Coloniensis diocesis Magistro\nin artibus Salutem etc litterarum scientia vite ac morum honestas aliaque laudabilia probitatis et virtutum merita super\nquibus apud nos fidedigno commendaris testimonio\nnos inducunt ut tibi reddamur ad gratiam liberales\nDudum siquidem sacra generalis sinodus Basiliensis\nInter alia gratias exspectativas et nominationes ad\nvacatura beneficia per summos Romanos pontifices tunc\nconcessas abolendo et eas de cetero fieri prohibendo",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 13446,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2187,
+    "lines": 41,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 52.37,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0009,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:11:03+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol3_0073_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol3_0073_L.jpg",
+      "bytes": 2069467,
+      "sha256": "4f214f0794fa5718361e724eb97c57e02c761ea96388619c832dbb54c6c83d93",
+      "sha256_of": "original",
+      "working_copy": "vol3_0073_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:11:03+00:00"
+  }
+}

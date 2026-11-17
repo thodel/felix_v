@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol2_0288_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol2_0288_L.jpg",
+    "bytes": 2533773,
+    "sha256": "e355d6a6e044c7cd3fcb09350b96105f1c4ab4f7abcd2b2dc873079fa34b1227",
+    "sha256_of": "original",
+    "working_copy": "vol2_0288_L.jpg"
+  },
+  "text": "paruorum secundum communem estimationem valorem annuum ut ipse Glaudius\nasserit non excedunt etiam si alias quouismodo aut\nex alterius cuiuscunque persona seu per liberam alicuius\nde illa extra Romanam curiam etiam coram\nnotario publico et testibus sponte factam resigna\ncionem uacet et tanto tempore vacauerit quod eius\ncollatio iuxta Lateranensis statuta concilii ad sedem\napostolicam legitime deuoluta ipsaque premodicta\ncappellania dispositioni apostolice specialiter reseruata\nexistat et super ea inter aliquos lis indecisa\ndummodo tempore datarum presentium non sit in ea\nalicui alteri specialiter ius quesitum et ad id illorum\npatronorum illius consensus interuenerit cum omnibus\niuribus et pertinentiis suis eidem Glaudio auctoritate\nnostra conferas et assignes Inducens per te uel\nalium seu alios eundem Glaudium uel procuratorem suum eius\nnomine in corporalem possessionem premodicte cappellanie\niuriumque et pertinentiarum predictorum et defendens\ninductum amoto etc detentore ac faciens eundem\nGlaudium ad premodictam cappellaniam huiusmodi ut\nmoris est admitti sibique de illius fructibus reddi\ntibus prouentibus etc responderi Contradictores\nauctoritate nostra appellatione postposita compescendo\nNon obstantibus felicis recordacionis Bonifacii\npape viii predecessoris nostri ac aliis consti\ntucionibus apostolicis contrariis quibuscunque\nAut si aliqui super prouisionibus sibi faciendis\nde huiusmodi uel aliis beneficiis ecclesiasticis in illis\npartibus speciales vel generales apostolice sedis vel etc\nimpetrauerint litteras etiam si per eas ad inhibi\ncionem etc processum quibus omnibus prefatum Glaudium\nin premodicte cappellanie assecucione volumus\nanteferri sed nullum per hoc eis quo ad assecucionem\nbeneficiorum aliorum preiudicium generari Seu\nsi venerabili fratri nostro episcopo Gebennensi uel quibusuis\naliis communiter uel diuisim ab eadem sit sede in\ndultum quod ad receptionem uel prouisionem ali\ncuius minime teneantur et ad id compelli aut\nquod interdici etc non possint quodque de huiusmodi\nuel aliis beneficiis ecclesiasticis ad eorum collationem etc\nprouideri per litteras apostolicas non facientes etc\nmentionem et qualibet alia dicte sedis etc existat\nper quam presentibus non expressam vel tota\nliter non insertam effectus huiusmodi gratie impediri",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 23044,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2285,
+    "lines": 44,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 50.95,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0013,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:09:57+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol2_0288_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol2_0288_L.jpg",
+      "bytes": 2533773,
+      "sha256": "e355d6a6e044c7cd3fcb09350b96105f1c4ab4f7abcd2b2dc873079fa34b1227",
+      "sha256_of": "original",
+      "working_copy": "vol2_0288_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:09:57+00:00"
+  }
+}

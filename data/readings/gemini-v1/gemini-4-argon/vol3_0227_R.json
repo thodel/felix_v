@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol3_0227_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol3_0227_R.jpg",
+    "bytes": 2357204,
+    "sha256": "004327c2b2e2662a2e64718ce64b427e779d7f567cba1e7aaff4e958f61433a8",
+    "sha256_of": "original",
+    "working_copy": "vol3_0227_R.jpg"
+  },
+  "text": "et si illam interim assequaris parrochialem ecclesiam de\nEschelwiler predictam quam ex tunc vacare decernimus\ndimittere alioquin si assecutio huiusmodi de dicta parrochiali ecclesia\ninterim facta non fuerit omni iuri tibi in illa vel ad\neam quolibet competenti cedere tenearis omnino Nulli\nergo etc. nostre reservationis inhibitionis constitutionis\net voluntatis infringere etc. contrarie Siquis autem etc.\nincursurum Datum Basilee Sexto Nonas Octobris Anno\na Nativitate domini millesimoquadringentesimoquadragesimosecundo\nPontificatus nostri Anno tertio .x. .d. pro Bri poncy\nFelix etc. Dilectis filiis Decano maioris ac preposito\nsancti petri Basilien et Archidiacono Meten ecclesiarum\nSalutem etc. Vite ac morum honestas aliaque laudabilia\nprobitatis et virtutum merita super quibus dilectus filius\nIohannes Erust prepositus ecclesie sancti Theobaldi extra\nmuros Meten apud nos fidedigno commendatur testimonio\nnos inducunt ut sibi reddamur ad gratiam liberales Cum\nitaque sacra generalis Synodus Basilien per quoddam\nsuum decretum quod incipit Placuit divine pietati grates etc.\ncedere teneatur omnino Quo circa discrecioni vestre per\napostolica scripta mandamus quatinus vos vel duo aut vnus vestrum\nper vos vel alium seu alios beneficium huiusmodi per nos ut\npremittitur reservatum si tempore reservationis nostre huiusmodi vacabat\nvel postea vacavit aut cum primum vacaverit eidem Iohanni post\nacceptacionem predictam cum omnibus iuribus et pertinentiis suis\nauctoritate nostra conferre et assignare curetis Inducentes\neundem Iohannem vel procuratorem suum eius nomine in corporalem\npossessionem beneficii iuriumque et pertinentiarum predictorum\net defendentes inductum ac facientes ipsum Iohannem vel\ndictum procuratorem pro eo ad beneficium huiusmodi ut est moris\nadmitti sibique de illius fructibus redditibus proventibus iuribus\net obventionibus vniversis integre responderi Non obstantibus\nomnibus supradictis Aut si preposito Thesaurario Canonicis\nCapitulo et personis prefatis vel quibusvis aliis communiter vel\ndivisim a dicta sit sede indultum quod interdici suspendi\nvel excommunicari non possint per litteras apostolicas non facientes plenam et expressam etc.",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 19977,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2177,
+    "lines": 36,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 59.5,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0009,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:14:25+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol3_0227_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol3_0227_R.jpg",
+      "bytes": 2357204,
+      "sha256": "004327c2b2e2662a2e64718ce64b427e779d7f567cba1e7aaff4e958f61433a8",
+      "sha256_of": "original",
+      "working_copy": "vol3_0227_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:14:25+00:00"
+  }
+}

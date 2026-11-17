@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol5_0009_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol5_0009_R.jpg",
+    "bytes": 2663894,
+    "sha256": "d79f6c9ba0d576305a7e18fdcf39608531427925a7b0fc5562433fc2edfc38fe",
+    "sha256_of": "original",
+    "working_copy": "vol5_0009_R.jpg"
+  },
+  "text": "viribus destitutus existat quod regimini et administracioni dicti hospitalis\nintendere non possit commode per seipsum et propterea regimen et administracionem\ndicti hospitalis sponte et libere cedere proponit: Nos vero ipsius peticionibus\nin hac parte favorabiliter annuentes ac volentes dicto hospitali de gubernatore\nfructuoso utili et ydoneo per quem circumspecte regi et salubriter dirigi\nvaleat providere premissis merito plurimis et virtutum meritis quibus persona\ndilecti filii Jacobi Granauri Rectoris parochialis ecclesie de Vuilliens dicte\ndiocesis fidedignorum testimoniis iuvari perhibetur diligenter attentis discrecioni\ntue per apostolica scripta mandamus quatinus si ab eodem perveniens vel perveniens\nsuo ad hoc ab eo specialiter constituto cessione huiusmodi si eam in tuis manibus facere\nvoluerit ut prefertur auctoritate nostra recipias et admittas eaque per te recepta\net admissa hospitale predictum quod de iure patronatus laicorum existit cuiusque\nfructus redditus et proventus Triginta librarum Turonensium parvorum secundum communem exti-\nmacionem ut ipse Jacobus asserit non excedunt sive ut premittitur sive per similem\nalicuius alterius de illo extra Romanam curiam eciam coram notario publico et testibus\nsponte factam cessionem aut alias quovis modo persona vacavit eciam si et super\neo motus aliquos lites cuiuscumque status penitus haberi volumus pro expresso pendeat in-\ndecisa dummodo tempore date presencium non sit alicui de iure canonice commissum eidem\nJacobo cum omnibus juribus et pertinentiis suis iuxta formam constitucionis felicis\nrecordacionis Clementis pape V. predecessoris nostri super hoc edite per vos quoad\nvixerit concedas regendum et eciam gubernandum si ad id consensus dictorum patronorum\nintervenerit auctoritate nostra committas Inducens per te vel alium seu alios eundem Jaco-\nbum vel procuratorem suum eius nomine in corporalem possessionem hospitalis juriumque et perti-\nnenciarum predictorum et defendens inductum amoto exinde quolibet illicito detentore\nac faciens ipsi Jacobo vel dicto procuratori pro eo ad hospitale huiusmodi vadens meritis ad\nmitti sibique de illius fructibus redditibus proventibus iuribus et obvencionibus integre responderi\nContradictores auctoritate nostra etc. compescendo Non obstantibus apostolicis constitucionibus et ordinacionibus contrariis\nquibuscumque. Aut si aliqui super commissionibus sibi faciendis de hospitalibus\nhuiusmodi speciales vel generales dicte sedis vel legatorum eius litteras impetrarint\neciam si per eas ad inhibicionem etc. sit processum quibus omnibus ipsum Jacobum in dicti\nhospitalis assecucione volumus anteferri sed nullum per hoc eis quo ad assecucionem\nhospitalium aliorum preiudicium generari. Seu si venerabili fratri nostro episcopo Lausannensi aut qui-\nbusvis aliis communiter vel divisim a sede apostolica sit indultum quod ad recepcionem vel commis-\nsionem et ad id compelli aut quod interdici etc. non possint quodque de hospitalibus huiusmodi ad\neorum commissionem aut provisionem seu quamvis aliam disposicionem coniunctim vel separatim\nspectantibus nulli valeat commissio fieri per litteras apostolicas non facientes etc. mencionem et\nqualibet alia dicte sedis indulgencia etc. existat per quam etc. effectus earum fraudari etc.\nvel differri et de qua cuiusque etc. duntaxat etc. dictus Jacobus ut eciam asserit prochialem\nterciam partem necnon unam ad sancti Georgii in de Solens ac aliam ad beate Marie in\nsancti Prothasii parrochialibus ecclesiis necnon alteram in capella prochiarum eciam de Solens\neiusdem diocesis ad sancti Antonii altaria sita perpetuas capellanias que sine cura sunt\net quorum omnium fructus redditus et proventus Septuaginta duarum librarum Turonensium simili-\nter secundum predictam extimacionem valorem annuum non excedunt noscitur obtinere. Nos enim ex nunc irri-\ntum decernimus et inane si secus etc. attemptatum. Datum Gebennis Quarto Kalendas octobris\nAnno a nativitate Domini millesimoquadringentesimoquadragesimoquarto pontificatus\nnostri Anno Quinto. : xxxviij Do de Abbate",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 14852,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 4039,
+    "lines": 46,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 86.83,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0007,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:54:05+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol5_0009_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol5_0009_R.jpg",
+      "bytes": 2663894,
+      "sha256": "d79f6c9ba0d576305a7e18fdcf39608531427925a7b0fc5562433fc2edfc38fe",
+      "sha256_of": "original",
+      "working_copy": "vol5_0009_R.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:54:05+00:00"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol4_0266_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol4_0266_L.jpg",
+    "bytes": 1873472,
+    "sha256": "bca5262731d2194de3e97eff3211999db689c65ca55c8a6cf73814675142accf",
+    "sha256_of": "original",
+    "working_copy": "vol4_0266_L.jpg"
+  },
+  "text": "Guillermus nullam penitus in eorum personis rebus vel\nbonis iurisdictionem correctionem punitionem civiliter vel\ncriminaliter etiam ratione delicti vel contractus aut\nrei de qua agitur ubicumque delictum commissum aut\ncontractus initus fuerit aut res ipsa consistat\ncontra exemptionem nostram huiusmodi quomodocumque\nexercere possit vel presumat suspensa ac\ndecernentes exnunc omnes sententias censuras et processus\nquos contra exemptionem et liberationem easdem attemptari\nforsan contigerit irritos et inanes\nnulliusque roboris vel momenti omnesque et singulas\ncausas coram dicto Guillermo contra Iohannem et alios\npredictos motas et pendentes illarum status presentibus\npro expressis habentes earundem presentium serie ad nos\nadvocantes Discretioni tue per apostolica scripta mandamus quatenus\npartibus convocatis causas huiusmodi auctoritate nostra resumens illas ulterius\nnecnon quascumque alias inter Guillermum ac alios supradictos\nsuscitandas causas premissas et singulas eadem auctoritate audias\net fine debito termines faciens quod decreveris per censuram\necclesiasticam firmiter observari Inhibens nichilominus eidem Guillermo\nne contra exemptionem et liberationem nostram huiusmodi\nquicquam sub excommunicationis et aliis ecclesiasticis sententiis censuris\net penis attemptare presumat Non obstantibus constitutionibus privilegiis\naut aliis privilegiis ac litteris apostolicis eidem Guillermo\nconcessis etiam si de illis in presentibus de verbo ad verbum\nspecialis mentio fieri deberet ceterisque contrariis\nquibuscumque Aut si prefato Guillermo vel quibusvis aliis communiter vel\ndivisim ab eadem sit sede indultum quod interdici suspendi\nper litteras apostolicas non facientes plenam et expressam ac de verbo ad verbum de indulto huiusmodi mentionem Datum Gebennis decimo octavo kalendas decembris\nanno a nativitate domini millesimo quadringentesimo quadra\ngesimo tertio pontificatus nostri anno quarto xxx Jo de Abbatia",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 15193,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 1933,
+    "lines": 31,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 61.39,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0016,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:17:37+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol4_0266_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol4_0266_L.jpg",
+      "bytes": 1873472,
+      "sha256": "bca5262731d2194de3e97eff3211999db689c65ca55c8a6cf73814675142accf",
+      "sha256_of": "original",
+      "working_copy": "vol4_0266_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:17:37+00:00"
+  }
+}

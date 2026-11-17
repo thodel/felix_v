@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol3_0120_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol3_0120_R.jpg",
+    "bytes": 2448093,
+    "sha256": "835f8a858115fbbde118ba773ca5293acebff66c6e942d41b87f3cd878907ada",
+    "sha256_of": "original",
+    "working_copy": "vol3_0120_R.jpg"
+  },
+  "text": "tibi legittime constiterit illam auctoritate nostra admittas\nillaque per te admissa prefatum Johannem dummodo in dicto\ndecanatu intrusus non fuit in omni jure et ad omne\njus huiusmodi quod dicto Humberto tempore cessionis huiusmodi\nin eodem decanatu vel ad illum quolibet competiit\naut competere potuit dicta auctoritate nostra surroges\neundemque jus sibi conferas et provideas eciam de illo\nnecnon ipsum Johannem ad huiusmodi jus ac eius necnon ipsius\nlitis et cause prosecucionem et defensionem in eo statu\nin quo dictus Humbertus tempore dicte cessionis erat\net si illam non fecisset posset et deberet admitti ad\nmittas et admitti facias ut est moris Et nichil\nominus decanatum predictum qui sine cura est\net cuius fructus redditus et proventus sexaginta\nlibrarum Turonensium parvorum secundum communem exstimacionem\nvalorem annuum ut ipse Johannes asserit non excedunt\nsive per huiusmodi cessionem sive ad huc per obitum dicti\nJohannis ut premittitur sive alias quovismodo aut\nex alterius cuiuscumque persona seu per liberam resigna\ncionem alterius illam de illo extra Romanam curiam\neciam coram notario publico et testibus sponte factam\nvacet eciam si tanto tempore vacaverit quod eius collacio\njuxta Lateranensis statuta concilii ad sedem apostolicam\nlegittime devoluta ipsiusque decanatus disposicioni\napostolice specialiter reservatus existat et super eo inter aliquos\nalios lis cuius statum presentibus haberi volumus\npro expresso pendeat indecisa dummodo tempore data\npresentium non sit in eo alicui specialiter jus quesitum\ncum omnibus juribus et pertinenciis suis prefato Johanni\nauctoritate nostra predicta conferas et assignes Inducens\nper te vel alium seu alios eundem Johannem vel procuratorem\nsuum eius nomine in corporalem possessionem decanatus\njuriumque et pertinenciarum predictorum et defendens\ninductum amoto exinde quolibet illicito detentore\nac faciens ipsum Johannem vel dictum procuratorem pro\neo ad eundem decanatum ut est moris admitti\nsibique de illius fructibus redditibus proventibus juribus\net obvencionibus universis integre responderi Contra\ndictores auctoritate nostra apostolica postposita compescendo\nNon obstantibus pie memorie Bonifacii pape viii\npredecessoris nostri et aliis apostolicis constitucionibus\ncontrariis quibuscumque Aut si aliqui super provisionibus\nsibi faciendis de huiusmodi vel aliis beneficiis e",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 13821,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2354,
+    "lines": 43,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 53.77,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0013,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:11:46+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol3_0120_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol3_0120_R.jpg",
+      "bytes": 2448093,
+      "sha256": "835f8a858115fbbde118ba773ca5293acebff66c6e942d41b87f3cd878907ada",
+      "sha256_of": "original",
+      "working_copy": "vol3_0120_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:11:46+00:00"
+  }
+}

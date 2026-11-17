@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol4_0228_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol4_0228_R.jpg",
+    "bytes": 2332612,
+    "sha256": "6fd956643619a93e190326395b7b1aae8363729eaca5a3cd4251708aa8b6fbfc",
+    "sha256_of": "original",
+    "working_copy": "vol4_0228_R.jpg"
+  },
+  "text": "provideri per litteras apostolicas non fecerint etc. inciderint et qualibet\nalia etc. Sed et si eisdem indulgentiis etc. constaret per quas presentibus non\nexpressam vel effectum huiusmodi prorsus impediri vel differri quomodolibet\nvel differri et de qua cuiusque toto tenore habenda foret in nostris litteris\nmentio specialis Nos enim ex tunc irritum decernimus et inane\nsi secus super hiis a quoquam quavis auctoritate scienter vel ignoranter\ncontigerit attemptari. Datum Thononii Gebennensis diocesis\nquartodecimo kalendas octobris Anno a nativitate domini millesimo\nquadringentesimo quadragesimo tertio pontificatus nostri\nanno quarto. .xl. Jo. de abbatia\n\nFelix episcopus etc. dilectis filiis decano Anniciensis burgi Gebennensis diocesis et Francisco\nLamberti ac Antonio Piodeti canonicis Gebennensis ecclesie salutem etc. Litterarum\nscientia vite ac morum honestas aliaque laudabilia probitatis et virtutum merita\nsuper quibus dilectus filius Aymo Gualterii de Rivalibus\nrector parrochialis ecclesie de Cusin Gebennensis diocesis apud nos fide digno commendatur testimonio nos inducunt\nut se sibi reddamus ad gratiam liberalem. Volentes itaque eidem Aymoni pre-\nmissorum meritorum suorum intuitu gratiam facere specialem canonicatum et pre-\nbendam dicte ecclesie Gebennensis que in eadem ecclesia Gebennensi dumtaxat\ndum nos eidem Gebennensi ecclesie preeramus vacasse noscuntur et que\npropterea iuxta constitutionem felicis recordationis Clementis pape V predecessoris nostri\nque incipit Etsi in temporalibus dispositioni nostre reservati existunt quorum-\nque fructus redditus et proventus viginti librarum turonensium parvorum secundum communem\nextimationem valorem annuum non excedunt sive premisse sive alias\nquovis modo aut per liberam resignationem dicti Aymonis vel alterius\ncuiuscumque de illis in dictis partibus sive in Romana curia sponte factam vacent\netiam si tanto tempore vacaverint quod eorum collatio iuxta Lateranensis statuta concilii\nad sedem apostolicam legitime sit devoluta etc. conferendos eidem Aymoni cum plenitudine\niuris canonici de speciali gratia reservamus etc. districtius inhibentes dilectis\nfiliis capitulo et canonicis ac singulis personis dicte ecclesie Gebennensis\nnecnon quibusvis aliis ad quos collatio provisio presentatio seu quevis\nalia dispositio eorundem canonicatus et prebende pertinet communiter vel divisim\nne de illis interim quomodolibet disponere presumant Nos enim ex nunc irritum\ndecernimus et inane si secus super hiis a quoquam quavis auctoritate scienter\nvel ignoranter contigerit attemptari Quocirca discretioni vestre per apostolica\nscripta mandamus quatinus vos vel duo aut unus vestrum per vos vel alium\nseu alios eidem Aymoni vel procuratori suo eius nomine de dictis canonicatu\net prebenda cum eis vacaverint iuxta reservationis nostre predicte tenorem\nauctoritate nostra provideatis eundemque Aymonem vel procuratorem suum eius nomine in\ncorporalem possessionem canonicatus et prebende predictorum iuriumque et pertinentiarum\nsuorum inducatis auctoritate nostra et defendatis inductum amoto quolibet detentore\nfacientes sibi de ipsorum canonicatus et prebende fructibus redditibus proventibus\niuribus et obventionibus universis integre responderi Non obstantibus felicis\nrecordationis Bonifatii pape VIII predecessoris nostri et aliis apostolicis constitutionibus\nnecnon statutis et consuetudinibus ipsius ecclesie Gebennensis contrariis quibuscumque\naut si aliquibus super provisionibus sibi faciendis de huiusmodi canonicatu et\nprebenda seu aliis beneficiis ecclesiasticis in illis partibus generales vel speciales\napostolice sedis vel legatorum eius littere impetrate existant etiamsi per eas ad inhibi-\ntionem reservationem et decretum vel alias quomodolibet sit processum",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 16917,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3746,
+    "lines": 48,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 77.04,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0008,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:52:21+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol4_0228_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol4_0228_R.jpg",
+      "bytes": 2332612,
+      "sha256": "6fd956643619a93e190326395b7b1aae8363729eaca5a3cd4251708aa8b6fbfc",
+      "sha256_of": "original",
+      "working_copy": "vol4_0228_R.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:52:21+00:00"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol8_0160_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol8_0160_R.jpg",
+    "bytes": 2907324,
+    "sha256": "9602c9f225f9a35051c30289b0f7090f69642b5e2dfb6dd3cea25e0ef3c37e60",
+    "sha256_of": "original",
+    "working_copy": "vol8_0160_R.jpg"
+  },
+  "text": "illo quam fide ipse et alii captivi supradicti tanta temporis afflictiones\net penurias sustinuerunt sub ea condicione relaxari obtinuit quod scilicet ipse\nJohannes infra certum terminum sibi per dictum abnegantem christianum ad hec pre-\nfixum millequingentos ducatos auri pro quantitate ac portione illius pro sua\nnecnon genitoris et fratrum suorum huiusmodi liberatione eidem abnegato christiano\ndare et solvere alioquin ad captivitatem pristinam personaliter redire deberet\net teneretur Et quamquam sepe dictus Johannes omnia bona mobilia et immobilia que\niidem captivi ante huiusmodi captivitatem habuerant venditioni exposuerit\nNichilominus tam paucum quod exinde habuit quod etiam per ipsum Johannem etiamque\na christifidelibus successive in diversis propeque peralie partibus operosa cum dili-\ngentia collecta subsidia ad predictam summam minime ascenderit ipsiusque pro libe-\nratione infra terminum huiusmodi cuius finis infra sex menses instare dinos-\ncitur effectualiter peragenda adhuc christiana ipsorum christifidelium suffra-\ngia plurimum necessaria Nos igitur eorundem captivis paterno compatientes\naffectu ac cupientes ut mediantibus suffragiis vestris huiusmodi liberentur\nuniversitatem vestram rogamus idque et hortamur attente vobis nichilominus\nin remissionem peccaminum iniungentes quatenus de bonis vobis a deo col-\nlatis pro liberatione huiusmodi captivorum pias elemosinas et grata cari-\ntatis subsidia promptis mentibus erogetis utque subventione vestra huiusmodi prefati\nipsam valeant de manibus infidelium et a tam gravi servitute liberari\nvosque per hec et alia bona opera que domino inspirante feceritis ad eterne\npossitis felicitatis gaudia pervenire Nos enim de omnipotentis dei misericordia\nac beatorum petri et pauli apostolorum eius auctoritate confisi omnibus vere penitentibus\net confessis qui pro liberatione captivorum huiusmodi manus suas porrexe-\nrint adiutrices Quinque annos et totidem quadragenas de iniunctis\neis penitentiis misericorditer relaxamus presentibus post sex menses minime va-\nlituris Datum Lausane Tertio nonas decembris Anno a nativitate domini\nMillesimoquadringentesimo quadragesimooctavo pontificatus nostri anno\nNono. Gratis pro deo / episcopus Dunkeldensis\n\nFelix episcopus etcetera Dilecto filio nostro Bernardo tituli sancti Clementis presbytero cardi-\nnali sancte Romane ecclesie presbytero cardinali Aquensi vulgariter nuncupato Salutem etcetera\nDum ad personam tuam nobis et apostolice sedi devotam qua divina clementia\nmagnis dotavit virtutibus gratiarum preve dirigimus consideratio-\nnem mentis intuitum attente pensantes quod tu Romam ecclesiam cuius hono-\nrabile membrum existis tuorum plenius honorans magnitudine meritorum\ndebitum reputamus ut tibi illi repens sexhibere gratiam munificentia\net decus oportunitatibus liberalem Cum itaque hodie dilecto filio\nBertrando de Loreto monacho monasterii ambronan ordinis sancti Be-\nnedicti Lugdunensis diocesis de prioratu sancti petri de Aneto ordinis\net diocesis eorundem tunc certo modo vacante ac dispositioni nostre generaliter\nreservato per alias nostras litteras mandaverimus provideri prout in ipsis litteris",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 12210,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3131,
+    "lines": 41,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 75.37,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0006,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:01:42+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol8_0160_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol8_0160_R.jpg",
+      "bytes": 2907324,
+      "sha256": "9602c9f225f9a35051c30289b0f7090f69642b5e2dfb6dd3cea25e0ef3c37e60",
+      "sha256_of": "original",
+      "working_copy": "vol8_0160_R.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:01:42+00:00"
+  }
+}

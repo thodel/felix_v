@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol6_0253_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol6_0253_R.jpg",
+    "bytes": 2832396,
+    "sha256": "0622acf31977d2484648426eb9fc04aaa8a6bf772cdccfcfb8bd321fadf7ec3c",
+    "sha256_of": "original",
+    "working_copy": "vol6_0253_R.jpg"
+  },
+  "text": "sed nullus per hoc eis quoad assecutionem beneficiorum\naliorum preiudicium generetur. Semel venerabili fratri\nnostro Episcopo Gebennensi lausanensi vel quibuscumque aliis\nconiunctim vel divisim a dicta sede sede indulgentiam\nquod ad receptionem vel provisionem alicuius minime\nteneantur et ad id compelli aut quod interdici sus\npendi vel excommunicari non possint quodque de huiusmodi vel\naliis beneficiis ecclesiasticis ad eorum collationem pro\nvisionem presentationem aut provisionibus nulli valeat provideri\nper litteras apostolicas non facientes plenam et expressam\net qualibet alia dicte sedis indulgentia ac expressum\nqueque quorumque predictibus non expressis vel effectibus\nhuiusmodi ignoratis impediri valeat quolibet vel differri\net de qua cuiusque toto tenore habenda sit specialis\ndum quod ipse Johannes doren ut similiter asserit dicto\nde cappellania ad altare sancti Catharine situm in\necclesia Gebennensi cuius fructus redditus et proventus\ndecem librarum similium secundum extimationem predictam\nvalorem annuum non excedunt tunc certo modo vacante\nsuper qua litigat fuit auctoritate iuris per quasdam\nspeciales mandatarius quique beneficio ecclesiastico cum\ncura vel sine cura ad dilectorum filiorum quatuor mi\nnistrorum capelle beate Marie similiter domus episcopalis lau\nsanensis collationem provisionem presentationem seu quamvis\naliam dispositionem coniunctim vel divisim pertinens\nper quasdam alias hac vice tantum ipsius generalis\net applicandi tenore consilii nostrorum opportune Nos\nenim extunc irritum decernimus et inane si secus super hiis\ndare apud sanctodicum extra muros Gebennenses\nSemisseptimo kalendas martii Anno a nativitate Domini\nmillesimo quadringentesimo quadragesimo quinto pon\ntificatus nostri anno Sexto. Franciscus de silva F plati\nxvi gout ponty\nFelix Episcopus etc dilecto filio. officiali curiensi Salutem etc. G. noster\nDignum arbitramur et congruum ut illis se reddat Chaffalon\nsedes expostam gratiosam quibus ad id propria virtutum",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 8298,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 1980,
+    "lines": 36,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 54.03,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.001,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:58:13+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol6_0253_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol6_0253_R.jpg",
+      "bytes": 2832396,
+      "sha256": "0622acf31977d2484648426eb9fc04aaa8a6bf772cdccfcfb8bd321fadf7ec3c",
+      "sha256_of": "original",
+      "working_copy": "vol6_0253_R.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:58:13+00:00"
+  }
+}

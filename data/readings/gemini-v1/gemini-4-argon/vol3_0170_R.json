@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol3_0170_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol3_0170_R.jpg",
+    "bytes": 2363235,
+    "sha256": "df67af922f67efea283b379d270d1fdc787c332e3480b84d07f44bfd26378329",
+    "sha256_of": "original",
+    "working_copy": "vol3_0170_R.jpg"
+  },
+  "text": "dominus dicti castri si et postquam assignacionem\nseu commutacionem antedictam ut permictitur fecerit\nde censu quinque modiorum predictorum vini\nplenarie et cum effectu quittandi et liberandi\nSi vero dictus Wilhelmus aut dominus minus quam\nvaleant huiusmodi quinque modia vini assignaverit\npro rata assignatorum et traditorum ad arbitrium\npredictorum de censu antedicto defalcandi et\nquittanciam dandi et concedendi Episcopo vero\net officiali Gebennensi qui etiam pro tempore\nfuerint et eorum cuilibet postquam assignacionem\nseu commutacionem ut prefertur fore factam\nlegitime constiterit similem quittanciam et libe-\nracionem sicut predictum est prefato Wilhelmo\nseu domino eciam dandi et faciendi Preterea\nsi forsan aliquem vel aliquos ex quatuor\nnominatis arbitris mori impediri vel perpetuo\nabesse aut onus arbitrii huiusmodi suscipere\nnolle contingerit eo casu episcopo et officiali\neisdem et eorum cuilibet insolidum alium vel\nalios in eadem prelatura loco deficientis\nvel deficiencium arbitrorum nominandi et\nsurrogandi plenam et liberam auctoritate\net sciencia ac potestatis plenitudine\nsimilibus concedimus tenore presencium facul-\ntatem atque potestatem Non obstantibus pre-\nmissis necnon constitucionibus et ordina-\ncionibus apostolicis ceterisque contrariis quibuscunque\nNulli ergo etc. nostre advocacionis constitucionis\net concessionis infringere etc. Si quis etc.\nDatum Basilee tercio kalendas novembris anno\na nativitate domini millesimoquadringentesimo-\nquadragesimosecundo pontificatus nostri\nanno tercio\nGvis J Meger boppard L de Nussia\nFelix episcopus etc. Dilecte in Christo filie Alheydi de Asselter\nde militari genere procreate relicte quondam Petri Kalbeirz\narmigeri Coloniensis diocesis salutem etc. Provenit ex\ntue devocionis affectu quo nos et Romanam revereris\necclesiam ut peticiones tuas illas presertim que anime tue salutem\nrespiciunt ad exaudicionis graciam admittamus Hinc est\nquod nos tuis supplicacionibus inclinati ut confessor\ntuus quem duxeris eligendum omnium peccatorum tuorum",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 12758,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2017,
+    "lines": 43,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 45.93,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.001,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:12:11+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol3_0170_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol3_0170_R.jpg",
+      "bytes": 2363235,
+      "sha256": "df67af922f67efea283b379d270d1fdc787c332e3480b84d07f44bfd26378329",
+      "sha256_of": "original",
+      "working_copy": "vol3_0170_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:12:11+00:00"
+  }
+}

@@ -254,14 +254,29 @@ def main() -> int:
         if rep.exists():
             (OUT / "nel_report.json").write_text(rep.read_text())
 
-    comp = ROOT / "data/readings/compare.json"
+    comp = ROOT / "data/readings/compare_all.json"  # scripts/compare_all.py: CITlab, vote, qwen3.8, Gemini …
     if comp.exists():
-        (OUT / "readings.json").write_text(comp.read_text())
-        # page readings (no line geometry) per opening, for the viewer's reading menu
+        from compare_all import cer
+        ca = json.loads(comp.read_text())
+        models = [n for n in ca["readers"] if n not in ("CITlab", "vote")]
+        agg = {n: {"halves": ca["per_reader"][n]["halves"],
+                   "median_cer_vs_htr": (ca["matrix"].get(n, {}).get("CITlab") or {}).get("median"),
+                   "empty": ca["per_reader"][n]["empty"], "truncated": ca["per_reader"][n]["cut_off"],
+                   "with_loops": ca["per_reader"][n]["looping"],
+                   "median_len_ratio": ca["per_reader"][n]["median_len_vs_citlab"],
+                   "median_seconds": ca["per_reader"][n]["median_seconds"]} for n in models}
+        halves = [{"vol": h["vol"], "page": h["page"], "side": h["side"], "htr": h["readers"]["CITlab"],
+                   "readers": {n: {"text": h["readers"][n], "cer_vs_htr": cer(h["readers"][n], h["readers"]["CITlab"])}
+                               for n in ["vote"] + models if h["readers"].get(n, "").strip()}} for h in ca["halves"]]
+        (OUT / "readings.json").write_text(json.dumps(
+            {"note": ca["note"], "aggregate": agg, "readers": ca["readers"], "matrix": ca["matrix"], "halves": halves},
+            ensure_ascii=False, separators=(",", ":")))
+        # page readings (no line geometry) per opening, for the viewer's reading menu; empty answers left out
         pr: dict = {}
-        for h in json.loads(comp.read_text())["halves"]:
-            for m, r in h["readers"].items():
-                pr.setdefault(f"{h['vol']}:{h['page']}", {}).setdefault(m, {})[h["side"]] = r["text"]
+        for h in ca["halves"]:
+            for m in models:
+                if h["readers"].get(m, "").strip():
+                    pr.setdefault(f"{h['vol']}:{h['page']}", {}).setdefault(m, {})[h["side"]] = h["readers"][m]
         (OUT / "pagereadings.json").write_text(json.dumps(pr, ensure_ascii=False, separators=(",", ":")))
     print(json.dumps(summary, ensure_ascii=False))
     return 0

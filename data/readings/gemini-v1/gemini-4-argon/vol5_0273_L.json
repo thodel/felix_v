@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol5_0273_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol5_0273_L.jpg",
+    "bytes": 2483799,
+    "sha256": "db56cef9203dcca7c21bbd266c261703f0ea9192bb833863e00977e13dd547c9",
+    "sha256_of": "original",
+    "working_copy": "vol5_0273_L.jpg"
+  },
+  "text": "muli gaudemus necnon beneficium ecclesiasticum cum cura vel sine\ncura ad collationem provisionem presentationem seu quamvis aliam\ndispositionem dilectarum in christo filiarum Abbatisse et capituli\nMonasterii sancti Leodegarii valismasonis Basiliensis diocesis\naliarum nostrarum litterarum vigore nosceris expectare Volumus\nautem quod quamprimum ecclesie collacione huiusmodi possessionem\nfueris vigore presentium pacificam assecutus alie posterius\ndicte littere quoad beneficium cum cura dumtaxat\nsint casse et irrite nulliusque roboris vel momenti\nEt insuper cessionem iuris in quibusvis aliis a premissis\nbeneficiis ecclesiasticis vel ad ea tibi quomodolibet competentis\nper te hodie in manibus nostris sponte et libere factam\nadmittimus per presentes Nulli ergo etc nostre collationis\nprovisionis constitutionis voluntatis et admissionis\ninfringere etc Si quis autem etc incursurum Datum\nGebennis tercio Nonas Maii Anno a Nativitate\ndomini Millesimoquadringentesimoquadragesimo\nquarto Pontificatus nostri Anno\nQuarto gratis pro socio Jo Gislberti\nFelix episcopus etc Dilectis filiis Lausanensis et sancti\npauli Wormaciensis prepositis ac decano Monasteriensis\necclesiarum Salutem etc Grata devocionis et familiaritatis\nobsequia que dilectus filius Magister Bartholomeus de\nDinslaken rector parrochialis ecclesie de Winterswik\nMonasteriensis diocesis Scriptor et familiaris noster nobis\net apostolice sedi hactenus impendit et desistit incessanter\nEt quibus personam suam ex familiari etc iuvamen\nrecepimus nos inducunt ut sibi reddamur ad graciam",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 10687,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 1549,
+    "lines": 28,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 54.36,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0013,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:22:21+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol5_0273_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol5_0273_L.jpg",
+      "bytes": 2483799,
+      "sha256": "db56cef9203dcca7c21bbd266c261703f0ea9192bb833863e00977e13dd547c9",
+      "sha256_of": "original",
+      "working_copy": "vol5_0273_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:22:21+00:00"
+  }
+}

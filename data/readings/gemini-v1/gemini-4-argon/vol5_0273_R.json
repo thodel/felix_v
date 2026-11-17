@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol5_0273_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol5_0273_R.jpg",
+    "bytes": 2667570,
+    "sha256": "75e2a41e87a73233d6dbb5338da36e2d32f8b32bc9c9b1cd71ae6195eb9c1ff7",
+    "sha256_of": "original",
+    "working_copy": "vol5_0273_R.jpg"
+  },
+  "text": "liberator dudum per quondam felicis recordationis Clementem papam vii\nsponte et libere facta admisimus Quocirca discrecioni\nvestre per apostolica scripta mandamus quatenus vos vel duo aut\nunus vestrum per vos vel alium seu alios eundem Bartholo\nmeum vel procuratorem suum eius nomine in corporalem possessionem\ndicte collecte etcetera iuriumque et pertinenciarum predictorum inducatis\nauctoritate nostra et defendatis inductum amoto exinde\nquolibet detentore facientes sibi de ipsius collecte etcetera\nfructibus redditibus proventibus iuribus et obvencionibus universis\nintegre responderi Non obstantibus omnibus supradictis Seu\nsi prefato Episcopo vel quibusvis aliis communiter vel divisim\nab eadem sit sede indultum quod interdici etcetera non possint\nper litteras apostolicas etcetera mencionem Contradictores auctoritate\nnostra etcetera compescendo Datum Gebennis tercio Nonas\nMaii Anno a Nativitate domini Millesimoquadrin\ngentesimoquadragesimoquarto Pontificatus\nnostri Anno quarto gratis ut supra Io Barbor\nFelix episcopus etcetera Dilecto filio priori prioratus\nGiginaci Lugdunensis diocesis in Bellicensi diocesi Constituto\nSalutem etcetera Humilibus supplicum votis libenter annuimus\neaque favoribus prosequimur oportunis Exhibita siquidem\nnobis nuper pro parte dilecti filii Petri Malioteti\nlaici habitatoris Bellicensis peticio continebat quod licet\nipse dudum iusiurandum voluntarium quod nunquam pro aliquo\nfideiubere vel personam suam pro quopiam obligare deberet\ncasu matrimonii duntaxat excepto ad sancta dei evangelia\nsacris litteris corporaliter tactis emisisset postmodum\ntamen idem petrus iuramento huiusmodi contravenire\nnon credens prout eciam tunc expresse protestatus",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 68550,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 1693,
+    "lines": 29,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 57.41,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0012,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:23:29+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol5_0273_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol5_0273_R.jpg",
+      "bytes": 2667570,
+      "sha256": "75e2a41e87a73233d6dbb5338da36e2d32f8b32bc9c9b1cd71ae6195eb9c1ff7",
+      "sha256_of": "original",
+      "working_copy": "vol5_0273_R.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:23:29+00:00"
+  }
+}

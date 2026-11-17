@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol5_0273_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol5_0273_L.jpg",
+    "bytes": 2483799,
+    "sha256": "db56cef9203dcca7c21bbd266c261703f0ea9192bb833863e00977e13dd547c9",
+    "sha256_of": "original",
+    "working_copy": "vol5_0273_L.jpg"
+  },
+  "text": "inter predictum minus beneficium ecclesiasticum cum cura vel sine\ncura ad collationem provisionem presentationem seu quamvis aliam\ndispositionem dilectorum in Christo filiarum Abbatisse et capituli\nmonasterii sancti Leodegarii Valesianensis Basiliensis diocesis\nillarum litterarum nostrarum vigore noscitur expectare volumus\nautem quod quamprimum eorundem collatione huiusmodi possessionem\nfueris vigore presentium pacificam assecutus alie postremum\ndictarum litterarum quoad beneficium cum cura dumtaxat\nsint cassa et irrita nulliusque roboris vel momenti\nEt insuper cessionem iurium spiritualium alio a premissis\nbeneficiis ecclesiasticis vel ad ea tibi quomodolibet spectantia\nper te hodie in manibus nostris sponte et libere factam\nadmittimus per presentes Nulli ergo etc. nostre tollationis\nprovisionis constitutionis voluntatis et admissionis\ninfringere etc. Si quis autem etc. invasurum Datum\nGebennis tertio Nonas Maii Anno a Nativitate\ndomini Millesimoquadringentesimoquadragesimo-\nquarto Pontificatus nostri Anno\nxxii quarto gratia pro Petro de Gribber\n\nFelix episcopus etc Dilectis filiis Laurentio et sancti\npauli Bononiensis prepositis ac decano monasterii\necclesie sancte etc Grata devotionis et familiaritatis\nobsequia que dilectus filius magister Bartholomeus de\nDumphaliis rector parrochialis ecclesie de Wenterthornt\nmonasteriensis diocesis Scriptor et familiaris noster\net apostolice sedi hactenus impendit et defessus intendere\net quibus persona sua nobis familiaris et nimium\npropria nos inducunt ut sibi reddamur ad gratiam",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 7140,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 1545,
+    "lines": 28,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 54.18,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0013,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:55:35+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol5_0273_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol5_0273_L.jpg",
+      "bytes": 2483799,
+      "sha256": "db56cef9203dcca7c21bbd266c261703f0ea9192bb833863e00977e13dd547c9",
+      "sha256_of": "original",
+      "working_copy": "vol5_0273_L.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:55:35+00:00"
+  }
+}

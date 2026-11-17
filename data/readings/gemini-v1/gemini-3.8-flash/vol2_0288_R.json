@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol2_0288_R",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol2_0288_R.jpg",
+    "bytes": 2755844,
+    "sha256": "fec88f7fbc6f8d6b5fbcfd1309be79f072a9a5eb519ee0a1bc4eebfc05a0b33c",
+    "sha256_of": "original",
+    "working_copy": "vol2_0288_R.jpg"
+  },
+  "text": "valeat quomodolibet vel differri / Et si secus super hiis a quoquam quavis auctoritate\nscienter vel ignoranter attemptatum fuerit decernimus et inane\nsi secus super hiis a quoquam quavis auctoritate\nvel attemptari / Datum Basilee tertiodecimo kalendas aprilis\nAnno a Nativitate domini Millesimoquadringentesimo\nquadragesimo secundo pontificatus nostri Anno secundo. /\nxiij F Episcopus Dunkeldensis ? ?\nFelix episcopus etc. Dilectis filiis Abbati monasterii habundantiae Gebennensis\nbenen diocesis et precentori ecclesie Bituricensis ac officiali Gebennensi\nsalutem etc. Vite ac morum honestas etc. super quibus dilectus filius Johannes\nBouezati rector parrochialis ecclesie sancti ypoliti Gebennensis diocesis apud nos\nfidedigno commendatur testimonio nos inducunt ut sibi reddamus ad\ngratiam liberales / Exhibita siquidem nobis nuper pro parte dicti Johannis\npetitio continebat quod olim postquam ipse alteram ex duabus capellaniis in\necclesia de Cygonziez dicte diocesis per bone memorie Guillelmum quondam episcopum\nGebennensem fundatis qua quarum fundatione eademque auctoritate confirmata\ncaveri dicitur quod nullus alteram ex eisdem capellaniis pro tempore obtinens\nquodcumque aliud beneficium cum huiusmodi capellania obtinere possit tunc\ncerto modo vacantem dicti filii auctoritate collatam fuisse asseritur\nDilectus filius Franciscus sancte Marie trans tyberim presbiter cardinalis /\nipsius tunc et nunc episcopus Gebennensis tenuitate fructuum et reddituum\ndicte capellanie provide considerans prefato Johanni ut dicta fundatione\nnon obstante quodcumque aliud beneficium ecclesiasticum etiam si illi cura immi-\nneret dummodo sibi alias canonice conferretur recipere et quoadvixerit retinere\nvaleret eademque auctoritate concessit prout in ipsius cardinalis litteris plenius\ncontinetur / Cumquequidem concessionis pretextu dictus Johannes postmodum\nde Thyz primo et deinde illa dimissa predictam sancti ypoliti qua\nadhuc obtinet parrochiales ecclesias successive sibi canonice fuisse collatas\nextitit asserutus Cumque autem sicut eadem petitio subiungebat\nprefatus Johannes dubitet concessionem episcopi sibi factam huiusmodi ex certis\ncausis viribus non subsistere dictamque capellaniam adhuc vacare /\nNos volentes dicto Johanni premissorum meritorum suorum intuitu gratiam\nfacere specialem Discretioni vestre per apostolica scripta mandamus quatinus\nvos vel duo aut unus vestrum capellaniam predictam que sine cura\nest / cuius fructus redditus et proventus decem librarum turonensium parvorum secundum communem extimationem\nan. ut idem Johannes asserit non excedunt sive certo modo sive de ea sibi\nprovisum extitit sive alio quovis modo vacet etiam si tanto tempore\nvacaverit quod eius collatio iuxta lateranensis statuta decreti devoluta ipsaque capellania\ndispositioni apostolice quomodolibet reservata existat / et super ea inter\naliquos lis cuiuscumque status indecisa dummodo tempore date presentium non\nsit in ea alicui specialiter ius quesitum cum omnibus iuribus et pertinentiis",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 11311,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 2997,
+    "lines": 41,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 72.12,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0007,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T08:48:28+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol2_0288_R",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol2_0288_R.jpg",
+      "bytes": 2755844,
+      "sha256": "fec88f7fbc6f8d6b5fbcfd1309be79f072a9a5eb519ee0a1bc4eebfc05a0b33c",
+      "sha256_of": "original",
+      "working_copy": "vol2_0288_R.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T08:48:28+00:00"
+  }
+}

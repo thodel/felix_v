@@ -1,0 +1,64 @@
+{
+  "schema": "atr-batch/1",
+  "run": "felix-v-sample-gemini-v1",
+  "model": "gemini-4-argon",
+  "engine": "external",
+  "doc_id": "",
+  "source": {
+    "key": "vol5_0096_L",
+    "doc_id": "",
+    "bestand": null,
+    "name": "vol5_0096_L.jpg",
+    "bytes": 2548383,
+    "sha256": "4e9b8d7ffdae49a2b9d99be3f04b30cf6a74ff0e0f72bafb193cac64813dac1b",
+    "sha256_of": "original",
+    "working_copy": "vol5_0096_L.jpg"
+  },
+  "text": "perpetuam ad dictum sancte Crucis in dicta ecclesia sita altaria quas tunc temporis\nobtinebant desiderantes illas ut asserebant ex certis rationabilibus causis etcetera\nresignationem earundem. Quocirca discrecioni vestre per apostolica scripta man-\ndamus quatenus vos vel duo aut vnus vestrum per vos vel alium seu alios\nprefatum Girardum vel procuratorem suum eius nomine in corporalem possessionem vica-\nrie iuriumque et pertinenciarum predictorum inducatis auctoritate nostra et defendatis\ninductum amoto exinde quolibet detentore facientes ipsum Girardum vel dictum\nprocuratorem pro eo ad vicariam huiusmodi ut est moris admitti sibique de illius fruc-\ntibus redditibus proventibus iuribus et obventionibus vniversis integre responderi Non obstantibus\nomnibus supradictis. Seu si episcopo preposito et capitulo prefatis vel quibusvis aliis\ncommuniter vel divisim a predicta sit sede indultum quod interdici etcetera non possit\nper litteras apostolicas non facientes etcetera mencionem Contradictores auctoritate etcetera\ncompescendo. Datum Lausanne Quinto idus Julii Anno etcetera ut supra. XII. Jo. R. abbas\n\nFelix episcopus etcetera Dilecto filio Ludovico tituli sancte Susanne sancte Romane ecclesie\npresbitero Cardinali de Varebone vulgariter nuncupato Salutem etcetera. Personam\ntuam nobis et apostolice sedi devotam tuis preclaris exigentibus meritis benignis\naffectibus prosequentes illa tua vota libenter admittimus per que tibi su-\npreme voluntatis liber stilus conceditur et testandi facultas tuique peregri-\nnacionis tue diem extremum testamentaria valeas dispositione prevenire ac\npropterea tibi iam concessa promptis amplexamur favoribus. Dudum siquidem\nGeneralis Synodus Basiliensis attendens quod tu qui tunc episcopus Lausanensis\neras et quem ad Johannem Romeorum imperatorem illustrem et venerabilem fratrem\nnostrum Joseph patriarcham Constantinopolitanum ac quosdam alios orientales\nchristi nomine inecntes ad tractandum cum eisdem nonnulla fidei orthodoxe necnon\ncatholice ecclesie vnionem concernentia cum certis aliis suis ambassiatoribus\nmittendis deputaverat grandes labores ac persone et rerum discrimina\nin prosequendis vniversalis ecclesie negociis subire habueras. Et propterea\neadem Synodus tibi labores huiusmodi graciarum munere compensare volens\ntibi per suas certi tenoris litteras ut de bonis mobilibus a te per ecclesiam\nLausanensem que tunc obtinebas et que ex tunc in futurum te obtinere contingeret seu alia beneficia ecclesiastica licite acquisitis que altaris vel altarium\nipsius ecclesie ac bonorum huiusmodi ministerio seu alicui speciali eorundem divino\ncultui vel vsui non forent deputata cuiuscumque quantitatis seu valoris ex-\nisterent eciam si illa vel aliqua ex eis ex proventibus ecclesiasticis seu ecclesia vel\nbeneficiis huiusmodi tibi commissis ac vel tue persone aut laborum tuorum racione\nseu aliis quibusvis modis vel ex causis per te licite pervenissent et perveni-\nrent in futurum prius tamen de prefatis bonis ere alieno et hiis que pro\nreparandis domibus seu edificiis ecclesiarum et beneficiorum huiusmodi culpa seu neg-\nligencia tua destructis vel deterioratis oportuna forent deductis pro de-\ncentibus et honestis expensis funeris tui et remuneracione illorum qui tibi\nviventi servivissent sive tui consanguinei sive alii iuxta servicii me-\nritum erogare et disponere necnon in pios vsus et licitos convertere\nposses et valeres licenciam concessit et eciam potestatem prout in eisdem litteris\nplenius continetur Nos attendentes quod nichil sit quod magis hominibus debeatur\nquam ut supreme voluntatis liber sit stilus et liberum quod iterum non redit arbitrium\ntuis quoque in hac parte supplicacionibus inclinati facultatem huiusmodi ne forsan",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 92276,
+  "truncated": false,
+  "settings": "prompt-ad2d8231+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 3708,
+    "lines": 45,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 81.4,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0005,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+  "recognised_at": "2026-11-17T09:20:40+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "felix-v-sample-gemini-v1",
+    "source": {
+      "key": "vol5_0096_L",
+      "doc_id": "",
+      "bestand": null,
+      "name": "vol5_0096_L.jpg",
+      "bytes": 2548383,
+      "sha256": "4e9b8d7ffdae49a2b9d99be3f04b30cf6a74ff0e0f72bafb193cac64813dac1b",
+      "sha256_of": "original",
+      "working_copy": "vol5_0096_L.jpg"
+    },
+    "model": {
+      "model": "gemini-4-argon",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-4-argon@prompt-ad2d8231+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-11-17T09:20:40+00:00"
+  }
+}
