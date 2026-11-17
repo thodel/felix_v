@@ -14,27 +14,27 @@
     "sha256_of": "original",
     "working_copy": "vol1_0124_L.jpg"
   },
-  "text": "",
+  "text": "spiritualibus et temporalibus ac aliis rebus ad Abbates Conventum\net monasteria prioratus preposituras membra censura et\npresidentes huiusmodi spectantibus multiplices molestias et iniurias\ninferunt et iacturas Quapropter dictorum Abbatis et Conventus\nnobis humiliter supplicatum ut cum eisdem valde reddatur\ndifficile pro singulis querelis ad sedem apostolicam habere recursum\nprovidere super hoc ipsius paterna diligentia curaremus Nos\nigitur adversus occupatores detentores presumptores molestato\nres / et iniuriatores huiusmodi illo volentes eisdem Abbati et\nConventui ac presidentibus remedio subvenire per quod ipsorum\nrepescatur temeritas et aliis aditus committendi similia\nprecludatur Discretioni vestre per apostolica scripta mandamus quatinus vos\nvel duo aut unus vestrum per vos vel alium seu alios eciam si sint\nextra loca in quibus deputati estis Conservatores et Iudices\nprefatis Abbati et Conventui ac presidentibus efficacis defen\nsionis presidio assistentes / non permittatis eosdem super\nhuiusmodi et quibuslibet aliis bonis et iuribus ad Abbatiam\nConventum monasteria prioratus preposituras membra\ncensura et presidentes huiusmodi spectantibus ab eisdem vel\nquibusvis aliis modibus molestari aut eisdem gravamina\nseu dampna vel iniurias irrogari facturis dictis Abbati Con\nventui et presidentibus cum ab eis vel procuratoribus suis aut\neorum aliquo fueritis requisiti de predictis et aliis personis\nquibuslibet super restitutione huiusmodi Castrorum villarum terrarum\net aliorum locorum iurisdictionum iurium et bonorum mobilium\net immobilium reddituumque et proventuum et aliorum quo\nrumcumque bonorum eorundem de quibuslibet molestiis iniuriis\natque dampnis presentibus et futuris in illis videlicet que\niudicialem requirunt indaginem summarie simpliciter et de plano\nsine strepitu et figura Iudicii in aliis vero prout qualitas\neorum exegerit iusticie complementum occupatores seu detentores /",
   "lines": [],
   "confidence": 0.0,
   "segmented_by": null,
-  "timing_ms": 7722,
+  "timing_ms": 7304,
   "truncated": false,
   "settings": "prompt-ad2d8231+think-low|max8192",
   "quality": {
-    "verdict": "empty",
-    "chars": 0,
-    "lines": 0,
-    "longest_char_run": 0,
+    "verdict": "ok",
+    "chars": 1916,
+    "lines": 31,
+    "longest_char_run": 2,
     "repeat_ratio": 0.0,
-    "mean_line_chars": 0.0,
+    "mean_line_chars": 60.84,
     "deliberation_ratio": 0.0,
-    "run_share": 0.0,
+    "run_share": 0.001,
     "run_on_own_line": false
   },
   "second_opinion": null,
   "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
-  "recognised_at": "2026-11-17T08:45:36+00:00",
+  "recognised_at": "2026-11-17T12:04:06+00:00",
   "provenance": {
     "schema": "ah-provenance/1",
     "run": "felix-v-sample-gemini-v1",
@@ -59,6 +59,6 @@
     },
     "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
     "segmented_by": null,
-    "recognised_at": "2026-11-17T08:45:36+00:00"
+    "recognised_at": "2026-11-17T12:04:06+00:00"
   }
 }

@@ -1,24 +1,19 @@
 # ATR batch — felix-v-sample-gemini-v1
 
 - pages: **100**
-- started: 2026-11-17T08:44:18+00:00
-- wall time: 50.8 min
+- started: 2026-11-17T12:03:47+00:00
+- wall time: 1.5 min
 
 | model | read | skipped | failed | empty | looped | arguing | cut off | chars/page | s/page | wall |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| `gemini-3.8-flash` | 97 | 3 | 0 | 8 | 0 | 0 | 0 | 2614 | 11.7 | 19.1 min |
-| `gemini-4-argon` | 97 | 3 | 0 | 0 | 0 | 0 | 0 | 2813 | 19.6 | 31.8 min |
+| `gemini-3.8-flash` | 9 | 91 | 0 | 4 | 0 | 0 | 0 | 1210 | 10.1 | 1.5 min |
 
 **These columns are not quality.** There is no ground truth in this run, and characters per page measures how much a model wrote, not how much of it is right — a model that hallucinates fluently leads this table. Comparing the readings is the point; the numbers only say what each run cost and whether it completed. Measuring accuracy needs transcribed lines and `eval/linebench.py`.
 
 ## Pages that came back empty
 
-- `gemini-3.8-flash`: 8 of 97 page(s) (8%)
-  - vol1_0124_L
-  - vol2_0052_L
+- `gemini-3.8-flash`: 4 of 9 page(s) (44%)
   - vol2_0237_L
-  - vol3_0227_R
-  - vol4_0264_R
   - vol7_0005_R
   - vol7_0310_R
   - vol8_0174_L

@@ -14,27 +14,27 @@
     "sha256_of": "original",
     "working_copy": "vol2_0052_L.jpg"
   },
-  "text": "",
+  "text": "parvorum sedum commune con. va. an. ut fete affeccionis\nexpedivit et super quibus una hodie preter sortis etc.\nex resignatione huiusmodi minime despondent pariat duorum\nauri de Camera merito dilecto filio Galvoto sevoe\nRectori parrochialis sancti Georgii de Chezero Taurinensis\ndiocesis Quadraginta parvorum monete parvorum Sabaudie\nflorenorum pensionem annuam reservare intendimus sive\nalio quovis modo aut ex alterius cuiuscumque persona sive per\nobitum felicis Recordationis Johannis pape vicesimietertii eciam predecessoris\nnostri que maiori Generaliter aut per liberam resigna-\ntionem alicuius de illa in Romana curia ut extra ea\ntota cura mansio presentibus et testibus sponte factis vacet eciam\nsi tanto tempore vacaverit quod eius collatio iuxta Lateranensis\nstatuta concilii ad sedem apostolicam legitime devoluta ipsaque\nprepositura dispositioni apostolice quibuslibet reservata existat\net super eo nisi aliquos ipsemet eciam presentes habere volumus\nquod sufficiens expressio pendeat inderisa dum eiuus\ndispositio ad nos hac vice pertineat cum omnibus juribus\net pertinentiis suis auctoritate apostolica tibi conferimus et de illa\nnobis providimus Decernentes prout est irritum et inane\nsi secus super his a quoquam quavis auctoritate scienter vel ignoranter attemptatum forsan est\nhactenus vel imposterum contigerit attemptari Non\nobstantibus pie memorie Bonifacii pape octavi predecessoris\naliiqs apostolicis constitutionibus et ordinationibus necnon statutis et consuetudinibus\nac stabilitatibus actorum et eorundem predictorum Juramento\nconfirmatione apostolica vel quavis firmitate alia roboratis penitus\nquibuscumque Aut si personam in dicto actore rescriptam forsan\napostolice sint decrete eciam si suis professoribus sedes sancta\nde preposituris sive prepturis huiusmodi speciales vel alias\nbeneficiis ecclesiasticis in illis partibus generales dicte sedis vel\nlegatorum eius litteras impetraverint eciam si per eas ad\ninhibicionem reservationem et decretum vel alias quaslibet\nsit processum quibus omnibus te in assecutione dicte prepositure\nvolumus anteferri sed nullum per hoc eis quo assecutionem\nprepositure seu preptorie aut beneficiorum aliorum",
   "lines": [],
   "confidence": 0.0,
   "segmented_by": null,
-  "timing_ms": 9679,
+  "timing_ms": 10037,
   "truncated": false,
   "settings": "prompt-ad2d8231+think-low|max8192",
   "quality": {
-    "verdict": "empty",
-    "chars": 0,
-    "lines": 0,
-    "longest_char_run": 0,
+    "verdict": "ok",
+    "chars": 2170,
+    "lines": 35,
+    "longest_char_run": 2,
     "repeat_ratio": 0.0,
-    "mean_line_chars": 0.0,
+    "mean_line_chars": 61.03,
     "deliberation_ratio": 0.0,
-    "run_share": 0.0,
+    "run_share": 0.0009,
     "run_on_own_line": false
   },
   "second_opinion": null,
   "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
-  "recognised_at": "2026-11-17T08:46:12+00:00",
+  "recognised_at": "2026-11-17T12:04:16+00:00",
   "provenance": {
     "schema": "ah-provenance/1",
     "run": "felix-v-sample-gemini-v1",
@@ -59,6 +59,6 @@
     },
     "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
     "segmented_by": null,
-    "recognised_at": "2026-11-17T08:46:12+00:00"
+    "recognised_at": "2026-11-17T12:04:16+00:00"
   }
 }

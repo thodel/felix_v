@@ -14,27 +14,27 @@
     "sha256_of": "original",
     "working_copy": "vol4_0264_R.jpg"
   },
-  "text": "",
+  "text": "ecclesie sancti Mauritii Vercellensis dicte ordinis predicti conventui\nnon est et ad quod nos ascivimus prout per electionem oppositam\nmagis nostre cordi incumbit menti et omni devotione libere\nsimiles fructus reddat et solvat se recognoscat debere atque\nnon expendantur seu in usus alios convertatur seu alias ultra\nquomodolibet diriffimus Nos enim tales nec presbyteros et vicarios\nex reservatione beneficiorum huiusmodi se illa interim effugiantur\nrecipere et cui committitur cum portione thesauroretur et\nantiqui soliti provideri etc in commendam retinere\net debere supportare omnesque de residentie fructibus\ncommendatarii beneficiorum immobilium et prioratus mobilitatem\nfaciat sibi penitus interdicta generaliter concedit ac\naliis apostolicis constitutionibus ecclesiarum Vercellensis et sancti Stephani\nac monasteriorum et ordinis predictorum etiam juramento\nconfirmatione apostolica vel alia quavis firmitate roboratis\nstatutis et consuetudinibus ceterisque ipsarum nequaquam obstantibus\nSimile autem de Vercellensi clero quia tenore presentium\nindulgemus premissis presbyteris perpetuis ac conventui huiusmodi dumtaxat\nordinis et solitum personarum numerum in commendatam\nbeneficium predictum nullatenus imminuere nec illa\ntunc in spiritualibus vel temporalibus disponere pertractare\nsed illorum onera debent supportentur requisitis Volumus\ntamen quod quamprimum aliquod ex reservatis beneficiis\nfuerit vigore illius unius assecutus alias liceat\nipsius ad aliud reservatum beneficium huiusmodi fuerit cassis et\nirritum nulliusque roboris vel momenti Nulli ergo etc.\nnostre reservationis inhibitionis constitutionis dispositionis\nac voluntatis infringere etc. Si quis presumpserit etc. interdictum\nDatum Gebennis etc. Anno a Nativitate Domini\nmillesimoquadringentesimoquadragesimosecundo\nPontificatus nostri anno tertio. Jo. de abbatibus\n\nFelix Episcopus etc. Dilectis filiis Episcopo Augustensi et dilectis filiis\nAbbati monasterii sancti Mauritii Agaunensis Sedunensis diocesis\net Georgio de Civaleti Canonico ecclesie Lausanensis Salutem etc.",
   "lines": [],
   "confidence": 0.0,
   "segmented_by": null,
-  "timing_ms": 10000,
+  "timing_ms": 10119,
   "truncated": false,
   "settings": "prompt-ad2d8231+think-low|max8192",
   "quality": {
-    "verdict": "empty",
-    "chars": 0,
-    "lines": 0,
-    "longest_char_run": 0,
+    "verdict": "ok",
+    "chars": 2054,
+    "lines": 34,
+    "longest_char_run": 2,
     "repeat_ratio": 0.0,
-    "mean_line_chars": 0.0,
+    "mean_line_chars": 59.41,
     "deliberation_ratio": 0.0,
-    "run_share": 0.0,
+    "run_share": 0.001,
     "run_on_own_line": false
   },
   "second_opinion": null,
   "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
-  "recognised_at": "2026-11-17T08:52:42+00:00",
+  "recognised_at": "2026-11-17T12:04:46+00:00",
   "provenance": {
     "schema": "ah-provenance/1",
     "run": "felix-v-sample-gemini-v1",
@@ -59,6 +59,6 @@
     },
     "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
     "segmented_by": null,
-    "recognised_at": "2026-11-17T08:52:42+00:00"
+    "recognised_at": "2026-11-17T12:04:46+00:00"
   }
 }

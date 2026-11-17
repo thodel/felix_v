@@ -123,7 +123,8 @@ const I18N = {
       acht Bände, Prompt <code>felix_register_page_v1.md</code>, geringe Denktiefe): beide lesen die ganze Hälfte, ohne
       Abbruch und ohne Schleifen, und lösen Abkürzungen auf wie CITlab. <strong>Argon</strong> kam nie leer zurück und liegt
       am nächsten bei CITlab (15 %), rund 17 Sekunden pro Hälfte. <strong>Flash</strong> ist schneller (11 s), gab aber 9 von
-      100 beschriebenen Hälften leer zurück. Flash und Argon stimmen untereinander enger überein (10 %) als jedes von ihnen
+      100 beschriebenen Hälften leer zurück; ein zweiter Versuch mit denselben Einstellungen holte 5 davon, 4 blieben leer (alle
+      vier beginnen mitten im Satz). Flash und Argon stimmen untereinander enger überein (10 %) als jedes von ihnen
       mit CITlab. Beispiel: den Registraturvermerk, den CITlab als «ep̄us Brosseran» liest, liest Gemini als «A. Episcopus
       Grossetanus» (Bischof von Grosseto). Die Gemini-Lesungen dieser 50 Aufnahmen stehen im Betrachter unter «Text» zur
       Wahl.`,
@@ -324,7 +325,8 @@ const I18N = {
       huit volumes, prompt <code>felix_register_page_v1.md</code>, réflexion faible) : les deux lisent la demi-page entière,
       sans arrêt ni boucle, et développent les abréviations comme CITlab. <strong>Argon</strong> n’a jamais rendu de page vide
       et est le plus proche de CITlab (15 %), environ 17 secondes par demi-page. <strong>Flash</strong> est plus rapide (11 s),
-      mais a rendu vides 9 demi-pages écrites sur 100. Flash et Argon s’accordent davantage entre eux (10 %) qu’avec CITlab.
+      mais a rendu vides 9 demi-pages écrites sur 100 ; un second essai avec les mêmes réglages en a récupéré 5, 4 sont restées vides
+      (toutes quatre commencent au milieu d’une phrase). Flash et Argon s’accordent davantage entre eux (10 %) qu’avec CITlab.
       Exemple : la mention d’enregistrement que CITlab lit « ep̄us Brosseran », Gemini la lit « A. Episcopus Grossetanus »
       (évêque de Grosseto). Les lectures Gemini de ces 50 images sont proposées dans la visionneuse sous « Texte ».`,
     "m.read.matrix": `Écart entre les lecteurs (CER, médiane sur les demi-pages lues par les deux ; la ligne mesurée contre la
@@ -522,7 +524,8 @@ const I18N = {
       imaginibus omnium octo tomorum, praeceptum <code>felix_register_page_v1.md</code>, cogitatio parva): ambo totam dimidiam
       legunt, sine abruptione et sine iterationibus, et compendia solvunt ut CITlab. <strong>Argon</strong> numquam vacuum
       reddidit et ad CITlab proxime accedit (15 %), circiter 17 secundis per dimidiam. <strong>Flash</strong> celerior est
-      (11 s), sed novem ex centum dimidiis scriptis vacuas reddidit. Flash et Argon inter se magis consentiunt (10 %) quam
+      (11 s), sed novem ex centum dimidiis scriptis vacuas reddidit; altero conatu isdem modis quinque redditae sunt, quattuor vacuae
+      manserunt (omnes media sententia incipiunt). Flash et Argon inter se magis consentiunt (10 %) quam
       uterque cum CITlab. Exemplum: notam registri, quam CITlab «ep̄us Brosseran» legit, Gemini «A. Episcopus Grossetanus»
       (episcopus Grossetanus) legit. Lectiones Gemini harum quinquaginta imaginum in inspectore sub «Textus» eligi possunt.`,
     "m.read.matrix": `Quantum lectores inter se discrepent (CER, mediana dimidiarum quas ambo legerunt; versus contra columnam

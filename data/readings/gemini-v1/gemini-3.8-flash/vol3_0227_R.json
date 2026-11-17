@@ -14,27 +14,27 @@
     "sha256_of": "original",
     "working_copy": "vol3_0227_R.jpg"
   },
-  "text": "",
+  "text": "et si illam interim assecutus predialem, eciam de\nspecilibus predictarum quas extunc vacare decrevimus\ndummodo alioquin si assecucio huiusmodi de dicta prebenda vacata\ninterim facta non fuisset omni jure tibi in illa vel ad\neam quomodolibet competente cedere teneatur omnino Nulli\nergo etc. nostre reservationis Inhibitionis Constitutionis\net voluntatis Infringere etc. contrarie Siquis autem etc.\nDatum Basilee Sexto Nonas octobris Anno\na Nativitate Domini millesimoquadringentesimo quadragesimosecundo\nPontificatus nostri Anno tercio. videlicet. Franciscus Forsten\nFelix episcopus etc. Dilectis filiis Decano majoris ac preposito\nsancti petri Basiliensis et Archidiacono aleten ecclesiarum\nSalutem etc. Vite ac morum honestas aliaque laudabilia\nprobitatis et virtutum merita super quibus Dilectus filius\nJohannes Ernst prepositus ecclesie sancte Theobaldi extra\nmuros aleten apud nos fidedigno commendatur testimonio\nnos inducunt ut sibi reddamur ad graciam liberales Eciam\nItaque sacra generalis Synodus Basiliensis per quoddam\nsuum decretum quod Incipit Placuit divino pietati gratie etc.\ncedere teneatur omnino Quo circa discretioni vestre per\napostolica scripta mandamus quatenus vos vel duo aut unus vestrum\nper vos vel alium seu alios beneficium huiusmodi per nos ut\npremittitur reservatum si tempore reservationis nostre huiusmodi vacabat\nvel postea vacavit aut cum primo vacaverit eisdem Johanni post\nacceptationem predictam cum omnibus Juribus et pertinentiis suis\nauctoritate nostra conferre et assignare curetis Inducentes\neundem Johannem vel procuratorem suum eius nomine in corporalem\npossessionem beneficii Juriumque et pertinentiarum predictorum\net defendentes inductum ac facientes eundem Johannem vel\ndictum procuratorem pro eo ad beneficium huiusmodi ut est moris\nadmitti sibique de illius fructibus redditibus proventibus Juribus\net obventionibus universis integre Responderi Non obstantibus\nomnibus supradictis Aut si preposito Thesaurario Canonicis\nCapitulo et personis prefatis vel quibusvis aliis communiter vel\ndivisim a dicta sit sede indultum quod interdici suspendi\nvel excommunicari non possint per non facientes plenam etc.",
   "lines": [],
   "confidence": 0.0,
   "segmented_by": null,
-  "timing_ms": 8764,
+  "timing_ms": 9199,
   "truncated": false,
   "settings": "prompt-ad2d8231+think-low|max8192",
   "quality": {
-    "verdict": "empty",
-    "chars": 0,
-    "lines": 0,
-    "longest_char_run": 0,
+    "verdict": "ok",
+    "chars": 2154,
+    "lines": 36,
+    "longest_char_run": 2,
     "repeat_ratio": 0.0,
-    "mean_line_chars": 0.0,
+    "mean_line_chars": 58.86,
     "deliberation_ratio": 0.0,
-    "run_share": 0.0,
+    "run_share": 0.0009,
     "run_on_own_line": false
   },
   "second_opinion": null,
   "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
-  "recognised_at": "2026-11-17T08:50:29+00:00",
+  "recognised_at": "2026-11-17T12:04:36+00:00",
   "provenance": {
     "schema": "ah-provenance/1",
     "run": "felix-v-sample-gemini-v1",
@@ -59,6 +59,6 @@
     },
     "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
     "segmented_by": null,
-    "recognised_at": "2026-11-17T08:50:29+00:00"
+    "recognised_at": "2026-11-17T12:04:36+00:00"
   }
 }

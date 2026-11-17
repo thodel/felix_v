@@ -14,27 +14,27 @@
     "sha256_of": "original",
     "working_copy": "vol1_0049_L.jpg"
   },
-  "text": "",
+  "text": "non expediat sive ut similiter sive aliis quibuscumque\naut ex alterius cuiuscumque persona sive per constitutionem\nfelicis recordationis Johannis pape vicesimisecondi predecessoris nostri que\nincipit Execrabilis vacet etiam si tanto tempore vacaverit\nquod eius collatio iuxta Lateranensis statuta concilii ad sedem\napostolicam legitime devoluta ipsaque prepositura etcetera dispositioni apostolice\nspecialiter reservata existat et super eamdem aliquis lis cuius\nstatum presentibus haberi volumus pro expresso pendeat indecisa\ndummodo tempore date presentium non sit in ea alicui specialiter\nius quesitum cum omnibus juribus et pertinentiis suis prefato Nicolao\nconferatis et assignetis inducentes per vos vel alium seu alios\neumdem Nicolaum vel procuratorem suum eius nomine in corporalem\npossessionem prepositure etcetera juriumque et pertinentiarum predictarum et\ndefendentes inductum amoto exinde quolibet illicito detentatore\nac facientes sibi de ipsius prepositure etcetera viri fructibus redditibus\njuribus proventibus et obventionibus universis integre responderi\nContradictores etcetera apostolica Non obstantibus pie memorie\nBonifacii pape octavi etiam predecessoris nostri ac aliis apostolicis\nconstitutionibus generalibus quibuscumque Aut si aliquibus communiter vel divisim\nsive fuerit de hyeme vel aliqui hyemalis ecclesie etcetera in illis\npartibus specialiter vel generaliter dicte sedis vel legatorum eius littere\nimpetrate sint etiam si per eas ad inhibitionem reservationem\net decretum vel alias quomodolibet sit processum quibus omnibus prefatum\nNicolaum in dicte prepositure etcetera assecutione volumus anteferri\nsed nullum per hoc eis quo ad assecutionem beneficiorum aliorum\npreiudicium generari Seu si episcopo Gebennensi pro tempore\nexistenti vel quibusvis aliis communiter vel divisim ab\neadem sit sede indultum quod ad receptionem vel provisionem\nalicuius minime teneantur et ad id compelli aut quod interdici\nsuspendi vel excommunicari non possint quodque de hyeme vel aliis ipsorum\necclesiarum ad eorum collationem provisionem presentationem seu quamvis\naliam dispositionem spectantibus vel separatim specialiter nulli\nvaleat provideri per litteras apostolicas non facientes plenam et expressam\nac de verbo ad verbum de indulto huiusmodi mentionem\net qualibet alia dicte sedis indulgentia generali vel speciali\ncuiuscumque tenoris existat per quam presentibus non expressam\nvel totaliter non insertam effectus\nhuiusmodi gratie impediri valeat quomodolibet vel differri\net de qua cuiusque toto tenore etcetera\nmentio specialis Aut quod dictus Nicolaus ut extra asserit",
   "lines": [],
   "confidence": 0.0,
   "segmented_by": null,
-  "timing_ms": 10632,
+  "timing_ms": 11593,
   "truncated": false,
   "settings": "prompt-ad2d8231+think-low|max8192",
   "quality": {
-    "verdict": "empty",
-    "chars": 0,
-    "lines": 0,
-    "longest_char_run": 0,
+    "verdict": "ok",
+    "chars": 2596,
+    "lines": 40,
+    "longest_char_run": 2,
     "repeat_ratio": 0.0,
-    "mean_line_chars": 0.0,
+    "mean_line_chars": 63.92,
     "deliberation_ratio": 0.0,
-    "run_share": 0.0,
+    "run_share": 0.0008,
     "run_on_own_line": false
   },
   "second_opinion": null,
   "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
-  "recognised_at": "2026-11-17T08:33:59+00:00",
+  "recognised_at": "2026-11-17T12:03:58+00:00",
   "provenance": {
     "schema": "ah-provenance/1",
     "run": "felix-v-sample-gemini-v1",
@@ -59,6 +59,6 @@
     },
     "gateway_version": "gemini-3.8-flash@prompt-ad2d8231+think-low",
     "segmented_by": null,
-    "recognised_at": "2026-11-17T08:33:59+00:00"
+    "recognised_at": "2026-11-17T12:03:58+00:00"
   }
 }
