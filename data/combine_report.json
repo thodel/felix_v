@@ -15,86 +15,92 @@
  "2": {
   "pages": 315,
   "weights": {
-   "kraken-cremma_medieval": 0.503,
-   "trocr-catmus-cursiva": 0.424,
-   "trocr-medieval-escriptmask": 0.547,
-   "H": 0.576,
-   "kraken-catmus_medieval": 0.569,
-   "kraken-medieval_latin_french_expanded": 0.374,
-   "kraken-tridis_v2": 0.578,
-   "trocr-catmus-base": 0.404
+   "kraken-cremma_medieval": 0.509,
+   "trocr-catmus-cursiva": 0.417,
+   "trocr-medieval-escriptmask": 0.538,
+   "H": 0.569,
+   "kraken-catmus_medieval": 0.568,
+   "kraken-medieval_latin_french_expanded": 0.389,
+   "kraken-tridis_v2": 0.565,
+   "trocr-catmus-base": 0.396
   }
  },
  "3": {
   "pages": 315,
   "weights": {
-   "kraken-catmus_medieval": 0.568,
-   "trocr-catmus-base": 0.419,
-   "trocr-catmus-cursiva": 0.433,
-   "trocr-medieval-escriptmask": 0.546,
-   "kraken-tridis_v2": 0.584,
-   "H": 0.578,
-   "kraken-medieval_latin_french_expanded": 0.409,
-   "kraken-cremma_medieval": 0.539
+   "kraken-catmus_medieval": 0.566,
+   "kraken-cremma_medieval": 0.516,
+   "trocr-catmus-base": 0.409,
+   "trocr-catmus-cursiva": 0.42,
+   "trocr-medieval-escriptmask": 0.536,
+   "kraken-medieval_latin_french_expanded": 0.411,
+   "kraken-tridis_v2": 0.572,
+   "H": 0.57
   }
  },
  "4": {
   "pages": 338,
   "weights": {
-   "H": 0.527,
-   "trocr-catmus-base": 0.333,
-   "trocr-catmus-cursiva": 0.349,
-   "trocr-medieval-escriptmask": 0.441,
-   "kraken-catmus_medieval": 0.456,
-   "kraken-tridis_v2": 0.492,
-   "kraken-cremma_medieval": 0.403,
-   "kraken-medieval_latin_french_expanded": 0.387
+   "H": 0.533,
+   "kraken-cremma_medieval": 0.411,
+   "trocr-catmus-base": 0.327,
+   "trocr-catmus-cursiva": 0.345,
+   "trocr-medieval-escriptmask": 0.439,
+   "kraken-catmus_medieval": 0.461,
+   "kraken-medieval_latin_french_expanded": 0.402,
+   "kraken-tridis_v2": 0.488
   }
  },
  "5": {
-  "pages": 240,
+  "pages": 340,
   "weights": {
-   "kraken-catmus_medieval": 0.487,
-   "kraken-cremma_medieval": 0.403,
-   "trocr-catmus-cursiva": 0.295,
-   "trocr-medieval-escriptmask": 0.456,
-   "H": 0.494,
-   "kraken-medieval_latin_french_expanded": 0.33,
-   "kraken-tridis_v2": 0.481,
-   "trocr-catmus-base": 0.261
+   "kraken-catmus_medieval": 0.453,
+   "kraken-cremma_medieval": 0.371,
+   "kraken-medieval_latin_french_expanded": 0.339,
+   "trocr-catmus-cursiva": 0.279,
+   "trocr-medieval-escriptmask": 0.422,
+   "H": 0.464,
+   "kraken-tridis_v2": 0.467,
+   "trocr-catmus-base": 0.248
   }
  },
  "6": {
-  "pages": 227,
+  "pages": 340,
   "weights": {
-   "H": 0.55,
-   "kraken-catmus_medieval": 0.563,
-   "kraken-tridis_v2": 0.51,
-   "trocr-catmus-base": 0.304,
-   "trocr-catmus-cursiva": 0.342,
-   "trocr-medieval-escriptmask": 0.52,
-   "kraken-cremma_medieval": 0.527,
-   "kraken-medieval_latin_french_expanded": 0.347
+   "H": 0.517,
+   "kraken-catmus_medieval": 0.512,
+   "kraken-cremma_medieval": 0.45,
+   "kraken-medieval_latin_french_expanded": 0.366,
+   "kraken-tridis_v2": 0.513,
+   "trocr-catmus-base": 0.299,
+   "trocr-catmus-cursiva": 0.336,
+   "trocr-medieval-escriptmask": 0.484
   }
  },
  "7": {
-  "pages": 233,
+  "pages": 349,
   "weights": {
-   "kraken-medieval_latin_french_expanded": 0.337,
-   "trocr-catmus-cursiva": 0.332,
-   "trocr-medieval-escriptmask": 0.513,
-   "H": 0.54,
-   "trocr-catmus-base": 0.312,
-   "kraken-tridis_v2": 0.513,
-   "kraken-catmus_medieval": 0.527
+   "kraken-medieval_latin_french_expanded": 0.342,
+   "trocr-catmus-cursiva": 0.313,
+   "trocr-medieval-escriptmask": 0.448,
+   "H": 0.484,
+   "kraken-catmus_medieval": 0.472,
+   "kraken-cremma_medieval": 0.385,
+   "trocr-catmus-base": 0.291,
+   "kraken-tridis_v2": 0.486
   }
  },
  "8": {
-  "pages": 193,
+  "pages": 386,
   "weights": {
-   "H": 0.655,
-   "kraken-catmus_medieval": 0.602,
-   "trocr-medieval-escriptmask": 0.628
+   "H": 0.5,
+   "kraken-catmus_medieval": 0.492,
+   "kraken-cremma_medieval": 0.406,
+   "kraken-medieval_latin_french_expanded": 0.368,
+   "kraken-tridis_v2": 0.5,
+   "trocr-catmus-base": 0.319,
+   "trocr-catmus-cursiva": 0.342,
+   "trocr-medieval-escriptmask": 0.466
   }
  }
 }
