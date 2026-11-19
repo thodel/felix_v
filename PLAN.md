@@ -39,7 +39,7 @@ Nächste Schritte, falls weiterverfolgt:
 1. Registriervermerke («ep̄us Brosseran», «Jo. Benenati») als **Schreiber** getrennt erfassen; sie sind
    keine Personen der Urkunde (v1 verwechselt sie).
 2. Normalisierung nicht dem Modell überlassen: Orte/Diözesen gegen eine Liste der Diözesen (lateinische
-   Adjektive: Gebennensis, Lausanensis, Lugdunensis …), Personen nach Abgleich mit SSRQ/HLS/Human Lineage.
+   Adjektive: Gebennensis, Lausanensis, Lugdunensis …), Personen nach Abgleich mit SSRQ/HLS.
 3. Erst nach besserer Lesung (Gemini/Argon, falls besser) im ganzen Bestand laufen lassen.
 
 ## 4. Segmentierung nach Datum und Eintrag

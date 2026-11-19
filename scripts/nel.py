@@ -14,8 +14,8 @@ Within the corpus
            together with the same diocese or office
   places   cluster on the normalised Latin name; dioceses on a fixed list of Latin adjectives
 External (cached in data/nel/cache/)
-  persons  humanlineage.resolve_name (century 15; status «match», life dates around 1439–1449) →
-           Wikidata QID and HLS id; ssrq.search_name_index and kf.search_persons by exact name form
+  persons  ssrq.search_name_index and kf.search_persons by exact name form
+           (Human Lineage was used until 19.11.2026 and removed: the source was withdrawn)
   places   kf.search_places and Wikidata (settlements in CH/FR/IT/DE) by exact name; HLS via kf's
            hls_id or Wikidata P902; dioceses via Wikidata (diocese items, by seat)
 """
@@ -226,24 +226,6 @@ def link_person(c: dict, mcp: MCP) -> list[dict]:
     name = c["mentions"][0].get("name") or c["mentions"][0]["as_written"]
     if len(name_key(name).split()) < 2:
         return links
-    # Human Lineage: a match the authority itself calls «match», with fitting dates → Wikidata + HLS
-    try:
-        r = mcp.call("humanlineage", "resolve_name", name=name, century=15, limit=3)
-        if isinstance(r, dict) and r.get("status") == "match" and r.get("candidates"):
-            cand = r["candidates"][0]
-            if cand.get("score", 0) >= 0.9 and years_fit(cand.get("birth_year"), cand.get("death_year")):
-                grade = "identical" if name_key(cand.get("matched") or "") == name_key(name) else "very_likely"
-                links.append({"source": "humanlineage", "id": cand["id"], "label": cand.get("name"), "grade": grade,
-                              "url": cand.get("url"), "dates": cand.get("life_dates")})
-                if cand.get("wikidata_id"):
-                    links.append({"source": "wikidata", "id": cand["wikidata_id"], "label": cand.get("name"), "grade": grade,
-                                  "url": f"https://www.wikidata.org/wiki/{cand['wikidata_id']}"})
-                if cand.get("hls_id"):
-                    hid = str(cand["hls_id"]).zfill(6)
-                    links.append({"source": "hls", "id": hid, "label": cand.get("name"), "grade": grade,
-                                  "url": f"https://hls-dhs-dss.ch/de/articles/{hid}/"})
-    except Exception as e:  # noqa: BLE001
-        print("humanlineage", name, e, file=sys.stderr)
     # SSRQ: exact historical name form, one person, attested around the time
     try:
         rows = mcp.call("ssrq", "search_name_index", query=name, type_filter="person", limit=20) or []

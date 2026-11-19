@@ -3,18 +3,16 @@
   "clusters": 766,
   "mentions": 7598,
   "in_several_entries": 413,
-  "very_likely_merged": 34,
-  "linked_humanlineage": 1,
-  "linked_wikidata": 1
+  "very_likely_merged": 34
  },
  "places": {
   "clusters": 400,
   "mentions": 4330,
   "in_several_entries": 217,
   "very_likely_merged": 0,
-  "linked_wikidata": 109,
-  "linked_kf": 32,
-  "linked_hls": 78
+  "linked_hls": 79,
+  "linked_wikidata": 110,
+  "linked_kf": 32
  },
  "dioceses": {
   "clusters": 28,

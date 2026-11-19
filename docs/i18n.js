@@ -81,13 +81,13 @@ const I18N = {
     "reg.stats2": "{p} Personen ({pl} verknüpft) · {o} Orte ({ol} verknüpft) · {d} Diözesen ({dl} verknüpft) · {i} Institutionen",
     "reg.lede2": `Personen, Orte, Diözesen und Institutionen, die qwen3.8 beim Regestieren aus jedem Eintrag gezogen hat. Gleiche Namen
       im ganzen Korpus sind zusammengeführt. Verknüpft wird mit dem Königsfelden-Register, der Personendatenbank der SSRQ, dem
-      HLS, Wikidata und Human Lineage, aber nur bei <strong>identischem</strong> oder <strong>sehr wahrscheinlichem</strong> Treffer.`,
+      HLS und Wikidata, aber nur bei <strong>identischem</strong> oder <strong>sehr wahrscheinlichem</strong> Treffer.`,
     "reg.note2": `<strong>Automatisch, ungeprüft.</strong> «identisch»: gleiche normalisierte Namensform, ein einziger Kandidat, Daten
       passen. «sehr wahrscheinlich» (≈): fast gleiche Schreibung mit gleicher Diözese oder gleichem Amt, oder ein Treffer, den die
       Normdatei selbst als eindeutig ausweist, mit passenden Lebensdaten. Alles andere bleibt unverknüpft; Lesefehler im Namen
       verhindern also eher eine Verknüpfung, als dass sie eine falsche erzeugen.`,
     "reg.sources": `Quellen der Verknüpfung: Königsfelden (Urkunden und Akten des Klosters Königsfelden), SSRQ (Sammlung Schweizerischer
-      Rechtsquellen), HLS (Historisches Lexikon der Schweiz), Wikidata, Human Lineage (CC BY-SA 4.0).`,
+      Rechtsquellen), HLS (Historisches Lexikon der Schweiz), Wikidata.`,
     "reg.lede": `Personen, Orte und Institutionen, die qwen3.8 (GPUStack der Universität Bern) aus einer Stichprobe von
       Einträgen gezogen hat, ohne jede Nachkontrolle. Grundlage ist der fehlerhafte HTR-Text; die «normalisierte» Form
       stammt vom Modell und ist oft geraten. Das Register zeigt, was die Methode leistet, und ist kein Arbeitsinstrument.`,
@@ -153,8 +153,7 @@ const I18N = {
       selben Aufruf wie das Regest aus jedem Eintrag, mit der Schreibung im Text; Registriervermerke (Schreiber) und der Papst
       selbst sind ausgenommen. <strong>Verknüpfung</strong> nur bei identischem oder sehr wahrscheinlichem Treffer: innerhalb des
       Korpus bei gleicher normalisierter Namensform (bzw. fast gleicher Schreibung mit gleicher Diözese oder gleichem Amt); nach
-      aussen mit Human Lineage (Treffer, den die Normdatei selbst als eindeutig ausweist, mit passenden Lebensdaten; daraus Wikidata
-      und HLS), der SSRQ und dem Königsfelden-Register (genaue Namensform, ein einziger Kandidat, Zeit passt), für Orte mit
+      aussen mit der SSRQ und dem Königsfelden-Register (genaue Namensform, ein einziger Kandidat, Zeit passt), für Orte mit
       Königsfelden und Wikidata (genauer Name, Siedlung in CH/FR/IT/DE; HLS über die HLS-Nummer), für Diözesen über eine feste Liste
       der lateinischen Adjektive. Ergebnis: <a href="register.html">Register</a>. Der Test auf 40 Einträgen unten bleibt als
       Ausgangspunkt stehen.`,
@@ -177,7 +176,7 @@ const I18N = {
     "m.ner.4": `<strong>Daten im Fliesstext</strong> rechnet das Modell oft falsch um (z. B. 1449 statt 1440). Daten deshalb
       nur über die Datumszeile und die Rechenregeln unten.`,
     "m.ner.assess": `<strong>Einschätzung:</strong> Als Findhilfe brauchbar, als Register erst nach drei Änderungen: Schreiber
-      trennen, Orte gegen eine Diözesanliste normalisieren, Personen mit Normdaten abgleichen (SSRQ, HLS, Human Lineage).
+      trennen, Orte gegen eine Diözesanliste normalisieren, Personen mit Normdaten abgleichen (SSRQ, HLS).
       Mit einer besseren Lesung (siehe Lesetest) steigt die Qualität direkt mit.`,
     "m.h.seg": "Segmentierung nach Eintrag und Datum",
     "m.seg.entries": `<strong>Einträge (v1, regelbasiert).</strong> Jede Registerabschrift endet mit einer Datumszeile
@@ -281,14 +280,14 @@ const I18N = {
     "reg.stats2": "{p} personnes ({pl} liées) · {o} lieux ({ol} liés) · {d} diocèses ({dl} liés) · {i} institutions",
     "reg.lede2": `Personnes, lieux, diocèses et institutions que qwen3.8 a relevés dans chaque entrée en rédigeant les régestes. Les noms
       identiques dans tout le corpus sont réunis. Les liens renvoient au registre de Königsfelden, à la base de personnes de la SSRQ,
-      au DHS, à Wikidata et à Human Lineage, mais seulement en cas de correspondance <strong>identique</strong> ou
+      au DHS et à Wikidata, mais seulement en cas de correspondance <strong>identique</strong> ou
       <strong>très probable</strong>.`,
     "reg.note2": `<strong>Automatique, non vérifié.</strong> « identique » : même forme normalisée du nom, un seul candidat, dates
       compatibles. « très probable » (≈) : graphie presque identique avec le même diocèse ou la même fonction, ou une correspondance
       que le fichier d’autorité lui-même donne comme univoque, avec des dates compatibles. Le reste n’est pas lié ; une erreur de
       lecture dans un nom empêche donc plutôt un lien qu’elle n’en crée un faux.`,
     "reg.sources": `Sources des liens : Königsfelden (chartes et actes du couvent de Königsfelden), SSRQ (Collection des sources du
-      droit suisse), DHS (Dictionnaire historique de la Suisse), Wikidata, Human Lineage (CC BY-SA 4.0).`,
+      droit suisse), DHS (Dictionnaire historique de la Suisse), Wikidata.`,
     "reg.lede": `Personnes, lieux et institutions que qwen3.8 (GPUStack de l’Université de Berne) a extraits d’un échantillon
       d’entrées, sans aucun contrôle. La base est le texte HTR fautif ; la forme « normalisée » vient du modèle et est
       souvent devinée. L’index montre ce que la méthode peut fournir ; ce n’est pas un instrument de travail.`,
@@ -380,7 +379,7 @@ const I18N = {
       de 1440). Les dates ne sont donc tirées que de la clause de date, selon les règles de calcul ci-dessous.`,
     "m.ner.assess": `<strong>Appréciation :</strong> utilisable comme aide à la recherche ; comme index seulement après trois
       changements : séparer les scribes, normaliser les lieux d’après une liste des diocèses, rapprocher les personnes de
-      fichiers d’autorité (SSRQ, DHS, Human Lineage). Une meilleure lecture (voir le test de lecture) améliore directement la
+      fichiers d’autorité (SSRQ, DHS). Une meilleure lecture (voir le test de lecture) améliore directement la
       qualité.`,
     "m.h.seg": "Découpage par entrée et par date",
     "m.seg.entries": `<strong>Entrées (v1, par règles).</strong> Chaque copie du registre se termine par une clause de date
@@ -483,13 +482,13 @@ const I18N = {
     "reg.stats2": "{p} personae ({pl} coniunctae) · {o} loca ({ol} coniuncta) · {d} dioeceses ({dl} coniunctae) · {i} instituta",
     "reg.lede2": `Personae, loca, dioeceses, instituta, quae qwen3.8 in regestis conscribendis ex singulis litteris excerpsit. Nomina
       eadem per totum corpus coniunguntur. Nexus fiunt cum indice Campi Regis (Königsfelden), cum tabula personarum SSRQ, cum HLS,
-      Wikidata, Human Lineage, sed tantum ubi res <strong>eadem</strong> vel <strong>valde verisimilis</strong> est.`,
+      Wikidata, sed tantum ubi res <strong>eadem</strong> vel <strong>valde verisimilis</strong> est.`,
     "reg.note2": `<strong>Machinaliter, non recognitum.</strong> «idem»: eadem forma nominis normata, unus candidatus, tempora
       congruunt. «valde verisimile» (≈): forma paene eadem cum eadem dioecesi vel eodem officio, vel candidatus quem ipsa tabula
       auctoritatis univocum declarat, temporibus congruentibus. Cetera non coniunguntur; error lectionis in nomine igitur potius
       nexum impedit quam falsum facit.`,
     "reg.sources": `Fontes nexuum: Königsfelden (Urkunden und Akten des Klosters Königsfelden), SSRQ (Sammlung Schweizerischer
-      Rechtsquellen), HLS (Historisches Lexikon der Schweiz), Wikidata, Human Lineage (CC BY-SA 4.0).`,
+      Rechtsquellen), HLS (Historisches Lexikon der Schweiz), Wikidata.`,
     "reg.lede": `Personae, loca, instituta, quae qwen3.8 (GPUStack Universitatis Bernensis) ex selectis litteris extraxit, nulla
       recognitione adhibita. Fundamentum est textus HTR mendosus; forma «normalis» a machina proficiscitur et saepe
       coniectura est. Index ostendit quid haec ratio praestare possit, nec instrumentum ad laborandum est.`,
@@ -552,8 +551,7 @@ const I18N = {
     "m.ner.v2": `<strong>Nomina per totum corpus</strong> (a die 16 Novembris 2026): personas, loca, dioeceses, instituta qwen3.8 eodem
       actu quo regestum ex unaquaque littera excerpit, cum forma textus; notae registrationis (scriptores) et ipse papa excluduntur.
       <strong>Nexus</strong> tantum ubi res eadem vel valde verisimilis est: intra corpus eadem forma nominis normata (vel forma
-      paene eadem cum eadem dioecesi vel eodem officio); extra cum Human Lineage (candidatus quem tabula ipsa univocum declarat,
-      temporibus congruentibus; inde Wikidata et HLS), cum SSRQ et indice Campi Regis (forma nominis exacta, unus candidatus, tempus
+      paene eadem cum eadem dioecesi vel eodem officio); extra cum SSRQ et indice Campi Regis (forma nominis exacta, unus candidatus, tempus
       congruens); loca cum Campo Regis et Wikidata (nomen exactum, locus in CH/FR/IT/DE; HLS per numerum); dioeceses per indicem
       fixum adiectivorum Latinorum. Effectus: <a href="register.html">Index</a>. Experimentum in 40 litteris infra ut initium
       manet.`,
