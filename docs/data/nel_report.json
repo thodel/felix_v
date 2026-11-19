@@ -1,12 +1,12 @@
 {
  "dioceses": {
   "clusters": 28,
-  "mentions": 2830,
+  "mentions": 2834,
   "in_several_entries": 25,
   "very_likely_merged": 0,
   "linked_viaf": 13,
-  "linked_wikidata": 18,
   "linked_gnd": 12,
+  "linked_wikidata": 18,
   "linked_hls": 5
  },
  "institutions": {
@@ -21,19 +21,19 @@
   "in_several_entries": 404,
   "very_likely_merged": 35,
   "linked_viaf": 5,
-  "linked_wikidata": 5,
   "linked_gnd": 5,
+  "linked_wikidata": 5,
   "linked_hls": 2
  },
  "places": {
-  "clusters": 400,
+  "clusters": 354,
   "mentions": 4330,
-  "in_several_entries": 217,
-  "very_likely_merged": 0,
-  "linked_wikidata": 110,
-  "linked_viaf": 83,
-  "linked_hls": 79,
-  "linked_gnd": 83,
-  "linked_kf": 32
+  "in_several_entries": 193,
+  "very_likely_merged": 9,
+  "linked_wikidata": 37,
+  "linked_viaf": 18,
+  "linked_hls": 16,
+  "linked_gnd": 18,
+  "linked_kf": 7
  }
 }

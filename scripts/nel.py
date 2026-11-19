@@ -31,7 +31,7 @@ import time
 import unicodedata
 import urllib.parse
 import urllib.request
-from collections import defaultdict
+from collections import Counter, defaultdict
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -171,8 +171,62 @@ def load_mentions() -> list[dict]:
     return out
 
 
+PLACE_FILLERS = {"civitate", "ciuitate", "ciuitas", "civitas", "apud", "in", "de", "dioc", "diocesis", "diocesi", "urbe"}
+NOT_SEAT = ("basilic", "spirit", "spiritu")  # «basilica», «Sancti Spiritus» start like Basel and Speyer
+
+
+def written_seat(as_written: str) -> str | None:
+    """The seat a written place form names on its own, word by word; G misread as B or T (Bebenn…, Tebenn…)
+    still counts as Geneva."""
+    for w in ascii_key(as_written).split():
+        if len(w) < 5 or w.startswith(NOT_SEAT):
+            continue
+        if re.match(r"^[gbtc]ebenn", w):
+            return "Geneva"
+        seat = diocese_seat(w)
+        if seat:
+            return seat
+    return None
+
+
+def correct_place(m: dict) -> None:
+    """The model sometimes normalises a written form to another place: «Gebennen», «civitate Gebennium» came back
+    as name «Basileae», modern «Basel» (39 mentions, 19.11.2026; Basel stands in almost every dating clause).
+    Where the written form clearly names one seat and the normalised fields another, the written form wins."""
+    ws = written_seat(m["as_written"] or "")
+    if not ws:
+        return
+    name_seat = written_seat(m.get("name") or "")
+    modern_seat = diocese_seat(m.get("modern") or "") or (m.get("modern") if m.get("modern") in DIOCESES.values() else None)
+    if name_seat == ws:  # the name is right, only the modern field points elsewhere: fix that alone
+        if modern_seat and modern_seat != ws:
+            m["corrected_from"] = [m.get("name"), m.get("modern")]
+            m["modern"] = ws
+            m["modern_only"] = True
+        return
+    if (name_seat and name_seat != ws) or (not name_seat and modern_seat and modern_seat != ws):
+        m["corrected_from"] = [m.get("name"), m.get("modern")]
+        m["name"], m["modern"] = None, ws
+
+
 def cluster(mentions: list[dict]) -> list[dict]:
     clusters: dict[str, dict] = {}
+    for m in mentions:
+        if m["kind"] == "places":
+            correct_place(m)
+    # for corrected city mentions: the usual Latin key of that seat among the uncorrected ones
+    usual: dict = defaultdict(Counter)      # seat -> usual key of the city itself (no adjective)
+    seatword: dict = defaultdict(Counter)   # seat -> usual word for it inside compound names (… extra muros Gebennae)
+    for m in mentions:
+        if m["kind"] == "places" and m.get("name") and not m.get("corrected_from"):
+            seat = written_seat(m["as_written"] or "")
+            k = ascii_key(m["name"])
+            if seat and seat == written_seat(k):
+                if len(k.split()) == 1 and not re.search(r"ens(is|e|i)$", k):
+                    usual[seat][k] += 1
+                for w in k.split()[1:]:
+                    if written_seat(w) == seat:
+                        seatword[seat][w] += 1
     for m in mentions:
         if m["kind"] == "persons":
             k = name_key(m.get("name") or m["as_written"])
@@ -184,13 +238,24 @@ def cluster(mentions: list[dict]) -> list[dict]:
                     continue
                 k = f"{k} | {anchor}"
         elif m["kind"] == "places" and (m.get("type") == "diocese" or re.search(r"ens(is|e|i)$", ascii_key(m.get("name") or ""))):
-            seat = diocese_seat(m.get("name") or m["as_written"]) or diocese_seat(m["as_written"])
+            seat = (m.get("modern") if m.get("corrected_from") else None) or diocese_seat(m.get("name") or m["as_written"]) or diocese_seat(m["as_written"])
             if not seat:
                 continue
             m["kind"], m["seat"] = "dioceses", seat
             k = seat.lower()
         else:
-            k = ascii_key(m.get("name") or m["as_written"])
+            rest = [w for w in ascii_key(m["as_written"] or "").split() if w not in PLACE_FILLERS and not written_seat(w)]
+            if m.get("corrected_from") and not m.get("modern_only") and rest:  # a convent, a church … outside the city
+                old_name = ascii_key((m["corrected_from"][0] or ""))
+                sw = seatword[m["modern"]].most_common(1)[0][0] if seatword.get(m["modern"]) else None
+                if len(old_name.split()) > 1 and sw:
+                    k = " ".join(sw if written_seat(w) else w for w in old_name.split())
+                else:
+                    k = " ".join(w for w in ascii_key(m["as_written"]).split() if w not in ("apud",))
+            elif m.get("corrected_from") and not m.get("modern_only") and usual.get(m["modern"]):
+                k = usual[m["modern"]].most_common(1)[0][0]  # the city itself: its usual Latin key
+            else:
+                k = ascii_key(m.get("name") or m["as_written"])
             if len(k) < 3:
                 continue
         ck = f"{m['kind']}::{k}"
@@ -329,8 +394,9 @@ def link_person(c: dict, mcp: MCP) -> list[dict]:
 def link_place(c: dict, mcp: MCP, cache: Path) -> list[dict]:
     links = []
     forms = []
+    compound = len(c["key"].split()) > 1  # a convent, a church … : its modern field names the city, not the place
     for m in c["mentions"]:
-        for f in (m.get("modern"), m.get("name")):
+        for f in ((m.get("name"),) if compound else (m.get("modern"), m.get("name"))):
             if f and f not in forms:
                 forms.append(f)
     for f in forms[:3]:
@@ -364,15 +430,26 @@ def link_place(c: dict, mcp: MCP, cache: Path) -> list[dict]:
 
 
 def merge_by_qid(clusters: list[dict]) -> list[dict]:
-    """Person clusters linked to the same Wikidata item are one person: merge them (largest first)."""
+    """Person or place clusters linked to the same Wikidata item are one person or place: merge them (largest first)."""
     first: dict = {}
     out = []
     for c in sorted(clusters, key=lambda c: -len(c["mentions"])):
-        q = next((l["id"] for l in c["links"] if l["source"] == "wikidata"), None) if c["kind"] == "persons" else None
+        city = c["kind"] == "places" and len(c["key"].split()) == 1  # only a city itself, never a convent in it
+        q = next((f"{c['kind']}:{l['id']}" for l in c["links"] if l["source"] == "wikidata"), None) if c["kind"] == "persons" or city else None
+        if q and q in first and city:
+            a = first[q]
+            initials = {a["key"][:1]} | {ascii_key(l.get("label") or "")[:1] for l in a["links"]}
+            if c["key"][:1] not in initials:
+                # the written form has nothing of the city («dolodro», «intramontibus» → Lausanne): the link came
+                # from the model's modern field alone, so it is dropped and the form stays on its own
+                c["links"] = []
+                out.append(c)
+                continue
         if q and q in first:
             a = first[q]
             a["mentions"] += c["mentions"]
             a.setdefault("variants", []).append(c["key"])
+            a["links"] += [l for l in c["links"] if (l["source"], l["id"]) not in {(x["source"], x["id"]) for x in a["links"]}]
             a["grade"] = "very_likely"
             continue
         if q:

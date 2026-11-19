@@ -159,7 +159,8 @@ const I18N = {
       Aleman, frühere Päpste mit Ordnungszahl), daraus GND, VIAF und HLS; ferner SSRQ und Königsfelden-Register (genaue
       Namensform, ein einziger Kandidat, Zeit passt); für Orte mit
       Königsfelden und Wikidata (genauer Name, Siedlung in CH/FR/IT/DE; HLS über die HLS-Nummer), für Diözesen über eine feste Liste
-      der lateinischen Adjektive. Ergebnis: <a href="register.html">Register</a>. Der Test auf 40 Einträgen unten bleibt als
+      der lateinischen Adjektive. Wo die Schreibung im Text klar einen anderen Ort nennt als die Normalisierung des Modells
+      («Gebennen» als «Basileae»), gilt die Schreibung im Text; Orte mit demselben Wikidata-Eintrag sind zusammengeführt. Ergebnis: <a href="register.html">Register</a>. Der Test auf 40 Einträgen unten bleibt als
       Ausgangspunkt stehen.`,
     "m.read.example": "Beispiel nebeneinander", "m.read.view": "Bild ansehen", "m.read.half": "Seitenhälfte",
     "m.read.left": "links", "m.read.right": "rechts", "m.read.dev": "Abw.", "m.read.trunc": "abgebrochen",
@@ -364,7 +365,8 @@ const I18N = {
       mort entre 1439 et 1500, dans au moins deux entrées ; en outre les titulaires qu’identifie leur charge : le duc Louis de
       Savoie, le cardinal Louis Aleman, les papes antérieurs avec leur numéro), de là GND, VIAF et DHS ; la SSRQ
       et le registre de Königsfelden (forme exacte du nom, un seul candidat, époque compatible) ; pour les lieux Königsfelden et
-      Wikidata (nom exact, localité en CH/FR/IT/DE ; DHS par son numéro) ; pour les diocèses une liste fixe des adjectifs latins.
+      Wikidata (nom exact, localité en CH/FR/IT/DE ; DHS par son numéro) ; pour les diocèses une liste fixe des adjectifs latins. Là où la graphie du texte désigne clairement un autre lieu que la
+      normalisation du modèle (« Gebennen » rendu par « Basileae »), la graphie du texte l’emporte ; les lieux liés au même élément Wikidata sont réunis.
       Résultat : <a href="register.html">Index</a>. Le test sur 40 entrées ci-dessous reste comme point de départ.`,
     "m.read.example": "Exemple côte à côte", "m.read.view": "Voir l’image", "m.read.half": "Demi-page",
     "m.read.left": "gauche", "m.read.right": "droite", "m.read.dev": "écart", "m.read.trunc": "interrompue",
@@ -563,7 +565,8 @@ const I18N = {
       nomen exactum et unicum, mors inter 1439 et 1500, in duabus saltem litteris; praeterea qui officio designantur: Ludovicus
       dux Sabaudiae, Ludovicus Alamandus cardinalis, papae priores cum numero), inde GND, VIAF, HLS; cum SSRQ et indice Campi Regis (forma nominis exacta, unus candidatus, tempus
       congruens); loca cum Campo Regis et Wikidata (nomen exactum, locus in CH/FR/IT/DE; HLS per numerum); dioeceses per indicem
-      fixum adiectivorum Latinorum. Effectus: <a href="register.html">Index</a>. Experimentum in 40 litteris infra ut initium
+      fixum adiectivorum Latinorum. Ubi forma textus aliud locum clare nominat quam normatio machinae («Gebennen» pro «Basileae»),
+      forma textus valet; loca eiusdem rei Wikidata coniunguntur. Effectus: <a href="register.html">Index</a>. Experimentum in 40 litteris infra ut initium
       manet.`,
     "m.read.example": "Exemplum iuxtapositum", "m.read.view": "Imaginem videre", "m.read.half": "Dimidia pagina",
     "m.read.left": "sinistra", "m.read.right": "dextra", "m.read.dev": "discr.", "m.read.trunc": "abrupta",
