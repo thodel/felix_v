@@ -4,79 +4,125 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bullarium Felix’ V.</title>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=12">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 </head>
 <body>
-<main>
+<main class="narrow">
   <h1><span data-i18n="reg.h1"></span> <span class="badge-auto" data-i18n="reg.badge"></span></h1>
   <p class="lede" data-i18n="reg.lede2"></p>
   <p class="note" data-i18n="reg.note2"></p>
-  <p id="stats" class="muted"></p>
-  <div class="toolbar" style="padding-left:0">
-    <select id="kind" data-i18n-attr="aria-label:reg.h1">
-      <option value="persons" data-i18n="reg.kind.persons"></option>
-      <option value="places" data-i18n="reg.kind.places"></option>
-      <option value="dioceses" data-i18n="reg.kind.dioceses"></option>
-      <option value="institutions" data-i18n="reg.kind.institutions"></option>
-    </select>
-    <input id="filter" type="search" style="width:200px" data-i18n-attr="placeholder:reg.filter;aria-label:reg.filter">
+  <div class="toolbar">
+    <div class="seg" id="kinds" role="tablist"></div>
+  </div>
+  <div id="mapwrap" hidden>
+    <div id="map" class="bigmap" role="region" data-i18n-attr="aria-label:reg.map"></div>
+    <p class="muted small" id="mapnote"></p>
+  </div>
+  <div class="toolbar">
+    <input id="filter" type="search" style="flex:1 1 240px" data-i18n-attr="placeholder:reg.filter;aria-label:reg.filter">
     <label><input type="checkbox" id="linked"> <span data-i18n="reg.onlyLinked"></span></label>
     <label><input type="checkbox" id="multi"> <span data-i18n="reg.onlyMulti"></span></label>
     <span id="count" class="muted"></span>
   </div>
   <div class="tablewrap"><table><thead><tr data-i18n-th="reg.th2"></tr></thead>
     <tbody id="rows"><tr><td colspan="5" data-i18n="loading"></td></tr></tbody></table></div>
-  <p class="muted" style="font-size:.85rem" data-i18n="reg.sources"></p>
+  <p class="muted small" data-i18n="reg.sources"></p>
 </main>
-<script src="i18n.js?v=8"></script>
-<script src="common.js?v=8"></script>
+<script src="i18n.js?v=12"></script>
+<script src="common.js?v=12"></script>
 <script>
 header("register.html");
 setTitle("title.register");
-let ents = [];
-const SRC = { kf: "Königsfelden", ssrq: "SSRQ", hls: "HLS", wikidata: "Wikidata" };
+const q = new URLSearchParams(location.search);
+const KINDS = ["persons", "places", "institutions", "dioceses"];
+const SRC = { kf: "Königsfelden", ssrq: "SSRQ", hls: "HLS", wikidata: "Wikidata", gnd: "GND", viaf: "VIAF" };
+let ents = [], KIND = KINDS.includes(q.get("k")) ? q.get("k") : "persons", TARGET = q.get("id"), map, layer;
 
 function linkBadge(l) {
   const g = l.grade === "identical" ? t("reg.grade.identical") : t("reg.grade.very_likely");
-  const tip = `${SRC[l.source] || l.source} ${l.id} · ${g}`;
-  const body = `<span class="src">${SRC[l.source] || esc(l.source)}</span> ${esc(l.label || l.id)}${l.dates ? ` <span class="muted">${esc(l.dates)}</span>` : ""}${l.grade === "very_likely" ? " ≈" : ""}`;
-  return l.url ? `<a class="lnk" href="${esc(l.url)}" target="_blank" rel="noopener" title="${esc(tip)}">${body}</a>`
-               : `<span class="lnk" title="${esc(tip)}">${body}</span>`;
+  const tip = `${SRC[l.source] || l.source} ${l.id} · ${g}${l.desc ? " · " + l.desc : ""}`;
+  const body = `<span class="src">${SRC[l.source] || esc(l.source)}</span>${l.dates ? ` <span class="muted">${esc(l.dates)}</span>` : ""}`;
+  const cls = `lnk${l.grade === "very_likely" ? " vl" : ""}`;
+  return l.url ? `<a class="${cls}" href="${esc(l.url)}" target="_blank" rel="noopener" title="${esc(tip)}">${body}</a>`
+               : `<span class="${cls}" title="${esc(tip)}">${body}</span>`;
 }
 
 function entryLink(id, at) {
   if (!at) return `<span class="mono">${id}</span>`;
-  return `<a class="mono" href="band.html?v=${at[0]}&p=${at[1]}&l=${at[2] + 1}">${id}</a>`;
+  return `<a class="mono" href="band.html?v=${at[0]}&p=${at[1]}&l=${at[2] + 1}&e=${id}">${id}</a>`;
+}
+
+function rowsFor() {
+  const f = document.getElementById("filter").value.toLowerCase(),
+    onlyL = document.getElementById("linked").checked, onlyM = document.getElementById("multi").checked;
+  return ents.filter(e => e.kind === KIND && (!onlyL || e.links.length) && (!onlyM || e.entries.length > 1)
+    && (!f || JSON.stringify([e.label, e.forms, e.links, e.dioc, e.offices]).toLowerCase().includes(f)));
 }
 
 function draw() {
-  const kind = document.getElementById("kind").value, f = document.getElementById("filter").value.toLowerCase(),
-    onlyL = document.getElementById("linked").checked, onlyM = document.getElementById("multi").checked;
-  const rows = ents.filter(e => e.kind === kind && (!onlyL || e.links.length) && (!onlyM || e.entries.length > 1)
-    && (!f || JSON.stringify([e.label, e.forms, e.links, e.dioc, e.offices]).toLowerCase().includes(f)));
+  const rows = rowsFor();
   document.getElementById("count").textContent = t("reg.count", { n: num(rows.length) });
-  const shown = rows.slice(0, 600);
+  let shown = rows.slice(0, 600);
+  const ti = TARGET ? rows.findIndex(e => e.id === TARGET) : -1;
+  if (ti >= 600) shown = shown.concat([rows[ti]]);
   document.getElementById("rows").innerHTML = shown.map(e => {
     const info = [...e.roles, ...e.offices, ...e.dioc.map(d => `${t("rg.dioc")} ${d}`), ...e.types].map(esc).join(" · ");
     const grade = e.grade === "very_likely" ? ` <span class="muted" title="${esc(t("reg.grade.merged"))}">≈</span>` : "";
-    return `<tr><td>${esc(e.label)}${grade}</td>
-      <td style="font-family:'Source Serif 4',Georgia,serif">${e.forms.map(esc).join("; ")}</td>
+    const name = e.links.find(l => l.source === "wikidata" && l.label && e.kind === "persons");
+    return `<tr id="${e.id}"${e.id === TARGET ? ' class="target"' : ""}><td><span class="chip ${e.kind}">${esc(e.label)}</span>${grade}${name ? `<div class="muted small">${esc(name.label)}</div>` : ""}</td>
+      <td class="forms">${e.forms.map(esc).join("; ")}</td>
       <td class="muted">${info}</td>
-      <td>${e.links.map(linkBadge).join("<br>") || '<span class="muted">–</span>'}</td>
+      <td>${e.links.map(linkBadge).join("") || '<span class="muted">–</span>'}</td>
       <td>${e.entries.slice(0, 12).map(id => entryLink(id, e.at[id])).join(" ")}${e.entries.length > 12 ? ` <span class="muted">+${e.entries.length - 12}</span>` : ""}</td></tr>`;
-  }).join("") + (rows.length > shown.length ? `<tr><td colspan="5" class="muted">${t("reg.more", { n: num(rows.length - shown.length) })}</td></tr>` : "");
+  }).join("") + (rows.length > 600 ? `<tr><td colspan="5" class="muted">${t("reg.more", { n: num(rows.length - 600) })}</td></tr>` : "");
+  if (TARGET) { const tr = document.getElementById(TARGET); if (tr) tr.scrollIntoView({ block: "center" }); }
+  drawMap(rows);
+}
+
+function drawMap(rows) {
+  const geo = KIND === "places" || KIND === "dioceses";
+  document.getElementById("mapwrap").hidden = !geo;
+  if (!geo || typeof L === "undefined") return;
+  if (!map) {
+    map = L.map("map", { scrollWheelZoom: false }).setView([46.2, 7.5], 6);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 12,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>' }).addTo(map);
+  }
+  if (layer) layer.remove();
+  layer = L.layerGroup().addTo(map);
+  const pts = rows.filter(e => e.coord);
+  for (const e of pts) {
+    const r = 4 + Math.min(12, Math.sqrt(e.entries.length) * 2);
+    L.circleMarker(e.coord, { radius: r, className: KIND === "places" ? "lf-place" : "lf-dio", weight: 1.5, fillOpacity: .35 })
+      .bindTooltip(`${esc(e.label)} · ${t("reg.inEntries", { n: e.entries.length })}`)
+      .on("click", () => { TARGET = e.id; history.replaceState(null, "", `?k=${KIND}&id=${e.id}&lang=${LANG}`); draw(); })
+      .addTo(layer);
+  }
+  document.getElementById("mapnote").textContent = t("reg.mapnote", { n: num(pts.length), all: num(rows.length) });
+  if (pts.length) map.fitBounds(L.latLngBounds(pts.map(e => e.coord)).pad(0.15), { maxZoom: 8 });
+  setTimeout(() => map.invalidateSize(), 0);
+}
+
+function tabs() {
+  document.getElementById("kinds").innerHTML = KINDS.map(k => `<button type="button" role="tab" data-k="${k}"${k === KIND ? ' class="on" aria-selected="true"' : ""}>
+    ${t("reg.kind." + k)} <span class="n">${num(ents.filter(e => e.kind === k).length)}</span></button>`).join("");
 }
 
 (async () => {
   try { ents = await getJSON("data/entities.json"); }
   catch (e) { document.getElementById("rows").innerHTML = `<tr><td colspan="5">${t("reg.none")}</td></tr>`; return; }
-  const by = k => ents.filter(e => e.kind === k);
-  const linked = k => by(k).filter(e => e.links.length).length;
-  document.getElementById("stats").textContent = t("reg.stats2", {
-    p: num(by("persons").length), pl: num(linked("persons")), o: num(by("places").length), ol: num(linked("places")),
-    d: num(by("dioceses").length), dl: num(linked("dioceses")), i: num(by("institutions").length) });
-  ["kind", "linked", "multi"].forEach(id => document.getElementById(id).onchange = draw);
+  tabs();
+  document.getElementById("kinds").onclick = ev => {
+    const b = ev.target.closest("button"); if (!b) return;
+    KIND = b.dataset.k; TARGET = null;
+    history.replaceState(null, "", `?k=${KIND}&lang=${LANG}`);
+    tabs(); draw();
+  };
+  ["linked", "multi"].forEach(id => document.getElementById(id).onchange = draw);
   document.getElementById("filter").oninput = draw;
   draw();
 })();

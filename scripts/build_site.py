@@ -19,6 +19,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from llm_entries import date_fields  # noqa: E402
 from incipit import fix_line  # noqa: E402
 
+START = re.compile(r"^\W*(Felix\s+e|ep(iscop)?(us|s|ũs)?\.?\s+(etc|ꝫc|servus))", re.I)
+
 ROOT = Path(__file__).resolve().parent.parent
 EXP = ROOT / "data/export"
 OUT = ROOT / "docs/data"
@@ -179,8 +181,12 @@ def main() -> int:
         (OUT / f"regests{v}.json").write_text(json.dumps(regs, ensure_ascii=False, separators=(",", ":")))
         isos = sorted(c["d"]["iso"] for c in compact if c["d"].get("iso") and c["d"].get("check") == "ok")
         n_lines = sum(len(r["l"]) for p in pages for r in p["r"])
+        # first image with a real entry: a line of the joint reading opens with «Felix ep…» or, where the
+        # whole word «Felix» is lost, with «episcopus etc.» (checked by hand on all eight volumes, 19.11.2026)
+        start = next((p["n"] for p in pages if any(START.match((l["k"][0] if l.get("k") else l["t"]) or "")
+                                                   for r in p["r"] for l in r["l"])), 1)
         summary.append({
-            "vol": v, "docId": vol["docId"], "title": vol["title"], "pages": len(pages), "lines": n_lines,
+            "vol": v, "start": start, "docId": vol["docId"], "title": vol["title"], "pages": len(pages), "lines": n_lines,
             "reader_pages": n_cat, "combined_changed_lines": n_comb,
             "readers": {n: len(d) for n, d in per_reader.items() if d},
             "thumb": max(pages[len(pages) // 4: len(pages) // 2] or pages, key=lambda p: sum(len(r["l"]) for r in p["r"]))["k"], "entries": len(compact),
@@ -245,7 +251,8 @@ def main() -> int:
             out.append({"id": c["id"], "kind": c["kind"], "label": label, "grade": c["grade"],
                         "forms": sorted({m.get("as_written") for m in ms if m.get("as_written")})[:12],
                         "roles": top("role"), "offices": top("office"), "dioc": top("diocese"), "types": top("type"),
-                        "links": [{k: l.get(k) for k in ("source", "id", "label", "grade", "url", "dates")} for l in c["links"]],
+                        "links": [{k: l.get(k) for k in ("source", "id", "label", "grade", "url", "dates", "desc") if l.get(k)} for l in c["links"]],
+                        **({"coord": c["coord"]} if c.get("coord") else {}),
                         "entries": sorted({m["entry"] for m in ms}),
                         "at": {m["entry"]: starts.get(m["entry"]) for m in ms}})
         out.sort(key=lambda x: (-len(x["entries"]), x["label"].lower()))

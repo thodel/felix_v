@@ -1,6 +1,7 @@
 [
  {
   "vol": 1,
+  "start": 5,
   "docId": 249230,
   "title": "Bollario de Felice_Vol_1",
   "pages": 316,
@@ -25,6 +26,7 @@
  },
  {
   "vol": 2,
+  "start": 3,
   "docId": 249232,
   "title": "Bollario de Felice_Vol_2",
   "pages": 315,
@@ -49,6 +51,7 @@
  },
  {
   "vol": 3,
+  "start": 3,
   "docId": 249233,
   "title": "Bollario de Felice_Vol_3",
   "pages": 315,
@@ -73,6 +76,7 @@
  },
  {
   "vol": 4,
+  "start": 2,
   "docId": 249354,
   "title": "Bollario de Felice_Vol_4",
   "pages": 338,
@@ -97,6 +101,7 @@
  },
  {
   "vol": 5,
+  "start": 2,
   "docId": 249355,
   "title": "Bollario de Felice_Vol_5",
   "pages": 340,
@@ -121,6 +126,7 @@
  },
  {
   "vol": 6,
+  "start": 2,
   "docId": 249356,
   "title": "Bollario de Felice_Vol_6",
   "pages": 340,
@@ -145,6 +151,7 @@
  },
  {
   "vol": 7,
+  "start": 2,
   "docId": 249357,
   "title": "Bollario de Felice_Vol_7",
   "pages": 349,
@@ -169,6 +176,7 @@
  },
  {
   "vol": 8,
+  "start": 2,
   "docId": 249231,
   "title": "Bollario de Felice_Vol_8",
   "pages": 386,

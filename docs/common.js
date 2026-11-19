@@ -59,15 +59,15 @@ function langHref(l) {
   return `?${u.toString()}`;
 }
 
-function header(active) {
+function header(active) { // Thun-style top bar: brand, navigation pills, language switch
   const items = [["index.html", "nav.vols"], ["eintraege.html", "nav.entries"], ["regesten.html", "nav.regests"], ["register.html", "nav.register"], ["methode.html", "nav.method"]];
-  const nav = items.map(([h, k]) => `<a href="${h}"${active === h ? ' aria-current="page" style="font-weight:600"' : ""}>${t(k)}</a>`).join("");
+  const nav = items.map(([h, k]) => `<a href="${h}"${active === h ? ' class="on" aria-current="page"' : ""}>${t(k)}</a>`).join("");
   const sw = LANGS.map(l => l === LANG
     ? `<strong aria-current="true" title="${I18N[l]["lang.name"]}">${l.toUpperCase()}</strong>`
-    : `<a href="${langHref(l)}" hreflang="${l}" lang="${l}" title="${I18N[l]["lang.name"]}">${l.toUpperCase()}</a>`).join(" · ");
+    : `<a href="${langHref(l)}" hreflang="${l}" lang="${l}" title="${I18N[l]["lang.name"]}">${l.toUpperCase()}</a>`).join("");
   document.body.insertAdjacentHTML("afterbegin",
-    `<header class="site"><a class="brand" href="index.html">${t("brand")}</a><nav>${nav}</nav>
-      <span class="langs" aria-label="Sprache · Langue · Lingua">${sw}</span></header>`);
+    `<header class="top"><a class="brand" href="index.html">${t("brand")} <span>· ${t("brand.sub")}</span></a>
+      <nav>${nav}<span class="lang" role="group" aria-label="Sprache · Langue · Lingua">${sw}</span></nav></header>`);
   applyI18n();
 }
 

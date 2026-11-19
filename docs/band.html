@@ -4,44 +4,44 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bullarium Felix’ V.</title>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=8">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=12">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.js"></script>
 </head>
 <body>
-<main class="wide">
+<main>
   <div class="viewer">
-    <div class="img"><div id="osd"></div></div>
-    <div class="side">
-      <div class="toolbar">
+    <section class="side panel" aria-label="Text">
+      <div class="vnav">
         <select id="vol" data-i18n-attr="aria-label:vol"></select>
         <button id="prev" data-i18n-attr="aria-label:band.prev;title:band.prev">‹</button>
         <label><span data-i18n="img"></span> <input id="pg" type="number" min="1" data-i18n-attr="aria-label:img"></label>
         <span id="of" class="muted"></span>
         <button id="next" data-i18n-attr="aria-label:band.next;title:band.next">›</button>
-        <label data-i18n-attr="title:band.allbox.t"><input type="checkbox" id="allbox"> <span data-i18n="band.allbox"></span></label>
+        <span class="grow"></span>
+        <label class="muted small" data-i18n-attr="title:band.allbox.t"><input type="checkbox" id="allbox"> <span data-i18n="band.allbox"></span></label>
       </div>
       <div class="tabs" role="tablist">
         <button id="t-text" class="on" role="tab"><span data-i18n="band.tab.text"></span> <span class="badge-auto" data-i18n="badge.short"></span></button>
-        <button id="t-ent" role="tab" data-i18n="band.tab.ent"></button>
+        <button id="t-ent" role="tab"><span data-i18n="band.tab.ent"></span> <span id="ent-n" class="n"></span></button>
       </div>
-      <div class="muted" style="font-family:system-ui,sans-serif;font-size:.78rem;padding:4px 12px;border-bottom:1px solid var(--line)" data-i18n="band.help"></div>
-      <div id="readbar" class="toolbar readbar">
+      <div id="vhelp" class="vhelp" data-i18n="band.help"></div>
+      <div id="readbar" class="readbar">
         <label><span data-i18n="band.reading"></span> <select id="reading"></select></label>
         <span id="readnote" class="muted"></span>
       </div>
       <div id="pane-text" class="pane" aria-live="polite"></div>
       <div id="pane-ent" class="pane" hidden></div>
-    </div>
+    </section>
+    <section class="img panel" aria-label="Bild"><div id="osd"></div></section>
   </div>
-  <div id="strip" class="filmstrip" data-i18n-attr="aria-label:band.strip"></div>
 </main>
-<script src="i18n.js?v=8"></script>
-<script src="common.js?v=8"></script>
+<script src="i18n.js?v=12"></script>
+<script src="common.js?v=12"></script>
 <script>
 header("");
 const q = new URLSearchParams(location.search);
-let V = +(q.get("v") || 1), P = +(q.get("p") || 1), vol, entries, viewer, overlay, selOverlay, sel = null;
+let V = +(q.get("v") || 1), P = +(q.get("p") || 0), vol, entries, viewer, overlay, selOverlay, sel = null;
 let pendingLine = q.get("l") ? +q.get("l") : null; // deep link: 1-based line number on the opening
 let ENTRY = q.get("e"); // entry whose lines are highlighted (from the entry list)
 let flat = []; // [{ri, li, b, n}] in reading order for the current page
@@ -229,22 +229,39 @@ function render() {
   pt.onclick = ev => { const s = ev.target.closest(".ln"); if (s) select(+s.dataset.n, { scroll: false }); };
   pt.onkeydown = ev => { const s = ev.target.closest(".ln"); if (s && (ev.key === "Enter" || ev.key === " ")) { ev.preventDefault(); select(+s.dataset.n, { scroll: false }); } };
   sel = null;
+  renderEntries();
+}
+
+function renderEntries() {
   const here = entries.filter(e => e.s[0] <= P && e.e[0] >= P);
-  document.getElementById("pane-ent").innerHTML = here.length ? here.map(e => `
-    <div class="entry-card${e.s[0] === P ? " here" : ""}" data-p="${e.s[0]}" data-l="${e.s[1] + 1}" tabindex="0" style="cursor:pointer" title="${t("band.toEntry")}"><div><span class="d">${fmtDate(e.d) || t("undated")}</span> ${dateFlag(e.d)}
-      <span class="muted mono" style="float:right">${e.id}</span></div>
-      <div class="muted">${t("band.span", { from: e.s[0] + (e.e[0] !== e.s[0] ? "–" + e.e[0] : ""), n: e.n })}${e.d.place ? " · " + esc(e.d.place) : ""}</div>
-      <div class="c">${esc(e.inc)} …</div>${e.cl ? `<div class="c">… ${esc(e.cl)}</div>` : ""}</div>`).join("")
+  document.getElementById("ent-n").textContent = here.length ? `(${here.length})` : "";
+  document.getElementById("pane-ent").innerHTML = here.length
+    ? `<div class="legend">${KINDS.map(k => `<span class="${k}"><i></i>${t("reg.kind." + k)}</span>`).join("")}</div>` + here.map(entryCard).join("")
     : `<p class="muted">${t("band.noent")}</p>`;
   document.getElementById("pane-ent").onclick = ev => {
+    if (ev.target.closest("a")) return; // a chip opens the register
     const c = ev.target.closest(".entry-card"); if (!c) return;
     const p = +c.dataset.p, l = +c.dataset.l;
-    ENTRY = c.querySelector(".mono") ? c.querySelector(".mono").textContent.trim() : ENTRY;
+    ENTRY = c.dataset.id;
     document.getElementById("t-text").click();
-    if (p === P) select(l); else { pendingLine = l; go(p); }
+    if (p === P) { const pg = vol.pages[P - 1]; markEntry(pg); drawEntryBoxes(pg); renderEntries(); select(l); } else { pendingLine = l; go(p); }
   };
-  document.querySelectorAll("#strip img").forEach(im => im.classList.toggle("on", +im.dataset.p === P));
-  const cur = document.querySelector(`#strip img[data-p="${P}"]`); if (cur) cur.scrollIntoView({ block: "nearest", inline: "center" });
+}
+
+const KINDS = ["persons", "places", "institutions", "dioceses"];
+let REGESTS = {}, TERMS = {};
+
+function entryCard(e) {
+  const r = REGESTS[e.id] || {}, txt = r[LANG] || r.de;
+  const terms = (TERMS[e.id] || []).slice().sort((a, b) => KINDS.indexOf(a.kind) - KINDS.indexOf(b.kind) || a.label.localeCompare(b.label));
+  const chips = terms.map(x => `<a class="chip ${x.kind}" href="register.html?k=${x.kind}&id=${x.id}" title="${esc(t("reg.kind." + x.kind))}${x.links.length ? " · " + x.links.map(l => l.source).join(", ") : ""}">${esc(x.label)}${x.links.length ? " ↗" : ""}</a>`).join("");
+  return `<div class="entry-card${e.id === ENTRY ? " on" : ""}" data-id="${e.id}" data-p="${e.s[0]}" data-l="${e.s[1] + 1}" tabindex="0" title="${t("band.toEntry")}">
+    <div class="eh"><span class="d">${fmtDate(e.d) || t("undated")}</span> ${dateFlag(e.d)}${e.d.place ? ` <span class="muted">${esc(e.d.place)}</span>` : ""}
+      ${r.t ? `<span class="type">${t("act." + r.t)}</span>` : ""}<span class="id mono">${e.id}</span></div>
+    <div class="muted small">${t("band.span", { from: e.s[0] + (e.e[0] !== e.s[0] ? "–" + e.e[0] : ""), n: e.n })}</div>
+    ${txt ? `<p class="rtext">${esc(txt)}</p><div class="draft">${t("band.regdraft")}</div>` : `<div class="c">${esc(e.inc)} …</div>`}
+    ${chips ? `<div class="chips">${chips}</div>` : ""}
+  </div>`;
 }
 
 function go(p) { P = Math.max(1, Math.min(vol.pages.length, p)); render(); }
@@ -254,8 +271,14 @@ function go(p) { P = Math.max(1, Math.min(vol.pages.length, p)); render(); }
   SUMMARY_READERS = [...new Set(summary.flatMap(v => Object.keys(v.readers || {})))];
   const volSel = document.getElementById("vol");
   volSel.innerHTML = summary.map(v => `<option value="${v.vol}">${t("vol")} ${ROMAN[v.vol]}</option>`).join("");
-  volSel.value = V; volSel.onchange = () => { location.search = `?v=${volSel.value}&p=1&lang=${LANG}`; };
-  [vol, entries] = await Promise.all([getJSON(`data/vol${V}.json`), getJSON(`data/entries${V}.json`)]);
+  volSel.value = V; volSel.onchange = () => { location.search = `?v=${volSel.value}&lang=${LANG}`; };
+  if (!P) P = (summary.find(v => v.vol === V) || {}).start || 1; // first folio with a real entry
+  [vol, entries, REGESTS] = await Promise.all([getJSON(`data/vol${V}.json`), getJSON(`data/entries${V}.json`),
+    getJSON(`data/regests${V}.json`).then(rs => Object.fromEntries(rs.map(r => [r.id, r]))).catch(() => ({}))]);
+  getJSON("data/entities.json").then(es => { // index terms per entry, for the entries tab
+    for (const e of es) for (const id of e.entries) (TERMS[id] || (TERMS[id] = [])).push(e);
+    if (vol) renderEntries();
+  }).catch(() => {});
   viewer = OpenSeadragon({ id: "osd", prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/images/", showNavigator: true, gestureSettingsMouse: { clickToZoom: false } });
   viewer.addHandler("open", () => { // open() clears overlays: redraw, then apply a deep-linked line
     const page = vol.pages[P - 1];
@@ -271,8 +294,6 @@ function go(p) { P = Math.max(1, Math.min(vol.pages.length, p)); render(); }
     if (n) { select(n, { zoom: false }); document.getElementById("t-text").click(); }
   });
   document.getElementById("allbox").onchange = () => drawAllBoxes(vol.pages[P - 1]);
-  document.getElementById("strip").innerHTML = vol.pages.map(p => `<img loading="lazy" data-p="${p.n}" src="${IIIF_IMG(p.k, ",108")}" alt="${t("img")} ${p.n}">`).join("");
-  document.getElementById("strip").onclick = ev => { if (ev.target.dataset.p) go(+ev.target.dataset.p); };
   document.getElementById("prev").onclick = () => go(P - 1);
   document.getElementById("next").onclick = () => go(P + 1);
   document.getElementById("pg").onchange = ev => go(+ev.target.value);
@@ -297,7 +318,7 @@ function go(p) { P = Math.max(1, Math.min(vol.pages.length, p)); render(); }
   const tabs = [["t-text", "pane-text"], ["t-ent", "pane-ent"]];
   tabs.forEach(([tb, p]) => document.getElementById(tb).onclick = () => tabs.forEach(([t2, p2]) => {
     document.getElementById(t2).classList.toggle("on", t2 === tb); document.getElementById(p2).hidden = p2 !== p;
-    document.getElementById("readbar").hidden = tb !== "t-text"; }));
+    document.getElementById("readbar").hidden = tb !== "t-text"; document.getElementById("vhelp").hidden = tb !== "t-text"; }));
   render();
 })().catch(e => { document.getElementById("pane-text").textContent = `${t("error")}: ${e.message}`; });
 </script>
