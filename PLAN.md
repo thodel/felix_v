@@ -66,3 +66,24 @@ vorangehende Datum.
 3. Sobald eine bessere Lesung vorliegt, Segmentierung auf ihr wiederholen (IDs bleiben über
    `input`-Prüfung in `data/llm/` stabil, nur Geändertes wird neu gelesen).
 4. Export je Eintrag (TEI mit Datum, Ort, Registriervermerk, Seitenbereich).
+
+## Website v2 (Plan vom 19.11.2026)
+
+1. **Betrachter.** Filmstreifen unten entfernt. «Aufnahme» heisst überall «Folio» (fr «folio», la «folium»);
+   die Nummer bleibt die Bildnummer. Jeder Band öffnet beim ersten Folio mit einem echten Eintrag:
+   der ersten Aufnahme, auf der eine Zeile der gemeinsamen Lesung mit «Felix ep…» beginnt (Initiale
+   wiederhergestellt, `scripts/incipit.py`). Das Ergebnis steht als `start` in `summary.json` und wird
+   von Hand an den Bildern geprüft.
+2. **Layout und Gestaltung der Thuner Missiven** (`DHBern/thun-missiven-data/site/style.css`) für alle
+   Seiten: Source Sans 3 für die Oberfläche, Source Serif 4 für Text, Kopfzeile mit UniBE-Rot,
+   Navigations-Pillen und Sprachschalter, Panels mit runden Ecken, farbige Chips (Personen rot,
+   Orte grün, Institutionen violett, Diözesen ocker), Hell/Dunkel. Im Betrachter wie in Thun: Text
+   links, Bild rechts.
+3. **«Einträge auf diesem Folio»** zeigt je Eintrag Datum, Regest (in der Sprache der Seite),
+   Urkundenart und die Registerbegriffe des Eintrags als Chips; ein Chip führt ins Register.
+4. **Register in vier Teilen** (Personen, Orte, Institutionen, Diözesen) mit einer Karte der Orte
+   (Leaflet; Koordinaten aus Wikidata P625 für verknüpfte Orte, Diözesen über ihren Sitz).
+5. **Personen verknüpfen**: Wikidata über den Offline-Schnappschuss der Personen vor 1500
+   (`wd-pre1500.resolve_name`, Lebensdaten passend zu 1439–1449), daraus GND (P227), HLS (P902) und
+   VIAF (P214); dazu HLS (`hls.search_persons`), SSRQ und Königsfelden wie bisher. Nur «identisch»
+   oder «sehr wahrscheinlich»; Titel ohne Namen bleiben unverknüpft.
